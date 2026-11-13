@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:244",
+  "source_index": 244,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2052,
+  "output_tokens": 1153,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0028190000000000003,
+  "latency_seconds": 20.110674787996686,
+  "wall_seconds": 239.70535276200098,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 759,
+    "utf8_bytes": 759,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "With three vehicles, 'second-newest' is the middle. Tractor is middle, so minivan (newer than convertible) must be the newest and the convertible the oldest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"With three vehicles, 'second-newest' is the middle. Tractor is middle, so minivan (newer than convertible) must be the newest and the convertible the oldest.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Tractor is explicitly second-newest (middle). Minivan is newer than convertible, so minivan must be above convertible. The only ordering consistent is: newest = minivan, middle = tractor, oldest = convertible. Thus the convertible is the oldest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Tractor is explicitly second-newest (middle). Minivan is newer than convertible, so minivan must be above convertible. The only ordering consistent is: newest = minivan, middle = tractor, oldest = convertible. Thus the convertible is the oldest.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "Tractor is second-newest (middle). Minivan is newer than convertible, so minivan must be the newest and convertible the oldest. Therefore the convertible is the oldest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"Tractor is second-newest (middle). Minivan is newer than convertible, so minivan must be the newest and convertible the oldest. Therefore the convertible is the oldest.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "3d79ff000c38878f79cf8174bda9a2e31eb5eab131357d638892f609929a6895",
+  "errors": []
+}

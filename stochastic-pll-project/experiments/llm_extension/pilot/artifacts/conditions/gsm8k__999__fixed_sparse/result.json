@@ -1,0 +1,131 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:999",
+  "source_index": 999,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "25",
+  "final_answer": "25",
+  "correct": true,
+  "f1": 1.0,
+  "completed": false,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1444,
+  "output_tokens": 1550,
+  "reasoning_tokens": 704,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.003461,
+  "latency_seconds": 22.98700694400395,
+  "wall_seconds": 239.71489309999743,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 189,
+    "utf8_bytes": 189,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":0,\"summary\":\"\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":1,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    null,
+    null,
+    null
+  ],
+  "refined_answers": [
+    "25",
+    null,
+    null
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "2c8ae6331fdd29299ae70cb434b16eefead36ebd8922b29b02841e57ced084b8",
+  "errors": [
+    {
+      "stage": "initial",
+      "agent": 0,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 1,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 2,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 1,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 2,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    }
+  ]
+}

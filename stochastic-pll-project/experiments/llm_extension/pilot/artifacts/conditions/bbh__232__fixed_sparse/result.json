@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:232",
+  "source_index": 232,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2209,
+  "output_tokens": 1015,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00258225,
+  "latency_seconds": 19.245115842993982,
+  "wall_seconds": 237.20659603400054,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 823,
+    "utf8_bytes": 823,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Positions left-to-right are 1,2,3. Hawk is second (position 2) and is left of the cardinal, so the cardinal must be to its right (position 3). Therefore the falcon occupies position 1 and is the leftmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Positions left-to-right are 1,2,3. Hawk is second (position 2) and is left of the cardinal, so the cardinal must be to its right (position 3). Therefore the falcon occupies position 1 and is the leftmost.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "With three positions (left, middle, right) the hawk is stated as second from the left (middle). Since the hawk is to the left of the cardinal, the cardinal must be right of the hawk (rightmost). That leaves the falcon as the leftmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"With three positions (left, middle, right) the hawk is stated as second from the left (middle). Since the hawk is to the left of the cardinal, the cardinal must be right of the hawk (rightmost). That leaves the falcon as the leftmost.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Hawk is second from left (position 2) and is to the left of the cardinal, so the cardinal must be right of the hawk (position 3). The remaining bird, the falcon, occupies position 1, the leftmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Hawk is second from left (position 2) and is to the left of the cardinal, so the cardinal must be right of the hawk (position 3). The remaining bird, the falcon, occupies position 1, the leftmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "5dd82d17bd16f9244c1cc4859db465fb46907cc23bf695abe0299fe316e8863d",
+  "errors": []
+}

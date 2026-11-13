@@ -1,0 +1,220 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a84f5865542991dd0999e30",
+  "source_index": 3009,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "county louth",
+  "final_answer": "county louth",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 15880,
+  "output_tokens": 1070,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.006110000000000001,
+  "latency_seconds": 22.772319312000036,
+  "wall_seconds": 237.43989488499938,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 687,
+    "utf8_bytes": 687,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "county louth",
+          "summary": "The In Blue Tour was by Irish band The Corrs (context paragraph [3]). The Corrs are from Dundalk in County Louth, Ireland (context paragraph [7]), so the band are from County Louth.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"county louth\",\"missing_response\":false,\"sender\":0,\"summary\":\"The In Blue Tour was by Irish band The Corrs (context paragraph [3]). The Corrs are from Dundalk in County Louth, Ireland (context paragraph [7]), so the band are from County Louth.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "county louth",
+          "summary": "The In Blue Tour was by Irish band The Corrs. The Corrs are from Dundalk in County Louth, Ireland, per the supplied context.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"county louth\",\"missing_response\":false,\"sender\":1,\"summary\":\"The In Blue Tour was by Irish band The Corrs. The Corrs are from Dundalk in County Louth, Ireland, per the supplied context.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "county louth",
+          "summary": "The In Blue Tour was by the Irish band The Corrs. Context paragraph [7] states The Corrs are from Dundalk, County Louth, Ireland, so the county is County Louth.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"county louth\",\"missing_response\":false,\"sender\":2,\"summary\":\"The In Blue Tour was by the Irish band The Corrs. Context paragraph [7] states The Corrs are from Dundalk, County Louth, Ireland, so the county is County Louth.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 303887502344929904067922072529619422316,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -1.1708938906111575,
+        "proposed_state": -0.12959420574475555,
+        "state": -0.12959420574475555,
+        "probability": 0.2052701442112001
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.12959420574475555,
+        "target": 0.0,
+        "drift": 0.15551304689370665,
+        "gaussian_draw": 1.6309939999757552,
+        "proposed_state": 0.06647505509433499,
+        "state": 0.06647505509433499,
+        "probability": 0.23204141167162048
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.06647505509433499,
+        "target": 0.0,
+        "drift": -0.07977006611320199,
+        "gaussian_draw": 0.7961901062992844,
+        "proposed_state": 0.14662014500692078,
+        "state": 0.14662014500692078,
+        "probability": 0.2436624539391454
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2052701442112001
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2052701442112001
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23204141167162048
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23204141167162048
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2436624539391454
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2436624539391454
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.025175940752123815
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6627778882939435
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9479394218925293
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.1178139592559998
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.07657534476687766
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.9520119448195927
+      }
+    ]
+  },
+  "initial_answers": [
+    "county louth",
+    "county louth",
+    "county louth"
+  ],
+  "refined_answers": [
+    "county louth",
+    "county louth",
+    "county louth"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "d2163c7853923a32d06ed0a982d6ecc44b92df223dc0ff6809a84ad817a9847e",
+  "errors": []
+}

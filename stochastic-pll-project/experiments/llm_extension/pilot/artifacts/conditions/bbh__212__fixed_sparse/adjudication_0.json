@@ -1,0 +1,199 @@
+{
+  "payload_hash": "a0a545496a677a60ee9dc767ce23c7b52b58364c46098a754a3007e37c2d2247",
+  "logical_id": "bbh:logical_deduction_three_objects:212|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_030b859889c4694a016af73e8f118c81938b7d777ec67162d6",
+      "object": "response",
+      "created_at": 1794588303,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794588304,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2305,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 399,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_030b859889c4694a016af73e8fddb08193818bd8217fc965de",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9z6QPFypc1rqNB9QqHVa8vN8bAxUfRUCKPQ1XPFSIgIkWW9wM9DnvP60hpQHk0m8uu9Rqj2xyTY-sPCRNF_EbQWJl4DS918_ly7s9dzgqSCUl8uGJszkEMit4MpbHllLOkO9DuRpmPMrxKs_pKN9ochq72UqHqWr3bC7_2os03O9RoOHHpheVuGv-SQKMRBZDAGi0kO5UN44uujY7qVRK_Dbn97jscUfzg7fzmoE6U8g7-L-Sb8PkGpbCA35WyqVuunbQfle3eYW6B6PWsvKXfYQxXfHcA-H93wNZcGDfR_JhqbUT0YyEUVOlqz3OUf2tjGOFpjJiH9Zwy7jy3IAbzleR65DEnA2V6US62a6vVOITmTgvUdBQDvs3tPdWg2R74RfrhA-fRVVB5gT5dEg9TMqSeIZXFGPqgFlzpOGX74NKlwh5JRiLvcP5CE7RjIq2YWLfL8YX1ZrFNM2H4ZXKmSjNNSUUHLdm4P9hGQdAJGK7HMohmGvVJ5zdhtxG2F-6KNNVQqbwen9hmnatVji9P70Eb7pPhG-ZIDHQOBFyipAaY67-aLxMajZb-q2rdb-Qc7VGhVXObEVbfkAgJRtbcBdnU8irDgaXDu517LUP4WdNo6jSdEYGeTSEsIt1xe2nAcPbIf7eT1GKPjJtqclnSm_fuYXbWNyitHAtretdt57pS0aVzToofvgKBZztp9gdCRR5zKAYWz9RLDiYiLA-9TJhxRrQZRSSu4x9TJbu4XuUPeuVaoUPRc3UDxBna8WoiQk7pQN1XIT8B5St8SGgFoO08lLvx84Be-pkyDhIZ3P8oOuHfvPGtqAot6izYll9TxDj2QQ6zto003UUttdsJm1hm8sehscQqK8Ib3fh1S8S5uZCBisT2zXoYdP8lsKBp152SUvPutUKqCLVjGQmbkCP5-xiwDq9gTc9zc7ASQHAbBkdv3oWgHzKJYciL3JDA0FqkyGrxajg0VQa41F6ppQYJe-bvGOUa77hCC7YERfilIhuX6wooqy-dDOdJ2ydS-ftZ_IfZMuIvtjdBCVwwljcb2FoKLO2PNBzpZ3Oe8b7PfrRe0C-Dz-VTKwdOnguLYGXtxxOslTXPODk3nv8kVLS8dEg2Ti29RnhhTtPgGKQqnJwDKbJtWJTNv4LMT__XMoEO318Da9NHlxyDJVbUibkdHWXSbBcv_F5RnCshB7sLHeKT2tX5mX3t4KOTuZJfF1MyZgqUtSt4DRFOvsR5f6gobOQqKQAA1DAfg2JdCK5RULfgI8_pOUBlQEoRcovT9o1oXgdSFzyuMlnGUvgmKege1BYSoCqD-3f5Vbhj6VLlXez69xLRQ0rqzxBDEzIwS6owmp-s8wg46Qw7NA44Amao1b3XzJW9bpCVPHQtPKHmqvbNMLiEP806jvuBIiqwIl4CQwcfRHG_yCVZREJFOIDArmvurHBWbsNmJzBpaf0SwcC2-79G4Gby3BnW6uchUKIzn7RKMBhCR5D1LDg0RhENH36L48svkm2jwJf8z8yHIL7U6qHBbsOKutREdTl-0mxjoboyQjJISwHNchIcSlLog3wTJtz5htugpd9ihsaHYrOvr4wxcbEs45nstddj4Wo1ESs9Hy0wQJnU22HSQGSP3Xm730zNba9mpDBqU-Kk1EzV2Hf0yWLic1JwA_UJom0thJ_3RgFnRnYc6d1tba22HLYphm-pmc1uVRcnsJ3QXoizjbrP1n9xsoc7UkWX4KkBNMbH_3iA-JiwVSqTDCRS5I4CvgDTZXFd7AxYZYZb8cHpUKmqMdynBvGD8y3e4afAebc0EunLObexzDHPOKh5FLcOfOP4S4lf5Jg6Oa_fc9tmoEFLxbsyEleMT2n6gd",
+          "summary": []
+        },
+        {
+          "id": "msg_030b859889c4694a016af73e9050c08193af88791de9359344",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"From the given comparisons: kiwis are less expensive than loquats (kiwis < loquats), and cantaloupes are less expensive than kiwis (cantaloupes < kiwis). By transitivity, cantaloupes < kiwis < loquats, so cantaloupes are the cheapest.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 406,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 111,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 517
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"From the given comparisons: kiwis are less expensive than loquats (kiwis < loquats), and cantaloupes are less expensive than kiwis (cantaloupes < kiwis). By transitivity, cantaloupes < kiwis < loquats, so cantaloupes are the cheapest.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 406,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 111,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 517
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:212|fixed_sparse|adjudication:0",
+    "attempt_id": "d2d946acf591423d82c5a4c29d418efc",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0003235,
+    "latency_seconds": 2.5661900750019413,
+    "started_at": "2026-11-13T16:45:02.459775+00:00",
+    "finished_at": "2026-11-13T16:45:05.026012+00:00"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a8f24cc55429924144829e7",
+  "source_index": 1056,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "battle of dresden",
+  "final_answer": "battle of dresden 26–27 august 1813",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 15726,
+  "output_tokens": 1281,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0064935,
+  "latency_seconds": 22.598426215998188,
+  "wall_seconds": 243.2413524779986,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 1327,
+    "utf8_bytes": 1335,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "battle of dresden 1813",
+          "summary": "Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at the Battle of Dresden in 1813 (he also led the corps at Leipzig later that year). This is stated in the provided paragraph noting his service in the German Campaign of 1813.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"battle of dresden 1813\",\"missing_response\":false,\"sender\":0,\"summary\":\"Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at the Battle of Dresden in 1813 (he also led the corps at Leipzig later that year). This is stated in the provided paragraph noting his service in the German Campaign of 1813.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "battle of dresden 1813",
+          "summary": "Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at the Battle of Dresden in 1813 (he also led the corps at Leipzig later that year). This is stated in the provided paragraph noting his service in the German Campaign of 1813.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"battle of dresden 1813\",\"missing_response\":false,\"sender\":0,\"summary\":\"Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at the Battle of Dresden in 1813 (he also led the corps at Leipzig later that year). This is stated in the provided paragraph noting his service in the German Campaign of 1813.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "battle of dresden 26–27 august 1813",
+          "summary": "Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at major 1813 engagements including Dresden; sources note he led the corps at Dresden and Leipzig during the German Campaign of 1813, with Dresden (26–27 August 1813) being a principal battle mentioned.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"battle of dresden 26–27 august 1813\",\"missing_response\":false,\"sender\":1,\"summary\":\"Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at major 1813 engagements including Dresden; sources note he led the corps at Dresden and Leipzig during the German Campaign of 1813, with Dresden (26–27 August 1813) being a principal battle mentioned.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "battle of dresden 26–27 august 1813",
+          "summary": "According to the supplied passages, Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at Dresden in 1813; the Battle of Dresden (26–27 August 1813) is described in the context as a major engagement of the Napoleonic Wars.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"battle of dresden 26–27 august 1813\",\"missing_response\":false,\"sender\":2,\"summary\":\"According to the supplied passages, Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at Dresden in 1813; the Battle of Dresden (26–27 August 1813) is described in the context as a major engagement of the Napoleonic Wars.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 131606955422100637130115345396824252446,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": -0.1114965874404782,
+        "proposed_state": 0.06765958913231879,
+        "state": 0.06765958913231879,
+        "probability": 0.5343112407498122
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.06765958913231879,
+        "target": 0.6666666666666666,
+        "drift": 0.7188084930412174,
+        "gaussian_draw": 0.5309148705664173,
+        "proposed_state": 0.19830194664895842,
+        "state": 0.19830194664895842,
+        "probability": 0.5602002724787732
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.19830194664895842,
+        "target": 0.6666666666666666,
+        "drift": 0.5620376640212499,
+        "gaussian_draw": 0.10015007936790966,
+        "proposed_state": 0.2655902956038065,
+        "state": 0.2655902956038065,
+        "probability": 0.5734168347312085
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.5343112407498122
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.5343112407498122
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.5602002724787732
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.5602002724787732
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5734168347312085
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5734168347312085
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5148008146728091
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.2597246221071621
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.2768486972193548
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8603268371070433
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.7615158042824813
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.539001904025086
+      }
+    ]
+  },
+  "initial_answers": [
+    "battle of dresden 1813",
+    "battle of dresden 26–27 august 1813",
+    "battle of dresden 26–27 august 1813"
+  ],
+  "refined_answers": [
+    "battle of dresden 26–27 august 1813",
+    "battle of dresden 26–27 august 1813",
+    "battle of dresden 26–27 august 1813"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "fdad1a2a35c43fac10bb96a37f159aefa8510957a971736b707a6fb3134a49fb",
+  "errors": []
+}

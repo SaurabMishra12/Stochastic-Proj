@@ -1,0 +1,199 @@
+{
+  "payload_hash": "0f2141de72678b8179aea09aa192fe8d0f283921ab47824239702a3b92eccc0f",
+  "logical_id": "hotpotqa:distractor_validation:5ae1f79f5542997283cd2302|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0bd2748b634202a5016af73e17ddec819595836506ca84abfd",
+      "object": "response",
+      "created_at": 1794588183,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794588186,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 8562,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 576,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0bd2748b634202a5016af73e18cf6081958dbbb60f8354e08e",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9z4aHNbAQ9VHbe2Gyn-dXPZcfHdp8Tohl3DKc0ow62OLEXlDU8IaUOSCqmjBcvL3W_vZnq-lIDW2CX_tmpChh2tD5dzrySACFVRuE2YEddJRqndce9ZQu0y5hfHnhYjJ816MhkHqv3cWOIECabU9t9h2d0KMYMUeJhIlOr6bt7Uy7AEtNOJkXlHOFewmceS6ZSIO_Uad5dzCGQfeUr3h9DN0XyFf-XQsssvpjl-q0EZ_C4zf73qc84uwZLQOH48ie-FvbT_xMC7VYPASWblFvmHdD1u6DfjnMHMekkSOF9bK_DJSRp4ibWcz44iwd40gjrGgethWG6XbWGw5RYTdPVLJGz7RVasUI6_qxoNxIHeKAoKVk7QUqXVEy5vQ7vpvVI0J8WvdXDiN5_hya64jpHH8yNdEksyfuNo48lChOCYFOIYO7dGN6eIVKT7s9TLmSD8ct_ewPCUPsU7ZWQhVfmqVsZ3ICcarAwUIwyWcxWP-MFFUBO_v2DHaWgCoV7Z2han149jCj4X7W38LjfaS1_9-WkRS5zAJn65odxkSONzPCntXm2WvHjFvKaGPQyNKXBvYzLhYgJRAIWpI8h7Xz82dEvItKGyDiuMnEguYcu8qeuc59LmIpkN-syFdZYDdYNvAyd9XLc9DBuJfmW-Ozdeu0hZDNZPdbaX3KrqQiid2Grby35uibywUXppX9ErF6CZ3RETgU0Q6WJuMbSkAUdVvL3jsN_CX_F3FWDA7Sw-ArK0q3QjsVyO5z8DwtrFMq8NkO8m0nR3jNFsv6qaCstCXokb8MYi4ujfUVaBpSBQ-EV30ioZ-lLR85QvW8_7F1bkw8hvDcQDtUqxCwqhRVfqOLGwscXAxF54H-Uk37yMaSexfp3hJ_vKlN1arzyOs3uVOZQsVrmuTPAXLS_Hrk6Sb7ypLQer9ETNEb2MCS-pGi-hzzlHplhJhaykOX0aaBox0e4nyTwk6atbnvtjfBR29Xim58HQkLInZjwPanyg7Gz_NX2BxNIZ__yfI_s050lrMbNyqBnGKRichby8c_4mddedvrdPkIfzwdLREJZMw_KJxblsIIzYeWDpU_AF3PCmPV_b8V8Ze4LXRx_ppVmg80U6iFUD1srL5M_jIBGYCimXKVltFa7Kd-RO9CVfzfrvQ27vRHsRkZ75sWvd0NFAITweu9qDQHC92OchUi0XKZgumSrbMBDQtx4n6r_BrxAOZlTE1__el1spNdc8jLre7Nb5LWBqI9r2jiN6ImCoGXWG06AWO6YBwGQwOkolufD8Fo7kl0xkw_wKd1Xy85Jkq67wexKoTmeU9aaYDrUGYJp3cBA8o4sJPsr-QYQGmal1IMdSdPIPDpVHNLg60kZ1QV6RZtCOJnn625ucz0-_w2WUeL2krcAQdIkMmSsD373cgtfuYIvWugSyWrPPPl1kLvEjMpVV-6-BUcgvd3iHRg4GH3NiU-dNOI1YfU31zs7u7MvstnzlrF93BATt5gsfo6Ej4Gf2tDLaWlSLbTIlt_tDxP-tfyZKmaqunAvv2wuwkUupbA64ThOY3laX6nwu4VZqgndk_x2SuLFp8q5BqslehomkWTNKvrG7zWodwNmuJUWrut5sOPe0h5TrN2kM_ACSrL1MiJ67-39IvpQKlZvMVkqSZKfunkJl8sQ2ozv2wbNyJueZZACMHJCJTFeRVnlv87sDuN-N7xfE0G0wyKGL7i9bEnSUgjObrLe8sdnBHy_Xx12ltTQ23CJseAqz82JTM6CZ-r2ZlkFbzpwdlokqcrwkm59KdzCGCUqpFjfxTovmDWzHONXy3G2lVU3widy5u7FPdebsXP2-XLLJk2srq55SlaGpOY4pPY_xC0HU0rkUvufHnOnAUx11PJAj0YCiRfKTMuCN7vC2vZFBiAjtvktmT5R0zkHUg_xjr5y2d7-im6xug5pg1OqztPfJtkgBW7w5dY1cY5PJ4fHcfqlBtjdXg_UVFonV3CtxLJzm31U9HPr8E9Q8v_nudP-36FM4GmuXOFDRMix2GedZZw7-aML8uRYqkp4hTAx0X3CnjRpC4YDKumxRT-Po0CyCkBNZg3VLr02q0Fgv44LNIYZ-KqSAEcy62PGomiZLr6W8oP3hPn8A00irex32ARYb5sBO9f4W889KMVe0lJ_E07HNQLjXMMDwdjNjIu8rVXDInXDa3KzhmSKkWFAchZFHrN3aENJxX4jxysHWOrATk5X8WowKjYTbAb8yg0zWJl6KG7yADNTR-_fUDO9lcvbC87b30r9SdNwjGeYmU9d6aqCVxxeQYf_vAFmAFKxiQNoSuUc5PUVCEc2eyoP75_CVJd7cINZX2xJOrjoXEG810ku7ENBAMuydp7uopT8Iq7lYB1ULLuE-Zw75UluPi3cs_QOnxBlAa9ztVuraZk2-C_dxI5oN4XBQUJnJQeQgBfP_T",
+          "summary": []
+        },
+        {
+          "id": "msg_0bd2748b634202a5016af73e197b9c8195a868366a0b730bdd",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Love Letter\",\"summary\":\"The supplied context paragraph [5] explicitly states: “'When a Woman Loves' is the first single by singer R. Kelly from his eleventh studio album 'Love Letter'.” Therefore the album name is Love Letter.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1851,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1536
+        },
+        "output_tokens": 138,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1989
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Love Letter\",\"summary\":\"The supplied context paragraph [5] explicitly states: “'When a Woman Loves' is the first single by singer R. Kelly from his eleventh studio album 'Love Letter'.” Therefore the album name is Love Letter.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1851,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1536
+      },
+      "output_tokens": 138,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1989
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5ae1f79f5542997283cd2302|disagreement_triggered|adjudication:0",
+    "attempt_id": "76d027204a954dd49d4b01c1e65741fb",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00073875,
+    "latency_seconds": 3.1036683810016257,
+    "started_at": "2026-11-13T16:43:03.217293+00:00",
+    "finished_at": "2026-11-13T16:43:06.320913+00:00"
+  }
+}

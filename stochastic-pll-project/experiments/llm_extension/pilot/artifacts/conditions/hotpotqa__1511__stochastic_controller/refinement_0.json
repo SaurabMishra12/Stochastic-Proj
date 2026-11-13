@@ -1,0 +1,199 @@
+{
+  "payload_hash": "6f7eec38370da5471b4952e732db7df0f5c4c37ecbcac1bca3feecafa4b6a620",
+  "logical_id": "hotpotqa:distractor_validation:5a83a31c554299123d8c2179|stochastic_controller|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_0b5e01ac111f5608016af73fb51a708196af98702604b33de6",
+      "object": "response",
+      "created_at": 1794588597,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794588599,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 7449,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 529,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0b5e01ac111f5608016af73fb5ba408196b661a01a027d2666",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9z-3_Zi4obWX1DP_DsI0Az6CJ0KyMcf7FFdnHfeW-QeA2fQ159ECJPfSNLu_jAZ-hkWykIJC4Evj-tOF4qPMwif7r0oBw2v69lyUQcuxHa_ff_cDRWZEOJrl03S7zCi9lC9JqT1bRH1cw26IkxbHgVvsCQcgpH7W4ZSo1KKIvSxv1WFIRbO1qEFG7-PxtvGGFK2ROgw-sBnRWl3RYRssSFLHQvy_SxQr392sFkYssRf1FlA4VkvPz2CJcJbmGg-58o-NddSN2XOvQy5VAFHgYgBFwnmDa6uTdR9FQpf4mCszYEW9XhI2mnauYpBXCmpPI4rKsDPLZowWM9sHeu0NOBPcT8-YuHm5uSq-ToPRCM1_85nzYI1ePzfqe5VVdwE-sMKeO6_W-qkuiD-OtMDDPJstzH7fEOyB4x7Tm5aqXXTZcXfzvN4nxx-THOt12psfc3WbkYHbJ9Sxp0en1QO4AM8II2PxAeFX4vWIznt2vEC5sh1utbZp-wZsel8IB14GH5R4CW6NTc6p9l8yXtXQ0kh230wd3sqTk8cL8ZzcyCjGvY5263RJz7jHkwX4ISXCQ-zaTKBTLVKBzQc1XTJCIB8GLBFLHyDogAZGS3gC2g03FsbXMoM5pyy8hGD0onGKhhP3PwS59QNmQySoYsZCfKWOd1MbWlAr8opsHndOZ9SVP4OLWayz5PgOC3DmlCZSltU4J2q016TmxV4yz3aKALXzo9iFMYjl82yYDqo4NrZ_21BiuqPF9JEssbeAPWHFHzm0r9uLh4Wl8VEBKJ_RkKyY8iUZfSuWVOoZr7ylxKu1SF_NRXNG3lUwO_wxaNDFS9zYYpzqDEHo0zOLUO9EE_m4Tl0cvp5L4MxotwMZRQvLzbgvFoLQihIIUKwFbun7yastHmMfepPGKmSHJQEbSaywgzbqUJ3WAWIiB4F-F8lB7uF3Vhbxgoo7-aAhmnHnI9gFl9dSj54rn6XJTAm3HQYROBmo_3Azws5vnoqvCY8dEjqLVZnJ5A362fYm9GF05gowk-JhhYMr3ZYe8JbxAOWtm6fkUeU3DxkCnzwVJcT1-CBsjgIaMWnUlXdxIQRYNh8Wn8lGdDiEo2-R5DmVonysxGLzCVVhQ90QZgByabW_y5-ntn1vy2CVWEGl0iqjL-2S_qCBaDjF9vzLmR7okCtVAzPUVfZbtkQ3E__Gk6n3Xcmbxf0cMBiafmnjOvKuETS9HZsq2xPbzVCW93axTngoQs4ODmwLzc1jdu00bWhEugjusIKVN6hw-i35aGpAnugdoO5fxc4jnG-3Qi4VVXmq1yY78j3RiDXJTWqNpjS1FqTnlyIxDmlfbSG2n3I41LpP2e5yGW-F1MR2NjWfiTJ8rGr4nxKLnnPHbBrur6Svzz16U0SfddU0FMeWW6TzNQV0FNhDQtG6SpgEnkaS7T2Cb1lvkZK7wTntIEbR76RSCPGDcMnY0sVm1KtDs6Dwkc3K4khiqm_cxP1RuF9NL_C4BaqYLhrEYKpstwaHq5sAHDftoqZ2Jo2ZyglZzjyV4ct7GFfbBXcRE2V8nun4wbZ1V9PfFml2lGNE7KUltFHB9GOBLSz3xlztGJO9MA_1SCcYb9gKXYaCU9hvzlPIsRgheqqnvrBdZUHavM1AlUClRFa9tlro3gAsSx-DqeS20whBtT2w5kLPAIZ18txQZ8CwI5XeE4vFiP1HtSPzh-DMSUasI-gWnkCtdZ41_nI-x0nKNlt5Fw-JtAdoMvCaPxYguMwBv4BwjH4krYE5ExSiA09ku4ltxl9gP9jksGYwuDETgKL9Gx5Jzp0OJTgjgowIsD0MdaERqRVHfIcxQPIA73JF66ATV7fJawCm_eSlOeK43lLkLzt3ioKJ8nt8LC7Za4mGywiIY1gnZv1tIj7CsKTagNCJbMTjxOAswBMwNGgxqUY7VfcMDub2G0P25fkgQXBUNo7iGCPmsiKjxkWaDSgiX38bJzwdOtmOZwp9pFHaCywbCf5J5XuL0CWsqLqK2R-GRFfPqeja-B8u-P7igI2Ae3ZPMmjRAVm2XtwVD2EVkGsD3GQZo3R5oPPjTPTQfx5uE6kDpA5EhaN0GwjMnBMo5cSNztHKuhhM8M3njNgd",
+          "summary": []
+        },
+        {
+          "id": "msg_0b5e01ac111f5608016af73fb622008196a4d177ab9ca33858",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Adam Levine\",\"summary\":\"Multiple context paragraphs identify Adam Levine as Maroon 5’s lead vocalist (e.g., the band lineup and citations of Levine as lead singer). The album in question is the eponymous sixth studio album Maroon 5 (2017), so the lead vocalist for that album is Adam Levine.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1639,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 128,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1767
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Adam Levine\",\"summary\":\"Multiple context paragraphs identify Adam Levine as Maroon 5’s lead vocalist (e.g., the band lineup and citations of Levine as lead singer). The album in question is the eponymous sixth studio album Maroon 5 (2017), so the lead vocalist for that album is Adam Levine.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1639,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 128,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1767
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a83a31c554299123d8c2179|stochastic_controller|refinement:0",
+    "attempt_id": "5295f5a35f084d15808ae488043c1a1a",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00066575,
+    "latency_seconds": 2.746898156001407,
+    "started_at": "2026-11-13T16:49:56.455812+00:00",
+    "finished_at": "2026-11-13T16:49:59.202665+00:00"
+  }
+}

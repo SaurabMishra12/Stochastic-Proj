@@ -1,0 +1,199 @@
+{
+  "payload_hash": "287327ced0c76b1ce68cf3f6b9b54167e88565163f8a8f13e3bfa0d617c85c08",
+  "logical_id": "bbh:logical_deduction_three_objects:208|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_06606d21e8aac46a016af7402fc90481939bad97986e993a38",
+      "object": "response",
+      "created_at": 1794588719,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794588721,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2296,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 465,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_06606d21e8aac46a016af740307e788193895974c0690fb5fe",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq90AxNATdM8tn3bLtyUrs1OPz56XskoIqZBvURwaMN7_Bn23QlpugSbgtIUHyau8KB7oS-gXdVVLa1zYUFum_mg7G5B8cKvJIIuzX2_tnSp6wvpGVZl4PI0MyEHHwvaMTWr8oFvKXcGaVGjqin1vgG5_DgSSNzoGFojmSiaByzjgGRXsktn78Zhidktj62pXmIJ4FbQ4nPD1lJ3LwNRx9ZoS1wTWSXTIGNsbZNH_DZNqtyNEvw-_TZf_8gYA6c2nkGudwu9Y_h4kOL05WfqT0h_L74UM2F7aDRsG2YAJQlnL0me6eAi4AZN4iQrIxclfMpPR1aixoOHZuf9prkcMZ42GjbJUsBJyGjpjjVcMwe9y8F75WpsjT87uiyppS7nQIYHPSnbB08JEVZMyyXa4J_VaJWNMs7xT_BBitjXimAURn4dyU0hdh-4lS8Lu9Pd_IDPkB0e2oP36KQNuwZssn08A6v3j16N2iG5wGx4tK-DNEH1D0LtnrhGAoqYQUoRIIQGYswnRZw5IalNEptwJ5w0L92FsoOdCNLo-wYaulBHCu3s2uuGCm-Yt9MJ9YMxbYulTQ5s9cmYdpOVKjTNCTsrZi6RzsWqJ0EoDD_EI51NoS8SqL5b908nBAJcKi3onByGksGy7fCh-DL0rp3QwByphQFXICpcDpmAzQD-N7rOD-j0jQY3m9w99a45xvYuC1yDjpNHFsM9-ETcAR0qxp-7MS4_8GmSbUBpaNTVSpAKuELzy4v5r-74cyFqmqS2utt1msLWk3Pp0Tn9PzTmPqpAEe2TNv3KhG25yruG8BB5X34A3yl3dz7P-Nj-Y4ScRWKphkLAi4No5mEvnqMeiiwh4IOcPh93NcsaLD6J96cwSraSeB6nSzf9yuVpuIdIfKRveSqcmL5-TuOX5vec-SpXmhVLB_9797D45ZSovOD7N3KZ1ckVy0lTLadpEhowRAdvhtWppXTaAEYl9itHFU6MtETAdgrx0aEpMQBuGHBi2KDoxnVCVnXhM_kZDSxiqLniFoTIPBR7CfKHY-_YJFhUckg-zY0jIwd5KkngA3goknTAg4X3D-BcPX3zD2bBmAVW6wNFm9ZDo18FF-JOe4am2awLBSJlnoz4hawnuEU_7C9lRv7EQV4dJ6lqRziUby54vN6QkQmxQkXCzPUKiXzs5HkXFats9EquIRXvF5Z_5J9tDsct5NIeUqUNWz2knRhhuQ2e3YiQ_wyVYJxc9HYdpQ1cbG1ey2vb2bQsNHO7s3d_M8akIfP-u_XVmB0Y8cTaP8OIfmf0kix32E2UCQYo5Y2g54_EQGMEXtjWRh_5PIbG5D7M0Gh1ulghxhV80Oa-i9_H7J8yV2K6RtdnUvDsoQDQQ8QOZg1hzzEsCMlqbOFMHla2VRRKd2DU1iH4Hf1nIaAGQkN0UF3vOEtAxCct825dF27hoii7m8Y-mqUKAgxCud7gtQUyKs8vHkm17-ABee4A8VihtdkmHF5ws2NGFWWdgs0C4rO0wgcwOCJ1FSAvg0xTu1OHi2trZExfNV6KmdCg4HnYojauI7J-FdfFF_hhgI1Tw-giepN1rZFoUl7o24PDBvN4SjfSGmV2OLL1kOGO6OEbqSC0BqubLVJWhYDapoMop38zlV1DTTJ9j7PWhEuHrONQgog4nmvDjNkSBCz-FPpxu4YC5HGmyXbpXG1bYVHgt8EobyvDne25JtyTL4PKWYzdFIoOmXfxWW33N5Qz-xvDAqth30DQP_1H89Y0_aXhRymAskFEb8ZyHNDFB0hhOFtHiN4eKZXtz7j7n-Q2KzQEn5DyDifV2O4cSIq823YNW3FUMl5sOCC0NCQMhW98Y7e4pJWEQDvE_KBy8tG6L5yEmoYJvNjFBeahRDk9aDle4yTfIXdOjR6G6eFvR92ezWARyjpULTXTVs6j1ceJFkZ_n2vyUESEkdVGBCP-f3__sQ9uIkxh4ApdAMUn3CGR514QRyqERNVL3B4xnCjsZvAbhecwkFZDfgNYa6muXqTz2nc-A4byqQh824gD-oJo5TqL3KbpFzMpEwc9AU-DASFlNWqyDOzKyRWPnTiOyt2ew4VYWBCfaZi-pUF9S0yrRGMYCQlQi1ay2zgNu7Y6HAmga75jutsmqwrLzGIyQkJcaWOczolmhU3iRXCtFDLOnegB6oYnn8g-FZl4uUy7KD9x-6LW9xvuTWJV5f_Q==",
+          "summary": []
+        },
+        {
+          "id": "msg_06606d21e8aac46a016af74030f0508193bab53465dc380721",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"Newness ordering: truck is newer than minivan, and minivan is newer than tractor, so from newest to oldest: truck, minivan, tractor. The middle (second-newest) vehicle is the minivan.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 389,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 121,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 510
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"Newness ordering: truck is newer than minivan, and minivan is newer than tractor, so from newest to oldest: truck, minivan, tractor. The middle (second-newest) vehicle is the minivan.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 389,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 121,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 510
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:208|fixed_sparse|adjudication:0",
+    "attempt_id": "23c98ef37cd942d79696a3d4cff554d6",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00033925,
+    "latency_seconds": 2.577644943998166,
+    "started_at": "2026-11-13T16:51:59.164613+00:00",
+    "finished_at": "2026-11-13T16:52:01.742274+00:00"
+  }
+}

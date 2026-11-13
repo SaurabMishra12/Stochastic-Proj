@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:208",
+  "source_index": 208,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2058,
+  "output_tokens": 851,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0022165,
+  "latency_seconds": 18.901193363999482,
+  "wall_seconds": 234.20121652099988,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 658,
+    "utf8_bytes": 660,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Ordering by age: truck > minivan > tractor (truck is newest, tractor is oldest). The second-newest (middle) vehicle is the minivan.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Ordering by age: truck > minivan > tractor (truck is newest, tractor is oldest). The second-newest (middle) vehicle is the minivan.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Given truck > minivan and minivan > tractor (newer-than), the age order newest→oldest is: truck, minivan, tractor. The minivan is therefore the second-newest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given truck > minivan and minivan > tractor (newer-than), the age order newest→oldest is: truck, minivan, tractor. The minivan is therefore the second-newest.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "Given truck is newer than minivan and minivan is newer than tractor, the order from newest to oldest is: truck, minivan, tractor. The second-newest (middle) vehicle is the minivan.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given truck is newer than minivan and minivan is newer than tractor, the order from newest to oldest is: truck, minivan, tractor. The second-newest (middle) vehicle is the minivan.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "606bec62fe91dfeef84eec94c0e728c013bb7f2d94de58ef3336e69b6f86ce03",
+  "errors": []
+}
