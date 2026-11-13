@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:197",
+  "source_index": 197,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2045,
+  "output_tokens": 892,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00229525,
+  "latency_seconds": 18.875975967999693,
+  "wall_seconds": 131.00400632399942,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 684,
+    "utf8_bytes": 684,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "With three fruits, 'second-most expensive' is the middle price and 'cheapest' is the least. Cantaloupes are middle and mangoes are least, so watermelons must be the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"With three fruits, 'second-most expensive' is the middle price and 'cheapest' is the least. Cantaloupes are middle and mangoes are least, so watermelons must be the most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "With three fruits, 'second-most expensive' means the middle-priced. Mangoes are cheapest (least), cantaloupes are middle, so watermelons must be the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"With three fruits, 'second-most expensive' means the middle-priced. Mangoes are cheapest (least), cantaloupes are middle, so watermelons must be the most expensive.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "With three fruits, 'second-most expensive' means middle price. Mangoes are cheapest, cantaloupes are middle, so watermelons must be the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"With three fruits, 'second-most expensive' means middle price. Mangoes are cheapest, cantaloupes are middle, so watermelons must be the most expensive.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "f7fcb1ad4524c9a9bd38a6f335f65212b4ed55c103419b997f0dd123705fffbb",
+  "errors": []
+}

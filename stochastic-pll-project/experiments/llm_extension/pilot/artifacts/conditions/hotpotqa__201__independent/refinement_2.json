@@ -1,0 +1,199 @@
+{
+  "payload_hash": "49f64979224fcf7bacec9ee48f85c30e839820349dfb381b678303ea43b70768",
+  "logical_id": "hotpotqa:distractor_validation:5ae0aaf455429945ae959401|independent|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_00e6d41ac80de81b016af7238cd9cc8193842eb5b7cc187671",
+      "object": "response",
+      "created_at": 1794581388,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794581390,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6263,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 448,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_00e6d41ac80de81b016af7238dc7808193a71bdd569cea06ce",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yOOUDkGXuMCVQ1hNw_oVDQXWV3FUk3imvzXhmHP1DHJNCIiRaJT_xAKxhoblMrbBVOGNlXk3h-0Za9eUwGb0xmNwinT4PA892i_TsEmv4ipMQGchWcK0YKGy9t5zZha-_Qy3-A67s1epcQOSgZwldqq9KpsDv4LxOfe6lQ7Jq_H9blGps6s1eNn8iLWlxhXuVHZKUdn85GQpG2Cwqm-RuYHclEAxO1QndL3on_VWayVMCGYF_MMtBmgBx76JOBm4fb4haj-MkntI6aDEvLZ2WvwcP69HPuuQrgfahYU-bmOTxsrTtX70w-UESaimPamRgi7B3cFkxmDDHfECORez2ZLVwKfxEAiGaHtAmdgnf_1wjGakvXqTUoyRvsVuIixF1rbfnXkA3NkHxFJyvsX8neN5nq9g8iZO-_cTnbvQhH_h088zYv_8CGWcBEqK0DPa50c88vEeDTLZIeL0s7Bp7c_rcRK-3FGqobHmObkyvcumCpy0JXKbYCL_AVjgFdBDeGSVu-BYlvcb6ul535zQgIKiPN2yV0biAfk6GdR_M5FAz8V0PtD3gfRNadIaW2noNVJ3tdZ0seGBO6uG4PNLFyotpcL2JrYTyPMy3CPz-bD0d9Lm05Zpobx0kXgh1DG8191DnurJebQzbR7AiDvxC42ZfxtZNN3e-8FVXkS7igBTZvT3Iys_OIvFHNdjVWlHKw7fCjVHF13YwfhjclmRUsgcoxA_UxSP57d157x-ifDR0HZHKdlCFYx2c_EaQo1zQMszodVslfcJA-ukMgMvGqFskzcicijjdk_-a0pQRvk86OJUVprf3ZQBJD3_BkyYONQqdr-tlrXk3Gk74j4rAzocgQ6TFngH4FnOKxwyN4hH9sUBB_HtaGFkdDmlPl0ubnehJsoR70oWej2UXnlUAXqzM3yGde6AIsE29W5TXWlqIRu90YSW1PQ20Yq4_nkUcSzzpywhLlLsbviTeeaqY02zh1qzLtgwCNTyNwlqDdpTiq4VLUT9LSc9936p3-dO6YjASgFbGpo3MwPbgZSURHv7jHWcSpd9UFi0puR51fPcCM6OAOqjxHvzh9sE2J7QedzUNiATqzruMxrpdyGGyorubz8BXzUUXT5VUUHvfp0j2hIjMlpJp_DG9aJoPLPg7kK1ErdjO3I8YJ4FhvOCl9z2pzKJ_DZggVGB1MUJmZE0JIbRi01Q8j43U1V9-vvQENFRqa4cy98qK80T6T3ZKkZ2yRPqWE3efQ2GXCyvQJcDH9UG7WQK3FaDPSzzACbO8WxkhlLWIg2md2MMNP8YYCAN6Wg1wuA7QtMYSyUxT52xhMtJLw010RLiALeOxAuPXemB78-SrbEM6yVUHMhRUluIhqyCDtcwpJQ6qJQwOgQ6Cng4PZBwiTbj6JVSgssr5fsnjxIMDzZ86wJWiutWWaXONHaV9fUU4AdJawoPgO_R-rSPjD4tD0HhAXsZW3yTmioSgL4dquHVamCoLdgcSQ21PrAKP9EsApdJA9bvgHznk0jJn-d-F_ojDldXQm8bvaTvza9VYbIhpnMe4VXjBV0zqmDlVb9SG14qRii593VSgK2BqCKiJQcDEnU1F2GiPHfy4m2Zou_iqNjqDjcMNDJ1-0Ub9nw_ugwpsAcg1R4tfgixcs5NNCHU8qH_Rbq1p0LbD0VQzIrXC7_gJ7SdrKI9587IMaW5g5QGWUatOfKhGLFcupo1Ye1ZWupAWpTQLHmj5Jwk0VyOqhZES-qNDgIx9Wm1S-AnVpZYNWKhgslWs-EUqDA32Kj8QWCmw5RDya0XGy_tAFXyi1Vy-DoLWv0t9IoDeHZ4t5-RnqhP2EvoDh7b7fj7MSb4sNCtTxW-kfYkILuKPd3DakSZ-RNS9ytXbTmzaJeoxoqUSqYz_LYpShymzh4XqnadiSlK-ddbsMrjY6AJKSfKP32rYuWJQ3detzoa0k9Cq8Jgbw_W9gdM05kDaoSQxMa29bhpAkXN99V7t4gwqiTUxd-x8K0rqu6y2jnEa7G3TDrf7OHIY-BAfDxLjihHm4-Yw6bdaBvM2GkfL_441NdIiKvsgrXc9oWhA==",
+          "summary": []
+        },
+        {
+          "id": "msg_00e6d41ac80de81b016af7238e29d0819384121d4723b49a62",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Salford City\",\"summary\":\"The context paragraph for Chris Williams (born 2 February 1985) states he last played for Salford City. Paragraph 9 confirms Salford City competes in the National League North, so the club is Salford City.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1240,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1355
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Salford City\",\"summary\":\"The context paragraph for Chris Williams (born 2 February 1985) states he last played for Salford City. Paragraph 9 confirms Salford City competes in the National League North, so the club is Salford City.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1240,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 115,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1355
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5ae0aaf455429945ae959401|independent|refinement:2",
+    "attempt_id": "7bf49d66b86043749ee763076947fe66",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00054,
+    "latency_seconds": 2.565789776999736,
+    "started_at": "2026-11-13T14:49:48.238866+00:00",
+    "finished_at": "2026-11-13T14:49:50.804681+00:00"
+  }
+}

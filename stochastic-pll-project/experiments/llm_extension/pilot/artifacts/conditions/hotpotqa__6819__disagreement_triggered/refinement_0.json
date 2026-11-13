@@ -1,0 +1,199 @@
+{
+  "payload_hash": "855f48b84cb336317a44e34afa784042acf398ab4fcc7edbcbde37d3c5432fec",
+  "logical_id": "hotpotqa:distractor_validation:5a81ee385542995ce29dcc88|disagreement_triggered|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_0c92f55efd871df4016af71e5bdcac8193aed50f0cf1e039de",
+      "object": "response",
+      "created_at": 1794580059,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794580061,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6945,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 625,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c92f55efd871df4016af71e5c95388193af716d53392d9299",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9x5dLQl51dU0Xp5ikUEriuLRq46hhXl9HV6rTgiy7SvVHnmD2RwVmGxRDDPBygG2wxUaIZp2fiWfqxkLA91n1G4iLmyGLGPhCarkGKMw0BxBWHQ9-7lhSEO6bp3WsCnhpF9eJBzkN5ffYAOdJ6aPgNYJfGx6jGzohcPzW3T_Z-G19L_G1289Efz8S57DCfDPLgJxRFRuB5UfUuwp5cxwbuDuhEH4dbbDMxx8gTI5R7WUa5RsOz3Xdx9mbU7JAjGPu030QE5ctc1Sm5lsmEMfmGAvvtVXyo5f1E7zbbXKJai2wo0gA4C6yi_z0Xh_iYkOaM3FOe_pqRu_f9YgU6HG2yf9VtgvECe322LgR4cdVA7kW9A4F2lQnpWeRLJQV7_sPJhQ2f1pXSwGL-Tn3hwYaa_Muz-TAelpPphnLmpuNbK37uateENQwlA9yGU7jF4wuXrcK3DkvVg5jUh-VoSXH6EkA_Nphv-dHStsDjNTCt9KJ_AvPa_c_gmqZ2HFI3xjHEDZHbI5Wtv17X5KNoPFYogowNhBXZtDVp-Ya_uNJrIqq2QjcI5WGAwMkXCjVY-4klo1fJ4bu3kj6elpFvTO1GiBLWDtz-ifIIIuBCRHCF860r_gexJMSluM3gZXYjMdNoaLlyVzrYnr6UxRHkXy_t2RHSrGJIMtb7lwC_iSLmhRCfqslLFk2-4lbeF0y_ht9MhrkotqtGTGBUuqpbSBJSbiITVNgABSxFFvtc-HghZV727WMbrKdMGJiUzTX9INhsr1gkc6T353EPwFQzqrLEUwgU-x56KkFG38xcYFHNilj8S2YSUwjtaNoFmLfK2aE8Vq8mP6B42HvvSSkcCoHLzDYtAbDMXAwEUSNIVb7EgsbMWUdZV7590N8LN2CZ7cz5ueSmIztf9JNvSEhb4Liqwo6G071urtqwJRdndsMCb8j8crh6uX6dZuZ9cLBzhKCc9Rv7KxhKIFLUqnvJ9RSbvUHuhjAE9WT_UTEE7sSBuWoy6Sdwp-aYYr1KGzSfD2z19NxwyslALkmaGIsu2cqum3riZShKIjY6bslRsfnptXuJDA_J9kPlp7GNAkLW849hT381zWtVqJ94s8zAawboOiO2rsg7NQfRfmSUg4iGxDyib10YKIg14VTg72y4oFa78y7g_aP1HZ3fUEJGZpSYx-FiJeemlMYgmahthpNAi3WoFw6IjBZVcqcCH7xAG1UZYzXCikzds4HKL4D6gRA5eMB5xmgQnCfAGio9jUJeilLBETDvn4jZwl1iD3dGfeTlh2mwIyZ9z5SUsmsvt6d4ersJ0NV3GOAbBFQ7BDonYCB_xDBqE2u1l1bfoSdFkf4mkJwpQdwQFrx6Crg-g9KkJymlF4OgB1MsgkXKg3w809US_DmcVpnyW22cE9r3XzvHigge2hBNcDOIhndRDyyr9_ZZrYHU7OnAcgWsrtMKWIcw6ize72uvEvfsSlQjtJox1PsY34RNhXFQ72LgiMXpROmMpdJbDLkj4mLfJHtNWVx05yOF2TidPS4Pg-HMKNSL7rsqC6Sw8s-YNvM1Uzln34WvJTtv61wzzEUHo_uIstXSXpMr2DgwdFEwtQynBCiH-t-H5umSyl3STmXSeQU3ia0kItEHBaTSuh9yhzmVDjxVCe_35ZsFNgBTnmKFy6KWwmSzuqmz_UbGgaFWpCfoQCT-8XJbgKdEdR9o7vdcPvy-hm0Ps6mepnpCwAzLR0AMskPHHG7yeJdmKUCGXj3pozNLFzS1M9PMzQRGLKFWrq0e3GmBLrJjDBwU1Zkd0qAZNENeERHk9Mexx2E0kwreO2NkM_qTHr4UIpbEE-UNeXVcV-fxuDl-W25IpH9nxCpgsFiw0ALbLo4kkAQbyJY-3KSkjnknSbA6kryPsLMfOuVUFNeKGQPmRCqUtb7TEk--gIlh1IisNnLdAjgmqP0Ge-5MtvxqJGD1nsYnoQOb6WFORDrHaGWP1YL-IXK88SVpR32ieGYe3QdfS4taJHODWvae6NmeNUb9coZnEHzSOBg-b0Z8kepWaTlt9p7GN5DtSp84VQHM61YfWv8l22Z1fBVGijke29ntMkASV0nkyZzXlcYCnQxY3vr5DncyhXqVt8YBJGwSQc68QqY4VDSjeWmFf9VqiSxSbouC1uDl9Vr6kAonYnrfeKHcyF8lEntUdAmuknkE2alV794ad6rQW0Re0VmbILmM3UzjXxB62qb5x1cgvecnTpJKEevfUiFOl91xryhwhCkLCxbQuxfMQjn2BUtqe9DHZd8CC8D3ozmsJWlHvdsyOHsRcx11cVTXdsViK98B-2CTYzrgJdr6PHb7mAbL2y6lz7hHAMDhi71IMqnmY_3KDLXgoMx6prRcMO5YK12wKdJ-p6tlEhvGKZkjlsJTAbwXMPZUMMMTUbcx8NXM5hejTik_L4QgukG019Qj9_60QmbfCY2qMisGUYLUnPzzHVcqz_NfqJpUYSOUf5yTCJyufAKT0hN1uNQxlkzWiwhBOAMCgxb878Vkon8qnllDGg1FUsubDEVSYq81yiP6M0XN5xTx4LwQJLlAYnRRX1004Ci0WUFrvja_70sRrT7t_BpzQpt5LmLyVlLRdkrIwdAj7L6DhCB1Xp8qLU65FfYVgg2m-EvQS0lr7vIKfBo7MfVC4ZU6y6szCIH3M=",
+          "summary": []
+        },
+        {
+          "id": "msg_0c92f55efd871df4016af71e5d69b08193a1c1cbbdc59d6c20",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Lawrence of Arabia\",\"summary\":\"Lt Col Stewart Francis Newcombe was an associate of T. E. Lawrence, who was internationally famous and popularly given the title \\\"Lawrence of Arabia.\\\"\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1503,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 143,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1646
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Lawrence of Arabia\",\"summary\":\"Lt Col Stewart Francis Newcombe was an associate of T. E. Lawrence, who was internationally famous and popularly given the title \\\"Lawrence of Arabia.\\\"\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1503,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 143,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1646
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a81ee385542995ce29dcc88|disagreement_triggered|refinement:0",
+    "attempt_id": "b09b9b80719d4402ac9d8f3bbf67df34",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00066175,
+    "latency_seconds": 2.761252774998866,
+    "started_at": "2026-11-13T14:27:39.270243+00:00",
+    "finished_at": "2026-11-13T14:27:42.031503+00:00"
+  }
+}

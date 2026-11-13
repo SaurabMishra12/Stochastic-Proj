@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab2659e554299340b5254b2",
+  "source_index": 217,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "parthian empire",
+  "final_answer": "parthian empire",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 9628,
+  "output_tokens": 1100,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004606999999999999,
+  "latency_seconds": 23.71320855400336,
+  "wall_seconds": 182.21351520900134,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 507,
+    "utf8_bytes": 511,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "parthian empire",
+          "summary": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The Sasanian Empire succeeded the Parthian Empire as the last pre-Islamic Persian empire, ruling from 224 to 651 AD.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"parthian empire\",\"missing_response\":false,\"sender\":0,\"summary\":\"Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The Sasanian Empire succeeded the Parthian Empire as the last pre-Islamic Persian empire, ruling from 224 to 651 AD.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "parthian empire",
+          "summary": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The Sasanian Empire succeeded the Parthian Empire, as stated in the provided context.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"parthian empire\",\"missing_response\":false,\"sender\":1,\"summary\":\"Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The Sasanian Empire succeeded the Parthian Empire, as stated in the provided context.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 228914162426477922756285569428490115227,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.3538645171774424,
+        "proposed_state": 0.03916562500887735,
+        "state": 0.03916562500887735,
+        "probability": 0.22817103082979986
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.03916562500887735,
+        "target": 0.0,
+        "drift": -0.046998750010652825,
+        "gaussian_draw": 0.8457665862604276,
+        "proposed_state": 0.12807495735849989,
+        "state": 0.12807495735849989,
+        "probability": 0.2409386926652268
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.12807495735849989,
+        "target": 0.0,
+        "drift": -0.15368994883019985,
+        "gaussian_draw": 0.7072157344865861,
+        "proposed_state": 0.19098040060850752,
+        "state": 0.19098040060850752,
+        "probability": 0.2502619556363776
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22817103082979986
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22817103082979986
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2409386926652268
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2409386926652268
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2502619556363776
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2502619556363776
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.219499235426034
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.9752440192288923
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.028883956958551615
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.5531276026171795
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8123689832290263
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.3215524499661272
+      }
+    ]
+  },
+  "initial_answers": [
+    "parthian empire",
+    "parthian empire",
+    "parthian empire"
+  ],
+  "refined_answers": [
+    "parthian empire",
+    "parthian empire",
+    "parthian empire"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "5a8652609f6344ecec09f3bbc8eca813bc89fb85e3991e6606e3090df89d1e3c",
+  "errors": []
+}

@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab3dbd8554299233954ffd6",
+  "source_index": 5361,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "2017",
+  "final_answer": "during production october 2016 to june 2017 film released 10 november 2017",
+  "correct": false,
+  "f1": 0.15384615384615385,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12522,
+  "output_tokens": 1528,
+  "reasoning_tokens": 640,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0061865,
+  "latency_seconds": 25.521964782001305,
+  "wall_seconds": 185.74027521099924,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 1223,
+    "utf8_bytes": 1229,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "during filmingproduction between october 2016 and june 2017 for film released 10 november 2017",
+          "summary": "Context states Peter Capaldi reprised his role as Mr. Curry in Paddington 2; production began in October 2016 and ended in June 2017, with the film set for release on 10 November 2017. Thus he played the role during that production period.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"during filmingproduction between october 2016 and june 2017 for film released 10 november 2017\",\"missing_response\":false,\"sender\":0,\"summary\":\"Context states Peter Capaldi reprised his role as Mr. Curry in Paddington 2; production began in October 2016 and ended in June 2017, with the film set for release on 10 November 2017. Thus he played the role during that production period.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "during filming between october 2016 and june 2017 paddington 2 released 10 november 2017",
+          "summary": "Context notes that production on Paddington 2 began in October 2016 and ended in June 2017; Peter Capaldi reprised his role as Mr. Curry during that production period. The film was scheduled for release on 10 November 2017.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"during filming between october 2016 and june 2017 paddington 2 released 10 november 2017\",\"missing_response\":false,\"sender\":1,\"summary\":\"Context notes that production on Paddington 2 began in October 2016 and ended in June 2017; Peter Capaldi reprised his role as Mr. Curry during that production period. The film was scheduled for release on 10 November 2017.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "he reprised mr curry during production of paddington 2 filming oct 2016–june 2017 film was released 10 november 2017",
+          "summary": "Context states Capaldi was set to reprise his Paddington role in Paddington 2. Production began in October 2016 and ended in June 2017, with the film scheduled for release on 10 November 2017—so he played Mr. Curry during that 2016–2017 production period, for the 2017 release.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"he reprised mr curry during production of paddington 2 filming oct 2016–june 2017 film was released 10 november 2017\",\"missing_response\":false,\"sender\":2,\"summary\":\"Context states Capaldi was set to reprise his Paddington role in Paddington 2. Production began in October 2016 and ended in June 2017, with the film scheduled for release on 10 November 2017—so he played Mr. Curry during that 2016–2017 production period, for the 2017 release.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "during filmingproduction between october 2016 and june 2017 for film released 10 november 2017",
+    "during filming between october 2016 and june 2017 paddington 2 released 10 november 2017",
+    "he reprised mr curry during production of paddington 2 filming oct 2016–june 2017 film was released 10 november 2017"
+  ],
+  "refined_answers": [
+    "during production from october 2016 to june 2017 film released 10 november 2017",
+    "during production from october 2016 to june 2017",
+    "during production from october 2016 to june 2017 for film released 10 november 2017"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "3da568f4778dbccb2cd5b28a59d15820b9c645191d16b75ff18af864042e3865",
+  "errors": []
+}

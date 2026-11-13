@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab48f245542990594ba9c66",
+  "source_index": 3521,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "yes",
+  "final_answer": "yes",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12155,
+  "output_tokens": 1184,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.005406749999999999,
+  "latency_seconds": 24.187875660001737,
+  "wall_seconds": 239.67668828299975,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 977,
+    "utf8_bytes": 997,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "yes",
+          "summary": "Beaulieu Mine’s operation “folded in chaos and bankruptcy” (paragraph 4). Colomac Mine’s operator Royal Oak Mines was forced into bankruptcy, leading to federal takeover (paragraph 5). Thus both mines experienced bankruptcy-related failures.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"yes\",\"missing_response\":false,\"sender\":0,\"summary\":\"Beaulieu Mine’s operation “folded in chaos and bankruptcy” (paragraph 4). Colomac Mine’s operator Royal Oak Mines was forced into bankruptcy, leading to federal takeover (paragraph 5). Thus both mines experienced bankruptcy-related failures.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "yes",
+          "summary": "Paragraph 4 states the Beaulieu Mine’s operation “folded in chaos and bankruptcy.” Paragraph 5 explains the Colomac Mine’s operator (Royal Oak Mines) was forced into bankruptcy, after which the federal government took ownership. Therefore both mines experienced bankruptcy-related failures.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"yes\",\"missing_response\":false,\"sender\":1,\"summary\":\"Paragraph 4 states the Beaulieu Mine’s operation “folded in chaos and bankruptcy.” Paragraph 5 explains the Colomac Mine’s operator (Royal Oak Mines) was forced into bankruptcy, after which the federal government took ownership. Therefore both mines experienced bankruptcy-related failures.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "yes",
+          "summary": "Paragraph [4] states the Beaulieu Mine’s operation folded in chaos and bankruptcy. Paragraph [5] explains the Colomac Mine’s operator (Royal Oak Mines) was forced into bankruptcy, leading to federal takeover. Therefore both mines fell into bankruptcy.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"yes\",\"missing_response\":false,\"sender\":2,\"summary\":\"Paragraph [4] states the Beaulieu Mine’s operation folded in chaos and bankruptcy. Paragraph [5] explains the Colomac Mine’s operator (Royal Oak Mines) was forced into bankruptcy, leading to federal takeover. Therefore both mines fell into bankruptcy.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "yes",
+    "yes",
+    "yes"
+  ],
+  "refined_answers": [
+    "yes",
+    "yes",
+    "yes"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "a3aedd09fb5eac94066ff31a2cf4ed3131bd4a93b38e6060482653551fcc7175",
+  "errors": []
+}

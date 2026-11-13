@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1305",
+  "source_index": 1305,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "2325",
+  "final_answer": "2325",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1701,
+  "output_tokens": 893,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00221125,
+  "latency_seconds": 20.322887304002506,
+  "wall_seconds": 231.71466089199748,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 377,
+    "utf8_bytes": 377,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "2325",
+          "summary": "Total cookies 7995 minus rainbow 2595 and oatmeal 3075 gives chocolate chip = 7995 - (2595 + 3075) = 7995 - 5670 = 2325.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"2325\",\"missing_response\":false,\"sender\":1,\"summary\":\"Total cookies 7995 minus rainbow 2595 and oatmeal 3075 gives chocolate chip = 7995 - (2595 + 3075) = 7995 - 5670 = 2325.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "2325",
+          "summary": "Total cookies 7995 minus rainbow (2595) and oatmeal (3075): 7995 - (2595 + 3075) = 7995 - 5670 = 2325 chocolate chip cookies.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"2325\",\"missing_response\":false,\"sender\":2,\"summary\":\"Total cookies 7995 minus rainbow (2595) and oatmeal (3075): 7995 - (2595 + 3075) = 7995 - 5670 = 2325 chocolate chip cookies.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 240021912265095177602410167935213458172,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.6513071849509094,
+        "proposed_state": -0.07208649563070955,
+        "state": -0.07208649563070955,
+        "probability": 0.21287713325827895
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.07208649563070955,
+        "target": 0.0,
+        "drift": 0.08650379475685147,
+        "gaussian_draw": 1.0088662444595096,
+        "proposed_state": 0.048224915388305326,
+        "state": 0.048224915388305326,
+        "probability": 0.2294498827888828
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.048224915388305326,
+        "target": 0.0,
+        "drift": -0.057869898465966386,
+        "gaussian_draw": -0.4387531694689565,
+        "proposed_state": -0.0061231515731826405,
+        "state": -0.0061231515731826405,
+        "probability": 0.22185333330568677
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21287713325827895
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21287713325827895
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2294498827888828
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2294498827888828
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22185333330568677
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22185333330568677
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5121307224243119
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.568727322586973
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.16761306417464295
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.30192565470408517
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.10740179037156916
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.30439691942114167
+      }
+    ]
+  },
+  "initial_answers": [
+    "2325",
+    "2325",
+    "2325"
+  ],
+  "refined_answers": [
+    "2325",
+    "2325",
+    "2325"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "e4c3813d22f27480e0d22ef945784569d4aa76e4c6f1d9d0b2c2de5699942d8e",
+  "errors": []
+}

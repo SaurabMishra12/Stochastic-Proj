@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:212",
+  "source_index": 212,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2007,
+  "output_tokens": 887,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00227575,
+  "latency_seconds": 18.509530526000162,
+  "wall_seconds": 178.92236194399993,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 262,
+    "utf8_bytes": 262,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "From the statements: cantaloupes are less expensive than kiwis, and kiwis are less expensive than loquats. Therefore the price order is cantaloupes < kiwis < loquats, so cantaloupes are the cheapest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"From the statements: cantaloupes are less expensive than kiwis, and kiwis are less expensive than loquats. Therefore the price order is cantaloupes < kiwis < loquats, so cantaloupes are the cheapest.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 65100885943218893729825422316384130306,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.29064833946124624,
+        "proposed_state": 0.032168876279516714,
+        "state": 0.032168876279516714,
+        "probability": 0.2271867785719762
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.032168876279516714,
+        "target": 0.0,
+        "drift": -0.03860265153542006,
+        "gaussian_draw": -0.08633881530812793,
+        "proposed_state": 0.018752655386074325,
+        "state": 0.018752655386074325,
+        "probability": 0.22530787787072662
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.018752655386074325,
+        "target": 0.0,
+        "drift": -0.02250318646328919,
+        "gaussian_draw": 0.5297223747556208,
+        "proposed_state": 0.07513185985208187,
+        "state": 0.07513185985208187,
+        "probability": 0.2332778027260537
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2271867785719762
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2271867785719762
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22530787787072662
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22530787787072662
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2332778027260537
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2332778027260537
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.3655370821189148
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.28974135659437295
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6326349083159588
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.4359528011460414
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5778570332065335
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.014179923663466432
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "e82a28b0911a54cd8bef81403d7f8d65694c5ddbb73c67b34757423d90ecf784",
+  "errors": []
+}

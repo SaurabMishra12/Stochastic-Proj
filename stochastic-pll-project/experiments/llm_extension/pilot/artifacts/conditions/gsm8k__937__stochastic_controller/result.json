@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:937",
+  "source_index": 937,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "159",
+  "final_answer": "159",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1723,
+  "output_tokens": 1121,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00267275,
+  "latency_seconds": 19.058967516002667,
+  "wall_seconds": 174.43849438300094,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 153,
+    "utf8_bytes": 153,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "159",
+          "summary": "Each goat: 5 lb. Each sheep: 2*5 - 3 = 7 lb. Total = 15*5 + 12*7 = 75 + 84 = 159 pounds.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"159\",\"missing_response\":false,\"sender\":2,\"summary\":\"Each goat: 5 lb. Each sheep: 2*5 - 3 = 7 lb. Total = 15*5 + 12*7 = 75 + 84 = 159 pounds.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 197586269093646163583339154098237214242,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.8300519619905983,
+        "proposed_state": 0.09186991716636306,
+        "state": 0.09186991716636306,
+        "probability": 0.23568135653774538
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.09186991716636306,
+        "target": 0.0,
+        "drift": -0.11024390059963567,
+        "gaussian_draw": 0.926004337967228,
+        "proposed_state": 0.1833354261974466,
+        "state": 0.1833354261974466,
+        "probability": 0.24911616248446955
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.1833354261974466,
+        "target": 0.0,
+        "drift": -0.22000251143693592,
+        "gaussian_draw": 1.3025697651779915,
+        "proposed_state": 0.3055032294769127,
+        "state": 0.3055032294769127,
+        "probability": 0.2678423268695304
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23568135653774538
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23568135653774538
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.24911616248446955
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.24911616248446955
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2678423268695304
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2678423268695304
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.4718389915921737
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.4481360712654916
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.27692258305715367
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.9221242155473083
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8465803526082905
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.202662027843447
+      }
+    ]
+  },
+  "initial_answers": [
+    "159",
+    "159",
+    "159"
+  ],
+  "refined_answers": [
+    "159",
+    "159",
+    "159"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "55487d8e7566f1a0d8d8752c4d2738cdcf9b316636b8e5d189f7947233b4d975",
+  "errors": []
+}

@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a80799b5542992bc0c4a72e",
+  "source_index": 3967,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "panzer",
+  "final_answer": "army corps xix armee korps",
+  "correct": false,
+  "f1": 0.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 11193,
+  "output_tokens": 1616,
+  "reasoning_tokens": 896,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00603025,
+  "latency_seconds": 27.47827901999335,
+  "wall_seconds": 235.5821238009994,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 889,
+    "utf8_bytes": 893,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "panzer units",
+          "summary": "The referenced German general was Heinz Guderian, noted for his leadership of Panzer (armored/tank) units in Poland and France during World War II. Context paragraphs identify him as commander of the XIX Corps and as a leader of Panzer units.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"panzer units\",\"missing_response\":false,\"sender\":0,\"summary\":\"The referenced German general was Heinz Guderian, noted for his leadership of Panzer (armored/tank) units in Poland and France during World War II. Context paragraphs identify him as commander of the XIX Corps and as a leader of Panzer units.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "panzer armouredtank units",
+          "summary": "Heinz Guderian, the German general mentioned, was noted for his leadership of Panzer units—armoured/tank formations—during the invasions of Poland and France.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"panzer armouredtank units\",\"missing_response\":false,\"sender\":1,\"summary\":\"Heinz Guderian, the German general mentioned, was noted for his leadership of Panzer units—armoured/tank formations—during the invasions of Poland and France.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "xix corps army corps armee korps",
+          "summary": "The passages identify General Heinz Guderian as the commander of the XIX \"Armee Korps\" (XIX Corps). He led an army corps (Armee Korps) that he wanted to use to rush north up the Channel coast to capture Boulogne, Calais and Dunkirk.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"xix corps army corps armee korps\",\"missing_response\":false,\"sender\":2,\"summary\":\"The passages identify General Heinz Guderian as the commander of the XIX \\\"Armee Korps\\\" (XIX Corps). He led an army corps (Armee Korps) that he wanted to use to rush north up the Channel coast to capture Boulogne, Calais and Dunkirk.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "panzer units",
+    "panzer armouredtank units",
+    "xix corps army corps armee korps"
+  ],
+  "refined_answers": [
+    "xix corps army corps armee korps",
+    "panzer armouredtank units",
+    "army corps xix armee korps xix corps"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "bf0cb444a77f2e2cd619faadb59401c1493f16f15ba73df3433eb55a16fab7b6",
+  "errors": []
+}

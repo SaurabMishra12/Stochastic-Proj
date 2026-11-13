@@ -1,0 +1,199 @@
+{
+  "payload_hash": "1e6e87e196d9927ce280ab2ce7b7a4d620f83c0e91651c7b429efc6153a713c6",
+  "logical_id": "gsm8k:official_test:731|stochastic_controller|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_0c9e1c7d534fc9fe016af72ad796ac8196af3872080baaa703",
+      "object": "response",
+      "created_at": 1794583255,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583258,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1600,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 580,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c9e1c7d534fc9fe016af72ad94c688196919bf06026fc45ba",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yraviE4BdasPB4_CBsz5K9fTgqUbvzijXfP0P6Tyd3yWreVO2d6Ng5XZA-bVlzofR9uxki_n-jMbcbVy9KOcMavlBeWKc1twEDf2OJSsjeKpNPUKiU8GWPJlgiQUXo0aHyv2QPTRsMBOsoltJ3RhoHgYhKFa6L4xxP54GoqEqI-PtV9xpHF99OSU2abiZFWkA-S0sU_mlz0lJZSUmgyL0Zeu-yUGYKTc4Z8_McFTek2nybGRjXq6tmNKuZY4Nr9gyBuMm5-RT1AzqL2D85geieLXeFSEaofZcbNkP_gJCqc9aAdQtxQd6ZlAMr3wodT1Mp5t6Wrl3oIVPagJMD5n4qq7JWT-ucBNQAO1iZjKYKRMnXTzaQwjFuy7tBUdXWoVPUi60SCCc2Gx1yLUtyFR2h7vqbRr6Hz5hEdeTJLQmPD6ziNPBASy1KR1aGYBS3ksMlKEUzgpfC0ffDIMODNEKMoODv0_W4PqJCD268TyMI7ASD3qWdZq2SQ3xsb8bC-_uW3nkDqQlSxe8Whbv0T7BzUaS6PZXci6kV3VxSM3VsQGKnoZd9PKQOr9jmo9_RGB7eISFkUtZUaw3t-1nGxXDXCHg3Ou7-wlJtluOJrQHemLOWu-TIaI24qp1owN2D68UYuHOVQSzSJGi1isQ-9LDnDvUrnVwCVpmGwIPq0GKlm1FJ4a-tVbz2TshnjOJxyN4zaBuk-TgxDQRjU5vMEuDfTsp42BEXpQsKrdOPKklxuhFJArjjDbwTagDvwukeauTKTC-yQB4SR9N9YyuxVHEUeojDaQG0aXPoZAIdMRFepOxQk8yRpwQ8Bq9Y1GicX-GuVPdPR6AYwGotNOXjoZNhsWh4utqRuxYBgl_LYpRr-5993Tjdt_FBZowLc90AnxP1XtJcc_5BTWVmJMFz_tgeQP6PUwbllHb6EHSJbr_4YffbppfS3knGLGAgUqhtxgKPxL1OE8hmVru4xR3uvqMZ1vkHaJ9tk8Q3yIqMGPimrIXfPXeFBxRib8fNnaeFqeTktVaf47w3iY4Hm5l1XsOKPxDr7az8Khe9eioDEJitKHfchPG6PmpZwPn2bZtFzxta_0UAfe8HBivwIMuKxbKuy42goU8mMWpcfskJ84jGvBMiATLaTMh4VTS3ou1Wqr8GcpEhlvklwwCsjdqA1fYZwBoG8qEIdxACrWr2Hesg_11duPbTNhuG1V6gyHOZ0pewUCf1oO8rkI_EAhtxIJiH2brv6wS2Hl9JE_BKsGR8K2U3dLffAvYmk3rApJhhIIdWHjrffftWkmI_SdIV3HSX83trkS6zAgp9c_iuu0Qwzs4q2hr5TbTq3tt85VAD3NGqxVsW38dZia2PIOX0WojO-u_EHKpwvNIbNzHMfzyIq3xYmjxvmI1r_I4oRR43dMM4pklF5ZdS7rgvZBDbpdGcq-OqbvnCr7VkRaaLkZheXJyMTEnnoWEZ2YMXdedJkmqSMS4ixCF43eUThecgSdLtOr-t5Aqh5M7nKPSrwBXtq02uIpq2xR7FGqGZCq5pQzKT_lKwmUFVfsnsvNKq5dS-QvFBQvsWXcHgqOhiidzYb07PmDzq8j5lMtnxING5J5feYFka6cUfTui0X5cVXY4-YzotlWeE191Mrn7R-UeaI6OLR8qC-xL5KYhHgwhUcAugwQdJfR7wrc2UuuoS1kfpRCZzLEefjpXq15R_m_bW44MRiaaZUsT8bKpn0LD3dQSHZmnS7SqBz1oBEArQFzZtIomGuysWEOAPw_vCY52fDz4BHOn07sn_prUspHmz6ELMDXPJIDW3CgU_AH6zR9XEIAXJMFawOPgUWskX7g-y806H99bXnRLAiClei7yQ0Sw_YD1zltj5pRisPUc9unNJqVSaHTzf1YW-sQPOUhpa2VxHixPVojlLZypEkPJlmfgjmulIibrtFA4rRfy8EFGlZwj5vCPfkIfVXcMYDEdv4gPsQcB9jo1Cv_61kE_EuHltJkDCSAZUTB_xTsXuqfROV_GyU1dPLs6VVnfKeKspgnu28wPlP9mJBrvOOYkH0NCdgK-P9pmSKY0mP-UPwnLkXbyEU9iwkVSiz2cW4jEgZg3qoUC2ymTLXgHHEwnlE8nPvPzZZtMOSCOFkSvVa_hLP2IVePqHUwTvGBSoBjFSvkDUS3Dua9MyMXzhs5zAFkh5kVvnI6U3yBC5-3dNSdJw0JzU2el8kBQdnegmvKpcDsUcGKNHfEGULLtTNUhCzingm8nQrgHxPgey0DS4TdjjrQbjm3LNfOCUHlJ_NmYJxG0g-jDMIigX0zehxH7cNP94NQR2JTwWEOIVQ-HjLsyr5bQJv4LKjBKQsSBXn11SaHT5qq_dBpIVrFAM9cWbdLqKiNWv6Ar3s-vWGwxr8IuaaQuq33hBBwKRgiZLKEeGOxJBNHNnQXHn41xjbIRqLckHKA6QWuRwapO7sW1FJMMDblXsIjQojv1U5hW9Uks7zDxnXfwag6VML451CSMwGTfCn9AeKj0OLd55i1SOeuVoZ8Uey7cloPEz1yn7uWZDRWDBFjlkLJ1VDsjQC5hF4_rBXvJWpgDQPCCEgt2azWmXY_fFXoFg76RaasH0tjWhJDWIzkcHOaOHR2WCEiZ0U4k-Ze6B5EDg_5SmRX6iEAjlrKa_Wuxm7KPP8s2WzUVH2ByBwKAYPls3KIjxl7j_RkCu6tLXWoh2_vxHzyK8f8W1-41FffpvabdddcLon9PJA4J0c6dsRKfEURwBMfuPJoceGqMyQir4NSGtLihkrn_7Ueg==",
+          "summary": []
+        },
+        {
+          "id": "msg_0c9e1c7d534fc9fe016af72ada1e8c819680ed41a3d55b4709",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"1\",\"summary\":\"Total smores = 9*2 + 6*1 = 24. Each box has 3 sleeves × 8 smores per sleeve = 24 smores, so they need 1 box.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 271,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 177,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 448
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"1\",\"summary\":\"Total smores = 9*2 + 6*1 = 24. Each box has 3 sleeves × 8 smores per sleeve = 24 smores, so they need 1 box.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 271,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 177,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 448
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:731|stochastic_controller|refinement:1",
+    "attempt_id": "650db67e021c405f8430cde8f0b62d11",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00042175,
+    "latency_seconds": 3.9482257540003047,
+    "started_at": "2026-11-13T15:20:54.951852+00:00",
+    "finished_at": "2026-11-13T15:20:58.900047+00:00"
+  }
+}

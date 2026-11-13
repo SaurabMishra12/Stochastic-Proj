@@ -1,0 +1,308 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a89fea655429970aeb701eb",
+  "source_index": 6953,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "outsiders",
+  "final_answer": null,
+  "correct": false,
+  "f1": 0.0,
+  "completed": false,
+  "final_valid": false,
+  "call_successes": 0,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "reasoning_tokens": 0,
+  "usage_unknown_attempts": 7,
+  "cost_usd": 0.068543,
+  "latency_seconds": 22.165702960999624,
+  "wall_seconds": 181.37188470100045,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 378,
+    "utf8_bytes": 378,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":0,\"summary\":\"\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":0,\"summary\":\"\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":1,\"summary\":\"\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":1,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 87086598690616876568040161922903463142,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 1.0,
+        "drift": 1.2,
+        "gaussian_draw": -1.0523958148700565,
+        "proposed_state": 0.0035211278743602914,
+        "state": 0.0035211278743602914,
+        "probability": 0.6797921780382026
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.0035211278743602914,
+        "target": 1.0,
+        "drift": 1.1957746465507675,
+        "gaussian_draw": -0.5203053303943681,
+        "proposed_state": 0.06551134523239471,
+        "state": 0.06551134523239471,
+        "probability": 0.6904895698972491
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.06551134523239471,
+        "target": 1.0,
+        "drift": 1.1213863857211261,
+        "gaussian_draw": 1.0233007242192598,
+        "proposed_state": 0.29090861949865143,
+        "state": 0.29090861949865143,
+        "probability": 0.7276489568167639
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.6797921780382026
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.6797921780382026
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.6904895698972491
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.6904895698972491
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.7276489568167639
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.7276489568167639
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.4110405793563081
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.5116206630417388
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.23323654050919385
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.44323700409464195
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.36894581807067206
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.26598912707730626
+      }
+    ]
+  },
+  "initial_answers": [
+    null,
+    null,
+    null
+  ],
+  "refined_answers": [
+    null,
+    null,
+    null
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "6494052b30424270129640fd866be10a0fb784603f1a68d1e89667a34985e024",
+  "errors": [
+    {
+      "stage": "initial",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 1,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 2,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 1,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 2,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "adjudication",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    }
+  ]
+}

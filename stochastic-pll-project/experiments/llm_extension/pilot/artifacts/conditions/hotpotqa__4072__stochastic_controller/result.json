@@ -1,0 +1,190 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ae1f79f5542997283cd2302",
+  "source_index": 4072,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "love letter",
+  "final_answer": "love letter",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12085,
+  "output_tokens": 842,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00470525,
+  "latency_seconds": 22.650695677999465,
+  "wall_seconds": 234.9924918759989,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 266,
+    "utf8_bytes": 266,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "love letter",
+          "summary": "The provided context (paragraph [5]) states: \"When a Woman Loves\" is the first single by singer R. Kelly from his eleventh studio album 'Love Letter.' Therefore the album name is Love Letter.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"love letter\",\"missing_response\":false,\"sender\":1,\"summary\":\"The provided context (paragraph [5]) states: \\\"When a Woman Loves\\\" is the first single by singer R. Kelly from his eleventh studio album 'Love Letter.' Therefore the album name is Love Letter.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 29814457342240022041772093358669234537,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.49319554482171174,
+        "proposed_state": 0.054586743871949506,
+        "state": 0.054586743871949506,
+        "probability": 0.23035095200217862
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.054586743871949506,
+        "target": 0.0,
+        "drift": -0.0655040926463394,
+        "gaussian_draw": -0.612262050550142,
+        "proposed_state": -0.01972865655451033,
+        "state": -0.01972865655451033,
+        "probability": 0.21998000034454585
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.01972865655451033,
+        "target": 0.0,
+        "drift": 0.023674387865412396,
+        "gaussian_draw": -0.5550636752254018,
+        "proposed_state": -0.07879550887273766,
+        "state": -0.07879550887273766,
+        "probability": 0.21197918692034656
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23035095200217862
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23035095200217862
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21998000034454585
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21998000034454585
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.21197918692034656
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.21197918692034656
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.7508611619036002
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.721152074525645
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.2545735049780621
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.08819750204607535
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.3482938353599333
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.4572685523978478
+      }
+    ]
+  },
+  "initial_answers": [
+    "love letter",
+    "love letter",
+    "love letter"
+  ],
+  "refined_answers": [
+    "love letter",
+    "love letter",
+    "love letter"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "9ffb0953d05a37e9613a2558f7ad56766e93f99698d52269736149fcb713f53f",
+  "errors": []
+}

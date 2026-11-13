@@ -1,0 +1,199 @@
+{
+  "payload_hash": "0e560dd05fbd878dd030d3905d2032c0ddc169b5d2052a6acfa0d756991683d1",
+  "logical_id": "gsm8k:official_test:28|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0b88964e286b623f016af716e00f8881958f309b5f43c1f128",
+      "object": "response",
+      "created_at": 1794578144,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794578146,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2031,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 576,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0b88964e286b623f016af716e11a18819584a008597e33979a",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xbid5gOpJEk-l3SErl89Oc092L9aWb_UmAgdH7nw_-70IRAHSARdRf7XCMFg-SXJjISdU3fzBvk9MCQeb-UR_9zJpf6MKV8WViixbzxs2DpixG-swe9gzwjyqs3ySirLKuKwkgvVoswBds5_nCSYDKJQAl0zAm_Jc8ankjk2vdCTWbrrGNMnQTtY1gOQmkyt3RK2DSFle0xWRQ6tr_K_1VEUaZOfNS-8ZsWS-uKAMrjq1jURHJaeJ2AdfGj6dk5DD1W2zgr439_alDTbcg2NtWS3SCv8b3nGATaQN9TMLeeqzPJiwYTLqbVmKxf_BohRgSTvjOMjLz2TuCR9fE57VkcAVnglk-acLSTdRWgQpucsUY0ZzWMUj6SPMw6SjgDEohcVDNSXccwGb-PpRC1XmO70GrzytKK5sAJzg3CB1HX8l9OTjL43mrHKU-aqUcvGmhYEZj2xU051UV6Z_L4ZlC7GDrWIgE72WyHielenUMOnRXAwHAKky4ZCKQSNKkF6x6KDNEAdFRXfB0DxOhSS1z6uzbwVujjaPS81-JlXCK18gI-RmBXD-PZj0IuBE3nwSp_yyu2AgKtJ_R9dCgYVLbrL-wFDe9nqaVV0-TNQvDJCVrNlfcdB9qVaiyv-aSFtUpjiv8ihZA_Uzo1soLhLMJF2gXs7Ub2e-u71PzZf1928ql6Nl_rZXbdEhhCafmufzRU3QLtFjjOLdCDuE12kJZlhB4y12MW7ce5gdSjfLkxBVeZFzeJPtqRvTTBmvYu4WT-1YOS3cnGPAjaj8R0oc2XaCPNjHztTMUw9u7NcawvskOp3kbT8FGhT9n7oCgD6bj2GDWDN14V4_2vxO7UAsXGqGSk06PKMZGY67PUZSkCPYxiLmWMAY3fsCxOlPZ5pnoK9UBz7DGFknOGm63-X_KdARPHV8-gKhowHNcyewWPmPs6lSroH6LczIAsz-t3UMr2t5H19E_IJ0aDgP2f6f2UwgGecDFO1rlXcGc3t5pFVzbctnISTGuqOQbhE6FbK9xsqiZk0XbJWxIHtspaDdSWnM5QEUrdR6DVhvtxS9lrqks7s4qKI7Gt3pUyo-mvIAHPdKVOqqMg15LYAJcfgZjTHZOdVo4zv4FeFX713wAzSJWhUchCTnsr0BDl03lu2zjq5KgRRvIi59fUUbxldyXHVKZ6QMthm7OKkUcXBJohFzNBC1uu6HpGRgYl7I2jjZKthB244rho9Ut0FIjLVhYxLS4sAN3x9-TsecW6VAe5YByKGSLZzqR8QTfWB4wLqD2FtscsIxxJuxePQ41Zuw6fNIypHsamB_7NeeT4kq9fzqzh6oDxwKq1onhOVvEjx25Ttx94aePBdGriqDUgciKGmJ_sHqppe5RX0ze76lB9i1enyy9G92LM7Ol5_QLyxLrRYG3Dmkza5uY6SsgNTmDmSfDXgciNoZ9Ic_1Uetw5JjZWM8qvxLo1-NeqeFMWZZ-NPPjHpzmSKFavy9nCE2Jp4NRYrlKRgwdoPJpSJdFdr1nr-6EFovXs4QQkDnQdC1_Oi9rAnlc8toMEYQN8Jfe4LupW9_yfWVMrU3gRKM_6qTP5FwvHFqjsXm-SvEhWV69SciDYMAjlNsx3SMkI7fdKBNqVWPh0ourrYivOwGLO0L5p2TlZLoVNt3KUjZBFS8CtBwbXl2SKOuX4RMEWc0ZHZRUSbpTiiw2n3mkzUJMCi9DCVkL40NnuoKZu1mJuMs5D_R3F_H_JlDwAIFLz6kVwE3nru83Tijs2ERyP47SWk5JDxh_HRn9uvs0HDTB0sin0xABusg_hqfuOhckcA4eNgrOwXcaPuMtA3IqgFzhZ4ZxqLE1BOxjCVBoqw0b5mfVKSzhr3FBdZrg2JLpOjTIs7RZJbIECZTFkmkVrAK1pa-GoJ0gkdckrwFBdYz-PuhDYepXwBGewLQrnTlQ1Dq2xUTUheMGyYpp-QyGRCPhqIQbSqieQq9Wwwl37ik2I2S21YG4LzOkgqkJ4-xGm6ghN6VP7l_3-wFjAtMjyESkOSZ7d7lZJE651CoxoE_BnCVbdcGoBVcOrKEeIsjhTBQjV5yCbG-YkxQ7yivZpoDJ5vElrW0hsizQ0roWd4e5o41HMiut8uuzDTxron5IuN0Udv2AQFBRNS78MoytKQ1oXm6uM7dUSxBhlcYdGaVOwbcwhxYX_k6DuilnM-xyM-07cq-uJgOkIPln4D4AMF3a3m72h5oISUsGMb6qTUh9ZbRAibkS-sMGlR9N9YYquX6YP0muDjbPh4e44FK34oCBJy2qMdqONM_5XRZd_CDEvwiWcMbeXbRm64cWAwHDVsclgmVMc9W94i7xGTQeJ0Mvb8cCkcCkjAsr-_9Mz56vHzsAjYzjiLADWAjwFqKOMrIikJ40y3ubxe4ZtHTvN6bSBdS37LTFjRBxxevO3OUxK8yZTUzeu2wE2FZNa8FDp1V-FPxda3EUtpSmnOBVphNtVljpu9HCMmsYN-7JGcGOpMJH328V5ysCa-PFj4XCFA-epd09SmgijdJfBg7xuWMuXjy6uO1lS3pmSgL8iikSDraVU",
+          "summary": []
+        },
+        {
+          "id": "msg_0b88964e286b623f016af716e1bd0081958fc409ae320a2b7d",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"25\",\"summary\":\"Total trip 60 miles. Second stop is 15 miles before the end: 60 − 15 = 45 miles from start. First stop at 20 miles. Distance between stops: 45 − 20 = 25 miles.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 367,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 149,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 516
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"25\",\"summary\":\"Total trip 60 miles. Second stop is 15 miles before the end: 60 − 15 = 45 miles from start. First stop at 20 miles. Distance between stops: 45 − 20 = 25 miles.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 367,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 149,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 516
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:28|stochastic_controller|adjudication:0",
+    "attempt_id": "474c0c2eb05d4821853714e39ca68ef9",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00038975,
+    "latency_seconds": 3.0076162749992363,
+    "started_at": "2026-11-13T13:55:43.451814+00:00",
+    "finished_at": "2026-11-13T13:55:46.459442+00:00"
+  }
+}

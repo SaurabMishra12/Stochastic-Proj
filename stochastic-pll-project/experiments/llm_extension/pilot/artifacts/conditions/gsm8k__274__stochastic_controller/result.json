@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:274",
+  "source_index": 274,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "3200",
+  "final_answer": "3200",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1792,
+  "output_tokens": 965,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002378,
+  "latency_seconds": 18.387577616998897,
+  "wall_seconds": 229.0231095929994,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 181,
+    "utf8_bytes": 183,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "3200",
+          "summary": "Compute total cost: 20 packets of tomatoes × 40 = 800; 80 packets of celery × 30 = 2400; total = 800 + 2400 = 3200.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3200\",\"missing_response\":false,\"sender\":1,\"summary\":\"Compute total cost: 20 packets of tomatoes × 40 = 800; 80 packets of celery × 30 = 2400; total = 800 + 2400 = 3200.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 220489016433150357848586518546311241868,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.767395030226998,
+        "proposed_state": 0.08493506562138758,
+        "state": 0.08493506562138758,
+        "probability": 0.2346834512153339
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.08493506562138758,
+        "target": 0.0,
+        "drift": -0.1019220787456651,
+        "gaussian_draw": 1.6121558039348935,
+        "proposed_state": 0.25317580766911485,
+        "state": 0.25317580766911485,
+        "probability": 0.259713272975228
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.25317580766911485,
+        "target": 0.0,
+        "drift": -0.3038109692029378,
+        "gaussian_draw": 0.025297241720336892,
+        "proposed_state": 0.2255946023312846,
+        "state": 0.2255946023312846,
+        "probability": 0.25549355623480974
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2346834512153339
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2346834512153339
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.259713272975228
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.259713272975228
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.25549355623480974
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.25549355623480974
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.3458775755591337
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.4955764023805228
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.03303321336582943
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.608134362353482
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.6646046472284883
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.2556763563734935
+      }
+    ]
+  },
+  "initial_answers": [
+    "3200",
+    "3200",
+    "3200"
+  ],
+  "refined_answers": [
+    "3200",
+    "3200",
+    "3200"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "e2b59cef0ce733f4a8f80bf2543cda17d0f1a267a11f5c10e94d22ec6bac6df4",
+  "errors": []
+}

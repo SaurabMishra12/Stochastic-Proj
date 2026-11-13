@@ -1,0 +1,199 @@
+{
+  "payload_hash": "090efcc108ee63365229eda6fab19b13fc1649eb10de62b363e100df3a577b76",
+  "logical_id": "hotpotqa:distractor_validation:5ae0aaf455429945ae959401|disagreement_triggered|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_03bae95cf2ce754e016af7252b48d08190b0eee1f2e2ea6bc8",
+      "object": "response",
+      "created_at": 1794581803,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794581804,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6890,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 513,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_03bae95cf2ce754e016af7252c1ac4819082b553c8ea89c8bf",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yUsBW6sDD3nquxPhva59cW_FGldxXoiqu_DpEYircGepYc0jCHx0cNJsoeK0vY5eojdCo16TDCOpUn-sv91IXMlaG3pI0B2g_M7chxUT87QylBVJATVu80dfLxDlh7Y9VMBPvkUh_vVzCOlBNHy39IVr27CQHlDZesUpa_ud1uZfF-B7ZfnpbRovTPv-9gask-mYxlVOlaoBRuVIBeYJOlm9jwCTKI5BwX90YoNFxR8U2uuSNY8mk9EFlYKs2Q3C7DDVzI6_9cLBJuEJukDfqBU4ywqabaDHViq3bozKBHhn3DlSO2RBmVrd6L11u-IdSFymA7tEtS05VplJ4_fyLE26qRZXBcTbEq5KYzhoWHqKp-YJj2Z_G9E_pounQDRZRq8ZDIi4tGfScapGWtQWUoEHd5WMpb9JunLXkCnYFcUBYBR4yTZPaXMdY4uOzAXVJNmJZPD7VAIfG672WGMSxI2ohiBZD8y-SgHlMN60dlqIIdsbjDciMt-mBisMt25ka_npa3wDVwyBFdCO3r_7t0gW4_NCxCFPOw2TpmB82UHBVWiTVtF_P_QKOvQ__LYa01MWKFQtP8R1rknJxilDIcVuXcvfWbJBKKOktzBa-mjQyPGZzCjmi2GdcC-ef230vinXlN__QIn_mWiSppySbyky21wCDeu2IMAt_mVCeXQXTVBvLoIT1YWMb316NFtGTF6-_U2saZnqgvraa1R6TqOdGVYC7b5Rd7BZpdebwSAYLXHLF4yjXirqXFmLR0JHYkyT_rIkrqtetWj2klFMOs_QO6ATHWjf5Nz3mzrbc-Sj_SrHFi0A-5qkRo6vH9GyYyXZ5mlvNfbBWGjTvD5ij7Q-vZ584YNY74Z8YKHoOzZmL4rPcaUhIO4E_9BrMp3sus7sDjVgwHIIVSP0Bp0SYNExW8905c0rMaeEjDnoab5hcEHs6LbHnGDTHUwf6ErWxyqX_FKwrjbHxdpoICjzCq7pZBp1GvAIhMoeTrkpJqWOd6kRwvfXdfTx9svEKwuvYNuCpgh9SxIX0XEF06hTkzahpdoIOtFzeYBaNA8xICxEw788hrvFYJKEHjI97N5OC9qTbc1AsOsBehbStwTHFSGKmZ-zEDqKw-VrXJEO_7qhsbWGffasrbA_okAVmIi9LT-L9FjnTYd5tRCdB6blSi8BugU9lvDPv8O73XFafmvmktOFW47u5XRamopDhcWn4PXGJhqHuH0tdJ_fu5Tlhdqc1pac51__tvPN0QBJbGz-aYxGZwOhb6H17RNG-VsI1aj-cHYjgTrP9eHIDo_zATAlVhmS0Z56nF6rfMAoahJONuYMc0swyf7jS_PZuSkob96DMwY6gYwcQ-cv5MJk2NoCmKtjPWlEavDQajn6RIIPKeJcAOlPJgtTVRC7jLibbT3wAVUR1WnC5R1k2r-WfBe4LA-g1zal2ydE7FQfcy6m2s56em0vlc3ZuD2tVguQS2zQ_V6PuO5yeojIIdDTx6DiBa2Cqr_OPzuMHY8LLyVqlllY4T_tZDP2LgwntvXab5WRVY8Pg5FeyednSxhqJY_EZ--_tn5zJWMu-x5HvE-4zck-2eKc1nF3iuk6FZJv4Mx4nYc2Ki6_YjnIYIPqdYcxLtaqbiSdkyM7iV-aY0ePDTyiHeeVFv51rVVw31n7su-R-75GEEzPR5DCaKUHKdpsHI9WagN8VFr_iyzx7mOQed1E0xjhVbzxBgQU4_KFf2miSlShTGvQhtkA5mGI0ypS2-3uFKXf2bDrT43ht0aZpdMy6sQfQcZ1ATKMXgGfIWOt1jG_cIj0JzNV68huGV1zx9lZcqorIMvJWzbwxmWiqbYyNJpJku-00SsYFsV2sPoRa3pWSQ_ZIBpxJuZ19TRbAI80Vnm_bk3qN6zWkZVpboYnyAbwXwY_3uwJ8z71DhmnWDwAqbldzzQ_hgyaT_AzHKjyrBPB8-XYPAivAp8LWPhO5HfIF4qRk36Fz6IM9HfljdXNgV-XuBB178eYYqGh-E3dr3TwesdTT9zLAfJ71vttfX6UCv3GcQaHKULZa3KrkajxBWyiAl2juJihMnsZGU136ydG7RuF9FnQLVQcJ-5Kd3j0u3LCZQrb7IA2q1S",
+          "summary": []
+        },
+        {
+          "id": "msg_03bae95cf2ce754e016af7252c7c2081909fa2d5580b479dc7",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Salford City F.C.\",\"summary\":\"The context entry for Chris Williams states he last played for Salford City (paragraph 5). Paragraph 9 identifies Salford City as a club that plays in the National League North, so the National League North club he last played for is Salford City F.C.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1368,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 128,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1496
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Salford City F.C.\",\"summary\":\"The context entry for Chris Williams states he last played for Salford City (paragraph 5). Paragraph 9 identifies Salford City as a club that plays in the National League North, so the National League North club he last played for is Salford City F.C.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1368,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 128,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1496
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5ae0aaf455429945ae959401|disagreement_triggered|refinement:0",
+    "attempt_id": "dd506559e62e4142acdd86a7c83092ef",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000598,
+    "latency_seconds": 2.4812023129998124,
+    "started_at": "2026-11-13T14:56:42.592407+00:00",
+    "finished_at": "2026-11-13T14:56:45.073626+00:00"
+  }
+}

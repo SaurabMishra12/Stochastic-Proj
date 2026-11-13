@@ -1,0 +1,199 @@
+{
+  "payload_hash": "3bafbaf2962db90c81f7b6507d0d712b0efaaa93ac4c63206ce97cb9eb9b1ced",
+  "logical_id": "bbh:logical_deduction_three_objects:160|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_04b3a8b11b719775016af7274c10448194bfda6d386f668be0",
+      "object": "response",
+      "created_at": 1794582348,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794582349,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2488,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 437,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_04b3a8b11b719775016af7274cdc5c81948c3b29034559038d",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9ydNZ2LoT6_8uswe_q59opDwP1qv6AMWmZSLmLEcnZPBwZ0_FXCy1alSg6jch6-HuFtpnzgdUPkp_OLhHGH77IC-3r_w5v8c7LW2TPCDjM6tXDxLvSdda4pGUVkuYFSNsEZymTtM72BRfwKGUkE7LZtQRwB58RWrbPpeAxTH53RJiAlmhcRurmr0Eg8sn9TRn7jBAgMAWyheaDi8XKgalAXcZzKAJObJRSf6Yc3qZmeXuOakXn2oen8yqTvLAQT_LQQGB6t7-XH8ZJp00WpRuQ-10loPlKqRQGjsYEPVlS0Un1xMpBYhcD1_0iRGc1ubYnUeZ9FS3SP3bcD0_anJ_QayFWmiSoM_JcJf6L81WEDvTEO0Evqyh9Vn8u1SW2ZYMroM5qM5I6gmyE-yJhg-G1co-Wr_h4KYb7hKm52wTAfyurLkpK7HKsvzaxh_PjW-Ef8mL1iZ0iIZaoxxeqKQIeTv7Ysr-mmqyyLtBaWHRfZsnqE02UNYLhYRComI4aQrFB840MSzNeKyUMutxQ1t9t9_2p80lrUraqm9a5l0k2Yl8RP0WKo6UX_af4gM73OYwK5RPQTaVLQyw9HO_V8sCQtw9MJGd_Selnbwp_oQ_ViEhAPLazAtWwG4i2znTqa5x8YBLzfyKD-E5F4wUfrdpHEr4AjqcL4R8fX7ozEySnF2DVGFJZ0ozbFhxufvjL9HhqzlV0k2RFnJ7w95I3J0C6qnxVgGiyGACok3mq0jUmhAMufegHWtUinV2I2tUCquuOr73Jw_K6E_IrBHhPDJbzyZxwuAqFElwOC5eHE_tzDlL49XOa2ZI9pTRUr1dV1fxh8EBr3XLegECyKcZfT8MPO1jKa858eLGj50D4CVM-GRS4rVntgzpB24iW4I0xnofuwJwwSFf-jTmk1HshtS3jsO4krBJo71Bz_NKDKGuT8MRQ6kZfiA7VbPi9EisX__zfjFATy6R54hxHV_-WXcqzRNvajQTvuTeNFfohNsxyGxcHgmBaMrW4ydjuVs0NTPzUBnXL14L_31BnbyFwLOswwuI-yse3uU-ltqs6RLGesxK1Mu50nlVCmm8BVHyKvETRko021QpU3aI9HKL_lhpvleMfEGDSdcwqbQGKC5wNAytP7K9NdlF5fpkhiYqjEWpYW9_FYkVvZUlOYDCCbb2jUTZCq4Ib_DJqrtjMV-ZgBO02SNw72o-OolEuNI3psmdrQk3dEXB-6DSlnzXrYMIKBZBB4oO2fgjq1L_JBPTCLoKQShuUCQfwZ9XGU_TQwUBQ_4e263EWw_jH0Y1_ttFzvxGeHEM8dqgpkZ1XI5UYdaWOzSE4Ks4ACJdDRKccvmcGOPWI01rJJO52fAJ9Z0z7X2vcO4Wop3amDdO9Xo2vyzlR5_wSuQ_w__socHak1dBLZT9OUYUu3391J_whWwIWWmrMoye9lG5daB0c2ZZLi1qiQ0a5NypGPuRSB9Y3MgTrEkFFAZDjOb7qpPwjJvc9EBQj2WqZp75cxkLLIpntvmA-ABUMemgUSSpPDUVxXlEpnR-FagwhZk4pagNc-4uqX9GTqncOhjbSM3LT-PxmZISE_jXA1ZYsDLYOc39ZOZP6l-0nMkdeI7BBI4o95UTOfuW2tWX9OjNKMgVx7oFgkmBD0bxnfTax2IYIzBlOhtUx1qzDtAjZiJcnzUyRZ5t-PwspgqsDLM1tCF4Xic-SY9qu1Q1RAyg7Gy6uXy5Pc3Y8f5r3AkA3VAlmac2_h89fB9W5zOU3MB0d8jS7x0lxRK7Zl9sfcKQOGCfx_JRkQmfkQSdTn7_m5GQFj6IHAHOYvIrNvXYnqEidtKvZBOvsz2qYOG3cqRt9PllMI4S8ONWpTZCsVedFYaZQPIGODRkvG2qTNUTxfQGlSH1AjhNX2udjj9BbXIBe4fG02HxfkjCELw_NSFV_lxkkG5RmD5YoUGKsCHAfhdh1QYZYuPAigHnRVsYE6eUV1gbn8lTgXbT1_y",
+          "summary": []
+        },
+        {
+          "id": "msg_04b3a8b11b719775016af7274d55448194a8c2b8e0360e0cae",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"A\",\"summary\":\"Given oranges are stated as the second-most expensive and pears are more expensive than watermelons, the only consistent order is pears (most) > oranges (second) > watermelons (least). Thus oranges are the second-most expensive (A).\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 405,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 110,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 515
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"A\",\"summary\":\"Given oranges are stated as the second-most expensive and pears are more expensive than watermelons, the only consistent order is pears (most) > oranges (second) > watermelons (least). Thus oranges are the second-most expensive (A).\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 405,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 110,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 515
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:160|independent|adjudication:0",
+    "attempt_id": "a70cfd51a22146d0a3907a6919ca900b",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00032125,
+    "latency_seconds": 2.555216864000613,
+    "started_at": "2026-11-13T15:05:47.388062+00:00",
+    "finished_at": "2026-11-13T15:05:49.943276+00:00"
+  }
+}

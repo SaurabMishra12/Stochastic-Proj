@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:563",
+  "source_index": 563,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "12",
+  "final_answer": "12",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1879,
+  "output_tokens": 1391,
+  "reasoning_tokens": 704,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00325175,
+  "latency_seconds": 20.815751529004046,
+  "wall_seconds": 183.09505757599982,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 596,
+    "utf8_bytes": 599,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "12",
+          "summary": "Sons are 12 and 8 years old (4 years younger). Total candles = 12 + 8 = 20. Packs contain 5 candles, so need 20/5 = 4 packs. At $3 per pack, cost = 4 × 3 = $12.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"12\",\"missing_response\":false,\"sender\":0,\"summary\":\"Sons are 12 and 8 years old (4 years younger). Total candles = 12 + 8 = 20. Packs contain 5 candles, so need 20/5 = 4 packs. At $3 per pack, cost = 4 × 3 = $12.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "12",
+          "summary": "Sons are ages 12 and 8 (4 years younger). Total candles = 12 + 8 = 20. Packs of 5 needed = 20/5 = 4. Cost = 4 × $3 = $12.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"12\",\"missing_response\":false,\"sender\":1,\"summary\":\"Sons are ages 12 and 8 (4 years younger). Total candles = 12 + 8 = 20. Packs of 5 needed = 20/5 = 4. Cost = 4 × $3 = $12.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "12",
+          "summary": "James needs 12 + 8 = 20 candles. Packs contain 5 each, so he buys 20/5 = 4 packs. At $3 per pack, total cost is 4 × 3 = 12.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"12\",\"missing_response\":false,\"sender\":2,\"summary\":\"James needs 12 + 8 = 20 candles. Packs contain 5 each, so he buys 20/5 = 4 packs. At $3 per pack, total cost is 4 × 3 = 12.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "12",
+    "12",
+    "12"
+  ],
+  "refined_answers": [
+    "12",
+    "12",
+    "12"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "5faf1d12521e656ac284679b7027377b4230a009313da946958ed62913c22ba6",
+  "errors": []
+}

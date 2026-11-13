@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:220",
+  "source_index": 220,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1974,
+  "output_tokens": 1010,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0025135,
+  "latency_seconds": 20.42777526300415,
+  "wall_seconds": 229.90214991100038,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 596,
+    "utf8_bytes": 596,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Given motorcycle is the oldest, it cannot be newest. Truck is newer than station wagon, so truck is the newest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given motorcycle is the oldest, it cannot be newest. Truck is newer than station wagon, so truck is the newest.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Given motorcycle is the oldest, both the truck and station wagon are newer than it. Since the truck is newer than the station wagon, the truck is the newest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given motorcycle is the oldest, both the truck and station wagon are newer than it. Since the truck is newer than the station wagon, the truck is the newest.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "Motorcycle is stated as the oldest, so it cannot be newest. Truck is newer than the station wagon, so the truck is the newest of the three.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"Motorcycle is stated as the oldest, so it cannot be newest. Truck is newer than the station wagon, so the truck is the newest of the three.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "ad00943832550e9b47975d0efd46a77377bfea8974b2049d06cd5231ce680dba",
+  "errors": []
+}

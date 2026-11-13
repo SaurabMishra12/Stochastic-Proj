@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:535",
+  "source_index": 535,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "16",
+  "final_answer": "16",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1523,
+  "output_tokens": 944,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00226875,
+  "latency_seconds": 21.559569863000434,
+  "wall_seconds": 180.70703696999954,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 191,
+    "utf8_bytes": 194,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "16",
+          "summary": "Let G be George's original candies. After eating 5 he has 3, so G - 5 = 3 ⇒ G = 8. Nick had twice as many originally: 2·8 = 16.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"16\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let G be George's original candies. After eating 5 he has 3, so G - 5 = 3 ⇒ G = 8. Nick had twice as many originally: 2·8 = 16.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ]
+    ],
+    "controller_seed": 216349765641470435698662565724118690672,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.0051235436638828,
+        "proposed_state": 0.11124679047431506,
+        "state": 0.11124679047431506,
+        "probability": 0.23848516112732832
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.11124679047431506,
+        "target": 0.0,
+        "drift": -0.13349614856917807,
+        "gaussian_draw": -1.1442673813974666,
+        "proposed_state": -0.028750015593443035,
+        "state": -0.028750015593443035,
+        "probability": 0.21874413197480713
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.028750015593443035,
+        "target": 0.0,
+        "drift": 0.03450001871213164,
+        "gaussian_draw": -2.0798670085479896,
+        "proposed_state": -0.2554991079260689,
+        "state": -0.2554991079260689,
+        "probability": 0.1893254347553373
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23848516112732832
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23848516112732832
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21874413197480713
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21874413197480713
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.1893254347553373
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.1893254347553373
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8919266693239251
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.20586451136782924
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.8853974640673651
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8628564424040401
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.9337197050595193
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.8919570085773622
+      }
+    ]
+  },
+  "initial_answers": [
+    "16",
+    "16",
+    "16"
+  ],
+  "refined_answers": [
+    "16",
+    "16",
+    "16"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "2e7de1c2958e2f7524d58f479baddcf163109090225ec08177372e6b0e938da1",
+  "errors": []
+}

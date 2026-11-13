@@ -1,0 +1,199 @@
+{
+  "payload_hash": "6293dbe4804a19ab95696de427db1aae3f18f2c0ba8ed658cab91c00d26e774c",
+  "logical_id": "bbh:logical_deduction_three_objects:121|stochastic_controller|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_01e3d69655fbca2b016af72f0ebc388197b7f3b6087e4c6e63",
+      "object": "response",
+      "created_at": 1794584334,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584336,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2375,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 414,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_01e3d69655fbca2b016af72f101f088197b8a8ec3744f80c03",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y8Rv-huXljMVcf6l62qWb5j-qH_yTKxWjLdSbXHKMjIRGFc5qctY33qlvqsIIgitKM2-bFfd9_5G-1taX412KbASTkCitV0x2Dzsdc29oDCNiidfeYx96gzB-47Bp3wU39wJB5hk8f_6h6izS5Tap-ERqCyjRT6NQs3DcVlELF78JrkmnH0vnXnoknQB5qah1MnbYgM_37jneFHi1f4VFBTKPniQVOKTfrX9x5huFK7OKpOC8uVR9GeG31Dno4OtVG77C3ci-NR_TIBg15d06LdBbuPlqmwRJRFNKbvKYGqun7v83jya1Lo6ZUS5nw4ZIh5g4dYAiY8GKhmvW9tHq3cAQX_jFDNx59J1fdsaexic7QNm4470dtLab6WpjLiOCqaJJcZpJpeb6Vba-c8OyIAVMyA7kKGJmAvjJqnftzLoHP2DgcI2pqpfhZFpogDVO9jpQbJqgbgY_aCuvOcz_Pq6etoAu7NlPMOsd5wtmtD-0Ir9TZ4unkWHwwWbQdVPhaGaTeewitLEkNhaYuqS07YSZq7lQVuJe6HMsomjrwzKmrf6dxeF9qhQMXp8_r8ERaTUnK1L91MgJjYzLClIfz_qlliptjWTz-QZ_QxRA9GtIdhiGKnYzG3AJ7CvyjJYKuMoboRHmBAprPs8-sG-U2Zpz_AvKlgL0gPJnjPCABayHqAysznXr-K2njBZjc6LKwWOiCnzg_WE-aHaiO37QOZmcLN2atSwQjfQSj4ymlkCfm734EoTCkU3kHkN0m3MrGs5jXMhlq8GKC_ApNmfoT56Dp-tSbt6B36FRRbQRbXCaywjS8Wx7kpGKtJ4y1J3ADwvXJXZlt4Ug6OL75unrCgDZnVUgZ30sf7DGOnP-dzLXbqSSMzW3__7ZHj2EOmu7MTzvefwLDiwqLRsd8pYrAfRc0DmyRWwpUBEsk6tjZfPVl_5X612NV9OFpvzACypB3EA7t10OhJm3o8nObP04eBJqmxl64y3LVmC5IX1XzvK5LOdpLTZIm6bC2LQm3eIJGYLhozBAuH3B2kQ5IH5ReFdR1qAWebQxdDMkOi48S54KrZWwuhrBXEMiDdQP3nTz86ZRTTP2GwvQyNgSrCmV_Ok9cS9VLSgYfP3fu2P4dZ34k_xcxby5prHmjo_ChQVqbRmTc9s23-eWNQagXw0PtrrWxp9OoykoappsdWYAjr9afTHjb8wibeRpkoK15bvnXmVWebLGwKP1c4M767qO-LyfjOxlSwVw14sikEU_TnuakayBB7VbGUAqVmbyVOe6CoA0z_DGnBW0KwFayt_SwNl__Byy0_fX8_GLJQROg2G6-PdlU0QK74KwElgqUKU2SaCsKScLlMp0tmijbq557olU_ZlWw72wW9Wt6YuCXUeKaZZETLaPbl2ZToik_cvmpgD1HV8KdfwuboFNE4nNx5N9ahwz1HRzfhdXK5BDXyLGUYQB7xqmvmtab9hrE13l-vFc1XTHN4CVGDpm-TLBOus462E1zB4p7RETS6JHuJ9Vu-mZeEmB0kl8K5mkbTYiFubhaXXUz6CIaeeQs1Ve1LcWuLoOWJ62dacW6iEVNTljjt8JG22OAnnlDLi56gqFeAqs8DbyT_x2_pBvs1URxZJXgguXPvaMcPH3pquT2eL9gfp-4-0acHVxgl1MFdhNj2dRviQrObIAatknLE6xAEh-cfmXwqn70vVv3t6YTDD9VrnB0H2aFofHVwn1M96-6JB7lNERWOiuns1KZcQCTnaU9qDOnM4TOnt4Xb0ARsr0kw1pTJaRoizVJM-uQUNQ7BpAlZ8cE8sZwnYM2z8LQG8sOI5GfdqKJYtXmsDIONttmuZ4Q7BEFOUaevwdklVs5vrHWxt4nsQWPhuPUTIjYMY_0GLW-b48uqOUxB8HjR_5oKt_6VS4pqsRGeoTZ9VwP2qH_TIz_v2CCzi_FJB6sy5g_QHL4kQVHVmSalH_weAaqZp6i6JsW3XqVBsYf0cvsmERPcDJr-8UQ6JK2BgrjYUj_OmhY0dFc_Jrqv8TaaXtmNp6G1a7skfPqfZnaSBreL_3IncUMBqA08AsLfZSV-jM9tbKD0HQwTL3dCbHlxzUiWlss3XhBLI_DSNeUX6sXd",
+          "summary": []
+        },
+        {
+          "id": "msg_01e3d69655fbca2b016af72f107b38819795dabcee616fbbdb",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Given black is left of purple and purple is left of white, the only left-to-right order is Black, Purple, White. Therefore the purple book is second from the left.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 410,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 104,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 514
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Given black is left of purple and purple is left of white, the only left-to-right order is Black, Purple, White. Therefore the purple book is second from the left.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 410,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 104,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 514
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:121|stochastic_controller|refinement:2",
+    "attempt_id": "936d55cbf68d42de9f6cecc1c51d89a4",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0003105,
+    "latency_seconds": 3.377909897999416,
+    "started_at": "2026-11-13T15:38:53.722302+00:00",
+    "finished_at": "2026-11-13T15:38:57.100234+00:00"
+  }
+}

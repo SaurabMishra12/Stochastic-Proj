@@ -1,0 +1,145 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:227",
+  "source_index": 227,
+  "method": "full",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2085,
+  "output_tokens": 733,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00198725,
+  "latency_seconds": 21.55336785799591,
+  "wall_seconds": 180.30915408800138,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 1104,
+    "utf8_bytes": 1104,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "From pears < plums and pears > apples, the order is apples < pears < plums, so plums are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"From pears < plums and pears > apples, the order is apples < pears < plums, so plums are the most expensive.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "From pears < plums and pears > apples, the order is apples < pears < plums, so plums are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"From pears < plums and pears > apples, the order is apples < pears < plums, so plums are the most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Prices: apples < pears < plums (pears less expensive than plums, pears more expensive than apples). Thus plums are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Prices: apples < pears < plums (pears less expensive than plums, pears more expensive than apples). Thus plums are the most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Prices: apples < pears < plums (pears less expensive than plums, pears more expensive than apples). Thus plums are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Prices: apples < pears < plums (pears less expensive than plums, pears more expensive than apples). Thus plums are the most expensive.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given pears < plums and pears > apples, the ordering by price is apples < pears < plums, so plums are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given pears < plums and pears > apples, the ordering by price is apples < pears < plums, so plums are the most expensive.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given pears < plums and pears > apples, the ordering by price is apples < pears < plums, so plums are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given pears < plums and pears > apples, the ordering by price is apples < pears < plums, so plums are the most expensive.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "full",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "5172e1a03b875104e60ef299753543ec26851d0c55536dfa3b2bfe0f65fe67c6",
+  "errors": []
+}

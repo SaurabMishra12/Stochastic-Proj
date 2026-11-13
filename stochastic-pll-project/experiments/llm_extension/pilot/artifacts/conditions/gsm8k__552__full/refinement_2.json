@@ -1,0 +1,199 @@
+{
+  "payload_hash": "2be9d7f9eee344f3751304915718bf434a3d6a933b65b015fdb11acc7a05a50a",
+  "logical_id": "gsm8k:official_test:552|full|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_00a5365dda487b8e016af7325885748196acc254969fc2eace",
+      "object": "response",
+      "created_at": 1794585176,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794585179,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2182,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 779,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_00a5365dda487b8e016af73259592c81968ae6ddf47306d119",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zJbbmosUOVyakArzmGrJPWrX7bL20znQ2ZPZ5h7TJuSSgq4dTzmFBdxkS-yZ4jo7XqNd4ERGAcDysyLRwyA2Ozw1wesiJcew8bkmiT9FJx5aBl9uZOfbZtDwCrKUGY1gyBQyiHTZYfly5yz8gsCGdQ1KiznnSllQuvkOYzdTjZ2Cvwu5mgDt1iozOCqVY_L7zp5pwFSlnW9Br72WlqFls7bPz1hXuM_ij86f0jM0qYSNDVm5R6N6G0e9IqUsSlP-9s5XhIq7GKKBI1CaG1HbymeV1D6Ie7M3VAkMAx6dYOEJgX-9h156Syd778q2AWhoocEJKCGy5uvV7rBbAdQ-9lXpHhSjIVsZraTIRmyyUJMNWmK2bpkHkTQPJajpzcwPcxf8cuHru3FaidGEpThsJN2_ELR23zlKP6Mmz8x7Zj4puGM1BSPLm63oNrZ7S2rzN7gtv87mr9xACluomQQCMASpwYZHRVHaTNktJmbzjtVFHvD5nMv_Be0R_jBSN265CpW4o3EOGV8MURD03UHbt97-Ba3EpoHfwBeI9Ap7BG5P7_dZRjVfv58BFC5gf75vUvT4g5PFZABuzMTHK2hhX0eetGnkVGkCc9ln97uDPpF-Gs4wB4tprgjroX19tOonxMob_YdCeuexOMYOmTCMv9HxIEfNqORHvTvunkG2ypzUpV5aWCuDhZxjIMJXlOVGvKuFT2FZQAO2OYTSxWIqks1TjnDDmtoOwHLrXjXniDj7qfOelhVGJm9lHFnikT_AT0VD2G3YDjR4KHcGBhSVhS3scwcHz8cjnkevIv4peAcnlMZaa1pDepotkFWaT0khLyhe05hehyamUTDX--gdDmOLPkbL2relXyDmM8OcNTFbi9JlrnZ5niQAIvTzjJhkj5Ed07Ncr1qfPjCu_WK-afesELrZzDUdcl7OCANvhprF5ZV3CeAtqrbD67EKxyaCFl5Ka8JMpWtIyILkwcdfTSOhV_HiVFzf0G6hU8PFLazNsDCrCxPYroDWgMtARtP8tly3DIqtF7PV4kF3KOyuTdLK05lYkMRWffrKu5mE7LJ7_sPPBuouRG28lWRvNx4Io9cK70iwYZytKl-L7M5YJ7mtwL1NqMWiqV02ODgUWw1Cc3fTW8ZVRuqBIrMUN81HHChIIWlwLaPOV-HLfHQs4wGWG3Q05tXeX8HRVPHa5kr8q-JGCPWEdy20LTb18gwCg90zQDPQ-AoLeEmF_wZ0pmQoIpb7vMe3ONDx1gLxoHoHHjD3X4cumev4Gt_33-sp8zGjFHqyj-a_Ex22hCstco81Be5iVnvjN8qpR5TIRHSoWA4_2D2ipuLVSBPE-QIazXCVQEzujX9RWq1i_4mQacVkMBJqsBj1nMPb-41zYfWUuGAtXi8a0qTDF0eyqmjtO4p4x20ApiNsClxC8RAf6w5zBUyw2S05sDwMd9-xCVSmdK_cSneEt8vyrFbMgEB4GU-67lwmAM67s7yMfsrBan9bbl9jtX9Fm_Ro54cMW671dAMasnwF0MHk3MCeZSJH1I-uLtSg1BzFvL-kd7KZC1D72MfFbaFBi1V97ZE1dNt6nHz2E9h62UO0CQQSty32HduQX0A_JE7OSqKe2heWpoyUyayJLrkx-ufFPkS7eZO1Uy9vJY8GB8HeNFzWr6bntg0k2T5az2zBhKcYVW-J-0V_ambEW6D5SM0bemCf05wp60P9RsCHEtC5T7MRd76l53z6OORRwnCjYHEMeRLdEbHcQayJurVMpxHv80lzT7VMjKv0YmbBF1qSYY80kHciIMbnmHMuJTvyI6640NIF77rvQGS0JJuKRbV7Mm7e9v7VaDeBZGbUEKz0Q59_bv_Bmb2t8J1_PGL-9tx-1RIN6CgGkghCJPcyiF1rvmOqythiDVLabSTQJDmNubYOtUvqWTfICddJaaoaW0WdhLPiOwe_OCXikcLiwhdSXTi3J6emqkLD3kY27L89DaXpxcBnZvb53H9CpJ-ptmOCq_nSQpzBpSbEZphwom2gQzQcaeacyw8-mKxKAHuq9a3ogKujhWTqLI1Yam8fmpsofvRV3cO9EoJhbfn1pTVhqi4G1MqvjZwc23ML6sbh3zdX2JQSZkvbe8r6Zh8lUoC2sd8IrbjQRytp5jmz37TZE45SbkCm3GUNzFUg6vMpITGlcCBFtFJ2iNwQX11__18U2yuhCtct10TfSV3yl2W0OrbnVSgexlRjL7iK3fsvDUKDbkY3i3PpBoMnMh57syU4uifbkEi1C2yKy5jUet5Mp4GLzW5f0LvhhQf-lJGdHjhp0OkIeY8nhyoPTarSbaSImXJSei615zCZ2gM3v8JXfd80K8Nrmw0UjyBOFsmNKXEWJA-tCsKjHLf3DZzR32rzvzZUMputX3S26UV5YoQLd3gFvW2gdzvhqjCFmL2V8Baw-7GDwWDUwaiS1MX-ljcWHUXbFOhpsXfmZXR-fNTlTGrQS6qn3Zky72dmfuj83YJnRtgyQYLDWGl4wWbOeMB9ZXzM0Fa1ldTRrMpQzzoC6Y6wG-Rkj2ZiYfDrfYosR4oYgmAZ4Kp5vUfcF9dtFrd3BG45U7qszhl8YsR-kDYuInA8l11qO5HCMNfZIQcXFD7pRB3wq7r2MX7s3QioXpy5FLHN_MFzvM1vpGzEnkIYrlxZW6RcUID9ZuXW656lU4IgpfWUBld_Jteygp2EkIvNkngRXzfxcrvnxxnz442EJ0X_NNvBREBHHsa9n86hQuSpLB497idIb1Enh-iYHgOgk7H4OoxrS48j0zM-zQw75nTYy3uTd0-lcpwXi1OAgeCqVt8L71zexRDv0Fm8WCZdb7qoHxsb3u6Jgm-gwa0HLzt3WlFbpE7z1Ft1bh7gYHTKv7yO0AIaY8PMDMf4jPPY3Bij7uQw4PtFYIbZs_JrzItX-ppjiqZ5zNlmrKpMm1c-7GjS7mRt2_VMER0wpffHpCoOPlBQ2o-LDwvXMyFjQxNc7UWNT9LPZA3a4IB-vozOTYOcCZM4bgifi911PJyQWr8guIC9hJAJEI9Fa2X2DV8f-WYI7-T848zo2WrNcVV5jpB6R5xPDcg5KgjJZByQviUBsLyWB67m0qdOxJ0NltPFZHPOThnxbcqygt_fY6Q2c6_TOZM",
+          "summary": []
+        },
+        {
+          "id": "msg_00a5365dda487b8e016af7325a7f74819682d33d8097ec9ce9",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"900\",\"summary\":\"Antonella gets 30% on the first $1000 = $300. On the $1500 above $1000 she gets an additional 10%, meaning 30%+10%=40% on that portion: 0.40×1500 = $600. Total commission = $300 + $600 = $900.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 435,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 235,
+        "output_tokens_details": {
+          "reasoning_tokens": 128
+        },
+        "total_tokens": 670
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"900\",\"summary\":\"Antonella gets 30% on the first $1000 = $300. On the $1500 above $1000 she gets an additional 10%, meaning 30%+10%=40% on that portion: 0.40×1500 = $600. Total commission = $300 + $600 = $900.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 435,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 235,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 670
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:552|full|refinement:2",
+    "attempt_id": "38b49c3c636f40679c0960546c021761",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00057875,
+    "latency_seconds": 4.897718051000993,
+    "started_at": "2026-11-13T15:52:54.645559+00:00",
+    "finished_at": "2026-11-13T15:52:59.543256+00:00"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:106",
+  "source_index": 106,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "72",
+  "final_answer": "72",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1777,
+  "output_tokens": 1372,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00318825,
+  "latency_seconds": 21.53826991999813,
+  "wall_seconds": 182.38356202499926,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 219,
+    "utf8_bytes": 224,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "72",
+          "summary": "Each box's inner dimensions are 5-2(1)=3, 6-2(1)=4, 4-2(1)=2 inches. Inner volume per box = 3×4×2 = 24 in³. For 3 boxes total inner volume = 3×24 = 72 in³.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"72\",\"missing_response\":false,\"sender\":2,\"summary\":\"Each box's inner dimensions are 5-2(1)=3, 6-2(1)=4, 4-2(1)=2 inches. Inner volume per box = 3×4×2 = 24 in³. For 3 boxes total inner volume = 3×24 = 72 in³.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 55647001192483430800804004836658084934,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -1.6459603215844283,
+        "proposed_state": -0.18217442440644996,
+        "state": -0.18217442440644996,
+        "probability": 0.19849305267411513
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.18217442440644996,
+        "target": 0.0,
+        "drift": 0.21860930928773994,
+        "gaussian_draw": 0.16591772036360358,
+        "proposed_state": -0.1419497669590599,
+        "state": -0.1419497669590599,
+        "probability": 0.2036623484167077
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.1419497669590599,
+        "target": 0.0,
+        "drift": 0.17033972035087186,
+        "gaussian_draw": 0.21878493452764178,
+        "proposed_state": -0.100700740044637,
+        "state": -0.100700740044637,
+        "probability": 0.20906665183601741
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.19849305267411513
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.19849305267411513
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2036623484167077
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2036623484167077
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20906665183601741
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20906665183601741
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5021395229787295
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7015331591823802
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6313046474601663
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.5944934685258866
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.18855219079291619
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.4313727028043298
+      }
+    ]
+  },
+  "initial_answers": [
+    "72",
+    "72",
+    "72"
+  ],
+  "refined_answers": [
+    "72",
+    "72",
+    "72"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "a3519be35f8f707a9921494ad55a3e77b19214f2bdaf32b57b4407367ad9b418",
+  "errors": []
+}

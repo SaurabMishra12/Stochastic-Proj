@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:99",
+  "source_index": 99,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "58",
+  "final_answer": "58",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2096,
+  "output_tokens": 1291,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0031060000000000003,
+  "latency_seconds": 22.19530037900222,
+  "wall_seconds": 178.0451590240009,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 686,
+    "utf8_bytes": 693,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "58",
+          "summary": "Mary had 2 plants on each of 40 ledges (2×40=80) plus 18 new ones, totaling 98. She gives away 1 plant from each ledge (40), so she remains with 98−40=58 plants.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"58\",\"missing_response\":false,\"sender\":0,\"summary\":\"Mary had 2 plants on each of 40 ledges (2×40=80) plus 18 new ones, totaling 98. She gives away 1 plant from each ledge (40), so she remains with 98−40=58 plants.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "58",
+          "summary": "Mary had 2×40=80 plants on window ledges. She plans to give away 1 from each of the 40 ledges, losing 40, leaving 40 on the ledges. Adding the 18 new plants gives 40+18=58 total remaining.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"58\",\"missing_response\":false,\"sender\":1,\"summary\":\"Mary had 2×40=80 plants on window ledges. She plans to give away 1 from each of the 40 ledges, losing 40, leaving 40 on the ledges. Adding the 18 new plants gives 40+18=58 total remaining.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "58",
+          "summary": "Mary had 2 plants on each of 40 ledges (2×40=80) plus 18 new plants, totaling 98. She gives away 1 from each ledge (40), leaving 98−40=58 plants.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"58\",\"missing_response\":false,\"sender\":2,\"summary\":\"Mary had 2 plants on each of 40 ledges (2×40=80) plus 18 new plants, totaling 98. She gives away 1 from each ledge (40), leaving 98−40=58 plants.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "58",
+    "58",
+    "58"
+  ],
+  "refined_answers": [
+    "58",
+    "58",
+    "58"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "0871011e5966337a1eb27cff1c742a9d8f4f8f8bd8828f56bca2a2da38f37538",
+  "errors": []
+}

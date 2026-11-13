@@ -1,0 +1,199 @@
+{
+  "payload_hash": "a5fe2eb6aecec2c537a55f163ac2ee0cb12a4454c75b2a52f409be5400d144e1",
+  "logical_id": "bbh:logical_deduction_three_objects:139|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_04e47743bf03d9bc016af71976f408819681159ca879c55bbe",
+      "object": "response",
+      "created_at": 1794578806,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794578809,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2375,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 473,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_04e47743bf03d9bc016af7197853248196ab7e4da4e3cb620d",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xl5rD-YjS2RxbL3XRtJKt7H0vuIMdxzDs6NLin1jyCHVla3z5WC6Vrj1LWosqgXfJ1NfzO9CcQcGRvnp76Imz7ueovKjAP10wvdAhRbP_mbO_Gy3KBgLrCtuhw4vjs5M30Oc9uJlQ5sN3V3axFPP17flAuhTcAicUXDxEQUfk0wu3fMtPojdevPMs57asyYMZT_gdD447yrmYmJFfody8N6ogDZsxY8ixFgUHAdBLBL7Frz-dQL52Ay5bLWsAd_fCSu9hXt83SlyzQ8kov0s43eK7rZ5fHU7dY2GtyZqpIEF0bWCVMD8KqO9Kxr-L2xHjXzG2wHs2-XIeL5X7UDNYnhrfDASboqHOhn8daF5QKFH7teS4WfgjztIr7a29LcRxYsm3PZG0hH-vcdWq3klj1ElsgK6LC7y049Yh-Y4-CgW1d-uiLSpe2Mmt-S0UrULjwkCOsmTb7iSutx37JVqDeckiBaLkIN7lPijcd6fgJBBRQcFwWa88vYWu3LtDwNW2HNpTgeWQVnuLQZrj0k3Womw0af2gapFAJDPvJuXgvaX1ROidJ3RI2bKrHjulZTy6R108xiRKgA7hm3aEuat1SyAfAhKESv54mhIACzInEjoIM79-DjnKJYU4pJ9wfqRPnFjoW3-PO7Okrw_i_7CyE1CgH-UuzJS8rWviV4nFaFj0zFpciIgg3pecHqJwuJWfPhNlHLfbN97A_QIUA0nJM7ipBrNwZPAIjutsDimKVo99wkZB_um6DHsiEZ8PZ1BL_BikKVxG8bXCws2UNT0hCfAT3nwAZ7bSTdcRQ51mWyzt7mTiO3BiCDX_4jC0EqQ7lVK2Uskyh6sUKt230u7cZaj5VhPrQuhkzo-W4AfCG9nSzsbZseNXy8zVGHvncdwXJbjv9zS29bopHOc2hXL2lWYBtM2ivlIgBSiTn0S18OLhAb_NvJLT1rK1SpFwbyGau7QhkbGGsizI9Z1YT0rY9uQogWa6hNTgC0-8nldkwQPk1-GIV9m5HrQL0_daZ4sBmtgY3Yi9rT2qTPsssbqPlz-q7IypgFEb4q_lURFwnPMi1J-SW2zbqGoapv1plNC1qqYfRjDWXvyr6tuUdhgmDqY59Qy66_RMyJWO0vMmczlLpHLuxTx5HtlCcMkszvX23QSK6keGIhqx0KmSw1C07IlcqMN-BQwXIe-zWWmcFu0z78KHteFIv53yRvUrG3UXqAuLwhjT7ZeByVEBqbgIK9i1aGjRStr2wATD_OcnQp-xAL-hsatI22S1aCwnSL1KPa83bfDw_rqIijd3FACXBKPUGeN6GyKyZUJ1tBOEGPRNkX4C-QfGhaTL8yweOkVle5Gsr4cUiSPsqWtw1XC2PGFWNmDidpre1cZogc8T4JXAduP398Si9ySNXoEWhsvqA6W3QmZQ4oY10peQpPgGZ0VvEXKJNQhVFqo54frXnTyEIts5WsRvJWJgHtRGYjBEetxa66aHaw405Vyyzk059Rr_EjXGQwBs3USRI8u7e6S_iZVrxapM5z5H1-naeoO2UPCdFKOaapEOPN7VpHo7wMjwDXjf2wXpRmAIoCbygObxR7rl2btR2MjVre7mD7VnK8yKsp4o3beImeX3fzyWU3hMWnSRbn4VH0bpjwhKme15ST2pCTKx7cg5VmBJGV0l7L-P3dpbe7NGkomkgLxWS53p7C5NUatZQ8QA1AsUTC_5m6VG6-MSdwg-drmttugd3S1GLq6lOOkR72exuhVnWPzBO_z5qpdSPUJRG_jj6hCkRgskDefkXvIdqQUJxyTsTN_E5mnxUNaSDP65Irbif-0jo5Eaz1xKlFja2SLqLByFbULHk03Fsafut0T99wxg5_qe8KK6NewzdbphdJ3q8_AJegw-JehGGWKlVeC34VLjNz4E4e62vyE_W_P0yBoukIr_d5imR8qNia05nDiqmXqqcwBSTWgC8lwM0hfzlh3eLe1xzBVKw9DWzKElgYbu20FbyVCFC8_H9A_AKECHM20T_iGbHFkhuHGQSAgSky8_OuEP6OkOCeBlGfJnXikrrFbWXseVKmHNXhsgij8FopPaIC_qdXg-iwWFcGsVCMa4gW1zgzUodZOZ4T00Bg2kDnXb63mcnSNMFkwMHUXSil6w==",
+          "summary": []
+        },
+        {
+          "id": "msg_04e47743bf03d9bc016af71978bf148196bd583c06a26620fe",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"With three positions (left, middle, right): yellow is leftmost. Orange is to the right of brown, so brown cannot be rightmost; brown must be middle and orange rightmost. Therefore the orange book is rightmost (option C).\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 399,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 519
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"With three positions (left, middle, right): yellow is leftmost. Orange is to the right of brown, so brown cannot be rightmost; brown must be middle and orange rightmost. Therefore the orange book is rightmost (option C).\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 399,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 120,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 519
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:139|independent|adjudication:0",
+    "attempt_id": "42bb39f3cb1d4d41951410bddcc916cd",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00033975,
+    "latency_seconds": 3.296007617000214,
+    "started_at": "2026-11-13T14:06:46.224484+00:00",
+    "finished_at": "2026-11-13T14:06:49.520521+00:00"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a74adb455429916b01641c6",
+  "source_index": 5353,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "ladder",
+  "final_answer": "ladder",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 15214,
+  "output_tokens": 1242,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0062875,
+  "latency_seconds": 27.154242931000226,
+  "wall_seconds": 186.8661119139997,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 1210,
+    "utf8_bytes": 1224,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "ladder",
+          "summary": "The Ladder was first published in 1956 (monthly from 1956), whereas Heat magazine is a much later British entertainment title (launched in the late 1990s). Therefore The Ladder’s first publication occurred before Heat’s.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ladder\",\"missing_response\":false,\"sender\":0,\"summary\":\"The Ladder was first published in 1956 (monthly from 1956), whereas Heat magazine is a much later British entertainment title (launched in the late 1990s). Therefore The Ladder’s first publication occurred before Heat’s.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "ladder",
+          "summary": "The Ladder was first published in 1956 (monthly from 1956), whereas Heat magazine is a much later British entertainment title (launched in the late 1990s). Therefore The Ladder’s first publication occurred before Heat’s.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ladder\",\"missing_response\":false,\"sender\":0,\"summary\":\"The Ladder was first published in 1956 (monthly from 1956), whereas Heat magazine is a much later British entertainment title (launched in the late 1990s). Therefore The Ladder’s first publication occurred before Heat’s.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "ladder first published 1956 occurred before heat first published 1999",
+          "summary": "The Ladder began publication in 1956 as a monthly U.S. lesbian magazine. Heat is a British entertainment magazine launched much later (first published in 1999). Therefore The Ladder’s first publication occurred first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ladder first published 1956 occurred before heat first published 1999\",\"missing_response\":false,\"sender\":1,\"summary\":\"The Ladder began publication in 1956 as a monthly U.S. lesbian magazine. Heat is a British entertainment magazine launched much later (first published in 1999). Therefore The Ladder’s first publication occurred first.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "ladder",
+          "summary": "The Ladder was first published in 1956 as a monthly magazine for the Daughters of Bilitis. Heat is a British entertainment magazine launched much later (1990s), so The Ladder’s first publication occurred before Heat’s.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ladder\",\"missing_response\":false,\"sender\":2,\"summary\":\"The Ladder was first published in 1956 as a monthly magazine for the Daughters of Bilitis. Heat is a British entertainment magazine launched much later (1990s), so The Ladder’s first publication occurred before Heat’s.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 27276651268782730992351713656780303137,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": 1.106140133014752,
+        "proposed_state": 0.20242727810768804,
+        "state": 0.20242727810768804,
+        "probability": 0.561013216118317
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.20242727810768804,
+        "target": 0.6666666666666666,
+        "drift": 0.5570872662707743,
+        "gaussian_draw": 1.1241539936134877,
+        "proposed_state": 0.38255705185552047,
+        "state": 0.38255705185552047,
+        "probability": 0.5961331911922263
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.38255705185552047,
+        "target": 0.6666666666666666,
+        "drift": 0.34093153777337537,
+        "gaussian_draw": -1.1053111530170097,
+        "proposed_state": 0.2943146787976355,
+        "state": 0.2943146787976355,
+        "probability": 0.5790281374494728
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.561013216118317
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.561013216118317
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.5961331911922263
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.5961331911922263
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5790281374494728
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5790281374494728
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.37092958479338667
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.04294452126249282
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.8350923032271482
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.3418867523790179
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.30270362118524696
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.9937338079680962
+      }
+    ]
+  },
+  "initial_answers": [
+    "ladder",
+    "ladder first published 1956 occurred before heat first published 1999",
+    "ladder"
+  ],
+  "refined_answers": [
+    "ladder",
+    "ladder",
+    "ladder"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "62ee4c5a9a66ca4ea8271e7f2bd0fcbc66d4c6fb20e8ee4de18217c795c21c4b",
+  "errors": []
+}

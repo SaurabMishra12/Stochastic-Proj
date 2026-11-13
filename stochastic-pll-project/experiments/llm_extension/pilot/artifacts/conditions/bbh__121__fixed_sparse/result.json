@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:121",
+  "source_index": 121,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2137,
+  "output_tokens": 850,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00223425,
+  "latency_seconds": 19.99364368600436,
+  "wall_seconds": 235.22250677400007,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 644,
+    "utf8_bytes": 644,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "From the relations B < P and P < W, the left-to-right order is Black, Purple, White. Thus the purple book is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"From the relations B < P and P < W, the left-to-right order is Black, Purple, White. Thus the purple book is second from the left.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Given B < P and P < W, the left-to-right order is Black, Purple, White. The middle (second from the left) is the Purple book, so option C is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given B < P and P < W, the left-to-right order is Black, Purple, White. The middle (second from the left) is the Purple book, so option C is correct.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "From the statements: black is left of purple, and purple is left of white, so left-to-right order is black, purple, white. The middle (second from the left) is the purple book.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"From the statements: black is left of purple, and purple is left of white, so left-to-right order is black, purple, white. The middle (second from the left) is the purple book.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "0865836f6f865cc4e5178eecac80863b8b5dcc556cb5435cd8bd1495ace2f9a0",
+  "errors": []
+}

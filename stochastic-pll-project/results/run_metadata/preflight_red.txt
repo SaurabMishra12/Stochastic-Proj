@@ -1,0 +1,512 @@
+FFFFFFFFFFFFFFFFFFFFFFFFF                                                [100%]
+=================================== FAILURES ===================================
+_______________ test_wilson_nonzero_uncertainty_with_zero_events _______________
+
+    def test_wilson_nonzero_uncertainty_with_zero_events():
+>       m,_=modules();lo,hi=m.wilson_interval(0,1000)
+            ^^^^^^^^^
+
+tests/test_metrics.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/metrics.py').exists(), 'Statistical metrics are required'
+E       AssertionError: Statistical metrics are required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/metrics.py').exists
+E        +      where PosixPath('src/metrics.py') = Path('src/metrics.py')
+
+tests/test_metrics.py:7: AssertionError
+______________________ test_mean_ci_uses_independent_rows ______________________
+
+    def test_mean_ci_uses_independent_rows():
+>       m,_=modules();mean,lo,hi=m.mean_ci(np.array([1.,2.,3.,4.]))
+            ^^^^^^^^^
+
+tests/test_metrics.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/metrics.py').exists(), 'Statistical metrics are required'
+E       AssertionError: Statistical metrics are required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/metrics.py').exists
+E        +      where PosixPath('src/metrics.py') = Path('src/metrics.py')
+
+tests/test_metrics.py:7: AssertionError
+_________________________ test_bootstrap_and_censoring _________________________
+
+    def test_bootstrap_and_censoring():
+>       m,_=modules();ci=m.bootstrap_ci(np.array([1.,2.,3.]),np.mean,seed=8,n_boot=1000)
+            ^^^^^^^^^
+
+tests/test_metrics.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/metrics.py').exists(), 'Statistical metrics are required'
+E       AssertionError: Statistical metrics are required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/metrics.py').exists
+E        +      where PosixPath('src/metrics.py') = Path('src/metrics.py')
+
+tests/test_metrics.py:7: AssertionError
+__________________ test_completed_slip_not_temporary_crossing __________________
+
+    def test_completed_slip_not_temporary_crossing():
+>       _,s=modules();dt=.01;stable=0.;phi=np.zeros(800)
+            ^^^^^^^^^
+
+tests/test_metrics.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/metrics.py').exists(), 'Statistical metrics are required'
+E       AssertionError: Statistical metrics are required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/metrics.py').exists
+E        +      where PosixPath('src/metrics.py') = Path('src/metrics.py')
+
+tests/test_metrics.py:7: AssertionError
+_________________________ test_negative_completed_slip _________________________
+
+    def test_negative_completed_slip():
+>       _,s=modules();phi=np.r_[np.zeros(100),np.full(100,-2*np.pi)]
+            ^^^^^^^^^
+
+tests/test_metrics.py:34: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/metrics.py').exists(), 'Statistical metrics are required'
+E       AssertionError: Statistical metrics are required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/metrics.py').exists
+E        +      where PosixPath('src/metrics.py') = Path('src/metrics.py')
+
+tests/test_metrics.py:7: AssertionError
+________________ test_detector_core_and_persistence_sensitivity ________________
+
+    def test_detector_core_and_persistence_sensitivity():
+>       _,s=modules();phi=np.r_[np.zeros(50),np.full(30,2*np.pi),np.zeros(50)]
+            ^^^^^^^^^
+
+tests/test_metrics.py:38: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/metrics.py').exists(), 'Statistical metrics are required'
+E       AssertionError: Statistical metrics are required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/metrics.py').exists
+E        +      where PosixPath('src/metrics.py') = Path('src/metrics.py')
+
+tests/test_metrics.py:7: AssertionError
+______________________ test_equilibria_and_classification ______________________
+
+    def test_equilibria_and_classification():
+>       m=load(); p=m.PLLParameters()
+          ^^^^^^
+
+tests/test_model.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_________ test_no_asymptotically_stable_equilibrium_at_threshold[1.0] __________
+
+delta = 1.0
+
+    @pytest.mark.parametrize('delta',[1.,1.01,-1.,-1.1])
+    def test_no_asymptotically_stable_equilibrium_at_threshold(delta):
+>       m=load(); assert m.equilibria(m.PLLParameters(detuning=delta)) is None
+          ^^^^^^
+
+tests/test_model.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_________ test_no_asymptotically_stable_equilibrium_at_threshold[1.01] _________
+
+delta = 1.01
+
+    @pytest.mark.parametrize('delta',[1.,1.01,-1.,-1.1])
+    def test_no_asymptotically_stable_equilibrium_at_threshold(delta):
+>       m=load(); assert m.equilibria(m.PLLParameters(detuning=delta)) is None
+          ^^^^^^
+
+tests/test_model.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_________ test_no_asymptotically_stable_equilibrium_at_threshold[-1.0] _________
+
+delta = -1.0
+
+    @pytest.mark.parametrize('delta',[1.,1.01,-1.,-1.1])
+    def test_no_asymptotically_stable_equilibrium_at_threshold(delta):
+>       m=load(); assert m.equilibria(m.PLLParameters(detuning=delta)) is None
+          ^^^^^^
+
+tests/test_model.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_________ test_no_asymptotically_stable_equilibrium_at_threshold[-1.1] _________
+
+delta = -1.1
+
+    @pytest.mark.parametrize('delta',[1.,1.01,-1.,-1.1])
+    def test_no_asymptotically_stable_equilibrium_at_threshold(delta):
+>       m=load(); assert m.equilibria(m.PLLParameters(detuning=delta)) is None
+          ^^^^^^
+
+tests/test_model.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_______________________ test_invalid_parameters[kwargs0] _______________________
+
+kwargs = {'a': 0}
+
+    @pytest.mark.parametrize('kwargs',[{'a':0},{'b':-1},{'alpha':-1},{'detuning':float('nan')}])
+    def test_invalid_parameters(kwargs):
+>       m=load()
+          ^^^^^^
+
+tests/test_model.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_______________________ test_invalid_parameters[kwargs1] _______________________
+
+kwargs = {'b': -1}
+
+    @pytest.mark.parametrize('kwargs',[{'a':0},{'b':-1},{'alpha':-1},{'detuning':float('nan')}])
+    def test_invalid_parameters(kwargs):
+>       m=load()
+          ^^^^^^
+
+tests/test_model.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_______________________ test_invalid_parameters[kwargs2] _______________________
+
+kwargs = {'alpha': -1}
+
+    @pytest.mark.parametrize('kwargs',[{'a':0},{'b':-1},{'alpha':-1},{'detuning':float('nan')}])
+    def test_invalid_parameters(kwargs):
+>       m=load()
+          ^^^^^^
+
+tests/test_model.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_______________________ test_invalid_parameters[kwargs3] _______________________
+
+kwargs = {'detuning': nan}
+
+    @pytest.mark.parametrize('kwargs',[{'a':0},{'b':-1},{'alpha':-1},{'detuning':float('nan')}])
+    def test_invalid_parameters(kwargs):
+>       m=load()
+          ^^^^^^
+
+tests/test_model.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_______________________ test_negative_detuning_symmetry ________________________
+
+    def test_negative_detuning_symmetry():
+>       m=load(); s,u=m.equilibria(m.PLLParameters(detuning=-.5))
+          ^^^^^^
+
+tests/test_model.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def load():
+>       assert Path('src/pll_model.py').exists(), 'PLL model implementation is required'
+E       AssertionError: PLL model implementation is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/pll_model.py').exists
+E        +      where PosixPath('src/pll_model.py') = Path('src/pll_model.py')
+
+tests/test_model.py:7: AssertionError
+_________________________ test_reproducible_and_finite _________________________
+
+    def test_reproducible_and_finite():
+>       s,m=modules();p=m.PLLParameters()
+            ^^^^^^^^^
+
+tests/test_solver.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+_______________________ test_brownian_increment_variance _______________________
+
+    def test_brownian_increment_variance():
+>       s,m=modules();dw=s.brownian_increments(200000,.002,123)
+            ^^^^^^^^^
+
+tests/test_solver.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+________________ test_milstein_equals_euler_for_additive_noise _________________
+
+    def test_milstein_equals_euler_for_additive_noise():
+>       s,m=modules();p=m.PLLParameters();dw=s.brownian_increments(1000,.001,81)
+            ^^^^^^^^^
+
+tests/test_solver.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+________________ test_zero_noise_ode_and_first_order_refinement ________________
+
+    def test_zero_noise_ode_and_first_order_refinement():
+>       s,m=modules();p=m.PLLParameters(alpha=0); errors=[]
+            ^^^^^^^^^
+
+tests/test_solver.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+_______________ test_compiled_kernel_matches_python_and_samples ________________
+
+    def test_compiled_kernel_matches_python_and_samples():
+>       s,m=modules();p=m.PLLParameters(alpha=.3,detuning=.95)
+            ^^^^^^^^^
+
+tests/test_solver.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+____________________ test_coupled_increments_preserve_path _____________________
+
+    def test_coupled_increments_preserve_path():
+>       s,m=modules();dw=s.brownian_increments(1600,.000625,38)
+            ^^^^^^^^^
+
+tests/test_solver.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+_____________________________ test_invalid_step[0] _____________________________
+
+dt = 0
+
+    @pytest.mark.parametrize('dt',[0,-.01,float('nan')])
+    def test_invalid_step(dt):
+>       s,m=modules()
+            ^^^^^^^^^
+
+tests/test_solver.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+___________________________ test_invalid_step[-0.01] ___________________________
+
+dt = -0.01
+
+    @pytest.mark.parametrize('dt',[0,-.01,float('nan')])
+    def test_invalid_step(dt):
+>       s,m=modules()
+            ^^^^^^^^^
+
+tests/test_solver.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+____________________________ test_invalid_step[nan] ____________________________
+
+dt = nan
+
+    @pytest.mark.parametrize('dt',[0,-.01,float('nan')])
+    def test_invalid_step(dt):
+>       s,m=modules()
+            ^^^^^^^^^
+
+tests/test_solver.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def modules():
+>       assert Path('src/sde_solver.py').exists(), 'Numerical solver is required'
+E       AssertionError: Numerical solver is required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/sde_solver.py').exists
+E        +      where PosixPath('src/sde_solver.py') = Path('src/sde_solver.py')
+
+tests/test_solver.py:7: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_metrics.py::test_wilson_nonzero_uncertainty_with_zero_events
+FAILED tests/test_metrics.py::test_mean_ci_uses_independent_rows - AssertionE...
+FAILED tests/test_metrics.py::test_bootstrap_and_censoring - AssertionError: ...
+FAILED tests/test_metrics.py::test_completed_slip_not_temporary_crossing - As...
+FAILED tests/test_metrics.py::test_negative_completed_slip - AssertionError: ...
+FAILED tests/test_metrics.py::test_detector_core_and_persistence_sensitivity
+FAILED tests/test_model.py::test_equilibria_and_classification - AssertionErr...
+FAILED tests/test_model.py::test_no_asymptotically_stable_equilibrium_at_threshold[1.0]
+FAILED tests/test_model.py::test_no_asymptotically_stable_equilibrium_at_threshold[1.01]
+FAILED tests/test_model.py::test_no_asymptotically_stable_equilibrium_at_threshold[-1.0]
+FAILED tests/test_model.py::test_no_asymptotically_stable_equilibrium_at_threshold[-1.1]
+FAILED tests/test_model.py::test_invalid_parameters[kwargs0] - AssertionError...
+FAILED tests/test_model.py::test_invalid_parameters[kwargs1] - AssertionError...
+FAILED tests/test_model.py::test_invalid_parameters[kwargs2] - AssertionError...
+FAILED tests/test_model.py::test_invalid_parameters[kwargs3] - AssertionError...
+FAILED tests/test_model.py::test_negative_detuning_symmetry - AssertionError:...
+FAILED tests/test_solver.py::test_reproducible_and_finite - AssertionError: N...
+FAILED tests/test_solver.py::test_brownian_increment_variance - AssertionErro...
+FAILED tests/test_solver.py::test_milstein_equals_euler_for_additive_noise - ...
+FAILED tests/test_solver.py::test_zero_noise_ode_and_first_order_refinement
+FAILED tests/test_solver.py::test_compiled_kernel_matches_python_and_samples
+FAILED tests/test_solver.py::test_coupled_increments_preserve_path - Assertio...
+FAILED tests/test_solver.py::test_invalid_step[0] - AssertionError: Numerical...
+FAILED tests/test_solver.py::test_invalid_step[-0.01] - AssertionError: Numer...
+FAILED tests/test_solver.py::test_invalid_step[nan] - AssertionError: Numeric...
+25 failed in 0.79s

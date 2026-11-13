@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:937",
+  "source_index": 937,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "159",
+  "final_answer": "159",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1890,
+  "output_tokens": 1109,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026904999999999997,
+  "latency_seconds": 22.356977223002104,
+  "wall_seconds": 179.9776800340005,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 548,
+    "utf8_bytes": 575,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "159",
+          "summary": "Each goat needs 5 lb → 15×5=75 lb. Each sheep needs 2×5−3=7 lb → 12×7=84 lb. Total hay =75+84=159 lb.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"159\",\"missing_response\":false,\"sender\":0,\"summary\":\"Each goat needs 5 lb → 15×5=75 lb. Each sheep needs 2×5−3=7 lb → 12×7=84 lb. Total hay =75+84=159 lb.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "159",
+          "summary": "Each goat needs 5 lb → goats total 15×5 = 75 lb. Each sheep needs 2×5 − 3 = 7 lb → sheep total 12×7 = 84 lb. Total hay = 75 + 84 = 159 lb.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"159\",\"missing_response\":false,\"sender\":1,\"summary\":\"Each goat needs 5 lb → goats total 15×5 = 75 lb. Each sheep needs 2×5 − 3 = 7 lb → sheep total 12×7 = 84 lb. Total hay = 75 + 84 = 159 lb.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "159",
+          "summary": "Each goat needs 5 lb → 15×5 = 75 lb. Each sheep needs 2×5 − 3 = 7 lb → 12×7 = 84 lb. Total hay = 75 + 84 = 159 lb.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"159\",\"missing_response\":false,\"sender\":2,\"summary\":\"Each goat needs 5 lb → 15×5 = 75 lb. Each sheep needs 2×5 − 3 = 7 lb → 12×7 = 84 lb. Total hay = 75 + 84 = 159 lb.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "159",
+    "159",
+    "159"
+  ],
+  "refined_answers": [
+    "159",
+    "159",
+    "159"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "7ed920ff40b7a460730e3728dca727ba50a2817d875e72f6997a0b436a7d12a7",
+  "errors": []
+}

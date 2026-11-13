@@ -1,0 +1,250 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a8518a75542994c784ddaf7",
+  "source_index": 1225,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "building",
+  "final_answer": "skyscraper",
+  "correct": false,
+  "f1": 0.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 11929,
+  "output_tokens": 1258,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0054982500000000005,
+  "latency_seconds": 23.05998769799953,
+  "wall_seconds": 242.60803034899982,
+  "communication": {
+    "directed_messages": 5,
+    "characters": 1551,
+    "utf8_bytes": 1557,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "skyscraper",
+          "summary": "Both 277 Park Avenue and 126 Madison Avenue are described as tall multi-story buildings; 277 Park Avenue is a 50-story, 687 ft office building and 126 Madison Avenue is a proposed 47-story, 730 ft residential skyscraper — thus both are skyscrapers.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"skyscraper\",\"missing_response\":false,\"sender\":0,\"summary\":\"Both 277 Park Avenue and 126 Madison Avenue are described as tall multi-story buildings; 277 Park Avenue is a 50-story, 687 ft office building and 126 Madison Avenue is a proposed 47-story, 730 ft residential skyscraper — thus both are skyscrapers.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "skyscraper",
+          "summary": "Both 277 Park Avenue and 126 Madison Avenue are described as tall multi-story buildings; 277 Park Avenue is a 50-story, 687 ft office building and 126 Madison Avenue is a proposed 47-story, 730 ft residential skyscraper — thus both are skyscrapers.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"skyscraper\",\"missing_response\":false,\"sender\":0,\"summary\":\"Both 277 Park Avenue and 126 Madison Avenue are described as tall multi-story buildings; 277 Park Avenue is a 50-story, 687 ft office building and 126 Madison Avenue is a proposed 47-story, 730 ft residential skyscraper — thus both are skyscrapers.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "they are both skyscrapers",
+          "summary": "277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan; 126 Madison Avenue is described as a proposed 47-story, 730 ft residential skyscraper. Both are high-rise skyscraper buildings.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"they are both skyscrapers\",\"missing_response\":false,\"sender\":1,\"summary\":\"277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan; 126 Madison Avenue is described as a proposed 47-story, 730 ft residential skyscraper. Both are high-rise skyscraper buildings.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "they are both skyscrapers",
+          "summary": "277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan; 126 Madison Avenue is described as a proposed 47-story, 730 ft residential skyscraper. Both are high-rise skyscraper buildings.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"they are both skyscrapers\",\"missing_response\":false,\"sender\":1,\"summary\":\"277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan; 126 Madison Avenue is described as a proposed 47-story, 730 ft residential skyscraper. Both are high-rise skyscraper buildings.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "they are both skyscrapers",
+          "summary": "126 Madison Avenue is described as a proposed 47-story (730 ft) residential skyscraper. 277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan—i.e., a skyscraper as well. Thus both are skyscrapers (tall high-rise buildings).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"they are both skyscrapers\",\"missing_response\":false,\"sender\":2,\"summary\":\"126 Madison Avenue is described as a proposed 47-story (730 ft) residential skyscraper. 277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan—i.e., a skyscraper as well. Thus both are skyscrapers (tall high-rise buildings).\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 229034296647981380854815667491027635843,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": 0.10764457560536062,
+        "proposed_state": 0.09191407128362983,
+        "state": 0.09191407128362983,
+        "probability": 0.5391359306264597
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.09191407128362983,
+        "target": 0.6666666666666666,
+        "drift": 0.6897031144596442,
+        "gaussian_draw": -1.407709721373195,
+        "proposed_state": 0.005079467593083475,
+        "state": 0.005079467593083475,
+        "probability": 0.5218353300341354
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.005079467593083475,
+        "target": 0.6666666666666666,
+        "drift": 0.7939046388882997,
+        "gaussian_draw": 0.3127874326043712,
+        "proposed_state": 0.11908915634963135,
+        "state": 0.11908915634963135,
+        "probability": 0.5445328457414592
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.5391359306264597
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.5391359306264597
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.5218353300341354
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.5218353300341354
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5445328457414592
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5445328457414592
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.12738177627801006
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.2520064404071274
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.03744442968813755
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.4759923996180617
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.37179416628424033
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.5624433267046185
+      }
+    ]
+  },
+  "initial_answers": [
+    "skyscraper",
+    "they are both skyscrapers",
+    "they are both skyscrapers"
+  ],
+  "refined_answers": [
+    "skyscraper",
+    "skyscraper",
+    "skyscraper"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "6270436048fd510639b2d0311d44a9af5fc2e02c3e892c9958098ef7fbc6c65c",
+  "errors": []
+}

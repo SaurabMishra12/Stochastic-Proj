@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:642",
+  "source_index": 642,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "10800",
+  "final_answer": "10800",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2208,
+  "output_tokens": 1512,
+  "reasoning_tokens": 640,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.003576,
+  "latency_seconds": 23.153861470002084,
+  "wall_seconds": 235.02720199500072,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 727,
+    "utf8_bytes": 740,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "10800",
+          "summary": "10 suits × $750 = $7,500. Dress pants cost 1/5 of $750 = $150 each, so 10 × $150 = $1,500. 3 shirts per suit → 30 shirts × $60 = $1,800. Total = $7,500 + $1,500 + $1,800 = $10,800.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"10800\",\"missing_response\":false,\"sender\":0,\"summary\":\"10 suits × $750 = $7,500. Dress pants cost 1/5 of $750 = $150 each, so 10 × $150 = $1,500. 3 shirts per suit → 30 shirts × $60 = $1,800. Total = $7,500 + $1,500 + $1,800 = $10,800.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "10800",
+          "summary": "10 suits × $750 = $7,500. Pants cost 1/5 of $750 = $150 each; 10 × $150 = $1,500. Shirts: 3 per suit × 10 suits = 30 shirts × $60 = $1,800. Total = $7,500 + $1,500 + $1,800 = $10,800.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"10800\",\"missing_response\":false,\"sender\":1,\"summary\":\"10 suits × $750 = $7,500. Pants cost 1/5 of $750 = $150 each; 10 × $150 = $1,500. Shirts: 3 per suit × 10 suits = 30 shirts × $60 = $1,800. Total = $7,500 + $1,500 + $1,800 = $10,800.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "10800",
+          "summary": "10 suits at $750 = $7,500. 10 pants at 1/5 of $750 = $150 each → $1,500. 3 shirts per suit → 30 shirts at $60 = $1,800. Total = $7,500 + $1,500 + $1,800 = $10,800.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"10800\",\"missing_response\":false,\"sender\":2,\"summary\":\"10 suits at $750 = $7,500. 10 pants at 1/5 of $750 = $150 each → $1,500. 3 shirts per suit → 30 shirts at $60 = $1,800. Total = $7,500 + $1,500 + $1,800 = $10,800.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "10800",
+    "10800",
+    "10800"
+  ],
+  "refined_answers": [
+    "10800",
+    "10800",
+    "10800"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "36ad90eb750983e9468216dceaa407a3ea0ec90ce73fcf2068b1556a09a339bd",
+  "errors": []
+}

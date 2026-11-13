@@ -1,0 +1,235 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:121",
+  "source_index": 121,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2186,
+  "output_tokens": 902,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0023505,
+  "latency_seconds": 23.15738039399912,
+  "wall_seconds": 232.69195900199884,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 901,
+    "utf8_bytes": 901,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "From the constraints black is left of purple and purple is left of white, so the left-to-right order is: black, purple, white. Thus the purple book is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"From the constraints black is left of purple and purple is left of white, so the left-to-right order is: black, purple, white. Thus the purple book is second from the left.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "From the constraints black is left of purple and purple is left of white, so the left-to-right order is: black, purple, white. Thus the purple book is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"From the constraints black is left of purple and purple is left of white, so the left-to-right order is: black, purple, white. Thus the purple book is second from the left.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Given B is left of P and P is left of W, the only left-to-right order is Black, Purple, White. Thus the purple book is in the middle (second from the left).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given B is left of P and P is left of W, the only left-to-right order is Black, Purple, White. Thus the purple book is in the middle (second from the left).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "From the relations black < purple and purple < white, the order left-to-right is: black, purple, white. Thus the purple book is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"From the relations black < purple and purple < white, the order left-to-right is: black, purple, white. Thus the purple book is second from the left.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 202468793064498921014934430359466399485,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.5752052201362778,
+        "proposed_state": 0.06366355161772151,
+        "state": 0.06366355161772151,
+        "probability": 0.23164084938097515
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.06366355161772151,
+        "target": 0.0,
+        "drift": -0.07639626194126581,
+        "gaussian_draw": 0.33127846444255854,
+        "proposed_state": 0.0926897324826505,
+        "state": 0.0926897324826505,
+        "probability": 0.23579951939250873
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.0926897324826505,
+        "target": 0.0,
+        "drift": -0.1112276789791806,
+        "gaussian_draw": -0.840735372975824,
+        "proposed_state": -0.011485389497884815,
+        "state": -0.011485389497884815,
+        "probability": 0.22111365150371484
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23164084938097515
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23164084938097515
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23579951939250873
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23579951939250873
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22111365150371484
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22111365150371484
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.10509786935518695
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.06701854333428126
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.463448956342685
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.13827435195582027
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.9279308069619316
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.17127144241228487
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "a9f891fc5d2bdb0c2d4054f1ecb99182633ab7e1fc91753d18f996d94a5bb9b6",
+  "errors": []
+}

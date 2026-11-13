@@ -1,0 +1,199 @@
+{
+  "payload_hash": "7aa7bdd1266b70fe4f837956361f67290045fe10486975fb84484f2d3c90418a",
+  "logical_id": "bbh:logical_deduction_three_objects:45|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_05c025dd73bb25d7016af714111ecc8193a48ab2c940692a98",
+      "object": "response",
+      "created_at": 1794577425,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577427,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2430,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 334,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_05c025dd73bb25d7016af71411fda88193b61ea6ee00105af4",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xQT3q_CyXEJjpvHeQJAie1XhO9HSl1ZxI8jwIUGfDEHBRw5E3wzj5wJkNvql_2nfrq6Ft8SNTzIhWTPSpB3fI3EcZ_2SoxRsr8KBa1LAKfm2qaey7vOWPcSOw-_kU0or8sqG1jzXoEQsluBloDF9F6rrH2hqTZ8z-mEl9LCL0QomWeTm1QEIRfZUtV3mzU0BuXEA-WNtHpnVQS3n1NsCzTCyYMr2yuo9Sh_aXl4f2PqGiEfBG2gD_lvrDgcQg0xIJSvo3ZoXjwBjq_x3KD-AEU9L0GOtMP89sxFaMAjv6nLRExHp6LazpnDZiHl93DpgFx0GbEPm1GQ6s5swCvmxDDLSrX1bvyCl7ZMx_eKhIIb_Qbq9JLVKDdUJrZoop60bNvszAK6ies10_RsPDoqyitxLf3rcSjigOLvDGaDYp4LPbkI5Hpma6o-aGL5ROb8cyLrJ2Udb-2jVWsLWnCVvrkhIlJ9AUROqoIRxDlFGsJ_VxuKOvFetwQswNRrId1MaKsOWlY1HfsLquP6y7HraaT-_XbdpN2cgk21n0mkqpWMsFxWmRek1qtUjmAzldGTQmBLJZs-isxQULXu3xYvB0PfsiSPC3JNlmdfA2RTXEKB_Cl41tq4lmnKHWAekbQMhbpg3v0k4ll0_T_OdL2LqKiaAEoz4m_WQ3oTZetgIDXzJoWNO5G2L1cbDv_1VFUGYIaNdMAKEmpPfTvAp_0HfaNlYvm545dHGiPgfHQNWPmfQhxAHxGJBAiiH9LcaYpq0rU-sswHKRCH1jvqu60aDBYEy2EL_o7V92EfrjoTpTZAHFqKeriItm0HKu-S7sN2aEes2LP-_X6YFsrVxpLFHrack723Pnwzz-dcPFJRL4HggIrprGffmmXd2uc3Wkh9vUXW33hfsZAH2jFR47e54yWI73tHZz1VkZIsGvMcMMZrSYLJzxB8ERI2hIjsxWZzkSwfE2V6kv6VnK4g7fZvSWsC27HY05tgsdUYLlDnS0FuMjNsO-u4Xpo4FX2wF0Z9O7J8tXmJRnZrbwL-iH0hpoaPsImquiAlKa_jdWNq8q_sEsf3olb0sVgNZJba2Y8lP2BWi2cbf5NZ3B97kOldcH0Zm9P6vve2-0lF23Fdcy6md3AUAhtwtzSg_2OCr6Xu_N0im3T3D62y4ogvGlP9VKYDUTdmzxf-48IKKgAQGpiprZpwHVFg1zzJAx9B-LHJK9J3HzSD4VVj1y2n6uU5iZnl0e7lEJw1jzaPXKvlwoNn9TSEsH6SiC_3-mfW4jg7djdETQBxfOriGDCzpthz9C16YldwYYsoPv5xX-p8kgh8WfiELg2jlahg5RTovL9taE8C_qyrs6WW4g0sUIqDabOtoW9NHtDn1uAbjh86NL1tqCtKX8iun-QQCTs_Qg700A_ZZzhj8lSPhAGq7-QykWwLzRgH94nnPErCdZYHp0nDqRvh2yaeCbeFRK_ug2aH__mIS39rvKjn_MlLDHhwcoPJMchObohzj5gC0zaY38act26cQou5pgnL2tpCndGwsPowfZHAWNxUIZVpPViAw4435Bgv8TxjuG7qPupjRrmUUDAKWeGqClbRfC_wWInw84GcVViGpHVMAG9ipbux52zvhiQ52fFXm2gYHlWD_GRjHisMB26FFdBn4o3S9UKiyG4ssJcXcjqbjikCcNNbGsBClo9qj3HadrgJFZr9cpjuBlqRzDgrOdR-9K0q-zxZeBxYFDO68Sra88ApADaDEpsjuJEw4NA4KLEnBlt4PmWY0GvoPxw9X0lsHurBVs0CkIjLhuBa8Tvj4qvf2QDUSNefWw==",
+          "summary": []
+        },
+        {
+          "id": "msg_05c025dd73bb25d7016af71412d58081938495d7416730ce2f",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"Given the constraints quail left of owl and owl left of hummingbird, the left-to-right order is quail, owl, hummingbird; the second (middle) position is the owl, so option B is correct.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 438,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 88,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 526
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"Given the constraints quail left of owl and owl left of hummingbird, the left-to-right order is quail, owl, hummingbird; the second (middle) position is the owl, so option B is correct.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 438,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 88,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 526
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:45|full|adjudication:0",
+    "attempt_id": "4bd59fe87e0c44d69589de45ad860e66",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0002855,
+    "latency_seconds": 3.477448984998773,
+    "started_at": "2026-11-13T13:43:44.099246+00:00",
+    "finished_at": "2026-11-13T13:43:47.576731+00:00"
+  }
+}

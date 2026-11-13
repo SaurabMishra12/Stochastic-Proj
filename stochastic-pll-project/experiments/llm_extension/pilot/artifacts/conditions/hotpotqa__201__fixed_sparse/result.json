@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ae0aaf455429945ae959401",
+  "source_index": 201,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "salford city football club",
+  "final_answer": "salford city",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 8699,
+  "output_tokens": 966,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00410675,
+  "latency_seconds": 22.408397499002604,
+  "wall_seconds": 184.89682954900127,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 945,
+    "utf8_bytes": 945,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "salford city",
+          "summary": "The provided Chris Williams (English footballer) entry states he last played for Salford City. The Salford City entry in the context confirms the club competes in the National League North, so the club is Salford City.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city\",\"missing_response\":false,\"sender\":0,\"summary\":\"The provided Chris Williams (English footballer) entry states he last played for Salford City. The Salford City entry in the context confirms the club competes in the National League North, so the club is Salford City.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "salford city",
+          "summary": "The supplied context states Christopher Jonathan 'Chris' Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City. Paragraph 9 confirms Salford City competes in the National League North.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city\",\"missing_response\":false,\"sender\":1,\"summary\":\"The supplied context states Christopher Jonathan 'Chris' Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City. Paragraph 9 confirms Salford City competes in the National League North.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "salford city",
+          "summary": "The supplied paragraphs state Christopher Jonathan 'Chris' Williams last played for Salford City (paragraph 5). Paragraph 9 identifies Salford City as a club that plays in the National League North, confirming it is the National League North club he last represented.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city\",\"missing_response\":false,\"sender\":2,\"summary\":\"The supplied paragraphs state Christopher Jonathan 'Chris' Williams last played for Salford City (paragraph 5). Paragraph 9 identifies Salford City as a club that plays in the National League North, confirming it is the National League North club he last represented.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "salford city",
+    "salford city",
+    "salford city"
+  ],
+  "refined_answers": [
+    "salford city",
+    "salford city",
+    "salford city"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "611be2127bd7d93cc80825856bb27d44147f288d5cd9fea3a1e0a551517399a0",
+  "errors": []
+}

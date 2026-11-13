@@ -1,0 +1,199 @@
+{
+  "payload_hash": "e63bb9311fa0c0a56ea8ff7ccb201e20a934619cbc4699519cd54d96a4cdb6d0",
+  "logical_id": "hotpotqa:distractor_validation:5ae1f79f5542997283cd2302|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_045de84bcfe4126e016af735e054cc8195964c7cb0777a3a72",
+      "object": "response",
+      "created_at": 1794586080,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794586082,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 8535,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 409,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_045de84bcfe4126e016af735e15d8081958f3ac9e6efb9b5c4",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zXieF2LFmfuEKrMFDjxzJES7k2V7nNgPNLCUGMZgqVRMun33TZqhyaIU78FbxMcRbJie3yMxM83giZgF1pZn83TYJRhVlipvxCi7WK3VwgSZysOyO2cqdWQ_EchG3BDUWVKz2HCWdyassro5aHy4f0eUuh5cibgCGdaF2sg0GmembdZGdmfi7pVe04mh246T3gp6ifh5eQZN96tYrNBR3DqtPlBr-b3E3xwv3XVEeJ-u3k1HYfjKo9Qw3jaqaBz5OUlN0ciqlXh5k6DEYh52-O2QjewHuHfhXH3AoMjEVeOVMjGmBhvggiUrhzBt1jTvJMNX6qX9yTXxWTmsIRqd4us81WdAtlYjwGU7Pm_M4A8MGUwGwqDfCxrFcSjbEem-X-H9kKg3PjisNqK1Vf5VQ4dmBnYkVgyac9RROQ-1yN4Vi1MZEMoFLWOHIxnK3GuSW8sO3BRvQaCOGFRDIhpH0lLFaEkNbm2ExwV5SL2WbBgEOiedFbaQBk5c0Bj3KB4tiOyO5MqiZ0l9jW-BE7GvXPIYO9_0Hs4mWpO_EzOKG3cg5AyiL9nJK-L7uiu9ZdizH-hBf4UYZtc0NibQLc29_cMil7BePYXs80aRo0-B-dtho99oQqIymdlBiUAhPHh-ssSMM-00SwT5lu_BLBy3lfQ3Um2C3qonIVJR6x2prYr2IHfIartEh-dcgVZvVS0VmBF1XSOqv2IvkpzLgvECuP9ofibvzRf6Aa57Jx4D-qQpm954WLQrAiHHqFlnGiXn-mNU5Cz1a0df5WD2333dykd0Naw19mAb_-DD2jRqNr9e0ZGXkq8ZPJPYb6fhW0TNiF90E6gKkDLI2jq_xZG5_6pE3Ml3Ib6UVnIQz9GdAD8gnkPJlHEc_JTQCDB4jRdW_iIEzx_CQSBzJAY0WiEjiT6QjwFLM9UaeGGrvBKpsiUK0cuGif06xUB3fV_Ny3TUgpKD9H-R_l7cm0wveVpoxYWKNm02p5PNLP2p7OPL-t2QaLO84e0Qy4hWSpUn-SP1M0YoXGMAsir1U122TrOvWzUq-xObRs5Y0nbxs8dZApctVRe6hSP2BpAIE3QLq8Nrt6m5Aiw0Qg5VUDh4n00bbfi18TX9Ho_mATkTag11gU44GVc_405hShiVk66LplgqGezFuzJ5xbonU4fleLtdC-jkOPMCgGsh9GNqUddoufm5j1moY6Xz_TY1W435qDisWtSB4hxrLKNQZSXgwZuHQKF3GpODPC1myi20hVvPf-w3upQVah0HArvCnIXmCSq1jEfXML3fnH7LEnWqM3Q7t5C3z4b7numJxjmXZMuS_9eWk2mUFlJJQ7H8JrxAtilK7X8zA7JXxHpDnp_D1tdDbQYQimtYJl3iC7XCQp276r_Db7aU4rFho6ptZ-csH6qVraWX_iylxO6K1fLNyJY2aqaJHYNpGA-qzquTLgZwdJFqk7QBVhbMUMAtf3Um91jDu0USn68xbexBmhNJGrzmPdmApMbK95MksdPMhKdjkilO1APG08SMt33Lj6s4VYxZZs_UbO3FdhUosslnEqQr_bEy9sI2FXflQYzpgu19ctovWsXwVbqLiSVIxjgS-UcyM_jB-q4lnW9YSsa0eeTk6URbZyVZHufOf3SqaCF9C5EvjOAegePFsoZV7CIHwzMeyfEjGP_3_gaI7hNC2KTvvuiLtuNKiscETt7YuyAm8ttgxMn679QpQqWL1zEjPWqpnZ0FVIT-Xi0p9WCbCM6_k9JNz1Vg4hrewrgUoIfJFtRS526ZwXC8uQUMuxp8GkXhxYlV6Wry8akf2r6Kntui9ynXm8WGi8nmdF9mHXJt9X4G3lEgiJRqBy-ZmiDr30KIKV_XbSYh00HcEDrAs_CtRZB_Xf2kcrG13sVTV-RqT0Y64qh-WtsDgBFcXhgIUZTWrKBoo39jnTqaNqfJzNbIdFooiHHhIk7cTT9R7hlWVkg6P4--AY_51ffZ9NsqqxmdJ0BBruQLQNgRbJ-rni2QtTVqDn5a5-npppYwmdFEm21jkzi2kcC2UANbtOdAHRmzEM6kY-vVo9HUK5Vxv-EMUikTkQUHPSLmPh1H1Spu8dPZI6r2_5uYV7rFWGRYJpewsVD",
+          "summary": []
+        },
+        {
+          "id": "msg_045de84bcfe4126e016af735e1db7481959364c4f653f1f046",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Love Letter\",\"summary\":\"Context paragraph [5] explicitly states that “When a Woman Loves” is the first single from R. Kelly’s eleventh studio album titled “Love Letter.”\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1848,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1947
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Love Letter\",\"summary\":\"Context paragraph [5] explicitly states that “When a Woman Loves” is the first single from R. Kelly’s eleventh studio album titled “Love Letter.”\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1848,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 99,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1947
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5ae1f79f5542997283cd2302|independent|adjudication:0",
+    "attempt_id": "73b0b3f48a5d49c192792627c8c09b4f",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00066,
+    "latency_seconds": 2.874085046998516,
+    "started_at": "2026-11-13T16:07:59.725985+00:00",
+    "finished_at": "2026-11-13T16:08:02.600026+00:00"
+  }
+}

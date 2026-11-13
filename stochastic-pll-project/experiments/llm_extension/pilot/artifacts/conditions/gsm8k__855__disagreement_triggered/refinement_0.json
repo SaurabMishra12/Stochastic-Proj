@@ -1,0 +1,199 @@
+{
+  "payload_hash": "753c223d80101921ae0582197f239a642bff5fa3eb1bc3be1d3325490d0742f0",
+  "logical_id": "gsm8k:official_test:855|disagreement_triggered|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_020f44ccbac202a0016af72f8520348193ad74791562f9a307",
+      "object": "response",
+      "created_at": 1794584453,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584457,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1648,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 935,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_020f44ccbac202a0016af72f85a6008193a6e3f8190f26fe04",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y-JpWPlDIUmv1ykC_rdOXV28m5dpKchxTYEYpR2Dw-bmqsAHUEjsMqzpQ9Ujbbp6isvXwuV2T7z_X_nLa47b6ulquNFAFt5gVVW_tS5rumYwqieK2-pAVi8QnCTCEvA9KRQ44WIrinjo3RCdYR51iC5TUDK8bybYdOvG1cxnrrF_36dmUJsiiGyrm1B56eS17BET-kRU7ztw0Rq_eXAIDY1enNFuIgUthLQqpdiaMakbBhBFC8zdgGKGL9jMgWs17KI-ckFfTavrO216L12S_6g5eNQ0WcbpSllKOv1JdXmMw9gZPpc9e4BYtr-AfD3xRY3WNh5c2Of9E-KIdJVGxYwI2OdQzFm3hDyKBJlM7ZgGe3sdjOyRdBQwizFoi5sKY73T2_m_1XgAYLU-CfJR6zFc9VSr9PpiaofK1768raoCAmMpG30kikwcvR8lS3BRjawHDlkYBa-r9NPtMyqQMMo9jQ0FyVBVgb1BI3ktg8T7x-_XXwHzyeo4_H5Xi9QWbWLIa6nw3fYJWYSFDn3wofhZsSGMQWnFc_WfUTPf5lDToscLebFAaT22c29-emm1PfvEVa5kuPo8MhWHAgeqA1a19zljkMwRttcdsABPORtlOrUfoBPcXH1M5cs_Q6GJgg7JnEDVSgro5CQDEQbIquz6IHUOgJ0WV2gHscnqbzvrr5V_iBB54g1t-DT_LNjAkTfXCS9nqY3IZv3EubB4-EJfvEKDhilUe7-dMhE9ux-BcY8v9YE7Ap_oRr4pzfvfdz6ibB_IDHybrCU1LG5jTnF4fT8OwaS7dF2FJQbEt2QfBQex_FDUQXdvkZC73scDqctVhCqP6sfrR7rSeoXoGv__X8nHusFgLIToQL9PBkbKFm74rfWI1U99C1KSzRUwFjKMPQpOGA5_tcMcwAcJmUwcTjDnVpAFrLJMq4_t2dvHWQygWv9dNrcDmOTTs1LrJ3-M5_coYOex5EG7eXVq00BPybvhsPHQSfXgdanXH5Rjg55-ME5oL0Ze6C3BqgRC3-BZAyke5cmwtQ1-mG7qB15Rn9OTbWZ4yIP9BwiQ_4K5NEoouOtxEhFh2YtGneoXy6JuhTgfO-gq53V-W8M8XlcsdjUhoILyEK071UgJNAEYXKVCMEo2PevrsSJVjkKRSASpFY9PbbmbxtxwCgSOuL0aRhvyUbInREZ14cNXauUkjNU9QtSUGv4W31g1X7vTlO72yJwPiJ9akEFVQJFxSlubfEXzr7tWJkgPngyExyHE6DH7r549xgLI7sczv7hOkYFnCYd5H5UITwfGpG594cD4uQJMj_XmqLfhTD9mLDwgDN5EIBthij8Xwldlr0VyAnEA0KfkfiGVxnAeA8H7_InZy9xhoch8AjeVgiWczUnwFjTxbB07QtYxCclNLqfhI2L0jToRgVmJ595IX1Lyigwg4vZzALkQ9trCxsUBMCjWCBE2V-1JRtVu2sWv-N1j6jS4pWfXl7r1dR-181MmE-OIF9aZi97yC_SQIGuiRCV2KDke5CsfxiTY6_vI1hUIFW5xnlh6HrPXYMzw7Dni93mvA1pf9mEmM94NhD96omSyxCJqOKtRlA3689lYP_i5RR4vjw-cvzGC5Z_Jvkl9JRsotQg8b60IPQWf4HdwQsiK4ATcWpdPd9xqBPfe5M7kOhJhcyHWWVowsUp1jJprJFY1ibTrWge542SoMpVzz-wRVLTBkVFHLLG1otZ1dRBZIfF-DhLHXrOuFPZmTDNVajubevz6p9XpBKlN_oCpKHH1Kgh1F0Z3yr1KQM7AO_GV5CQrnM3LWHLBycPpDZCLS9VLUc7P6mAjsKizFOu28OytrxQfNC7zYbGpU7JfYKuBTHQmksTFaLNTr_GjazjZYi0TB42tyz_rtTIsQZZpg4sgpmYU2ylFEq9JEcEyWWNyjPcVwNJc_Tu118UqDTSAen16p6JBh1lj2GI3uNASXV7AQ7Jbo7OmI5Kv9eh0KjaXdDZ7Fr5Ond5unOh-Vt9bj3NvRVxETRhqQ_741ot2QufN732LZuwLR5rtlzjhkrwjHUFiGYjXwuvy6kNAOWx3WDC161-i9hQNQez24MTbFX5K8BLa0tNihIR196HhNTqfLrpqCEX7Bibt3MHRHvdpYND17tzwUtPVHp0OL_cD0KuKdGnw9anNuvSN8XNa0TZhsYLsPE_mrRKPzkwD20AjQHfGhLLDArnGxuLP_v5IaR3awAGkVolv7we2SOs5RKNVOiliPYx0TZvSIepI6f7eNLZMCCJlKnZ8SXgQIsGBwc7Y-eC5Tafs2vT-YrKETmDg8-71lPw23XFmiVfpL1t5yjEIKPG1Fe06pFm9B89ZcxChEQONrFTWJiBS24FjVbYdc1bIa0gJoFmPpSd29wOsr5CXCwSm_usy170uMgZBIoqz7Klbf5Yh8iw_sza6r__FjBkOwCM-c-UBrHswNuCwTZIxMDJVNUG_DAo481AIYy5WocDEDN4ksf-DQmjdStldHB_V18mNORcmOrvk4WcdIOA8taHNqQ2W1bpVTsKaoGIREy426dLDJ71Tl0SWaDh8tyvx7o40fKWyAFc7LX8acWflVf6ZjOAdb00MebzEG5tskhKuSx-7dFuMBiLBWxX_N8k3a5eTRFIWk4c9k8KnYZLFpseyJIDdKAPxta0XIj3UqdeCVIvD_kWHvwZ3bbP2DjvhMgU4yaPAX59ucvqV8KptFwYCraotX3KFHolsQE9AaSbRA8hVc0Xf2G6CW7TX3N9KtY1hqB4Eo8hGq3maVTFKRKmRoxmBhbdb7ljvJvZzwMhCNbp531MRKIpTs2Vb-MQtBwSsHCEmxq2QRT2gitiMMl6IXWoynFfHcGlAwLIMvQDTKDEK9u_oE0pz2hftBuo1MiE0o01hKOtQHhUwMrPQbeG7P64JnGlkU3trrYssl6YUK4aBjGZnd1024M3BGL2Bt3HRYL3mEaveXdj627iIg7e0LR1ZJEAmqclXoHIR44at2Wb6pRi5bjkTu5lm20byp08B1Wv9UI0-frxIoR8MNq3nejYR5ksFrzJMHwig9ya_6k_19CrNrEdle5nmtxwcUmRPUuX_RMlz82pRzR7eXNEd1cY57oJfjBnbgPi_2Ffihr-P2WhoGu0Tu3GqFxOdwXL3gQrELy6qdu5JA2DHD315eQp0_YdykJv-xAHfGTJ5KbGFrLsoZZBg9skEN4zhm2V-bweRiNHx2BoTEgKDlr7PPIyn00wb_1UPAqdTk97gchovyRhKdNCQUhFaxfRMIao4wDC_l9aFP_JtjSNk3vmyoROgSvqixnHeNaliTuOU7m5GrSxlcoj6g8cWFhn2ctW1hP2op07dIaShgq1nmwVeusjWuWztmIFBKuFUXtAeMitOnOxTerp5-MQBuU3AiZV8wVr4V8XZWUoOCHgcNrWVv9hfF2a_ty6oWO9l-XVTznmvnURWHWjs_d7XfU1dM4QC5pqXE_cIwdlrU5TDzZNagyXFjfa-YrVqd6MmTrS0-qoFzW64pQGveLiTyP_uRxC8X0DZK3NQrfL75iw2fVMd0dt5qDLOeveu2E3Euw2Xeh4VCemsF1GP9clpak5kFvDc0Ot0i95TkUPew4mBmzXT02Padii5kr4hGce_eEt6rGuW9Vw3ZkdrVt3jVbhzh8QOPoUmi2uu836nrOBkEavJE8XxgjP3SLcOSResYWQiZcl-Q5pSfnM4T-Y4V5I8lcXI06t_6eXNsZfz4M3_DP1w5_lyWllszY4Wew8r1VMF5jVi_jJwekP_wmAMhGX63eu8yXLAP1ucOsZCOEI26C0IFXsq8ThRGRq0nfdFyM=",
+          "summary": []
+        },
+        {
+          "id": "msg_020f44ccbac202a0016af72f87db9881939d404ef9343d3662",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"13\",\"summary\":\"Let M=me, B=brother, S=sister, Mom=mom. M=B-3 and S=M-2. Mom=3B-1. Sum: M+B+S+Mom=87 → M+B+(M-2)+(3B-1)=87 → 2M+4B-3=87 → M+2B=45. Substitute M=B-3: (B-3)+2B=45 → 3B=48 → B=16 → M=16-3=13.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 325,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 372,
+        "output_tokens_details": {
+          "reasoning_tokens": 192
+        },
+        "total_tokens": 697
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"13\",\"summary\":\"Let M=me, B=brother, S=sister, Mom=mom. M=B-3 and S=M-2. Mom=3B-1. Sum: M+B+S+Mom=87 → M+B+(M-2)+(3B-1)=87 → 2M+4B-3=87 → M+2B=45. Substitute M=B-3: (B-3)+2B=45 → 3B=48 → B=16 → M=16-3=13.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 325,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 372,
+      "output_tokens_details": {
+        "reasoning_tokens": 192
+      },
+      "total_tokens": 697
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:855|disagreement_triggered|refinement:0",
+    "attempt_id": "17679457e70440ed957036a230900e74",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00082525,
+    "latency_seconds": 4.76172994999979,
+    "started_at": "2026-11-13T15:40:52.508718+00:00",
+    "finished_at": "2026-11-13T15:40:57.270454+00:00"
+  }
+}

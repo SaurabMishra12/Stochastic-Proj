@@ -1,0 +1,199 @@
+{
+  "payload_hash": "0a1a7e9ec3288d5c12c5628459e28751c9d270610abedeea0c496c010f914a96",
+  "logical_id": "hotpotqa:distractor_validation:5a7746cf5542994aec3b7263|stochastic_controller|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_0373aa65567a449d016af7243987948193822f843fcc049967",
+      "object": "response",
+      "created_at": 1794581561,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794581565,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 10053,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 778,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0373aa65567a449d016af7243b50288193a0a3cdff8732da0a",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yQ92nqHy94BJLqBp8dUUigCExElUIi9dDSEoKFsanMq55GPBR22D7EjY8KOkg67IVcz4o8WHlGf--hi5ZQelJEnqGbFuQq1xjdgYHGyEySPWdoo624cZUcljPltB0azi3KNm4mMgyAa8HFEk8ZWoq6s_xLIXYA2kQlQIztfv-tdt9vK_gvZaUeMVruIFL3JIOr4LOvloXODgybf-5uzePc04auAcBJWj5rKPwBzj6u263Rq_UBEyh0NJbxxdf1B8ONDGtW4uMpJACJwiWJkna4O42Fgt7y0jnfDSYt9VTAg6LakTdA0rQ_iqhAvMTyfyQeJ8IC5-apZU5WO9e7IcGF61RdvHPcXznN-DSeF0_g6KVgCJKkQHnMnO6xbfmvudOR0cKpeUUIK7lzB4WMptqfy4K07Yn42_NpYO9rLRZE4n3kgFEyDnCekqk3MYfdvD9gIL4smCag82RNIJiljbz-wSGFa2j-ffaZhg52gg_WpHF2S6e2ctu9omeE0SkQEWgO1MHOmwIp_zG7zYJIB21eJzZBqBP2J3mnXW-SIG-VxnirgXM8K9tSi_LDm0vO-uUeQNnZpM5MmFHbfIbc06BStQ-GDJi3A6qpjrQ4zEoEkxK906w1X9faqfRC2hu6K3qwioIel3MmxtcOROOm-KNEe-03Bw8PhJF0aHWE4sRJfdXB0RxGpQEJa0l5g_qv73JaiR0typVwr138UKA-zwyd59BqPOXokV0u4C1qphpyUbfrvxtW668_uDoCePV2O2CCLKp2kYBKRP5qx0Jj9ie5k6vBeoyGNpIYHOrP80RJeoGdxwJ9tT5CP5mDzJ9L_ogksc1ESS76DV4gawQGAvQsFR-CPEPwnAH41BEy71tDpI9Foz5GRhWyFFIqM37_MSvhZlyUze9ldIblzzLaLYGbTcwxkp9eQsjGuqJ7gyr9A9CEu8RvhL8q2peVX0ItYWpwF2hj8xbNbRr9gZD6T8qCZao9zE3qrs-PQhkHFZst0wwu1l_OAayNcNrwr5SQomugLb4ujKg-__Dcy9EIS6lrt21EqRUM95xDsQZUzrDQuxSdNNoj5ESFAmP2YYNfMjWG0Ut6HVvD1pbkaXogE6oNwwJqTEtpaUWQEfStWe5GZ4Xwp0_U7EUgoYxJaQB291QyLCDFdjS8mksePA2CLOUa972GuvHM8-HiiQG3SOBOWeVnwSacjGNuFs5xh2i64Og74Ho-1gVjSXX4srUVggAgxX8fTb8U71tpb4PTj26fTIyknf6cbYLQaNa1kLaGTEm4zO-2ttZV3XT5AM-2DAeVuPbljNZ3ganNSfwXDLXG1SlOW9WYic_khQDsp-nPUwgaX5vrihbmwim0DXN4vFhatunZBPq5qwZuZt6m2-WaK15l2srFm4BAtmds8mDzVI5kMEAoT01Athbt6UG9OaSDk6KGJfxHjpNfHGdSPWetitYuLCBqj1ju8gkAWW13j1AAT2u9b-xghgBv4x5ZxMHx-223vtcKc9TY3IMNr-tWtEac_K4zIG0fHiTSNK9y8c13wGtvImkotWf857grg4ETcdGrFf4uDLutJt73wsHCIGuY09AW4_GlzKS9WsAtlVWyKzBVoMH_UXo-o0g_rbVNUZyp0yuOpOCqZdYVFDMQV9Smplq9tZWwQEolfBro3vvb1JBp6BjGQQBtuI5ELOj_g7nt9X8z__hCXAfHLxRjTYN24yQ0DuLwbuGmig1YqN3QTTKfPgM8ayWVxfZB18xxhnzcn6zRuIoQpSd65l0VPig8S4PhzVBDa-lFfGXcx8uHqQfgKB292ZpAVLc3BxwF0grbgwTNkghW7C-IUOIkv-YGvm8sYndZR_MYjVyaasAsw35ogk98BwoN8DMcR5QnoldlWaokp8_PIxu43OoLRxKC2oJPYSP7bNAza2vleeQ1fjUHImd_jxYBXdZ1BftpWBu4jPBRi5w-eWCGhBmu6FsuPcKAtowrnhvvuBf3Yk_g0aFlnZn8ubpnTcBGcafN9ks2wHUqt6a1nkt8X4-2U7MjW8arVKHN50dc255s9gXPRYcMpXbI-tIWiVs8-X1yuX2ePlV63alUvowP2ZjqBDBVI1eihZDI-7yfbPldviL7QDktzGtd0ULvf-xsqBFuigm9YP9o8MrhSVbBy3Uq867K3s_YHrTZvK68z6gUMdBZuldeS6laEBKFmHGV6hB2mZN3xUSZWrjT5LnAPK40xQ5nRsmR5GR2blXrvOwBBmbtTSlszm9yBxQrYW-g_SqzwPtTBeiPDTXhdn0uP9qtzwNdwcGEtSkkw38YSBeoPdhBHRM1o6WnAeQssezMjss6KqR-UwxxPXqTVCPgAUhhF0TIbWHsZ-PtC-7Ksa7Wy5dy0o7M8-eoHjWCQUCgt6OUSdxGUzFZEdnGThkXf9VuhwHzQOOnymRpfMDWUPu75F6v-yiDhQ4plCkzxloY5abBvN4o6srOrIMmCyB3YirFDNHJmPB7e1dODlPVWfJogORfC4EdQQuXNDwexv9AShJzan0M3smyHZ9IFoQlZFxQuM746PnMpfwWUz96ErLPLNTDwsvg4wbUAJ2brYwhhS-AB7PK83A21rLo2my0vzasgGW_vHX-kUXCQk6lh11rGwMKxvYK7IBKAvlCYWH2EcPjFYgY4RY-PYHkKwMn49Brp2AVHI4cfM1CkyxpSYr7-3bO1",
+          "summary": []
+        },
+        {
+          "id": "msg_0373aa65567a449d016af7243c1ea481938afab10382ebe1fc",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"The Community of St Mary the Virgin (the Sisters of the Community of St Mary the Virgin)\",\"summary\":\"St. Mary’s School, Pune (1866–1977) was run by the Sisters of the Community of St Mary the Virgin, an Anglican religious order founded in 1848 by Reverend William John Butler in Wantage, England (also known as CSMV).\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 2169,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 184,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2353
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"The Community of St Mary the Virgin (the Sisters of the Community of St Mary the Virgin)\",\"summary\":\"St. Mary’s School, Pune (1866–1977) was run by the Sisters of the Community of St Mary the Virgin, an Anglican religious order founded in 1848 by Reverend William John Butler in Wantage, England (also known as CSMV).\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2169,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 184,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2353
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a7746cf5542994aec3b7263|stochastic_controller|refinement:1",
+    "attempt_id": "af5b9ff6d80b4ec3b8efbfdf62251461",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00091025,
+    "latency_seconds": 4.350533023998651,
+    "started_at": "2026-11-13T14:52:40.789776+00:00",
+    "finished_at": "2026-11-13T14:52:45.140316+00:00"
+  }
+}

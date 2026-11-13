@@ -1,0 +1,235 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab3dbd8554299233954ffd6",
+  "source_index": 5361,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "2017",
+  "final_answer": "during films production—from october 2016 to june 2017",
+  "correct": false,
+  "f1": 0.2222222222222222,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12532,
+  "output_tokens": 1468,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.006069000000000001,
+  "latency_seconds": 24.778787410992663,
+  "wall_seconds": 186.2053948879984,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 1385,
+    "utf8_bytes": 1391,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "during films production from october 2016 to june 2017 released 10 november 2017",
+          "summary": "The supplied paragraphs note Peter Capaldi reprised his role as Mr. Curry for Paddington 2; production began in October 2016 and ended in June 2017, with the film released on 10 November 2017. Therefore he played the role during the film’s production (Oct 2016–June 2017).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"during films production from october 2016 to june 2017 released 10 november 2017\",\"missing_response\":false,\"sender\":0,\"summary\":\"The supplied paragraphs note Peter Capaldi reprised his role as Mr. Curry for Paddington 2; production began in October 2016 and ended in June 2017, with the film released on 10 November 2017. Therefore he played the role during the film’s production (Oct 2016–June 2017).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "during films production between october 2016 and june 2017 paddington 2 released 10 november 2017",
+          "summary": "Context notes that Peter Capaldi reprised his role as Mr. Curry in Paddington 2; production is stated to have begun in October 2016 and ended in June 2017, with the film released on 10 November 2017. Thus he played the role during that production period (Oct 2016–Jun 2017).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"during films production between october 2016 and june 2017 paddington 2 released 10 november 2017\",\"missing_response\":false,\"sender\":1,\"summary\":\"Context notes that Peter Capaldi reprised his role as Mr. Curry in Paddington 2; production is stated to have begun in October 2016 and ended in June 2017, with the film released on 10 November 2017. Thus he played the role during that production period (Oct 2016–Jun 2017).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "during production from october 2016 to june 2017",
+          "summary": "Paddington 2 production began in October 2016 and ended in June 2017; Peter Capaldi is listed as reprising the role of Mr. Curry during that film's production.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"during production from october 2016 to june 2017\",\"missing_response\":false,\"sender\":2,\"summary\":\"Paddington 2 production began in October 2016 and ended in June 2017; Peter Capaldi is listed as reprising the role of Mr. Curry during that film's production.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "during production from october 2016 to june 2017",
+          "summary": "Paddington 2 production began in October 2016 and ended in June 2017; Peter Capaldi is listed as reprising the role of Mr. Curry during that film's production.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"during production from october 2016 to june 2017\",\"missing_response\":false,\"sender\":2,\"summary\":\"Paddington 2 production began in October 2016 and ended in June 2017; Peter Capaldi is listed as reprising the role of Mr. Curry during that film's production.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 8832064273864114758428839272515120053,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 1.0,
+        "drift": 1.2,
+        "gaussian_draw": 1.032472127501373,
+        "proposed_state": 0.23427372402404387,
+        "state": 0.23427372402404387,
+        "probability": 0.718578008542665
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.23427372402404387,
+        "target": 1.0,
+        "drift": 0.9188715311711473,
+        "gaussian_draw": -2.7674835388978023,
+        "proposed_state": 0.0198565791932499,
+        "state": 0.0198565791932499,
+        "probability": 0.682630122169012
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.0198565791932499,
+        "target": 1.0,
+        "drift": 1.1761721049681,
+        "gaussian_draw": -2.4649860804022548,
+        "proposed_state": -0.1353501748238124,
+        "state": -0.1353501748238124,
+        "probability": 0.6551421337984001
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.718578008542665
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.718578008542665
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.682630122169012
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.682630122169012
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.6551421337984001
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.6551421337984001
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.23936646812887152
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.8274409953689081
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9549262919602783
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.03703257515500924
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.29451430168947124
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.031519681809039746
+      }
+    ]
+  },
+  "initial_answers": [
+    "during films production from october 2016 to june 2017 released 10 november 2017",
+    "during films production between october 2016 and june 2017 paddington 2 released 10 november 2017",
+    "during production from october 2016 to june 2017"
+  ],
+  "refined_answers": [
+    "during paddington 2s production october 2016 to june 2017",
+    "during films production october 2016 to june 2017",
+    "during production from october 2016 to june 2017"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "9fc06008a01a4bb6365d731c723a7980795e037213c2acb4fb326311c9bfc528",
+  "errors": []
+}

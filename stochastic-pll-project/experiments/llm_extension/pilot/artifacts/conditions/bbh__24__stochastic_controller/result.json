@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:24",
+  "source_index": 24,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1804,
+  "output_tokens": 869,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002189,
+  "latency_seconds": 20.435813836000307,
+  "wall_seconds": 183.83674937799879,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 374,
+    "utf8_bytes": 374,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given Amy above Eve and Eve above Joe, the finishing order is Amy (1st), Eve (2nd), Joe (3rd). Therefore Amy finished first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given Amy above Eve and Eve above Joe, the finishing order is Amy (1st), Eve (2nd), Joe (3rd). Therefore Amy finished first.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given Amy above Eve and Eve above Joe, the finishing order is Amy (1st), Eve (2nd), Joe (3rd). Therefore Amy finished first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given Amy above Eve and Eve above Joe, the finishing order is Amy (1st), Eve (2nd), Joe (3rd). Therefore Amy finished first.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 155740946666462167641584874823569420678,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.2900061407275387,
+        "proposed_state": 0.14277751601059527,
+        "state": 0.14277751601059527,
+        "probability": 0.24309637071872914
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.14277751601059527,
+        "target": 0.0,
+        "drift": -0.17133301921271432,
+        "gaussian_draw": 0.19851275251167555,
+        "proposed_state": 0.14761554957774103,
+        "state": 0.14761554957774103,
+        "probability": 0.24380923922708755
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.14761554957774103,
+        "target": 0.0,
+        "drift": -0.17713865949328925,
+        "gaussian_draw": 1.651608154436415,
+        "proposed_state": 0.3127012085828292,
+        "state": 0.3127012085828292,
+        "probability": 0.26897307055381164
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.24309637071872914
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.24309637071872914
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.24380923922708755
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.24380923922708755
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.26897307055381164
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.26897307055381164
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.37626961082574606
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.2904083535644819
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6789569973802803
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.4159261234616012
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.23806175232507343
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.10015088755950807
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "1fe03af1e254d32d088825b14f6472414503e3b866ec9e1f6dd3c8a24e8c8f14",
+  "errors": []
+}

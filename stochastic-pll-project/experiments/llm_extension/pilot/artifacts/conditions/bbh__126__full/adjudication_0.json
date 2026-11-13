@@ -1,0 +1,199 @@
+{
+  "payload_hash": "2ebc652ede308e7ee53c8dfeaa4191162957535d9ccc82be5e9f23b8ee0d1554",
+  "logical_id": "bbh:logical_deduction_three_objects:126|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0c8b9568c09c374a016af715b853b0819781453057704d839e",
+      "object": "response",
+      "created_at": 1794577848,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577851,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2409,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 584,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c8b9568c09c374a016af715b9d8008197b650b08d58e2efbb",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xW7vIYz4YAnyjNWTueAvQHUYnM69WMXGBp-OArbQTlFD8Nxz6_1uDuaNLB4kqmoBERgpz8sIeHRk5ZphlI4VazOCysYuoL5cM_JnyLT5cEaw_4JmXejDevC4ZahM31tNupgGWwMm8Tz9VOmSdqxiabjrgapamlsXaqRKth_OAK0hvbWolgv6n8fdlt0yhTX05Uo52X7Mx_T11oFPq5qTyUFqie3ZszHU7kCl3Lk6WxyFFWat9NHCUXHsRmN6jShJjw92BIeIlkFoH_wc6oHgA02o-lZq-alubehfRV9_lSlqFQEFvBdjnH_kEqd0uBKqB_jpg9Do9Ma-u4I13mp_4mIgegTHQOOLG9h2BM8HeKaY60br3yPc2g5dlIE5ct_d-ZauyuRmd78jiS6KjyhjailHUUiotKwU2gUaMYXIXyvAw5vYNo2FAaUk9v3yOAwfJ_eueAqTfnnZbOy4rCq4_r_PgqMzz39acFyph-KCLsykKd3FO3NNCHZwpJ70lHO7ZK1ghurQBRlJTBjgCjELZjCNjBBKwxRcnxGXRBeAzZKemUTulLisEy9A2gTGRiYUboHsm-rD6kPT3CVUt0zqFaGbSZSQMA2dmwYA2nQmCK0RMd5gtCfKS8W96TgbNDOcVLemyHeKCzukj54kp931kvlwEW3QVpUqviLKz-W4NF-4Nb2OKodfAYE5sCE2XxKLPsMlMoigf7kU4ITO35TA68Wwj4d2UE1SRR_tm1h7IqpKVQv_zFvdaOSBKIbsZW-IQPj2ld2Yif1mhA9YTU9VzgVb8ilKEDYv3qRmj8Y8EgrKTpDBlQvDBanLCT_CUWnWYFsuDT7qF48czCohLylj4-PW6MECxZVGK-AMkJPDUOUHpf9GS3PKRttjN7sQhySjGI5v0u4orNGX4DlZ3yntnjK5CO6YiCXVuNlWTaXN8ftgZEXJ4ft4r70fGaZWy8uo_SpAP9WXDTSg4mNcNEyZWMkjJQMHulMgAUwwnDyMn25o3yigyoApz3fXZqhbo-1JL-B9tEWDpfD-2GkuqZOn3XYOsgvZ7byp-YnuTiTWnqEqVKd-xsnVzc4MZFzQJJJw03kE2PZ6JDt4ITmd41k8m9mg9hSS_DfoPESQXD3ur92tfOFJaupFXkrB3pB09XJYd0B4N-5nU0U9Jm4mebx21ta0n8dZEDiGQfPRh2Yt9Gjva-eJxewP21aIXxUV6wbZt62wSlvNSpnty8s2oxb1nSnHp_DKrIkR_ndtJMCjW6W7bryPghPisHt72dZgrMrBvUYQb0toV9kS3KVfKTzujnQR3mnRkShJCre0yQ00ah4v6E0g3pXPJ5AObNiSoM2EJlq7E489Vti4MSsSO-jdNAGSSdKLAqSnN6pHsl8-N3-VOZWFTVLr1WJFMsIN7AK6ethANS7OPgypFLVOdxcsUL7MraJIeuTJlXt_xBhsNnMjW5qYNBsTGKKFjfhEx4SA7xxI5Rogsq5Kv2QAmd5ZoCYsJ6SHdmP_QH9Vjhk3j4LPU4cJ1Tv63Le5GWW9vwRvga9-D1TvDvXWZC6HEogW6JjNRM3bOlnt9PlbNYHmLBWV5kAvL5etb9CaZQXest55QelC8hkF1W75UANuu-XJbIX5A5pgAHs9OhCTYNJz7EuzDCmiPcFZOPQt58vNt5tCoSz7p8GbwedYhenDe03ycB2sGNDHenpha-xM5_ECg9P2zs2mo-t4O6u8fkMgtYKXI4atqYr8sz9VDBWNZhPmHeueVXBkfnuJ0-jnlnQugxgAqDNe9eVARg2DHZ5W59JfCXu6uluDdsWh_JsszJdxPU3bYBSs6p3-0ta0jM8zvIlLVWf3-Nxt8kZh0PvK3hMCoG4QeI1De1y-Bax8zo4kWhMPdYW434A7ea30uw95VdBLEqOv9z6an-ooaOsGyUjsDqyoRZKh2UHRM-rHwCJ9DB8wRUt7JIh4VIJbk-1nlkgxCA--bj84SiJCFfwuec4f73FVChlrwgMlir9IyfZrcdJiaWWrEcbvJebr32adH9yL748VqSMYkZUyC0uus9XE1QjBvzGdD5RqCF4mn1-GynsunUI_oi48xN9jDCyREdMfVfiqb_w79Si8UB7QHrRjk8Kh21jhzUtcfRMLph1cxDPB4hemLAq56iuWX0-pvPlvuDQBYUIS7Jwpm_ZF9lIPdWuEb3BpbzriUF7QijxArHl2AT_TqQhtTssyZNaTJwRT15Fp-9cOYRhxfa-WY-KQ94hpKVZm2X2UDnL2u8OP6wo6jWN1qoAexacidBI1wFRD1O0QZfrpeQMTjlx45Fr2V9_CGa558KbdLrAQElYbUhtRWlXL101mZHB10laTCXdQz6t31HsB5taOx1xQeLkoTVBQJdCdiqDVr5PB15AEzIpBhIMzhSaewZeQe1U7x1wysjDmLr8S3BEo4MdAhIfVJqxJ0MlW9hSdsGxDYBW2P766N2pVzTR5Wcrb3EgKylEk1_1Ovh3DzIdhc0lKgwu26C_VLYC_3uk8laU0toz4XmygNqNVXDVssT_STG5KS-Zh0A=",
+          "summary": []
+        },
+        {
+          "id": "msg_0c8b9568c09c374a016af715ba732c81978e4dcefe22bd6a91",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"With three positions left-to-right, 'orange left of blue' and 'yellow right of blue' force blue to be between orange and yellow, so the blue book is second from the left.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 404,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 141,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 545
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"With three positions left-to-right, 'orange left of blue' and 'yellow right of blue' force blue to be between orange and yellow, so the blue book is second from the left.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 404,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 141,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 545
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:126|full|adjudication:0",
+    "attempt_id": "a3768950885e413a844a9751a3a2f547",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000383,
+    "latency_seconds": 3.8114132909995533,
+    "started_at": "2026-11-13T13:50:47.703363+00:00",
+    "finished_at": "2026-11-13T13:50:51.514792+00:00"
+  }
+}

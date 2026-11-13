@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:77",
+  "source_index": 77,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2026,
+  "output_tokens": 870,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0022465,
+  "latency_seconds": 20.717585807999058,
+  "wall_seconds": 132.17759913900045,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 450,
+    "utf8_bytes": 450,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Given the order constraints (quail left of owl, owl left of hummingbird), the left-to-right order is quail, owl, hummingbird. Therefore the quail is the leftmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given the order constraints (quail left of owl, owl left of hummingbird), the left-to-right order is quail, owl, hummingbird. Therefore the quail is the leftmost.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Given the order constraints (quail left of owl, owl left of hummingbird), the left-to-right order is quail, owl, hummingbird. Therefore the quail is the leftmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given the order constraints (quail left of owl, owl left of hummingbird), the left-to-right order is quail, owl, hummingbird. Therefore the quail is the leftmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 242136533256756953465196440418522108389,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.1702431879397221,
+        "proposed_state": 0.01884246805061705,
+        "state": 0.01884246805061705,
+        "probability": 0.22532041914472334
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.01884246805061705,
+        "target": 0.0,
+        "drift": -0.022610961660740458,
+        "gaussian_draw": -0.1552100684017876,
+        "proposed_state": -0.000597234733363261,
+        "state": -0.000597234733363261,
+        "probability": 0.222617442430325
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.000597234733363261,
+        "target": 0.0,
+        "drift": 0.0007166816800359133,
+        "gaussian_draw": -1.2552866821895055,
+        "proposed_state": -0.1394603426921762,
+        "state": -0.1394603426921762,
+        "probability": 0.20398553486500484
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22532041914472334
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22532041914472334
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.222617442430325
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.222617442430325
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20398553486500484
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20398553486500484
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.37292681496212776
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.38117290891680133
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.43895856899923535
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.4526593516780171
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.11034897551574918
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.031988536951141344
+      }
+    ]
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "fc496d7e5f0be456b89a2144e8596f3b1eb79172db35003a5ba47f1b441636d4",
+  "errors": []
+}

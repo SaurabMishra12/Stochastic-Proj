@@ -1,0 +1,278 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5adea95055429939a52fe931",
+  "source_index": 4281,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "pornstar",
+  "final_answer": null,
+  "correct": false,
+  "f1": 0.0,
+  "completed": false,
+  "final_valid": false,
+  "call_successes": 0,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 9558,
+  "output_tokens": 1213,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0048155,
+  "latency_seconds": 26.01385537200258,
+  "wall_seconds": 239.91957384000125,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 252,
+    "utf8_bytes": 252,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":0,\"summary\":\"\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":1,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 164210791861205182676125680331059431741,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 1.0,
+        "drift": 1.2,
+        "gaussian_draw": -0.5848548144064353,
+        "proposed_state": 0.055268434008621206,
+        "state": 0.055268434008621206,
+        "probability": 0.6887356013223567
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.055268434008621206,
+        "target": 1.0,
+        "drift": 1.1336778791896545,
+        "gaussian_draw": 0.8563430661096864,
+        "proposed_state": 0.26341603108654305,
+        "state": 0.26341603108654305,
+        "probability": 0.7232685048788042
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.26341603108654305,
+        "target": 1.0,
+        "drift": 0.8839007626961484,
+        "gaussian_draw": -0.12525840593115117,
+        "proposed_state": 0.3379425422973045,
+        "state": 0.3379425422973045,
+        "probability": 0.735041555229326
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.6887356013223567
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.6887356013223567
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.7232685048788042
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.7232685048788042
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.735041555229326
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.735041555229326
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.9105320324247752
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.07998968713138
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.7951923586363993
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.24455411354592593
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.10364881298169315
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.18165229901845992
+      }
+    ]
+  },
+  "initial_answers": [
+    null,
+    null,
+    null
+  ],
+  "refined_answers": [
+    null,
+    null,
+    null
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "4670003ac9f07635f6a7fbdca098c8570519f654368fe607b38da4ea1c59d6f3",
+  "errors": [
+    {
+      "stage": "initial",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 1,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 2,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 1,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 2,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "adjudication",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    }
+  ]
+}

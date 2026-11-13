@@ -1,0 +1,199 @@
+{
+  "payload_hash": "ec18bbf8ea7562620ec2845cc39538dfaae7d784e04900b00f78919d3470e4d7",
+  "logical_id": "hotpotqa:distractor_validation:5a7561495542992db947364e|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0b744b785e52dfeb016af7325392b48195ad54a8059013a4bd",
+      "object": "response",
+      "created_at": 1794585171,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794585173,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 5724,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 554,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0b744b785e52dfeb016af73254afcc8195945ead8967e44f88",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zJV9d6VKDrxYxGx-i_XXCEuZcPJEhg85WvDaDQW70SJWLWW7DmE0EIMcTGNAC9Wv9v3MtNW5ikJWmjlgJQvfQHsAGL3qCliUX-XbaOrgA8pZEksEz-RgioZnINIdqXSEvbIjaqEV-XieAdA4zIlACYj4L-aRasB1lwzrJPUz00FdxfQfX0tCvhUCUisuU58liURuqxnpgZrikaJsf1GClAXPTHsH04hSXhhonBbIKmXpvDAPhWRZmaLUBcxFAtGJF6js9AbKr34vyXzERadOMeSvmppbxdJfZQdooROvc9EaAWXmIiQKl6-BWlisRyooBJEWb9v7vYe50N-PQ8apIImFtdy02bBpMJLSBdNMQOec7kapuxFBmv_vD7VvzO_aPtnzeJdSyyuiSNdQJIvxcsE8TWaDhHdOdoTJE4wHMbTfIae73NsjwlHuZaipx-DzumAfMumuTqcp6Yy2zBzjbCojDGxazCVU5xzzD4QvfzlyrdehA-GgcwGNkDHYgzwU1s8OoCBvaw3aJEtry84jZyZehpAQVYAXFe5AUFwATLS0FW6n6cb25xlP8aaUp-wp0cV4RWO6rJz5oPXFV_ywji0-AaJjsuIUNcnMgiV3C20EiFTYmWGZioxgi9kXqv7OH3m_xgVua1FxW74OjAudKWs_WbSQhMYsd3iqbITEXhzMq_m0dnBIntalGlb8SOj71Wl8dhQZOd3oYqvvWCnDuYZPeD1_jU7FBlQbzo2Acqkr22nkIw6mUGnFPtITW2Vj-2qi4wk7TMY6Z87CB0cTYpSHdqDakYDWuDog502NI1l3cfRS9e1O1b_lPcs5J8XD-zfk78A-IFB4QYmzWzFHo7Y2epO4mrMa8M6L4Ube-5zzOHbHbxNEJ0vOHmqOesGwLFryiuiKFNed-5Nr_TmVqzIPEsohWP1_azoKEmrMzUl380R8_C3o1wD8kJoeo_5l71rzz6Dsy74gds623GqhGsQGkxwizMOyVWsBb-Bqi0LNW8tyC1HLwWBxZ-jqcnrVdn1zzdW8d8_6yY50Gw_rgFEs2pI9EjMrZDB7QipYxNFboh-X1cLNes3By1SHNJ3-i7wL_64WK3VN04qKmDtkGuqobQClWBohvTcUpl0__RIdJnW38dI-buddTXWdwHw3PINPxgJXANZYQOGPfYAQQ1TQs-Ou20jg7FxtnS1pGm8-L1VN0SogjeX6m5Y_rV1r9uyTiOtJ9R_GhVaGCKIUXxsCfu8pYJbL8xAbB67xQsZpXLCbHy0lzj8Xqy7z3tlit0an-fQwJ0n6bRTDMnQn1pZ8DmAv91dX9O861YSUUY3NVQrQ3qk7Ho7oewbwQgRC6ujvMaGycH1871fWL2SsDoO7BAmPMSryaomrA33h8t5b-OGeeY4RUa-zEkKHHsmM7fOaELZfD8surtT8DOWsZvULvvB4nfUAZadC2Usj1KHXZhO6wf03syHi1Kix4l_A5s_JUKVIUwdTvNREXNVisGqAKrtPMbz51CV8Bb2v-lCxTqu95nhE3HHc1ibLfeSOwgmUM_CaifQomuK_NlRgQuYahz3vjvC0yuDq0UVEKK9lMfL5xBVuUWDcLVdSd4bTRR9SwqrR6OJo8U3tASGCU0VEc7BVgyFBp9hZm0oRBksu0zciklWzXzIofDEhZRzTD2f2K3RSiTUfhwzTr4DnuDchxwsQKKAgJG0s-TsUfMpfWQnjfE77TNT-Xrn9DhokfY7xhB9e4rXx_bkYkbPTGDwGMZmEHT4dd2q9UCMDyfBZbTHFxLN1XFu-hYgtCZoeJs349npGdmjX5j6C5JWcxEFFCEn9qv0cTp4XO1qGepZhqiNG7ngDnpoz1tPWTpCd7BmS2zaFB-JfPfDa1LF54eE7hHVzxageyELGf2l9m8lKw5un-Emecq2CtQsVgy9fQQBIr9_lzFdv470i-tHTHZgbZd9V-R2JWtLkXzt7r2l-SmBndxEJ4V1ZbgxD8yv5HT2Pwpi4cMdjfBCvN0OZDQAz5D0TTjrkpHIWWC1dj2GtC17G39cTQXB5zV_2TRgv2I0-BtIm0uQdTVlsYwmg-Q7Dde0Hv8s1_w2HugcFLBF9m-y2SKdNRzYXNW-8B-zTgAYlAlGLMZCPdf4H4aFptisQw==",
+          "summary": []
+        },
+        {
+          "id": "msg_0b744b785e52dfeb016af7325531f08195bc5691b99dff70a1",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Julie 2\",\"summary\":\"Context item [6] states Julie 2 is a Hindi thriller written, co-produced and directed by Deepak Shivdasani. Context item [9] lists Julie 2 (2016) among the Hindi films choreographed by Phulwa Khamkar, confirming Julie 2 is the Shivdasani-directed thriller featuring her choreography.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1380,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1024
+        },
+        "output_tokens": 136,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1516
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Julie 2\",\"summary\":\"Context item [6] states Julie 2 is a Hindi thriller written, co-produced and directed by Deepak Shivdasani. Context item [9] lists Julie 2 (2016) among the Hindi films choreographed by Phulwa Khamkar, confirming Julie 2 is the Shivdasani-directed thriller featuring her choreography.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1380,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1024
+      },
+      "output_tokens": 136,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1516
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a7561495542992db947364e|stochastic_controller|adjudication:0",
+    "attempt_id": "5c510675c6f4469fa2e689f98a42adf6",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000617,
+    "latency_seconds": 3.700403175000247,
+    "started_at": "2026-11-13T15:52:50.417667+00:00",
+    "finished_at": "2026-11-13T15:52:54.118073+00:00"
+  }
+}

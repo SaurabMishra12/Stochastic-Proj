@@ -1,0 +1,220 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5abb9928554299642a094ab9",
+  "source_index": 6416,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "ted kennedy",
+  "final_answer": "edward m ted kennedy",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 13311,
+  "output_tokens": 1066,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00545975,
+  "latency_seconds": 22.05609030300002,
+  "wall_seconds": 232.42930232099934,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 903,
+    "utf8_bytes": 903,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "edward m ted kennedy",
+          "summary": "The provided context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy (Ted Kennedy) was a brother of President John F. Kennedy.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"edward m ted kennedy\",\"missing_response\":false,\"sender\":0,\"summary\":\"The provided context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy (Ted Kennedy) was a brother of President John F. Kennedy.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "edward m ted kennedy",
+          "summary": "The provided context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy (Ted Kennedy) was a brother of President John F. Kennedy.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"edward m ted kennedy\",\"missing_response\":false,\"sender\":0,\"summary\":\"The provided context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy (Ted Kennedy) was a brother of President John F. Kennedy.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "ted edward m kennedy",
+          "summary": "The context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy released September 14, 2009. Edward M. Kennedy, commonly known as Ted Kennedy, was the brother of John F. Kennedy.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ted edward m kennedy\",\"missing_response\":false,\"sender\":1,\"summary\":\"The context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy released September 14, 2009. Edward M. Kennedy, commonly known as Ted Kennedy, was the brother of John F. Kennedy.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 233185934422572659918134033515529993769,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": 2.055015666827571,
+        "proposed_state": 0.30744855470766985,
+        "state": 0.30744855470766985,
+        "probability": 0.5815871426664214
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.30744855470766985,
+        "target": 0.6666666666666666,
+        "drift": 0.43106173435079614,
+        "gaussian_draw": -0.3971387941306163,
+        "proposed_state": 0.3065995183594585,
+        "state": 0.3065995183594585,
+        "probability": 0.581421847505526
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.3065995183594585,
+        "target": 0.6666666666666666,
+        "drift": 0.4320805779686498,
+        "gaussian_draw": -1.1588587632432463,
+        "proposed_state": 0.22154541491601684,
+        "state": 0.22154541491601684,
+        "probability": 0.5647763229835275
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.5815871426664214
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.5815871426664214
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.581421847505526
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.581421847505526
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5647763229835275
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5647763229835275
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.3344551941566253
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.29955558538337723
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.11520649958788809
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7336241919822557
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8284345180174704
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7623584053905125
+      }
+    ]
+  },
+  "initial_answers": [
+    "edward m ted kennedy",
+    "ted edward m kennedy",
+    "edward m ted kennedy"
+  ],
+  "refined_answers": [
+    "edward m ted kennedy",
+    "edward m ted kennedy",
+    "edward m ted kennedy"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "88b926cf6eeff0a23457e02446c89aaf19282dcbe65a43e6fe83841021a88eae",
+  "errors": []
+}

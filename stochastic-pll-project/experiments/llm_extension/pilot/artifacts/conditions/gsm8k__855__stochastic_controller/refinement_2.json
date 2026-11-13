@@ -1,0 +1,199 @@
+{
+  "payload_hash": "13b222d8e559d60fbbb414a838a6048fc894fb993c31adc442ef5d6c7ac631ec",
+  "logical_id": "gsm8k:official_test:855|stochastic_controller|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_08b726f7ca09a320016af73acec1088197908ebb97b7168e5c",
+      "object": "response",
+      "created_at": 1794587342,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587345,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1598,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 499,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_08b726f7ca09a320016af73acf89a88197b4289c49e19437e1",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zrRhSoKS6-uNg9VE2yQZF6oCpM-q4-N1yU-JPug5RyLpraEPtOXbykSS9LPvYhNk2qKwGlPSZpnnhGKeCEK0vhEuFq4_GFmbNNtO1-y8aufv5gTNCdD-LmYLyjLFbX0unqZ1OhI8D5QN2SX3GbrUjRB3Ln7MrF0wkuatlGWQgTEF3Tc5DG1rqgyRs8y-EN6JdbRVayOu---emhDZUf9NDpjM3TVXai4LoCn_tblUUd-5UUMXWMMvmcJ5j9P9Y2E4Ttr5010rDUYHuV3qYaj32RIASP8YmRapgxr1_QFboEbYvEKSgrd6Rhay2vKmM1aOmm98W9ecz6Jy4kX-xhhqjaPM85KcaHNJPPsGZgtDh1NK1t5unkRCm-QcP0hTUjnnmYPu8hv3NhNC4lUIkKjyx-elaZLn0XzI4fJyYYqrIwt31IU5Kahp6TpvpxMjOL_oaN7EpTv66rmN4fB-lcgIon061Pzhkej3YV18UqEAaHGO0bHObHAQCM5AoIR4i751BqC8un69Wxn2gmYAqt26VGOQOzidyCMbJcbG9RqPggSQNmAFfRc2TJSP3imelCrPQqbYEqEsXKoaU6ttxhhF0Cmxv4pNuF-fn1L8rq76D4ahYutzqqotunlYGAvRyVHUlwrXd9P1_x2o3bNVFH_v9FpiAd2nD4Iw9nTS-PGUkNH_6VMX__-QnfAp2HlUMIdE52icAAQKN5cFFapHVv8rXZFIh9pxNAhMDUdFiV_cP3lyibV15jiQhaPSdMSnhfbecL_UEJYyeFWXQQzv1HW4vwDD4OYFe9-kJTwkqI2hhbTlpcZCIU1Bsm9gL3pC4ICk0I0XaJrtBmbPEqi8olk7R4XQDrMvnTVdXGtuK502-ytgXze_Zl9wIw0DCJgvh9JS9kt1UlxsAdhVPrU8zRGhnFGR2g8NV1Uftd0Q9j-VelhUFvjrhSNix2-EiegDeb3mFjM2rCombrDLQwKySTHBbnP-g8xPtxzQkbJlt5JmhcQVSMz9-hikrWFDwMvJb-moKsSr0PDDeU-XZPn6ruuN-jYrni5n-OYB40Q8J0JbV57tpfQcI8CYYQ10ndoU-sYO-hp9d_gdJiT0uZ9skt_Z1Tw6IwlSDZXnlIgMVU0fH0M-k8stUKvZYSEAAGnn_Jc6XGsr6R9Hu88g_uZH7DTY1lkw7bsU8xFfn7rS1t7FUHN9BDfLcYbgN65i9gowfrp6rmes7ib5ABuHVLC_uC2dH4on7fWGbWVYZrbk6f6jOxUDWgyCdEGcMN1pgBUnpY9EY41oQOXdCZagD7aK67TkBJB4LvQBkv3FbWFUM8z2CQ9XyQy8i0wAvHMqOu1C8BPOwQVcG03pLGrojmeZE7ahzVSVV62hxuKy-adcnm_nP8HV1IRRir2nt1Wxn3YqYYOAS3cY5N7CGagsekm8g_ICLsoBXXGXD6JGRvxxYiL6Y_GT7nIhKoessYk8WJPpvP9WPPqg9YMGvuGDHmdH27ZrF3AMaExWUj1L3ZXf6YAIitSL39cVRKqZkeqECyMXp7_zTuyX-zozl-T3lh2go2BLecz5Xn4CKkw4u4pJglaOkCeaYcuDprAKEH7jvcwAEbR-fy7JUCBmDzNntuHysrQBqQhno2c5-1fgmr_HoyU31zNxuVWWZqYgmSVpaC_7NmAfXZ4vvGB6OZEJlo9z4J9-EhH1U2BW_dWnrHZRYmi2s48C2lXaSaiPPzZRvr1Jqmy1cQLspuU0DVw7bwXMLPWiKKK6H-gmoOpoaDXt1ExZA7ZAx_hp4X48fIklVAUNn6s9q20N04kadd3eTLQrnqMo_3MCCV8aC1JBaVziOy1r8tUHsCM8eNQlb3qNsx5lDeuiRKA6u7k3ERGNVzmGolSwUwVjYX3FlGdP_UbfAwzYKQNE_3Cgdo2BLcLZc8JiuwXYxXPRD0J93Umw--l-CD9GCibDytDkaZylKe5WjTYbW8J-ppPmS7SuXqm03XVYaFRmMliQCRgDv-FecnxYGlqONW5YVDKXS25ZCjU2F3lzXQ_-qPIr_z20ZESirHxfxu6EU7DXtSHgNmdGSYv190esA__Gzd6Z6oTpDmQQQ5S6ioFqzYc2VvQRzlwO83P9q8n8xG8US2VV1RlwgTfplLkhfBv9Oet8LDE8BPRvHlIWfnpfXwY6xIBnQiTPF4X1k9meBJpmtCKrYRJEaz6LGhdUbgjLfkEEd1Yn4UdyiRGUH87-YLkZJbcCzaXzCOJyWUmQv-QL9OajOlIRz8o23UZJm3EHkeRvyiaiUTDfofpzWHqdMkZJ0q6m3tu9Us5ig5_VTc5z9yqrmLdN2E3k8eeGDGnqy40lraaUbvbIjWyKizLr-wNAvWrzqSQsjNgMWWCymTzRtnTI3_Q7Z95FSC6P58yTbS_QV-L72F5r4VODSPij7-4sEC68A1_MZffu4eTlJvW8kHDj64I3P37y-SbI1ZJfw==",
+          "summary": []
+        },
+        {
+          "id": "msg_08b726f7ca09a320016af73ad0cbc88197890c429cf3b73507",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"13\",\"summary\":\"Let brother = b. Me = b−3. Sister = (b−3)−2 = b−5. Mom = 3b−1. Sum: b + (b−3) + (b−5) + (3b−1) = 6b−9 = 87 → 6b = 96 → b = 16. Therefore my age = b−3 = 13.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 294,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 198,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 492
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"13\",\"summary\":\"Let brother = b. Me = b−3. Sister = (b−3)−2 = b−5. Mom = 3b−1. Sum: b + (b−3) + (b−5) + (3b−1) = 6b−9 = 87 → 6b = 96 → b = 16. Therefore my age = b−3 = 13.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 294,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 492
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:855|stochastic_controller|refinement:2",
+    "attempt_id": "1180b4d7d22946c695e6cf97d095c1b8",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0004695,
+    "latency_seconds": 3.7123020060025738,
+    "started_at": "2026-11-13T16:29:02.143034+00:00",
+    "finished_at": "2026-11-13T16:29:05.855342+00:00"
+  }
+}

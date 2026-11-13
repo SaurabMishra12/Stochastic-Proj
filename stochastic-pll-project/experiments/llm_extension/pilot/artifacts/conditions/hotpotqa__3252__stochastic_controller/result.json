@@ -1,0 +1,250 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a7dd6cd5542995f4f4022cd",
+  "source_index": 3252,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "pulitzer prize",
+  "final_answer": "2002 pulitzer prize for drama",
+  "correct": false,
+  "f1": 0.5714285714285715,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 13106,
+  "output_tokens": 1199,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0056745,
+  "latency_seconds": 22.919580898000277,
+  "wall_seconds": 181.33553147299972,
+  "communication": {
+    "directed_messages": 5,
+    "characters": 1617,
+    "utf8_bytes": 1617,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "she won pulitzer prize for drama",
+          "summary": "Suzan-Lori Parks, the American playwright of the play Venus, won the 2002 Pulitzer Prize for Drama for her play Topdog/Underdog, becoming the first African American woman to receive the prize in drama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"she won pulitzer prize for drama\",\"missing_response\":false,\"sender\":0,\"summary\":\"Suzan-Lori Parks, the American playwright of the play Venus, won the 2002 Pulitzer Prize for Drama for her play Topdog/Underdog, becoming the first African American woman to receive the prize in drama.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "won pulitzer prize for drama in 2002",
+          "summary": "The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor in drama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"won pulitzer prize for drama in 2002\",\"missing_response\":false,\"sender\":1,\"summary\":\"The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor in drama.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "won pulitzer prize for drama in 2002",
+          "summary": "The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor in drama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"won pulitzer prize for drama in 2002\",\"missing_response\":false,\"sender\":1,\"summary\":\"The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor in drama.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "she was suzanlori parks who won pulitzer prize for drama in 2002",
+          "summary": "The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor for drama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"she was suzanlori parks who won pulitzer prize for drama in 2002\",\"missing_response\":false,\"sender\":2,\"summary\":\"The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor for drama.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "she was suzanlori parks who won pulitzer prize for drama in 2002",
+          "summary": "The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor for drama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"she was suzanlori parks who won pulitzer prize for drama in 2002\",\"missing_response\":false,\"sender\":2,\"summary\":\"The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks won the Pulitzer Prize for Drama in 2002 for her play Topdog/Underdog, making her the first African American woman to receive that honor for drama.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 133644488490448440892181319582458465020,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 1.0,
+        "drift": 1.2,
+        "gaussian_draw": -1.5868056629997014,
+        "proposed_state": -0.055627203469642034,
+        "state": -0.055627203469642034,
+        "probability": 0.669405672836134
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.055627203469642034,
+        "target": 1.0,
+        "drift": 1.2667526441635706,
+        "gaussian_draw": 0.49680012794538686,
+        "proposed_state": 0.12603375906268216,
+        "state": 0.12603375906268216,
+        "probability": 0.7007405973371933
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.12603375906268216,
+        "target": 1.0,
+        "drift": 1.0487594891247813,
+        "gaussian_draw": 0.2576034741400361,
+        "proposed_state": 0.25942118787607826,
+        "state": 0.25942118787607826,
+        "probability": 0.7226283906285514
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.669405672836134
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.669405672836134
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.7007405973371933
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.7007405973371933
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.7226283906285514
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.7226283906285514
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5585193226097226
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.9492122315966194
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.46034591766044064
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.38644338287676894
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.09525304135455337
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.544837498004381
+      }
+    ]
+  },
+  "initial_answers": [
+    "she won pulitzer prize for drama",
+    "won pulitzer prize for drama in 2002",
+    "she was suzanlori parks who won pulitzer prize for drama in 2002"
+  ],
+  "refined_answers": [
+    "she won 2002 pulitzer prize for drama",
+    "she won pulitzer prize for drama 2002",
+    "she won pulitzer prize for drama in 2002"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "22f08f6c32644d43287e2f868413ddc2500485f0a17b607e30381a943d9483f6",
+  "errors": []
+}

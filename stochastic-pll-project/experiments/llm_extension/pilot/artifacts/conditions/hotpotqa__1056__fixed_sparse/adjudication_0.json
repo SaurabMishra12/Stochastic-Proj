@@ -1,0 +1,199 @@
+{
+  "payload_hash": "bf7446ba5db8b783db2286378ebe2fcf209839d65a7baf616821f0f0df7c2a88",
+  "logical_id": "hotpotqa:distractor_validation:5a8f24cc55429924144829e7|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_021188fdf589d4b5016af7312d65ac81978305b179952d0959",
+      "object": "response",
+      "created_at": 1794584877,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584879,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 10606,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 475,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_021188fdf589d4b5016af7312e78cc8197b39d08738f0d7516",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zEvcEw7g26PRUPzr5uFx2XpCwNz_WQu7NwSGnnSwPwRs96juJtjdjbmC7snNAZ9WH-Y1RXU3B8Aa5bVCg55ouBhpa6J3VWugoauAdzCguJmXG94gf3vAgG1LhowxUrBapFF-zOxfaJ5_I_gThcO0xVVrc-IcH38CMlWWDcGBmGdVYLFilyAyorzX8YdJzU1IKDskc5bl21y-YqYO3r6h3HwUdNZ1sD_36z-2AJFJBnFtdKDnoXmrG_-PyrC4lUUJu-j2g8g2b8lq99VXLMvogh8LJfk32UuDcVNQsx6b18X-kytZhiWj3wYahde6X8Vn0kZJEYHBjpsiGjwjYos8f1iE9S8kleec1fWbGq1fJkV-y5Gnz4m1mZIOPkyzU_w78myzSv0Vn8BLbB-Culkumdt4-q9Xz8uTBm_3p9SlkapdTaJkTmHSVUs2BYfNWBPaggqcAAuWpkJvERgj4m6cB-yenCQ_Z0k4Q1o6KO22fg6qs7gUlmtexbE8YzQNabfleWljo5k05b-h3AmP1MGJoreUBBiucxBUNa6uXKAc74sTV6snitAKzFaTkRLSwZ6eeblAxmnsmWNmCUrAMmzQQ_seF-_mJ_Y2ivK8Zu7UzzAVD9eCoH1GquU5Uskr6V4j_EWDSm-0PRMeggBIEeDGDQQvBfjf6I5or9eSt16b7Z8WvLILGwU0jbQh6ZW9si8Qk__AUESwW6N6vxwG471_MEku2hVs32vHl9X3CBngKxwFA0e5W4hmIlpfpORb9B-DLpG3wPqA-r-r2RQDP1-xHQkkiguZ_TMT4V-C42o9QKW0ShjUfUPwIASkYVm3IrzypkvPuNR9jwNqkaXgF4kcD9zj_SVa3bCuJ20IYYwhDLO-rJ0xZXJlXrsoAI88axkwpXJhVCm1MQMPg-YLhLNB5a9GEygF-mPoI9LMxtHHZM46XHNk2AcERA5rQPXAekWEHl61ubmZG_xuIw55HuT6pbnOu-MLc6XqluQvVh6pdoSPzDXZ_YnXLgfx4t6lJkyUZU25TCJjmJPSxWHcAU3VooL58nMkmYEDol54xuG6UK2hZh6JCGhYMMCX7FeYXfWOEAgkQ6-_M5OFfVXXBZ4qsjbdGxvDp1WWlXzeJRC2PNdSDAP70JSI2meMFDvHjn3cTHGzJaQIokoCJhk-spGaGBvZ4zG9ZNcRIkV0E028nZVf9oLiic70eapbcb4HjMwpxNdPwyhjLgG9YgZruE_lYNl4m_HDE8f5_IqKiydLbgZvVZF0EY3DlAiDM2vsrjddZ59oZ2M6HI8_bEISCyQ1MlCgjHqyWp3kRgbs-mieVqDNrP4hP_h4t89t82XI__5b3DrEVq5_Dk1CuKTqPkDAYedcPsWkyHI8y0cYzi47GOXbvA1a3aAJ1q2PgudI6e4vLRQa4rEQzkluA4Efuo5WzHSxW7GrjNp-4pilbv8GMWwxYh3WthxYUAVS7oee-d_igGQ13iV_zJbMo7OsD7zKRFpBfbB5Z_SywnuiJjp9xg1CKAyWNAaB61wMvy06q63zbhE1L5MBauWQ4zxNYes4zrsmMMOp3NR73MPa-tVAOsADoehdXr4-epUpfNIYDm5yCPQEZBvPNen9m3W_uC4Jm4nONTgt6WfVOLUfWoRdJkfBvzYU9FKwP2XvaP3emdnzxtXUBqZyvDuu-POsaP08Dx_UBovTSMl18SdZIqiRabxdJZklmg4RMJAYTpTKXLfhd4fYTqeZk5r0IK5FGNDAQf3ZYd8pzGD3YA4o-4ug1rTbNi0dLR8YVN20yiaEVwEUgElDNB0U2LqSH4XpsTPdh_F3qPGTnmCFPVayFWVZNl-gfujtQQS4VBvjSjSkkkp9ho5N3a6LKBG_u1Iv-nzviVnmNxqAlu3xD5LaJnpaXT7_-vG47YCBcoOvBeP8MafSpNUfWMWb2lyG5lKXOhHmJTHPsHiJGaLHLAyWONJiJ9RYpdU_bMxBuO0YgXFCNWTSq8iFd-JTeWyT8gfNVUVioKkHg==",
+          "summary": []
+        },
+        {
+          "id": "msg_021188fdf589d4b5016af7312efc9481978893bbcdfb1f79b3",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Battle of Dresden\",\"summary\":\"Paragraph 5 states that Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at Dresden in 1813. The Battle of Dresden (26–27 August 1813) was a major engagement of the Napoleonic Wars, matching the question’s timeframe and description.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 2348,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 119,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2467
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Battle of Dresden\",\"summary\":\"Paragraph 5 states that Andrei Ivanovich Gorchakov commanded the 1st Infantry Corps at Dresden in 1813. The Battle of Dresden (26–27 August 1813) was a major engagement of the Napoleonic Wars, matching the question’s timeframe and description.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2348,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 119,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2467
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a8f24cc55429924144829e7|fixed_sparse|adjudication:0",
+    "attempt_id": "4bb98693be224660aa70c335fefb7db6",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000825,
+    "latency_seconds": 2.841959768999004,
+    "started_at": "2026-11-13T15:47:56.765702+00:00",
+    "finished_at": "2026-11-13T15:47:59.607692+00:00"
+  }
+}

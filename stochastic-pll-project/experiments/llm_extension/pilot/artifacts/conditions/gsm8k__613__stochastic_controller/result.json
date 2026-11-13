@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:613",
+  "source_index": 613,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "93000",
+  "final_answer": "93000",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1554,
+  "output_tokens": 884,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021565000000000004,
+  "latency_seconds": 18.175604605003173,
+  "wall_seconds": 182.80117356200026,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 165,
+    "utf8_bytes": 167,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "93000",
+          "summary": "1000 members × 3 posts/day = 3000 posts/day. March has 31 days, so 3000 × 31 = 93,000 total posts.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"93000\",\"missing_response\":false,\"sender\":2,\"summary\":\"1000 members × 3 posts/day = 3000 posts/day. March has 31 days, so 3000 × 31 = 93,000 total posts.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 44978698290642069510409491576054844210,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.6426341440846128,
+        "proposed_state": 0.07112656591250695,
+        "state": 0.07112656591250695,
+        "probability": 0.2327051854395132
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.07112656591250695,
+        "target": 0.0,
+        "drift": -0.08535187909500834,
+        "gaussian_draw": 0.9624759622274508,
+        "proposed_state": 0.16911794618603876,
+        "state": 0.16911794618603876,
+        "probability": 0.2469946524481256
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.16911794618603876,
+        "target": 0.0,
+        "drift": -0.2029415354232465,
+        "gaussian_draw": 1.8216155266838179,
+        "proposed_state": 0.35043968563439737,
+        "state": 0.35043968563439737,
+        "probability": 0.274950618700397
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2327051854395132
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2327051854395132
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2469946524481256
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2469946524481256
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.274950618700397
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.274950618700397
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8858657948467081
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.2855507556160053
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.35879126131106387
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.979156859008762
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8675189190695264
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.16336158587884642
+      }
+    ]
+  },
+  "initial_answers": [
+    "93000",
+    "93000",
+    "93000"
+  ],
+  "refined_answers": [
+    "93000",
+    "93000",
+    "93000"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "f02a558d3a82384a640bd7c7e78066ccb2924aa50a6eac970bcc90db645407a6",
+  "errors": []
+}

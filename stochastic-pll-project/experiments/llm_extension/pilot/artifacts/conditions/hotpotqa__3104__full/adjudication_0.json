@@ -1,0 +1,199 @@
+{
+  "payload_hash": "a5c96a22040593c78ccea73a56767e61a2f519815dbefa166f85d3e5bea52b35",
+  "logical_id": "hotpotqa:distractor_validation:5a83de04554299334474609f|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_05ea64613bd3543e016af7166c8d9881909f98add851e33f36",
+      "object": "response",
+      "created_at": 1794578028,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794578031,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 8649,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 658,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_05ea64613bd3543e016af7166da12481909660c53c69dc0b6c",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xZvv3bU466Ay3HXxmYeZjnNBAYoFdZFOAMh0mNLyWIOSsyBQ27YRhDVRZdowln2QUZpcOHVTF2kzb8ll6QV4e4DCD1PH58JaDznTbAxFak2p2tzudreIBUxxvSKyTVEabSV_L8FzuPw3G-JUBQOK-i49uDcFL_XikfrRGWsUSrWx9CZaAVajVyqnNcmbOosvLICx8ALAq3PVtSyifH0-NrO0a54MeFZFLUR7-Iyio5ZCIjgKJ9k86BabjEi62Py0gZtf7L06-U_Hi5yNFkPmOqpC_u60tpNaH2nMjiwnlsrSIBQSoGGKKY-jf8HB4vcnJZPV1QGptr0IcuJzAp9j5CKC3LwpLsuYht8vn5FS7ui6eLvvkgFif-OOzfH1F0MZD_7461lV68-wDHJD9F4SHh82XZkkzQAvNENjz6jkFvB5SV657MwYEHHQJsYAJxAyvcAcPgz1K9zVzDoJoVleEcG63wJOCSQzfZPYnKectFb9aME__tc-LtvOFNrmcxCJ33w6CyI9GcbouhBCoVfR76lY96HOTRh08LdssEkbBrj24MG3W7EEaMmQyzf2GGTzB-0MUA9aD3qm7erzH2-ZWUJ82gk4E387G_baLq359IwVhe4CFpZCXGrNgGq_1ZtRLJ9xlvUyCVS9IvT0oSQ7u5EUIvBhKt6gBiA8DdYJ8FINw5OaImV33geiW9dAuwhTV8ZhyjeOIiAAuL7ophuCUjF-B1BaeWEMVyI6bXdX5GmmePcSxhHCBKkdEyvXCzgJ5bzLEJifxVzw4WLVdTwhDBDs91qkXAs08CqghXt6fliGwNPNId0-7APtfHefHAgzQvXF6YBowgvgLNcbaX8ghkHTVHUy-kPJTi_sq6tgWsDBHjm3VXtrH7uLFko88zmqY9rv8KB931vdzcqlY57xKpECjX05LhXFRvJlxeyQZf5Y9aYqYsU23yc5WWMvCalFrdNge0ZZAs74w64Z97eYHTi1m7HIY6KAcj0LkLwzGwtx3vo1IqZrKYsNEGgzQXBRgnEKhtudPHS9GofzLeR88wnEjJSgVRyem-ZtUT5sxdiDijxtPS1x17qbGO-VLcNzZKMi8KZK7vZi_QioRzkuTyPUQMpy5jtCSxXWjmQaGoJTPA2npS2CSvNGpYpGI0-02A-KWZwk6YYKvcGfO1rIllxpIXIcaa-TA5mxDhk-is0bqohrfCAhQkRJMnRm5Cd03iepDJhNaIuWbQ6Yle2BCGT-1W5A4m6oOcb-RectXUwlaQWUdz0G425qSNwM4AHXHmXvQWqgUsnLutd8zGXMGxWRKxLxdeoATqsWCR-MfQn_4LK-290nrs7pKO4ctql2i3R53sXtE3-IbjwqvYi5zv-woAUkYY9xhMR0fJwsTRjUqTtbbJS3u6hdo89e0Bk_QvOlyT9rO7YqrPU-wj1aufIbkTZ5UeCx5YpHLVBmaj1l_D_xIfKK-w1ZxOQBCmAdVZusu7FnqY_-J1bji19cW47jqPmXWjdxa9BXTsddF0Sl8BvLJKOkW89UNyCMvwTHrNwaYQjyhuRD6XcEeZeHcHT-pXDVIgmF6pWub-icYAHuQQ6OFZIMShea6nMpenc3zaOhyY_VRAncCMftbgeAGBF9BDy9tfR4hmuphI8WmDpD8e5pWnLOr7QWLqJrXgcAuXwRFnNlF6NaWXZtBJdI12AajnbTZLxkQMXJa7XiVpHHXP1Oy7e8NTUimuyLDOndx93dn-dKG5lUnfdsOqR3D1fh6GqA4q4f4L49KrBqfqTs5Kpit279p6istKTqT3hBkhxW43iVD9i0fftrCdtkUX2G93dRC8Ssejfuy1KqR-Vmb3Cg9RkdPpV3YVFNIEgzPkqKu9XUfgP6WWuxK_g4rnUQJJtzIiZ6bvf5aL6Cwy9GHMnvDuXZ_d89jpKaL85yTguZE81e6QicjwnQbn65-HkIPMCyU4dmI5MSFiyli0-UelHitOIPyu6lp8KWaMWLP-AC_Nkj3fxFYvGGTWsFtCruHYbz69cSw9LxTgqSvJrgSqi5JbgGPKXzR4vkkGLLEHccQCFTPesMJFNCdjH9ukNOGs393ph3qikl5SyQnh7HzzzonijE3jKD4w--gVlOzva6Xkm5PwnzdfjCZGL8r4xoGq9XKKJnHXRj9300ne0bMg82QGOuJm-XCaNiQIXwjkTtMkGjQkqi3xWOBWl3DDKv9aUBPu16XX5H9XavDVZhzQ=",
+          "summary": []
+        },
+        {
+          "id": "msg_05ea64613bd3543e016af7166e281481908243ec44508290ee",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"a sound as loud and dirty as possible\",\"summary\":\"Paragraph 7 states Paul McCartney wrote the Beatles' \\\"Helter Skelter\\\" in an attempt to create \\\"a sound as loud and dirty as possible.\\\" Paragraph 9 notes The D.O.C.'s second album title references Charles Manson's idea of that Beatles song. Thus the referenced attempt was to create a sound as loud and dirty as possible.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1818,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1536
+        },
+        "output_tokens": 156,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1974
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"a sound as loud and dirty as possible\",\"summary\":\"Paragraph 7 states Paul McCartney wrote the Beatles' \\\"Helter Skelter\\\" in an attempt to create \\\"a sound as loud and dirty as possible.\\\" Paragraph 9 notes The D.O.C.'s second album title references Charles Manson's idea of that Beatles song. Thus the referenced attempt was to create a sound as loud and dirty as possible.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1818,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1536
+      },
+      "output_tokens": 156,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1974
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a83de04554299334474609f|full|adjudication:0",
+    "attempt_id": "a4f137aea241424fb49b86acf7077203",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0007665,
+    "latency_seconds": 3.5698636190008983,
+    "started_at": "2026-11-13T13:53:47.703179+00:00",
+    "finished_at": "2026-11-13T13:53:51.273042+00:00"
+  }
+}

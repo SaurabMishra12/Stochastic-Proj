@@ -1,0 +1,199 @@
+{
+  "payload_hash": "fca1ddab4df61467c042432cd3bcfe46216f0ccd39b81c3cfe960592125d59bc",
+  "logical_id": "gsm8k:official_test:1131|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0c53ce99ecfd9433016af71396f6c48195b3ea46e68856ffd9",
+      "object": "response",
+      "created_at": 1794577302,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577305,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1995,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 579,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c53ce99ecfd9433016af71398a34081959ce16bdf5b4a9af2",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xOZuGx00q_mZwuEHLYe4SILqRSNTSMM3o_7jHDmIPe9WNq7vLPgtc14MkR35nL6xCNKEXR3cGXEJfoO6eSR1dEbwkB08tIr00M790fuJ448kgtw03DNk-xSBiXaEwXseGrMhV6PjRszTca9lwAbsPUbAV_D7HMdDZewjp4KstTqpVlx6Fc0FOeii2dy2qUKpkycSzzkE2KFj1UMThX2tVYVeoB_ZZGj-TORifK67yv_oS8aPr_UJlqIrdfOSlpY3rWOuODvssRHHwypUkbt7h0lb75_EQ5CSvqXjAb1PaOKsY1x_7hcqV3zOyHUPJunNHWW73jDOraxKxN_7uzOl8b4jnLCrt8SUbGE5PmgYQOSCG_HM5em3DAkSFCemXp-76yNKnZ4sU2514lZW9Q5-KG3w0r7vPDDfSfanksVQnda9ruBRx_MCZWHka-hPn_H7uW6tuH8kk0T0v_Hg5uYd39GGgsQ5a0ai24lufFsQ5Yoj-tswEgl39iGkYGa4geAd6xeCvsAoiUosch1Jd3ARr5KwvINl04-J1lIxJFaTlarjnx4N0J6ObjhUDaQuYOhiCRk7wxoKTTTdXbrj0Cl5ltqKvvqpaI6Yy6At8ElAS06TkJdThddZesSM4GPdpwJCqXxOtLyKIdh09Ry9X-ZKP7zAowZFw4VXbh-ztHqrTogOgo9Goh9NaAxgESvEl8lgupIHMjcHoqLbPxld3cmWgdT4W4uVC1P1oRtMMlivZxWRhUNse-OWDv0UhbrXsGo-6LAEUogQylpXrwFpD_4lyZq4oBeyK9xZutc2RZwt60LkaKoVhRybwjPjUTkLLUjwOihnrjlp5T1sD2e_x6vYwP2gQbfcKGqO_t3b4hTd4Bqbd3spPfGHsvLldbLYfZJOSQnGc_7p5tVmocHcWAIC8jzY_mgLmErbbdh5vO2eQBvua_2lv1Il1sDWyt0WwXV_rMzYOR7-7MlTW7rHDPz8qPSVG45M86IWKRItEqzMkkD6oAqAHC3WDIUcyPBxPrKoGYOY7mtuKIUQsiHURwcqEX1Ntss24XBesX0av_o5enNJsyyOzzOrTK6DcFp61elk2fOVkgT-rpZu77K2mstxTlxwNBcwEbw76pgEy5RzOM0gc9tLo7ZkpIlamjqlMBLCgXP5wpMwDVsQBk-24QZlzOn1M0oYnb9hBGwLxRPZug-Z1TLeOPadW9ENuEP4tUJanEPUTwGpyc5MrkaPshcJ3h4uB2cFtEoevvhVLQ7B6t-9nxl4whrAItsSK8wYsvFxZ4uj7v8V9r6omLmWsVEZoCnqBLZIPNlYUgpQlx5jVy1nzElfzf3m0tGf7RcxyWBGPy-MPylGPpxxH-7Xn_ACQO0B_JjAwWptWufQWHRerFetTutBrdoP-xWDyCtk08VHWIoYGR3nHJcvI1XpTMqY0CXStU9U6Oqb7FlFoPv4ulYAPFDhiqTLS6mDLT_cOwjestFRR4XSDTJnAVUQBpisFm6HR2tdM37S2RBuIF8O4GrvKRF-OfQUwCP4AS1Tct1WiWXm5LeY5dig68AzbZ8zp37Yas0iUqi-fCSnfCYDl9V0lJxhFgkCkP3uTB6uNHtatgItrrb_mB-Xn6MzEHsbf0YLGPlwIIJzbfh0WOf0um_sDOS-7foxQTCgcOKxwDzVY-tlJvJ3ceJj8zArjUaYESPaRH19MUlLHPZPcNq_9wQ4-nQ8d48_mRLc0FJ4FP6E_icJO7ckYZpI32u0dTLUKEjgRDwasYUBNYYkorJ2ne5f8DQjRdpBWzzfUBEfBs1b9Q23JuKPCP2hCasKJ1LIjmGeNczjZp6TkuPaeayzMuwWy7U2M1E86YYFlpG0Bnu1QSiEzYTFXfWR-lfPU40N814yuM3lINuwLE5eyAoKrLYMsF1G-itBJVjXy4xpFRv13k-Y0t3wrjJ7C8O4lDzD01g1NeMZmf8YDSxUIxgQcpC9N42AFZhw7jjrdtUcPw4C4Hk4PGwY41SShhN7KwYp4TMQChRse078u6KfzIsy3JkBJcWY-G51HeP03muqk5ZPFvroK6zjEw-V5iJyQlKyozRYnDVt-PzxpoFFYfDrW5XmVW6wfh7aJNjaVRH8GjYrKsI6fyacQ4qmKMHRkjnImoZRonD0XmsbVgMesRvb_C_zniu0-XRH05i5h0HCt4XmQKeKjVGe3lJnaCuNdjiig6n8xIuucg40pan6YzFcSwVDPFnQcBCd5viGPLTPVUu-M5IC4vJbtVaRplq96c-oC7SJD93CWecjPuzSSTLFfi27wzlmq7ycQw1UvjRJufhiyV0AfK51qvmkkDewjgnuXGCVgeDLzlDqL-z6hR5Ut5fjpzqSMP5CCWvitQzr2G-c50eQYtH-SBmkFUIbL2V5cNH0Qz6yaqNM1kWDERuxuEfzNKDk6SbZ9NkUgxUXguskho5iuG7vnqT9mNXl0hrlNKvPccCEMRsHZEXiSTHYar5KMejWY4M10BT0pMwfFTvmorxZO_fZLh2krJxbVjEZnFU5q6_mlJOKEK2aufUWin3AmH8ankujDsNJ6urKgIEsofs0NnXZMFi0D3SVx1NeE8wdst8ClHV6Wl5R9dXoSRnMFb5bTT4hYbJ7747sI6ueEBLpKAAfg-bJTW1FwkMA43kVzeNkc2rERilRl3lY2q0Pxa--35ZhWScxpI5eBK1jmRyEJWMdQ-nxsAfMu2qvBQ-xU1gV8jarLRUL3m6sv8CBDs=",
+          "summary": []
+        },
+        {
+          "id": "msg_0c53ce99ecfd9433016af71398fac4819586c3e8cb580dd95c",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"96\",\"summary\":\"80 ft × 0.8 = 64 ft usable. 64 ÷ 4 = 16 logs. 16 × 5 = 80 planks. 80 × $1.20 = $96 total revenue.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 430,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 162,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 592
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"96\",\"summary\":\"80 ft × 0.8 = 64 ft usable. 64 ÷ 4 = 16 logs. 16 × 5 = 80 planks. 80 × $1.20 = $96 total revenue.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 430,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 162,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 592
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:1131|independent|adjudication:0",
+    "attempt_id": "2a85a04fcdc8435e90b065d2ee5735f0",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0004315,
+    "latency_seconds": 3.1891096499984997,
+    "started_at": "2026-11-13T13:41:42.330265+00:00",
+    "finished_at": "2026-11-13T13:41:45.519369+00:00"
+  }
+}

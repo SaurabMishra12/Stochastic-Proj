@@ -1,0 +1,220 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a8205b755429926c1cdadee",
+  "source_index": 2221,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "wright brothers",
+  "final_answer": "wright brothers orville and wilbur wright",
+  "correct": false,
+  "f1": 0.5,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12043,
+  "output_tokens": 977,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0049647499999999995,
+  "latency_seconds": 23.654098027000146,
+  "wall_seconds": 247.75391647200013,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 1032,
+    "utf8_bytes": 1042,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "wright brothers",
+          "summary": "Context paragraphs identify the Wright Model B (paragraph 8) as an early pusher biplane designed by the Wright brothers. Paragraph 1 describes the Wright brothers, Orville and Wilbur, as the inventors and aviation pioneers credited with building and flying the world’s first successful airplane.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"wright brothers\",\"missing_response\":false,\"sender\":0,\"summary\":\"Context paragraphs identify the Wright Model B (paragraph 8) as an early pusher biplane designed by the Wright brothers. Paragraph 1 describes the Wright brothers, Orville and Wilbur, as the inventors and aviation pioneers credited with building and flying the world’s first successful airplane.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "wright brothers",
+          "summary": "From the provided context, paragraph [8] states the Wright Model B was designed by the Wright brothers. Paragraph [1] identifies the Wright brothers (Orville and Wilbur Wright) as the inventors and aviation pioneers credited with building the world’s first successful airplane.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"wright brothers\",\"missing_response\":false,\"sender\":1,\"summary\":\"From the provided context, paragraph [8] states the Wright Model B was designed by the Wright brothers. Paragraph [1] identifies the Wright brothers (Orville and Wilbur Wright) as the inventors and aviation pioneers credited with building the world’s first successful airplane.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "wright brothers",
+          "summary": "The Wright Model B (1910) was designed by the Wright brothers — Orville and Wilbur Wright — the American inventors and aviation pioneers credited with building and flying the world’s first successful powered, controlled airplane.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"wright brothers\",\"missing_response\":false,\"sender\":2,\"summary\":\"The Wright Model B (1910) was designed by the Wright brothers — Orville and Wilbur Wright — the American inventors and aviation pioneers credited with building and flying the world’s first successful powered, controlled airplane.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 18529011674748287109096192592524381902,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.06018693631268878,
+        "proposed_state": -0.006661473144745746,
+        "state": -0.006661473144745746,
+        "probability": 0.2217789959404935
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.006661473144745746,
+        "target": 0.0,
+        "drift": 0.007993767773694895,
+        "gaussian_draw": -0.25618485946021075,
+        "proposed_state": -0.03421656439543027,
+        "state": -0.03421656439543027,
+        "probability": 0.21799768600852693
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.03421656439543027,
+        "target": 0.0,
+        "drift": 0.04105987727451632,
+        "gaussian_draw": 0.9727055916710173,
+        "proposed_state": 0.0775482040181957,
+        "state": 0.0775482040181957,
+        "probability": 0.23362372941798745
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2217789959404935
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2217789959404935
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21799768600852693
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21799768600852693
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.23362372941798745
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.23362372941798745
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.15213012186897878
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.2236595938054109
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.698971169933085
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.20609303654362665
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.9647156300084183
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.11510631567716245
+      }
+    ]
+  },
+  "initial_answers": [
+    "wright brothers",
+    "wright brothers",
+    "wright brothers"
+  ],
+  "refined_answers": [
+    "wright brothers",
+    "wright brothers orville and wilbur wright",
+    "wright brothers orville and wilbur wright"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "6e11cac3e1cd9df52ce981379aa4c71dcd2a1f2cfd7e69a86b0102ed4a33645e",
+  "errors": []
+}

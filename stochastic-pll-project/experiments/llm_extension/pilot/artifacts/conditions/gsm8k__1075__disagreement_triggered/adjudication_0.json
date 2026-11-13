@@ -1,0 +1,199 @@
+{
+  "payload_hash": "18cd08e62131b4421890198bdcb75ca7de9d5f258b6fa45b8648e30683c1011a",
+  "logical_id": "gsm8k:official_test:1075|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_04b3d93cb2923512016af71d3788ec81979602a7a54221b4ad",
+      "object": "response",
+      "created_at": 1794579767,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794579769,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1992,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 614,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_04b3d93cb2923512016af71d37db4c8197a751d95e7c00d80f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9x05cb52C6mVK03Cq7fX33FcJmfu1mxu1EBh2OE8niCczm93G_Gu2nkKkD7_iRh_6TGYcNtLLicuqPp5PC0QYaAcISt80ony0_CG8UcqDI0CXdk2_ZpClni5mJv0LXkrIUsbuqs0VQTov0fh6ChEeR34cDwUdjuQQ5gp2yrmEDMQgUdxHPUrEOCsEWLb-aIrcGYXlux2_kZmtmvHGFC3mF2JhnSYi7RE5GPoOekTM4tL_4BOnHnAF4M0nyV-KpFKly_4BK1f3LUqo5c7mYIv0M3RssxZHy3yDyfcZHtZYcBSyJOdhH0L-rPgtA4X5CCmKfb4valfNqAkZUFnNSxV_GJHcS12z6N-jS9wazTD6hoQ7Xb8e8iJ6XQm3pP2mpEmbBsrFMk2s69YkYlG4D4LDfaDLVC9A-M0uLEGDm1HSabaRB2NFK3cFHtlS4TmeIMa6_-Cuw9xMvpjHYTQqRcHQkR8MhTlPWJWppwinU_NHqNotrm--vtdYksXmHISBBeXbgQNlbKKQwU7XJfEPpP3r4Nalcetnoc9TuEoSKGu1ZS3cbhpqc1l1y47TKQBfLgBDS82f7fJVJkVm7-Aq4OTjNZ12pkNTutKMtcHGFcUSCQhG_Fm3X_jhR7Z479qKbcfTPV7TtHg_p7ZlOeUi-p3egzcwrRRByqDGzX2jB-Tsw_PqbzyxImZCQgDmhlt2sihXgf-tjvrojQOXLuFU76Sn1NOfLNoKVNeCG2D3A1pZB43h4ax3DP1pCZDTaIyl-SoLuogLYwG7J2DWF0tJiyu5MsQaPs-wAZSKS7W7FBq0TS6Bm9a7NCInkWTZ4vLw__LUNQZXfVCy7744hoSCa-bTPMBzMkyKGAg74_SNhPRyp8LWwbculkw9Q9qFV2x5IVSWYw6D4CzkrqA23lrSP5nZ3HHWLZ8c-vf2i2wlinN_yoK4PZVS2CM5UlkWYiO7aGcpjMlRtYvWAOxY8M59IkxWSCOaFzS0ynjWA8b3k94tngDbeg9ekjHWBR3Lx8oI2SyXU0VKRtgImS7b7xzmC8aT6nTGycDNKCQacDmHaoYwLmFFFmAcSjRULnHpUZd27FusHsQknwlxt_7pCMOHzvEKRGEpsK9i5nv1XAVHdqJvYnGF05yh2R-RhOsonRnYJtxnKYWmlLpr0IEGLqgTDNfGsbWx645i5tBSh6RIn3pgZqnUNu3kGpsu-4xU5VtadYxIzhebgeVTBVdIjG8qz7TAQ3QEzA9sht0A3ybx-6XQqHhiMmE3IT85N6GKzgVdQzQVQfKknmm3o45Rw8TtCLD4YBDx3xl8GCA3LegLRtSC2LqZAwUJ_VTo85vbfuL-eJOkkjHRuGO2bud9rVI7g1p5Ey9gyhulD3i0fhi8_ZFQ4aqxkgqgOqb2gTPtCVn_vJfg0j2nLNOD2JRy9AlahKHi2UVwwzOvnriUCXOO0Slh5mVtRFq6eKxLqBh3cRJAXUBzt79d_Gm_XaCQ7tbwW-BfzsO0WRdjJlEMNOYGTog3hMTFePm1upigTdg-9UROb5HGC3frsyhTcOyW6G2UVddmXTeFLLE3nIl_jiO8iGqNzYTwGjhuk2hXXpeMtv5eNiEw8_rnmHvqe_hs8hHTT72Nvvy0SDkDHLgw3dOD5aXmpmLhc5RdUC8nrrSp_rTbLOBoe9wy9gRxxFQYIq6tLA2XsoBAYqD91mgfZc8cPvHPj1VtUuGPrTFS05H1ebxzZ5bCI1k2f-xgpQxWiv8qkzIyWWmpZP7V3ZPYRFrSQ9SHshHHllhmJsx3oHjOpvMyROgmAiij0FxRMmRHRxitGhotm3SrXeC8kXcnnNm0f3OFgDC-XVrbXtQYtKRty7jIQm2xeJHt1bvTjIZZNdxnmMugKixzmlOWEfq8zy89qfvJmfL5ztl8j4MADPMZhgSqI5XhuHKxQcTosblD8UQY32XAsAerxylwCE99lQbnSPAfbV9ST8CpBa0TZkiEtIbS_1n70U5y9WgzdGOE0rHGUNu1FsIIiSdhOZ5AXvVjsWDx4OWCevsigStB8FohszVPOCQ6sK_stQfcjSKxWVXHgO29IODMhePOyFjHthfw1XOG7bZIMu3HG_O8bcMPYa-GQ7yaZpPAOojUzV0F1xyyrlN-pkHivZdlxAr-PjxK_JfCs7VXPcb2dh0IXrKDZPgDvsxDmW7O4TIDsuBKj_4V6KASdf8S1p4b7jojitj5tqYOISZxWjAosKWN3-mGk5N5fyaWmPh-xom3qhkH3vK8H2fuyy7WOpb7QSYAsde3jBE7HAjR40Bp-PMdKGpfQoSUnmfAmcQDBzmlYnOSSJPjiLSSpHnduZ07fIQ6iudRQopP41eL4-dgN62lRsuUMW2Cb2zdb9tsVBZOq8DlCzwn7ixsHCTMHn9j72JXHB5OsziC_G_u6rFXvb4yKzWHhIUWyAoUgzw252Vtu1se7Vuj4K5zSwv-kPMUnWggf_d4CdzM5NxGB1-6qHpdUTA_h5mWxpOSky6wCTk5otUhfgAFyEl187LUhw9nIpyu2yTf9SzeaqR4YDh70rsjz1kaZWhe_NVIfNeHOakKemDA1V2-MbDLEQbf8TFICWYP5kptcomdzg2DcpYEyszOlXUdCS1y4vZFSnWvBeQeHjUzv1CzoLjtNaB0ONut6lBpS_LjLhCdhv3sME6jqbR7i9T_10RPCbeg_WT2f3srlcERqyrbxQg-ki0ag==",
+          "summary": []
+        },
+        {
+          "id": "msg_04b3d93cb2923512016af71d38892c8197bc4dfa33c75f4bb2",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"16\",\"summary\":\"15 roses = one dozen ($15) + 3 single roses (3×$2 = $6) → total $21. She pays $25 (five $5 bills), so change = $4. Number of quarters = $4 ÷ $0.25 = 16.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 391,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 181,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 572
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"16\",\"summary\":\"15 roses = one dozen ($15) + 3 single roses (3×$2 = $6) → total $21. She pays $25 (five $5 bills), so change = $4. Number of quarters = $4 ÷ $0.25 = 16.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 391,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 181,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 572
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:1075|disagreement_triggered|adjudication:0",
+    "attempt_id": "fe48816a059b43fb9391812f54bdffc8",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00045975,
+    "latency_seconds": 2.6092532139991818,
+    "started_at": "2026-11-13T14:22:46.812086+00:00",
+    "finished_at": "2026-11-13T14:22:49.421323+00:00"
+  }
+}

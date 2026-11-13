@@ -1,0 +1,199 @@
+{
+  "payload_hash": "76b347ce3fc74bbba5f0ec5cc79edbcedad814d8869e93b117226bb52cc32308",
+  "logical_id": "hotpotqa:distractor_validation:5a774e415542994aec3b7280|stochastic_controller|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_0a7a4f58ed71693f016af711f5e26881939315acc83aeeb952",
+      "object": "response",
+      "created_at": 1794576885,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794576888,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 7963,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 691,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0a7a4f58ed71693f016af711f6e9a48193896a0a1490054dc2",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xH4Zio90ljpk1UvfzhlwZDTyCNTmM-UCkAwG7I6rJ_i8js7UX-h8VtlQyyHN1-bM7cfeTjlhRcIXsXKUcwqdV4tlHamMpcfS7dGNTLHHSQ97WBQL-M5ao6ZlruBMmlVXar7Rp1qKNZ_vh8tOt6luJXnUDo8xiLZrOym5hFxYDiuicwN2_iIe81K4ipeRpV46ciq_VsOcLgLBeYXDSRLGVDMwyMymEfUwikHCOx4L2jeGmU0_tobHZnJn1tugwmQ0hD_RrM4FXT_5gvBk6xCTqfLD4htRoqGTl4wnJ_lNjcm7Manujm4vX3_usLtot-yfKt_9nDz-U2pPHNdNUL0jddugMntpfaakPNwhUQg0-UcJ0Iy5wuk199qPS8WLp8tFJJqquQffSi0XGwKkM0KDQ-iwa4f8bCAFEos4VPobyMWpUk7XBHV0MbQYDS5JF6JL8bn7B8Gx36QWCLNL2JqKyZivWGBH8uF9gM_ghD8Im3TKGoNoyCtZNEpGUbLkzvrhlIx1UtTEKkexyNj1bzWwFEO0Kp_H6fkTkwxP-XzO8PoH8Nj8PHqKg7RJO0_M6-0-JPcHQRT71RXU9fr8bQbSTPWnv4Z1Df0kLHztAXoH4Wfrz0ghbqO3chLkefXtNx59TU_Wbi4V4mANUQwVDTGgByu8NL5n7Q4GEgLk0_sswMXfRXGxCMH7VFE8fxiGt4iYIGV9mT4LhteFJQ9sEcwe-BVuRs5whC5MRV9FAVc33MlPgeut1zBRGQq1mxHlbpdk0jXGmN1PI76Wvz6lDhvm1u-MHe2NZcEifi52h_CDUFB6UvNA2mnfE6ArnwC6cdQCKamlZ0x1IvU306aBvY0fbiYSuMHu9JRCetPsS6FjFWHYB2Hd0NbECwoiYNPpplwjUDYO1gWBiIFuutY1dueDCLdJDqf4zGnAoLhbs6rpf0OYdHwNt42L_TrLOXsWfkKidwqHcHUe71XEE4W3YyFBDN-GKsYHUUK-NJWfbwLQrfSMH3a-LH2jphKlCg29embc_tMuZLDFJCuvfBykzNigeqRTQKaVX5Ri8dqwZ76sm9T0zUQe5isXujJygdJ_ptFBlDVEM_XDI-aukmWoPOs2iSHNKggB4_HeIK7x2gJRBJPJs6pRxuZpCRF9JjceTkBnrjsyPu-lf9-Ka5wuPKUpSe0X0loiLsuwIHfTkc74Ty3qfdbJ_e7I5mDocsJn2q-uenCvtP2rkxMHXgih2hE-svpo0gtgnhtFf_dWxfohpUMe8bPwgsQbRAJ-uX5I8z-O1y4zJ4IApjpfBZOYwFQd_Ju-zCnEJ7fJCOUqPY0cGULbj8QUXRGwKo-4B71HxkBB7DRQa4veG7FbWJxgYXtDeZ8zqnWucgQRQX2wUNpSY5UdP60YcBlMH9nElrAatZCJNT32LPVGZb5sHypNJ0iZRf4PZ0Qz9YSfqVcRZxE2gx56CrmXrEHshSH9KfA9HKOvTnzv_Qfc3cxwn6mPpbAFF7HAzSGshbOmPqLurbUTd5QTu7-8cBwap3wj4-omrmfm7ZqnawoZxOnTwzTXUZ8c87RP-2rgjq9Ys10ldBi47tbLMtSXODU4iiZIemOnkj6DMOFu-3yEE37nihPrDGs2FjLVWVV1RVCZ-xV6vJ1Fgn-CxtJrwu0q1MQur0e1-FJZwd9SjnBiJG_f4uUaVHNwoUDy8FrHW-Zv2Dv6NNGKQotB9KaOoUhBS3sZFwZ_slSofPI-z580292uS_owgM3Sdz8IRvQPcnDzPNs6113Bc9xnko3hwEwZcpLz_rhGI2TLEYGozY_foMfETAbt-eI-iKstOGpImMbpxgV_CwyFN34GrJ9hEgrbbBsGOOfqTBXNhlenkvA4P-_f066JBCftqvDCKQL7835tROut67_kFouC6uPculj2Du35l8_7GJ-gKPZtUhiBL5-kTAKTVdlsObYCK349aGFCu9zlxjcXCBitQB9Jcaz_OuOXkzWHIqZJoh00Em-Sd5zcuxhfImfC-wmeSfsbVwlWcbWul255ZW4bbFlc5Q51wmxK1u4c2d49OtmWYqJsL3hnHtkZhckBBLgqRA5LDnN8pQKOO0mihaweXMRlu-97rSiztGDb-bog7_FNhIGH6pWUgM0fSRp1jL89jdT3Q66lWmKoqqEkpFTxbsoIz0MZ9bYeUKowoNEkkJKZK9jaJ1v3QnjILWob-akMVX6G6xzenCvr2DJBuKn9rRq6zUW81wLVUR2Ta87rmLJi6GSJb9Lf8F2PSBJScgM5Epd5net7yjylIfArjPCWHbAMGpmqDLmTVoV5pCRQxqlndBpmsdmMwD5SggprfAswlP3yoBobUuunUCjbUcTYUaPfmrWotA97rAREEZCRYlHUIN1YpOqcGhhlXhM92FqJD3DkzzKtUUAzd7W7UkKI4AKcvaNUGjUXDveA_5We1aeiMoEhov1pZ5T5wLlcxEFTAMoaHUFSN836xBpX-wfiXR1l4VA-b840cqaNqUvhDOHJkg2SaPOoS_KukFDfP6tVJKJyW-PTd1LBu8S5TLMDpRrAiTe7XKqqcpwML59kk0PDts7BjIi3fG0h9obLCmeBVeCc2CYBvL4VhXtJTrg_JjBXO51FZnfwTWj8u6ERhYb",
+          "summary": []
+        },
+        {
+          "id": "msg_0a7a4f58ed71693f016af711f7d2a0819393c8cf10443f610e",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Kait Parker\",\"summary\":\"Rob Marciano replaced Ginger Zee as weekend meteorologist (paragraph 5). Paragraph 6 states that Kait Parker can occasionally be seen on Good Morning America filling in for Rob Marciano on weekends, so the occasional fill-in is Kait Parker.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1736,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 155,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1891
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Kait Parker\",\"summary\":\"Rob Marciano replaced Ginger Zee as weekend meteorologist (paragraph 5). Paragraph 6 states that Kait Parker can occasionally be seen on Good Morning America filling in for Rob Marciano on weekends, so the occasional fill-in is Kait Parker.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1736,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 155,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1891
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a774e415542994aec3b7280|stochastic_controller|refinement:1",
+    "attempt_id": "f74b920c678744489f0bde5006c1099e",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000744,
+    "latency_seconds": 3.211302429999705,
+    "started_at": "2026-11-13T13:34:45.293110+00:00",
+    "finished_at": "2026-11-13T13:34:48.503921+00:00"
+  }
+}

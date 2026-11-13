@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:731",
+  "source_index": 731,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "1",
+  "final_answer": "1",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2035,
+  "output_tokens": 1158,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00282475,
+  "latency_seconds": 21.360806465001588,
+  "wall_seconds": 237.90023380499952,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 652,
+    "utf8_bytes": 664,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "1",
+          "summary": "Total smores needed: 9 kids×2=18 plus 6 adults×1=6 gives 24. Each box: 3 sleeves×8 smores per sleeve =24 smores per box. 24 needed ÷24 per box = 1 box.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"1\",\"missing_response\":false,\"sender\":0,\"summary\":\"Total smores needed: 9 kids×2=18 plus 6 adults×1=6 gives 24. Each box: 3 sleeves×8 smores per sleeve =24 smores per box. 24 needed ÷24 per box = 1 box.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "1",
+          "summary": "Total smores = 9*2 + 6*1 = 18 + 6 = 24. Each sleeve makes 8 smores, and a box has 3 sleeves, so one box makes 3*8 = 24 smores. Therefore they need 1 box.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"1\",\"missing_response\":false,\"sender\":1,\"summary\":\"Total smores = 9*2 + 6*1 = 18 + 6 = 24. Each sleeve makes 8 smores, and a box has 3 sleeves, so one box makes 3*8 = 24 smores. Therefore they need 1 box.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "1",
+          "summary": "Each sleeve makes 8 s'mores and a box has 3 sleeves → 3×8=24 s'mores per box. Demand: 9 kids×2=18 plus 6 adults×1=6 → total 24. 24 needed ÷ 24 per box = 1 box.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"1\",\"missing_response\":false,\"sender\":2,\"summary\":\"Each sleeve makes 8 s'mores and a box has 3 sleeves → 3×8=24 s'mores per box. Demand: 9 kids×2=18 plus 6 adults×1=6 → total 24. 24 needed ÷ 24 per box = 1 box.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "1",
+    "1",
+    "1"
+  ],
+  "refined_answers": [
+    "1",
+    "1",
+    "1"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "b8886338b7b47f80c531834f08400c9ecfa1bbdc3577b3bcbc1d417af416dd33",
+  "errors": []
+}

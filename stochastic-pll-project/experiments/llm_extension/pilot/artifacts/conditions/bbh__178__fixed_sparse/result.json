@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:178",
+  "source_index": 178,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2210,
+  "output_tokens": 1044,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026405,
+  "latency_seconds": 19.342593078999926,
+  "wall_seconds": 128.95521231100065,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 782,
+    "utf8_bytes": 792,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Positions left-to-right: 1,2,3. Hawk is second from left → hawk at position 2. Hawk is left of the cardinal → cardinal must be to the right of hawk, so cardinal at position 3 (rightmost). Thus the cardinal is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Positions left-to-right: 1,2,3. Hawk is second from left → hawk at position 2. Hawk is left of the cardinal → cardinal must be to the right of hawk, so cardinal at position 3 (rightmost). Thus the cardinal is rightmost.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Positions left-to-right are 1,2,3. Hawk is second from left → position 2. Hawk is left of the cardinal, so cardinal must be to its right at position 3. Therefore the cardinal is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Positions left-to-right are 1,2,3. Hawk is second from left → position 2. Hawk is left of the cardinal, so cardinal must be to its right at position 3. Therefore the cardinal is rightmost.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "Positions left-to-right are 1,2,3. Hawk is second from left → hawk at position 2. Hawk is left of cardinal → cardinal must be to its right, at position 3. Thus the cardinal is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"Positions left-to-right are 1,2,3. Hawk is second from left → hawk at position 2. Hawk is left of cardinal → cardinal must be to its right, at position 3. Thus the cardinal is rightmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "82046b96b700f3ab99c1134f8c53d54735c476c3623909a4926184247bc4af35",
+  "errors": []
+}

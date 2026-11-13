@@ -1,0 +1,220 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:246",
+  "source_index": 246,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2063,
+  "output_tokens": 881,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00227775,
+  "latency_seconds": 24.984949683001105,
+  "wall_seconds": 133.56801331800034,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 683,
+    "utf8_bytes": 683,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Positions left to right: crow (left of owl) at 1, owl is second (position 2), so the remaining bird, the cardinal, is rightmost (position 3). Thus C is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Positions left to right: crow (left of owl) at 1, owl is second (position 2), so the remaining bird, the cardinal, is rightmost (position 3). Thus C is correct.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Positions left to right: crow (left of owl) at 1, owl is second (position 2), so the remaining bird, the cardinal, is rightmost (position 3). Thus C is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Positions left to right: crow (left of owl) at 1, owl is second (position 2), so the remaining bird, the cardinal, is rightmost (position 3). Thus C is correct.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "With three positions (left, middle, right): the owl is second (middle). The crow is left of the owl, so crow is leftmost. The remaining bird, the cardinal, must be rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"With three positions (left, middle, right): the owl is second (middle). The crow is left of the owl, so crow is leftmost. The remaining bird, the cardinal, must be rightmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 264793875509276434729460140599341861336,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.3745902052318543,
+        "proposed_state": -0.04145953832029035,
+        "state": -0.04145953832029035,
+        "probability": 0.2170115051991125
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.04145953832029035,
+        "target": 0.0,
+        "drift": 0.049751445984348414,
+        "gaussian_draw": -0.7362527294394472,
+        "proposed_state": -0.11797263827090804,
+        "state": -0.11797263827090804,
+        "probability": 0.20679100180949078
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.11797263827090804,
+        "target": 0.0,
+        "drift": 0.14156716592508964,
+        "gaussian_draw": -0.4150432311655671,
+        "proposed_state": -0.14975278950556314,
+        "state": -0.14975278950556314,
+        "probability": 0.20265180076991834
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2170115051991125
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2170115051991125
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.20679100180949078
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.20679100180949078
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20265180076991834
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20265180076991834
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.02088193474622413
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.0031324434272164137
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.33735661692018615
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.08433548732786844
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8203973708436683
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7562272280856345
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "f67ee84c05da6fccf4e4a6b8d6de9d5ae6eba290b0e4da94586013967c058095",
+  "errors": []
+}

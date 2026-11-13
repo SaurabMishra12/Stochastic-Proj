@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:96",
+  "source_index": 96,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "3",
+  "final_answer": "3",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1588,
+  "output_tokens": 799,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.001995,
+  "latency_seconds": 19.38339052900119,
+  "wall_seconds": 178.52687959899959,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 462,
+    "utf8_bytes": 471,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "3",
+          "summary": "James slept (2/3)×9 = 6 hours. Difference: 9 − 6 = 3 hours, so Harry slept 3 more hours than James.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3\",\"missing_response\":false,\"sender\":0,\"summary\":\"James slept (2/3)×9 = 6 hours. Difference: 9 − 6 = 3 hours, so Harry slept 3 more hours than James.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "3",
+          "summary": "James slept (2/3)×9 = 6 hours. Harry slept 9 − 6 = 3 more hours than James.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3\",\"missing_response\":false,\"sender\":1,\"summary\":\"James slept (2/3)×9 = 6 hours. Harry slept 9 − 6 = 3 more hours than James.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "3",
+          "summary": "James slept (2/3)×9 = 6 hours. Difference: 9 − 6 = 3 hours, so Harry slept 3 more hours than James.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3\",\"missing_response\":false,\"sender\":2,\"summary\":\"James slept (2/3)×9 = 6 hours. Difference: 9 − 6 = 3 hours, so Harry slept 3 more hours than James.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "3",
+    "3",
+    "3"
+  ],
+  "refined_answers": [
+    "3",
+    "3",
+    "3"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "6e057c08b13ff60c458aa11e8292d7f857a42fca5b4c924d0b5da7e47cb54bd9",
+  "errors": []
+}

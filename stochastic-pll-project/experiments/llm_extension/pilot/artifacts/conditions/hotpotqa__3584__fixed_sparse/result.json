@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ac4f12d55429924173fb4f6",
+  "source_index": 3584,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "no",
+  "final_answer": "no",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 9545,
+  "output_tokens": 994,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00437425,
+  "latency_seconds": 24.008314416001667,
+  "wall_seconds": 239.8109397320004,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 853,
+    "utf8_bytes": 855,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "no",
+          "summary": "Stiffelio is explicitly an opera by Giuseppe Verdi (three acts). Pravda, however, refers to a Russian newspaper and related publications (and other non-musical entities). Therefore Pravda is not an opera.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"no\",\"missing_response\":false,\"sender\":0,\"summary\":\"Stiffelio is explicitly an opera by Giuseppe Verdi (three acts). Pravda, however, refers to a Russian newspaper and related publications (and other non-musical entities). Therefore Pravda is not an opera.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "no",
+          "summary": "Stiffelio is explicitly identified in the supplied paragraphs as an opera by Giuseppe Verdi. The various entries for Pravda refer to a newspaper, a ship, people, and other non‑opera meanings; none indicate an opera named Pravda. Therefore they are not both operas.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"no\",\"missing_response\":false,\"sender\":1,\"summary\":\"Stiffelio is explicitly identified in the supplied paragraphs as an opera by Giuseppe Verdi. The various entries for Pravda refer to a newspaper, a ship, people, and other non‑opera meanings; none indicate an opera named Pravda. Therefore they are not both operas.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "no",
+          "summary": "Stiffelio is an opera by Giuseppe Verdi. Pravda, however, refers to a Russian newspaper (and related uses like a ship, people, or publications) and is not an opera, so they are not both operas.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"no\",\"missing_response\":false,\"sender\":2,\"summary\":\"Stiffelio is an opera by Giuseppe Verdi. Pravda, however, refers to a Russian newspaper (and related uses like a ship, people, or publications) and is not an opera, so they are not both operas.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "no",
+    "no",
+    "no"
+  ],
+  "refined_answers": [
+    "no",
+    "no",
+    "no"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "93312859369b2e3411480408101f71e65110e7717f11c4981cc744db28c18759",
+  "errors": []
+}

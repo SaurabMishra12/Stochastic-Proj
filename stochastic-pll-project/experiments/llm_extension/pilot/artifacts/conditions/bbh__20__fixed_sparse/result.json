@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:20",
+  "source_index": 20,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2020,
+  "output_tokens": 865,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002235,
+  "latency_seconds": 19.5529656539984,
+  "wall_seconds": 179.83601231199827,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 649,
+    "utf8_bytes": 649,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Given loquats are stated as the cheapest and plums are less expensive than apples (plums < apples), the cheapest fruit is loquats.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given loquats are stated as the cheapest and plums are less expensive than apples (plums < apples), the cheapest fruit is loquats.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Statements state loquats are cheapest and plums are less expensive than apples, giving order: loquats < plums < apples. Thus loquats are the cheapest (option C).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Statements state loquats are cheapest and plums are less expensive than apples, giving order: loquats < plums < apples. Thus loquats are the cheapest (option C).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given loquats are stated as the cheapest and plums are less expensive than apples, the price order is: loquats (cheapest) < plums < apples. Thus the correct option is C.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given loquats are stated as the cheapest and plums are less expensive than apples, the price order is: loquats (cheapest) < plums < apples. Thus the correct option is C.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "414ce36094e717447d956883c8159ad91c83d1c556ddd8e4046e528bf3afbf7b",
+  "errors": []
+}

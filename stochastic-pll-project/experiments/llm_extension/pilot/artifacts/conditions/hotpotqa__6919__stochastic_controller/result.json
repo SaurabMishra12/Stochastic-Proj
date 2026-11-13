@@ -1,0 +1,220 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ae7fd085542993210984007",
+  "source_index": 6919,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "barack obama",
+  "final_answer": "barack obama",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 13011,
+  "output_tokens": 1147,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0055467500000000005,
+  "latency_seconds": 21.913671779999277,
+  "wall_seconds": 289.6104413539997,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 875,
+    "utf8_bytes": 879,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "barack obama",
+          "summary": "Jennifer Hunt served as Chief Economist to the U.S. Secretary of Labor under Acting Secretary Seth Harris, who served in the Obama administration; therefore the President at that time was Barack Obama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"barack obama\",\"missing_response\":false,\"sender\":0,\"summary\":\"Jennifer Hunt served as Chief Economist to the U.S. Secretary of Labor under Acting Secretary Seth Harris, who served in the Obama administration; therefore the President at that time was Barack Obama.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "barack obama",
+          "summary": "Jennifer Hunt served under Acting Secretary Seth Harris, who served in the Department of Labor during President Barack Obama’s administration; Harris was nominated and served as part of Obama’s Cabinet.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"barack obama\",\"missing_response\":false,\"sender\":1,\"summary\":\"Jennifer Hunt served under Acting Secretary Seth Harris, who served in the Department of Labor during President Barack Obama’s administration; Harris was nominated and served as part of Obama’s Cabinet.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "barack obama",
+          "summary": "Seth Harris served as Acting U.S. Secretary of Labor from January 2013 until January 16, 2014 during the Obama administration. Jennifer Hunt served as Chief Economist under Acting Secretary Seth Harris, so the President at that time was Barack Obama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"barack obama\",\"missing_response\":false,\"sender\":2,\"summary\":\"Seth Harris served as Acting U.S. Secretary of Labor from January 2013 until January 16, 2014 during the Obama administration. Jennifer Hunt served as Chief Economist under Acting Secretary Seth Harris, so the President at that time was Barack Obama.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 34490345089681345527010053004849704860,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.05521434459732416,
+        "proposed_state": 0.00611110809543349,
+        "state": 0.00611110809543349,
+        "probability": 0.22354757564907476
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.00611110809543349,
+        "target": 0.0,
+        "drift": -0.007333329714520187,
+        "gaussian_draw": -0.4877575440253408,
+        "proposed_state": -0.04860709235276607,
+        "state": -0.04860709235276607,
+        "probability": 0.2160414817988178
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.04860709235276607,
+        "target": 0.0,
+        "drift": 0.05832851082331928,
+        "gaussian_draw": 0.5148399905590197,
+        "proposed_state": 0.014208103754278917,
+        "state": 0.014208103754278917,
+        "probability": 0.224673931438475
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22354757564907476
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22354757564907476
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2160414817988178
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2160414817988178
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.224673931438475
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.224673931438475
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.08655904305086315
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.27738412355227426
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.18432679964058463
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.3126303080191982
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.9881921877519746
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.049027861371844006
+      }
+    ]
+  },
+  "initial_answers": [
+    "barack obama",
+    "barack obama",
+    "barack obama"
+  ],
+  "refined_answers": [
+    "barack obama",
+    "barack obama",
+    "barack obama"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "cbc42fc4a727726affde480e3a445ef6fdc5d87814ad11801f46b1d361ec8568",
+  "errors": []
+}

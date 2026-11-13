@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:102",
+  "source_index": 102,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "26",
+  "final_answer": "26",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1925,
+  "output_tokens": 1485,
+  "reasoning_tokens": 768,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00345125,
+  "latency_seconds": 21.682045985000514,
+  "wall_seconds": 182.47363237799982,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 240,
+    "utf8_bytes": 242,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "26",
+          "summary": "Weekdays: 4 glasses/day (breakfast, lunch, dinner, before bed) × 5 = 20. Weekends: dinner is soda, so 3 glasses/day (breakfast, lunch, before bed) × 2 = 6. Total = 20 + 6 = 26.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"26\",\"missing_response\":false,\"sender\":2,\"summary\":\"Weekdays: 4 glasses/day (breakfast, lunch, dinner, before bed) × 5 = 20. Weekends: dinner is soda, so 3 glasses/day (breakfast, lunch, before bed) × 2 = 6. Total = 20 + 6 = 26.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 170414851005229278636702217400801390952,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.040585988487325676,
+        "proposed_state": 0.004492045764826235,
+        "state": 0.004492045764826235,
+        "probability": 0.22332283438081793
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.004492045764826235,
+        "target": 0.0,
+        "drift": -0.005390454917791482,
+        "gaussian_draw": 0.4004259196977794,
+        "proposed_state": 0.04827202818749037,
+        "state": 0.04827202818749037,
+        "probability": 0.2294565465904292
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.04827202818749037,
+        "target": 0.0,
+        "drift": -0.057926433824988445,
+        "gaussian_draw": -0.4372049465559249,
+        "proposed_state": -0.005910335434320374,
+        "state": -0.005910335434320374,
+        "probability": 0.2218827262120945
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22332283438081793
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22332283438081793
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2294565465904292
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2294565465904292
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2218827262120945
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2218827262120945
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.6314230891318052
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6422860237477256
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.46965406003671406
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.9864412100496596
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.4282257543893766
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.21701056860968515
+      }
+    ]
+  },
+  "initial_answers": [
+    "26",
+    "26",
+    "26"
+  ],
+  "refined_answers": [
+    "26",
+    "26",
+    "26"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "8229483323b37088d22387e990314f11846e576ac366d7b24ef1754eb7e98a74",
+  "errors": []
+}

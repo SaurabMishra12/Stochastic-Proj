@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab288a05542993be8fa993b",
+  "source_index": 6062,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "mount pleasant",
+  "final_answer": "raf mount pleasant",
+  "correct": false,
+  "f1": 0.8,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 14194,
+  "output_tokens": 1953,
+  "reasoning_tokens": 1216,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0074545,
+  "latency_seconds": 29.340258917998653,
+  "wall_seconds": 242.48700836099852,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 613,
+    "utf8_bytes": 613,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "raf mount pleasant",
+          "summary": "RAF Mount Pleasant is a Royal Air Force station in the Falkland Islands; the Falklands' total population was 2,841 on Census Day 15 April 2012, per the provided context referencing Stanley and the islands' 2012 census.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"raf mount pleasant\",\"missing_response\":false,\"sender\":1,\"summary\":\"RAF Mount Pleasant is a Royal Air Force station in the Falkland Islands; the Falklands' total population was 2,841 on Census Day 15 April 2012, per the provided context referencing Stanley and the islands' 2012 census.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "raf mount pleasant",
+          "summary": "RAF Mount Pleasant is a Royal Air Force station in the Falkland Islands. The 2012 census recorded the entire Falkland Islands population as 2,841 on 15 April 2012 (Stanley had 2,121). Therefore the referenced RAF is RAF Mount Pleasant.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"raf mount pleasant\",\"missing_response\":false,\"sender\":2,\"summary\":\"RAF Mount Pleasant is a Royal Air Force station in the Falkland Islands. The 2012 census recorded the entire Falkland Islands population as 2,841 on 15 April 2012 (Stanley had 2,121). Therefore the referenced RAF is RAF Mount Pleasant.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 276267709897713862448554236655567965995,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.31161611913974485,
+        "proposed_state": 0.034489584223639416,
+        "state": 0.034489584223639416,
+        "probability": 0.22751290648557618
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.034489584223639416,
+        "target": 0.0,
+        "drift": -0.0413875010683673,
+        "gaussian_draw": -0.07629815708729289,
+        "proposed_state": 0.021906175598381948,
+        "state": 0.021906175598381948,
+        "probability": 0.22574852603126902
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.021906175598381948,
+        "target": 0.0,
+        "drift": -0.026287410718058336,
+        "gaussian_draw": -2.101882535557751,
+        "proposed_state": -0.21335833200065593,
+        "state": -0.21335833200065593,
+        "probability": 0.19455395865816139
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22751290648557618
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22751290648557618
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22574852603126902
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22574852603126902
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.19455395865816139
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.19455395865816139
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.994049294457152
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.9051180953926309
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.2066117447797765
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.5091464790775979
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.3154629519683536
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.007520686936217658
+      }
+    ]
+  },
+  "initial_answers": [
+    "raf mount pleasant",
+    "raf mount pleasant",
+    "raf mount pleasant"
+  ],
+  "refined_answers": [
+    "raf mount pleasant",
+    "raf mount pleasant",
+    "raf mount pleasant"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "323a89276e5ca4fcfeee2ab4e590159e449b86dba0b769765fbfa94196072982",
+  "errors": []
+}

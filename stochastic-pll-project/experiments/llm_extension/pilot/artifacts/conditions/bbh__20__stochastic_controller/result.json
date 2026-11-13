@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:20",
+  "source_index": 20,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1886,
+  "output_tokens": 762,
+  "reasoning_tokens": 64,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0019955000000000003,
+  "latency_seconds": 19.31115310200039,
+  "wall_seconds": 177.49684971399984,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 234,
+    "utf8_bytes": 234,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Given: loquats are the cheapest, and plums are less expensive than apples (so plums < apples). The explicit statement that loquats are the cheapest makes option C correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given: loquats are the cheapest, and plums are less expensive than apples (so plums < apples). The explicit statement that loquats are the cheapest makes option C correct.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 131509345372457836843229007036545372734,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.5806463178757993,
+        "proposed_state": -0.06426577078171837,
+        "state": -0.06426577078171837,
+        "probability": 0.21392737188730976
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.06426577078171837,
+        "target": 0.0,
+        "drift": 0.07711892493806204,
+        "gaussian_draw": -1.2015787215324478,
+        "proposed_state": -0.18954427246916314,
+        "state": -0.18954427246916314,
+        "probability": 0.19755672355415965
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.18954427246916314,
+        "target": 0.0,
+        "drift": 0.22745312696299574,
+        "gaussian_draw": -1.885048999027955,
+        "proposed_state": -0.37543565160107395,
+        "state": -0.37543565160107395,
+        "probability": 0.17503593656364755
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21392737188730976
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21392737188730976
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.19755672355415965
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.19755672355415965
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.17503593656364755
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.17503593656364755
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.7504522353082989
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.4822901720751295
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6814842125490096
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.039561972550086755
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.3948460596329315
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.3852824446394396
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "cdc2c0f2b2a28b72b4acadc599b1a63205e4ad4b0664cd7394eecd33c221bcfd",
+  "errors": []
+}

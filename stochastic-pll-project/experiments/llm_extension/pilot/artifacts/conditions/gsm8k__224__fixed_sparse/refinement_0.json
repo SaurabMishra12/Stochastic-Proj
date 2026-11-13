@@ -1,0 +1,199 @@
+{
+  "payload_hash": "869288fe2a653b9b0f4705b402aec3f3defd42537d00d16e812d4d626978319f",
+  "logical_id": "gsm8k:official_test:224|fixed_sparse|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_0a052da528e94d9f016af73d2167dc81958feacb04f27a1e51",
+      "object": "response",
+      "created_at": 1794587937,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587940,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1748,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 645,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0a052da528e94d9f016af73d22d61c8195b6173c5e5ab5869c",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9z0kquSxQ5ih5g87soQPkKFV5oYe4VR7quW0GRDavKzZWcatnYB_EoEKKU-Y1wlXO0Vl-zrIYuaLr8wwlT6fI-8THEMaeiRi1luBUzY3-lKxu8ZjmjICnXdYFwoMkbaK-wC9umpfNLh2A8VXb_tWG2NUOeOsmxclq8i6VKyn-4_MVu1GWJslFvgRmS3MSiLTZnASX-1YRCCOXakBSUlSzNZLHYN4Ry-zW2ZF-NvN22VqtyA34eoAf3A3MSmMBteyWPgrF-7MESghBrKqT486DQ7SRj_F9EMzoz-t2HNVmS4Fd0w1IsJZRyXaTZ_ilxBd67P3yUyRQJXOzz5oIS-NayPCBbKXZH_cfo0WcLd0sPVNglObbybyiZJIGtNni0M8I8G1ava_CCoa8LgoppBB0N3xptQYbdDkKgkbzglNUkLip-qJvuqLH-Nu8xOZv5R4KdMsQjNhHDlG6KpqvaAGxXnb-LXCbtZev7CSHu02aqlREAGJT3pupW8iRKEMK5rMALixQHO-j12eEo5M4pSrh1sna4G6l_TKBbUNaaMycG2k7noifKu1Q1KIat5yg5iONdzsVORwcKtY4RdK60w5CdmBUBRgiApGXB869Uv-RYlNXOxg8ook0BqzMaL0Hr0GKYSLGW8AVVaBvQnqKyaPGV1j0gMCteGGV9vlXLsr7mbP0uBvljKJ0_j4mxCqkBWOsKBSxYUo49VviNZTfr5522Rb2jfO0Mm0aE90aKah7degkn3KvgQ-mavEFdL6RyatK8RDqXuw5WeeU0kPjnLm8eBIk8QVE6GgWKlW3whkZPEJZCZXSfyRG2gHZObKWDDHDz4enm7B3_zOjLzfnW15uitYIKIPj9LZLXKKXhbGglFVQw0MDahYhQ-k-CU5JiL4Fdu26Ma-mFPVtfAGD0Mcs32Jh0uHooWZUrAdag8Jih3AiZ5TvmuamCwjMhqKP2aomI9hj9gYLknOSx-e98_BFZ9qVq9_V2fOveH89cJfrQCNVFQftFRikYbdUwgL3hj9o0iWGEMlfTcK4SmqJIkuJnlNAWAzPVpa5QJjorV1PMNUg1gZKnjfXohKpt5B3p1XmtferSfTOzYElDDU8EgkAa1tieZHOEcW32LPkRuzyw6S57OvY5u3rEFuyQct2BoCjBwIyjzB2KqRR67E8_61LiC9q7RoAqJGOUQ1Aw3Vl8401nPS-I81Q2DJyQo1aNpk7M0XCgz-M5mIJF36CCOKkbV36BGhMSSoNbZn9d-J_J5EQfnT66MONFT71pdHe2lAIHbOCzsae_xr2MMOSC2-kCO5F9XHCRtr_GrnfL9A_1QvjzS4ONQDZ8CYgcCIOxInsyKcxM2zktnSjY7GmYaOrESq7IgB7R9OsMouyzti_eisuU1gvmCAKSjrGXTsHIjwGVH9iG8ON6MI3CgcAKxM2b9QhfMD8kgeLh-r7M1_qXrtQ_ADJ5QlTg2QNdjW1bkeMczk5eibc_AqQZFKSwYXKzak5bpPwu24MVJksa38MZoEHILn6tkKJcLmkfHL9YQu5K5p1zEH1TGufPYgwhWP18umyo0p_Id5ylSm50F5qbDK317Ma7R_I35uD3yAo9q2Tv9rK8Pn-qUHNAW8_HYorkGEa4mTtScIp8l2cYTfcqtfqx26iuvJNz51z6PjiHwT6eCbvhwfjfqgcwJrXg1TcS3XSbUcFniMJYMk450nUCpcXXTnEBg2lNl31b7adIKMxJ0O9lop0HkpkjaibL8jaBR0AbgFOGQ-wcRSChnWJnzpKtSrc0wezLlEV_cdvagh35pDE_NLkTBXrKWSnTl0p6fwE1ZBKg1XTUjvCsZwAywPKsGhRkfDApQemWpCJAJHJr3mv2HMOEgPPirY5F4x7QE8Mi8LmYbf-djRiJv49hmXLL5xd4SXjryo5CMgdjj89UOtulWe0gNY1cx3nT2yGJ0dufBoJhkpEFc2e5h4oKauDG94-0aaCX6TPE2J1DV-d5UPCI_PHOyv76Nrj794oH7dbMICBdAs_LTOzqA6cJtgux9zQ3xh5H2WviLUyAbyxM3Q5xuKS1VS07VsdP0RWDkhR9twTa5oxtZObpZv3DpAF7cI9T_OXYsHUciyvNGiqUkbJdYujZna64JXJsz6NA3HtVohU-0joHmcPROwIeOnfCoukLZX4YKaX7dIbl6DNcPPm1iX8mNytgbynEjA5zrxigHU-nqEvio8ZMI29HxqrGhSgFDdnVvBUFQOeW_MbvAtXFL5Zzb51iu4mtSYwlk7rHAWlSltxHbcM-fAQ1pMs8rHwhi5O4DOHI2uAxvYrhmIjVr1_KJzep7W1X-I6v9B1bsYAI1njYpnvCOQM9xPCLENkFmPNqR3rpjczHB8IzBzofZmeJqtYliD9Y1zJJRSVgytl-sKeDW_k4M2ylZENMkzyi9nvCVfhOpRRUcsqmFjCxZIqfDfg0__RfKkbTL5sF57bXwYrOabi7r8WIDZkArhJNt-wOHHJx-apAPwOruUxYbN6RR9brBPlh3QXr710GS7ilxtnsVDXRt0ysWtI1HG_jWb5XFC-zkbqAXhUJjFDx2i4kzrgY0EuNXxnLHiCsTLeL0g6hSyQxUf1ZoUuUnlWngg9DevZd7e5-EV9HPUrs6hQx7klJSthFZb1qtDOQmEFK_G6Xu3cZYVxQMN3eqnViMBMz_7qB3GY-80M9y7fENtqZ2m3f-KHClrFN7_slkTwJrurPxZ5CSf-7APYI5rfH4DwFGokPhJwqZFJ9HN4sz-mNAdRXyi7-Q9S0p1IbxQta1tUnDW6f92Q0BzhIzFjpWFApdXtvy_XOgruLwrm0f9DQz6YgrnZiY5mmrlnbeQNMsBLAcbiHs28MtVUUzS-ORx4ZQpWcK9b48wqsiIr-YlrJeRrpR-iVclBrqGThL0KiSsvQwKanKxBT1PUP_RLlbpuWoNd-IafAwmMkqpF35tHJaQWRSnRzBrdW8t3A==",
+          "summary": []
+        },
+        {
+          "id": "msg_0a052da528e94d9f016af73d240ae88195bf9da303b74ab4d7",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"180\",\"summary\":\"Compute each cost and add: Carlos pays 30×3 = 90; Benji pays 18×5 = 90; combined total = 90 + 90 = 180.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 314,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 182,
+        "output_tokens_details": {
+          "reasoning_tokens": 128
+        },
+        "total_tokens": 496
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"180\",\"summary\":\"Compute each cost and add: Carlos pays 30×3 = 90; Benji pays 18×5 = 90; combined total = 90 + 90 = 180.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 314,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 182,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 496
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:224|fixed_sparse|refinement:0",
+    "attempt_id": "c3fcd32f17ff4319ae69531d9e323438",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0004425,
+    "latency_seconds": 4.236302882000018,
+    "started_at": "2026-11-13T16:38:56.777101+00:00",
+    "finished_at": "2026-11-13T16:39:01.013427+00:00"
+  }
+}

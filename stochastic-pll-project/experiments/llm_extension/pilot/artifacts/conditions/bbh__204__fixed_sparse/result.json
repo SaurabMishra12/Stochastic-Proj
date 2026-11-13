@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:204",
+  "source_index": 204,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2102,
+  "output_tokens": 869,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0022635000000000003,
+  "latency_seconds": 19.58956190200115,
+  "wall_seconds": 182.07516861399927,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 646,
+    "utf8_bytes": 650,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Given orange is left of blue (orange < blue) and yellow is right of blue (yellow > blue), the left-to-right order is orange, blue, yellow; thus the yellow book is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given orange is left of blue (orange < blue) and yellow is right of blue (yellow > blue), the left-to-right order is orange, blue, yellow; thus the yellow book is rightmost.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "From the statements: orange is left of blue (O < B), and yellow is right of blue (Y > B). Therefore ordering is orange — blue — yellow, so the yellow book is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"From the statements: orange is left of blue (O < B), and yellow is right of blue (Y > B). Therefore ordering is orange — blue — yellow, so the yellow book is rightmost.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given O is left of B and Y is right of B, the order left-to-right is O, B, Y. Thus the yellow book is the rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given O is left of B and Y is right of B, the order left-to-right is O, B, Y. Thus the yellow book is the rightmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "d5b9ca5bf19f875e5f8b46eb6f81888e86fcb0777e5390d2c93a58f3fec0c509",
+  "errors": []
+}

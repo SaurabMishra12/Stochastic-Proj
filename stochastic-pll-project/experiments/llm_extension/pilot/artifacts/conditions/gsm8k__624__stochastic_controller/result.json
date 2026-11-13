@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:624",
+  "source_index": 624,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "85",
+  "final_answer": "85",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1673,
+  "output_tokens": 863,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021442499999999995,
+  "latency_seconds": 18.52735723999649,
+  "wall_seconds": 180.17371169599937,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 314,
+    "utf8_bytes": 322,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "85",
+          "summary": "Baseballs: 9×3 = 27. Basketballs: 8×14 = 112. Difference: 112 − 27 = 85.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"85\",\"missing_response\":false,\"sender\":0,\"summary\":\"Baseballs: 9×3 = 27. Basketballs: 8×14 = 112. Difference: 112 − 27 = 85.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "85",
+          "summary": "Baseball coach: 9×3=27. Basketball coach: 8×14=112. Difference: 112−27=85, so the basketball coach spent $85 more.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"85\",\"missing_response\":false,\"sender\":1,\"summary\":\"Baseball coach: 9×3=27. Basketball coach: 8×14=112. Difference: 112−27=85, so the basketball coach spent $85 more.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 329810864940418349239626850486890262973,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.5100988468900753,
+        "proposed_state": -0.05645759657993475,
+        "state": -0.05645759657993475,
+        "probability": 0.21497968227839198
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.05645759657993475,
+        "target": 0.0,
+        "drift": 0.0677491158959217,
+        "gaussian_draw": 0.10467584971539833,
+        "proposed_state": -0.03809719145134745,
+        "state": -0.03809719145134745,
+        "probability": 0.21746891039320854
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.03809719145134745,
+        "target": 0.0,
+        "drift": 0.045716629741616936,
+        "gaussian_draw": -0.6406108091423873,
+        "proposed_state": -0.10442815224865337,
+        "state": -0.10442815224865337,
+        "probability": 0.2085739942961652
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21497968227839198
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21497968227839198
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21746891039320854
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21746891039320854
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2085739942961652
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2085739942961652
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.660513490121915
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.15156143147284562
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.27126923974892614
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.17929707633967917
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5002122189167023
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7856761402483147
+      }
+    ]
+  },
+  "initial_answers": [
+    "85",
+    "85",
+    "85"
+  ],
+  "refined_answers": [
+    "85",
+    "85",
+    "85"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "b47290c365720280e3ed0002ddc1cbf264b712104e143c8801feef2e93a57cdb",
+  "errors": []
+}

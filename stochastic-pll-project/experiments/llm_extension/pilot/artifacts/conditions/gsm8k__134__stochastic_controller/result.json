@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:134",
+  "source_index": 134,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "720",
+  "final_answer": "720",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1428,
+  "output_tokens": 965,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002287,
+  "latency_seconds": 19.890970365999237,
+  "wall_seconds": 180.0987289290024,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 154,
+    "utf8_bytes": 156,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "720",
+          "summary": "Tom pays 4 washes/month × $15/wash = $60/month. Over 12 months: $60 × 12 = $720 per year.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"720\",\"missing_response\":false,\"sender\":2,\"summary\":\"Tom pays 4 washes/month × $15/wash = $60/month. Over 12 months: $60 × 12 = $720 per year.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 96904606579032038269007947733097647529,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -1.041144961091963,
+        "proposed_state": -0.11523363080102969,
+        "state": -0.11523363080102969,
+        "probability": 0.2071506529277109
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.11523363080102969,
+        "target": 0.0,
+        "drift": 0.1382803569612356,
+        "gaussian_draw": 0.2601224568470889,
+        "proposed_state": -0.07261531490805793,
+        "state": -0.07261531490805793,
+        "probability": 0.21280625450805973
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.07261531490805793,
+        "target": 0.0,
+        "drift": 0.08713837788966952,
+        "gaussian_draw": 0.6767801983625461,
+        "proposed_state": 0.011004364455326154,
+        "state": 0.011004364455326154,
+        "probability": 0.22422778479111788
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2071506529277109
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2071506529277109
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21280625450805973
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21280625450805973
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22422778479111788
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22422778479111788
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.3477726050870614
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.9869075237412362
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9074657609661512
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.48121080928012927
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.07869163296152304
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.9129753751607996
+      }
+    ]
+  },
+  "initial_answers": [
+    "720",
+    "720",
+    "720"
+  ],
+  "refined_answers": [
+    "720",
+    "720",
+    "720"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "c91169504d6721e6ce4c0dd7774a5634d395978367e85d9a454d8f3d6f59123d",
+  "errors": []
+}

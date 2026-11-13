@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:731",
+  "source_index": 731,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "1",
+  "final_answer": "1",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1832,
+  "output_tokens": 1059,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002576,
+  "latency_seconds": 21.168813672997203,
+  "wall_seconds": 182.51400600299894,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 206,
+    "utf8_bytes": 211,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "1",
+          "summary": "Each sleeve makes 8 s'mores; 3 sleeves per box → 24 s'mores per box. Demand: 9 kids×2 + 6 adults×1 = 18+6 = 24. 24 needed ÷ 24 per box = 1 box.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"1\",\"missing_response\":false,\"sender\":0,\"summary\":\"Each sleeve makes 8 s'mores; 3 sleeves per box → 24 s'mores per box. Demand: 9 kids×2 + 6 adults×1 = 18+6 = 24. 24 needed ÷ 24 per box = 1 box.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ]
+    ],
+    "controller_seed": 214283910143670142352459931997796149376,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.2736858034782965,
+        "proposed_state": 0.030291467578562763,
+        "state": 0.030291467578562763,
+        "probability": 0.22692318888472357
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.030291467578562763,
+        "target": 0.0,
+        "drift": -0.03634976109427531,
+        "gaussian_draw": -0.21741899639803314,
+        "proposed_state": 0.002592618236934699,
+        "state": 0.002592618236934699,
+        "probability": 0.22305938101541
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.002592618236934699,
+        "target": 0.0,
+        "drift": -0.0031111418843216385,
+        "gaussian_draw": -0.6267426325765414,
+        "proposed_state": -0.0670861938500145,
+        "state": -0.0670861938500145,
+        "probability": 0.21354818539839374
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22692318888472357
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22692318888472357
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22305938101541
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22305938101541
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.21354818539839374
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.21354818539839374
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8075395126856274
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.13047599200613424
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.4947636201563611
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.36290561816063815
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8522032798653737
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.9177502640393783
+      }
+    ]
+  },
+  "initial_answers": [
+    "1",
+    "1",
+    "1"
+  ],
+  "refined_answers": [
+    "1",
+    "1",
+    "1"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "23c34e9b5aa8902c725d5afe282e6b617f6c1d9c34c80fb2981a03684b7bf220",
+  "errors": []
+}

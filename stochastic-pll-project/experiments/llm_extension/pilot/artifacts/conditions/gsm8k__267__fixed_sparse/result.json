@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:267",
+  "source_index": 267,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "91",
+  "final_answer": "91",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2285,
+  "output_tokens": 1974,
+  "reasoning_tokens": 1088,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004519250000000001,
+  "latency_seconds": 25.928901110999504,
+  "wall_seconds": 191.07609147699986,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 890,
+    "utf8_bytes": 899,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "91",
+          "summary": "Heating to 300° takes 20 min. Heating to 400° takes 40% longer than 20 min, i.e., 28 min, so warming total = 48 min. Cooking takes 5 min less than warming: 48 - 5 = 43 min. Total time = 48 + 43 = 91 min.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"91\",\"missing_response\":false,\"sender\":0,\"summary\":\"Heating to 300° takes 20 min. Heating to 400° takes 40% longer than 20 min, i.e., 28 min, so warming total = 48 min. Cooking takes 5 min less than warming: 48 - 5 = 43 min. Total time = 48 + 43 = 91 min.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "91",
+          "summary": "Heating to 300° takes 20 min. Heating the rest to 400° takes 40% longer: 20 × 1.4 = 28 min. Total warming = 20 + 28 = 48 min. Cooking time is 5 min less than warming: 48 − 5 = 43 min. Total time = 48 + 43 = 91 min.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"91\",\"missing_response\":false,\"sender\":1,\"summary\":\"Heating to 300° takes 20 min. Heating the rest to 400° takes 40% longer: 20 × 1.4 = 28 min. Total warming = 20 + 28 = 48 min. Cooking time is 5 min less than warming: 48 − 5 = 43 min. Total time = 48 + 43 = 91 min.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "91",
+          "summary": "Heating to 300° takes 20 minutes. Heating the rest to 400° takes 40% longer than 20 minutes = 28 minutes, so total warming time = 20 + 28 = 48 minutes. Cooking time is 5 minutes less than warming time = 48 - 5 = 43 minutes. Total elapsed = warming + cooking = 48 + 43 = 91 minutes.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"91\",\"missing_response\":false,\"sender\":2,\"summary\":\"Heating to 300° takes 20 minutes. Heating the rest to 400° takes 40% longer than 20 minutes = 28 minutes, so total warming time = 20 + 28 = 48 minutes. Cooking time is 5 minutes less than warming time = 48 - 5 = 43 minutes. Total elapsed = warming + cooking = 48 + 43 = 91 minutes.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "91",
+    "91",
+    "91"
+  ],
+  "refined_answers": [
+    "91",
+    "91",
+    "91"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "69bf77cd198fc2fd2c12296cf0a28e371b78eb0416e5f8f7a32c76bcb4d68fe1",
+  "errors": []
+}

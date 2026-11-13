@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:889",
+  "source_index": 889,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "15",
+  "final_answer": "15",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1666,
+  "output_tokens": 958,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0023325,
+  "latency_seconds": 20.86476811400098,
+  "wall_seconds": 182.67935617799958,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 165,
+    "utf8_bytes": 169,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "15",
+          "summary": "Orchids: 5×5=25 petals. Daisies: 4×10=40 petals. Difference = 40−25 = 15 more petals for the daisies.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"15\",\"missing_response\":false,\"sender\":2,\"summary\":\"Orchids: 5×5=25 petals. Daisies: 4×10=40 petals. Difference = 40−25 = 15 more petals for the daisies.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 8125816643272442946235593682427288465,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.4175269216669169,
+        "proposed_state": -0.04621176199171575,
+        "state": -0.04621176199171575,
+        "probability": 0.2163662114044789
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.04621176199171575,
+        "target": 0.0,
+        "drift": 0.055454114390058894,
+        "gaussian_draw": 2.429958526296071,
+        "proposed_state": 0.2282807741467511,
+        "state": 0.2282807741467511,
+        "probability": 0.2559025345400701
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.2282807741467511,
+        "target": 0.0,
+        "drift": -0.27393692897610133,
+        "gaussian_draw": -1.5532795545690112,
+        "proposed_state": 0.02897053800979532,
+        "state": 0.02897053800979532,
+        "probability": 0.22673785884204545
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2163662114044789
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2163662114044789
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2559025345400701
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2559025345400701
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22673785884204545
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22673785884204545
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.49581767681211975
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6379445402418831
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.7066649440746966
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.3069013383562067
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8339692032275777
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.09955529181327627
+      }
+    ]
+  },
+  "initial_answers": [
+    "15",
+    "15",
+    "15"
+  ],
+  "refined_answers": [
+    "15",
+    "15",
+    "15"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "5fa4ce198229b576e062314afba8ac2e0063290535829e21f77e19c6a51a1afb",
+  "errors": []
+}

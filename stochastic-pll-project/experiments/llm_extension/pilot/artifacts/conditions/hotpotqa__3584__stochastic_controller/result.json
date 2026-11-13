@@ -1,0 +1,190 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ac4f12d55429924173fb4f6",
+  "source_index": 3584,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "no",
+  "final_answer": "no",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 9484,
+  "output_tokens": 1182,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004735,
+  "latency_seconds": 31.145560678000038,
+  "wall_seconds": 247.31886559399936,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 392,
+    "utf8_bytes": 392,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "no",
+          "summary": "Stiffelio is explicitly identified as an opera in paragraph [5] (an opera in three acts by Giuseppe Verdi). The entries for Pravda (paragraphs [2], [7], [8], [9]) refer to a Soviet ship and several news publications (the Russian broadsheet Pravda and its spin-offs/online site), not an opera. Therefore they are not both operas.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"no\",\"missing_response\":false,\"sender\":1,\"summary\":\"Stiffelio is explicitly identified as an opera in paragraph [5] (an opera in three acts by Giuseppe Verdi). The entries for Pravda (paragraphs [2], [7], [8], [9]) refer to a Soviet ship and several news publications (the Russian broadsheet Pravda and its spin-offs/online site), not an opera. Therefore they are not both operas.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 279095148921250760867750918773687619871,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.4185186935683979,
+        "proposed_state": -0.04632153102619701,
+        "state": -0.04632153102619701,
+        "probability": 0.21635132253893105
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.04632153102619701,
+        "target": 0.0,
+        "drift": 0.05558583723143641,
+        "gaussian_draw": -0.874656231071101,
+        "proposed_state": -0.13756965239756588,
+        "state": -0.13756965239756588,
+        "probability": 0.20423124616167662
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.13756965239756588,
+        "target": 0.0,
+        "drift": 0.16508358287707905,
+        "gaussian_draw": 0.20879946203389096,
+        "proposed_state": -0.09795142851128474,
+        "state": -0.09795142851128474,
+        "probability": 0.2094305806214154
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21635132253893105
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21635132253893105
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.20423124616167662
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.20423124616167662
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2094305806214154
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2094305806214154
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5288856822557623
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.5611708135066824
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.10702418489692345
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.6554795595097502
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.46081264482829487
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.4734697391400221
+      }
+    ]
+  },
+  "initial_answers": [
+    "no",
+    "no",
+    "no"
+  ],
+  "refined_answers": [
+    "no",
+    "no",
+    "no"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "88484cdf2d257f8017ee6619deb537f8e570443f220ac3279f35a6a640e70a74",
+  "errors": []
+}

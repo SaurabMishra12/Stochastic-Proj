@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:197",
+  "source_index": 197,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1928,
+  "output_tokens": 952,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0023859999999999997,
+  "latency_seconds": 20.755708973003493,
+  "wall_seconds": 240.17972886299867,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 225,
+    "utf8_bytes": 225,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "With three fruits, 'second-most expensive' means middle price. Mangoes are the cheapest, cantaloupes are in the middle, so watermelons must be the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"With three fruits, 'second-most expensive' means middle price. Mangoes are the cheapest, cantaloupes are in the middle, so watermelons must be the most expensive.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "controller_seed": 243803095915305915267388854940775993556,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.50285627805086,
+        "proposed_state": 0.05565599110244787,
+        "state": 0.05565599110244787,
+        "probability": 0.23050263993302764
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.05565599110244787,
+        "target": 0.0,
+        "drift": -0.06678718932293744,
+        "gaussian_draw": -1.4882770485673187,
+        "proposed_state": -0.11574481202874753,
+        "state": -0.11574481202874753,
+        "probability": 0.20708349615007354
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.11574481202874753,
+        "target": 0.0,
+        "drift": 0.13889377443449705,
+        "gaussian_draw": -0.3173694565222678,
+        "proposed_state": -0.136981796568603,
+        "state": -0.136981796568603,
+        "probability": 0.20430768785346143
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23050263993302764
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23050263993302764
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.20708349615007354
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.20708349615007354
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20430768785346143
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20430768785346143
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.10941650146792048
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6333059221354953
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6359593818725416
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8834607966112146
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.25106058559285893
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7556379825714764
+      }
+    ]
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "df204dffbb1cc96a0ac8e6c5cb37d08894e57e224972b7df3d1fd8abd1484032",
+  "errors": []
+}

@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:178",
+  "source_index": 178,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2023,
+  "output_tokens": 1090,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026857499999999998,
+  "latency_seconds": 21.2630595000046,
+  "wall_seconds": 179.9951088659982,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 293,
+    "utf8_bytes": 293,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "With three positions (left, middle, right), 'second from the left' is the middle. The hawk is in the middle and is left of the cardinal, so the cardinal must be on the right; the falcon is leftmost. Thus the cardinal is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"With three positions (left, middle, right), 'second from the left' is the middle. The hawk is in the middle and is left of the cardinal, so the cardinal must be on the right; the falcon is leftmost. Thus the cardinal is rightmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 95205383060092094160594067897505549945,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.28060386264319753,
+        "proposed_state": -0.0310571564167739,
+        "state": -0.0310571564167739,
+        "probability": 0.21842887240395684
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.0310571564167739,
+        "target": 0.0,
+        "drift": 0.037268587700128676,
+        "gaussian_draw": 0.18292310680567114,
+        "proposed_state": -0.0070844197504551405,
+        "state": -0.0070844197504551405,
+        "probability": 0.22172060331454
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.0070844197504551405,
+        "target": 0.0,
+        "drift": 0.008501303700546168,
+        "gaussian_draw": 0.1301656289089502,
+        "proposed_state": 0.008172405734318397,
+        "state": 0.008172405734318397,
+        "probability": 0.2238339363656819
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21842887240395684
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21842887240395684
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22172060331454
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22172060331454
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2238339363656819
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2238339363656819
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5852896273878154
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.3985856551130098
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6070733155882141
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8938516296315051
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.14161874756165727
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.4549523871493262
+      }
+    ]
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "6cca9dbcf9daea77f44fcb5fb1962bc36d935d8bccb1123af7f816b359fb3fd8",
+  "errors": []
+}

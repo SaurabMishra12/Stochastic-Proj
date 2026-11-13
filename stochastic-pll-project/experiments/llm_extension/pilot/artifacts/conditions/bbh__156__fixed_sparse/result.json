@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:156",
+  "source_index": 156,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2091,
+  "output_tokens": 823,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021687499999999997,
+  "latency_seconds": 19.3507782509987,
+  "wall_seconds": 182.37748692599962,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 628,
+    "utf8_bytes": 628,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "A",
+          "summary": "From left to right: red is left of brown, and yellow is right of brown, so the order is red, brown, yellow. Therefore the yellow book is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":0,\"summary\":\"From left to right: red is left of brown, and yellow is right of brown, so the order is red, brown, yellow. Therefore the yellow book is rightmost.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "Red is left of brown and yellow is right of brown, so the order left-to-right must be red, brown, yellow. Therefore the yellow book is the rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"Red is left of brown and yellow is right of brown, so the order left-to-right must be red, brown, yellow. Therefore the yellow book is the rightmost.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Red is left of Brown, and Yellow is right of Brown; thus the order (left to right) is Red, Brown, Yellow, making the yellow book the rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Red is left of Brown, and Yellow is right of Brown; thus the order (left to right) is Red, Brown, Yellow, making the yellow book the rightmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "8150f044deda275c1c510f5ad7af1bea20f796be04d09f820a52d61f07882673",
+  "errors": []
+}

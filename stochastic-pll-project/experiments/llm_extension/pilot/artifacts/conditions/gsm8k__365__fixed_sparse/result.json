@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:365",
+  "source_index": 365,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "18",
+  "final_answer": "18",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1555,
+  "output_tokens": 1000,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00238875,
+  "latency_seconds": 21.89393064700016,
+  "wall_seconds": 232.62680671599992,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 457,
+    "utf8_bytes": 460,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "18",
+          "summary": "If boys are twice the number of girls: boys = 2 × 6 = 12. Total kids = girls + boys = 6 + 12 = 18.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"18\",\"missing_response\":false,\"sender\":0,\"summary\":\"If boys are twice the number of girls: boys = 2 × 6 = 12. Total kids = girls + boys = 6 + 12 = 18.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "18",
+          "summary": "There are 6 girls and twice as many boys, so boys = 2×6 = 12. Total kids = 6 + 12 = 18.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"18\",\"missing_response\":false,\"sender\":1,\"summary\":\"There are 6 girls and twice as many boys, so boys = 2×6 = 12. Total kids = 6 + 12 = 18.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "18",
+          "summary": "Given 6 girls and twice as many boys, boys = 2×6 = 12. Total kids = 6 + 12 = 18.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"18\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given 6 girls and twice as many boys, boys = 2×6 = 12. Total kids = 6 + 12 = 18.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "18",
+    "18",
+    "18"
+  ],
+  "refined_answers": [
+    "18",
+    "18",
+    "18"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "4263a88724a29be009c22a870363fb8f2b79f79281b1f2ece118c36da6e8a6f1",
+  "errors": []
+}

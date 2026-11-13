@@ -1,0 +1,199 @@
+{
+  "payload_hash": "3af72bddafc6e16b69849599b9dc7103b070a6bbd909107205c2959e6d30cf21",
+  "logical_id": "hotpotqa:distractor_validation:5a7438ec55429979e28828b8|stochastic_controller|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_0bba00c21f0769f1016af735608b54819482a8462c3806d2dc",
+      "object": "response",
+      "created_at": 1794585952,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794585954,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 8422,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 527,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0bba00c21f0769f1016af7356130f481948e8c397b49cd3d4f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zVi779I51aWFhcaCte3Zlg4YbWP6v6x9ja3qiEHZBFtaMglOzqNkTSbD-Eb3vivUj3rcQ0AVRu-0XEyjSNLgkKm617LU7SwzkJuiEFt5Hx7zNIP_tGZeNoHA28sEVu-dD2ttoH3OQn4KkzJr4at3Ek6Za87RwRlgf5B-aTMeliLUYfDIVAMcoZxvsSphHmxbBM5tdo7aAECIoYvqsiqEqVrxF0ntVcKV50mDAg85dkWzMiXWL-xulorCtGBbY6yyL3KLWr2K8CbACttjjfIAqoL-W7267EC5GEQWRN5q_hT4WJo_dUgOEhyLWAgl1zXftPO8w2OBSW2REcI82qyBt0DSHMA3_7WtY6BQ28wDWxXDid7kgZN6HJlPb2uggwkHfTSCrnvSdQAi3GF1PAnvPmXEL1sADZbTAeddd4Euk3HEM6GCR9sBCV5ZYb1UePB90VjgY8V8jjegRuOIcBrgAOsWOcYl9lOLTtoPy18nC1YMah9JJq3ef6GZRmrJiBguZP7F20oYK4v1gvyU8vFyikDmmJ4bevsmn2p7tHK5eeyvC_aWbt7vqTkQkX1SBxECPjS289Dt4n1RzIhm3qIWgofteYkjxXIIIMNuU_X6b2PoACho6E9JeuL3HP0P6HPd962Dc6OFy0V3cAR9iQfP9Mxilj7aiLEIN9xnVTsV21aFZ3ZFBJ6L17LKVnJ-hYt4z-Jqy6rKnVgkTdkqaOUbWRmEzFBecsUc6kLuIlpfJK6deK4FW9A0nOT25AePkHNRC9zTrztnGz8GaKk9RvOY-zWnLXtmF1xF-8LmGbvTREYWAyWbn6OSN2bs02kavfCzD6J8K5CA7PATAQq8rATVgkBiFE94SRUA9ZfqsaaTPHGUQ3dBzrhJTMjSm-3lPxao2NZxw1ybDMTn2_Po7I0ADr6drPrdCu4TXHZMQ17zClM0tRipIgaUUIVw87IDQSfkNyswdsleRHjsfFfeuzRJbguu96uzKRIfuEAdPRAUNDED6VDdmRbyO-tfhGK_TNjWUnFdT86x6b5Pu72N3umd8dqdTc0cIEv8_3ajBlvAYh5_ptQ1EVuCaLzwkfQb2hM21e4xKh111xu54_KxMy4Sdh-INhvz3cePazOfpyhsGBKE9QLssEryhDmav21t27Kwf0Bidwc5vapR1GDU7GHl23jy43vOP8xBZK5IXNvuX8SAe9m2VPOy1V_DmmUVZ3sFw_Dqzza8Ohx-EzoRQ2oxnhA-E9n6ZakAH8DTenP1gn2jeDgFo4H4QQr9oQJLhF1_Hbuxac30b8lDGujTLZijIzM_RGm3VIxiaI_DFPzxkxTkj_OzO84r9K4osuoqXRb0KrlxFq8jPOuM9H1F6Yhy1pCOimc2wRbAH3iRO8ixPk64aJG9mAubyKtW1S9MAtx9HryaFhkgVkG1Pr3muUI4dR6xZ8EFgv-_2-CfDijxdkUgKcHkeoumojPyDd7Nhczko8Tq0HadS4rMg2xzoVqLTtPFeCDSqXzBgsnSU1S0c2NVh5BkGzr37aWCJsD3afH-KS_sTHer2Ew2vtPNTIH0KBAk_IVSfz7scm98Z4_Te7WlGxsDPVDNUXeOq1ilIBMn68N8W41zFDkWqutJJOOzF6c-LGNkwDtkd1fm51dPXafrZDq5R910Ukcif_bDfGHz0XSY43xwJzXRbKUMkdr0DiCtWKSyDjdYcLNrmu2IQdD994C04ubcmGB7Orlv0s5E45rEMCuYKUOD9yn2nIrIMcyCh24_cmRe_jZ6SSpIwsgRVKmePGxMtDVNMtAYITcSoq7CnJxaCUoaO1SeewulgDjxVE4SgxBJvXv8-kjiN2Mg8K7JOpIyZqaN63joASamrS8I321ltFTdQp_RC6qHnao1pDjR3qFRM_hgB2zqUQx9M_vRB3sERXcqeIgQ9B2nzEiGUjRJY-NltXag9pivYKcKWZaTPP2W2pSJdwRbXILBFZ4c7kpeGQKg3359nUA6ibGM4g1QSc-8pMDPZtrA9PNT5drPkkjEhhiTr85Prbso8AEet5sBjovcCirbPK0t3fIIyZgu8aDC7Z8uSQneSLK-az01sXvwKz1dqBfA2gb-ky9qWQ8RmuzYyKhsfQsiLh0",
+          "summary": []
+        },
+        {
+          "id": "msg_0bba00c21f0769f1016af735619b7c8194a0cc6bad2d9110b2",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Nassau County\",\"summary\":\"W. Tresper Clarke High School is located in Westbury (technically Salisbury), New York (context paragraph 4). Salisbury is a hamlet in the Town of Hempstead on Long Island and is in Nassau County (context paragraph 2), so the school is in Nassau County.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1721,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 127,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1848
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Nassau County\",\"summary\":\"W. Tresper Clarke High School is located in Westbury (technically Salisbury), New York (context paragraph 4). Salisbury is a hamlet in the Town of Hempstead on Long Island and is in Nassau County (context paragraph 2), so the school is in Nassau County.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1721,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1848
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a7438ec55429979e28828b8|stochastic_controller|refinement:2",
+    "attempt_id": "65a2d9d43e744897ad5cec42ee1c9406",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00068425,
+    "latency_seconds": 2.5473232490003284,
+    "started_at": "2026-11-13T16:05:51.936737+00:00",
+    "finished_at": "2026-11-13T16:05:54.484063+00:00"
+  }
+}

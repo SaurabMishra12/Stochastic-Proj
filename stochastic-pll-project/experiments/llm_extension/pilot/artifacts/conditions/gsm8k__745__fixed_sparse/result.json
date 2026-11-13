@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:745",
+  "source_index": 745,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "1100",
+  "final_answer": "1100",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2028,
+  "output_tokens": 1130,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0027670000000000004,
+  "latency_seconds": 20.79224927999894,
+  "wall_seconds": 239.59182912099823,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 531,
+    "utf8_bytes": 543,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "1100",
+          "summary": "Total spent = 3 × 1800 = 5400. Total value obtained = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"1100\",\"missing_response\":false,\"sender\":0,\"summary\":\"Total spent = 3 × 1800 = 5400. Total value obtained = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "1100",
+          "summary": "Total cost = 3 × 1800 = 5400. Total value obtained = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"1100\",\"missing_response\":false,\"sender\":1,\"summary\":\"Total cost = 3 × 1800 = 5400. Total value obtained = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "1100",
+          "summary": "Total cost = 3 × 1800 = 5400. Total revenue = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"1100\",\"missing_response\":false,\"sender\":2,\"summary\":\"Total cost = 3 × 1800 = 5400. Total revenue = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "1100",
+    "1100",
+    "1100"
+  ],
+  "refined_answers": [
+    "1100",
+    "1100",
+    "1100"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "7a1c25d0ca7d444e17540ff9bd321831b7798814128780ea60a5fed82fe739b5",
+  "errors": []
+}

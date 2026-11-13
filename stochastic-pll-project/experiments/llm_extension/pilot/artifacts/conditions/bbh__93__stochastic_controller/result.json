@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:93",
+  "source_index": 93,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2181,
+  "output_tokens": 1097,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0027392499999999995,
+  "latency_seconds": 25.42158534400187,
+  "wall_seconds": 186.0136303899999,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 602,
+    "utf8_bytes": 602,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Given three positions L, M, R. Raven is stated to be second from the left (middle). Blue jay is to the right of the hummingbird, so hummingbird must be left of blue jay; that leaves hummingbird at left, blue jay at right, raven at middle. Thus option C is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given three positions L, M, R. Raven is stated to be second from the left (middle). Blue jay is to the right of the hummingbird, so hummingbird must be left of blue jay; that leaves hummingbird at left, blue jay at right, raven at middle. Thus option C is correct.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Raven is explicitly stated to be second from the left (the middle). This arrangement is consistent with the blue jay being to the right of the hummingbird (hummingbird leftmost, raven middle, blue jay rightmost).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Raven is explicitly stated to be second from the left (the middle). This arrangement is consistent with the blue jay being to the right of the hummingbird (hummingbird leftmost, raven middle, blue jay rightmost).\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 63418191371860766888345090191478561677,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.09927979599639067,
+        "proposed_state": -0.010988259834491112,
+        "state": -0.010988259834491112,
+        "probability": 0.22118215259338253
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.010988259834491112,
+        "target": 0.0,
+        "drift": 0.013185911801389333,
+        "gaussian_draw": 0.9074143063008175,
+        "proposed_state": 0.090762690972277,
+        "state": 0.090762690972277,
+        "probability": 0.23552183316481667
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.090762690972277,
+        "target": 0.0,
+        "drift": -0.1089152291667324,
+        "gaussian_draw": 0.8906717445260388,
+        "proposed_state": 0.17845046566462994,
+        "state": 0.17845046566462994,
+        "probability": 0.24838586540825158
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22118215259338253
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22118215259338253
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23552183316481667
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23552183316481667
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.24838586540825158
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.24838586540825158
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.22075263044019955
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.9426608783051577
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.48849320907317373
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8849587024426687
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.6264819415438385
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.08846656770055417
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "45e6d3f1c7da9b3a3cdb4a4fa87de0cd4372db4e3bcaeec495766f82320bf212",
+  "errors": []
+}

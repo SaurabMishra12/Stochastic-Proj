@@ -1,0 +1,145 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:809",
+  "source_index": 809,
+  "method": "full",
+  "answer_kind": "numeric",
+  "gold_answer": "50",
+  "final_answer": "50",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2153,
+  "output_tokens": 1549,
+  "reasoning_tokens": 960,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0036362499999999997,
+  "latency_seconds": 25.874160919000133,
+  "wall_seconds": 233.86049976400136,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 1226,
+    "utf8_bytes": 1234,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "50",
+          "summary": "Initial order 100 + later order 100 = 200 total candies. He already sold 150, so remaining to sell = 200 − 150 = 50.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":0,\"summary\":\"Initial order 100 + later order 100 = 200 total candies. He already sold 150, so remaining to sell = 200 − 150 = 50.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "50",
+          "summary": "Initial order 100 + later order 100 = 200 total candies. He already sold 150, so remaining to sell = 200 − 150 = 50.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":0,\"summary\":\"Initial order 100 + later order 100 = 200 total candies. He already sold 150, so remaining to sell = 200 − 150 = 50.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "50",
+          "summary": "He initially ordered 100 and then ordered 100 more, so he has 200 candies total. Having sold 150, he still needs to sell 200 − 150 = 50 candies.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":1,\"summary\":\"He initially ordered 100 and then ordered 100 more, so he has 200 candies total. Having sold 150, he still needs to sell 200 − 150 = 50 candies.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "50",
+          "summary": "He initially ordered 100 and then ordered 100 more, so he has 200 candies total. Having sold 150, he still needs to sell 200 − 150 = 50 candies.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":1,\"summary\":\"He initially ordered 100 and then ordered 100 more, so he has 200 candies total. Having sold 150, he still needs to sell 200 − 150 = 50 candies.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "50",
+          "summary": "He initially ordered 100, then sold 150. After that he ordered 100 more, so total available = 100+100 = 200. Having sold 150, remaining to sell = 200 - 150 = 50.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":2,\"summary\":\"He initially ordered 100, then sold 150. After that he ordered 100 more, so total available = 100+100 = 200. Having sold 150, remaining to sell = 200 - 150 = 50.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "50",
+          "summary": "He initially ordered 100, then sold 150. After that he ordered 100 more, so total available = 100+100 = 200. Having sold 150, remaining to sell = 200 - 150 = 50.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":2,\"summary\":\"He initially ordered 100, then sold 150. After that he ordered 100 more, so total available = 100+100 = 200. Having sold 150, remaining to sell = 200 - 150 = 50.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "full",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "50",
+    "50",
+    "50"
+  ],
+  "refined_answers": [
+    "50",
+    "50",
+    "50"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "46cb89027e7bfbec98b47fd0950e73a6c113f74526c6da3cd084024b7264d7ec",
+  "errors": []
+}

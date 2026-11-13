@@ -1,0 +1,220 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:126",
+  "source_index": 126,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2101,
+  "output_tokens": 731,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00198725,
+  "latency_seconds": 17.826054700000896,
+  "wall_seconds": 179.21159490100035,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 562,
+    "utf8_bytes": 562,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Given O is left of B and Y is right of B, B must be between O and Y, i.e., second from the left (middle).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given O is left of B and Y is right of B, B must be between O and Y, i.e., second from the left (middle).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "With orange left of blue and yellow right of blue, blue has one book on each side, so it must be in the middle (second from the left).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"With orange left of blue and yellow right of blue, blue has one book on each side, so it must be in the middle (second from the left).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "With orange left of blue and yellow right of blue, blue has one book on each side, so it must be in the middle (second from the left).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"With orange left of blue and yellow right of blue, blue has one book on each side, so it must be in the middle (second from the left).\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 242967059766145207203717954993399397221,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 2.1077206883597106,
+        "proposed_state": 0.2332819316336121,
+        "state": 0.2332819316336121,
+        "probability": 0.25666512030923533
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.2332819316336121,
+        "target": 0.0,
+        "drift": -0.2799383179603345,
+        "gaussian_draw": -1.0846461605747544,
+        "proposed_state": 0.08523976854052538,
+        "state": 0.08523976854052538,
+        "probability": 0.23472723550001884
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.08523976854052538,
+        "target": 0.0,
+        "drift": -0.10228772224863046,
+        "gaussian_draw": -1.0539493484865075,
+        "proposed_state": -0.04163982047271418,
+        "state": -0.04163982047271418,
+        "probability": 0.21698699972351593
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.25666512030923533
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.25666512030923533
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23472723550001884
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23472723550001884
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.21698699972351593
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.21698699972351593
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.18478535857420064
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.5189823832432746
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.1284761611434283
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.17233938009091687
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.7942717665703564
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7849316566989921
+      }
+    ]
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "0ae4dcbc2bd9ffe7c13380fa5f1e655a9bcb67120ee425ac155dc99347ff11a3",
+  "errors": []
+}

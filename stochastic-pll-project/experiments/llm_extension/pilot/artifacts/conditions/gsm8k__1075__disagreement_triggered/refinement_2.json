@@ -1,0 +1,199 @@
+{
+  "payload_hash": "e3860066f118d9aa0cf69c44a964f6998e90cd9afb549bc4cd82e6de3a161bc4",
+  "logical_id": "gsm8k:official_test:1075|disagreement_triggered|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_07f17b3bbd705035016af71d31c0b08193abd29018d5ade8f5",
+      "object": "response",
+      "created_at": 1794579761,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794579764,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1632,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 475,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_07f17b3bbd705035016af71d32f0208193abdf7a8108a8d415",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9x00HErWigEQJ-mkKyM85ZCG3nojkUvai55byi7J8KibsXYlADqrv1F_jQtCRgcea17jskBFaWJPnK_IRgaQS1yfiInho_DO_KRvj-1NR34KVC7yAAhAu8JEonpDeACCtpDu0jULKzD5AViNnh7O5unVz7CiFK73c0WJcJY0n1txJQO8dzrUloQIjP1JXlRMmjdXvxzveBYyJ3Y8blpWytXU3CAnbEhY7lJ5mIZN6FaTcLKmkiM-LZy3wjhaOBVcz_CsBZuVIEbD4qyvd50moTXuKw283xF2kk8xgYUk9fsd4iphAEocEyuGfRtjrd9Gdya5FdgKmz3KWQ6Zb6cD48MIQmzLBd4xQzRUNBJ8XzbAwLw3GSM9KrCEv8uvJ0GXqsYcRlNsm8_sdGKG0Qt1akFacd5RfxYRoAzNSRJHuUR5cf-nQ9otOgmAVn2brqRbymLrzXvnAwHUFHoILtMgPX5yAdo_-rKqBaV3_7cvtaw54QV5Cl_txFeN3YBvY3ChBMXT2wYs8qCjwDRLl2F5jWB9TS8FsX9wva5uaOfSeM-VBSFdtzTBqGLMZpln-JEgPsEqChH12SQx35h_hyyoPoLam0VAPVYKBCaRWD-tdwxJL93dpK0zcpdhZ2Ir3SKpDJdVh_ZYcHo73Z8wemfaEur9r6ztcL67vTy5dwl9B-6_qMRRUULx7PE06Ti9coymscTDhKsXgWaerSRjAGwMmfW4qMdZSGOBjWlEuLbsiftdxdbqR7X5RrEbtsECKizKfAymd-kRoZ0E51rA5lN81hW6PVNZK_V9oo2T5JjTQOj334GvaIBl1xr6KT6VbIVGmD17rDwfOuo-qnGdjcsiinci9yWerwEbosxJj3nH2k80bz9YfIyVaotKRqLUmm8XCWZoELVnaU3NEoxpA1FNBSL4hDX--LWaRjTlgerF0ZhOyTX6NmCmrCpHogauwSJiTtOpgsgH674mlc1nUUZWW5mCPSZC3moVp6bt33tPpgM1H0OnizfuJK_LlwN2o6OGsidLtVylc7kD7GC17BWtAb7mbRExvqZ1wtBcjXPyNaBTpfsE7--oT1eN5Yyql5xHGKPUdcZkd4f7VAyefyQ_H_VBWEVZTHv9pS27UsuM48DK8nJBYvt6u4s3QcjEKzutJXQKjRm3g5iuZQ_DRU3YsKwvf9iKI7Jk4uXihxiTob_wrPFoRhK1EyYMXU0BxZWFla2KFnjzs_wLHa4Jex5kxhNIHWI2EroKEVGWBBUrLrRA-UDeS72M1-Sc5rsP_YbhxRtiX7CUWOooIn_dxPGqBAEE4_C4Naxb3gxEF3ffRUVuk-dZ5BtB-ODgADsuUbLHdJ_tt9faARcd7WGBNpMPT2OFLUSDJi4hQQNDsUaLS-e7J5axUIGEDfWkL2mSeYoKvVEMrhiJZ7CMKcv99btvtXq406qwYt3vDQlTjLd_4z0RPfxeGWD9tDGc0R97MXVHBRwLx1z_dSodvjF4JICBDgRb4Sc-GNnKzjK_mVagYh7wjMaOMsy0BWgQWG8mSG15EWYbYQM8aVV38qXA_gGpLd640PrVcoVm2aDPwlk-6S8AFyfi2sZ8WQt3BMYPcu2qP2e6JBBOLmppcoMkDg9BRlgLvxu9dRzZ_u5aGWRXi_5Wm-2RTh5WNw2TdVsTmDK1hS9EZrYSroq1txGmCqHHXs77EI6cXqyHp_XnYM-_OBGhtuanWFYGMq2cgL2p3lS9km47yyO7hgswWJU7YQ9rYvGYqdYAAaB0ASKp-LsCtDlriQzbIWbbKUkAYiRFuvgCG4xQyV9bYC-lNT1_FmhcXFQT2u4ULAS5rAPRh2rcXyPPvHI_Q3c_zxJvV-09Rx-J-j-9pi6bPcq16TFsSFtNj3gGcSGSI__p109Zz6vxpGWXeyyUaxY_b3cRhPUcQTojm4wf6M713aZ7LWbGKs4m13AMxMXNejW7UHoCorv7iG_2nhcETWazQNxO4NhEIy3mVCP4pxJCO4A-lNOoc0WmeoqcLAH6xK48Tihy1_D7kb6I3sM-6PrTh8GyN6roGoO7P467cMqqAONIJ4KSYXOGTozLVwsmNlpbbsAwl08ZSdjgvgnc7ViSaGxjTO0DQsp6lYW5x53P9qq8AEBbDKyUaNTijQfj1bMxWZXISmtMZyAfqsZXjhQHjw9l5lu5Eoy4HW1fKiwh_loEio-Aq3LcFcGLvQPeyTyM4Am4fjEYJTfPkcQdfpEjOUCIyQ8rrs5hzDQRa4yzxEfUFH4rHZZs0bPMcSS8pQd-YzQH8jo4xWOJ2mN0pCwj2Ddb-3Od4L-fKOStLoz8ex084VKL8xB6R2CaAk-N0kDVDi6kzDtiXdfC8zmbV1PBRSKL3yhD4hdKDKHC2u4izlJC2s_UGItmtO64HUZA2c_8npEpblbEP-pW7xx6FWxDy-_bTlO4ubuTvbQ70uOrr98ieMWcuq2oogp6k3Zkjodq6jFYm2bboVrgLA8=",
+          "summary": []
+        },
+        {
+          "id": "msg_07f17b3bbd705035016af71d3393b081939362d8f4d447ccdb",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"16\",\"summary\":\"Total cost = $15 (dozen) + 3×$2 = $21. Jenny pays $25 (five $5 bills). Change = $4. Number of quarters = 4 ÷ 0.25 = 16.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 268,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 157,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 425
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"16\",\"summary\":\"Total cost = $15 (dozen) + 3×$2 = $21. Jenny pays $25 (five $5 bills). Change = $4. Number of quarters = 4 ÷ 0.25 = 16.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 268,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 157,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 425
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:1075|disagreement_triggered|refinement:2",
+    "attempt_id": "19e8ed25b08442b59e498eb6fc326265",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000381,
+    "latency_seconds": 3.420794465000654,
+    "started_at": "2026-11-13T14:22:41.058848+00:00",
+    "finished_at": "2026-11-13T14:22:44.479746+00:00"
+  }
+}

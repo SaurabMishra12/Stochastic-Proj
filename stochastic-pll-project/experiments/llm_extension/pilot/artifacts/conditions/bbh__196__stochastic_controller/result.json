@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:196",
+  "source_index": 196,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2063,
+  "output_tokens": 1540,
+  "reasoning_tokens": 896,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0035957500000000004,
+  "latency_seconds": 26.915378050998697,
+  "wall_seconds": 293.3909061129998,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 566,
+    "utf8_bytes": 566,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "With three vehicles, 'second-newest' is the middle position, so the limousine is middle. Given the minivan is older than the truck and can't be middle, the minivan must be the oldest and the truck the newest. Thus the minivan is the oldest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"With three vehicles, 'second-newest' is the middle position, so the limousine is middle. Given the minivan is older than the truck and can't be middle, the minivan must be the oldest and the truck the newest. Thus the minivan is the oldest.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "With three vehicles, 'second-newest' means the limousine is in the middle. Given the minivan is older than the truck, the minivan must be the oldest and the truck the youngest, so option C is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"With three vehicles, 'second-newest' means the limousine is in the middle. Given the minivan is older than the truck, the minivan must be the oldest and the truck the youngest, so option C is correct.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 76063445400248441844026208033414154668,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.3738000954392377,
+        "proposed_state": 0.04137208919117083,
+        "state": 0.04137208919117083,
+        "probability": 0.22848204256103594
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.04137208919117083,
+        "target": 0.0,
+        "drift": -0.04964650702940499,
+        "gaussian_draw": 0.3319513521857568,
+        "proposed_state": 0.07314772057301999,
+        "state": 0.07314772057301999,
+        "probability": 0.23299401757049545
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.07314772057301999,
+        "target": 0.0,
+        "drift": -0.087777264687624,
+        "gaussian_draw": -1.601077998604526,
+        "proposed_state": -0.11283686744683916,
+        "state": -0.11283686744683916,
+        "probability": 0.20746574387026345
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22848204256103594
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22848204256103594
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23299401757049545
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23299401757049545
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20746574387026345
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20746574387026345
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.1651785359515905
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.584111891787942
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.855166204515872
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7509697595001824
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.6561682202362106
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.0046089888665601375
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "79cca741a8b624bec38a6b67f87c94e14e20d3c7ba0cf4fcdf4b1d9bafab2683",
+  "errors": []
+}

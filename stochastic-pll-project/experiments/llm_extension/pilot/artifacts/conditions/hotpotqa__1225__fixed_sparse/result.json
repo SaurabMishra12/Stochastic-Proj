@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a8518a75542994c784ddaf7",
+  "source_index": 1225,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "building",
+  "final_answer": "skyscrapers",
+  "correct": false,
+  "f1": 0.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 11768,
+  "output_tokens": 1147,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.005236,
+  "latency_seconds": 23.515987822996976,
+  "wall_seconds": 186.0711124139998,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 890,
+    "utf8_bytes": 892,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "they are both skyscrapers",
+          "summary": "Both 126 Madison Avenue (a proposed 47-story, 730-foot residential tower) and 277 Park Avenue (a 50-story, 687-foot office building) are described as tall multi-story towers — i.e., skyscrapers.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"they are both skyscrapers\",\"missing_response\":false,\"sender\":0,\"summary\":\"Both 126 Madison Avenue (a proposed 47-story, 730-foot residential tower) and 277 Park Avenue (a 50-story, 687-foot office building) are described as tall multi-story towers — i.e., skyscrapers.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "they are both skyscrapers tall highrise buildings",
+          "summary": "277 Park Avenue is a 687 ft, 50-story office building in Midtown Manhattan; 126 Madison Avenue is described as a proposed 47-story, 730 ft residential skyscraper. Both are therefore skyscrapers/high-rise buildings.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"they are both skyscrapers tall highrise buildings\",\"missing_response\":false,\"sender\":1,\"summary\":\"277 Park Avenue is a 687 ft, 50-story office building in Midtown Manhattan; 126 Madison Avenue is described as a proposed 47-story, 730 ft residential skyscraper. Both are therefore skyscrapers/high-rise buildings.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "they are both skyscrapers",
+          "summary": "277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan and 126 Madison Avenue is a proposed 47-story (730 ft) residential skyscraper in NoMad; both are described as skyscrapers.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"they are both skyscrapers\",\"missing_response\":false,\"sender\":2,\"summary\":\"277 Park Avenue is a 687 ft, 50-floor office building in Midtown Manhattan and 126 Madison Avenue is a proposed 47-story (730 ft) residential skyscraper in NoMad; both are described as skyscrapers.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "they are both skyscrapers",
+    "they are both skyscrapers tall highrise buildings",
+    "they are both skyscrapers"
+  ],
+  "refined_answers": [
+    "they are both skyscrapers",
+    "skyscrapers",
+    "skyscrapers"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "19d7e41dee47a67b4ec26d329468c7e2d67c2396ec9f7644f7d541e9b340ceef",
+  "errors": []
+}

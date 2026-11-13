@@ -1,0 +1,199 @@
+{
+  "payload_hash": "fe80ee64dbe5adc138d4bad719c80237727801b1b9d5277a2dbec98c50a70e44",
+  "logical_id": "bbh:logical_deduction_three_objects:44|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0a94980ae7703b1f016af727136f608197b80122e83072f765",
+      "object": "response",
+      "created_at": 1794582291,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794582293,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2328,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 439,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0a94980ae7703b1f016af7271432748197837ca43ed92256ce",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9ycV9YfMvI8ICvSP5Vlfh74vOT8LW6WyiS1jpxgq1ltDFRF4F6PxobeNI9F778MwKD5MnfK4D2es67E6e23WZ6zCO_Vm3HYjh303g9iHkvsQBl0Xi1mH6pAAXSWQo0uin9Bb8XXd3LlmUUermqfqwql5rd6sszKsHjD1_sDNIGE93MRmDlX7xNz4iCbkJjM5Zvs4Ef6-IbUL14-XzqLRKttRJ63dFM_T9IUgT0kzupsP4mgbhrY6SIuy16pWkWtAk_Kh8y0EA4c1QH2M5JTw4d-ias09Gyf9CYpiaW9NPpj76zyzRgpmgSzXd1TBu2exOy2g3oSK_2m7yiBFv17_AkQGD_9QnDvWTTAU6hYWjAQYADzsI2cNnU_-xzKi7YNy8BKXkViztJKZZoqwdHa7-yUfAWPLDgVvIKA5ovWVm1FGNedQbl1q4Z1UaBfybiQ_8dnrQ0v7dxbBo2YOPzY_HYtGWNvz1fMOikjyt_XDvQG0Ok5d2pUdskp_HmqdvR-F5Ua8q8QN-DRzwcRjfAtgHS8sQIziP64paEHgfnMR_tJ1qYXbLSPoilHj4GMgdVOyHmQR-hMXqYBPstR66Wic6vanteZ912LEQvDuWesG4lYAf0dCOkOTwh5S0Qvs5W0o-Z_SpgEXigdmRc1c9PyZsiK2Xg2jmpxG0wtsfCvX7wtzzrpnpBToZ9pfA0X3ZsQyUvjzckI6wt70veXi0BL8XSZ87KbsBgWCtSd79DX-pTqIg3qRqRv-NYq-heAITA7lySxcWBngsoOplMLbbyjAYzeNS4cQWs8R2ceTtJHXYjcwdnPv9fLauB5-bMJ3BBayfKP75tC50wVQ5Umvcq6cxSsAsaBwAhsFFvDUt81bOBwlIslcH0AbkaH5C-j9S2SNOJ1f7Td_lVkkc45VnCUfbywkBNie9d0ZQmRsE5EiHno56VOyPS_iofDiskWJim9Bd-_YCjg5ZsjLwMpV3AP2ZM2QAoA8c4-hO-3YzqBzWQjUJMDXCbhmCduB71cUwSc46vT6B9xCFMdyXLr3CZu37P4TlmvXez3x1rzffczp_rDuwnsmzDgWrBjTx5Z-rRLg7QeBaRsKDcnZidMIRRd3-k3w9S6Rz8G0GTPiw-MCefx8iHsKEsEv7eUz46OB-OUVkjCB4jxHQElEomsQuIXilV6K5tW9qDAdT4UbiXRNuZt6wcEV65YmFsgS2E7KTA4DKMhn9xjx0yT-yZmn738NR5ZpGDqHNIyHIvv-zm2A8qnlLNsGTT7ETqsredkGAf24-OEd7WYKNxcbf_rSY9tx2t2_ZZcq9JD9waBMh9PA5mfgbIFb5jqOP9BU4ZlBO_eVD6m8OriQ0uqcv2ANDtGK3mffBTefeqhGLlcP2N09CGl9zkt7i4F0FuuMvzZrTX1jBf7ZTEueQt0b-mfgyZG6VlKDAxm3ia9QpxTlvXrG6NHK-zGZDA-qWfA6qYGQH-Xw9Cetu-GYMqy-2hM5FRkOeI1Z7zxmyrPcrgN2qkyGcka5IQN-H5oA44HgilzmZ_BfsREIMMpNYVEqyyqDCDU1C6dfz8vZYd955cSq-fRbJrXkIva9pwildcRAC1RDQIVjXV_p7kZiFkcVpf1LbQ0e_GSWRPevQfGjpFehrG_RXRok8LZFDbllHIePYrRupEp-yrpnrkGfsHhG2Y4ttbYhj40ubdcAxk-We9GUxfBnRM9OJKhmhtbZHb9asAtBFfjA_ESpiNjAZtga7jvQHfrs7VvRzuN96Z9GF_q9DoZmcyxfquqaVeZ9Q_Bd22EOhhqWScyc_4CuQHPkoXELxY02tIa3v3Rx84hpUblPMLt75-pAV9w4dc91mjjX0YZ3KKjPevReE480E0ma0WK8_b0CsvBnuUjm6HSSRGyxaQXFzS4pu3FQ12NQkr5vBZtWnSKrKSSW6s2IX5vmgjJRLyUqLm3K4qR6dz4mZ4-KhFYv35VanAfKr0-_jL6LvKY-OzJpCIyCbS8sttqbSCfgA6ITbpn82gPJsFUxwHvUn80n0GojMO1RZXGbCBEUG4KO-caPGzae2rQVrrOfRk4dZi19proj5ppSC4rd0-VwUVI7X2JNb8gDjyxp8j613sGxrA_yiKa6_FDJ9tPM54mNlxlRgiF48jf7NxtEK5qABHYTtHEOF85zoedKDbKBI3gZknLGRBApTF0AKkiJuLdfJHAX0m3S9FNwsL_5PLbEfY_PJgVEwG9JR0deujhv0mH_q79u7599",
+          "summary": []
+        },
+        {
+          "id": "msg_0a94980ae7703b1f016af72714afc08197897499e24eb645ed",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Given oranges < plums and plums < mangoes, by transitivity oranges < plums < mangoes. Therefore plums are the middle (second-most expensive) fruit.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 391,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 506
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Given oranges < plums and plums < mangoes, by transitivity oranges < plums < mangoes. Therefore plums are the middle (second-most expensive) fruit.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 391,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 115,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 506
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:44|stochastic_controller|adjudication:0",
+    "attempt_id": "a2964753f5d3416bb67e9e65b490e9cf",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00032775,
+    "latency_seconds": 2.6144599210001616,
+    "started_at": "2026-11-13T15:04:50.705414+00:00",
+    "finished_at": "2026-11-13T15:04:53.319842+00:00"
+  }
+}

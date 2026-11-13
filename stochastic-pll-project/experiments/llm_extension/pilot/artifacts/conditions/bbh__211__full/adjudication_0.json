@@ -1,0 +1,199 @@
+{
+  "payload_hash": "176c1f325318261d47fb9423392e2268b08e30f98367a052b4642597541a0f98",
+  "logical_id": "bbh:logical_deduction_three_objects:211|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_095c47b97584bf2f016af73381e9d881978b460882f62401d8",
+      "object": "response",
+      "created_at": 1794585473,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794585476,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2344,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 367,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_095c47b97584bf2f016af73383680881978f8cbbacbc4b1144",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zOEGPX6AA85Pf9O1P1WEHtsg8mb3Yywg7mXO6Whtnp9bVYmSpS3dZ-wUElKgdD-_4bvTMezh_45t1mnzBSRNJsGgexK9_bn7lIgiSp2Yt_Nbqw-hagslZDuq4sCE9SKSK5U6rZe395pHfhWs9CnuOi0b2J8-8Ny-h-lAdKfGYsPFG3ihQDMlz4SBExulixhqHgfxUppCkjqASiRDvskQXre5jJxgp1ZwhCNI6QNXkve_8T42qGlDspE2BucRJRCM7B5dW9TicD3_-2diThmes2yy9z6FkgRejRrNupquiIPFCeryRMuDAWkBPhVJWwiSFnMRLLZeH9CcYBZsvlCLXLDUcyEHYVO6zDCJyxthYhm4g81PBwNliA0BWOBMLjYySQEavZE3aOq9gUYyLG4o_hg9zNqEdCotiUZdWIQX_kFTiO8N28GOjm4cZsCC3DfJpqRJfbHHAyAq0GfsH2hzdvWucXvW1NqU5njwL4LsYPoEIlo6FUKtErI-AA58XKd_1ax4fWntP7XebHTMR3Y8qSJbLEUUziq37FwWssMbh5oEUpDbkkRlHeSQk6DQeVtETR6hQkYCctLClKNNgKw75hZ6P5F-9ttZfyxpqVRBSbr-YY8O2o64hxMEeFnRE_0BO1nXkIS_r6OxGQ90B8Lhhfid-1MTdIFyg5m2dKdP8C8yty7JiSRtUCoNU4GI2V6b42Z9P2S7mC1DIQqvvFH1WSGeLiCkt-jiF4spmXLPYYnMYKzpfJ37VvRAq6HxOd7qwnSam_dJ1XgE33bb4DHwcPIioIU94lAK0IvbmuAhlppivkq9vodeY5DWTk7TrUn0tmOp2smtIyo0klgL1tC8Vu9MOZV-KO5KkSRAGdoVyeW46DHvhTYdRuNjJk5GVq9prxKVGcPIeFOr87UNZnIcuGJDit9ezqsN42I1tkCKukFR6bEibtQEKHKehDUurajdTb-qKN9d4b8SIOiqQ-wqbTbE9dIL3l5cIBRYN_3R2swbzMG2TOYlV-XmXH0n1cIiX-aKYPeNn8kGOgl3VQ1GmApV9sgfa_qFEQZNVar5xD6JmacYDpMwJUc_P5O0Em_6_MwMHHTVweTJ1nFeJ0ztQHldnOn3MkXEb32lZ5Axh5RB8ody2BeqiPFYhlOohDVGbi0Rx3hLHeWFMpMqOrCsOyENyOUiiEY0fSlKhQIP95WiAw1ZgbKil0U5cSAhHLUZbMlxQ6jtk4_LJjDTem5VR3MF1zcEmqek5BRstUwPhe-tTnYdwrcL4mYFnpomue1xrdzfKoz_-08hbwoYscb2HJ22XgS1G7pytJRQI_lKK5wiMyRKDGLBBh7H76QeDxiGJlqJcPkgTH6xrTQV7Bv56usrVUTgTKyq9vXgbEXsJKbNxZbnUL29zX7C9iorPX70xnSpkcsMar3D2_WOzDFt4RiBr0yoVD-_eCuBCL5M_RzTp-WiCSL2msu0OZk9uHdhqWCmZ-UEHu-HaBCu5L9gUNxyH2D9dve-jeOrdHVM75ne7n56jU9wicow5Vi3LOiVliElL_GZ1j7uUUyqvtIy73cQXnASYILJb9gsaPF-Fx1ON7eFvovAMJ7U_GE0Pv1F7pXhBS57xy45QMDUJaeeSomou9zcZt8KAyVCSKF007IIR0Yl5UZjY8Lc7swo6DfJCtSxB1RYLZrT9min89mkm12C-MTXYCCo-A-iOGp3LKPjO2wtIIVnm-8gukjMXUDE79edVQAJzkWbSKIzwzKRlfv4u8BG-M6Ccu__bGXXVFBuGtehihjO9YXK6qWhYAksKeYReuXcF5LVWWMZ-jrFVIcpG95TucU8Is9Gn5m0gir9Hvc6MRwMIxuZvfi5tCcRB7N8PFg9IGNe9W_ZVqXQJnPNVSuuIthjrEsKsUQIhbO9QxyQPWGuO03ppiVcEEr86Lv0r1VDUApbMuBHhHCFWLAEzErODc70l1GbkoHjCQFHg6wwY5JoML_V8jbNcU7yPRdbTKTVifJSJNL9D7sce4otpPDYbZvfWJVVivcvL8zV0k=",
+          "summary": []
+        },
+        {
+          "id": "msg_095c47b97584bf2f016af73383dbf08197ad14211216402f0f",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Given green is left of brown and brown is left of orange, the left-to-right order must be green, brown, orange. Thus the orange book is the rightmost.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 395,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 494
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Given green is left of brown and brown is left of orange, the left-to-right order must be green, brown, orange. Thus the orange book is the rightmost.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 395,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 99,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 494
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:211|full|adjudication:0",
+    "attempt_id": "a8226cdef5cc405e88ebb8b30b49bbb3",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00029675,
+    "latency_seconds": 3.1626970379984414,
+    "started_at": "2026-11-13T15:57:53.125840+00:00",
+    "finished_at": "2026-11-13T15:57:56.288592+00:00"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "payload_hash": "153e07a35d1f27d8e21e636d8519bb72f60925d80f51315058abee37463cec8b",
+  "logical_id": "gsm8k:official_test:339|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0e8ac62d6c0b45c7016af73c7313288197b583482eda86002a",
+      "object": "response",
+      "created_at": 1794587763,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587764,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2028,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 531,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0e8ac62d6c0b45c7016af73c73601081978f4b82d45ce12226",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zx0iLyUbqrD3XTA0bKCw5pe6MgJxCAFVx-OvhnMg32FpSqs8Wc6CQ-1120zEDaXOIYbBGG0zMVW0HzPIt1NCGQOQrO6fN9_0waB6D7AB5wPhzMk0BcFrV3RENJeepLG6gMCjnuCXPJyE7y2Q4qT5-zbK2z79FXWXZTcIHBZZubql85F2dhYHeIb0sXQAcH07KOnVKUbSZekyaQNVC5MVsdFldb12PeRfbC0zHDKZi8xWeEtUlCzrtprPFam7YJ5ucRqjuTwlEwBJxLYGFjTmrxByHLMdNt0J1cdaOXjN3A21UmAT3IynRhBRgaUmJkQSFnIGxMSGaNA6u1dlrJYqsjnGPaPdzgVjGQvRmqd9gs07OtarYCuEj148-7KjDYP0Q9uOKAci-Vh--3FQuT7877Qy65qd_jg4w0EFK2KWTjJR_OgwsPKXataCAdDINxwq59gxJSZvt3OcYV0DixOHXe1IpTdKqrUCPZ0r4XhI69VVDkd3P4aaaNsI-_YTcJe87DQVddYUcX3zZerqC8y-s9iOsDDHR6HSrdrhRw2-9QZ_vW4i4HpHBqQ-sYUxEX5xWgH_3BnGyYNCoSWXrbSmGFwFP6sIy6Eyh2Es7-K3kBIbwXPUEzTdhLuEjEdrSat6hvPfdwhPy8cbF1j-AwzvlrQhctyVUVd3FAG2I5OUJdPI9kWPdguInqN_7G_7GoknlLDccfWXT85s-LcIQcFNLJOg87cZKgP_Omn1k-PYPUo6QjpzDJN7aKOYNd4tWnQf8e2rzRuNryn4lRZeDnLOyp_P6_CDPYYTFZUpmIzFnlVCraOEIr6-Zy98NdDiJjD3whpK3YNdciX6ZqUXkFNy0wbu6AZmet8EoTGyiCyCtMEU4PHglZdt9HXBjwgUADRJeZ6aqH_TPc4b9siM3T1arnuiK8xtWrtF9BA3kDceJKoU-AAZQt4zHUVsOhZ8x-4urMEUZqYUkWnvVyq76hNaJ5hCfMToYNlHY5kYhHeij6q3nnIFm7uIrYVTiqEbEsTOsFPXjVN1q1rsbM48TR2Lzv0h7y1Ckg5MIV4e9ETABFXcAcceZy1kWPsglbs4up9c47lOC0_Nu2stKykPXitVbkSklL6KXmk86Nt4fZn6_LuUEeMIO4DitTlkyXiVJFkxHERFWdpFAqiu6FyCNdOPaTKZAWT4gszIAD2evA6jnZ7NGFZA6-sNRvHqn6fWN58x4exYeaGlYMXQfEKHaIMqYyzY_y0SJQy_tm6XHrJ0uz4bXeB6fch_DRuJaHfh6bTQh9abPJqNbWJjS0_Yt7j7UjTXlxMGQDaq-oqcfFkPuqkBcnTZmiI0gvDMA4pDjmVk0oIlvQfOc4VVeFKPIdTrwe1ydp2gOKyryvgG0ofjty7Q0WKzCdiTHbLBeXPj-pqipmvfVfZGl2WEMJBf0pYTgUgN4m6ONWVAY-6x88QT6g3J2E-D_0DtiWlZneK8Y0AFGDktaWAbq8e8wNREljMF6BehnQDr3Ocd7EGkmwNLelMDqXdftc_fVEctPA6deMsflEIdTUPbd1cUT4DPbCHac3Pn_AZ6syTaOX1_Bz-ydeAcDEQulDRSgi-EKv64p-Abow3ysmkKW375NOVmIkdhaFNhm2kufWvTIyOk-_SEHq1_uYMTvRRYUfaHzxxrPrgc4cKw9IvVCJPuBmEVew95G0ecMQRoUqmyGvSwBxvadHeqQ5eG7eFZPX_PHeJ77-UG61AUbWXG40XW__9damVda0jNwmHCv3zOcGV2GMUKCl0NLnoAp37Lh4saNI6hcQ-pr1K3C0AJv2gLlN0FT6E1APoKZpEXgy5USoyk1OdKQYhx0lo_NjM0TR0Cun2ZEkDQtOMy3nqSygQp1ZHpWDk-vl0VIQ2c4vJ4sHWvffqLxvc3FJR7u5zhxvCShwEj__c2YZ6qm6Y_FLRJYxUk2AM2ZBXj81yBr9yhcyxitrmMcAwQ9xXuCAqMmfDiO3NtPfoifPapRSEHwnlon-KuGWorm8Aax3YRjQMMnV_X7riLPWW6KpPUyZBRKor5ou3De5h_NdE2-FQgJqhIqAANJbW8gmW4aZ1v25tTrotG77FF-VyRvAkIKxBmU8MkpVr16vJLleWZVvJTZWdyzQvaxg2cMJwY0qhKZQqICo0lYz82PqkrqDlPUtmDacDh13y_AbRlBxibh7MrND4PlHQsEJWywXG1AebH60AZSWhEZFvDSMkrX7y5jAUGgWm8AIbO7mZFUVxyN7_4P-vcj5nQdQmQFyY_0FAuLrziftRGHpT9nGwoUffiTQGBUit5ok7zznlDESw6OLovFoHrIAq2v-ZizWQh5eo7_bgLkHefqYOfeiQy3Wy_o_Up6GiczUi1mVdvXxro6H0AvWj38kyq19ETxMc7bOUlc3kIXu8t7qaJoJ9q160Gy-nIxsAX3PHKYoPwqOSIbrIchubZEmwKHxjHWk_S4VdtK-zI721AlyYxJynzQ5cWD83hRXhsIF3KUSjnb7f9rzwzXGsGnvkFTjU2AQn-JupKZamrhjTWLhrKg52-xEneV-86Ef05bN7-scnezDe",
+          "summary": []
+        },
+        {
+          "id": "msg_0e8ac62d6c0b45c7016af73c7407308197ac518413cf14e6cf",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"160\",\"summary\":\"Let cows = c and chickens = 2c. Then c + 2c = 60 → 3c = 60 → c = 20 cows, chickens = 40. Total legs = 20×4 + 40×2 = 80 + 80 = 160.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 420,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 173,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 593
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"160\",\"summary\":\"Let cows = c and chickens = 2c. Then c + 2c = 60 → 3c = 60 → c = 20 cows, chickens = 40. Total legs = 20×4 + 40×2 = 80 + 80 = 160.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 420,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 173,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 593
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:339|independent|adjudication:0",
+    "attempt_id": "4039c6240d2443a89f7c439455101668",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000451,
+    "latency_seconds": 2.322814372000721,
+    "started_at": "2026-11-13T16:36:02.481965+00:00",
+    "finished_at": "2026-11-13T16:36:04.804798+00:00"
+  }
+}

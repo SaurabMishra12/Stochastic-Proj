@@ -1,0 +1,145 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ae0aaf455429945ae959401",
+  "source_index": 201,
+  "method": "disagreement_triggered",
+  "answer_kind": "text",
+  "gold_answer": "salford city football club",
+  "final_answer": "salford city fc",
+  "correct": false,
+  "f1": 0.5714285714285715,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 8935,
+  "output_tokens": 1062,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0043577500000000005,
+  "latency_seconds": 26.745052519001547,
+  "wall_seconds": 241.1396996120002,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 1800,
+    "utf8_bytes": 1800,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "salford city fc",
+          "summary": "The provided context states Christopher Jonathan 'Chris' Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City, which is described in the context as a club that plays in the National League North.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city fc\",\"missing_response\":false,\"sender\":0,\"summary\":\"The provided context states Christopher Jonathan 'Chris' Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City, which is described in the context as a club that plays in the National League North.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "salford city fc",
+          "summary": "The provided context states Christopher Jonathan 'Chris' Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City, which is described in the context as a club that plays in the National League North.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city fc\",\"missing_response\":false,\"sender\":0,\"summary\":\"The provided context states Christopher Jonathan 'Chris' Williams (born 2 February 1985) is an English semi-professional footballer who last played for Salford City, which is described in the context as a club that plays in the National League North.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "salford city",
+          "summary": "The provided context states Chris Williams last played for Salford City (paragraph 5), and Salford City is identified as a club playing in the National League North (paragraph 9).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city\",\"missing_response\":false,\"sender\":1,\"summary\":\"The provided context states Chris Williams last played for Salford City (paragraph 5), and Salford City is identified as a club playing in the National League North (paragraph 9).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "salford city",
+          "summary": "The provided context states Chris Williams last played for Salford City (paragraph 5), and Salford City is identified as a club playing in the National League North (paragraph 9).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city\",\"missing_response\":false,\"sender\":1,\"summary\":\"The provided context states Chris Williams last played for Salford City (paragraph 5), and Salford City is identified as a club playing in the National League North (paragraph 9).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "salford city",
+          "summary": "The provided Chris Williams entry states he last played for Salford City as a forward [5]. The context lists Salford City as a club that plays in the National League North [9], so the National League North club he last played for is Salford City.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city\",\"missing_response\":false,\"sender\":2,\"summary\":\"The provided Chris Williams entry states he last played for Salford City as a forward [5]. The context lists Salford City as a club that plays in the National League North [9], so the National League North club he last played for is Salford City.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "salford city",
+          "summary": "The provided Chris Williams entry states he last played for Salford City as a forward [5]. The context lists Salford City as a club that plays in the National League North [9], so the National League North club he last played for is Salford City.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city\",\"missing_response\":false,\"sender\":2,\"summary\":\"The provided Chris Williams entry states he last played for Salford City as a forward [5]. The context lists Salford City as a club that plays in the National League North [9], so the National League North club he last played for is Salford City.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "disagreement_triggered",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "salford city fc",
+    "salford city",
+    "salford city"
+  ],
+  "refined_answers": [
+    "salford city fc",
+    "salford city",
+    "salford city"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "98586410b321e200e5807ab728822370080364f91fddbb69b99a5d7bf3053dfc",
+  "errors": []
+}

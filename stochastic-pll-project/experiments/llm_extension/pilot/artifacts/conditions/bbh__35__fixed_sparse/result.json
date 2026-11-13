@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:35",
+  "source_index": 35,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2039,
+  "output_tokens": 1062,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00263375,
+  "latency_seconds": 22.208884466999734,
+  "wall_seconds": 181.66876137200052,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 675,
+    "utf8_bytes": 679,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "A",
+          "summary": "Truck is older than bus, bus is older than sedan, so age order from oldest to youngest is: truck > bus > sedan. Newest = youngest (sedan), second-newest = middle (bus). Thus the bus is the second-newest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":0,\"summary\":\"Truck is older than bus, bus is older than sedan, so age order from oldest to youngest is: truck > bus > sedan. Newest = youngest (sedan), second-newest = middle (bus). Thus the bus is the second-newest.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "Given truck is older than bus and bus is older than sedan, age order oldest→youngest is truck, bus, sedan. The second-newest (middle-aged) vehicle is the bus.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given truck is older than bus and bus is older than sedan, age order oldest→youngest is truck, bus, sedan. The second-newest (middle-aged) vehicle is the bus.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "A is correct. Age order: truck > bus > sedan (truck oldest, sedan newest), so bus is in the middle — i.e., the second-newest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"A is correct. Age order: truck > bus > sedan (truck oldest, sedan newest), so bus is in the middle — i.e., the second-newest.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "c1978c91d130cad7e4cc20957349e6acfe7a19f180803fc1fe30f963cc4e9dcb",
+  "errors": []
+}

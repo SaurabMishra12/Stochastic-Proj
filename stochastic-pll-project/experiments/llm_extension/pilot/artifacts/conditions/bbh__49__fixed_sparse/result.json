@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:49",
+  "source_index": 49,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2149,
+  "output_tokens": 895,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00232725,
+  "latency_seconds": 21.49464317299862,
+  "wall_seconds": 180.9852832789984,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 702,
+    "utf8_bytes": 702,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Given green is left of brown, and brown is left of orange, the left-to-right order is green, brown, orange. Thus the brown book is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given green is left of brown, and brown is left of orange, the left-to-right order is green, brown, orange. Thus the brown book is second from the left.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Given green is left of brown and brown is left of orange, the left-to-right order is green, brown, orange. Thus the brown book occupies the second (middle) position.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given green is left of brown and brown is left of orange, the left-to-right order is green, brown, orange. Thus the brown book occupies the second (middle) position.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "Green is left of brown, and brown is left of orange, so the only left-to-right order consistent with both is Green, Brown, Orange. Therefore the brown book is in the middle (second from the left).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"Green is left of brown, and brown is left of orange, so the only left-to-right order consistent with both is Green, Brown, Orange. Therefore the brown book is in the middle (second from the left).\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "79b30cf8ddfa83f940f2ffd8c9984de4922fc4154c92a86366923fc2a17cbcb0",
+  "errors": []
+}

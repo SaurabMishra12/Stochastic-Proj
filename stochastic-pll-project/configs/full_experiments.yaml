@@ -1,0 +1,17 @@
+master_seed: 20261113
+noise: [0, 0.025, 0.05, 0.10, 0.15, 0.20, 0.30, 0.40]
+normalized_detuning: [0, 0.25, 0.50, 0.75, 0.90, 0.95, 0.99, 1.01, 1.05]
+a: 1
+b: 1
+T: 50
+dt: 0.001
+minimum_stochastic_trajectories: 500
+important_trajectories: 1000
+important_baseline_noise: [0.10, 0.15, 0.40]
+important_near_threshold_detuning: [0.90, 0.95, 0.99]
+important_near_threshold_noise: [0.10, 0.15, 0.30, 0.40]
+long_horizon: {detuning: [0.75, 0.90, 0.95], noise: [0.15, 0.30], trajectories: 1000, T: 200}
+convergence: {steps: [0.01, 0.005, 0.0025, 0.00125, 0.000625], reference_dt: 0.00015625, T: 10, baseline_trajectories: 1000, stress_trajectories: 500}
+parameter_sensitivity: {a: [0.5, 1, 2], b: [0.5, 1, 2], noise: [0.15, 0.30], Delta_fixed: 0.5, trajectories: 500}
+workers: 2
+bootstrap_resamples: 2000

@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a8933fe55429951533612df",
+  "source_index": 5027,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "34 days",
+  "final_answer": "34 days",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 13961,
+  "output_tokens": 1037,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.005564250000000001,
+  "latency_seconds": 23.550188222001452,
+  "wall_seconds": 243.81671632100006,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 554,
+    "utf8_bytes": 558,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "34 days",
+          "summary": "Princess Mafalda of Savoy's younger brother was Umberto II of Italy. According to the supplied passages, Umberto II was the last King of Italy and reigned from 9 May 1946 to 12 June 1946 — a total of 34 days.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"34 days\",\"missing_response\":false,\"sender\":1,\"summary\":\"Princess Mafalda of Savoy's younger brother was Umberto II of Italy. According to the supplied passages, Umberto II was the last King of Italy and reigned from 9 May 1946 to 12 June 1946 — a total of 34 days.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "34 days",
+          "summary": "Princess Mafalda of Savoy's younger brother was Umberto II of Italy. According to the supplied passages, Umberto II was the last King of Italy and reigned from 9 May 1946 to 12 June 1946 — a total of 34 days.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"34 days\",\"missing_response\":false,\"sender\":1,\"summary\":\"Princess Mafalda of Savoy's younger brother was Umberto II of Italy. According to the supplied passages, Umberto II was the last King of Italy and reigned from 9 May 1946 to 12 June 1946 — a total of 34 days.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 291343932286243581330333306432485289266,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.41543517462476653,
+        "proposed_state": 0.04598024801874171,
+        "state": 0.04598024801874171,
+        "probability": 0.22913254656467233
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.04598024801874171,
+        "target": 0.0,
+        "drift": -0.05517629762249005,
+        "gaussian_draw": -0.15899284567202304,
+        "proposed_state": 0.022865334916659402,
+        "state": 0.022865334916659402,
+        "probability": 0.22588267245004007
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.022865334916659402,
+        "target": 0.0,
+        "drift": -0.02743840189999128,
+        "gaussian_draw": 0.1458029340832691,
+        "proposed_state": 0.036258922370008634,
+        "state": 0.036258922370008634,
+        "probability": 0.22776177248392662
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22913254656467233
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22913254656467233
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22588267245004007
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22588267245004007
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22776177248392662
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22776177248392662
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5765661864042448
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.4697813628245996
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.011800663516883247
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.16577261339762406
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8552405022101416
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.33110647972759266
+      }
+    ]
+  },
+  "initial_answers": [
+    "34 days",
+    "34 days",
+    "34 days"
+  ],
+  "refined_answers": [
+    "34 days",
+    "34 days",
+    "34 days"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "1176af12de0bb6ee0120e901a5e0ce57bd3e26af9bc8f6c8ec16a55dab0e2371",
+  "errors": []
+}

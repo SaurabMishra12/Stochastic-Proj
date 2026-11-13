@@ -1,0 +1,199 @@
+{
+  "payload_hash": "567a843f43c6f6f457a34a51f46a4d00edb76e9e030b0864658aef17a4b11513",
+  "logical_id": "hotpotqa:distractor_validation:5a80799b5542992bc0c4a72e|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_01a4107af7641d4f016af71c41b1cc8195ad8ee2132a81e2a2",
+      "object": "response",
+      "created_at": 1794579521,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794579524,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 7556,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 569,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_01a4107af7641d4f016af71c42b5208195a133b28d209ccdf6",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xxE0wn-yyKdlMEmpPLxZSl5iuR9tEZUW-AZYp6tnRoQEUqEPYYtUOOQgwx8Esqjil1skMns66IeX4qQ3Z5M35fx-pQ6k1GbWB_aZhX6LDi5nNcqALm4EaCRxUoRcDov9JROy2-TO4E84XAZx42t_ylfGiZd6CfQqt_Kz27bB6EgnkThkiGLunEZrqMPATql7GvCvU8mJaXQxdR2ipXRqr4armwc64zymsFBWtNxHofeAkF9wZ0kQyQOmlXIa5-NUU7owRgYNQLx1nGKanIIaWVtAL0c3bS4ulJ56ExJ2bVUisoxrIDFcbY2eALIGMpwmrE78gKBG3HoHFwhqQg-0kZGpOl-0l6MTDSUxvVSnGqpRxo_7hwfkxTCoUe3fxEaCCCjvcBQuM49hhItJ9LPVQ5vfswOg51cLJAcbrlZuqk5AS3s82PrZTq6-1dDLae2GFp_8yAEX2aFpYho7KP6EAEPyYCIBd_eI0nKBgmmrohfUQ7RvoP_riDzKDP5MD8sB33lG6241cm-aRKqYPwG9snGu5Ahy8lSfPC0KuUs2JMqkYW1P31oSCHJPptfDGaQBcMptJbjRB4o0AormyNUwLKya9kA_X6uuUy7W2eMJcXEF-2Pz1WVMDfpFJxxIhtkZrG48r1-4OFX8XCiUkYmK_UXc4jzaF-nW4wqCMvWp_mXQthQQ9TIs1fMBuCRJK_aY6_TaF8WLGSGp7Okyw5l_EaoJbGlCeUK2tOY-j3IplaFGfHL6UYB3uC3QPyEVq2ZQ6NAq7EdteuLjvXMTNWzZVvMneOC7ayuuamggw11GsOuUSyq4AWdD8H0ohO_LXsGwim_Xz_0Ak5EcxTltFUtYWGOQwVlWL8wlDl9GxRXsFqpjGmYOYSbHGmuSmNDbIWle7syjijkvzW4YS-BSe2FWFJY-rsd0kpciBGb2W9QY_kTl9gMFILG6qX4hgLz_q8-4IjorQNIBEtCNRE3xWwIZxejC7t39qalR9-YFg99s0GbQKBvvUGgp9ozU_pUijejp8ssfsrNG0pkcxSl8XYBFjr6U5DIK_uOWCiGBRY9BnM0rew73kznHrWAf-y6OyLr-kEMIczWWlwNFbl01JKg-jhA90weTufVG4QJ5OMEcCNB_ZGt99q9eRRsX9gD8GD9cix8kGgZosyGJ-SDuKmQs04Dkh3A8V7rc-Tp_xXpRbJKk6FqAMqSzt2RmSyWAX1-t4R_BRnPCTFlGKYixXM9dpZljNwkvYi-KJjlc7VHAgcr87ZW5aZwMghEs8eJa7l2TXuG7IMrtzMvfB20uYy2UeDW_mQhr9iqEGaQUYU0GrwULmDyygu-QsEBunCsmwEabhHjkZLwkP0R23YSOIwSnTLhFMQsV3fxD4PxurqI3nnDpAnw4WaMaLuroo1ZFX0GAaOzyCtm6w_r3ZDc7g2ecuEoNuDak7UDCPWJQ7u16kxODLjsC7gahZtj54mMSqhtGcniAgzB8jrEJrDAg8q0iCerymB8kijkZgjOAaI4aCwXdUvXhvR1IlVYVUEW8xL4h8uJBF9_Uu4g4bFglaxqEvXSRFcPoxowngKezKg9A8qyPXKMg3VcwemPr3ojJArW81VZ2JERU9cbK8aJ_Df2FStTnNF9ZLWcYpc_JHcxM9aERJ-_mbTMnFHUEuTEaKZwfcb5EV3CWJnMRWNVOi2xtchJblpCZ6VDQhTk4GYnHZLS2p5QbV6z1NrEk9rqj9_b7heKCbjkusk_-Nu9SqRe-ZI4dEl4UT_yh5xcKUuH5icFZh-QDYP-LrtrImyRcSLWQzVtp44zW93oUFBU9g1hC82GNVRwLcqjJLkzIVytRGF5VnO_J9llHOK5jwxbd1_0n-UC4fKTfai4cVFTRGM8VOP4Bvcw8GpNWanUW7xOK33EPtYSmKqXkFdlA-oxYrpdd4FdIqOiz6di2Myz1aF27V0R8_3MaoYxuTtwvJlpXMYOUdN81aBkVCut9Is44vbkwplU6gRVbdwkBnZQ408q80a2XGJEQBs4fsX0erzVkxkuh-UiZqFjO8MKFF_2sA-9DJtOJcE5GOqq0r1Cg-iKxx68BfOCPxVHOQG4L7kzU174k4lRMmIB4MmpKcRL4M160EiKbMxNlip6ukmLwkjeKvb1yyOCThVz8xR9DlAnERppEc8qlaEtD3mE7i8JbKvbZ1KQ8AOppeYTdb6SIy2RCHaRDNigbWjxC1tHavqouvYcqPsjkRkEgOSqjI45dZChfuFLiwHPKT4QdKemPiNKjZHB0WqRxyzT888GBOtltFyzvWbOHtsBxaR1OmelhIQ5qWJV7iNRqCpkMhp9oa-ee4KviPkEWjdtbglHSGUhrMrKc8yj4gCZa_WnSrehEW2QLB5X",
+          "summary": []
+        },
+        {
+          "id": "msg_01a4107af7641d4f016af71c43646881959bb62791d5fed3a1",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"A corps (the XIX Corps)\",\"summary\":\"The context names General Heinz Guderian as commander of the XIX (19th) Corps who urged the rush up the Channel coast to capture Boulogne, Calais and Dunkirk. Therefore the unit he led was a corps-level formation.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1691,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1408
+        },
+        "output_tokens": 149,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1840
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"A corps (the XIX Corps)\",\"summary\":\"The context names General Heinz Guderian as commander of the XIX (19th) Corps who urged the rush up the Channel coast to capture Boulogne, Calais and Dunkirk. Therefore the unit he led was a corps-level formation.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1691,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1408
+      },
+      "output_tokens": 149,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1840
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a80799b5542992bc0c4a72e|stochastic_controller|adjudication:0",
+    "attempt_id": "e861de0be0f442089949d0cb51a692d4",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00072075,
+    "latency_seconds": 3.242190318998837,
+    "started_at": "2026-11-13T14:18:41.074285+00:00",
+    "finished_at": "2026-11-13T14:18:44.316487+00:00"
+  }
+}

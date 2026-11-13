@@ -1,0 +1,66 @@
+{
+  "payload_hash": "f192bd4c4fcdedef8775ff1ee9b41ca7b450fe6a81bb408efc06512c25ca860b",
+  "logical_id": "hotpotqa:distractor_validation:5a89fea655429970aeb701eb|disagreement_triggered|refinement:1",
+  "result": {
+    "raw": {
+      "error": {
+        "message": "The response was filtered due to the prompt triggering Azure OpenAI’s content management policy. Please modify your prompt and retry. To learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766",
+        "type": "invalid_request_error",
+        "param": "prompt",
+        "code": "content_filter",
+        "content_filters": [
+          {
+            "blocked": true,
+            "source_type": "prompt",
+            "content_filter_raw": [],
+            "content_filter_results": {
+              "hate": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "sexual": {
+                "filtered": true,
+                "severity": "medium"
+              },
+              "violence": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "self_harm": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "jailbreak": {
+                "detected": false,
+                "filtered": false
+              }
+            },
+            "content_filter_offsets": {
+              "start_offset": 0,
+              "end_offset": 6504,
+              "check_offset": 0
+            }
+          }
+        ],
+        "innererror": {
+          "code": "ContentFiltered"
+        }
+      }
+    },
+    "text": "",
+    "model": null,
+    "status": null,
+    "usage": null,
+    "usage_known": false,
+    "outcome": "content_filter",
+    "logical_id": "hotpotqa:distractor_validation:5a89fea655429970aeb701eb|disagreement_triggered|refinement:1",
+    "attempt_id": "b25e886087484145badc8fb967d4cbf1",
+    "attempt_count": 1,
+    "http_status": 400,
+    "cost_usd": 0.00983425,
+    "latency_seconds": 2.9830314490009187,
+    "started_at": "2026-11-13T14:46:48.856830+00:00",
+    "finished_at": "2026-11-13T14:46:51.839835+00:00",
+    "error_type": "TransportError"
+  }
+}

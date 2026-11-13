@@ -1,0 +1,202 @@
+{
+  "payload_hash": "19ddc397de99a466b27e1635a4b3353b6c499c1f844f03a697b93ae10f2ae160",
+  "logical_id": "hotpotqa:distractor_validation:5adea95055429939a52fe931|stochastic_controller|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_033dcb38166238d4016af724ee4efc8190a7b659a9e592dda2",
+      "object": "response",
+      "created_at": 1794581742,
+      "status": "incomplete",
+      "access_programs": null,
+      "background": false,
+      "completed_at": null,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6008,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": true,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": true,
+              "severity": "medium"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 756,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": {
+        "reason": "content_filter"
+      },
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_033dcb38166238d4016af724ef6f948190b362d4084bcf075e",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yTwhAdwva6Xiq3cjpDxDaC_eA2gr2IP3K4lUBn7nRP1GtJ40AdjEScTsSmspUMAmeOBTA0gOOGWDFraSTIOqsQRTzr6hr7mDegvtasVKS0UopV05GEH11qQbI5_cj2CBQzv6qCwaPf70fNrrds5c-XKYCHx3_YSHDV2BQ17-W1V-0uSD2fdRSEdl2nDJYzG8u64cUcz1d8YnlvdQgjccNce27DKIwjJtm29-4p46JVhXX1BLsF5kaJDvOgYRzfuR68LEB-dVcRJE3V_l8EakiI-xBnT43kClAIMaAbYd_xhA1WclRrslr28m8KcK5gj2dRXmmJrn-7GewOgv6bQxg7Uo94yfA02RuO9SJ_5Y4HH7fkj0qcJT8hWxO1iAJIn9cI9BjW30yJwFkdTyrtosmlLT65hmVNdPtxvPmoZh1Im9vxYwNFBATvZDJdxXvZB36MQX-xTVznEP-WkgPju7ExlwV-O5YtRrFPVe-OKIxCP51nB7x63NGZjqmj6aYAX2ifFFgWXQnjre_bvbHCLSaev-wWocH1UCgWKeFj6quKrLlbJ9pcEdygmvd_jOBd0viSLjwIjcT5oUgonSLjeRJe7mLT2doNAe_0uWwHCw9RMFWnJYIQUkKCesOXUFe38FCY4KD2382sRnOfM3NOd4Ei2La5Zfbs0zFQHZN3AMCH5STCa23ijgY7LafHL9b18LFFWTYJewnBNnZUEnND4Lrp-pChJsH-JA9ss8Uf4ap_xQi3qTlsJQgGRneQ36hW9a9tbI5HdY4PqttlrjIM94WIxHPxoKVV3B5s92Q-nBcNRMdO1NOkzSDcFqDB4KKRYBMZXPZy72hiSeDpoMNpAJOdsRNnYXJKO7V8n-X5EjwVtkUL1dypAcHggua8hTrxvkit05up0Hdo-5QEfXHoWrP8TYa_fx2lE7LEbZ3R_xKZdB0AmZs2zZIfdc740GGg60v0Cp2rf9Lf4AgFOFR73RnXoTS7Ym3mjz_3jyc_rieJvLz-6E0fILLV_VU54I1G5BnfT9QSgeJ-0x6kPAn5r-WSuU7GG9emZu8aXv82Jmgqb4pOlWoVWxEJTP0Zage-ApspOeGFfkFx5FDNe8zQ6ntXwOqeuoG-gk9OZMinJiDEk_gN5JRko545xThH2UUmyGIygeiT-z4jE6yHzesz0nAGBGjMYw_T45k6iIsPPIEe7BSwHbzTMpszGyE6qSw7ACZa24ANA1T8cjLM4RxEm9RC_HKySPudCMy7zmu6irXF_LTf1qkyHcQju7vz-vNCZQRgEuv_Rs6iex9b3qzfui0KY5Hau_8_amR90guWNSun0h0Eau3A_Ir-6NQ0P287btn0eUikEmUeiHjGlG9MaanIdzb0g7eahL_qIGEssYNx3vBk0-0xy-pntN1aSk8ARMPsSpjzl0hNwvmIf1G_xG2tzDgVZ-XL2to8XtwqxK5xZRharyEWJ4ojolmcpXVaXZpyhwe6cJJ8cZlym5NTst9fpFNCLfWuglKnz75HpVI23mivJYDGH-ZVKFki-_WimevpxiOJE5oOg1FZa05zNl7YRdVSIBuC8EMlXTbq8q10EwjSqtNs5Iwh-KV-Pd3ogkxc7ELJULzq_dWVtg8KX0vfJE4R18cGFqYIi9zd0sLA4uvWljZf1EtzKs-fvcLZ2O5zLjTOjwcONbV_ow0w2TxhkUqcOAq_6k6FRgHCsX6-skzuv2hen1utrKyRdayuC_3rf2sqfw-_O_nd5qA75IM6OLTc7-TBEjd7DzGPrmPSwBFdK921klNRf7VeNns-IeazlQl2NM9ptBeyiYDpLM6eA_ZC7Ove1P1BTp4aCaSFTaxR5Cy-CwEDR03GwA0lDfJqkbSa0XN6y8oUc19vPj1PUX55lMYfeOrRMpTbiwQTGiMEBa1pzUXkXdjL8S0P8TVB7179EYj4bJ3_d-QLeLbkJiLNOMmILqmvO68dZvvzQ4roERbATMT6ACxLH3Ka6muizRncEFvIxOqemOHY1YXYHJWIR2XTdjSpFUzlzRNari217-GA20AOWmrqPZSPa9RKgEuOzuYT2X2QGnrV_d4gBVENsnHY-wWOe4kFhdJIH3OFsZXtZTdyK-Sf6WrNGJcFo7YMjAvBFiA8ARpISn4igLSMU4_zq8ntO8p8UowHTACP_nxQu1b4MugiMobJujWqx9r2cIZEhlO438E6Rv15XxRD5ix6e-sqkZNqwqbC1yt2nGQbRm6lQrABsiV0Act0zldtomdPqGQQwgP0TKloEwCr0AvTUZPfDCNAcvwCE36Wd69Wu5x-Ny2AC1QP-qcptgSLf_s4H33IFXHNife8Ee7afsbZF3D5W4RW3bFInNZ3dxp1AtqohL8R3D1CQnXYmOUmeWrHqqzwe3gq13t_FWuGz3hVm7sCnWL3ZOtW8ukRZXTu-HT2x9o55k1gGzhVCoYy8vmjiq37eu4OLREn9SSxVaRRZCkCiaY1VmvTK9oZfKYZm8P4FrtKDvGRmZDthGfekJ0nAcbvYBOjMyeSKn4r1OmiOe25PnlNNXqWPaoAiyoz0AWPlFwJ0nB3FxJR8lDtCt5nO7wU7jGyOMyHYDkMCImKuIQaX-g6dOOXIp6kxXbyYIiGrvgXdPx50ft0hLkhc3ij2NHOJ3KX30UmlX-ZjonIFkl6XhimSvLeka62_JSli9wVm_5JKSf5JUxfkFo73oYQAaQFQ0aB6k141SUMFtPH_IaKjL-k0iw4_5DrdGBzKKlPWGCZKQ41kWDWbEkmsco4oXKUI4X-mi6WvdNMgYZWLAt-rJqmxPVTvbduuKT8YDcgZjdnCG2b4VyQERWmfWascpVw3rlERzAP2VQ==",
+          "summary": []
+        },
+        {
+          "id": "msg_033dcb38166238d4016af724f0481c8190bc48b40fc5c0a471",
+          "type": "message",
+          "status": "incomplete",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "I'm sorry, but I cannot assist with that request."
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1388,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1280
+        },
+        "output_tokens": 167,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1555
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "I'm sorry, but I cannot assist with that request.",
+    "model": "gpt-5-mini",
+    "status": "incomplete",
+    "usage": {
+      "input_tokens": 1388,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1280
+      },
+      "output_tokens": 167,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1555
+    },
+    "usage_known": true,
+    "outcome": "content_filter",
+    "logical_id": "hotpotqa:distractor_validation:5adea95055429939a52fe931|stochastic_controller|refinement:1",
+    "attempt_id": "06466bb39dfc4a71ad04c62ab4aa94dc",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000681,
+    "latency_seconds": 4.5381397279998055,
+    "started_at": "2026-11-13T14:55:40.182894+00:00",
+    "finished_at": "2026-11-13T14:55:44.721069+00:00",
+    "error_type": "TransportError"
+  }
+}

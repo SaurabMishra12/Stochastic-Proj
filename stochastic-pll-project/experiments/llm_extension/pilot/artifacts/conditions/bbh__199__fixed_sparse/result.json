@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:199",
+  "source_index": 199,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2069,
+  "output_tokens": 778,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00207325,
+  "latency_seconds": 18.132031644001472,
+  "wall_seconds": 235.82638324100117,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 646,
+    "utf8_bytes": 646,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "A",
+          "summary": "Constraints: green is left of brown, and brown is left of orange. Thus the order left-to-right is green, brown, orange, so the green book is leftmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":0,\"summary\":\"Constraints: green is left of brown, and brown is left of orange. Thus the order left-to-right is green, brown, orange, so the green book is leftmost.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "Given constraints: green is left of brown, and brown is left of orange. Thus order left-to-right is green, brown, orange, so the leftmost book is the green one.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given constraints: green is left of brown, and brown is left of orange. Thus order left-to-right is green, brown, orange, so the leftmost book is the green one.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "From the two relations: green is left of brown, and brown is left of orange. Combining gives green < brown < orange, so the green book is leftmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"From the two relations: green is left of brown, and brown is left of orange. Combining gives green < brown < orange, so the green book is leftmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "7a7e29a66cccf6ab2d135eb0e7057db38bffde2856175b443942a00c0ef09270",
+  "errors": []
+}

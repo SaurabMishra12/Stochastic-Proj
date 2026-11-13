@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:224",
+  "source_index": 224,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1698,
+  "output_tokens": 731,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0018865,
+  "latency_seconds": 19.28303815000254,
+  "wall_seconds": 184.8115091489999,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 173,
+    "utf8_bytes": 173,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Eve finished above Dan and Dan finished above Joe, so the order is Eve, Dan, Joe. Therefore Joe finished last.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Eve finished above Dan and Dan finished above Joe, so the order is Eve, Dan, Joe. Therefore Joe finished last.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 93153205657080649554221176526379436299,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.30700685818053913,
+        "proposed_state": 0.03397943251999803,
+        "state": 0.03397943251999803,
+        "probability": 0.22744118681291361
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.03397943251999803,
+        "target": 0.0,
+        "drift": -0.040775319023997635,
+        "gaussian_draw": -0.5901029891100854,
+        "proposed_state": -0.035410531870551,
+        "state": -0.035410531870551,
+        "probability": 0.21783489687715468
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.035410531870551,
+        "target": 0.0,
+        "drift": 0.0424926382446612,
+        "gaussian_draw": 1.1958754088354924,
+        "proposed_state": 0.10119788509359728,
+        "state": 0.10119788509359728,
+        "probability": 0.23702824664139935
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22744118681291361
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22744118681291361
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21783489687715468
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21783489687715468
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.23702824664139935
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.23702824664139935
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.6525671891096374
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.4771358616561203
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.22643910314774685
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.44467085584873545
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.37208441520116353
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.048567796175091105
+      }
+    ]
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "b49b4e674aa7197b6c8b761fd4448201df156e0ff7c87b80d3ec89f3c99ec21d",
+  "errors": []
+}

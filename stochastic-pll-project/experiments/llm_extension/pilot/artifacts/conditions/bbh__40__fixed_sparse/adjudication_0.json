@@ -1,0 +1,199 @@
+{
+  "payload_hash": "7fcd41149d94c78e8126beaab92cd725501741c73fe55a7f09c554c68d2693d9",
+  "logical_id": "bbh:logical_deduction_three_objects:40|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_039e10f0cb8958de016af72a57ecec8197b0bc8cbf180f443c",
+      "object": "response",
+      "created_at": 1794583127,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583130,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2453,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 459,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_039e10f0cb8958de016af72a5945808197ad01f9df1b4abd80",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9ypaqlEy_H7-yhsoHw5yQhV2budlNa4H2koCJc4-4EbrHdmP8GFUmC00okyxBl4XvIKiNeT3Ep_UlgRzpoLn4skg8jRyIMXaFLIFAqbW58gq1tNzpTq2qeWynm1VZINtZoPWxpVB-uXMAqFUQXb3kITps9tPzl27OMFQj-YNyblEQFtLM2A2L2S6mV40PcLgmzKsA2PTYAFGrwNLxF-BBHTWIffRa_KpcJ5l8oDV5HJixUOsoFvPk3khJStAxzt6kYMn_6XuWCw-HlnCeu0nFxUjg47YNiG8Xvcn9zAjySVe6dsPWWhLV-l8LHX8tpx6EJ5268GN7T5uvCEBwKMGvdGX_ha3b-16rxwWpCyrjx08j1IkvaiAQyj_wfdzHgGia42l4prK8THLEgkcOJPUghHFqkdgaD6lfBycNyxFAh9GHAoo5tnzQjc-jB3zORr3P5Q4Fwzt8XWEXzRy86RKljSUuRBFyJSwUZGO-M1ab7-7giftqgGb4MmnbfAfoL-ShzhNx7T9OSO5LGTJ8PBNiL_7DrB0Fx-ce3OUT78XG9NVpRRllH0pi14-uCmgV9-otMkCsCIVHVtfVI6VsNBVJ6LT_IRWq414l_cRZxTtFLGznGCaWdp2wJmReA0dCdwY1j6jB8HJkEJynCnyHoCemtG87xQPdEMlHl4tzUXkzxo2_LsXfqcB_KKLv_HxmVDuYhhmZlPl5mBTUU1om2U15VPHCN2XeO6DOOmIEkJzydc-ClemrG2S7K3um-6_xslJkHI0xM3rFyKSE7Jv8IUS-IJIdvku_ChQNfwkqRm3_z7on-URCpcO32a75bl3QyIFj6mkHR66RFJUyfakE9dqDMoFJn-yqg6JOOQ4QRjjM2xKwjVPKiYxrz-KBFWysaxs13qfmK8bejyC7uSm6JvqkE_9wZI4XE-AIqvYAqXOmQaJFOMIX9mLJkWVH_u1ntozJcpRwELNFiChwE1b5lH_z6UwB0iCmmL8z_YTLrk6BG82cl49wlQmHeey5FEEXB_jTgTiEyfBs7y2dlfApejm900tlOg4ki73tKYs0k2LI8d0aco71JdGRSj1Kr6BcPTEqeGm8_7oiNeXsEXWfwjLWTvSD28xW4NHjX1W_7i21iNvoiRP6c-Qs2w-xPy-pTYjN8scHqIM67B2ktF0fuffGRiIylxJkoUuEjW8SvoWCZtvI1DBHY7CU97ZBi8N-rv4vD40DkwbbJdyX8OZU-3VgKZP85aWocXxZRUImn5U1AUv0YdLS_5BWgz_FGzISlkuyVbdvpnQrowhVJG6e16ckI-tTBpe3oLcAY3Vrv-NYdb7rGpp9zoSeHwO-0TiIA4fwqM9WEG0kp-DIHMJw2Nei0qOgdteS6zaHLbBLRqV8gmqFW3QwJLb2jEJv0ru2Dp-hOaDIt3W3i1uA4I_KKYNuxe98fbEgsf6JVMAWVzEYoeMbmjI39l0E8T7_Z0PbtuX5qXlhlHqOQCO6t5NE-4zgbgtrFxTJnXI7GRIXHd-mqslU2iC_CJI1Bd8X1j3X8bu9Z1eu6cLt5d9CnroZnORWJ_c0wrO58AqMMUDc8bZDgywjUabnNUrvr969WewCwftGoVklCMEovLtrs9OoM-pssi4CvIIqZ_DTahCGtD4TcDKsYAKgOcbS0iBJrCOPCnoeVBHBwZ1HDasfBFgkl2QX4yP6D31TpO3k0DtR-cef7hsveradOdggAvDMPjro3B6igbxFYmYoQTaru5-pNfzJLwRZ6L2rqXUEAGWZIrO1cqk9bDiB6bRRXToLePAL96HnSovrZIHoAqqrlIjt0bymjs1VaEluYrGed2hL_B_1ZJKmNHqcE99AHj96jk_tByQIWJUq3xkfbhFQ9yIyPDoTaY5uetioDb_oUVLB4SmlNHHU1dRSkJlLAgZ957wnuRzoWAVRzrl2d2aLHZRM6a06r_VZqixlc6DoAOOYlwBOjV5fuFNYKFZDJVcR5YjCD9Srvi7FZ83lk8Jv9fMcSe1lEqmWYt-aUKqW2ZUPBk1s6TefI42ifOvGC8XJD2iYC6Gv3oizUznBQdZ_n6abtLAVIXAsWHUtUTa7KVuYAvJ37BeooJJXjaOBNuQYt5F16rsh9i-cPQDzha7EgBNkSQIcsUhUI_AWQMDgyf9lYzqem-Mo-6ZbPm7Ixh6_PDAmWDQfvWxOgBq6XTuYvJpR73d4iGVpSpr9DY0Rvm1U6thDMBN0zeGAYHdF-dBX2h2NaC77WaTSC56wBS6to5-J7is5twXOw==",
+          "summary": []
+        },
+        {
+          "id": "msg_039e10f0cb8958de016af72a59c93c8197a35fb03d70d53309",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"From the relations: mangoes > apples and loquats > mangoes. Combined gives loquats > mangoes > apples, so mangoes are in the middle — the second-most expensive.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 425,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 119,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 544
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"From the relations: mangoes > apples and loquats > mangoes. Combined gives loquats > mangoes > apples, so mangoes are in the middle — the second-most expensive.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 425,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 119,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 544
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:40|fixed_sparse|adjudication:0",
+    "attempt_id": "e736d3445854412cb992c253f6408d2b",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00034425,
+    "latency_seconds": 3.3363252170001942,
+    "started_at": "2026-11-13T15:18:47.105781+00:00",
+    "finished_at": "2026-11-13T15:18:50.442075+00:00"
+  }
+}

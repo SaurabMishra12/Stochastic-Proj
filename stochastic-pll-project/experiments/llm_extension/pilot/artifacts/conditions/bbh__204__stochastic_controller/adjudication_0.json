@@ -1,0 +1,199 @@
+{
+  "payload_hash": "9c8e6bf152106097995f376f853491f7cf94bed54674984dec7338583b22b596",
+  "logical_id": "bbh:logical_deduction_three_objects:204|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0c4481e5e2135d34016af732176dc08195829c02cb366a7864",
+      "object": "response",
+      "created_at": 1794585111,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794585113,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2350,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 340,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c4481e5e2135d34016af7321836a881959ea4e81c3f91782a",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zIZiTD-_kGUDmzJBQ2guI_-2-o4EQZGDuqj5dQD5TDV1a-xL8y5cnlf55i2S1pa8Z-6oHiG1zryKtwKYM2zRfF6OCdEO68f6FSBFz6UVT60dICYAk4zVOI2Ai6kg6vpt56ugkNmJYru_bwj70jbRu-WR3iFB3uk-uNc68nUBO1C6Ln3r6jqA_yimRQuv7TJbIt8Mnj8RruZZ3n201EQxv8s_pJJo_tVkyHJOnmQZEIhA44EHoDJ2TCQw-3ESnpyrr2wJfTRdxMrpucZIKBvUwNDvBVkfCK7kwElHdN5pyz9sTH5W97lntk4KavAYdukiKPPzRfGbj0KvAC1FTIlnBXYuDFiQmWVf07A0S0TKdAicnZPoAcaG6Zu_4hW0dOjVA-fwdcdwecgAUmUcoBJ6sJKyzGHwJEV1SgytOFo4mMSrzloQhjTaWDWOptRwW7qJDJrO49f1eByopg6jU2DxxH9pKih6v7KYd7fdToHQclNo-61VcsxmSowhkLMX4Zahi7e8Sv5jwrZuwaq8RGGnMJJIJXiQKSP6P5Z5DCOHQQm5LAzg2_rC8mEL6WuMRBIgrz0iQ5_2eN3G5JeHBZ92LYlE810nV6GlNtvlYfIpg5s5YwT3hkAT6yPIQuU0e_omHWTQ5v4DkYmP9GBambhH7BNpXVTjtelFLTVo0jMPeaEPrD9zOFLaK6yyBUR8rPp1ry1LzZFLLBCM65RkEiPFakaO3nEPRrJifmaYeyvgcXiWXD44GqN8yjIOI9h8HmNWP8-Hho6RZ06hJwYn5VXusamxO9H0R1RDzKmj4LygtuoO2wIgmh_kZL3Z2bDftw095ZO594CY9ERlrloif6AU34o0usQTpTs_Yp9CvVxSJYpvKvPD2uz_cQUz3BMti0bFUcs46Z4DRVyF2OoOGJ_-rkcnUzyzbSSS4i_G-YM1ZLFEDfNWQaORvWClsiItPcWL4woW4a5-a5i5W8uriZExMBu6KT7Omw_6DeVQum0MdOTGewlxee8uWzo8nXn1NA7t1zbKbdA9E8XyhD5SHtZ6uMkZcrP3FBy3h7hcnzFBa9oCwUekKPYtgf5fnxVcSKvAg2wgzbZTqDLXO0Va5GZvInuNuKT9FF4LUIyJ1nd_WzNuQn0yS6udeyCYEkoN6Db5BUl-pZXa1DveFWB4xp4xAnbn8EFK6CXkHNVXn5H8muN728eaIMWYkTVb0LJwIyAK7_9xobiF1xP51tTbndXLHRgBAQWs2yzJYotmNbDYGjkGi-9waXvMsHS5j8-wdTyzWjM71JYpE1B4VIFby9EWHDjc_29OmHSg6gvV_sSBpXyc1k5AyLryGvLb2rZIwRQvtomIjkt2DUPl2wTquypTZrl5i01bBra-yqpL_6ZpH4yETvASFpF1ScOTghSNkKKUD9zUHSPM-g-7PMHyV-_RUqj67NVhokFrFV0n1G92a1PIaNagrYgdu1r5pFknIgTlWIoY0Ar2v5pSW-LcbJkZVbDQQ1NEQ2M7DVy1RNp1j56qc60eaNr9eUZ_H8GER2velqDM_PMo9mQNMaszg5gJF8CbhPtS5QyKF5ujO0DPxbmErdoOXO9grUa7K3UwzOSDcWayHETLziOfmDy4FFR8wgWjwqbzwDyPlgwt0pr73XBgH8nlAP_TUkwuN_LW9fRsD9RQR9KnrVVCGjZsvbWNy4GwIwuU1QX8pED0l2iABK7Cp3i0txCIGmPcs8PqHnZCecczov4HF3v7rTp6LSu26YvNc9jg3VA0j5BL7UxZwPGEycO7Ue-YAtr2cJpLYUAN6DlfLKkQoTB61qTVCn29QkJsA==",
+          "summary": []
+        },
+        {
+          "id": "msg_0c4481e5e2135d34016af73218a74481959ba405833716c424",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"From the statements O is left of B (O < B) and Y is right of B (Y > B), so B lies between O and Y. The only left-to-right ordering is orange, blue, yellow; therefore the yellow book is rightmost.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 404,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 98,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 502
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"From the statements O is left of B (O < B) and Y is right of B (Y > B), so B lies between O and Y. The only left-to-right ordering is orange, blue, yellow; therefore the yellow book is rightmost.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 404,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 98,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 502
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:204|stochastic_controller|adjudication:0",
+    "attempt_id": "4a6444ec1aae468bb0f95428f3c26aeb",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000297,
+    "latency_seconds": 2.5232033309985127,
+    "started_at": "2026-11-13T15:51:50.724923+00:00",
+    "finished_at": "2026-11-13T15:51:53.248164+00:00"
+  }
+}

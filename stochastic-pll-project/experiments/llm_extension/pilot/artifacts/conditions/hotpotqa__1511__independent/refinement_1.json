@@ -1,0 +1,199 @@
+{
+  "payload_hash": "5558a823ac8ede47d48e484f957fb0e120aba0bf17d8fabab3ac05818903306d",
+  "logical_id": "hotpotqa:distractor_validation:5a83a31c554299123d8c2179|independent|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_072401233b9be7c0016af71e2942308193ba59b38db3bff17b",
+      "object": "response",
+      "created_at": 1794580009,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794580011,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 7214,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 625,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_072401233b9be7c0016af71e2a2ec081939ce24afd8785a7a8",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9x4rlyciQms7UGkqc3S8wCpm3hjJ59H7WSO6hOp8tIgzqPp9c2huaagcU8JF8PawT_PbEamm6YOgVizSjt5Yk17LggF-HC9aI0gvAEqXbtEJQbN3U2aERO5RJ50UTdJBd8O0Uj0cFsPDYYe-fgUWZPL3Hq0774v946f8D_0uOcXRpu5AGj46b1emAlKBnTyUHfVxswWTwSZZkjpfWRNTpPNiaHZAIZfTJ9R_KQRgl4JwL9wLRBKCE9ISL_PEcSTr08H-zDUGSjyIbcTPJxV_dem5Kt98i8flpRSvhSb-IpFaBV6n0URF-rxDCMt_kofKi-LVMQ5wkDvyPHHCJVd7O6N6S5llF9QFm-ThA70w8iBl-5Aw8G5QnRodooqUdggEvNEyR5LhyTfL9tR5NuNCclkgQeuJGdl0aabvemRYYOVAxTnActINZJ7tDe-l840ug08HElq8W5yMBqNXanjIPPM-SdcMRks7-x1CXeeOF_m5CKBFNCjtnmkfHtlm3V8PWr7KOCeouyIcaFVNkqgInnr_wZ69E1QNp-pjj6IByD1SfqZldsjKlTJlb3K6l807d4rBqrgaf8x8ryXnJOnH91VKzGv1bds3_lY12I4xm2gS5WFYTcobFNjuTBW48IhYk174YnIVkxrTsz5-efGDXC7CfNdKxIGit9uL8vWmryq-YlX5vwcxzKvTKmXTbPQyf3tLySn95jwwyhd1fi8SoXtUvAiVsDK92dWEoMr-i5jx6PdFqarks3GAtVWmg6THvv5_3jPLT3WrL1RBZITDf-Agngw64Hl9UNqghLsf5QDUmwHBetiPA4W4sqx24AJPcwUrsA5eemcn5zHAufL3h1PsOxroQd2dOODzWxzhepEJIDQBQI7JMlLWg2evh32dc91UI5Is6kWzf41YsOPxcXz5uymydV6QcU74iaSSeM9Ohd6JIlYXEDa5KGt7odAYSzzMCzBorn3QPuQrJP-tQhnie6Uu4x9s0WXKpddt4gGvE3XrCw896kE1IIKxdM1ntFH76wWAzg10NF0NhWSuzsd1iCfsWXwewNA0HfR4ygKjxfFfp8tk1yRQCHUiyQPIPoCrefbPg-LLGzJpTbUOBG9uOnASDE7FLe6KWaMPekZHwSxgBHBk-RbuXWj-N7_DWLPHsN_dP1pyD3hnxJDMbcx77SM7JtgxJFwU_B3wnNFr_NZd_XPCWiyW9Z-GxkZiQ4ohyupmi4SWaks3EvOUQNbvDg_57mwk1AQ72SCJbzDv7LrXFW0tyH2qq6BznwtPbyVPQjU8-Bf6TaWMYLzYLR4VJwDiVTkPdnhEt29veiTHtJjjOQhFSyrWSAsAQc8q4zOh1fRNFSaiUCjhmKuDGct1KtReejtFdX_0VR9GFn_ScaEGpdpJvg4cnmG0yZGURVgy9Tc-eUcubLLZhj0RBA1L35zFIOr2hvdvQtIH2JInHB_lprXSTk3XstHbVNQbrFMnN-KO0GGYLxt-rEOn9nHVB_DO_JS1akP3h7ok_BZIIdObvaTCYy77LBP6nAFPLej6gjdW3KRbwGXC3PwXztjztqQV0M99nyXpf-pjkdU5mVYGlNNl0foG3s8oej92m8TWYgkgm_hFcgCJArRgPye_AAZyhJiIq2ywW1Cl3CDKk-wUFHqz4PDJMIFvGtJ8-Wzxub1OKoMN7EX4X1eRBnA6IfykMwLRjwrbMjUQR5VZ0L2zL2YWNJMquHjqAB2_YNy2NQacutOFK1m_MvyMHD0bTngh-YLXqQz7tU6VJNS_Yhnm50OGP5BIGdJda9Lygp8--hVF6RJQq-eEAv2uKt7bb3nj0PeeCF90XVXjaTDgexkjL7xP-PZAs0oUw99gIxqvOMiOvLO9gy6ZdAJs6ryytwlYTiFLxxCW1EnbhkkmBIhJjtEBNC0rHrVMdfnPr3DQj5X9yMpOZ8Ba83e0VR2V7YqADu87VvUE4NjupCT_yAz-VXbFJn4kalR7jR4Ecds8c6ck3PK17Kw3rlbaU4m6tWbBbQ69NMGNClLElDLVRZcWJoaFNbu_dlMd0Rfdtdf_NSpgBnFB2DfnrBlB9rFf8TD_pWwC6VPTKYlke7RGTouW12j8EEcJteyi9YsAwsLnaqz5sTNjm1qv2ScqUzXCGm1u4gkvp8981QBqOlyJjzXAC6f21p7GfUuGVQ1mLivyRgwhff9rEv4oyi67tv439x0mKB19pLPNNhLnZ0qDha8en1hLQhpwaWd7yXHgbpP2NqFYcrqqIFuOjI4BMmiICrHuVlQVlsZ15edCESpaUuPrpPpChLDCR-po3XBJgWXcwH8jniT3enXK8dItaB5z_4zs-KXOtRoiqKuJ79bkxrohMx1tbuRBHh3ghRA7IzQu5BS99htJIeeLsuZHT3jgZ3CJ9-tUmzmozcpUWv92y5gAYYoo01brGF4uEHb_LaCd",
+          "summary": []
+        },
+        {
+          "id": "msg_072401233b9be7c0016af71e2ab7988193bd9207f7263ec9ff",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Adam Levine\",\"summary\":\"The provided context identifies Maroon 5's lineup listing the band's lead vocalist as Adam Levine and multiple song entries reference Adam Levine as the group's frontman, confirming he is the lead vocalist on their sixth studio album.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1586,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 134,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1720
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Adam Levine\",\"summary\":\"The provided context identifies Maroon 5's lineup listing the band's lead vocalist as Adam Levine and multiple song entries reference Adam Levine as the group's frontman, confirming he is the lead vocalist on their sixth studio album.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1586,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 134,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1720
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a83a31c554299123d8c2179|independent|refinement:1",
+    "attempt_id": "b7689065640f47b394de61884ec86d5f",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0006645,
+    "latency_seconds": 3.1451548780005396,
+    "started_at": "2026-11-13T14:26:48.621652+00:00",
+    "finished_at": "2026-11-13T14:26:51.766797+00:00"
+  }
+}

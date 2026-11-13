@@ -1,0 +1,199 @@
+{
+  "payload_hash": "90bba706801b4f558702669531710bd969066cf6e3f4f6c7e7d80699732efac4",
+  "logical_id": "bbh:logical_deduction_three_objects:20|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0ab61cdbc0b1dac6016af737fba0548195a3fc312fe101671d",
+      "object": "response",
+      "created_at": 1794586619,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794586622,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2381,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 408,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0ab61cdbc0b1dac6016af737fd3eec8195b61ce52c4009e7a9",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zf-wnOeFm7bd9pb5lXqg1aDUrV37-sn6n_IO34WqCXeQhxT2yqN5mILu11rZNed56TXSLZHBpYrJIQn57uueuGGtSGoGuZ1SOT808u4j44B4cAgsdfUmhrLyLE_8hfeIvHpfzCXpdFbFIpwOlacFw37M1mqsF_xtILkMdfJnA9hEl96tbyxs2JbwNS8iazvfkmosi3kKhTDdo36Et4SOzH3EQQBfzcWCgEDQzZK7fShERYagKAZfTeNbhCJZ8vWcv066_RiruWk4gccLwd-U1XfRh5GCiN_okDHF5Muz9bAG0jnOrDnqaWEjKqNKK1i4u9kj0tActPwGqGV2ccSzQP8trrbY1VR7rfv6TRol5M559-k4TmXzO63JZwoic1N3uWFTEFGemvP43aoIkvmSi1o8LLUc9ODMW_OmP0ZN6V4HtYm9evDaInCtTky2PMfraE7-BQljsWGjx7iTGpHhZosDOf-wumLWM_WzdUiD7Yr5Dp6LeeZriqtMCTRXyxlrLHilXHtLgygyo_p36YYnmGVTxdtS6Vm50sG1ScDqcKmR5SW0rt1b8OUxdJmggse4T6wF83gIMaXu65gAxuQIS0WfG8nrCty4cUKk0O1pyqoEHhYoCPfm6n-e-V2rSOSe74-ecEBpVvE_YOWPAJ_UANh7q4R5lUAIavlFcMp1EEg4UD_e7L1vejW6OhG_I12IMkzm-oCmPHk3O6Xdwu7UHJyqd34oEqx6eMW5HTKXUGBzEY34UC91NhDcK4n0Of45XCxMo-rXK8T9P6nnn9nZ9z14NXl-FGt4DetwJrZNCMon4cAuIBlUknyrawKSZXWKD62emy_CCpKC0DlE5ZyqMlrGKgsf2pPua6RFEf74NqT1XCLuhZCyduK6y2tQV81XQaPnZpyseTyov3HM2hpOeavIuU1fYtDBf9gZoYElrZcGs7anXpNMRJ6Pr_jYIENpodPfCk8ZlQXaw72dfCRGf0v-XzEkHdhKRELBKQ124wxbnYLSnD1PFBbqsLKDM2HsImdaqd3h3Kb2fSwJ18b2GgieOIk7hWTvDxBJU4nR6qONEvMo5X62UkHrq136Zx4OO7nkgOU6iLzajzFGxFbumvxZ0gZfqGGuWKO3j9hAxOGKVwHoaNCxzVZrnDYY7EnEi7c4c50x5OECIoXnVoAA95VYO5UJxo_F8Gf2ijEMLwdxf8dboozIHzJGFRji2UMs7tiWlMQmmjpzyHOicKvJ90vNS_nSOTc88NTWOIG7_JS1mKZbN0xZgnx9cd14QIONewFZklO7z2HNXkO-zL1zc2HPYEWjUcHVbifz4HAqODxM5uYL10RDYudG60XB6eST-3KZgQJUKP1cxozjmPltDEc4cfWWKV5wcRv0nTFlPnuy7c8r-kTK2zefkDmelNHCakW3bSuVjdVytfnQClECK1QBo4aMn_ouTelhEqhPsKrYWj2vtCjXp-mlRgZd5Pe8NjF716_WHi_GGZUhrPxtwQEVBaZEJiuguO1ns_219wy76h2Kzssk4sdpUzfP_0th9vq0NqxTtZBkLD7Ctdqmn_MDtAyq9A9a30lVUdCsuUtyqrNV-2K4QwKtGb5CJvGU98qqKJ1gIIT1HPCmDiKl1mkWkjg2ig17mWumAtQC10zTLvj8XtQZzF5pd9Pn5JCzFSSJcKucchsAtM4tH6OQaXhIb4X_6UqmdFwcG3pAco1HINZMx2NPf-NIWhIJqwAeV_-hShtNgP062ySl8vHk6O1FNUG2ZGjtAi6DDWqeV1yNw0juUuhK5KfNhaT0zuINBPP",
+          "summary": []
+        },
+        {
+          "id": "msg_0ab61cdbc0b1dac6016af737fd98108195bf1ac8309062fa92",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"The paragraph explicitly states “The loquats are the cheapest.” That directly identifies loquats as the least expensive fruit, so option C is correct; the note that plums are less expensive than apples only orders those two but doesn’t change that loquats are cheapest.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 394,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 494
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"The paragraph explicitly states “The loquats are the cheapest.” That directly identifies loquats as the least expensive fruit, so option C is correct; the note that plums are less expensive than apples only orders those two but doesn’t change that loquats are cheapest.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 394,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 100,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 494
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:20|stochastic_controller|adjudication:0",
+    "attempt_id": "29722aa238bc4f97864aa10744a3cb6c",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0002985,
+    "latency_seconds": 3.6846152500002063,
+    "started_at": "2026-11-13T16:16:58.836100+00:00",
+    "finished_at": "2026-11-13T16:17:02.520700+00:00"
+  }
+}

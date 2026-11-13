@@ -1,0 +1,199 @@
+{
+  "payload_hash": "05c6069333ae17c8877dbee7ea34bdbfac49c57e40e3dcf324e93e943bc081b4",
+  "logical_id": "bbh:logical_deduction_three_objects:24|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_09edffd722eb3d85016af72532ad18819095d5421fe50db1ee",
+      "object": "response",
+      "created_at": 1794581810,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794581812,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2161,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 393,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_09edffd722eb3d85016af725337ac48190a0b8349ebdc717ca",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yU0vfEEyK0oP12ZSaRW-Njz069jGwE3wA0GjmKdDMfvtshpFRrW6bxFs8TtASUJ3DLu3hjKdy7q8Vx_JbtJ6RF6r3a9GY7rUtFJ-pCD0WrTUJ8jFHgo3T1dnq5t-Q9sBeqXM6lwN5L_3IjtN6lWWExB2Ds-cbK1q1qxwtxDvDKxtJ9w6-_x99s5KmSIOXf_TYUvMB_lsOCMu37YtujG0bExXqHL3cqC_Lcak55eKWVYqGhXqxrTBlnzmOngRSWngZBkFJmGNkyx_KoN7W0sIlOrJP9P6JV8Cn7yHBrepyMrlCwcPXM9y83R6GBJwzzCnA4x-z8_oy-Onpga_yHzeMwWzGXVISIss2GJo6nRs8XqCn3kszXQAfdxo7o0ZkptkfaDQOuqPVen5HGrIu6FbgfL-1kWdJ1cOEnD4L0-4TSCdNAsaP28aPISkr2lI2UK9uBIPAt0c_IgM-BP-Ql8KEDprKnqcba-LsqLTH1wsDsFzAMANM4_jg3F9LOHn5CbL_TxjbTqms4W-8Ckwbz3h9OrxPqaVjIhYlRyonKwx7BJ7rFKJEkuVvc_6IOQgPAf8XmJZYBNZg2yxbHLTQsTyqQCoZMc24o25ACv9bhUorxbK15cXaJuxZg01fESk_8L_-EseuKxzVh4Q5G_Pp_XdYRpichosOECfDd7RiJ8FJo-KKqqiyF9qNv0CGL7h8Ln_Ei4E-qI3vrei-AS6fp6DWZ6fOjnpRlte2_k2IRDNYXovDnLO0kZOGS5UWdPm4YVyRXjMYdJinMzUUgnYExKh7EAHmQsd0IjmYrIrklaTxigGMkRFYN_JrM0g99TMVPkhigpDYQ-E6u1uC5GB5BeRQRHSPZ94gjz4E_ouJzJ1qXl7HvY7HD47RrDMpHxcZ6J0v0uyW3p1XtTeQ0imSUZeBV7EkECx4T2KquZFEsyLuFyA0VuMHdAmDpuX5lJgPVnDnR_KxXs8Y4jtjcEEIvoBJBWH8SRSkHa1a_TrJu1LAZ1_tG1Ama-nVFu4Xa6TA-yjSjMuaaQHaCSJNpogEdmMKHahkT23Pp_fgLIl1bzMJzwiqSoE2MOkmlzLvIl2IYdciU6vnS2Qby0nWcfhZV6-3sVkH4GpMVl85RPOYV83AU7NyPjTecKUK6Vc5TN20nA240RyvAsiYTe13DiWDzdpS_5Fn772dCIQHFCA_pV0J9lqd-ccYDsXtPWXVY9KNZh7N35BKgH9EUgkLBGhliYv1adbkUW1sMZHwYWLFDYh3Z8Y_sbPHxB5o-4UTMAMzm8SyIDJb2Esw0RopwHWUBo1-x4pEDzeBY5UivVIMRlHpib_LYKK_hACGqy0If98lORRi6Gx2N-N6-uQ5FuzmA_c9R8q1j6X_IGFqeZVJ_ijlNHdouWGtlVMJmezQtkL7W2Kv9G4U2KmCblzGcgPsGEBUeNs_urCnDS368muqE9HXBlHlcipP6Z8xWmv8yNSPrk5_LmKzjl_rTRrOawqixtsVhmT5d3BvtI72x78OFUaBnbUCtPQISxr6zgvUGD0q4knu5vMl2AlgQK6MK0CAYyhtIxM8r8n7GQ27DUB2Hb7B1vkEUENBpVRSSRhDnJJc6gavkmwHQOuLqs_VpwrH9z65SjkMfIIs80T1IH8gtMkxA4UhToOpZegEkeeonPRYpacPjsZLvp9jPjmYRltTMQ7v8-kMxQ9-6SjOkyZEklfA9osIx1DLjXdp_3kT0eQGk8Qhxd878u_EXzF78fF4nLIuCWpl-NhFN8hZ3gTvhDmTlGHmdt2G2SzhezqXz-vN0qdJ-_tCoXrgqycwEeSi9B3nklupJQqiY4TNIZ7iBGFILuJ8KArS8A_d71GrY8RfWdbkjcKB3cYB2M1N4Bh64BsMBXmry8H7lJQpIC3Nbt2qjuZPEsfHzDvLor2jx5CcdRxBXCVSn9b--nBtkiP9_T43Xq0b624j2iGp8E1CvO7UgzQxeEtK0B8I7dFOPWOhtRY-jTw0PbOR10WqYpWvYNHIIpYH4es0bkC-7-tHHq9CNFremQEYY1fX12GT1goSxk9OwnXJTOiESfbkS6U5392ADo-f0OPiY6SEw7CIB8vOroF5KDJMp8EmsVRssVgF_kYfMhW7Yb10b79c_HnypoaNVgQQ==",
+          "summary": []
+        },
+        {
+          "id": "msg_09edffd722eb3d85016af72533f87481908e60e7050d33782b",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Eve finished below Amy (Amy ahead of Eve) and above Joe (Eve ahead of Joe). Combined order is Amy > Eve > Joe, so Amy finished first.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 356,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 106,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 462
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Eve finished below Amy (Amy ahead of Eve) and above Joe (Eve ahead of Joe). Combined order is Amy > Eve > Joe, so Amy finished first.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 356,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 106,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 462
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:24|disagreement_triggered|adjudication:0",
+    "attempt_id": "bded47d97cdc4d99bf561356ebe371ad",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000301,
+    "latency_seconds": 2.6823490749993653,
+    "started_at": "2026-11-13T14:56:50.068312+00:00",
+    "finished_at": "2026-11-13T14:56:52.750641+00:00"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:28",
+  "source_index": 28,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "25",
+  "final_answer": "25",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1774,
+  "output_tokens": 952,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0023475,
+  "latency_seconds": 20.542007608997665,
+  "wall_seconds": 176.64201659199898,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 582,
+    "utf8_bytes": 586,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "25",
+          "summary": "First stop at mile 20; second stop is 15 miles before the 60-mile end, i.e., at mile 45. Distance between stops = 45 - 20 = 25 miles.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"25\",\"missing_response\":false,\"sender\":0,\"summary\":\"First stop at mile 20; second stop is 15 miles before the 60-mile end, i.e., at mile 45. Distance between stops = 45 - 20 = 25 miles.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "25",
+          "summary": "First stop at mile 20. Second stop is 15 miles before the end of a 60-mile trip, so at mile 45. Distance between them is 45 - 20 = 25 miles.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"25\",\"missing_response\":false,\"sender\":1,\"summary\":\"First stop at mile 20. Second stop is 15 miles before the end of a 60-mile trip, so at mile 45. Distance between them is 45 - 20 = 25 miles.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "25",
+          "summary": "Total trip 60 miles. First stop at mile 20. Second stop at 60−15=45 miles. Distance between stops = 45−20 = 25 miles.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"25\",\"missing_response\":false,\"sender\":2,\"summary\":\"Total trip 60 miles. First stop at mile 20. Second stop at 60−15=45 miles. Distance between stops = 45−20 = 25 miles.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "25",
+    "25",
+    "25"
+  ],
+  "refined_answers": [
+    "25",
+    "25",
+    "25"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "a3702c946b068b6bb354cc97137e53cc186290589a9215540784a9cf551f518b",
+  "errors": []
+}

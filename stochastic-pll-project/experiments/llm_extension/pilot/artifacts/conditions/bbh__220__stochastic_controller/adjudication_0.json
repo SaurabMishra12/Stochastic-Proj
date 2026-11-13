@@ -1,0 +1,199 @@
+{
+  "payload_hash": "308d70d3c113f5ba237b8c7259dcb79ed291b607ec7c5525f612a9ea85a9bd1b",
+  "logical_id": "bbh:logical_deduction_three_objects:220|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_07d5fb7c6bf1a55c016af71b8e4ca48193b4eb6fc7abd1fc38",
+      "object": "response",
+      "created_at": 1794579342,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794579344,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2351,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 569,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_07d5fb7c6bf1a55c016af71b8fcb908193b9b1752b00939582",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xuQf3AiLDjD8GaoEWdkJHerld5s_YIyo1uR2BVaHthYFTtdqSIhir_syYLYiPVwMyqeT2bQaPis0K3y7QapQvVlmGa95JUGjQRR1LJY9lDohKelMErmjq-SD_Ep8R2evlWPll9Z20MUoUlZ74ZluS-3jV5mC5wMzMp074wbl5kgsFOk9cdcx_5nWMLI_CmGKjRnUcAoYodyyy6lEkAs_bII464TLTDvgs5i70V1KfvnX1AsXM34SXf_RNjgBK1tyhnS_eRESO9-X6hZgAxheEVsyGg7vpVtPve-Bwe46t9RiCOzqjUE_xqeTWSuSCJpBBKsQ9HZ7SuiN5kr8mwgdbnt12M3F3oIAkl74qY_tf_l04eXhl505f_6F_utwYdQwza8ShWdOx21BiImKgSU5KthOuLfuJ04rVBV6ed9RCYGHfKdFA0QjV4BpDHJsIrOEAOz8_A7_lQxeHd7cvjtUu036q7k3j2KRv_Hxm-pBZkAVHu_xFRhbaffpzjVhB2ny3hfkL7ukCi7ap5V9rEeAz-PtvDANEc1LpqbV393a8g57fRo_--J88PDyQkNvbiUEpTiFdtmvGNla1Mxo2QF-_h-oglOMyWZjlFmWeYFYZrLEmu3tkA2w0Y6w1AQizj-Q2ZBw4x2m2SMplf7Cm8R78X4Yp6wwK21PCMX9khIZZ0gwi3CvT-W_BG17el_ccCmGLLD0fY0x8BxxL-eH7p899yWCbk-t3rR2z41mWbdfJk98loX_SVP9I8oHvW7aqNqH6IiMsDfTzh2ry0X3VP_QX9cAyX5NOJbkSgDFNONf0Z2i4AWMJfsvMlva-WTm50z6xd6-N5AOaOt8Cxl-2bPACQGI_pGZ6D85SsvyUFgAEzIVi23RSOP2RNMUXC3m_RMOmVKPeluFTJRYgGAGCNawciHLl2SHBdD5kahL3Fx5yemjnCg3T2cy34BFvDBAgVVOLCbskKzOTCbdhlpMGmznUfYqmjWONGlDCyj8wy1OjcyKOoFZOXmskt5GbM6m2jhkG4EjQHuawgTdbduNYyRWy1omGyX83KH5VHZ18KANros7Rlx3rGmiL_R95p7u5ppeik6L8VDoFARBOVhLlgDFnZO1EPtZVDZY1EfwQANbyzI_OARG3_X6CUwSvB7kjUABRz1dj0NIPSKlDlp8NW0BABGANT1XiUnFnD5iYBuTkhx1jDW7pRimvzPQ3Q-IAlLsmT42bkwrz0DC_JWR80wtOUrDUXZ6Q-f7BHMmt9FRrav7MEswhADcNJJX3-xqQBqbYTpiWThFN53nOQl0qLcw4NcXLMcDvEATuIgW3cqlV_eDOk1PSvuivj7shbVemQrGzpbN4DmE9-xeMBrxoqbRdRakIOfH8Q2MRf7JHY4D8-ycMJh5tBKdztNDBbThfo9W_ypdFe5JPmNqJJ85u0K-yZTT5wZv-VG1Pas3wtjJYkWXwoQN85W8p5Ilxp62_QorGLomrCASpK_H-JeLHwFuVxeAZlh5ABixHNL4esggTz5d7R-TOrz_6tACPEiU00vKOum50uuzpe0TmAxMwXic_RrmImkbMNHq5OypwCNb8ILaBeLAujusE2VrhJVE70TZumsgiX_r489DxOIvPdxhuQ3gOoZ6OR8UDnVwd-wKeFVBFZq2EZA5FiUZZbyy5flBy3_BqMbCwGjDs2QgDVNHvBEjEl8UJYMsa5tamVaKzJGPau5nAGRKtfGAjUE5z23j8QrkRMU4NHkqUzPby8N3s_ijRJ4rrV8aNUzECrsDJxTLuggfed20-L-NqP6KvYW8937RFWco7kQ8btRnTyqA0M7YyTqxeyl0q2eYcug7Z3kKSCIy5kWLAymoIQ9NJ784GfSPIUOpXBsqxnAvP_yF2fI7hUD-rm0Es6YE-gTfFiuh2dH3zZ-llw8ayKfz-b_myKWf1GgqdJSRjYQ_qoc12GpNW32iYqP_okv2n71s6-BPYrysSbHvXjtKQPggn18cZfe4nEY5uC0-X4jSkaVwqSkpgDoZX3T8QevS0Uz58pOb4huSpiadoiCsA-nOWqBE2pYqGC9IaN0r6zxdOMktIrKLmkA_bE52QbK8-dZEshqJEHz2H9A3bLDrDu1eYBC70a6-CtfjUv2Z8vKC0QcxXPnTEuAlxL5xMsXQgJFdagGhzG37iDhU7xwRrr0ZFJJney4Yu82tdtx3i3i-Eugmh9iuUaYNnDfV_VLAEGOPfDo6KXItAIQ5AKthBNQ-bGbsIYk-VSq514tgjtYxsZV5FTzR9_6e-4YbXJpyJxY-LYjNaBCD8M8mzqdnfRu09fLtUO2n_FRDgXYRtGPeoH40v5nQ5otO0KvTKkxbbiR8DamorgOtz0XKQfN2gDp0K3utBWubdWeK1ILiAwhnQNpGDPFmXPmStNU5etdG96tVfeOBI7Y1-xZYD3MlXk7dBVPruxf",
+          "summary": []
+        },
+        {
+          "id": "msg_07d5fb7c6bf1a55c016af71b906d248193a97f8cb6a2e9ce87",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"Motorcycle is the oldest, so it cannot be the newest. The truck is stated to be newer than the station wagon, so between those two the truck is the most recent — therefore the truck is the newest.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 391,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 133,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 524
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"Motorcycle is the oldest, so it cannot be the newest. The truck is stated to be newer than the station wagon, so between those two the truck is the most recent — therefore the truck is the newest.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 391,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 133,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 524
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:220|stochastic_controller|adjudication:0",
+    "attempt_id": "203df44701644260a4881b659da995af",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00036375,
+    "latency_seconds": 3.4069480310008657,
+    "started_at": "2026-11-13T14:15:41.663718+00:00",
+    "finished_at": "2026-11-13T14:15:45.070688+00:00"
+  }
+}

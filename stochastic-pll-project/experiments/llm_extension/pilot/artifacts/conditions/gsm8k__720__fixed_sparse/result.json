@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:720",
+  "source_index": 720,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "4",
+  "final_answer": "4",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1757,
+  "output_tokens": 996,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0024312500000000003,
+  "latency_seconds": 26.086602600998958,
+  "wall_seconds": 235.2453721189995,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 601,
+    "utf8_bytes": 603,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "4",
+          "summary": "This week Castle bought 3 + 5 = 8 boxes. Last week she bought 4. The difference is 8 - 4 = 4 more boxes this week.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"4\",\"missing_response\":false,\"sender\":0,\"summary\":\"This week Castle bought 3 + 5 = 8 boxes. Last week she bought 4. The difference is 8 - 4 = 4 more boxes this week.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "4",
+          "summary": "This week Castle bought 3 + 5 = 8 boxes. Last week she bought 4 boxes. Difference: 8 - 4 = 4, so she bought 4 more boxes this week than last week.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"4\",\"missing_response\":false,\"sender\":1,\"summary\":\"This week Castle bought 3 + 5 = 8 boxes. Last week she bought 4 boxes. Difference: 8 - 4 = 4, so she bought 4 more boxes this week than last week.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "4",
+          "summary": "This week Castle bought 3 + 5 = 8 boxes. Last week she bought 4 boxes. The difference is 8 − 4 = 4, so she bought 4 more boxes this week than last week.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"4\",\"missing_response\":false,\"sender\":2,\"summary\":\"This week Castle bought 3 + 5 = 8 boxes. Last week she bought 4 boxes. The difference is 8 − 4 = 4, so she bought 4 more boxes this week than last week.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "4",
+    "4",
+    "4"
+  ],
+  "refined_answers": [
+    "4",
+    "4",
+    "4"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "8d90e047c2798131bcad826aac0063b3a99293fe251b12e0f77b6abe4038e87e",
+  "errors": []
+}

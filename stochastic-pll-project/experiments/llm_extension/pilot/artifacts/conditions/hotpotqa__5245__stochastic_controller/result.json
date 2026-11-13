@@ -1,0 +1,250 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab327bc554299233954ff33",
+  "source_index": 5245,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "war of 1870",
+  "final_answer": "guerre francoallemande la guerre de 1870",
+  "correct": false,
+  "f1": 0.2222222222222222,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 13937,
+  "output_tokens": 1769,
+  "reasoning_tokens": 960,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.007022250000000001,
+  "latency_seconds": 35.169765675001145,
+  "wall_seconds": 247.76842164400023,
+  "communication": {
+    "directed_messages": 5,
+    "characters": 1645,
+    "utf8_bytes": 1653,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "war of 1870 french call it guerre francoallemande or guerre de 1870",
+          "summary": "The Pavillon du Butard page states it was occupied by the Prussians during the Franco-Prussian War. In France this conflict is often called the War of 1870, or in French the Guerre franco-allemande (also referred to as la Guerre de 1870).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870 french call it guerre francoallemande or guerre de 1870\",\"missing_response\":false,\"sender\":0,\"summary\":\"The Pavillon du Butard page states it was occupied by the Prussians during the Franco-Prussian War. In France this conflict is often called the War of 1870, or in French the Guerre franco-allemande (also referred to as la Guerre de 1870).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "war of 1870",
+          "summary": "The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War (1870–1871). In France this conflict is commonly called the War of 1870 (French: Guerre franco-allemande). The context identifies the occupation as occurring during the Franco-Prussian War, which the French refer to as the War of 1870.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870\",\"missing_response\":false,\"sender\":1,\"summary\":\"The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War (1870–1871). In France this conflict is commonly called the War of 1870 (French: Guerre franco-allemande). The context identifies the occupation as occurring during the Franco-Prussian War, which the French refer to as the War of 1870.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "war of 1870",
+          "summary": "The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War (1870–1871). In France this conflict is commonly called the War of 1870 (French: Guerre franco-allemande). The context identifies the occupation as occurring during the Franco-Prussian War, which the French refer to as the War of 1870.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870\",\"missing_response\":false,\"sender\":1,\"summary\":\"The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War (1870–1871). In France this conflict is commonly called the War of 1870 (French: Guerre franco-allemande). The context identifies the occupation as occurring during the Franco-Prussian War, which the French refer to as the War of 1870.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "war of 1870",
+          "summary": "The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War, which in France is often referred to as the War of 1870 (19 July 1870 – 10 May 1871).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870\",\"missing_response\":false,\"sender\":2,\"summary\":\"The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War, which in France is often referred to as the War of 1870 (19 July 1870 – 10 May 1871).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "war of 1870",
+          "summary": "The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War, which in France is often referred to as the War of 1870 (19 July 1870 – 10 May 1871).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870\",\"missing_response\":false,\"sender\":2,\"summary\":\"The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War, which in France is often referred to as the War of 1870 (19 July 1870 – 10 May 1871).\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 216186399516286975845756234378158264522,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": -0.6376195236175538,
+        "proposed_state": 0.009428450867195182,
+        "state": 0.009428450867195182,
+        "probability": 0.5227034010543653
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.009428450867195182,
+        "target": 0.6666666666666666,
+        "drift": 0.7886858589593656,
+        "gaussian_draw": 1.3273759575116877,
+        "proposed_state": 0.2352106335610655,
+        "state": 0.2352106335610655,
+        "probability": 0.5674615673239002
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.2352106335610655,
+        "target": 0.6666666666666666,
+        "drift": 0.5177472397267213,
+        "gaussian_draw": 0.6445774914098648,
+        "proposed_state": 0.35832701258038535,
+        "state": 0.35832701258038535,
+        "probability": 0.5914577565788134
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.5227034010543653
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.5227034010543653
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.5674615673239002
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.5674615673239002
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5914577565788134
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5914577565788134
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.13405066801622367
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6207082085002728
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.5589573745320661
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.2656880787303738
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.2772556744817656
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.30841445511429777
+      }
+    ]
+  },
+  "initial_answers": [
+    "war of 1870 french call it guerre francoallemande or guerre de 1870",
+    "war of 1870",
+    "war of 1870"
+  ],
+  "refined_answers": [
+    "guerre francoallemande la guerre de 1870",
+    "war of 1870 french guerre francoallemande",
+    "war of 1870"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "24177a2b5581f304b8aef621b41404f0b159c9d779cf4d4175118286b1e7ac5c",
+  "errors": []
+}

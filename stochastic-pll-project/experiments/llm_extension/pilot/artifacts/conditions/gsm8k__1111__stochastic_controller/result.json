@@ -1,0 +1,220 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1111",
+  "source_index": 1111,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "157",
+  "final_answer": "157",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1841,
+  "output_tokens": 986,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00243225,
+  "latency_seconds": 18.598653842000203,
+  "wall_seconds": 131.57082017500034,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 542,
+    "utf8_bytes": 551,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "157",
+          "summary": "Compute revenue per color: 3 red × $9 = $27; 11 blue × $5 = $55; 25 green × $3 = $75. Sum revenues: 27 + 55 + 75 = 157.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"157\",\"missing_response\":false,\"sender\":0,\"summary\":\"Compute revenue per color: 3 red × $9 = $27; 11 blue × $5 = $55; 25 green × $3 = $75. Sum revenues: 27 + 55 + 75 = 157.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "157",
+          "summary": "Compute total revenue by multiplying counts by prices: 3×9 = 27; 11×5 = 55; 25×3 = 75. Sum: 27+55+75 = 157.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"157\",\"missing_response\":false,\"sender\":1,\"summary\":\"Compute total revenue by multiplying counts by prices: 3×9 = 27; 11×5 = 55; 25×3 = 75. Sum: 27+55+75 = 157.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "157",
+          "summary": "Compute revenue by multiplying counts by prices: red 3×9=27, blue 11×5=55, green 25×3=75. Sum total revenue 27+55+75=157.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"157\",\"missing_response\":false,\"sender\":2,\"summary\":\"Compute revenue by multiplying counts by prices: red 3×9=27, blue 11×5=55, green 25×3=75. Sum total revenue 27+55+75=157.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 315557924314451870354017872597533942208,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.6977658338779109,
+        "proposed_state": 0.07722852579753074,
+        "state": 0.07722852579753074,
+        "probability": 0.23357794344468255
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.07722852579753074,
+        "target": 0.0,
+        "drift": -0.09267423095703689,
+        "gaussian_draw": -0.7746826175552194,
+        "proposed_state": -0.017780551030720168,
+        "state": -0.017780551030720168,
+        "probability": 0.22024753551552242
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.017780551030720168,
+        "target": 0.0,
+        "drift": 0.0213366612368642,
+        "gaussian_draw": 1.2006966229481457,
+        "proposed_state": 0.11724587885156504,
+        "state": 0.11724587885156504,
+        "probability": 0.2393578502469744
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23357794344468255
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23357794344468255
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22024753551552242
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22024753551552242
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2393578502469744
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2393578502469744
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.7613908177641612
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.21353264024706287
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.18393152711162752
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8940458099538494
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.37569835768963966
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.15389473553728428
+      }
+    ]
+  },
+  "initial_answers": [
+    "157",
+    "157",
+    "157"
+  ],
+  "refined_answers": [
+    "157",
+    "157",
+    "157"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "a34dfb689735030d0f3b8348ab688b9f8fa364da3059c6c3f147d322387aec18",
+  "errors": []
+}

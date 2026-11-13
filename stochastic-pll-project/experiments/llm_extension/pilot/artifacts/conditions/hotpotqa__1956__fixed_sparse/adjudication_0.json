@@ -1,0 +1,199 @@
+{
+  "payload_hash": "fdf79b4737f1ff0507f7dd5a523abca9adc16342d6002435fc8c2420505bea61",
+  "logical_id": "hotpotqa:distractor_validation:5a8e61165542995085b3741a|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0ac68fecf4fa07fc016af71933219881969ea6810d9b196b3d",
+      "object": "response",
+      "created_at": 1794578739,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794578741,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 8143,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 788,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0ac68fecf4fa07fc016af719341ac881969215e16da36ac1a9",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xk1lZ_X6zTIlvCizXOgTr3-t0tbS73RJV96dtj1zN0I66UeV31yo8wFT7M9lpmNrA5hO_c87Nyrcluh81x_oLL_Ir5mfv9CbJAw7TEz5YUL6mRpS3LGVJ7tWc6b7QAQ_Na48CLSBa8mHltPJ93eWBH-MzKdmaC-3YL_g4XgOYZ0B2l-XLTfaDfOz9QAVKTh1eXnA4PXITBf6D7Ftwr2TiYHVY8mSTIx80CzyPXNGf837_OgMcz11wd7JXNjUuMbpfgw28-pZEpH5OGYzggD6QHZXDBKXUr5cc9s70GEH6WYiUi0GCvdriyhviqEqMeMMQIsNsbXcVV90EuDW8ih8QXQHP-hrWZ07w_npj4q7V1pOVg57H8Wi8xXrRS81joDTLXbaYlQt5Uy1mU6TIweyLLu7lPpxe6WIRZR-Q-YQTbJKWZ1EoAP_fEI_9bbqEYidivXzrbBdZNx4FYxHBMayyT1DPFMvxMHu924U3dGSwM2IiFo-P8Vzc2AAWpzwt-DrFUw_BGeN1mol24M6-pdSxZYFambAwglSiOXYJy8sAmJdCirRaRasFsOdSTAQCZKuK23RvVb5w-teVM36PfozpWpsV6bhahAaINOIbb2uuMeIXkK_6Qzl094AkrNGUXs9t9qBTgdRZgEaHPDwpsHvk5jbu4ljhvl2aSDGOWEAUPBrz64013G7qMfn57Z-p6ydmqPMmbAf6pDtxuhUacr8K4FEfpL21lQ7sXB5-UthG_YxZDhk4Uupp-0kWJp2l_gEfJV_JUXJNQWHxzl6rOWxrTvndrmbbcS12AkzfNamGWKS3MyIIlMjTv2N-A3HA4aIF2I3EAMVvb0wiet58f_-PtX8pzesQXHlG6MmQLZBrJcmKbmu4pafB9OHU45B3h5uJP2yba02KI3T_pOeEwIhVkIP5WAcG8w8no-9YCKSYXwz5IF-56DmImbhP6fwEuJEBkkNIgyk0PKyS-PnQRDCG76gIs1WG6XOTyqvEcHEh-gLJZ1m2t4FVZ8ZcwyYM6PPczAVGJX_B5MNd6lSLJBsGYqSQ27jv3hNz8hqQ2LzmbwUFQrvMDUhakOLvDwgVnAl1c1XvgO5S15jEoxokNizOugApIEiEmLmkzbszs0CHoLW6QW7IrZLYwCeVBdg-bcTsHlP7FSo453lh-1DE8XU4R2DPa4mTAyGqUKAyJfSZFpXLt035XNMhQPKTy58UMSVFMEmGYfGgtXz0LIMGYZkEb5zg7zynVt9VcXDTolD5M8Si40XPCdg5ksmpmAJBf1zBN1qEt_gf8_LI5eiPVqkSz-_rmnZLu-rLFgE6GpYFfJ_8omSJFla1nZ70zqARIXV-dEiShRyXrmU5KPd8SluIGaLGHUPg0IKVD2KKpwXzbVXM4M2BtkpmbwLuXLj9gc5Jt300JYCrReu_eRvU-siLKtwfsZob_KwVc81XbTTWaYUaL03_SLuIhfPh14qF36oNcyl-qn2n5hkpYpTlnjyPewq8lLmLQHEcYDaDcBdtk-wuYZWz5qFHJ2x_UhRVbTThyT1k69HDK7yUG4QfNbfruEtnyiJWCFxekdR5De1GRRlSuSEbuq95MrALrzknyw2ZaX_Ab9ZuKC2G555tubdT-evpIQs_XnGOhw8cy6KMMt4xIZOAL1Fj7l0KL5eI44ufzU73y8yodHOxb4R_0lNFxuifZ9VH3AWmqrfj_QAoptnwTfrDGn2x_fL370Ou41N8e9j8HYg7Ag_BgFiX_W9xYW8aAM9ajL4VS0zpcvOCfupa6hsv3CXUyi0PTrPmQoJ4FMofGTBZFXrbFHAonyv06Jvcl5eW0tqY_Qn0AtyAJol5Zb7KbXClFwow0K70Do9alDRLIAUb7MmRosSh2LzC3xdn1OGGAwMI8YRPLWGwKynzJpmxdOxuLzzT_RgSuIi7APEir4s7DMC5bEyF4QR3Pal4q-zK8o_b-9Yfl4TXFMACS2lyoJQ9GZeFYm6YhBO5EdwF1wAsJzAnYFOJ4fG2gpD4nyG9YDQw4Gi6O3NSgZ5U3kif4BbPgmsSGFEfBFQ27JAYZHiL776MTLCksC8Fqkf6LacnIPtHldcVUdrWkSedPQMyGfNpDCX0ngLyDkA2QGhGXVDklJ19o_AIb-GUELEGZ2o20klFG0wyAKBhpgogBUJOcD_f2X8tWtYreAQKvaiDFHNBU4wOKvChgpdujc5q-97FZ-CNek3-ZfydarhPpRVONGZli0xZ_xOcdIwOXn0HxnoXCqHNiy4pjqpUca8G88MPwKPTQSR0H04BrxHMoxSmrSPSUWCl7H2IDB9I1nx9Pe_mD7FG75w32MQFaWDRMr8jfPLin2YbQXK1PytMPWnYhs_jY27XmMhWC7j_u9Ef9X-eJ6MHtmngVzlW-XF_i0fGy34jUaQKJQYdtMrbG_vGa4i8GeYy9eGB0d7FeURLJpD3zc3GOx0IJG7nsmXY3qIOohlkj2x6ogJ8e7ojU=",
+          "summary": []
+        },
+        {
+          "id": "msg_0ac68fecf4fa07fc016af71934de308196b714ab13237ee757",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"It is generally considered the largest Mission Revival Style building in the United States.\",\"summary\":\"Frank Augustus Miller owned and developed the Mission Inn (now The Mission Inn Hotel & Spa) in Riverside, California. Although the hotel incorporates multiple styles, it is widely regarded as the largest Mission Revival Style building in the United States and is a designated historic landmark.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1649,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 156,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1805
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"It is generally considered the largest Mission Revival Style building in the United States.\",\"summary\":\"Frank Augustus Miller owned and developed the Mission Inn (now The Mission Inn Hotel & Spa) in Riverside, California. Although the hotel incorporates multiple styles, it is widely regarded as the largest Mission Revival Style building in the United States and is a designated historic landmark.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1649,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 156,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1805
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a8e61165542995085b3741a|fixed_sparse|adjudication:0",
+    "attempt_id": "0b73cc26536a475da2154f1d76965620",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00072425,
+    "latency_seconds": 3.508767714998612,
+    "started_at": "2026-11-13T14:05:38.347753+00:00",
+    "finished_at": "2026-11-13T14:05:41.856504+00:00"
+  }
+}

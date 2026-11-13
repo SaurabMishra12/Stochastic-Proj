@@ -1,0 +1,199 @@
+{
+  "payload_hash": "3e1585155a270e0279fbd3879925040e7af35236b405107b82891987a98f9284",
+  "logical_id": "gsm8k:official_test:1032|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_09b6c08d850f5f1e016af71fc6390481948e96f6e47fa6416e",
+      "object": "response",
+      "created_at": 1794580422,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794580423,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2215,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 430,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_09b6c08d850f5f1e016af71fc68eb481949b5bfad27e3874a9",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9x_H3BDBnIMpkZZey8rpMbM5A5JCeJFhlgvH5sSeuSxg44JdqzkmVza9dSXKTUXq2GYq1srNP7Suu_ITErd836liG7X6wnOdM8x4VroKfV5lZRVk-uObZgsNjrD4Xfjjnz314hbT3OqQu6jKugrDGt0sHPSHjGAGwIxO7X7KDrgERpLWVvlCC6awHcOpR6SkL39aZDmUwlBYSv3VDp-8tv67PIkx6guxY_1bqCflG6EjAIdGAY95MkdWdZAmVtGaHzoTf7YESXmiSJpPD5nhJeTCWdQystrh27zA7adJnJxz6IbqVzN5mY9_55wgeiC9iPgpbk_Y57HBsIjY5QiIKraQh_jmK-V2P_vjTdHRMTx0LQFKuusAlsmFWcawgRp19IOJe27-0ORZJPHl_7jbD_qo7WwrxnnDyJsx6RmHNndLNS9CxuuyljG3pBCGPpgzPjVfzAYU4I4m6IvGq8VqbgGKz07jBrPRZDNtuJ_dGgbPJWcZqNUY1W3_dt96b9WoiHX4bRVYFxOH9TSIwDz5LQl_Pt_ddgNOy5Yd0IseGgxGSnEpbLjebUnASNQrcaRWCV_93Hk6PyxBQELdYShNF-CrFBSpiift4PAwXa-ACMPYo5UO7C6glVZexR_JvA1cMeSJGKab_JVqn2VJvuD5MJsRJqdxKKAKugu6k5IKAC8nARpsagloO_3FJLki_rxzmpiUU0E2FDfEggQ910LUyP48WunJO6P4SuCSJMiZuLh3j_GvluC1OaFFpYQZLTJB7YONlV1UnSDGMzNfg7vA1gaYNdfaqHMJev0It6klEJkCmjb1TKt7eVnBBETsg_IQvoFYEmYjjPf69A96XdMgwtftY46mGdWC62T7EfLRDuZmDQpdmitV5T5NzmpaDf12Up2g1RQGlE-t7NJD03xpwwafH_Qn-ION4M3HL4SAfWiNzqEWkfg4XY_npkBGI8MLYUiRXD0ZxqMQrJJWcc8ojaCyKzAvKtIdIEcJumRlORdihhkygVYerHCzxmd5i-fIe2_6Epd0_TT2T22B9EiWpa8ozM0HgjQ2xNvj84hPNim36wEdP6CjHXmWZ3syBTWn4lgkqBc-Nr__VEmPLzAMCjLriXymWULHRCVCOqq7RjqC7GiMhH2X-70363MMimMfkd_RfDQog5L76Sf3wfTTJfev_pEk75LityzgXBEBcR1LfhbKxVObQQauFoKq4ctPAw0ozHbUyE0y1ZqG08Z_DI3WvW5nQtmf-4FBAkmB4M0iq8wVyQqQElBKlXbFQ6P4Lc0ojlCftTw4mh4TkzL1LeCQURqrB3ygr9VPm-As9A65Xlk59dGzQ1rW_VeWLO0GGf3UmRWwalmZe3CeCcRAp5mxrcMUvO5WA9LsXWLKNScCAXpV-wWCwZ-bacn3Sj7SzdBKFeeNkHDRfSJi5MkbB4TjyXGolq0vqJ413y07AEKCGogbtgyoNMaXsonItJqfeFXDj_uL0FnURT7cNd7TbQgqgfy0iB0UA1rYmWNQfsSSeas84AiUNyODZ6hsNMUYWCKhpQ_QLgQXAiPzZuTWGdjuAMd3jE6IG-v68BYQ0wQTZ0UN8ZtV35JOJAJkV0WBhqXn06fnLio1zxGorln2ARTONA--Nb4vbyDCB1X7B-3M13NXFdgpDy-u0VpFgYYUglx2I7zvt6pKxEsQKWDHooCid1sRO6q-_DfiRvHIBeZo8oFrVx2TycdkKon4a8RWxOkYgTBRaH8nS7luDUssxofGcum3rjOt6qnes_kV5XaMi_XtYS7HeWjfLtAlLNbJG9ab2_IPmCBEI8_mltyHmJTVJ7jqfOCnvWsGwBy9P72PFTXO_IKj4eKDSvEf8hmyPaOqqxvKSb7hszqZt8-bgFJmSrCaRdETS072ORszb2BxcN90NEsi5GSZEHtoCiA5L8dTmI785yj_yobLbplf9F9SSNQbIWaZVnDMgLJSyKIAdLfPchFaDoR0fyGSZZFRj5NEXLpwbUDBaVohQ8ODWAJWsRU6LEu1Eg3Mhi7kANrwQl2ihPmPD4sVDcIvrZJUP4SQrJgfo-asTfBUPIliOQNtf8rKO6yeJ-ENCdaHtvBNNMtRMPQWunoJqkvABOEPdD8fompbvtKvTyzXKJvhu1t4_yyleCYXcdJyWwSQ7T9XWhzdK-dxcmoEsQMcA8AldD-sM9pnbDqMrgLzFNMFhfjJiw==",
+          "summary": []
+        },
+        {
+          "id": "msg_09b6c08d850f5f1e016af71fc7065881948f5b548e3117049b",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"450\",\"summary\":\"75 large beans = full. He can eat twice as many medium beans: 75×2 = 150 medium. Each medium equals 3 small beans, so 150×3 = 450 small beans.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 399,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 117,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 516
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"450\",\"summary\":\"75 large beans = full. He can eat twice as many medium beans: 75×2 = 150 medium. Each medium equals 3 small beans, so 150×3 = 450 small beans.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 399,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 117,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 516
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:1032|disagreement_triggered|adjudication:0",
+    "attempt_id": "4278898c958648ffaaadb7188d19a64e",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00033375,
+    "latency_seconds": 2.2052067749991693,
+    "started_at": "2026-11-13T14:33:41.655843+00:00",
+    "finished_at": "2026-11-13T14:33:43.861059+00:00"
+  }
+}

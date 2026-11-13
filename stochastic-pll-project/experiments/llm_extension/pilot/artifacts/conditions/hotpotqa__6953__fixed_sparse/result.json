@@ -1,0 +1,143 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a89fea655429970aeb701eb",
+  "source_index": 6953,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "outsiders",
+  "final_answer": null,
+  "correct": false,
+  "f1": 0.0,
+  "completed": false,
+  "final_valid": false,
+  "call_successes": 0,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "reasoning_tokens": 0,
+  "usage_unknown_attempts": 7,
+  "cost_usd": 0.06848749999999999,
+  "latency_seconds": 23.131098832000134,
+  "wall_seconds": 188.66832265599987,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 189,
+    "utf8_bytes": 189,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":0,\"summary\":\"\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":1,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    null,
+    null,
+    null
+  ],
+  "refined_answers": [
+    null,
+    null,
+    null
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "b3ef6325fc84c9b8789c4d08b0f102ac60c45781d9e37021cd998c7f337035a0",
+  "errors": [
+    {
+      "stage": "initial",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 1,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 2,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 1,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 2,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "adjudication",
+      "agent": 0,
+      "outcome": "content_filter",
+      "valid_json_candidate": false
+    }
+  ]
+}

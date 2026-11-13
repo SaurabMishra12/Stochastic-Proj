@@ -1,0 +1,145 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:552",
+  "source_index": 552,
+  "method": "disagreement_triggered",
+  "answer_kind": "numeric",
+  "gold_answer": "450",
+  "final_answer": "900",
+  "correct": false,
+  "f1": 0.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2244,
+  "output_tokens": 2317,
+  "reasoning_tokens": 1472,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.005195,
+  "latency_seconds": 33.34139136799968,
+  "wall_seconds": 293.41344535199914,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 1276,
+    "utf8_bytes": 1280,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "450",
+          "summary": "Antonella earns 30% on the first $1000 = $300, plus an additional 10% on the $1500 over $1000 = $150. Total earned = $300 + $150 = $450.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":0,\"summary\":\"Antonella earns 30% on the first $1000 = $300, plus an additional 10% on the $1500 over $1000 = $150. Total earned = $300 + $150 = $450.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "450",
+          "summary": "Antonella earns 30% on the first $1000 = $300, plus an additional 10% on the $1500 over $1000 = $150. Total earned = $300 + $150 = $450.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":0,\"summary\":\"Antonella earns 30% on the first $1000 = $300, plus an additional 10% on the $1500 over $1000 = $150. Total earned = $300 + $150 = $450.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "900",
+          "summary": "Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30%+10% = 40%, giving $1500×0.40 = $600. Total earned = $300+$600 = $900.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"900\",\"missing_response\":false,\"sender\":1,\"summary\":\"Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30%+10% = 40%, giving $1500×0.40 = $600. Total earned = $300+$600 = $900.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "900",
+          "summary": "Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30%+10% = 40%, giving $1500×0.40 = $600. Total earned = $300+$600 = $900.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"900\",\"missing_response\":false,\"sender\":1,\"summary\":\"Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30%+10% = 40%, giving $1500×0.40 = $600. Total earned = $300+$600 = $900.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "900",
+          "summary": "Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30% + additional 10% = 40%, so 0.40×1500 = $600. Total = 300 + 600 = $900.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"900\",\"missing_response\":false,\"sender\":2,\"summary\":\"Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30% + additional 10% = 40%, so 0.40×1500 = $600. Total = 300 + 600 = $900.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "900",
+          "summary": "Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30% + additional 10% = 40%, so 0.40×1500 = $600. Total = 300 + 600 = $900.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"900\",\"missing_response\":false,\"sender\":2,\"summary\":\"Compute 30% on the first $1000 = $300. For the $1500 above $1000, commission is 30% + additional 10% = 40%, so 0.40×1500 = $600. Total = 300 + 600 = $900.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "disagreement_triggered",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "450",
+    "900",
+    "900"
+  ],
+  "refined_answers": [
+    "900",
+    "900",
+    "900"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "de1874d82024f7ef8c4b8ccc4707383dd24391c8bc7034ca1d19c73565292bdf",
+  "errors": []
+}

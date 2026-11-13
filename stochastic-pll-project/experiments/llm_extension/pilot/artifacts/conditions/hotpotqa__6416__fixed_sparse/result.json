@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5abb9928554299642a094ab9",
+  "source_index": 6416,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "ted kennedy",
+  "final_answer": "edward m ted kennedy",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 13321,
+  "output_tokens": 1053,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.005436249999999999,
+  "latency_seconds": 24.536849688001894,
+  "wall_seconds": 240.4448976950007,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 928,
+    "utf8_bytes": 928,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "ted kennedy edward m ted kennedy",
+          "summary": "The memoir 'True Compass' is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy, commonly known as Ted Kennedy, was a brother of President John F. Kennedy.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ted kennedy edward m ted kennedy\",\"missing_response\":false,\"sender\":0,\"summary\":\"The memoir 'True Compass' is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy, commonly known as Ted Kennedy, was a brother of President John F. Kennedy.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "edward m ted kennedy",
+          "summary": "The supplied context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy (Ted Kennedy) was a brother of President John F. Kennedy.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"edward m ted kennedy\",\"missing_response\":false,\"sender\":1,\"summary\":\"The supplied context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy, released September 14, 2009. Edward M. Kennedy (Ted Kennedy) was a brother of President John F. Kennedy.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "edward m ted kennedy",
+          "summary": "The provided context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy released September 14, 2009. Edward M. Kennedy (commonly called Ted Kennedy) was a brother of President John F. Kennedy.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"edward m ted kennedy\",\"missing_response\":false,\"sender\":2,\"summary\":\"The provided context states that True Compass is the posthumous memoir of United States Senator Edward M. Kennedy released September 14, 2009. Edward M. Kennedy (commonly called Ted Kennedy) was a brother of President John F. Kennedy.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "ted kennedy edward m ted kennedy",
+    "edward m ted kennedy",
+    "edward m ted kennedy"
+  ],
+  "refined_answers": [
+    "edward m ted kennedy",
+    "edward m ted kennedy",
+    "edward m ted kennedy"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "b49166ef6627365bc764d203f588ec4282f1cf427bd7d5fb97c1577fff589a8e",
+  "errors": []
+}

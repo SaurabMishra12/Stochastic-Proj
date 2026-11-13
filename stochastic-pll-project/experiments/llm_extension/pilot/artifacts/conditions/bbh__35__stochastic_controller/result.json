@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:35",
+  "source_index": 35,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1963,
+  "output_tokens": 1153,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00279675,
+  "latency_seconds": 20.65270873999907,
+  "wall_seconds": 178.8627776180001,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 387,
+    "utf8_bytes": 387,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "Ages: truck > bus > sedan (older). Therefore newest is sedan, second-newest (middle) is the bus, oldest is the truck, so option A is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"Ages: truck > bus > sedan (older). Therefore newest is sedan, second-newest (middle) is the bus, oldest is the truck, so option A is correct.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "Ages: truck > bus > sedan (older). Newest = sedan, second-newest = the middle age, which is the bus. Therefore option B.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"Ages: truck > bus > sedan (older). Newest = sedan, second-newest = the middle age, which is the bus. Therefore option B.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 182630951835036008808494657925494814450,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": -1.6513651937581604,
+        "proposed_state": -0.10277263413503702,
+        "state": -0.10277263413503702,
+        "probability": 0.5002788064774293
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.10277263413503702,
+        "target": 0.6666666666666666,
+        "drift": 0.9233271609620444,
+        "gaussian_draw": -0.11854646976361875,
+        "proposed_state": -0.023560607894718706,
+        "state": -0.023560607894718706,
+        "probability": 0.5161156276795505
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.023560607894718706,
+        "target": 0.6666666666666666,
+        "drift": 0.8282727294736624,
+        "gaussian_draw": 0.48049797369143216,
+        "proposed_state": 0.11244804533126818,
+        "state": 0.11244804533126818,
+        "probability": 0.5432148511878834
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.5002788064774293
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.5002788064774293
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.5161156276795505
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.5161156276795505
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5432148511878834
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5432148511878834
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8025890374978312
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7882398479294674
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9795464885073386
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.4230738661613139
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.2980784341594742
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.5694164628069925
+      }
+    ]
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "B"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "50f52a80bb1db1667528085c71cea0fcec202b9351685b4472757aa51afe56fa",
+  "errors": []
+}

@@ -1,0 +1,235 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:87",
+  "source_index": 87,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1998,
+  "output_tokens": 806,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021115,
+  "latency_seconds": 20.25396954599637,
+  "wall_seconds": 187.10555755799942,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 882,
+    "utf8_bytes": 882,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Peaches are the cheapest. Mangoes are less expensive than pears, so pear > mango. Therefore pears are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Peaches are the cheapest. Mangoes are less expensive than pears, so pear > mango. Therefore pears are the most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Given peaches are the cheapest and mangoes are less expensive than pears, the ordering is peaches < mangoes < pears, so pears are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given peaches are the cheapest and mangoes are less expensive than pears, the ordering is peaches < mangoes < pears, so pears are the most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Given peaches are the cheapest and mangoes are less expensive than pears, the ordering is peaches < mangoes < pears, so pears are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given peaches are the cheapest and mangoes are less expensive than pears, the ordering is peaches < mangoes < pears, so pears are the most expensive.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "B",
+          "summary": "Given: mango < pear in price, and peaches are the cheapest of the three. If peaches are lowest and mango is cheaper than pear, pear must be the highest-priced (most expensive). Thus pears are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given: mango < pear in price, and peaches are the cheapest of the three. If peaches are lowest and mango is cheaper than pear, pear must be the highest-priced (most expensive). Thus pears are the most expensive.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 35741107850276676988255595138845757346,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.48022237366763076,
+        "proposed_state": 0.05315087694567632,
+        "state": 0.05315087694567632,
+        "probability": 0.23014736390654636
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.05315087694567632,
+        "target": 0.0,
+        "drift": -0.06378105233481159,
+        "gaussian_draw": -0.08311453514805424,
+        "proposed_state": 0.03757367839150616,
+        "state": 0.03757367839150616,
+        "probability": 0.2279468235622237
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.03757367839150616,
+        "target": 0.0,
+        "drift": -0.04508841406980739,
+        "gaussian_draw": -0.7136971700833921,
+        "proposed_state": -0.04592696461327818,
+        "state": -0.04592696461327818,
+        "probability": 0.21640484424423553
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23014736390654636
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23014736390654636
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2279468235622237
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2279468235622237
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.21640484424423553
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.21640484424423553
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.7515697185527557
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.19035252179909623
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.1723943502134997
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.21632393452835408
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8064620498108366
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.034472700705916126
+      }
+    ]
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "0e6ea0e8e98107df620f0d1d1b039f88aa76bec5fcacf54fbcdf095f82998637",
+  "errors": []
+}

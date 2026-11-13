@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a74adb455429916b01641c6",
+  "source_index": 5353,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "ladder",
+  "final_answer": "ladder",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 15112,
+  "output_tokens": 1322,
+  "reasoning_tokens": 704,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.006422000000000001,
+  "latency_seconds": 24.669687137999063,
+  "wall_seconds": 234.86443209699974,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 822,
+    "utf8_bytes": 836,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "ladder",
+          "summary": "The Ladder was first published in 1956 as a monthly U.S. lesbian publication. Heat is a later British entertainment magazine, so The Ladder’s first publication occurred before Heat’s.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ladder\",\"missing_response\":false,\"sender\":0,\"summary\":\"The Ladder was first published in 1956 as a monthly U.S. lesbian publication. Heat is a later British entertainment magazine, so The Ladder’s first publication occurred before Heat’s.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "ladder",
+          "summary": "The Ladder was first published in 1956 (monthly from 1956–1970), whereas Heat is a later British entertainment magazine (described as prominent by 2004). Therefore The Ladder’s first publication occurred before Heat’s.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ladder\",\"missing_response\":false,\"sender\":1,\"summary\":\"The Ladder was first published in 1956 (monthly from 1956–1970), whereas Heat is a later British entertainment magazine (described as prominent by 2004). Therefore The Ladder’s first publication occurred before Heat’s.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "ladder occurred first",
+          "summary": "The Ladder was first published in 1956 (monthly from 1956). Heat is a modern British entertainment magazine launched decades later (late 1990s). Therefore The Ladder’s first publication preceded Heat’s.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"ladder occurred first\",\"missing_response\":false,\"sender\":2,\"summary\":\"The Ladder was first published in 1956 (monthly from 1956). Heat is a modern British entertainment magazine launched decades later (late 1990s). Therefore The Ladder’s first publication preceded Heat’s.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "ladder",
+    "ladder",
+    "ladder occurred first"
+  ],
+  "refined_answers": [
+    "ladder",
+    "ladder",
+    "ladder occurred first"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "796d2f3fadebcc5d79481a581fdda9a333ac9fbc0a08be419d112c40cdfa3423",
+  "errors": []
+}

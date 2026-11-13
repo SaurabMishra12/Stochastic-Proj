@@ -1,0 +1,199 @@
+{
+  "payload_hash": "81c5bf28d2272e89dea132afb3554ff0f7c441f657bbc1d8c7fcfec2f57ce6ce",
+  "logical_id": "bbh:logical_deduction_three_objects:182|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0c9d69af3ad2d069016af734ec36d481978bd39b6b3b1eea52",
+      "object": "response",
+      "created_at": 1794585836,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794585838,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2176,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 429,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c9d69af3ad2d069016af734ed033881978954b3a38fb3139f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zTus9c3BVdD1_JW52R8cE1c404MBFo11W3ZSfP0yR1QYTAXh7hTewbG1_kAXwoG43dkJ3yeMZ117KbAfVXBSnbW8X5k1ZfSvdIEzExi51Ngsp-ARUWvw0rIPDbXaReI0SmtnO9XSm4UOMXBAEQ-zFknX4A-jLHXkbLiWz-K3dVDCmzqvdmRLocY5wJdZNGD8goYFWZVoZITnILZMqZW0X2nkFwOua1uh-jnKLZiTjWlDoQvERtFkDHlrjBeTN0-gpWfBtmW4s0FRfcvdTHs8FK9Y_gmn_mDZPi85juo6dqH-Sd9fHWEfLOi0y_Obdvg_KbKgEfoq9e-6V35ZMqCxIKheoGa6QKD4cMCeOSSOoebBgShL767FI2XmZ0tSuX2-raZErFqwlcinCnZsdIupBDQW-VCNLyK6xgtrkn-VdSUSgqH7K1qH9ui0grTY1KHrechy1RgbE1MX-Uw8vp-JkXx8PEVTPcdvegrLgCyrcJhYFVyChnbyIZGzLFTfQRHBBo6Fpq5-Z9ZXnJ-GSlnt7Mtm96p_YkE7npGtg2PJf9qJO5y472OmqORQblAvGVRaupZ4J3gT-PY-w54GdAxnWHp1eDBp7e0WS7uP44ujw2hGbzOfnScsFtBXvbewlOZnb4rIMN2yrodvY7qPtmkgYPX37BM5W35SnV1LGE4g_Ger-45dbMagaB_jPwCz7SUUsoRJray4YUzqfghe5X3q5NFJXxyarQ3wpaL4yWPiHlz4EBQsSupgXbEK29Ijgytz9MnCEY10RH4Lkxg-FeHsxRVKyVfEeS6QLKkHnf2jxQw4ONPtUbZDakXtTHBxD2hj6MfBLS-FRERDme2Mvjj9k0iTeIeizYSJiKsIdzGD3d7Z6oc2b43cKqZ_yfVPc_k0LjlmLcLarEJVw5GyweQa6m1E37JeeXo8lElDN0DjcA8ScSHifGJJvK2rUfIbOdfx9NBxBplcneVwUWhbkzYlfwLob3i1xHCrk3c0ae3Bl-sw43oYMk7dtSOosS7zilZZ5bse6bVumYSaq8gHENojCIqZa2fAgl-oY6wYVU-yA49XjvIs2Ulk7m59PBAqgiScy5ZAy-kO4_2hLib5210KOUUapQOahZyHutX95A-38gRQCjZdx_xPmxAxLaC-49oAAHD8PIDHkAatAWORQ1rNpOTV9YAgUSxk-xZ0CZ-jiHtPoEjAvdioewnl1GTNuHpa3tgyjP5IXryUOmtTSaTnYtTy794jCVi9cG1f1-uli34c19aLJjIYvAWLoC01Q0TN0xgbuDmTn83PFFa1XqFKpSMzBllaEN78UN-2Hb4y7sjPGDemFeXxLrSchukMw1P7gPVIH4Yvq4jgnl1lpJgNqWHbVpp5_H-3BYb-oVpIPvTlqIeSAB9lxohZyixR0V9CDOIdLwCyxPHlZAtcIC4uC4TxZXWD9XS4r9-0EOcQp_xNTqYDUgRBGwmOUfRNGWQjr64yHfGEhRNZWzL4qNelJrzx_P_vCAQdlZZoa-gujY1bdmEghRxFduKZPhidFQS9A2pnYJSeDRrp2BPcADzFzPFVerM-diIKiIlrv7hU4XUPrb4APHNIPnJEuTjS2vKnkby-mbzZaNgmTlf1PaMY9dC6KSwMzBm7C5u4CedVhxDP7g1o4sCzdLL8qv_92Rg4eGdw4XFQy75vw74_huUQBrqWPLQxSrkH-3pETQuVc6uuEncyFno-cIGgHnzFs9z28LzE_HdFsPZn24FIPCjf2F3sUofTBFBNERU3XMX-Eb_kSl7UvosXzTGzt71TY6y6MZuC140xrmxpQA5ADVTva_b8iC8VR086_pdbtoREdagNg-VdE5R4oNrTHDF4mF43KakX14Dq_Dr0ZdQ3PJXaackTP3x2yHNW2kkXlqvmo6sZoWSP-iGIqaHUjgQMSWqK3DD8pxXxr3d79BdGUbWH-fjZQ==",
+          "summary": []
+        },
+        {
+          "id": "msg_0c9d69af3ad2d069016af734ed49008197816dc1fe912b26d5",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"A\",\"summary\":\"Three distinct finishing positions (1st, 2nd, 3rd) are occupied by the three golfers. Mel is stated as 1st and Dan as 2nd, so the remaining golfer, Ana, must occupy the only remaining position: last (3rd). Therefore Ana finished last.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 355,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 114,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 469
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"A\",\"summary\":\"Three distinct finishing positions (1st, 2nd, 3rd) are occupied by the three golfers. Mel is stated as 1st and Dan as 2nd, so the remaining golfer, Ana, must occupy the only remaining position: last (3rd). Therefore Ana finished last.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 355,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 114,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 469
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:182|full|adjudication:0",
+    "attempt_id": "329025d8ff3e49deb90627efdb0d9c7b",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00031675,
+    "latency_seconds": 2.6562596800031315,
+    "started_at": "2026-11-13T16:03:55.552088+00:00",
+    "finished_at": "2026-11-13T16:03:58.208388+00:00"
+  }
+}

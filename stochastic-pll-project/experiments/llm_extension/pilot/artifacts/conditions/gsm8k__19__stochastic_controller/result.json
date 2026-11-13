@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:19",
+  "source_index": 19,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "6",
+  "final_answer": "6",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1996,
+  "output_tokens": 1437,
+  "reasoning_tokens": 640,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0033729999999999997,
+  "latency_seconds": 23.430178290000185,
+  "wall_seconds": 186.58866810900145,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 518,
+    "utf8_bytes": 518,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "6",
+          "summary": "Total required time = 12 miles / 4 mph = 3 hours. Marissa already used 2 hours (1 hr for first 4 miles, 1 hr for next 2 miles), so she has 1 hour left to cover the remaining 6 miles, requiring 6 mph.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"6\",\"missing_response\":false,\"sender\":1,\"summary\":\"Total required time = 12 miles / 4 mph = 3 hours. Marissa already used 2 hours (1 hr for first 4 miles, 1 hr for next 2 miles), so she has 1 hour left to cover the remaining 6 miles, requiring 6 mph.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "6",
+          "summary": "Total allowed time = 12 miles / 4 mph = 3 hours. Time already spent = 1 + 1 = 2 hours. Remaining time = 1 hour; remaining distance = 12 - 6 = 6 miles. Required speed = 6 miles / 1 hour = 6 mph.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"6\",\"missing_response\":false,\"sender\":2,\"summary\":\"Total allowed time = 12 miles / 4 mph = 3 hours. Time already spent = 1 + 1 = 2 hours. Remaining time = 1 hour; remaining distance = 12 - 6 = 6 miles. Required speed = 6 miles / 1 hour = 6 mph.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 253213991226366315625441782459981009361,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.7409335256940123,
+        "proposed_state": 0.08200631375901891,
+        "state": 0.08200631375901891,
+        "probability": 0.2342628930715545
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.08200631375901891,
+        "target": 0.0,
+        "drift": -0.0984075765108227,
+        "gaussian_draw": -1.471629198720906,
+        "proposed_state": -0.09071394876289482,
+        "state": -0.09071394876289482,
+        "probability": 0.21039083768387162
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.09071394876289482,
+        "target": 0.0,
+        "drift": 0.10885673851547378,
+        "gaussian_draw": 0.9755365860213455,
+        "proposed_state": 0.028143839431480577,
+        "state": 0.028143839431480577,
+        "probability": 0.22662192520244087
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2342628930715545
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2342628930715545
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21039083768387162
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21039083768387162
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22662192520244087
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22662192520244087
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.9016060667573382
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.32987596230345284
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.5012367893223145
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.10968493657596445
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.07405517629866798
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.4069371807470936
+      }
+    ]
+  },
+  "initial_answers": [
+    "6",
+    "6",
+    "6"
+  ],
+  "refined_answers": [
+    "6",
+    "6",
+    "6"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "a4c0e76d64642226b304447888ecb4df8cb2a2597160e17936b35386d53ad378",
+  "errors": []
+}

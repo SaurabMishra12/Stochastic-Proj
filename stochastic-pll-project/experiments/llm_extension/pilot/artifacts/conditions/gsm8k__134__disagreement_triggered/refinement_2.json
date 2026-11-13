@@ -1,0 +1,199 @@
+{
+  "payload_hash": "2c96b7f1c4483d235569843e63eaab2284b1b49a4c31faec159ee6e977c764cd",
+  "logical_id": "gsm8k:official_test:134|disagreement_triggered|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_07a31521cb33a5b1016af727f9afe48195ae57f8f230a96e77",
+      "object": "response",
+      "created_at": 1794582521,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794582523,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1430,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 638,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_07a31521cb33a5b1016af727fa6d9c819586de6aac0f0c8017",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yf8dFDCvrl5bUbcc9qG_GDWOvjL05bKTj7ACA1OJITkU9-egaGWqqIqC_AbcT28rWPUV1Fp4iGuvwOgFOcZb39V_IeRNIhKI9K6PHhEWOaerlCZKFth7OT95p7zvs80DzxfJEBC_ewnjyLhLav3ETJ7unDutfu0oGKKYTcLSSgNNvifYsbS2LIP7HAMn5KhnChl-UHQRMoLFB9Q8Tpq0V9YTSFT59mKGLbz6qrhpVrYiGZ48tXZL38UmELeCC2Oed0QHpmJVzgCVDCYpAuRLZ94XDymLP6tAQWeFeVzNtOReq-Z1U9BjWAyUM17fmQq8ZzyOKbjsp31XoWezgkQtzg612ZuCkka9noMa-0fnRMsjlymO2XVv0FEUnhhwk8CJpW2WrlkBpt9lvjl2mIdOCdp0KHFApaHDC6b54ly0Ax90_Tq84FCmTtpRpzUZ6c-dUbJiI7ZbsC9eoStWVefpzYnVVbODLP18_FDjUOJ6RkQywJ34spfO2e1zogzZFxwdLWstWfKh3YGSFy5yxpyAUeInL8TK_bYboVBobtZDb80YDkJChbcrPb-KUHR2eF69GXuZloO8gBYs2k8yyMSrDjFdIP6m7ESRLgesZuBRdWBfRnWIvLSk4uWX_UKFEMGqkktkbAS7mSdsm4nRzZ4Z-TpN0i7cpmWSrFfo0jpvpB5F0rWt-VycDf77vVde0d8aOWvsKYxjfAk8IowkS_-r-YONPdJ8NfkwwUP9u-on1dmEHzr5tHprcJHZW08aRquymUBw-G4ZZ3Q1RIMcLw8vIFOGPE8t9kri2qyVjXAjp7Q6ks6Wj2FpqDQbumYRGCySJqTfwUdxNN1PphbHOOW4yj4sz-4-GD-d6pG1WWKy2DI2i69WY0ZtufbioISMmMQDI7UuxLs40c7c-1owkn8BN_UKQJQf4qGOLZh7YiKEb11R3Vm_KGf1X5BcLDHlAjOVntqCzWlKNldBL8LOa97CjZMfTJ3GSMF22c_cCVBGuoskvflkSmll8kdzZYPqxbYxDYcS5y2O1uMA0Y7Xxft353q5li4gdCzNti6YBsyci9r0cNy1aynsHgHW_ki_uc9Z5NfQEJL_HP3fc_SOYhc_l7XxCx6A7tXBRyJVltqeIbtbbhy5E9TCR2uqbB4RhGMvZu-oKKkZKqbpu_95ORcDD4v8t7yw7pAMA5E3okrRiTfaER7maeKbyfwH8IlV6_iCWvFFDlrcJAUGc4xBzSQP_2hVjhlUTltHvIL35r75MsUyuHWsSgKpiCL2Pj9-0YVPUD5vIi61AWLj_OEv_31OaI3oay8HyuReTcBwdwpcKco9ZknnMvQPSk736cVkrnVmfa-pJhqhwdbX1EPjxPWpUmSW1BuxrAbi_74Y1egu2xQV94BJKFMIfLaD-7bde3Wdo75-P47mgpW4Zihj5-2J9vbaXAmReStxIzW824NNIG0GsXZQGnMWhKzsZqyAnybcf3qzYcBsaOjLto_1IL4mzoZlsjYpaD5J7Y9cU4Ow47x9QNTdXZ5dp28RkBwCt6Qo2XXDJAMWiXXwdsAqJKTYoWRvh5QKVZMsxT0qZmFUcpKLVEbYAlPm5WRs7d4hJXDiZt2ZmWzooXkKhfW3Udd_UcFepow8VVH0bybtXmV9ibRwyhHTlNj_U9snQpqqTTzjJeyOYMS943m9raGe_ZkXcI4kB2tJ-d9EEGotRoidIFn57_bRuH6KavDzg1I6IimVVbg-RhEsQIqV2yPaOuRxbiioBw_vwxx72r8VFFjbnJ3PWFWkfUnYCtni8y8HnnSAH5e9OxejuCCarOArl7-OZgPHgYUWt0n5MNGVLktcn4rietNV_mHzL_34EcdH186FMFkCkEUFkwBMH6S786hs84NsAfiX05hBVB2K-Wjqlkt6tu2Dp_B2OWTXkVjNE5maYvUo6hIR6iOLTZrUii64dRpda8CM407y8uNxg7SjO5BK9xWeQwGpYR-Xeau7vs8gB7-l86eJX1HNy6Nbj5k27opWQYyaMJ8y2S9zxgO0PJSbTC1PS6fluissPY8KfvYxvINLSfiCKkNZ9RD-721i1ZeIDzUvM01OJiohnp-QlRDgM6Fx1ceJRpJIpIqQd2wLZ0ORRJVmAvcQnAUqwHMQIwpGeAOrLxTweMmziT0s_GPyVQELQe1dVqy7i6zPd40IdXn1ixWfMpTcjb9WoKyQ0yal-aySmEFCZ-2JRucah6Wn3wORZsyBv3r0DdKWmBqSCzo9ModFLhQQSq8YalJTrb22Y74phqlTr1QA84DL89RwB6spPdGIaeMEQCIiaWfBCWc3QgY4xuTmXy-xKqus4-Gms_0qSqMRK5lq3gpaHhr59C53zecKV1l3TAJx1jak8PcNKajoYUscbJefdLx0Jw9iERTPoT3-SGyp4QHH8SmyEyrqhvnduF8LznlScVLlUVVdqoKW32J5_Df5jq0uIp6krFKMkkc-zvYB9TfwO2526STmJMR_DV3jHSiKVQAm1HTjw2LE-0N3IAeXNwSZDXzqHvE8hwKn-lspZq7J2fSHLcrFZKp48VZ4Q8zz23pHA9ahywE0VWfBDjxTFu21j5gigpeR0GPaDMpzo4sI74GL8LHk6c4T7Ywl6W4oItyb_Z5-fWHnN8rAGapEODbQQVriITKOofMuo3WLsLnoDaMlG1ikdkPPEnRhB6f-7Vb3W_OYVBY98TXqvLOFjytQgJQ-NsljkPjNojW0V5rq9reNkDtoHtgSnufQEi6bSiAqHEXQm7zLQYC-8tVNOt8eP_kfI1CJVYl1bxf2fiIosOp40oN3gxJQ3iOrPwrtqSAoFKozpqtulwWOGPxgNn24f4QQp5FRNbqiACViXAjwEMB8knGMB7WBNf_4BPDxDZTUuBqvJPovn3vcAdR02qmH38l4qMShYJ-tOLAf26_yp24S4yPYVrLQeU7cnYedNavj6dn",
+          "summary": []
+        },
+        {
+          "id": "msg_07a31521cb33a5b1016af727fb46448195a054557cb7ccc481",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"720\",\"summary\":\"Tom gets 4 washes/month × 12 months = 48 washes per year. 48 × $15 per wash = $720 total per year.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 212,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 165,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 377
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"720\",\"summary\":\"Tom gets 4 washes/month × 12 months = 48 washes per year. 48 × $15 per wash = $720 total per year.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 212,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 165,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 377
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:134|disagreement_triggered|refinement:2",
+    "attempt_id": "e7983fe0431c41468b2eb35a9a968541",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000383,
+    "latency_seconds": 3.01084260800053,
+    "started_at": "2026-11-13T15:08:41.089723+00:00",
+    "finished_at": "2026-11-13T15:08:44.100573+00:00"
+  }
+}

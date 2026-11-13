@@ -1,0 +1,199 @@
+{
+  "payload_hash": "4ef89171e5a8b16b8e4ca693062fd8d4ede1018b9491a9acbe8ae8e011f94e13",
+  "logical_id": "gsm8k:official_test:731|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0cccadf89d219231016af728b4f0b08193a14e5367eeadf039",
+      "object": "response",
+      "created_at": 1794582708,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794582710,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2042,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 508,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0cccadf89d219231016af728b54cc881938fa6ad0fd7a47af4",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yi2aZ7-mbE6GlDLF4Fupfpe4gR8CH-fAs9RM9HWuqSbEmOpLLn8QjRkgGRjvQvdtFjadb7dpfSap9IKTbEr85YIhsEr2xIu1msJC24GtXv74hl-LkfthWjkVU35Z0bacwL4xJSS12hExgjjxGlmH55sm3Bvqoer41xe7nFOGlbIXxT7CUe0S4rSVvlNJXmg25khljlOMVGUffpgAJV-_Zj1fcuP5nc6LUMsn8e2n7xv7QEajMQIt6LwJYr3g0W6pocsMZ7ZwLnEGTB7fYtaGxE3pUuhyT61JInRhLYD6vI8jELNQbDKO5QkJN1EjDrepRbi1nDkX5hK2d6_9X-psDnvu3I_zKm6EMybFn2vjhFd8LUBg4O9zfg6WGxFD3079tgcNpsOhOKI9_Q3bS-l7EAgih1Sg9Abtq-SyMMb4Eiyy4ymnZgrSB0EAGrzFL5Khp30wNbVOFzUMetU3jhtFLzDwc0FaFEfyfs97g9XBTbI_cIlDo0p3qF6sq482Ue8zxuHUBYFzUsuIGgBz31T1DmHjQsdoAVVG2bsRuSzPuMvci5sHPYka4MLFI5F11rf4RIwVCoUdCb0iLRzdoCrqD0NAAzgNnnZJfqT7gCAYdth8-NEyWkiULWbjD6lQQAYVhq7BfTAqlOvAjJqmfRsj-aqG9tn048mfryAJC93vRUoTGjXJLo4CI3AAXHIMffMJ2p6vzhicKPAuMo9S00dT-l9Om6_PuOrxHH2ec3kQhbdZD2AeqMQ0gN5j_KqKo1GVOWoBUcaxjsDNT1uVetSm8UyIB_9fd8Y3Qls82RLU_wjmWHLw0ocGuw8LBH_R-svu5XotD6GisProybPePajsTaSQyjqtMbn1NPrgvXu2mtR-FkjvcYP-ZBWilaOM76w0i7Aw9Ue3d54VRcbjyM-AMWtA-2qhQr7U9byzQ-4hL_ZjUKn9PMLQYqNuuEvrrQ3khCI8Svc6Qjx1WOUPZlUakCug4ZblgsksC7SFOh_RHDXwHMe1sLOJ3Xi4c8JIj_ytux5-6_BFveZ495pPKNLioxWetKctlM7hPUTlPSR8-7kvgt3HoNg2aCwZWh7XCfCCB-9Fr5SXdIKYeQQwbWDMJkXnh5NifiECWDTZ5PjMveJe37ew4tq8ATi_DmxeKImpRZepmtE67CwEWD8mg3FfFdZ25HICRruvOsSxtPhAQHcvkxhWNA75w6HEhFl6_pFgO4rOCii1qoV6G-F14OA6V4Mv5Hjy4VXE2ATHLK2wNmKLKojPTxUefXapN-wJQSVhrI1H1R0GE433AEfsBe6_w1293UsaeG1l3JqIjbLB0ouRG41UbkBZ-tZBplMn2ESESjnb8Ya5sJpsQli7iqMFEzp6NP16oupYFUgUBxaqAIKYY0iVQE3mmh3COetiRFI-IL-Mjxu_xZWdB74bF8iMkSs0Hkf6M5f4sxKxLuA4hLSoMe6xnCrlRxxASzzWFAvTqF5Lpx_bSuuez-JFr0BILh8eoeQE_-6E2DzRQAE5gfSrW1EJuXW-Gv59HRGk7RJA9nJr20XBMUCSVubM0Pl2qIa2yXWpd0226dadUUoiKShZrpssCifpfVz_hKse04TvCjMQVkyJlIloZLuyGNd2MYLuS4-bH_lhiFcqJUuJQ1Tbk6d7ZLcvWhY-kEcafECEe512NWCBOYS7skOS-nstXtTIASphdoKrnTwmvy5puJNUB79InxNEYoSN7gpwEyvZXe7GPFtubHVzlbk4aT0r0bc2Pr5w4ExRsMZq8FkA2uElIfENcKG791W280Wu7fXY0T0ZupVzZyd6b9AHcUDx-QMipdn__ATbAsIhW7gOFbuslYEd0DFSfIWv_KYzSS_wGyCYPtc-NMv1w1CrYy9wGOPYFzS9BMAsy8nma_O4_DkufXH-Pm9EomXr0ciH3oy4MmxU-mILv1rkSp2L6IOWDCsWGtAaAHgiu1RtsUrjE7Pg0sGnr8VscQtrTdpuVqr-TQ122EixKTuHc7AZtaVtXIpV2FhFvQDHIdbaKvXEryKYjQ51px0msp20Z6HAydQ_M16v8rJXO0odvxMwNSEAGmCwiBP-gh6cvaj7ggGo2VQ3RUJZHL6KZ0CUqQHfiVAn4jaG8WaZTxoM_hzjylEiSo7HgU1rqfwMe2AxYgQiOujMP09CBvDbJ_nFRzDu3HjZs1c6TA7AlmmjvJN51Ckw9czrjhtARZuao6jYUTkzVGycNj8VahvxH2cv4s9Y12R6-yxN4YfAhgfabHi2lq7IDhGuDz1fMQKwdSfXpwuIGzp9IPd4HLI3MiagtnCUFSkEUV4b6Bhv0JdbDGfWQAXMBz3FEi6-u7LPAVtQyUgVzLpfy16xLsYWLrBVy5XHiG1CbelvsRfcu0ILdUPg3vhlsvyetj2RC6mZjXgr5b9KM0L-YtI5XvhFDUZsHpscdo9yt0_jlWCoffMJ4bU9p7TEvrZwd3ZecQB5kbAo-D3eMx60uoHhK7V1Y5n3Y1jXDqTG6_hVx3mGR7enjRS7bGxHxiqrg==",
+          "summary": []
+        },
+        {
+          "id": "msg_0cccadf89d219231016af728b6064c81939e05ac8c1bfb6242",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"1\",\"summary\":\"Total s'mores = 9*2 + 6*1 = 24. Each sleeve makes 8 s'mores, so need 24/8 = 3 sleeves. With 3 sleeves per box, boxes needed = 3/3 = 1.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 420,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 169,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 589
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"1\",\"summary\":\"Total s'mores = 9*2 + 6*1 = 24. Each sleeve makes 8 s'mores, so need 24/8 = 3 sleeves. With 3 sleeves per box, boxes needed = 3/3 = 1.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 420,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 169,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 589
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:731|full|adjudication:0",
+    "attempt_id": "2a3d9bdb213442b08f0a4c446b765103",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000443,
+    "latency_seconds": 2.563822459998846,
+    "started_at": "2026-11-13T15:11:48.292674+00:00",
+    "finished_at": "2026-11-13T15:11:50.856516+00:00"
+  }
+}

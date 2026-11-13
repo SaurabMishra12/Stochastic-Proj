@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a73d4385542992d56e7e3b1",
+  "source_index": 6311,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "nelson mandela",
+  "final_answer": "nelson mandela",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 9172,
+  "output_tokens": 905,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004103,
+  "latency_seconds": 23.948116220000884,
+  "wall_seconds": 236.3495778079996,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 786,
+    "utf8_bytes": 786,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "nelson mandela",
+          "summary": "The context states that Yves Apollinaire Pede made sand paintings of well-known personalities, explicitly naming Nelson Mandela as one of them.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"nelson mandela\",\"missing_response\":false,\"sender\":0,\"summary\":\"The context states that Yves Apollinaire Pede made sand paintings of well-known personalities, explicitly naming Nelson Mandela as one of them.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "nelson mandela",
+          "summary": "Paragraph [1] states that Yves Apollinaire Pede made sand paintings of well-known personalities such as Nelson Mandela, who is a South African anti-apartheid revolutionary and former president.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"nelson mandela\",\"missing_response\":false,\"sender\":1,\"summary\":\"Paragraph [1] states that Yves Apollinaire Pede made sand paintings of well-known personalities such as Nelson Mandela, who is a South African anti-apartheid revolutionary and former president.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "nelson mandela",
+          "summary": "The provided context (paragraph [1]) states that Yves Apollinaire Pede made sand paintings of well-known personalities such as Nelson Mandela, identifying Mandela as the South African anti-apartheid revolutionary depicted.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"nelson mandela\",\"missing_response\":false,\"sender\":2,\"summary\":\"The provided context (paragraph [1]) states that Yves Apollinaire Pede made sand paintings of well-known personalities such as Nelson Mandela, identifying Mandela as the South African anti-apartheid revolutionary depicted.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "nelson mandela",
+    "nelson mandela",
+    "nelson mandela"
+  ],
+  "refined_answers": [
+    "nelson mandela",
+    "nelson mandela",
+    "nelson mandela"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "c549b502f8fe3ab162782e11a6e694c3bb417d179691f39c37819be13fa2dbda",
+  "errors": []
+}

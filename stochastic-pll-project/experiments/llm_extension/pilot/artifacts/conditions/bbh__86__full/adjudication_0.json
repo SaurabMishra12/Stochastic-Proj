@@ -1,0 +1,199 @@
+{
+  "payload_hash": "59089c4b3dc2847d2cc68005dbf00af7958bc49d1c190eb9c19c1b54625b5939",
+  "logical_id": "bbh:logical_deduction_three_objects:86|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0a6afb050059c404016af7139906e08190b27a7687839551ca",
+      "object": "response",
+      "created_at": 1794577305,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577306,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2611,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 410,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0a6afb050059c404016af71399cc108190aab3925456089909",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xOabMjyspQpuDbNcXEZBXzviTK_zrFYVW1S09Yvee-qKrQMXYO6jhCJlFA0krIGVHjlVdc-ExhnqDTzw5a48MPEARTFbaA8a6aZsI12t0P7UVe_wurEUF_qEMnd3ffJOaWfgfd3RZViHUTIPkhtMwwkJ6NgAWf3aqf3TMUdiN5IxJHRwYIT_DSBTn4SR3D4YPxPRUwnMJnARFgtdnhnH1VbsIqK2CxNl7TB2xLrhO0BJCaOR90vWET90zQUQ6qkk7ZYrHbZ8g17xTXapzQLpNpK0YY_96UTHe9v8XHoOz2LiKo1NqrrGfWNgMgnRDhlSeYq27yhkj2t3S3ugAwMGRmXqYS66NbGYL1q9ZNftzE6w9ajC1Q_TCvVuEJ3qdFV3xAW2pFvIQgpgOdJtbeOKIKprlCGA0KV3YAuc1LtF6yQSzoVZQnch32M9tgt0x5F8OZ-aRHfWz3lKBcLvqgauMdq8YrNR5QECF86wXRTpzvFdlWoBvrrv4BQpMTnSx4jFU4t24FA4yFlAZqxCCkXCvuEp_q5W1MOFoO2F2AJhRhorVAUxZUudNbQbqCjSfUUYNwrOgI98yiDWlg12PyQvd1x0mV1hb00SJQrWMqM8Q2LLZSt0jHK1Kk2oHxXDvohLDlXrFVY4dpCFX6QLOB1kUvRrya8WwCJsY5-JepWLQ1OqHJFZP_syZwsa8OlL47n4KElPWoFGPYylta7spY4wLfO1PBXNcCJPHCkauEEIEeo6Fkcx-iqs96avZuxkQFEZXu7yofHyzwJFS_f1jBPa1fseTfTjEh3t5IgpKDZHGlgGtLJbGlHkiuuEls24zoALjSlZaCtwIymuHFaAy1pC7bk0sWNQlPXclu-ID164Q1JGrEkvOLu6XpRlbVVgPXrZQy7tmqL2hVwvKDJnsSS7_SP4Ecd4OXMnZA6xsC6RZa3igjAM3moEKsUzCmEB-ngeOHUc9q932mooDPUboCZUusoIjunXHySgT_YOKv1imthwNQ7eyKu-i522wC5yQ2UivusQYstmG2lQQ4l0n10zsdNMcINdJjcRJ2CACHw9Hdi5TtWd8Ok3ylRCpt6C1I8j7vbDH-WnwUVZcgeyWSomo_Jx87sos4MrG9W09PM8amRPL9MC8Gnp3JoQbSpx47hFfmZPpGgf4FIIzIeTy3Zy4aytyP19jQKeSh4QrbZXMQie6X3-yeePhKtPWY6ZgQeKPUWgQ97C3c4O9KYKxQyakOgBM_gX2fZ9SONuaFaVD_V6O2m1H5UZH-4SXbZaNrIUL9-PvD39dTLrGuz9nNf0kagdbqQP8itIvTPd2Sx4cGT5RA30UJarZH7HVB-L7eBHwtmN-YptwfqcCdwzPb5Upbq95HUpi3Klc9d9C-VaFYEOFmOlrj9yaXPQld510lZsNdAdLZxJFJ7-7Lc9bdW9MJDODRtZoqu9muSJo3314lrQk7wcG8J_GOP7pAZcb37Pjs_nqtO2HS8mToWVZLhYh7saNuj9PxkcVfV-OPq855te7HIjQ-TtHqhzKVg1IOlL_iX6ePf_dbGgdZMEBj0woZeN02QHtG5VTfOtMs66jTPncPywTyLWZ42xmi3vgnJ8o8nneCNoi9HtNo6TTdZ0smE-fSjwgsLgc6kb6tj4ylpHV8dKrHL_WxW0UKahq1C-gYDXXRAqSGuWtnylodx1bmSJMwKVbYQJavCC89-rojQy8uQDloE7FtTrVrs2X3wOnm95gillWC4zOiKzFXDISg8AujK5fmOdv6wSDVP_GHsKxBoqHvbJJkac37nFHTbGKu0g8iPAuDUFpGrtG0D7Ed-GUkfLLybsJNJMBu2lxfDMIE6djd-eROebx5qNRMWfRhdu_qSrkaXZogveWjTEnC7zbH__ITXGkApIiIGTfRDifQ=",
+          "summary": []
+        },
+        {
+          "id": "msg_0a6afb050059c404016af7139a3c80819080f3ce7f1e63bd7d",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Left-to-right positions 1–3. Red is rightmost (position 3). Blue is to the right of green, so green must be left of blue. The only ordering satisfying both is green (1), blue (2), red (3); thus the blue book is second from the left.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 480,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 113,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 593
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Left-to-right positions 1–3. Red is rightmost (position 3). Blue is to the right of green, so green must be left of blue. The only ordering satisfying both is green (1), blue (2), red (3); thus the blue book is second from the left.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 480,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 113,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 593
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:86|full|adjudication:0",
+    "attempt_id": "aaae99f137a944159e65ada795949801",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000346,
+    "latency_seconds": 2.4316205850009283,
+    "started_at": "2026-11-13T13:41:44.397250+00:00",
+    "finished_at": "2026-11-13T13:41:46.828884+00:00"
+  }
+}

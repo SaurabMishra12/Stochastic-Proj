@@ -1,0 +1,199 @@
+{
+  "payload_hash": "3086f8a2e5df595d039f5682cafec45f1380e965bac2c125817f8fc18fec86b5",
+  "logical_id": "bbh:logical_deduction_three_objects:35|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_07b06ad00c74b6b9016af71484e208819494f47c491ab886ed",
+      "object": "response",
+      "created_at": 1794577540,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577542,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2382,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 437,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_07b06ad00c74b6b9016af71485b0788194856332da7c9eb8fa",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xSGGba3qnRqHEdeoFToJe7XXhrM0H_Q40LwdZvkSW9uMb8445r9jEV_sDrxH9lLjYGHqJn1Cq4VwXu8t0wLMnngO64jm32c9-BIVNNh3getHtsrmuiUyrqNSMVVl4e3O-wsBCMbYfukydTGL-d_0mY8B23RszOgE-1t-sE63q5TF5guRbBCY2eIEF9GQfvWJ7vQjKHXGvhDdVuiaU9h6XuC5VZ1ZTyM6xsdDEIoK6SWEx5Jnz9fiwDe14u_kEEVazsSzT473oAgWxRqCtgybB5aUZh0dZ-OD4IW3CmjZT12cLqzxt3ud1_UelttWxIzyh-CUerkkYBX31W7dnj-mrKsMYIBbkuXZvc6wTo95Ho8f6kf3xwqmiLAjY65QawWjQhs3PM_1SKya1Vc3TGnk-smddryp31Er1lCORnURMjIuA-_nq8f-mGyFBSPgpX91rdG3gnEzRkd4UnEC4jCSH78nt8Djt_XhgO50vL-kwJezC0818vGkruwRseEoaooG38GBgpc_ectNKTuIEhez-vvHKXLP6crR2M8WrQ_D8r3ig9DJ8zywi90uoEM-9ni9-J4ILeXbZCE16yWcuhEe4A6d6jO4DD21QTPVc5kLY_wb87ETTSJelf5v2PRvsytpn8I3IXwi5WGTYAYqFy8xWjzrp0whgq47I7FMTpdkJ40PRaJLvr7RilJuhvWTvXan9PDd2BCR9MmeNcVrcCu2tHCWmWLi7D8qRk8GgyYa9k2R2E332nB0AZ5Zrw_e16amt5heB-j2IsA3GgQMX2QFgthvgE2P4e4oi9wlhaChx5nVhQ54gdgQZdGozcgoVZbuAQmFG9HaelzA-L8ivcdQ2bfVdGG7MajoauNvSucaKr_B0DpvRhWVFisdFrJ2DDRDgpkGpN5ow2GU3LiRirJxJkO-oER7ktPyIyg2R1TQj9yey8gZVo7Kj3jt9BzYhYk2VUlzH6QCo-cTeDwkSvw1AVGY_cpdwSNV6877HieTvKM9J7caqXgpC4PaED9wEHaHOh7AFyQv-blBt3NTMHqURKqtDXY-G8x18-AJkbRmIePwo0VH4MGTQTsIlZ4cDhubfM0flesSGPioqezz8q8BKEWfvo0o_rcPaHKwUYvzk_tef2wB_cI5sOPdWbkzIcNEtflNwxLUQHMxCGc3rSDTKaHFojVSuCqNC3apDXhZ4vQNbhYWu1t9hP6P0UJhGO1lTAMSQ6xOX7HOyH3Wwa9DYXqXQOFpZTFdQVzrSQ3L150BEN81_nEvnd6OilGJqPtkXoRsqCnawKMFZG-FJQfvXZqFKoZ5GnUYaGZW5y5EFdtGQVnzxek9SeyL6y3bsYEZ-zTTXMYh2XQE6BxEGxdEallifpQ6cMaLQqWs87nGfQiDCzTNdk_13x4bTkf6W4CViCI_ytsSdaPsDOSymDNEACshoweNQmOKy7HM77YAj6u6yA3zlXxds8sRs_Aw-H-WeSX-py3mSaO6ugeh1OZ-qjpn24ukQIBOMTWFEs5JZ60Y1t0HHCYf5IgDQCgAON-0g8UxCC2DG77EDoiDfM_95o_bDk2abCU0yO_QCWNXgJR6cjtyMlM6fDgQ3L54AamxrWZetDz7VG24z7q6tnfZDKQA_ld5u4drkNxFh-dWpxESXudZ8ATgtntFpzy0aCTpMScRO8qkaDlcX_KI1RVCwjBPFRWdZiZO6JppeZ5teSrNJMz5-246pxXKN4u1Zu7LaVoEdDR3DtPPTaCCimC0aUoPMmDQ07y92TMWiTu87LOhRQd9FOwHCW3-7sMF2N2DMbyNCv_82wAQmvCEqCoH2Ny6JUCKHiTTL78MZuk4Lo7hcdbE69xsKDXGyjqJlq4whhIaS1m-1QHZ1GO6qZq3GDHUmxU9yK6VJGAIyqkAReR5N9melFDW6Nvs2jLUbDcXlMC0ra6LOS4JdoQu4sm5dmtqjPxtwHZcZYOZMgzBLWofi1IEeUQ4tugog8fKrSR7We-TjKWt9efJnuIUM7V66IvuWQJ6BETAcy2ZVywHTBXu4B7aWyhE4W3L80cch2TCpoUEWIXCBIteSxNWdvfW-D1_DK_3LUSoX1WyzMiHRdxv3XzdtBw00pJzndgAY7p823KsImHsK5GPp7F5JVi5Zho1g==",
+          "summary": []
+        },
+        {
+          "id": "msg_07b06ad00c74b6b9016af7148635d48194ad0b89253c865224",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"A\",\"summary\":\"Truck is older than bus, and bus is older than sedan, so age order from oldest to newest is truck → bus → sedan. The second-newest (middle) is the bus, so option A is correct.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 414,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 112,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 526
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"A\",\"summary\":\"Truck is older than bus, and bus is older than sedan, so age order from oldest to newest is truck → bus → sedan. The second-newest (middle) is the bus, so option A is correct.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 414,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 112,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 526
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:35|full|adjudication:0",
+    "attempt_id": "754c2efd94af4112bad17fde3985af15",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0003275,
+    "latency_seconds": 2.636981737001406,
+    "started_at": "2026-11-13T13:45:40.149630+00:00",
+    "finished_at": "2026-11-13T13:45:42.786628+00:00"
+  }
+}

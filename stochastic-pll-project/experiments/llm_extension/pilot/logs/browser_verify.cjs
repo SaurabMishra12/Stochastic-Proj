@@ -1,0 +1,75 @@
+const fs = require('fs');
+const path = require('path');
+const crypto = require('crypto');
+const {chromium} = require('/home/saurab/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root = path.resolve(__dirname, '../../../..');
+const output = path.join(__dirname, 'browser_verification.json');
+const checks = {};
+const ok = (name, value, detail) => {
+  checks[name] = {passed: Boolean(value), detail};
+  if (!value) throw Error(name + ' failed: ' + JSON.stringify(detail));
+};
+(async () => {
+  const browser = await chromium.launch({headless: true, executablePath: '/opt/google/chrome/chrome', args: ['--no-sandbox', '--disable-dev-shm-usage']});
+  const context = await browser.newContext({offline: true, acceptDownloads: true, viewport: {width: 1440, height: 1000}});
+  const page = await context.newPage();
+  const external = [], errors = [];
+  page.on('request', r => { if (/^https?:/.test(r.url())) external.push(r.url()); });
+  page.on('pageerror', e => errors.push(e.message));
+  await page.goto('file://' + root + '/report/llm_mas_pilot_report.html', {waitUntil: 'load'});
+  ok('all_150_questions_present', await page.locator('details[data-mas-dataset]').count() === 150);
+  ok('all_three_dataset_figures', await page.locator('figure svg').count() === 3);
+  ok('desktop_no_page_overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+  await page.screenshot({path: __dirname + '/pilot_desktop.png'});
+  for (const dataset of ['gsm8k', 'hotpotqa', 'bbh']) {
+    await page.locator('#mas-dataset').selectOption(dataset);
+    ok('filter_' + dataset, await page.locator('details[data-mas-dataset]:visible').count() === 50);
+    ok('filter_' + dataset + '_figures', await page.locator('figure:visible').count() === 1);
+  }
+  await page.locator('#mas-dataset').selectOption('all');
+  ok('filter_all_restores', await page.locator('details[data-mas-dataset]:visible').count() === 150);
+  for (const [method, count] of [['independent',0],['full',6],['fixed_sparse',3]]) {
+    const item = await page.evaluate(method => JSON.parse(document.getElementById('mas-replay-data').textContent).find(r=>r.methods[method])?.item_id, method);
+    await page.locator('#mas-replay-item').selectOption(item);
+    await page.locator('#mas-replay-method').selectOption(method);
+    ok('recorded_network_' + method, await page.locator('#mas-network [data-peer-edge]').count() === count);
+  }
+  const stochasticItem = await page.evaluate(() => JSON.parse(document.getElementById('mas-replay-data').textContent).find(r=>r.methods.stochastic_controller)?.item_id);
+  await page.locator('#mas-replay-item').selectOption(stochasticItem);
+  await page.locator('#mas-replay-method').selectOption('stochastic_controller');
+  ok('stochastic_network_replays_three_real_substeps', JSON.parse(await page.locator('#mas-replay-states').textContent()).length === 3);
+  const summary = page.locator('details[data-mas-dataset] summary').first();
+  await summary.focus();
+  await page.keyboard.press('Enter');
+  ok('question_keyboard_expand', await page.locator('details[data-mas-dataset][open]').count() === 1);
+  ok('question_contains_model_input', await page.locator('details[data-mas-dataset][open] pre').innerText().then(t => t.length > 40));
+  await page.keyboard.press('Enter');
+  ok('question_keyboard_collapse', await page.locator('details[data-mas-dataset][open]').count() === 0);
+  await page.locator('#mas-theme').focus();
+  await page.keyboard.press('Enter');
+  ok('dark_theme_keyboard', await page.locator('#mas-theme').getAttribute('aria-pressed') === 'true');
+  ok('dark_theme_state', await page.locator('#llm-pilot').getAttribute('data-mas-theme') === 'dark');
+  await page.screenshot({path: __dirname + '/pilot_dark.png'});
+  await page.locator('#mas-theme').click();
+  ok('light_theme_restored', await page.locator('#mas-theme').getAttribute('aria-pressed') === 'false');
+  const [download] = await Promise.all([page.waitForEvent('download'), page.locator('#mas-evidence').click()]);
+  const actual = fs.readFileSync(await download.path());
+  const expected = fs.readFileSync(root + '/experiments/llm_extension/pilot/analysis/pilot_raw_evidence.zip');
+  ok('embedded_evidence_download_identical', actual.equals(expected), {bytes: actual.length, sha256: crypto.createHash('sha256').update(actual).digest('hex')});
+  await page.setViewportSize({width: 390, height: 844});
+  await page.evaluate(() => scrollTo(0,0));
+  ok('mobile_no_page_overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+  await page.screenshot({path: __dirname + '/pilot_mobile.png'});
+  await page.locator('#mas-dataset').selectOption('hotpotqa');
+  await page.locator('details[data-mas-dataset="hotpotqa"] summary').first().click();
+  ok('mobile_long_question_no_page_overflow', await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+  const staticContext = await browser.newContext({offline:true, javaScriptEnabled:false});
+  const staticPage = await staticContext.newPage();
+  await staticPage.goto('file://' + root + '/report/llm_mas_pilot_report.html');
+  ok('readable_without_javascript', await staticPage.locator('table').count() > 150 && await staticPage.locator('h2').isVisible());
+  ok('zero_external_runtime_requests', external.length === 0, external);
+  ok('zero_javascript_errors', errors.length === 0, errors);
+  await browser.close();
+  fs.writeFileSync(output, JSON.stringify({passed:true, browser:'Chrome/Playwright; offline direct file URL; desktop1440/mobile390', checks}, null, 2));
+  console.log(JSON.stringify({passed:true, checks:Object.keys(checks).length}));
+})().catch(e => { fs.writeFileSync(output, JSON.stringify({passed:false,error:String(e),checks},null,2)); console.error(e); process.exit(1); });

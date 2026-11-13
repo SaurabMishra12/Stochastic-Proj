@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:579",
+  "source_index": 579,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "7",
+  "final_answer": "7",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1488,
+  "output_tokens": 769,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0019099999999999998,
+  "latency_seconds": 23.676275440998324,
+  "wall_seconds": 133.54709094600003,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 375,
+    "utf8_bytes": 379,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "7",
+          "summary": "Brother has 5 - 3 = 2 cards. Together: 5 + 2 = 7 cards.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"7\",\"missing_response\":false,\"sender\":0,\"summary\":\"Brother has 5 - 3 = 2 cards. Together: 5 + 2 = 7 cards.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "7",
+          "summary": "Brother has 5 - 3 = 2 cards. Together: 5 + 2 = 7 cards.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"7\",\"missing_response\":false,\"sender\":1,\"summary\":\"Brother has 5 - 3 = 2 cards. Together: 5 + 2 = 7 cards.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "7",
+          "summary": "Boy has 5 cards; brother has 3 fewer → 5 − 3 = 2. Together: 5 + 2 = 7 cards.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"7\",\"missing_response\":false,\"sender\":2,\"summary\":\"Boy has 5 cards; brother has 3 fewer → 5 − 3 = 2. Together: 5 + 2 = 7 cards.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "7",
+    "7",
+    "7"
+  ],
+  "refined_answers": [
+    "7",
+    "7",
+    "7"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "dbf619308e036cfc7bef19c39e9d027465c90c7fae9b9fa1d8647a5342b8e38c",
+  "errors": []
+}

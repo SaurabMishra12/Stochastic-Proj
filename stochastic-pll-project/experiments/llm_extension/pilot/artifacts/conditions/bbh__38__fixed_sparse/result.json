@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:38",
+  "source_index": 38,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2244,
+  "output_tokens": 1058,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002677,
+  "latency_seconds": 24.455079304999344,
+  "wall_seconds": 184.6768582299992,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 800,
+    "utf8_bytes": 802,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Positions left-to-right: hawk, raven, crow. Since the crow is rightmost (3rd) and the raven is to the right of the hawk, the only consistent ordering is hawk (1st), raven (2nd), crow (3rd). Thus the raven is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Positions left-to-right: hawk, raven, crow. Since the crow is rightmost (3rd) and the raven is to the right of the hawk, the only consistent ordering is hawk (1st), raven (2nd), crow (3rd). Thus the raven is second from the left.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Positions L-M-R: crow is rightmost (R). Raven must be to the right of hawk but cannot be rightmost, so raven is middle and hawk is left. Thus the raven is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Positions L-M-R: crow is rightmost (R). Raven must be to the right of hawk but cannot be rightmost, so raven is middle and hawk is left. Thus the raven is second from the left.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Positions left-to-right: 1,2,3. Crow is rightmost → crow = 3. Raven is right of hawk, so hawk must be left of raven. Remaining positions 1 and 2: hawk = 1, raven = 2. Thus the raven is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Positions left-to-right: 1,2,3. Crow is rightmost → crow = 3. Raven is right of hawk, so hawk must be left of raven. Remaining positions 1 and 2: hawk = 1, raven = 2. Thus the raven is second from the left.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "d46175a96b2e9f507b3e5bae307ad742a333ab5b6bbcc2680cfd3aa7b5dd49a4",
+  "errors": []
+}

@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:160",
+  "source_index": 160,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2050,
+  "output_tokens": 1156,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0028244999999999998,
+  "latency_seconds": 26.585430790000828,
+  "wall_seconds": 236.31631275499967,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 591,
+    "utf8_bytes": 591,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "The paragraph explicitly states 'The oranges are the second-most expensive.' That, together with 'The pears are more expensive than the watermelons,' is consistent (pears most expensive, oranges second, watermelons least). Therefore option A is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"The paragraph explicitly states 'The oranges are the second-most expensive.' That, together with 'The pears are more expensive than the watermelons,' is consistent (pears most expensive, oranges second, watermelons least). Therefore option A is correct.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "The paragraph explicitly states 'The oranges are the second-most expensive.' With pears being more expensive than watermelons, pears are the most expensive and watermelons the least, so oranges are indeed second.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"The paragraph explicitly states 'The oranges are the second-most expensive.' With pears being more expensive than watermelons, pears are the most expensive and watermelons the least, so oranges are indeed second.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 17931092350552255334763952304481918034,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -1.4131845726850147,
+        "proposed_state": -0.15641087013637467,
+        "state": -0.15641087013637467,
+        "probability": 0.20179249208881564
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.15641087013637467,
+        "target": 0.0,
+        "drift": 0.1876930441636496,
+        "gaussian_draw": 0.9120178483472111,
+        "proposed_state": -0.036699687357397065,
+        "state": -0.036699687357397065,
+        "probability": 0.21765922801954535
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.036699687357397065,
+        "target": 0.0,
+        "drift": 0.044039624828876474,
+        "gaussian_draw": -1.0245468888698372,
+        "proposed_state": -0.145692285720893,
+        "state": -0.145692285720893,
+        "probability": 0.20317719790467803
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.20179249208881564
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.20179249208881564
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.21765922801954535
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.21765922801954535
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20317719790467803
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20317719790467803
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5973511516109746
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.491421310759906
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.04147748134405016
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7652548940221146
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.1133977852986423
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.9083051737420467
+      }
+    ]
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "73aab815b11b7bf9122f6e8d11f74be66bd96e49a43c8ad4147b1321786abcdf",
+  "errors": []
+}

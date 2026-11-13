@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:182",
+  "source_index": 182,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1695,
+  "output_tokens": 723,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0018697499999999999,
+  "latency_seconds": 17.467856548999407,
+  "wall_seconds": 174.32805405100044,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 177,
+    "utf8_bytes": 177,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "If Mel was first and Dan was second, the only remaining golfer, Ana, must be third (last). Thus Ana finished last.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"If Mel was first and Dan was second, the only remaining golfer, Ana, must be third (last). Thus Ana finished last.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 114557246667590211228271658684021145758,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.9468039923536216,
+        "proposed_state": 0.21547171708112645,
+        "state": 0.21547171708112645,
+        "probability": 0.25395617614247945
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.21547171708112645,
+        "target": 0.0,
+        "drift": -0.2585660604973517,
+        "gaussian_draw": 0.6930274450816466,
+        "proposed_state": 0.2663191932926754,
+        "state": 0.2663191932926754,
+        "probability": 0.2617399567326135
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.2663191932926754,
+        "target": 0.0,
+        "drift": -0.31958303195121046,
+        "gaussian_draw": 1.716726076932567,
+        "proposed_state": 0.4243676483574869,
+        "state": 0.4243676483574869,
+        "probability": 0.28689632943908894
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.25395617614247945
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.25395617614247945
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2617399567326135
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2617399567326135
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.28689632943908894
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.28689632943908894
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8690899418810213
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7282642403152477
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.12461936026213172
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7693161225045655
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.7138648201634314
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.3435414492070431
+      }
+    ]
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "f9f66933f4db30c3eebc643d3e4d66bf7bbf813f275a6be1cc61b7cb7b79fda6",
+  "errors": []
+}

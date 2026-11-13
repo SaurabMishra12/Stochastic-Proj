@@ -1,0 +1,199 @@
+{
+  "payload_hash": "8056a52b4e73dd3b201d38352d521f488db08b0560a81b1a3d7a3a4af83e7180",
+  "logical_id": "hotpotqa:distractor_validation:5add97c15542997545bbbd80|disagreement_triggered|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_0dd4b022d6547cbd016af72bf8244081939d737c4da7d1746a",
+      "object": "response",
+      "created_at": 1794583544,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583546,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 5082,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 508,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0dd4b022d6547cbd016af72bf8e26481938394324ff984edab",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yv6H1UEYQxF6Oj1cIvpDYsMLis1ItN_uuW8PuLTiCQ0BiFBWHlF3Mfs1ca7gbHf8nL5eiSLPwJepSCpWu4iGEz6JBOI8P9fP-ErsqqeaeO-FamcZ2tkGQjuXqxCGAqJmD7PhDZnuxRftVtClPvlUoVJfSWFzsffKNHrtFAClMbTlbut4iT_Igi2-PYdWjM5SO8caXzE_As1ohX_zh2kI-jWmBlXUa-fUglYyMthXszdlKPCEmvVHUfe9vr7XgzyEPbeNoLpp5zn9iAhzReXd_D8mkvvID9O02z-0UbLf5I4aIa9E0ze4BvhmLyM2tUFZ4CEowTiozhilkKOmzwndTzswdQFh0XYbF--jqNhFfwBdboGfxPr2SH6XV5_dFtrk0ozBIiXFFX-sd26314CQipNxM42G-orefbdkV2LVTCMNR27JeIgKKzgk0JA4qHTmsnrsVWqpz6nnhqQNk3wk9FNWn6fYd7JAizaLQnzVgI1vxAil72aH7s3WfMu0sdCKPPJL_Bmqr1aEII9QG9B98mavk3BH80kv0p8UEl4dk5qySeSSYdiK59qylCX1n-ZInDTCPuVE3EJYfWFDxDxAFY-R6g4pENJBnKuLxBZho5_xBz0b4QBAqd_eV5YF9yE1Iie2ljzEacD9pOuE2AxQLADMzFolODXfMGBWwnxKQOGnTQ5N3mToEu7LJYHfVSFP2TfS8xkC5nBdZWSvx9e6PUQPJUc6g3rtA7t_oZ-lb78I3DXNmegB6VITHEF-iFPXeyUGbI1Je0zAItKIYZMLy3oxQk32dDu4GSqZFGLSxnUCAlb_x4nnbC3Bp7-YOf-LJi98Sgul8F_E6JYK5jY62qtN5OuIc6XJ_jKhuzhlBX9mz7sgJMZIn1PBChvE1rRGE-yNZyqEHZM5EjNpGfOSSynGjI1e5iZ1AgVkYzRmr3-SdrIrCtUt5MgWv7yWrkfa6P0MLUAiFLh_ayIW98kV1kLJPsIIhLkuP6EckeCOKHGadWg_W1aKC87Ai3lZtZgqfetZtRm_oa_2b1WWzG5A2v0vmrn_1I6Jtu4chmR4q8o4ZCzSsZIk-AKRXdd6qxmPCaf4xeVXMUPXo0HiKjygqFAREi2mA-IorLGSuX7RFFwvhXr5gZWAmV22ICAgOuOmiCHGO5c6UUVFpueA39ED8rnRrajwv9qlHAnbEWx4PbUK_Pl7bBonKRctQXQM-yExamyJPCVfmml1nAxXx3o1Snwqh988bfKRS3axyuw0KM3CFH1UF0V6GfrIKhN8K5qMi1ZCmFl0Ri1X80E1Z9KMkwWidGIWgYAGPjfDULzGL7lgJx65C7xVtGpPPHzQtv2iQqhd5XVG5PGUqQjeo9dT0IePGlrEFFaAGl0DWpmzmWYWOF54U945jGNggw1PBxxj8UcnLSTaLbQhRjcwqgT_RRTgGDgJ6ootnqr4yZ7tNHDXJJbj6pIPoSyE4-AsHgDCSYobXL5UC74AduBRSOijhVDNKmGKaoEC3U2NBZmhSajBdkqIPb3eTXHYmTrzBARK1wCDtpxnLpjvTQYLmNUq5sgUBJgYTH7sfIFMm-6lutLv6Nw2PgCvL17sXywvaVsryRgFl8o6u2REaed6NCl8XSp0U8m9sZJ7jSc4XVUzPYlHAuBcxNFhkaHoQDiBD3wCNUT8iwxblIOsYe-3uUxHswDyXOyv3U5jhas0gXhHY8mJWZQqyr1trmTJKLUuGUjbIfwXZiHD9z-PPMOFaXplsN60F7szvd-sBNAgHyjtxP9EXmSrchJnllv-NKYK_3hURkb5Q3foSF0UGvbhaM9A_7Uqsa8Wm5zJE_TgXk9zaGZMu6qhYFSPKPLrBi7J8kfccSzqbUZ7jueNtov0CIOxCyMK32bREj4R8x4gIZ_L9Nwh5EdkUdS9Ds-i8Xy8zbZnPlHi_zSvdqeWx3qKWrhPFP-MzRqzOaKylpjnUKahurDT4vJMnu3o0wwMOzpcrYU96zLzlKVZUj9kVFoS2W0eoXB7YBz6d12r_cQAFuCdRgq3X1SiPCzk001e-M1roGrEOi7ae1B4Sk4PDVCSZme46cDAeE8ANQfRGh1KnHyCzBZ0qF7qpQN8oijiW7ns35wZ2rL3V6GpdydUSOyHfZI4IIwODosE-OcCW8jGwIXbAv8U7SIVlOS5bSXDrriluTYd62d",
+          "summary": []
+        },
+        {
+          "id": "msg_0dd4b022d6547cbd016af72bf976d88193a0c2e8b621e7002b",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Tennis\",\"summary\":\"Both Virginia Ruzici and Andy Murray are professional tennis players. Ruzici is a former Romanian player who won the 1978 French Open, and Andy Murray is a British professional with multiple Grand Slam and Olympic titles.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1126,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 119,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1245
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Tennis\",\"summary\":\"Both Virginia Ruzici and Andy Murray are professional tennis players. Ruzici is a former Romanian player who won the 1978 French Open, and Andy Murray is a British professional with multiple Grand Slam and Olympic titles.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1126,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 119,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1245
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5add97c15542997545bbbd80|disagreement_triggered|refinement:2",
+    "attempt_id": "b378e38e93e94b6785326d2a1a6ddf9d",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0005195,
+    "latency_seconds": 3.04280027599998,
+    "started_at": "2026-11-13T15:25:43.507260+00:00",
+    "finished_at": "2026-11-13T15:25:46.550063+00:00"
+  }
+}

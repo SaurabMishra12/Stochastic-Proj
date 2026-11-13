@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:96",
+  "source_index": 96,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "3",
+  "final_answer": "3",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1548,
+  "output_tokens": 843,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0020729999999999998,
+  "latency_seconds": 18.105405675003567,
+  "wall_seconds": 176.1815241150034,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 330,
+    "utf8_bytes": 336,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "3",
+          "summary": "James slept (2/3)×9 = 6 hours. The difference is 9 − 6 = 3 hours, so Harry slept 3 more hours than James.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3\",\"missing_response\":false,\"sender\":0,\"summary\":\"James slept (2/3)×9 = 6 hours. The difference is 9 − 6 = 3 hours, so Harry slept 3 more hours than James.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "3",
+          "summary": "James slept (2/3)×9 = 6 hours. Difference: 9 − 6 = 3 hours, so Harry slept 3 more hours than James.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3\",\"missing_response\":false,\"sender\":1,\"summary\":\"James slept (2/3)×9 = 6 hours. Difference: 9 − 6 = 3 hours, so Harry slept 3 more hours than James.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 282072635769540297326096971532488395916,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.0425800027654368,
+        "proposed_state": 0.11539246080891997,
+        "state": 0.11539246080891997,
+        "probability": 0.23908799954590762
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.11539246080891997,
+        "target": 0.0,
+        "drift": -0.13847095297070397,
+        "gaussian_draw": 1.1075824599776023,
+        "proposed_state": 0.2241322799612024,
+        "state": 0.2241322799612024,
+        "probability": 0.2552710935026772
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.2241322799612024,
+        "target": 0.0,
+        "drift": -0.2689587359534429,
+        "gaussian_draw": 0.40945101821623275,
+        "proposed_state": 0.24255432964020174,
+        "state": 0.24255432964020174,
+        "probability": 0.25808292382554426
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23908799954590762
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23908799954590762
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2552710935026772
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2552710935026772
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.25808292382554426
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.25808292382554426
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.9262416980339173
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.1140431332335271
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.040676949989961075
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.6239162977663888
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5161009564196908
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.2905609939954915
+      }
+    ]
+  },
+  "initial_answers": [
+    "3",
+    "3",
+    "3"
+  ],
+  "refined_answers": [
+    "3",
+    "3",
+    "3"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "eb7a700f8728caa0cab03d9166780a3615ba772b17e0390abc7c4ed219cdd1c3",
+  "errors": []
+}

@@ -1,0 +1,199 @@
+{
+  "payload_hash": "9b3f9d86260fb60de25e10f6ca43e68548f2d412ccebe487b8f6c87184eaf78c",
+  "logical_id": "gsm8k:official_test:563|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_00a50aed3a3c6a0c016af727832cd08193849ba2b20d61748f",
+      "object": "response",
+      "created_at": 1794582403,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794582407,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1920,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 559,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_00a50aed3a3c6a0c016af7278381f481938c676c32d7c7f469",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yeH0zcAXh4-n_6ZsN-XXogZ4k58aR-pjbBd8mVGZQGXInD7cYCUDs9gZ83avHb0vVphXK6G6j_qS5TW15FZU27npOAKpEhI-V4gEesxOmtip1HMAZ2PSYNcOInCpDfMqd_HBx1A5xmO5CfQu95LbPhQNXMNu7K6WGwV4C8f6Dsklzd5QwuLlb-O8XL-IHG53Et9h5w8Xu-l9mD2JKVzp5SZ8zuc9fghCo4nnPRXXE6VOARBSIYIvzRvVKMd4ZYNvXkcQV9uP7NFxazklIXBMH68k0HVqobRLL6sJpFu8hTAzsrDpP4nvE0w2RSMA_WdqTNtDZdEHXPpo4g7isxv-sEm13yLwgPs8ZMXpEjAt1Gliu8xFOpFMyPqPgqp_8jStEqJrmPOaZRzMDCKmMIODM3NeuV9mV0DRuXCVLefBWAdeGOjF4ZFmesIX9tz2ib0FNo9paCZCSTYF2gESCychu0sJmXF_yYphjhByBZ4rgKBDvSlCbEy5j-5jNhQSVp48yps0R0tFSCaZPGpRCtbkHjwmQ9fr8q4XvzWD2sRX62N0eCWs9wauA7IBEu5wee7YVs9s8HISdTrImt5etYwUzamuonbWtrSkZF97jbY2IDYPy7SCrN_syrEnc6DPCMAFyyOynWItOCNoChGbxmXVdZTr1gvCu6E1l8_Wug0HnMKg5UrYX-1_YwKNKOdqchV2a1rkWGUKW5GtCQ8qe1nKbc9UxeKY2u741Ik9DtfK2iipvIp6hYN34_X7oCb0aAjVPMpQ1rf4WDTNagwXB7I3Jo4CxeQh43BueM3qH2_odmmSmprdQ7vedvlRlVSsOT4-70nhlVCCWTDO9VrMiFsN7DGNqH_g0AnO-40vBZbciOs9bvjJuD_cpa3cSnVK2sqRKeN4VITPfmxQYOzJN0JC2_VwV6npoAc-f45_x2SZejS__v_5pbkVkxkH6j5UyXctlIQlh7cMok1bBCWvhyAIcmmsUuM8ehD8JhSl8GOWD0cOjE0DdMTYhsWzn83DA_wHL829lHF9giDIt5XVYB0EC7a71VJG-zpzpCHv3rRng2YC8uq8cQ8r1nwjnCLHlKww8hbH7DS-_TSmFc2DbO4pTMBvP4bkvaQf1-GnYMwaBEKRdh0QiJi08nb05Hvk2Pe6WigA1Xd_yHwKNLGlsPc5C6oArk5kYjzbA_ecUXZNBE-l6GWp7AgliW8S2KX8k2F7_rfjZR7gFDQNArD-Ss_NqGYyGYPStlgzlitnWWK26gQo4NV9eaVbFRZgxUU2FecPd2O8oP3gxYIdVcj-VDdj-fxRRXl74YmmDSM3_xL1H_fnmAG3fODxRtQ0I3NigIQgwT7sxDaGiHBGiMCHt0YBw-6TWDODtuKYe5Evuq3Oa-PaTnlATid9ePWLnOkhO8hzZXyQUIF4D5Kwfo71w9nclm_bvZoSlUcxeLHAvvc_bfC0Qy59imJvCmjH_sh-WWQv-OL1XE_oRemi6wTzxAM-nDsgxAspKud9vD14608z5gGO1XxoOYYlCMV2VKFxiNAyGItLAr2J09QAGg1W6ioSA4yz7lHVVE8mz6nLXbawMggbB-5QvbuBvziF7PNuQICl_ljwFNxtmF8Qd3AzroJMm--J3FuVZADLUnCZ994qqRZhMeUO5w5vhyKSEy7NjyHf1lk66rSUBuZ4CVxt2Q-foSmF1KmjEgWNI10Pzd5LrTUkhAqj-oyoXX3IWwoCFM79aTt_kVDqFKkFKT6pucqEL-9B2g-ivSfWJpadcPUxnRmju8-TovbiQEXA5i6oqqFuCM5hiFytKXlbXh2rc8QtJ4WMXOk_zDAdX3AABww1UAjKnn5XP7opnOa4mdgoB6SEzsJpbcN4Gjl1rLRPMIxF3RXsAdfzflIzswZe2AT9mqBO04NYCAC236UXoQFe8zizXDC49rGPRk9Tc5AMo5ZxvRA3fslqnfo3MLjUI_oWnMRd056J4CrMVBzcS5mZfdZ8pQ2X-BujVYhP2TYmM59mNvgiR3_GcmHvTRmoW7h8ZPzd9QvAkmIydDq6AxPKqE-2xsuoCFEWBGx5cNlnalVduFpLWhzSwawwhoLO3RedXHrI5dyNvadBybXI2ujmUgWn4E-bbIHzt5b-Toy8515aM7nZfKihwf3pg6dmiPxMOoYz2krLNZibW2GsCLLr0hu89rUDfJQRG_-Oooq80QfHOBcny6UguBRakFaKrSAlBSCHw2C_MMFEnaqrDHgY_VOEmDEAPQ_ZnO3SyUV2WB9upPnaSOOPjTWFD_HpwPwG1MSSW8-UcNzKKh2FVUy9Ak134JOst9TFYv6uoEn62en4-wTDavRpb0_smZkEEbQjcE4bEJWpnoeQD3ky9hNGHcgYHHItzaR28v7TPvG9W_rSUUZsFfxaTRltSUWLAzvLbKfJ_0hLAUiTcE-JoLZuNP76uW7inMNSxsc3p_iAxKrcf7A21enxqxwrMjNxbkTWXhHpBsEvh5QjR1m6wcT3xxDT3wA7GuW0minTjzmCT6RKPwULINrGJAm6_iUyvvcizF89KZu_NaOxcNX4aYUZzI_XTRmOB6lKY6fOClrO0sugiq6WOmKzDU0it_eY7ZtQprj6j4M28u4y-u82_CeF1tqZCb0UIQQEv6OnEjsWZLxO_kP6A==",
+          "summary": []
+        },
+        {
+          "id": "msg_00a50aed3a3c6a0c016af727865ad481939f87b75a243b5d00",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"12\",\"summary\":\"Older son is 12, younger is 12−4=8, so need 12+8=20 candles. Packs of 5 → 20/5=4 packs. At $3 per pack total cost = 4×3 = 12.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 381,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 171,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 552
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"12\",\"summary\":\"Older son is 12, younger is 12−4=8, so need 12+8=20 candles. Packs of 5 → 20/5=4 packs. At $3 per pack total cost = 4×3 = 12.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 381,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 171,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 552
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:563|full|adjudication:0",
+    "attempt_id": "527094d52ea34c559a4a0a8f9423d333",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00043725,
+    "latency_seconds": 4.711670709000828,
+    "started_at": "2026-11-13T15:06:42.588314+00:00",
+    "finished_at": "2026-11-13T15:06:47.299916+00:00"
+  }
+}

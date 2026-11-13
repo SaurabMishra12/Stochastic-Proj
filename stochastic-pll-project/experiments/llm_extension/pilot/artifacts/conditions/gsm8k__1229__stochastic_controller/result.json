@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1229",
+  "source_index": 1229,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "36",
+  "final_answer": "36",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1650,
+  "output_tokens": 1113,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026385000000000002,
+  "latency_seconds": 20.924914256000193,
+  "wall_seconds": 234.22544721699887,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 186,
+    "utf8_bytes": 188,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "36",
+          "summary": "Start at 40. After an 80% increase: 40 × 1.80 = 72. After a 50% decrease: 72 × 0.50 = 36. Thus the price in January is 36.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"36\",\"missing_response\":false,\"sender\":0,\"summary\":\"Start at 40. After an 80% increase: 40 × 1.80 = 72. After a 50% decrease: 72 × 0.50 = 36. Thus the price in January is 36.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ]
+    ],
+    "controller_seed": 52226546691210260874492872702849632841,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -1.151053274923528,
+        "proposed_state": -0.12739825199340135,
+        "state": -0.12739825199340135,
+        "probability": 0.20555688092498545
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.12739825199340135,
+        "target": 0.0,
+        "drift": 0.15287790239208163,
+        "gaussian_draw": 1.34815522732894,
+        "proposed_state": 0.03710297876956038,
+        "state": 0.03710297876956038,
+        "probability": 0.22788056071370716
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.03710297876956038,
+        "target": 0.0,
+        "drift": -0.044523574523472456,
+        "gaussian_draw": 1.7074292133584852,
+        "proposed_state": 0.2216284053374974,
+        "state": 0.2216284053374974,
+        "probability": 0.25489047541368914
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.20555688092498545
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.20555688092498545
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22788056071370716
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22788056071370716
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.25489047541368914
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.25489047541368914
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.40891225761376393
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.004104313388699654
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.8130252801857537
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.9808170123834045
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.6730682271060676
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7098677762313319
+      }
+    ]
+  },
+  "initial_answers": [
+    "36",
+    "36",
+    "36"
+  ],
+  "refined_answers": [
+    "36",
+    "36",
+    "36"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "073f2a389fd19daa626b2d289dfe32dceb5005c019474ffbf497bcdf763a2a64",
+  "errors": []
+}

@@ -1,0 +1,235 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a7746cf5542994aec3b7263",
+  "source_index": 4534,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "community of st mary virgin csmv",
+  "final_answer": "community of st mary virgin",
+  "correct": false,
+  "f1": 0.9090909090909091,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 14777,
+  "output_tokens": 1267,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.006228250000000001,
+  "latency_seconds": 24.43975776899788,
+  "wall_seconds": 236.63341707399923,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 1413,
+    "utf8_bytes": 1419,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "sisters of community of st mary virgin community of st mary virgin",
+          "summary": "William John Butler founded the Community of St Mary the Virgin (CSMV) in Wantage. St. Mary’s School, Pune was run from 1866 to 1977 by the Sisters of the Community of St Mary the Virgin, the Anglican religious order Butler established.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"sisters of community of st mary virgin community of st mary virgin\",\"missing_response\":false,\"sender\":0,\"summary\":\"William John Butler founded the Community of St Mary the Virgin (CSMV) in Wantage. St. Mary’s School, Pune was run from 1866 to 1977 by the Sisters of the Community of St Mary the Virgin, the Anglican religious order Butler established.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "sisters of community of st mary virgin community of st mary virgin",
+          "summary": "William John Butler founded the Community of St Mary the Virgin (CSMV) in Wantage. St. Mary’s School, Pune was run from 1866 to 1977 by the Sisters of the Community of St Mary the Virgin, the Anglican religious order Butler established.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"sisters of community of st mary virgin community of st mary virgin\",\"missing_response\":false,\"sender\":0,\"summary\":\"William John Butler founded the Community of St Mary the Virgin (CSMV) in Wantage. St. Mary’s School, Pune was run from 1866 to 1977 by the Sisters of the Community of St Mary the Virgin, the Anglican religious order Butler established.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "community of st mary virgin sisters of community of st mary virgin",
+          "summary": "St Mary's School, Pune was run from 1866 to 1977 by the Sisters of the Community of St Mary the Virgin (CSMV), the Anglican religious order founded in 1848 by the Reverend William John Butler in Wantage, England.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"community of st mary virgin sisters of community of st mary virgin\",\"missing_response\":false,\"sender\":1,\"summary\":\"St Mary's School, Pune was run from 1866 to 1977 by the Sisters of the Community of St Mary the Virgin (CSMV), the Anglican religious order founded in 1848 by the Reverend William John Butler in Wantage, England.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "community of st mary virgin sisters of community of st mary virgin",
+          "summary": "St Mary's School, Pune (1866–1977) was run for over 100 years by the Sisters of the Community of St Mary the Virgin, an Anglican religious order founded in 1848 by the Reverend William John Butler in Wantage, England.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"community of st mary virgin sisters of community of st mary virgin\",\"missing_response\":false,\"sender\":2,\"summary\":\"St Mary's School, Pune (1866–1977) was run for over 100 years by the Sisters of the Community of St Mary the Virgin, an Anglican religious order founded in 1848 by the Reverend William John Butler in Wantage, England.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 170276163789500945548236279497295547112,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": 1.3223291615147832,
+        "proposed_state": 0.22635501883965842,
+        "state": 0.22635501883965842,
+        "probability": 0.5657218621659148
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.22635501883965842,
+        "target": 0.6666666666666666,
+        "drift": 0.5283739773924099,
+        "gaussian_draw": -0.15995931327202073,
+        "proposed_state": 0.2614881648775399,
+        "state": 0.2614881648775399,
+        "probability": 0.572613904346108
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.2614881648775399,
+        "target": 0.6666666666666666,
+        "drift": 0.48621420214695205,
+        "gaussian_draw": 1.9026422511167933,
+        "proposed_state": 0.520693493102204,
+        "state": 0.520693493102204,
+        "probability": 0.6224330404629599
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.5657218621659148
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.5657218621659148
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.572613904346108
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.572613904346108
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.6224330404629599
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.6224330404629599
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.3315554032132748
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.2321799614928971
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.5904862040399496
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.055507210031834786
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.3392268559044772
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6483901880414008
+      }
+    ]
+  },
+  "initial_answers": [
+    "sisters of community of st mary virgin community of st mary virgin",
+    "community of st mary virgin sisters of community of st mary virgin",
+    "community of st mary virgin sisters of community of st mary virgin"
+  ],
+  "refined_answers": [
+    "sisters of community of st mary virgin community of st mary virgin csmv",
+    "community of st mary virgin sisters of community of st mary virgin",
+    "community of st mary virgin sisters of community of st mary virgin"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "99fbc2135e07beef962d437c5f383cdd95d3b2173b09f2899c34a82158ad1309",
+  "errors": []
+}

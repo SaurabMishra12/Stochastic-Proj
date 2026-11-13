@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:955",
+  "source_index": 955,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "100",
+  "final_answer": "100",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1916,
+  "output_tokens": 1259,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0029970000000000005,
+  "latency_seconds": 20.542339064999396,
+  "wall_seconds": 180.4756305459996,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 668,
+    "utf8_bytes": 671,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "100",
+          "summary": "Initial occupied beds = 1000*(1/5)=200, so unoccupied = 1000-200=800. Admissions over 2 weeks = 50*14=700. Remaining unoccupied = 800-700=100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":0,\"summary\":\"Initial occupied beds = 1000*(1/5)=200, so unoccupied = 1000-200=800. Admissions over 2 weeks = 50*14=700. Remaining unoccupied = 800-700=100.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "100",
+          "summary": "Initial occupied = 1/5 of 1000 = 200. Over 14 days, admissions = 50×14 = 700, so occupied after = 200+700 = 900. Unoccupied beds = 1000−900 = 100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":1,\"summary\":\"Initial occupied = 1/5 of 1000 = 200. Over 14 days, admissions = 50×14 = 700, so occupied after = 200+700 = 900. Unoccupied beds = 1000−900 = 100.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "100",
+          "summary": "Initial occupied beds = 1000*(1/5)=200, so initially unoccupied = 800. Admissions = 50 patients/day * 14 days = 700. New occupied = 200+700=900. Unoccupied after 2 weeks = 1000-900=100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":2,\"summary\":\"Initial occupied beds = 1000*(1/5)=200, so initially unoccupied = 800. Admissions = 50 patients/day * 14 days = 700. New occupied = 200+700=900. Unoccupied after 2 weeks = 1000-900=100.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "100",
+    "100",
+    "100"
+  ],
+  "refined_answers": [
+    "100",
+    "100",
+    "100"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "3ec67be1e5a86ef9b7d36e8a5180b7584cf7e84a0fa902efec42c0aff76a0c55",
+  "errors": []
+}

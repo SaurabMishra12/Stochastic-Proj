@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1032",
+  "source_index": 1032,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "450",
+  "final_answer": "450",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1955,
+  "output_tokens": 969,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00242675,
+  "latency_seconds": 21.325132268002562,
+  "wall_seconds": 233.56107777000034,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 550,
+    "utf8_bytes": 556,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "450",
+          "summary": "75 large beans fill Grandpa. He can eat twice as many medium beans: 2×75=150. Each medium equals 3 small, so 150×3=450 small beans.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":0,\"summary\":\"75 large beans fill Grandpa. He can eat twice as many medium beans: 2×75=150. Each medium equals 3 small, so 150×3=450 small beans.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "450",
+          "summary": "Grandpa eats 75 large. Medium = 2×large = 150. Small: 3 small = 1 medium, so small = 3×150 = 450.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":1,\"summary\":\"Grandpa eats 75 large. Medium = 2×large = 150. Small: 3 small = 1 medium, so small = 3×150 = 450.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "450",
+          "summary": "75 large beans fills. He can eat twice as many mediums: 2×75=150 mediums. Each medium equals 3 small, so 150×3=450 small beans.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":2,\"summary\":\"75 large beans fills. He can eat twice as many mediums: 2×75=150 mediums. Each medium equals 3 small, so 150×3=450 small beans.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "450",
+    "450",
+    "450"
+  ],
+  "refined_answers": [
+    "450",
+    "450",
+    "450"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "35f42079f21bbdbb13a410a1afb8831b3a2a7763efd5bfafb6f41a414a1dd1f7",
+  "errors": []
+}

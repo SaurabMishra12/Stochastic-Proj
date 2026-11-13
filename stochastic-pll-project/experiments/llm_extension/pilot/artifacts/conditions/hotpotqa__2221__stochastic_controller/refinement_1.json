@@ -1,0 +1,199 @@
+{
+  "payload_hash": "00755389c9b1a705172289ef767610d78761d59be589c3200ecfa7098ab7a850",
+  "logical_id": "hotpotqa:distractor_validation:5a8205b755429926c1cdadee|stochastic_controller|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_032b7e035649fd68016af730a993dc8197af93fc88170d4c97",
+      "object": "response",
+      "created_at": 1794584745,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584748,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 8807,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 749,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_032b7e035649fd68016af730ab00c48197a4134d30223a17e4",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zCsPjQYPSWtN3Qg0PfntxhroUallBTkIHDSeNyArHwj1-9_5FaKEkS7Q8TkOeopTt-CmGxr36vcw2gxxTyVT5gkWX6jGeaiea58-7ytISCUUmuL2wEI7RvDh41lge_mZy-iQ927kgbUwi-g5xpYgSo5cy9q2lVpkOO3rK-OBUdvXCNxpMfaiLvLBu6mRVfn2ywCcyyFLiOEzqn2oBdHfleDzePv7sOhxL-4-63sOK9G7pmflOysxrx9WyOtQk05inQUDmoRKnb-ScTDOFe8R5rXTeD8O1jhxz_OjVM1cZBgf11rYJQlpeKy2f7MVx38tt6_fZ3nofNcYDL7ZMmz1L2Me9GDArBtqIHTbZrLbRVPr7lt0BeqDKeuSq7wgeHVfIhcLg-lFQlw76GHDJH3jDpqPls-iRnr8_a96q8QNmjhPBmcNKG4sye5un2wBrLhOIyFSXUNu4QTbKOGj3WpPlOkU4bEzdxC1B6xi2Zm9IVTJHv74yj0_6InH1Fv3i_E9wgOYuC1vbXD55i8hAs6349tRtaRhNP78fiouVHJyrAB17h6m4pPY_0znlmhCVYuHLPe28GiDr-D0Q2x8J02w9ffas1zWVKX23CyQf0Jc7GTKA9n_56eV1JrgGYw6uMJaIBxG6i0U14qc6SXRIJmEsXnlk_OC0EapiUpfFotypwNHyjgb83uVmueVlE5IU943dDdN0MG3HsF4dz7XKvJBdV7x5qGCie4sU2l-ov4yADpHxb12-H4QwX2npmxCdF6TdXFg_k1D2_pAZ5AWg7tbu3_jj69stcIXGoQv4zMPYS0cA0Jxz9BKqXFC9qcybDZ-nAkcYGaBIZWczvaKModDRTjhSweV3Xg9wz7C-lHT2GTK7OkyX08lhEEwYy4c9tfAXNIWhTNAlWQ81K1R0XNjvwkqAKypSJ25ul7-uMzoASNNO9eVxTNI1lUr9iuFmiNldTESSJVAm26KQ3o4AsJTTtTfoZlI7G1BfwNEnDjd_PEUDqRoEdZ-pSYFQBCPhyQozEMuLLGfplxt0FkNn37TeYm6dboRMFLtyldWUPRFNTyspgkLz3Ni0MxjUVxNh8m_YA_SiuCsDvKHyMNCPH2rH7YayVPyRWJPM7TwIAvHbBi2VeGYZPw-Sd_P-tJWk3m4A8ivbYA3AUU5IIqFsszA_zD3_SlT19AfmCIhDUS9wFTZ-3qsMExZonASj-Jhn5mWkqcjmp_v5iI9OHMqm0tihb1Xscxx0IZNGVql-xNTjW_5FmeVnVmiIAdO-l21LYZ1HY696BwdAxPiu2QPZ9tjvKi58NV7fr-TrRdX5FpcpdclJkKpAFn5H9gAVYbiXPBH1NB4FfTICQWk_wUdg-EYRTgvDIPKLwUFqeqyFE1Rf6nIaRin0gBxkkEDwhxUJTbFX2AtgEDwq5GG9RWwAKTx1j1xhkt41yypmAWhGljCoHc2cnwHZQuwGfZ8KINDv28_2kPkL4vVabuVNGiXbo9FMuA_wEJRZXElHFVLKtuv_b1yiLmWcSHSGX9F0mYz6CzzYxReMJgRe9o2aRmkc-iNnP8eXb7j4gdTl7WPZTNT-IpgXGb6P9dMAp3FGVaaSXYAU2E7bLafc-bSmFA3-uQGBcRCHS0_HcIiwAdgHFljmwr6VRdl2LjdYfWvQdp43nIaDWnze1azj45TNmQsFCjDPtzq7X3-mcVrLaBCMg7Z4J7o1n1qeP4j9JGrPXrJ1nV29fDyTHo90OcxtRTBiME7wNgz4-izN85ccD3xmwKKVRYyGqG7ybVSJYKsStGAkZJFYhzCRUo5xV-awJWS-gy742LithqxDvXo_DuEjh_Mb4-sU8U4zPkecOL6zUD0gxZjwpzXNZdt3gXPTxlDaPYDSkS6lXSPuTvWp28TrprWmJGBHO3HdNKloMjt6tHAtB8CEFoPp_eRVsQjTiCu76IKd5piXS-Eu7nMc3WuG5hpQwEBQXJ47-jwgSv8wh_3HFcMd7o5emR9sGLxMp1qDu_BVna9L34oSVEkP1Sc80sRldj1R66fyLhwzrUXLINLf2LibPi9UzIC9z2ngeWJmPAkIDYAAezYJMGxI0vaj4Cnip8UkkxH9sLzrPK3begLat3FJCynMZ41jkn1aisMyhU2dathaVcwGnOvNXYepxS0S8VDH8IV1WtbQvlRqCvXvkpijaoGO_UCROmmXHG0YkomNL7I8QnByyt_eLAW7m0qaNuE50NhKpFNtks5nQoc6JGzb3d8ziy5oC6fBDWlECJOUW0XREvzFi1S3QLhUKI3ZqIyoTn6vXycFxt3hVSQh3KJB3UXrp7ZgkUM_DysurR9ZqYbadMgL1uWVyfl9uuHqCSrH8B4Z-fzjmc9Vb1LcMfj8t2QsyGtv4EWHZhpPSJhfR0LELsS3EweH1MFHfqNagOXBjop6xMTiB8aEcJXQNiQT1qd9Idu9wVjI_sdFJkGdLhwljJMUuS6IJh7sjfLEYobJIYVEJCcDxtVeiNAQMnCKhxQKJjqTgVaiZR47dQpov5LQ==",
+          "summary": []
+        },
+        {
+          "id": "msg_032b7e035649fd68016af730ab8da88197b16469abc46f3a01",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Wright brothers (Orville and Wilbur Wright)\",\"summary\":\"Paragraph 8 of the supplied context states the Wright Model B was designed by the Wright brothers. Paragraph 1 identifies Orville and Wilbur Wright as the American inventors and aviation pioneers generally credited with inventing, building, and flying the world’s first successful airplane.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1851,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 161,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2012
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Wright brothers (Orville and Wilbur Wright)\",\"summary\":\"Paragraph 8 of the supplied context states the Wright Model B was designed by the Wright brothers. Paragraph 1 identifies Orville and Wilbur Wright as the American inventors and aviation pioneers generally credited with inventing, building, and flying the world’s first successful airplane.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1851,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 161,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2012
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a8205b755429926c1cdadee|stochastic_controller|refinement:1",
+    "attempt_id": "60b6bb3027a940019591bb9255afa6ef",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00078475,
+    "latency_seconds": 3.8471852149996266,
+    "started_at": "2026-11-13T15:45:44.711629+00:00",
+    "finished_at": "2026-11-13T15:45:48.558804+00:00"
+  }
+}

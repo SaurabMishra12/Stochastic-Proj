@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:552",
+  "source_index": 552,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "450",
+  "final_answer": "900",
+  "correct": false,
+  "f1": 0.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1879,
+  "output_tokens": 2120,
+  "reasoning_tokens": 1344,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004709749999999999,
+  "latency_seconds": 27.161763345993677,
+  "wall_seconds": 184.90103059600006,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 249,
+    "utf8_bytes": 250,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "900",
+          "summary": "Antonella earns 30% on the first $1000 = $300. For the $1500 above $1000 she earns an additional 10%, making 40% on that portion: 0.40×1500 = $600. Total earnings = $300 + $600 = $900.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"900\",\"missing_response\":false,\"sender\":2,\"summary\":\"Antonella earns 30% on the first $1000 = $300. For the $1500 above $1000 she earns an additional 10%, making 40% on that portion: 0.40×1500 = $600. Total earnings = $300 + $600 = $900.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 145571070568450278452338984969980324687,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.8759325599890506,
+        "proposed_state": 0.09694796881936157,
+        "state": 0.09694796881936157,
+        "probability": 0.23641393268247407
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.09694796881936157,
+        "target": 0.0,
+        "drift": -0.11633756258323388,
+        "gaussian_draw": 0.059370218399593194,
+        "proposed_state": 0.09188529159739048,
+        "state": 0.09188529159739048,
+        "probability": 0.2356835721315075
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.09188529159739048,
+        "target": 0.0,
+        "drift": -0.11026234991686858,
+        "gaussian_draw": -1.1086560325282435,
+        "proposed_state": -0.04184668055092042,
+        "state": -0.04184668055092042,
+        "probability": 0.2169588840159035
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23641393268247407
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23641393268247407
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2356835721315075
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2356835721315075
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2169588840159035
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2169588840159035
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.9290431094768613
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.922866717196933
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.4254538287457923
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.2714507474199852
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.14014254327297815
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6191361592396559
+      }
+    ]
+  },
+  "initial_answers": [
+    "900",
+    "900",
+    "900"
+  ],
+  "refined_answers": [
+    "900",
+    "900",
+    "900"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "73a242df251f6b05b5e734f6e15b48c6d4dc593b5802df873b6f48c64e9e9953",
+  "errors": []
+}

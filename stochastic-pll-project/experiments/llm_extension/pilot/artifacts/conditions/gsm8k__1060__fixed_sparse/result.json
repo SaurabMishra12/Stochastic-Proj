@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1060",
+  "source_index": 1060,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "31",
+  "final_answer": "31",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1866,
+  "output_tokens": 1088,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026425000000000003,
+  "latency_seconds": 22.27652406299603,
+  "wall_seconds": 181.1160557330004,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 518,
+    "utf8_bytes": 522,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "31",
+          "summary": "Let Jake = x. Becky = x+3 = 10 → x = 7. Silvia = 2x = 14. Total = Becky + Jake + Silvia = 10 + 7 + 14 = 31 slices.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"31\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let Jake = x. Becky = x+3 = 10 → x = 7. Silvia = 2x = 14. Total = Becky + Jake + Silvia = 10 + 7 + 14 = 31 slices.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "31",
+          "summary": "Let Jake = J. Becky = J+3 = 10, so J = 7. Silvia = 2J = 14. Total slices eaten = 10 + 7 + 14 = 31.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"31\",\"missing_response\":false,\"sender\":1,\"summary\":\"Let Jake = J. Becky = J+3 = 10, so J = 7. Silvia = 2J = 14. Total slices eaten = 10 + 7 + 14 = 31.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "31",
+          "summary": "Let Jake = x. Becky = x+3 = 10 ⇒ x = 7. Silvia = 2x = 14. Total = Becky + Jake + Silvia = 10 + 7 + 14 = 31 slices.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"31\",\"missing_response\":false,\"sender\":2,\"summary\":\"Let Jake = x. Becky = x+3 = 10 ⇒ x = 7. Silvia = 2x = 14. Total = Becky + Jake + Silvia = 10 + 7 + 14 = 31 slices.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "31",
+    "31",
+    "31"
+  ],
+  "refined_answers": [
+    "31",
+    "31",
+    "31"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "46ba979e856350772d5333758835ed3da71565cd1d248f752b3489e50948c6df",
+  "errors": []
+}

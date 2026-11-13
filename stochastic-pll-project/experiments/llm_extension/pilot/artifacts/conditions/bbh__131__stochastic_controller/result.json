@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:131",
+  "source_index": 131,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2049,
+  "output_tokens": 935,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00238225,
+  "latency_seconds": 21.036968780003008,
+  "wall_seconds": 182.6954808169994,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 270,
+    "utf8_bytes": 270,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "From left to right the order is: red (leftmost), yellow (middle), purple (rightmost), because yellow is to the right of red and purple is to the right of yellow. Thus the yellow book is second from the left.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"From left to right the order is: red (leftmost), yellow (middle), purple (rightmost), because yellow is to the right of red and purple is to the right of yellow. Thus the yellow book is second from the left.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 201418610076994350143995306724747831520,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.26884934249651005,
+        "proposed_state": 0.029756169440468487,
+        "state": 0.029756169440468487,
+        "probability": 0.22684807219286193
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.029756169440468487,
+        "target": 0.0,
+        "drift": -0.03570740332856218,
+        "gaussian_draw": 0.17894620864506752,
+        "proposed_state": 0.045991145036566705,
+        "state": 0.045991145036566705,
+        "probability": 0.22913408636768667
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.045991145036566705,
+        "target": 0.0,
+        "drift": -0.055189374043880045,
+        "gaussian_draw": -1.3243733890268738,
+        "proposed_state": -0.10610906573226223,
+        "state": -0.10610906573226223,
+        "probability": 0.20835210538688362
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22684807219286193
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22684807219286193
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22913408636768667
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22913408636768667
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20835210538688362
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20835210538688362
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.7679164571871013
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.9004138800686603
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.3848566496577207
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.12839877431022995
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5590442844628581
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6820277333375883
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "f86bddee7906c13a4ca05118fdb77e0ed5fb68117bcf32bbfa5ef1603178e655",
+  "errors": []
+}

@@ -1,0 +1,199 @@
+{
+  "payload_hash": "a001536df7f25043d5324db92ece3d0b74dbbb51198ff269586923103f967352",
+  "logical_id": "gsm8k:official_test:621|disagreement_triggered|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_02cf20b369915b03016af7269ab8748197b7f82a3ea510fb7b",
+      "object": "response",
+      "created_at": 1794582170,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794582172,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1592,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 532,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_02cf20b369915b03016af7269b837c8197bc548803f80d509c",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yac0E6QZDM7GABwzXUhOqK5e38NvNYgpYhmMUobjcMAwLEs5yW2C84tAM9ghPgKDbxhpO7VJtF6-5jW9j-59ghgkI-HkqG7XwoY2BT6HXZo2rvSM8fLHsPK9meR2lEh94gKefERf8BYq1TW3dVA_S5SySMdnYZgxysMcSnfmqKQn8ONNqequCLonv7IxAc_rZ6_6TEgmOG-EtQ-J-EprAO7LKR-BYtBOuJSsojCcSQPyx2QmkTHiq8km7Xj5hTsTftMjIg-c07U5pzKJVMk0pehlDe6HgiHCNcjJzm6CXA-WHjOOtgr1KIADQEXKVIMQSANr39sHV77eKcvumQO2MhqJ7eVG0PcflGqIEP9sN4scMiEouo2LmM80HU5-tSQFAT_43BGVycPHggzPSNFh2Sczs7pA7cFXX3m39UdI6Z_UuEdPmfGu-o48DQls3bh1mUTwbDBYZOfCIT5Kg-6VqIHge6897hDW2xQpUySMzixdf6UXrooJuE5L-ofSjGYJVpqjezYWeWo51zfZy6tu4fjgKPu6q9TSC68zFtnmBGtO_uYzMfaKCVr7pal8_kn6mRLc1M2sliS0-ScfvDBD58ZGvO_txQUX1Ock1RkHAqK10UmnV3qNKuepwrWWC3sJTap7rNVK_HiTMdAu9Ysm96OlvOoFr7Ck_mGUOZ7UsEYu8nU1dhv-JLxIEQbkcEVZzL4cAeBe7z1M911Ss1lEc__iAYDDn3mzZ-lm-othc1ZdL7_xb53a8gKjcrxCiBUR4ST_Bc4U7YeLZrYVSDkCXEnraGDyLr_S1E0zOpEZw0GDGPA34A86OnzhUN6BGRXU_vuCWHOPgNPdbxtyjLOzu-yv2_AyeZUm5sguV4vH8-E_-A4IzS7_khzaNeYsz8i_RuIczX-Zq8UT7z4PD9Iq0WOwqgCw138wFPFenakJmHSfrXDQeGdj1H8RBGgFVjyRw6WpNkC2Ci66ueb_dNyCR1GWZeW4nYiXPwbg2DAHP8VtsbSg7Mfbp7DglMpZK4_Hvrro3QaFwARuMO8NV2CwLpr0sqzKpcckJ9yte5DcMRzntbGgS2IZGqfHGHGy5rVriYQG0Ci9NxBQN429QkUIFe1AHqVpABv5al7tIkehDFDIhEmMPnq8dmQX6KnotnmxXzp__JToCywXxr-tK1beXJcxcOD5BKasoDcrtalOXw82N4UCciMSl3YABqLr_LVs50YdyXnuLsSA63hstYwnmfqEi6jbgi_U8UXeaNqBD_GDEoKh2c-PSbFejGfxHonUsyLRDDtHQEYZvV_O4rYXsDq6WcbZMVWmu8_hwWpXD6tRUZGaNNLcAuM44fz1KGQ1LVqtt5hl5zYWYdDmM7yPxkkSh8dA0ubJ_Pqf8DXcRaLY5cS7juxuWIbqjk4DHUDmrQLbAACRKGAOTiToLPSUv_pxMclDHc2aICKhwvYVM0KadqiEWwvxO2TS71xHOM-VWJaptD1_5-9J9iERwsuAB4fdi6Ge0eJGlMVIHGkv_s6VRJ3eamoRTRPT8UiwMpE_KOlaxQSJ5XirG4h6un4qC5JKJMs5yCjGtI1s6RPKg2XbkWi8YF7m17ZkPhhF-IArO4122eIg0AdZ2ZJcAQSFfnL316WftPtx7Q3nAagDAC2f82loANqapXNwsfqkruM0Jk3J_TocUNHX9sM2X3d0KOy4-zVZbd6zK_bYGP_HtQGR-4tA4Dm_G1DTptoG6kF4ENwCOK_VntH4GKqhqALIuMgIgGzfw_FmANGvpATWHQMN2NFg5OtOWhkuK2Z3uSK1zcdWPaoOO70_RMYJMCDAOxnk95ERli4l0Qw7d2DzCcdFSNnRa1t3HFZ46hoV4mlbihoTc04wAFnScLFeU4paAwdt17x5NX_JJhLrU2kf3qpmNqarHmcfHAyrs2DxEEIu8L7z91JEExozH05dQwkFa9rnP-2EOo4fd5mtTpGV55xzixFdcsFmiC3tAu2qdc01jRSrjIuXOiELbRH3XoVEOXKZ3IerGpQpjO7znKiYQN0NeRBPKajnWK4CUVEcFqtkcqXyi2MKGvIkZQYwT4ICWCKSIhxBYRAiONPcxPoXsHUgUUxgFg6NS3qgmoQ_3loLwKWov_XrtnCVP-7XVtSj7pVGeuixUPsEsfNFI7WODqmYT2IWVeuu1caSF0Kl834Zc8wqhn0yl2svQzvjkim62yRPUjQa8jECN5auHIfkkHwK3aw3OK_-AsOdE_IdfdgKwRPCAUndqNkMxwoOLSjDlOtya2eI0psIHDsc0nMJr0mY52FPSwXTZ9MZXQbT79wPZ86K_iKzLTrjdVGbpSC3e_atB0AHqs71OpslWmulE5BwrbwEzgRgxdmzDMr-Fgvb1IrGAQX4rCTBv-yP8wxhz1tVc3IKcVuG65UoPaO61CAH3wVBhr8MvSnG67AYpMulV7puGAHJcDbSyt9wcXdHPl416DJoAhYHbqPBPK1WG0Au6JfeAsHSRvSKfyN2LC6hZ71",
+          "summary": []
+        },
+        {
+          "id": "msg_02cf20b369915b03016af7269c35fc819784ee0e9ea9c1d3ec",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"3000\",\"summary\":\"Total sessions = 6 weeks × 2 sessions/week = 12 sessions. Total hours = 12 sessions × 2 hours/session = 24 hours. Cost = 24 hours × $125/hour = $3,000.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 249,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 154,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 403
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"3000\",\"summary\":\"Total sessions = 6 weeks × 2 sessions/week = 12 sessions. Total hours = 12 sessions × 2 hours/session = 24 hours. Cost = 24 hours × $125/hour = $3,000.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 249,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 154,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 403
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:621|disagreement_triggered|refinement:1",
+    "attempt_id": "6a2f8b64fe6a4cc1a16a978fe9b31d9b",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00037025,
+    "latency_seconds": 2.588556298000185,
+    "started_at": "2026-11-13T15:02:50.101566+00:00",
+    "finished_at": "2026-11-13T15:02:52.690119+00:00"
+  }
+}

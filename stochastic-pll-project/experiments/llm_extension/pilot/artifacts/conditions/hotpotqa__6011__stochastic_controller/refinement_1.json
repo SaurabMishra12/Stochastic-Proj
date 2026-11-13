@@ -1,0 +1,199 @@
+{
+  "payload_hash": "c32a4b248a3456851f1f61564d725bc335d24a5065e3ab1758a74ab09da127bc",
+  "logical_id": "hotpotqa:distractor_validation:5a75d35d5542992d0ec05ffe|stochastic_controller|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_0358b79cec9bb981016af727fecd088195b451e5465aa3f560",
+      "object": "response",
+      "created_at": 1794582526,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794582528,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6096,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 456,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0358b79cec9bb981016af727ffbd4881958f76d538bc15bc2e",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9ygA1G_Xh2sQZqTtfSEOLusiv7i0xkAEAJb6w9oAQ_4vpAOyKF4cVso3vaXdyZpNaxg0nB3HlPAjYjZrPUhOHl2CU5nRGYTncXDSWQn0u4iQDL3ea9RYpVJU9yjViix_n8IYSTEm81NeYn-tYV0ahg4jwRllVwo4xa9O6s-cdJeLX2A6o7aTJ9AM4dEG2dMhJDZmUr_AYqpjVxS873bRunS_jUFO-Y2ElE1M-2peErGoo8zk-Ldqw0XOVemvlC21aKxETm236TQvgEy914qFEQ1ZXm0mGEsbqCHuk7qZG4_cN7jI3acUEbOXcQbDFotuGFIbHiy-8rXVG5JiVHaghuMR1f4WxOd8UPzO5R1hxvSWMv_AJEvu9PZQjbiIMkwBrKwhLa0w-X62t7JYHvgcAWKTRt8YgqvU0hbdsNpZHx8veYKloOmOK93mcFULlnBjcDzFQn6Hqapqn41H7G35odUMXDc6TmXu1unmJVDYPjPqjZDo34-UUIpeEtUPz4g90DCEr34VJ2PSS8KRfvl_jGQ1-Y888837V1HY69c2KAcppseGe-FltQYkp0uxsH4PR5wmegsGVVryJjYmSOSK4f3avImDmnEh3jyEcAcU7-_5x21MupYmTgaL7m-BGl3BMnaWvcTYZagGILMKy_YBonCo_-QDadqwYGVsr5mOrg_Psggjwg1VLPrMbjx5sYBl5Fp43pyGvlikVNqWHCeI4RFcWHRfOidjcdLWoHYOZ4z0ZTRe6QpQLvPGvLPwQggV7xMRXOX3k4HqUSNNqtm-_09uIrRJVTl06Ys-v4tfWNp4HL3c-mfUE60kRjzk_XojHO36p_V0vRiSfyjW0K5L_Qqzc6bqOZ7lIiblUQqac_yKss-PyHpRVtLyhJwjpkCWoB5zIo8atv5jxI3uBI0SiQ8yVGv2KRJF7ilzqqoi_WyOkCksDjc5JEn92G1ZeMTNX7jgMD9Lk2t5egyJy1RUyT1ZEgWMRk_gxMCwr1jkjBV7clZUXsv9ZRyj9mQ3uxWsvUCjUJBXLTUsukyoj4bH_1WkStusX_mkVEl9znTaOzJ0Rxj23XEcKNaoUQkK-su3kuM0SNSGUVZ2ksXluqgIGEtFX8pLtFV2gA7lzxCxfpzqMUnGp-8S1Vv7ABijOKL_J8Kn6s7EUZ6u8fWRJriEEJqf5JDWx6ENsLrUSdB7T4nbfchND_ayLnoo88KxXh-c8QUz3CEca62oL5SPuvL2T2gI4YSIesRVkqun0CHS-mIlyio8IfII8nD4LVhdL_Y9zD6IihCGQhnELjg__UjYF6_bmdVOXXaFa8SS_TR8-eTebyvPaKmvOSgR9v3mMr3Qrd70YtBCLZ6BvEvXxNVfQu1hFrjXrmWCM0VhUMaFSDXlGCCPjCL0_DOSbFogcN8YuNKbfP2zJodCXU73jV8uH3CZXgv8sKtOhw9fW6NrfvkwD-bs9DwK3t9X8mFv9GvGuMgMw4C6sXEMjPKkJDIUNBushvpUbmLGOUe1K1H8EmMLRMYD7UTvYwo_IDkC-XuKjXEqBJHr7N6TKmlWz6_1ArbTYQ11f7LV9AxoSu8r8CXMMHrdEXOSd8D57lk8MvQuscBcKiqMRvrXU3KrhFoj6pR-we87h8yNfMt4BnHerdPb5DEBA3Dcp4_oIjKH4YkAqlYC882e2nawCahfwZzUfYnRCivI2V_bgGzkKh3z61GiEnPsK0TOvPS59Lbuy8UM8OwoumatMDm-Yd5cnCBwdhdMJBEsXQhlM2IxTHG8WmZD0sMUWZ74VxVLHsg5XolBzHMyge5CzCWO_p94TLdL0vXFt2tzG0_gFthSCZoKgeebB1jCdkoRctH0PMHnFF4QtD5yOXIa5sxWvEzQ1IbsZ0Xw6xlXBgMq6iCDhFtlr0IhnIXvIpBnqAPfMciTu83sGmDKQDo49tFmnkur8zbBimMv5kwN6wAH0eyVOI2puIffFE_pnLAUjjhFd1JObHtoe17NK1oXkNAXxO5-AscpNKYjEeP8CYMSEPQEfXK_HpHgCfBgBjOLzcKiotHAZAiv0kUXRZVueUp1UFCOJ_e9UyidNBbEVrSQ6vXXTG-qdsJ7v7l3S7bswyyGfxEnQcLVVT_obIOUXp9zvHDwzuyoZsblyoLk_ebsuucD7L41AG18r_xjdFShMyxTbubelhRzLEr6Sa4zvepEBDtvTCFpLHstj5Hs8T89yUqpSsue_cYjyZo=",
+          "summary": []
+        },
+        {
+          "id": "msg_0358b79cec9bb981016af728003a6c81958c0554edd5d61f8a",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Toppers Pizza\",\"summary\":\"Toppers Pizza (founded in 1991 in Champaign, Illinois) opened well before America's Incredible Pizza Company, whose first restaurant opened in Springfield in 2002.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1282,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 116,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1398
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Toppers Pizza\",\"summary\":\"Toppers Pizza (founded in 1991 in Champaign, Illinois) opened well before America's Incredible Pizza Company, whose first restaurant opened in Springfield in 2002.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1282,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 116,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1398
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a75d35d5542992d0ec05ffe|stochastic_controller|refinement:1",
+    "attempt_id": "721978ffdc0641b1bf28bff014b843e3",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0005525,
+    "latency_seconds": 2.6548414359986054,
+    "started_at": "2026-11-13T15:08:46.185231+00:00",
+    "finished_at": "2026-11-13T15:08:48.840078+00:00"
+  }
+}

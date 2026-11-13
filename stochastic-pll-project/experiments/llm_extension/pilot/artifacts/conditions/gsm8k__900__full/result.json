@@ -1,0 +1,145 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:900",
+  "source_index": 900,
+  "method": "full",
+  "answer_kind": "numeric",
+  "gold_answer": "15",
+  "final_answer": "15",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2141,
+  "output_tokens": 1048,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026312500000000003,
+  "latency_seconds": 22.04423248000603,
+  "wall_seconds": 182.74349759400138,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 1284,
+    "utf8_bytes": 1296,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "15",
+          "summary": "Denise read 10 yesterday and 18 today (5 more than Daniel's 13 yesterday) for a total of 28 pages. Daniel read 13 total. The difference is 28 − 13 = 15 pages.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"15\",\"missing_response\":false,\"sender\":0,\"summary\":\"Denise read 10 yesterday and 18 today (5 more than Daniel's 13 yesterday) for a total of 28 pages. Daniel read 13 total. The difference is 28 − 13 = 15 pages.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "15",
+          "summary": "Denise read 10 yesterday and 18 today (5 more than Daniel's 13 yesterday) for a total of 28 pages. Daniel read 13 total. The difference is 28 − 13 = 15 pages.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"15\",\"missing_response\":false,\"sender\":0,\"summary\":\"Denise read 10 yesterday and 18 today (5 more than Daniel's 13 yesterday) for a total of 28 pages. Daniel read 13 total. The difference is 28 − 13 = 15 pages.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "15",
+          "summary": "Denise read 10 yesterday and 13+5=18 today, totaling 28 pages. Daniel read 13 yesterday and 0 today, totaling 13 pages. Denise read 28−13=15 more pages than Daniel.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"15\",\"missing_response\":false,\"sender\":1,\"summary\":\"Denise read 10 yesterday and 13+5=18 today, totaling 28 pages. Daniel read 13 yesterday and 0 today, totaling 13 pages. Denise read 28−13=15 more pages than Daniel.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "15",
+          "summary": "Denise read 10 yesterday and 13+5=18 today, totaling 28 pages. Daniel read 13 yesterday and 0 today, totaling 13 pages. Denise read 28−13=15 more pages than Daniel.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"15\",\"missing_response\":false,\"sender\":1,\"summary\":\"Denise read 10 yesterday and 13+5=18 today, totaling 28 pages. Daniel read 13 yesterday and 0 today, totaling 13 pages. Denise read 28−13=15 more pages than Daniel.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "15",
+          "summary": "Denise total = 10 (yesterday) + (Daniel yesterday 13 + 5) = 10 + 18 = 28. Daniel total = 13 + 0 = 13. Difference = 28 − 13 = 15.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"15\",\"missing_response\":false,\"sender\":2,\"summary\":\"Denise total = 10 (yesterday) + (Daniel yesterday 13 + 5) = 10 + 18 = 28. Daniel total = 13 + 0 = 13. Difference = 28 − 13 = 15.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "15",
+          "summary": "Denise total = 10 (yesterday) + (Daniel yesterday 13 + 5) = 10 + 18 = 28. Daniel total = 13 + 0 = 13. Difference = 28 − 13 = 15.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"15\",\"missing_response\":false,\"sender\":2,\"summary\":\"Denise total = 10 (yesterday) + (Daniel yesterday 13 + 5) = 10 + 18 = 28. Daniel total = 13 + 0 = 13. Difference = 28 − 13 = 15.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "full",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "15",
+    "15",
+    "15"
+  ],
+  "refined_answers": [
+    "15",
+    "15",
+    "15"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "5e5395d9ca0d44158883ad670f034db9cfbf61e31ab0d46111676a4a7bf0852e",
+  "errors": []
+}

@@ -1,0 +1,145 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:11",
+  "source_index": 11,
+  "method": "full",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2115,
+  "output_tokens": 803,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00213475,
+  "latency_seconds": 21.17104599799859,
+  "wall_seconds": 182.92521903899978,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 1316,
+    "utf8_bytes": 1316,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Given peaches more expensive than apples and mangoes are cheapest, order is peaches (most), apples (second), mangoes (least). Thus apples are second-most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given peaches more expensive than apples and mangoes are cheapest, order is peaches (most), apples (second), mangoes (least). Thus apples are second-most expensive.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "Given peaches more expensive than apples and mangoes are cheapest, order is peaches (most), apples (second), mangoes (least). Thus apples are second-most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given peaches more expensive than apples and mangoes are cheapest, order is peaches (most), apples (second), mangoes (least). Thus apples are second-most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Peaches > apples and mangoes are cheapest, so mangoes lowest, peaches highest, leaving apples as the middle (second-most expensive).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Peaches > apples and mangoes are cheapest, so mangoes lowest, peaches highest, leaving apples as the middle (second-most expensive).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "Peaches > apples and mangoes are cheapest, so mangoes lowest, peaches highest, leaving apples as the middle (second-most expensive).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"Peaches > apples and mangoes are cheapest, so mangoes lowest, peaches highest, leaving apples as the middle (second-most expensive).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given peaches > apples and mangoes are cheapest, mangoes are below both. Thus order is peaches (most), apples (second), mangoes (least). So apples are second-most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given peaches > apples and mangoes are cheapest, mangoes are below both. Thus order is peaches (most), apples (second), mangoes (least). So apples are second-most expensive.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given peaches > apples and mangoes are cheapest, mangoes are below both. Thus order is peaches (most), apples (second), mangoes (least). So apples are second-most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given peaches > apples and mangoes are cheapest, mangoes are below both. Thus order is peaches (most), apples (second), mangoes (least). So apples are second-most expensive.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "full",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "6689a7710daa7701fa5252e936a7749d97cb336acbd28b334f4fd9a71409a3d3",
+  "errors": []
+}

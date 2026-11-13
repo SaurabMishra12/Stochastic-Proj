@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:809",
+  "source_index": 809,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "50",
+  "final_answer": "50",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1917,
+  "output_tokens": 1434,
+  "reasoning_tokens": 832,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00334725,
+  "latency_seconds": 25.556863610996515,
+  "wall_seconds": 180.69071719800195,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 362,
+    "utf8_bytes": 366,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "50",
+          "summary": "Dale initially had 100, sold 150, then ordered 100 more. Total on hand = 100 + 100 = 200. Remaining to sell = 200 − 150 = 50.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":0,\"summary\":\"Dale initially had 100, sold 150, then ordered 100 more. Total on hand = 100 + 100 = 200. Remaining to sell = 200 − 150 = 50.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "50",
+          "summary": "Initial inventory 100 + additional order 100 = 200 total. He sold 150, so remaining to sell = 200 − 150 = 50.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"50\",\"missing_response\":false,\"sender\":2,\"summary\":\"Initial inventory 100 + additional order 100 = 200 total. He sold 150, so remaining to sell = 200 − 150 = 50.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 307552538618255010567246383335548326856,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.9254513209175571,
+        "proposed_state": 0.10242869131988179,
+        "state": 0.10242869131988179,
+        "probability": 0.23720636171239512
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.10242869131988179,
+        "target": 0.0,
+        "drift": -0.12291442958385815,
+        "gaussian_draw": 0.21353954748804674,
+        "proposed_state": 0.113771745281933,
+        "state": 0.113771745281933,
+        "probability": 0.2388522005032377
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.113771745281933,
+        "target": 0.0,
+        "drift": -0.13652609433831958,
+        "gaussian_draw": -0.6448986591258941,
+        "proposed_state": 0.02874193404917852,
+        "state": 0.02874193404917852,
+        "probability": 0.22670579594048665
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23720636171239512
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23720636171239512
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2388522005032377
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2388522005032377
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22670579594048665
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22670579594048665
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.9335098535556094
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.027505237140313277
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.4873657277981538
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.6870746264537836
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.04800705437347896
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.9507287788424041
+      }
+    ]
+  },
+  "initial_answers": [
+    "50",
+    "50",
+    "50"
+  ],
+  "refined_answers": [
+    "50",
+    "50",
+    "50"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "414b695fcc4b8bf55a8fd53af3dc684b194299d3f9f412d9f8dd4b6bfc1d3539",
+  "errors": []
+}

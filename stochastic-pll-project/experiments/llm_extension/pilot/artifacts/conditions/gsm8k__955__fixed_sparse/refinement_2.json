@@ -1,0 +1,199 @@
+{
+  "payload_hash": "d428a080e53d111f31c9bb19e9c0f11134e4ff9357ce540f412f69a68bdea30a",
+  "logical_id": "gsm8k:official_test:955|fixed_sparse|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_0d060669026476b0016af73839430c8195bda8bd17cb583ca0",
+      "object": "response",
+      "created_at": 1794586681,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794586683,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1885,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 618,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0d060669026476b0016af7383a13c48195845a3633b353c2dd",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zg7f_CjrHGAXicHYgsfI9Nguw6bvKvFeTl-Pf9f8zz7ZjXNZsz3oNJ_EesntwpxynHbTSYdp95nDCMN7Szkd1T9fIpOeBwvqJSZ_rxtQCUDhZvhJWFRBWTuqqcXdeCrGWOuk8uPVuO-QlBauXZS041E0_1_-QtS5mYROtntgEyhmCMD2IO6pvRKrrwFqDHG04afgdvjPDt_EO2EAMgPipbwtR136gcNaOeijGU2ysFD33O5vHapziDMXMNQbetYTp1yXumJMU_h-yxBNzZggz5NTWF1aS5HuP5HZ1oBRoi5igikbb0aJ8mdxi2vV-8wS1sxk8tnMm5w_MisqbxRIjCeBMxr45OZxCcoS68YqUWIQRgkQsPtjG2hNxbsxXohNray4bqo2eapIHtLeUkTHID42OXqmulGy9q-xg4rm-atiWIkH7JLgsYZ3E7snwTHcXLBrFzxnM-yKVBHKArXGONcN9dhI-l36ORE996KQ-Zd6s64OD1_duSgYcvOP3vXI4Bco34Dh4kP8CgEs-3VSvfJPaQI7SYi2giygbhC4VoHkuhXqIBhtLmfeVHrFV68zU0CpfZCv5EtoGlxjXlr3uy8vrGNIcHpy7xUR0XCLxTdQ5OY0KEPahX-WG0UJg3Bd2OYsK7dyHSKKh3sxOm9KQ86MXUgnT5_ITh8XnaR0xHEGWQOlNUvyy-Vopoit-4Zuq27ar-8OzOSzjTUI5gdGTyaYujtftVNdxv1EkgVSIU7hvrdqYdWoTFw_b-LxoYJ9KGAUWZuTfteVCWDoiokvHVVx0NF7gHR4w3vymRIn2-_iILO_4DfuxCcqzoCPzIMxuGch_H6ZMLUxC9xII264YGjPFJJRIHmLFsrbx1wpDrlvAAZmL_lDDM65N9aM4qALfsVlyB-Tx4B7pmgm0aE-zI3ICkW9lunP9LnZzWoWN5L0CMsEUw9JmaGn9aA5x_YG3q8BTFamvS8qSr7rfLTTg27x1uJCLs9h9iBDMutsKATnwcQlf-iH0itLA9by5kqHIKGgyXmZrf8eK9wNCvwLRCxLj1jcGUqrBRkQ_3tnKqU90fIoCxzd7fdCz5AKZjzju3y3M9X8ZxHiWcMw-jlStUrgHjxBW7ZMCguT6i8L1ZhZV68kGYOqgEtWS8EyxgDYOEGGnISFHrDT9dVFp_DWIpk8SAIBGPw05BFe6Wxb5FuoC5Gjy8Gjv3ztxmKwuDSc5A4wemreZVx-fCHLBiMmjasW1ae9iPwWuQhDil9odPg4xl89wSfGYo1S-w3nwUP4s7txKhmzOKects_ikH52upESzLC4B8QgMEnUBeHg0mHhSbNMsfTF2vZh35g-QKHQREppA-CF1Dhft6ynQYJIFfgypY6-lEfmrLEhoUVkKidC2xsGMPZCJsTm3-o9-aw5kJHZVIAa5UonexpHRfoXRQlA0O-0nzaBEX-O3Uax9Br4pyOhYfufY5pctB46G9kYhH1i37iMufi8Eyjwl6kMA7n8F61EqDqgiI0d4oLnwNNtJvoLIDGqWC93-AxSCJa_Yjw5ovWiq8hO9Pc9AAsI8GHEZufBqJ_YjXYenwmSkCQyy2jUvWnTrHZgByEHtCvoWgZ4VpVAwitRThPKpy4Ttl6SVaZSG-iYGTIfvCeMQF1b8Gm1A_Qc5NN2UQtdGaLECSk1tfARWySkzO5I-1ikPeJE_HChHJPRg9WLpn57IVh96UoLD21ZOWUPeQiH05I0f3oAvwCVbq6FbOCZyNeTU6J7Ombx79YrjIiXOvpgqPUgVb8B5qo6K8hmFAs22FEkEFBmv4qs4goaxCWPaBMfEpu9cF7aMVrXS5aPcZ_FfptyAW9cuNArKhLPqkk2PdvnqX2xLhPjhms96tC7XaU0wtKhM_l7IORGOiHFGt93Heq2qq6QLPdNyU1SzQVQh3PPpWRXjHNg-GSw6NPBDc0Yo10xAsrmxiJsD1Ivd-ut3Y8RKOTqmVtiG20cYXHzh8rxiAB4DHZ0ND0Xp3Kk1MeE97Btmorioe74nc7A0RzYXKqaZEG48gGzwil2ixTFs7oN4V5ZKUZCJ9D0vcihetJkbjpwlQLLDnqV8QdtH8YW508DNICWimvOEnspu-PNtXfLWdaCBAqTf2aHp_2MM0yB8ppvdPmeG04gntyI3jj9oZqqlPlH0r9tKgXWPdbVXfzXluqw2dVcld-vwfhh5c8UQqGic2lUJ-StRDuqiK0HGgnmN8Q1pU6b9YDrxVHA829S7ck1w5fmZkhuwnQZdNZh_gy8z8bIMde_hkVBG6zeBYSI1hHTH9fEu2pY-jKs-I9BKXJnlC-n3MrL7Suag27uUWsEQz2YHaEZmZO34OBGbSDAEvWBNeyI9tFUqoc2jQSBFfa6Alzz8pbMzaoWSSg3XtftSi4-NOEMi7QXwIgdu16cj3rjNt9xahTTJA4V5RLNraNRgri1fQqfo-OHRmKFmsQhPg12TzG2wk8E_Pri1AfrTjWOby8M49z6zp9IazrRaAmUSJ88hnpE1dBD1o2U72aePb52SO7LQY5HnoIUhimJQo=",
+          "summary": []
+        },
+        {
+          "id": "msg_0d060669026476b0016af7383aa5b08195872b8d4ba3a56de9",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"100\",\"summary\":\"Initially occupied beds = (1/5)*1000 = 200, so initially unoccupied = 800. Admissions over 2 weeks (14 days) = 50*14 = 700, so occupied after = 200+700 = 900. Unoccupied after 2 weeks = 1000-900 = 100.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 340,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 174,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 514
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"100\",\"summary\":\"Initially occupied beds = (1/5)*1000 = 200, so initially unoccupied = 800. Admissions over 2 weeks (14 days) = 50*14 = 700, so occupied after = 200+700 = 900. Unoccupied after 2 weeks = 1000-900 = 100.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 340,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 174,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 514
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:955|fixed_sparse|refinement:2",
+    "attempt_id": "7974eab76f22492497ecf81b381e818b",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000433,
+    "latency_seconds": 3.0317822430006345,
+    "started_at": "2026-11-13T16:18:00.640506+00:00",
+    "finished_at": "2026-11-13T16:18:03.672296+00:00"
+  }
+}

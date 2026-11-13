@@ -1,0 +1,199 @@
+{
+  "payload_hash": "c426cdfef8b55683c3892561dcbf408f680f8f77a4448fe272e5b62ff810f9bf",
+  "logical_id": "gsm8k:official_test:37|fixed_sparse|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_05e9b4d29c5f1390016af73bb5bce88190bb3de90cd8c0665b",
+      "object": "response",
+      "created_at": 1794587573,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587575,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1839,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 447,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_05e9b4d29c5f1390016af73bb672f88190835dd8ee1b544ae0",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zu3nMCEOsWWDa6XhxJOVhE1Wxx5UUmf9UgnhlPdVkS__pEWAk9tMPpr1XyKfe_spe3w8qc-OvCx4vvu-wto_VJOgY_rc8pRCkHDA4QyndP0bt8CWEfLcsIljAjfytX9-WBA_MFaACH1qGGSHpSQrtqe-jI53lGgHkQ0tkFcTS9qKuH5QeAFnKKdRHvezagjZwsMU6tc4V6HTVzwLvgDdXnYjpI_x7dA2Z0S3vQoDxSZrTonaPY1V8-XJoqdJ_Z1sll9y_JLNERQzpeWb-hDwB3uLFuwhLToRMfhrqD3_8VqFGDJOpnYLEakd4bKdRcWrz9u3NuoTYEPAuGqyu4HFtRdcRcHngJgyj9umaPI7pWWqktb_YfSKgX0KVqIFcwEQP4LlfrRrQMRDSxChWtLQgzaThs2YVBOYb0vnsWdvim1nmoha3K1rvaESzzTH3OAT2_ImqgoX47US4qS1OpIJkZQPzWRQaG8ZqwLhjH2uTO7tONfaKQ9O6WISvgU6fSwWLeh5XXrbFk5hwzbeD78YCJjCYI4ZM22nSZS43HwVCxJVJRv1j-cs5b1mQbgcC13OXl932jO42f_xBzE8mDK5qoalkCe6TFcwNZxEH6Kx5hZ7xCNbcPqmdtV4EWTfmxEaqCK_jIzgKYYdyFC7b0MbBiGrtXuMbrxLAY56qX_YQbrFPFe7PKY9WtHcSf8XHxmmGlS0qc2t_Sv6Vakkx2BwMQYGQurJKQy2TuNa4cZyuQ8WR1m_uUtrAHgXaG27XgMeS2vHGZ7S_kCbFyaRXiWLxJ-B4atHcNIt5qcT6IOXGz5DLPMKokgc4b9VPAxuiK8lqdzFwTgc-OL1Bku8YIb_WCSj2mPC-RywCIyvr5uK9f6E_g8DgSK4XVyt9wTta91qPPmD3SrMx7LYSR81ACbxocG-wMEz0fK9hQ9G75k144b12DKjGM9G_mBlvsd9035rWOCy3-C8UNXp56-xNO8WJG6Du6BtZ_Jp0ebcxdauiAXZDyGqp0nxsnHX82OZkALMoNGI6uifPzIThvhuT_ygW2R2T6osoHcnUp7hWwnQ7UZ6RtMcEdV5ZydGRmiJ4_TJTvqnBaXHqUCXnwgBTfUcB4ACT5Zt1x8KAGdKwfOoiQeEGZR3D5kR63zdbV-CkrW3oknM6rulyl6F7HhIRweDaL9fWjybO6ATwBNZfwLnk5kTN3NtFca3f1Hub10EWO-UKGjj4Cr31BPj0-1D3FDfjf4hgT2nW5XFBpEZ_rG449TgB7K2yoixyutaFP_VoqWCwfMXt8KO210TgdmXJLgSFYGbw7C1skHisNnCrkiVwo-oOzUWibocYf4D8jZpk-AK-kJJWoRDdmNNNcwPHz2cHZn_S8sfmgAFoXBmF0pBNDBv3feWgIjw65vkzuidTfYp8sBds_Sx1ghn4c4HdtFPNPzhCXRH5aNb1-gvjFxVAphCZc-JK4YoB5KoCJY5sZ1jRTjWa4Htjx6PdHZjF6unHciq1vceD2mrsNHIAfyAFqpU_A5Ej_EJWJOzk3L-0LyhVaQGfs4-Cgz-cfRkry9i4LnL6k4h0Lm0SULklkYIJ-EHQDJ1-L0HeEq1PfNxmCCMyajSHGYgrNT7b5rfvcVht1Ua5C1XfVH2Yw5KPn6FriCxODF-rzXzbkx9aqUMFt_rlSo9NyCfyJk_SkR5-8W-0jrmlZvzYM6WEtSlQzSZBGGatJRy5alRMs3ajtJgb00Uoy09pXz9_h0BdaEYNP6RK_GNcuhtIENqaqDOx5KZT7vmZJBpB0YQEtGGAQqMdHrXkpH0TK-SeclHwb8hgL0-LfR70IKQ8NJyYmHkQ3CRJBpeoZzTjzZ0et75bZ22h2dZZtICFYC_oioXNGrC9RGt-7CW3lD57Q-Tp0eZR_qm5MylSeiTPPd09DFCUSoD5q7ps3vIDBVNYz2wZQNvixy70RecgAQ7f1ZBtwZk2kZfLN_LOENyKZ-TNTjzTp2TMBaOCjCB904khgsCEKimPXAv_zqOz1TCfl-JqihEb5dRrISMeiX5gY6mgTFOfJ90dYFFF65g9nP8a7guTo5Dk6H47d3TKcxmB1sdAWRpbpXLkvvHhv63NQULMV77YZ0b7DFbcuE",
+          "summary": []
+        },
+        {
+          "id": "msg_05e9b4d29c5f1390016af73bb6eacc8190bdd26f5778048f04",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"2\",\"summary\":\"Let x be sets sold for $15 each. Revenue 15x pays for 8 games at $20 each (8×20=160) plus $5 leftover: 15x = 160+5 = 165, so x = 11. He started with 13 sets, so remaining sets = 13 − 11 = 2.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 343,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 138,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 481
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"2\",\"summary\":\"Let x be sets sold for $15 each. Revenue 15x pays for 8 games at $20 each (8×20=160) plus $5 leftover: 15x = 160+5 = 165, so x = 11. He started with 13 sets, so remaining sets = 13 − 11 = 2.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 343,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 138,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 481
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:37|fixed_sparse|refinement:1",
+    "attempt_id": "b5de23a597d44cf1b1692a153c0e76bf",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00036175,
+    "latency_seconds": 2.4203073700009554,
+    "started_at": "2026-11-13T16:32:53.158678+00:00",
+    "finished_at": "2026-11-13T16:32:55.578982+00:00"
+  }
+}

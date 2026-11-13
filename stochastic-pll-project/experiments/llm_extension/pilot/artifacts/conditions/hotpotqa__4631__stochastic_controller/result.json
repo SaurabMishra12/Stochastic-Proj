@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ae48a2b55429913cc204494",
+  "source_index": 4631,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "jennifer nettles",
+  "final_answer": "jennifer nettles",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 10134,
+  "output_tokens": 1057,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0046475,
+  "latency_seconds": 22.396973889997753,
+  "wall_seconds": 183.0929485810011,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 625,
+    "utf8_bytes": 627,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "jennifer nettles",
+          "summary": "Multiple context paragraphs identify Sugarland as an American country music duo with Jennifer Nettles as the lead vocalist (alongside Kristian Bush). Roger Taylor is an English rock drummer and singer best known for Queen, not a member of Sugarland.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"jennifer nettles\",\"missing_response\":false,\"sender\":1,\"summary\":\"Multiple context paragraphs identify Sugarland as an American country music duo with Jennifer Nettles as the lead vocalist (alongside Kristian Bush). Roger Taylor is an English rock drummer and singer best known for Queen, not a member of Sugarland.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "jennifer nettles",
+          "summary": "Jennifer Nettles is the lead singer of the country duo Sugarland (context entries 1, 2, 5, 7, 10). Roger Taylor is an English drummer and singer best known as Queen’s drummer (context entry 4), not a member of Sugarland.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"jennifer nettles\",\"missing_response\":false,\"sender\":2,\"summary\":\"Jennifer Nettles is the lead singer of the country duo Sugarland (context entries 1, 2, 5, 7, 10). Roger Taylor is an English drummer and singer best known as Queen’s drummer (context entry 4), not a member of Sugarland.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 243558393327380148097162717736222813721,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.8890661316018847,
+        "proposed_state": -0.09840158882319362,
+        "state": -0.09840158882319362,
+        "probability": 0.20937096063812258
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.09840158882319362,
+        "target": 0.0,
+        "drift": 0.11808190658783234,
+        "gaussian_draw": 0.2165318369321527,
+        "proposed_state": -0.06262771549180848,
+        "state": -0.06262771549180848,
+        "probability": 0.2141478220131185
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.06262771549180848,
+        "target": 0.0,
+        "drift": 0.07515325859017018,
+        "gaussian_draw": -0.010157564294046175,
+        "proposed_state": -0.05623662598549898,
+        "state": -0.05623662598549898,
+        "probability": 0.21500951718386407
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.20937096063812258
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.20937096063812258
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2141478220131185
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2141478220131185
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.21500951718386407
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.21500951718386407
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.6176943460069702
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.4606316197099871
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.1798901217430694
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.3025503403578368
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.03960396548340328
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.8620734502004226
+      }
+    ]
+  },
+  "initial_answers": [
+    "jennifer nettles",
+    "jennifer nettles",
+    "jennifer nettles"
+  ],
+  "refined_answers": [
+    "jennifer nettles",
+    "jennifer nettles",
+    "jennifer nettles"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "8c58b04f93a7363b442c3b4e41fcb67ae6e0ba3ea0b5f7283fc5704be5bded71",
+  "errors": []
+}

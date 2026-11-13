@@ -1,0 +1,199 @@
+{
+  "payload_hash": "0265fa88464051b98b56e3e11c6731fe22fc9aa150393eb9952babee082767fd",
+  "logical_id": "hotpotqa:distractor_validation:5a82d71555429966c78a6a94|full|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_05d80db1a17dbea1016af71d30915c81908b5759fab5fd9832",
+      "object": "response",
+      "created_at": 1794579760,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794579762,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 8200,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "low"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 575,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_05d80db1a17dbea1016af71d3183fc8190bd63a261bf634d3c",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9x0ygguBEl-gJAzF6Bbqs84xhbJoETRc2q11CcWHYHn-AgJoBE5QMuwiBO-TXYma2yM3SVGpJgMvMrorwRJz2wHIswBQvto_w49ukdaAhag-m5lH69IL9rh70Zp-D-ruRJdkXcYIvmuH7nlr4AcfliKiIuobIlBpE0Skv2EV0MA06bm8UDyxYWhJIyFSe0Hp0zFNnHr50uCTuhv0J_D2C0KaPjwxRHCI9pBPv3WTu9SlVW4RtzxvJkXbRikaRPLrU6bxqcdT_SQEcTBOV9XfsLlIwZ_bqU_WZZzZZJt_gVhyoW3Addy9Ryq8eowsAK0TFTrN4MtYVgHDghFihT-aogemLtgYxrqCqNDq_m1y32i1cDlccfd88J12WYOSnRJGCoR3v27XEHesfqNqW0ds_605uvYoaaDWHmjuZllJwST4eu2BNZ3BKqNdKr694O6p7U64vlCyawF5TO4VhzS1GvjivJ9mx6uOJxpUbDdspobuWp7eMolij-Wc3aJUH8FPf-2ZquqrMTkUm0ao71eM-Qjv9EpbCNGClaQ28xy-rZKRWqlBeVvp0WLObB_ezdJgbtEUACWLR8yuubKnRCXLIzzqOVMrJH1kKlhKDXzS20rujhCxVaINgfCj7nc5e_St4TyU43QVRUvp0NrPZFXJ-Jq5TKLgYhYi7PWckNFOfAxfbqxSLmyOafDk_gI9bZx2XsZ4TcdOBvt6u2SdJRbZZhDibCx3uN63e-wahacIU06Iordh7k75Ap3QARHFTuxi70A1m309DHDujoXOHqmpZ2fefiHSeHcihmtwqibHiT_c2tKvCpMDnzyeS_STb7Sfdid4Pdgek3i-KzDErZIzZPieLb7LGFMBdazYyyjwKcoFHF2wzDkIWPghuaidCD3KmtHE0kw5RWqYV39Nf1yNcnGGyxdnailnq1zCbUFDkf9t7V2xAxwp0uMnM_RAGoTvV8Mt9bO2C40X_uTi1CHd8Mwwwa6qzevDcUU6sIIwOlpAhaKWPboGmEiZohkznbwgCZ_enLesdKoaKRrv8ft25qJHjDZDnVqZrZs7ePJTELUQiDPuIj2iVjkb4lwFzR7qUdOfZXi_KkAn_c9N6RFJOJkEpcXTSEIk5OvnUXGnM1pMQnlfK-j6CxJRDbv8EF_Zi9nONWI4vZ1c5LDFvKeLbYoW5qjKqGsv33I6hFInTUslU34HuCOB16qOsqCIrIGRMxvTfhj9_WApUjRZZTsV7zb0sQ9OfdZMjXNEdh7NEu1jfeB7mPO6o3FT-VU8__95NasB5t1qI9jSqtmMn8-PozxKPSyLPTt-k35XJEPmZnSCIfFSO779NGps3n934prr0gnpZb3PjIFaC0JaBA_EbdaGX5qdqFPGUO2yEmXD4cFITL49Epx0ns15TI85ysmuCf7x3f77WaxUygrymGmopAQLXIuNdvkorpOTZkOji5XeX2ixpyCMqEg0x0kCk_byjddPRjolfp4JqNfIW1LJF94iId3bhsGF0UBxE10IF1xndmRq7SifkFDEl2pYPDzJEiTZU1zTjcsQRbaMYeVNC0JCkfCkGPoFQ5R2thdDbLJSVH_WJwgMCsB9rr-eIPYR5zfDl3GbaCg462lNZPBpHClnmcr_q4wqfmms2bt8ompPwCkAIFiUfHYQ3K7TYVwNGvwfMRVgZh3N0cCVZgvc9tdjhHuz80nWuMSfvcaodlOYRyX6o3In2508X2WJ-nzHFA1Ebltk4hJxg4xnoJUkT8RlG2oSdrjAoTHQW6T72DRsNuPW33HhKn36Bt01Jyi3m8VTp1QqDiP-chlF6VX2IH8Q9hiMuk7xIqQx44YDeWZN6S3FkCiX9_qBSWwKDDc4_84HNVSLgA230mYKlPpdNiakNVgGUQ5z1PXrelKlBAhx83jn59C_ITJ70WXHlCOoj9BqsmIDkLcgcQzOtjiZNRwwdzurRc79YYnakNX8dNdDH96YCzJvJqGxLgKqvDwGYI7jl0jb41qnV4y0XxJNiVarcZMjgg0T_hzPu3HRMhaj0N7CaARI8cF-ZYW-foCkgSW-WTdPOIbcMUONFTyvl8R-aAEfqv7Phvn2f3N6zop-oJfrzRPoIM3gIyZs_9iOqYIDiKziNdnmDNBEUdDpyMukdVFgkoTp82NNWfO2FvYeHeC27-aIX1sfYUU87f94bt7WXYyibmwZ83uNkNtrIgD6Xft7QeJRACfOJClwPbyx9UQo5udf9R8Gxv-Kcu91zyzD0_zcorYA-2Q68WMX_YgTYfm6gemGDAbJKZTqWAYk4bUxwD67nlQVP3IhIvZIKruERCp2INLW05yEaGfIz66ebh2FHfwSr3PnYIMhiDQVM3afFCipWp_RVQWA8SZDgYn6",
+          "summary": []
+        },
+        {
+          "id": "msg_05d80db1a17dbea1016af71d31f11081909799b69e7631dd45",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"yes\",\"summary\":\"Both the Tundra Mines (paragraphs 5 and 7) and the Negus Mine (paragraph 2) are explicitly described as gold producers in Yellowknife / the Northwest Territories, Canada; therefore they were located in the same country, Canada.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1788,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 136,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1924
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"yes\",\"summary\":\"Both the Tundra Mines (paragraphs 5 and 7) and the Negus Mine (paragraph 2) are explicitly described as gold producers in Yellowknife / the Northwest Territories, Canada; therefore they were located in the same country, Canada.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1788,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 136,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1924
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a82d71555429966c78a6a94|full|refinement:1",
+    "attempt_id": "3a22662af67640f9ab69da4a41956260",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000719,
+    "latency_seconds": 3.1465671000005386,
+    "started_at": "2026-11-13T14:22:39.562049+00:00",
+    "finished_at": "2026-11-13T14:22:42.708594+00:00"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab4314955429942dd415ecd",
+  "source_index": 1973,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "4080",
+  "final_answer": "4080 feet",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12753,
+  "output_tokens": 1016,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00522025,
+  "latency_seconds": 22.637521860999186,
+  "wall_seconds": 292.65893766800036,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 455,
+    "utf8_bytes": 455,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "4080 feet",
+          "summary": "Profile Lake lies at the foot of Cannon Mountain. The supplied text states Cannon Mountain is a 4,080 ft peak, so the mountain is 4,080 feet tall.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"4080 feet\",\"missing_response\":false,\"sender\":0,\"summary\":\"Profile Lake lies at the foot of Cannon Mountain. The supplied text states Cannon Mountain is a 4,080 ft peak, so the mountain is 4,080 feet tall.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "4080 feet",
+          "summary": "Profile Lake lies at the foot of Cannon Mountain. Cannon Mountain's elevation is given as 4,080 ft (per the Cannon Mountain entry), so the mountain is 4,080 feet tall.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"4080 feet\",\"missing_response\":false,\"sender\":2,\"summary\":\"Profile Lake lies at the foot of Cannon Mountain. Cannon Mountain's elevation is given as 4,080 ft (per the Cannon Mountain entry), so the mountain is 4,080 feet tall.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 260727644493613791343107274737196566836,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.9901602887343725,
+        "proposed_state": 0.10959066163677024,
+        "state": 0.10959066163677024,
+        "probability": 0.23824462887052525
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.10959066163677024,
+        "target": 0.0,
+        "drift": -0.1315087939641243,
+        "gaussian_draw": -0.6110605727629188,
+        "proposed_state": 0.02880777030133226,
+        "state": 0.02880777030133226,
+        "probability": 0.22671502949072897
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.02880777030133226,
+        "target": 0.0,
+        "drift": -0.034569324361598715,
+        "gaussian_draw": -0.04700375378388243,
+        "proposed_state": 0.020148475646453466,
+        "state": 0.020148475646453466,
+        "probability": 0.225502843560624
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23824462887052525
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23824462887052525
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22671502949072897
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22671502949072897
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.225502843560624
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.225502843560624
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.08402462906486896
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.34950917335660636
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9261331675689336
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.6117763601107842
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.3965967240209475
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.22016537690240945
+      }
+    ]
+  },
+  "initial_answers": [
+    "4080 feet",
+    "4080 feet",
+    "4080 feet"
+  ],
+  "refined_answers": [
+    "4080 feet",
+    "4080 feet",
+    "4080 feet"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "5739c9b0f70c86dff2bd503af8212902feead003becb13a7015f4c5c6494377c",
+  "errors": []
+}

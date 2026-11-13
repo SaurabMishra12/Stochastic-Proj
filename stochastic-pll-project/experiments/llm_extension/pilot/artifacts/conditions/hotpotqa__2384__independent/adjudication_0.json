@@ -1,0 +1,199 @@
+{
+  "payload_hash": "c598907ecf8e57e345627db16cfecf6d63cc7a10d512fbaefa43d99b7a018ac2",
+  "logical_id": "hotpotqa:distractor_validation:5a78dc4d55429970f5fffdb6|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0f5581b361e7daf5016af7239098348190b21a5009ef912265",
+      "object": "response",
+      "created_at": 1794581392,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794581395,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6185,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 454,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0f5581b361e7daf5016af72391b9788190ad95ffd8972e851c",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yOT9jTP5BcFOiddzQ1J3VRi-l4HytVM1W-a6CHJCu9sGEJtTG6wDRcf_DkDT6VA-jVcHBt-KC2g7imiwUktCPXZSnvpBEN2TUY03Qx7WzQB2liQJbQr4OZdJF1W9rvrf6tFLC00Oc6nf5UBzDUDqfUCSkCxEketiAdd_aYYPorw0MaSotUgfEyEFPe8dx4TxY6ZuZX9k04jhNe49fmXP5gkIT2q0JuRsbXcdiJpcpGCLsS5WAaEJh1QMTEm96MG02mj79TrPIqmiQH6655iyoOMy_uA-D82KTU7StYsd3hLmsZGZJW31UH3O_1xd5KpjD2AAgvfQXf8zcaRdmoSD4sAKLYps28RNHq6ngrpvjYuQ6_fd-A6Gj8n5NjudVymza_uQKeDSEn3FKGeg9mdWN7_rYGfJakjT9U2jvPqPdXvUDuGJf-xNy057fDsy2zcVrEd-7C0mwG14ho7lICxwOtr4__87hRRPZPoghOOeEHZmndc82QrD632TMv27fW6sH3ug72qodGqDKFnUUASsnThY3TDhjZP9iQxlTychizFDKe5GEqnBhCsuvTuZPWKrOwXoxwaj8O_rJsky4y3sZ9A6qEuSf6KN2anH7ptIDdW8WaUDOBg9nNEUmM0S52Z7J6zIs2DQD3zb0PC0BDazMD-gJB1cEVZbAMdWz25gcXfubG0Gzej1oXY1Zna1t0x9_I5OutxZpwf9lyaubC3m697A_jBwksRJ2hgW103kTUKDordY_Z_BSXH1sY5cHhzk1ncafcMVcBcWSM_LzaYNa31B0PrBXl2ZzBLQ1XtKfiPUZGy_iiGkiRl9XaBCITTfcuT2z3bSnqj8vCJqHtQfz1IcE5-ca9vc_LsmfrKWGKFtsSjaYkfonvzjOyHigeO9ksXf8N8MKAtAazQHIJRRsLYR6eAyNGLNJTr2_sPy1_Wspz-_G5Q1W2alcPvduasOEAhvnMjCBdNKdWItTtPm6fd0wphCjBJDRRJe58hMfhDd2ThzXVLXngJuv7ugMP7ft2Be-aQSUzsxgVsF0kqaMyQhVZnV4wmkVmANwqMMgHS7dgmwcrRk8wySwsyaTVguuyagXQM5LdMhTfQwIB6a6WnL123a2QEPVxpdPeaOeLzYf9ZHf0fFoby7ytVotqAweUM-0u4RsuWvsFGZ0WD0505OKnkjiCg-bLq2ne0v9HW_uC43R3iVId7izE0Jl5cy-nZNKgLD41OVwt-CXsXmWPnpEBhpHRsuIPxYSdcBeCMeqoflOob9k46pC1yjdAtaZEUo-XORPi9FjfNzhxDW_RHuQ5pBs7xjHwM9ZfO25b9HLSnnJJvAhQeiK8fB3rCQ9qdg_kQkDVh-d2xqGnF-lHKL_TRfAyh1G-IK_qOZluXHKOp0_ravtRecnKh0EyWAjXUIy0M-zYtnn9DK0CUTKAnBrL3t323LGmrt3-j8dq0tRRFvFFQvGyiwFgou3a93pyQK2kGI-z_qk3G9QnkrbURR38C8EVldlSx2X6mND18_u-2bykeALzgubClOCKVKXxJlf8FF3HzBQ0Ye_nCk2MxL13WYpyPXVed9LD0H5mvo___c2q5kE3TqYVNDFaNrgxwkgwYU8IzxM738FY9EdyogRACHb0XwN_J2Lv8a3yykzeqPeu6sRs24hMNldEPZubp7Nl0d2YR74aURViJ2irLYNmrW7TM99Rt2LL_NJbdwt2oM1wTyv3jbxmQMnPI9r6wV4Yu5r78_98-LiV-kBzlwM7Yj4uvop4z_bhbVmTYAdMezmkuyiUhA3QhXa1YRwDWYQbZEwOmESaLW17HOjVotAZmYh0TyjaYS1N-HA-_S8iilxdFxKWmQXFgcve6vuQTp6PdMGTD6ntCCPiW0Porns2wqvmzCBYU8K6vnxSS5QZzLcuYSNmUnZ4F0PQooxBiNd5UBQ_Gssuf9MX0MGHAkv7buWlQ0p5fJ2Hij5CMMoQ-jNQhd0EI9IYIDFCaKOYE_yT5sJwbST2gIct_-O_CYc_nNx9Smk9Iz006lgxZfG8=",
+          "summary": []
+        },
+        {
+          "id": "msg_0f5581b361e7daf5016af72392455881908ef8209f3b0bc8dc",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Muzzle\",\"summary\":\"Muzzle is a four-member band (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth). Primus is described as a three-member band (Les Claypool, Larry LaLonde, Tim Alexander). Therefore Muzzle has more members than Primus.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1309,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1024
+        },
+        "output_tokens": 117,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1426
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Muzzle\",\"summary\":\"Muzzle is a four-member band (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth). Primus is described as a three-member band (Les Claypool, Larry LaLonde, Tim Alexander). Therefore Muzzle has more members than Primus.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1309,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1024
+      },
+      "output_tokens": 117,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1426
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a78dc4d55429970f5fffdb6|independent|adjudication:0",
+    "attempt_id": "9115687cae9640c197c07c3f7c3440f1",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00056125,
+    "latency_seconds": 3.220068819999142,
+    "started_at": "2026-11-13T14:49:51.934424+00:00",
+    "finished_at": "2026-11-13T14:49:55.154472+00:00"
+  }
+}

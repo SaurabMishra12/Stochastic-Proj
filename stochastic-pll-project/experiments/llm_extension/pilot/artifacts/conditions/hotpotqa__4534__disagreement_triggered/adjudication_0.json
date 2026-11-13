@@ -1,0 +1,199 @@
+{
+  "payload_hash": "5390ae99d72d5e06d24d6665533127f2b671897e53a90a7ae33b6badeb403643",
+  "logical_id": "hotpotqa:distractor_validation:5a7746cf5542994aec3b7263|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0196bc681795ce93016af71355c62c8193a472328eaeecf162",
+      "object": "response",
+      "created_at": 1794577237,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577240,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 10339,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 552,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0196bc681795ce93016af71356c0b88193a0ad26f74181bfaa",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xNYA2wXcAFNdO8UJOunlDIk14ulEi_dym0vERsmpIi70bVLiTHFvDB1v7dQVEeObkqNZ9sx5HfrcCCzxhoZ4UFPc8o5-owe2a8bS0viD7Bpi1bgXJ1zIAKb5cwqZ58cklUBAOTN4OC4mFg8hjDNl06h9WZ6JqPtDJLW8O8hfQ9Z7wvgrUTQimVMskQJc3kH_IPez1xkYyzTqZYJSgOFThwz3J4NnGb39QcTgIPmOIVZ6ipQAyO1JGFVz-1X7JhOe_tEzyxmYgD9e74EggGMMxXA88ZhJEGn_mVTFwAFBYE7uETQL-C4tIUgKYGifyahCWaZuAFL62cqubu_Gv5HSGa_FXcHMa0JSRU9znR_6aB8_W2cTyCPwgQTibq3rGHutDlX2iVSK-eNzUsJuOhIJB7Q-UsEGd5Vrax8Mx6W1lqc677y6CL7cSxag6PAGho2skbR_azfnzLaKVeZEjAMg1Sbn575I9jz8P7QQ2xbdn_TXiLoGzqqCuycFlMiTZBQmrx4tFmozWGu54NR35ZhWwfsKFL-s-FMt2klhjtB2vjLX6WY0m2QseGGzoGgJdWRSz0a33mKtHzBiOaziaUdhIjMaifO8_GYSkufzN467gE6DHwldfrgQlvUAsN232-NsDYUSYMdy0q7wg2KNilh8gBrThw8mlp7pPbcrOGdDnq6YCPniaYQkqP-aIuTy7DKmeoI1TfJZPvRSav7e90zDiTgIcPGRw_JuhAyGAV8ynrYV4oWiS1XSGdlnZWdjTssLYjUSzdu2rl-nkvkDeM6zBb9AxXTOoT_5xg-rgUDmczQ-On6p25kRQxNq_yDOn9s9tc3JRE4NJW2OkI7WdUIrAbUgy7vNgK-9vP9jPUpBEoqQkSN-T7O4yybxVFMliCiJPpoEMCTbGDOax6YvRgp2xpcoc0DIbDIaFA6xDqMeVBd_Tg2YmOMqHW-1cF-mkLCp8ju4GFJfl4qnufNR0FltL7o-aBQtHbdHkwE66cfQI5eOdGOavOmeW01CyGiv_vGpM7kCEXggTqu0E0ycHF7EjzYP9md8SNy3rYtzOa5DJsAhBjvuBlbLDVy8yRIgEPyxpTwSiiU7PJyb-QnKFbn76NHyLBOc0rB45Lt1JrgdbBrFhY84tC08rBIgMa4SyPyU3zouYRuFxmIFAWm4Zb3kQvrz6g4iLKKgKuWTQ6YPp5Wqcn4DQc9gweVfX_-vnAAzXFbqjox8HU2OUiTLD64Db26_CYjnvmsvKQFc0-lYNdQ6kAYHzYLSEcrwURADfSJYkKq5eI0zXL_OC66WgoPWIKAFZNHGNwnOBTmWfAJnKc1YWKEOesv1Wk5zZSuMgpj3t4gQgcJRnMd5JI0h_X8Y16gUdOfrklYrpH2kyXZl3t14iiWm7BKiU_qiaTUL5oLoV9pak3t1QqHPMyLbPcfhveb0YRGWGEFoMp1dqwdFayPxKHIwRZvV5-OQM0T1ypBxFgXmOFE1mtVIjcQHdB6yuj1xxwTIBs7UT9Xo91PlH4oCvKqqEerWy0ENf1RYZcahsY9Re8ctpW2llZmsKAocumindTabHEhN8YLebzNXtIG7D8AKo4XkmKQiqNKaLv3aMOhxhdd3ct08bH-7f_MNcIWf4gXhR1wCxywLi95134gGQcZ4nQQ1mx2jwP9-p3y0lssuoPIG30KhA8RynjYfgkYykuhxzh38sy2JhRxudy496Vdsk8mD74KF7xRUlivU_0eEd4Hth_f-FceRi849L9-tF6mG8SpxBgdXBYd0vWIHdJcs1_1bHEncNOtMJcAvAlqzgwtBVqjoxbNM5iJ998U-GaYyDP-HjJjih5R8G_2YWGrusH39aDTcQgbDPR0XfQUieb6gLW5Ea9siPR-gPCBM7l6jYY0PWL9bGYpQHR4NhuTzPObEbhtMMd9T7WNTbL_bQ0uxtQg7ZagTulY5P-P9Y0WqZSmNq1d9fksIGPymw7R6r7BY4KVx-V6t3BAerZuNEaaYMcVTrMNn72BEbmiBI0z4XG4GeSVn4v6zvvgUFh4tHulc1rlLLNU_BQEerfkLw5x1vYCtAcw-4MV_xBibTkfCsbVAT6HDHQoiaHs83447XDFS18D-cjThD9Q0LgokbyNBFsh-cg_mJ66TGql5Xi-F9CULosqU-aF_JplR2B7TgtJvkLQxR7q2axTfON5QzoeY-CObaQtI1NYZmq2W1Du27djjQgAdQA5RrFMysU=",
+          "summary": []
+        },
+        {
+          "id": "msg_0196bc681795ce93016af713573fdc8193a6e3bfaf0c645416",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"The Sisters of the Community of St Mary the Virgin (CSMV)\",\"summary\":\"St. Mary’s School, Pune (1866–1977) was run for over 100 years by the Sisters of the Community of St Mary the Virgin (CSMV), an Anglican religious order founded at Wantage in 1848 by the Reverend William John Butler.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 2250,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 144,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2394
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"The Sisters of the Community of St Mary the Virgin (CSMV)\",\"summary\":\"St. Mary’s School, Pune (1866–1977) was run for over 100 years by the Sisters of the Community of St Mary the Virgin (CSMV), an Anglican religious order founded at Wantage in 1848 by the Reverend William John Butler.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2250,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 144,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2394
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a7746cf5542994aec3b7263|disagreement_triggered|adjudication:0",
+    "attempt_id": "68ef9fce14634ea3b780bdb99ae0576f",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0008505,
+    "latency_seconds": 3.400732297999639,
+    "started_at": "2026-11-13T13:40:36.852656+00:00",
+    "finished_at": "2026-11-13T13:40:40.253393+00:00"
+  }
+}

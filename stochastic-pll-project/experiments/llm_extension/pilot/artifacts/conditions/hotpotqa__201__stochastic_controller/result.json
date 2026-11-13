@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ae0aaf455429945ae959401",
+  "source_index": 201,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "salford city football club",
+  "final_answer": "salford city",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 8661,
+  "output_tokens": 1025,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00421525,
+  "latency_seconds": 20.59775077499762,
+  "wall_seconds": 185.1582025709995,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 638,
+    "utf8_bytes": 638,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "salford city fc",
+          "summary": "The provided paragraph for Chris Williams states he last played for Salford City as a forward. The Salford City entry indicates the club plays in the National League North, so the National League North club he last played for is Salford City.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city fc\",\"missing_response\":false,\"sender\":1,\"summary\":\"The provided paragraph for Chris Williams states he last played for Salford City as a forward. The Salford City entry indicates the club plays in the National League North, so the National League North club he last played for is Salford City.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "salford city fc",
+          "summary": "The provided paragraph for Chris Williams states he last played for Salford City as a forward. The Salford City entry indicates the club plays in the National League North, so the National League North club he last played for is Salford City.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"salford city fc\",\"missing_response\":false,\"sender\":1,\"summary\":\"The provided paragraph for Chris Williams states he last played for Salford City as a forward. The Salford City entry indicates the club plays in the National League North, so the National League North club he last played for is Salford City.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 198047671428728469209177230377674018934,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": -1.5535395653477422,
+        "proposed_state": -0.09194532115904007,
+        "state": -0.09194532115904007,
+        "probability": 0.502444249630822
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.09194532115904007,
+        "target": 0.6666666666666666,
+        "drift": 0.910334385390848,
+        "gaussian_draw": 0.1503102793389156,
+        "proposed_state": 0.015724416725693982,
+        "state": 0.015724416725693982,
+        "probability": 0.52395985171596
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.015724416725693982,
+        "target": 0.6666666666666666,
+        "drift": 0.7811306999291671,
+        "gaussian_draw": -0.8467017144360782,
+        "proposed_state": 0.00012477964504900574,
+        "state": 0.00012477964504900574,
+        "probability": 0.5208461979737835
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.502444249630822
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.502444249630822
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.52395985171596
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.52395985171596
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5208461979737835
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5208461979737835
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.854654305121357
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6233387125084053
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.1744676932301299
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.2589297306727919
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.6590556681827396
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.5865099392388788
+      }
+    ]
+  },
+  "initial_answers": [
+    "salford city",
+    "salford city fc",
+    "salford city fc"
+  ],
+  "refined_answers": [
+    "salford city",
+    "salford city",
+    "salford city"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "0f4ce6b56b9afd97929e16a03ae707d9262df314cc52e9729ed170528da1a2e5",
+  "errors": []
+}

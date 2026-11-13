@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:339",
+  "source_index": 339,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "160",
+  "final_answer": "160",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1851,
+  "output_tokens": 1262,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0029867500000000003,
+  "latency_seconds": 20.87927821100311,
+  "wall_seconds": 179.30935615099952,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 575,
+    "utf8_bytes": 583,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "160",
+          "summary": "Let cows = x, chickens = 2x, so 3x = 60 ⇒ x = 20 cows and 40 chickens. Legs = 20*4 + 40*2 = 80 + 80 = 160.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"160\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let cows = x, chickens = 2x, so 3x = 60 ⇒ x = 20 cows and 40 chickens. Legs = 20*4 + 40*2 = 80 + 80 = 160.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "160",
+          "summary": "Let cows = c and chickens = 2c. Total animals: c+2c=3c=60 → c=20 cows, chickens = 40. Legs: cows 20×4=80, chickens 40×2=80, total legs = 80+80 = 160.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"160\",\"missing_response\":false,\"sender\":1,\"summary\":\"Let cows = c and chickens = 2c. Total animals: c+2c=3c=60 → c=20 cows, chickens = 40. Legs: cows 20×4=80, chickens 40×2=80, total legs = 80+80 = 160.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "160",
+          "summary": "Let c = cows. Chickens = 2c, so total animals = c + 2c = 3c = 60 ⇒ c = 20. Chickens = 40. Legs = 4*20 + 2*40 = 80 + 80 = 160.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"160\",\"missing_response\":false,\"sender\":2,\"summary\":\"Let c = cows. Chickens = 2c, so total animals = c + 2c = 3c = 60 ⇒ c = 20. Chickens = 40. Legs = 4*20 + 2*40 = 80 + 80 = 160.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "160",
+    "160",
+    "160"
+  ],
+  "refined_answers": [
+    "160",
+    "160",
+    "160"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "044c66b8d9cb665ad98b3022ba564b262da3a0d796af3f6a4137658293fabae0",
+  "errors": []
+}

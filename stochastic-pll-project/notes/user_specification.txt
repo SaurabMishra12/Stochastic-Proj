@@ -1,0 +1,849 @@
+# CODEX MASTER PROMPT — FULL-SCALE STOCHASTIC PLL RESEARCH AND COMPLETE HTML REPORT
+
+## 1. Your role
+
+Act as a research scientist, applied mathematician, stochastic numerical analyst, Python engineer, and scientific writer.
+
+I am conducting a university project based on:
+
+P. E. Kloeden and E. Platen, *Numerical Solution of Stochastic Differential Equations*, Springer, Chapter 7.
+
+My selected candidate model is the stochastic Phase-Locked Loop (PLL) communication model.
+
+I want a mathematically rigorous project with substantial experiments, statistical analysis, visualizations, and a comprehensive HTML report.
+
+Do not treat this as a small demonstration or classroom coding exercise.
+
+I want complete experiments that can support meaningful scientific conclusions.
+
+## 2. Important execution decision
+
+**Do not conduct a small pilot study.**
+
+Instead:
+
+- Perform essential code and mathematical validation.
+- Design the complete experiment matrix.
+- Execute the full-scale local experiments.
+- Use hundreds or thousands of independent trajectories where appropriate.
+- Perform complete statistical analysis.
+- Preserve all raw results.
+- Produce the final report from actual experimental outputs.
+
+Preflight tests are mandatory. They are not a substitute for the full experiments.
+
+Do not silently reduce the experiment size because execution takes time. Optimize the implementation, use vectorization, parallelization, Numba where available, and checkpointed execution.
+
+If the available hardware cannot support the proposed experiment size, calculate the resource requirements and explain the limitation before changing the design.
+
+## 3. Inspect my existing project
+
+Before making changes:
+
+1. Inspect the complete working directory.
+2. Find my existing Python implementation.
+3. Inspect the available datasets and files.
+4. Check installed packages and the Python environment.
+5. Understand the existing functions and their mathematical purpose.
+6. Identify bugs and missing experiments.
+7. Preserve the original code and create backups before modifying it.
+
+Create:
+
+`notes/project_audit.md`
+
+Include:
+- Existing implementation.
+- Existing mathematical assumptions.
+- Code quality issues.
+- Missing functionality.
+- Required corrections.
+- Proposed experiment architecture.
+
+## 4. Verify the mathematical model
+
+My current implementation uses:
+
+a φ'' + φ' + ab sin(φ) = Δ − α ξ(t)
+
+where:
+
+ξ(t) dt = dW(t)
+
+Define:
+
+v(t) = dφ/dt
+
+The corresponding Itô system is:
+
+dφ = v dt
+
+dv = [(Δ − v − ab sin(φ))/a] dt − (α/a) dW(t)
+
+Verify this equation against the actual textbook subsection.
+
+Check:
+- Exact equation.
+- Physical interpretation.
+- Model assumptions.
+- Parameter definitions.
+- Noise convention.
+- Equation numbering.
+- Stability conditions.
+
+If the textbook pages are unavailable, ask me to upload them. Do not invent textbook references.
+
+You may proceed with the supplied equation as a provisional model, but clearly distinguish it from a textbook-verified formulation.
+
+Create:
+
+`notes/mathematical_model.md`
+
+Include:
+- Derivation from the second-order equation.
+- Itô state-space representation.
+- Brownian motion.
+- White noise interpretation.
+- Drift and diffusion coefficients.
+- Equilibrium points.
+- Stability analysis.
+- Locked and unlocked regimes.
+- Physical interpretation.
+- Model limitations.
+
+For the supplied equation, investigate:
+
+|Δ| < ab
+
+The stable equilibrium is:
+
+φ_s = arcsin(Δ/ab) + 2kπ
+
+The unstable equilibrium is:
+
+φ_u = π − arcsin(Δ/ab) + 2kπ
+
+Explain their roles in the phase portrait.
+
+## 5. Build a reliable numerical implementation
+
+Use modular Python code.
+
+Suggested structure:
+
+src/
+- pll_model.py
+- sde_solver.py
+- metrics.py
+- phase_slips.py
+- visualization.py
+- experiment_runner.py
+- statistical_analysis.py
+- report_generator.py
+
+Implement:
+
+1. Deterministic simulation.
+2. Euler–Maruyama.
+3. Milstein where applicable.
+4. Reproducible Brownian increments.
+5. Monte Carlo simulation.
+6. Ensemble statistics.
+7. Phase-slip detection.
+8. Numerical convergence analysis.
+9. Parameter sensitivity analysis.
+
+Important:
+
+The diffusion coefficient in the supplied PLL SDE is constant.
+
+Therefore, the standard Milstein correction vanishes. Demonstrate mathematically why Euler–Maruyama and Milstein give the same update here.
+
+Do not claim that Milstein improves this particular implementation.
+
+Compare the zero-noise solution against SciPy's deterministic ODE solver.
+
+Use consistent Brownian paths for time-step comparisons.
+
+## 6. Full-scale experiment design
+
+Create:
+
+`notes/experiment_protocol.md`
+
+Before execution, specify:
+- Scientific question.
+- Hypothesis.
+- Independent variables.
+- Controlled variables.
+- Parameter ranges.
+- Initial conditions.
+- Number of trajectories.
+- Simulation horizon.
+- Time step.
+- Statistical metrics.
+- Expected computational requirements.
+
+Then execute the full experiment matrix.
+
+### E1. Baseline reproduction
+
+Parameters:
+
+| Parameter | Value |
+|---|---:|
+| a | 1.0 |
+| b | 1.0 |
+| Δ | 0.5 |
+| α | 0.15 |
+| T | 50 |
+| dt | 0.001 |
+
+Produce:
+- Deterministic trajectory.
+- Stochastic trajectory.
+- 1000 independent stochastic trajectories.
+- Ensemble mean.
+- Ensemble variance.
+- Confidence bands.
+- Phase portrait.
+
+Also reproduce the original initial conditions separately so we can compare the existing implementation with the corrected implementation.
+
+### E2. Full noise sensitivity experiment
+
+Test:
+
+α ∈ {0, 0.025, 0.05, 0.10, 0.15, 0.20, 0.30, 0.40}
+
+Use a consistent parameter configuration.
+
+Run at least 500 independent trajectories per non-deterministic condition.
+
+Use 1000 trajectories for important comparisons.
+
+Measure:
+- Phase variance.
+- Mean phase deviation.
+- Mean velocity.
+- Locking probability.
+- Phase-slip frequency.
+- Time to first phase slip.
+
+### E3. Full detuning sensitivity experiment
+
+Test normalized detuning:
+
+δ = Δ/(ab)
+
+Use:
+
+δ ∈ {0, 0.25, 0.50, 0.75, 0.90, 0.95, 0.99, 1.01, 1.05}
+
+Study:
+- Stable locking.
+- Near-threshold behaviour.
+- Noise-induced phase slips.
+- Unlocked rotation.
+- Mean phase velocity.
+- Transition behaviour.
+
+Do not assign a stable equilibrium when |δ| ≥ 1.
+
+### E4. Combined parameter experiment
+
+Run the complete combination of the noise and detuning values.
+
+Use:
+- At least 500 independent trajectories per non-deterministic parameter combination.
+- 1000 trajectories for selected near-threshold conditions.
+- T = 50 initially.
+- dt = 0.001.
+
+Use reproducible independent random streams.
+
+Do not store every time point of every trajectory unnecessarily. Calculate ensemble statistics efficiently.
+
+Store:
+- Raw trajectory summaries.
+- Random seeds.
+- Configuration files.
+- Event counts.
+- Individual trajectory data for selected representative runs.
+
+For rare events, extend the simulation horizon for selected conditions to T = 200 or longer when justified.
+
+### E5. Numerical convergence
+
+Compare:
+
+dt ∈ {0.01, 0.005, 0.0025, 0.00125, 0.000625}
+
+Use coupled Brownian increments for fair comparisons.
+
+Investigate:
+- Strong error where a suitable reference is available.
+- Weak error.
+- Ensemble mean convergence.
+- Variance convergence.
+- Numerical stability.
+
+Report convergence rates only when the evidence supports them.
+
+### E6. Phase-slip investigation
+
+Develop a mathematically justified phase-slip detector.
+
+A phase slip must represent a completed transition between phase wells.
+
+Do not count every temporary threshold crossing.
+
+Consider:
+- Unwrapped phase.
+- Stable and unstable equilibria.
+- Direction of crossing.
+- Phase velocity.
+- Persistence in the next well.
+- Basin boundaries and separatrices.
+
+Where feasible, calculate or approximate the stable manifold of the unstable equilibrium.
+
+Test the sensitivity of phase-slip counts to the detection rule.
+
+For unlocked cases, measure mean rotation rate separately. Do not report ordinary locked-state phase slips when no stable phase wells exist.
+
+### E7. Parameter sensitivity
+
+Investigate how the parameters a, b, Δ and α influence the system.
+
+Identify:
+- Which parameters control locking.
+- Which parameters increase stochastic variability.
+- Which parameter combinations produce instability.
+- Whether noise has different effects near and far from the locking threshold.
+
+Use sensitivity plots and a structured results table.
+
+## 7. Statistical analysis
+
+Use rigorous statistical methods.
+
+For each experiment, report:
+
+- Number of independent trajectories.
+- Mean.
+- Median where useful.
+- Variance.
+- Standard deviation.
+- 95% confidence intervals.
+- Locking probability.
+- Phase-slip rate.
+- Time to first slip.
+- Relevant effect sizes.
+
+Use bootstrap confidence intervals where appropriate.
+
+Use appropriate binomial confidence intervals for locking probabilities.
+
+For paired numerical comparisons, preserve the same underlying Brownian paths.
+
+Do not calculate confidence intervals from ensemble means alone.
+
+Do not treat individual time steps from one trajectory as independent samples.
+
+Clearly distinguish:
+- Observed results.
+- Statistical evidence.
+- Interpretation.
+- Hypotheses.
+- Limitations.
+
+## 8. Synthetic multi-agent extension
+
+After completing and validating the PLL experiments, implement a synthetic multi-agent model locally.
+
+Use three agents initially, then test larger networks.
+
+Investigate:
+- Independent noise.
+- Correlated noise.
+- Shared noise.
+- Communication dropout.
+- Communication delay.
+- Different network topologies.
+- Synchronization.
+- Disagreement.
+
+Consider a stochastic Kuramoto-type model where appropriate.
+
+Clearly distinguish this extension from the original PLL equation.
+
+Measure synchronization using the order parameter:
+
+R(t) = |(1/N) Σ exp(i θ_j(t))|
+
+Explain what this quantity measures.
+
+Compare complete, ring, star, and sparse communication structures.
+
+## 9. Optional full-scale LLM research extension
+
+Do not run a small LLM pilot.
+
+First complete the local stochastic experiments and assess whether the extension has a defensible mathematical basis.
+
+If justified, prepare a full-scale experiment using the complete official test split of GSM8K, rather than selecting only 20–30 questions.
+
+Keep a separate development set for threshold selection.
+
+If a second benchmark is justified, consider HotpotQA.
+
+Use three agents initially.
+
+Compare:
+
+1. Independent agents.
+2. Full communication.
+3. Fixed sparse communication.
+4. Disagreement-triggered communication.
+5. Proposed stochastic coordination controller.
+
+Investigate possible coordination signals:
+
+- Semantic disagreement.
+- Embedding similarity.
+- Answer disagreement.
+- Jensen–Shannon divergence where valid answer distributions exist.
+- A mathematically defined phase representation.
+
+Do not arbitrarily interpret an embedding as a physical phase.
+
+Test whether the candidate phase signal provides additional predictive information beyond ordinary semantic disagreement.
+
+Measure:
+- Exact-match accuracy.
+- Communication tokens.
+- Number of messages.
+- API cost.
+- Latency.
+- Robustness to message dropout.
+- Robustness to corrupted messages.
+- Predictive value of the coordination signal.
+
+Use call-matched comparisons where possible.
+
+Preserve identical prompts, agent roles, model settings, and evaluation conditions across methods.
+
+### Azure API integration
+
+Check whether Azure OpenAI is already configured.
+
+If credentials are missing, ask me for:
+
+- Azure endpoint.
+- Deployment name.
+- API version.
+- API key.
+
+Do not request secrets in a public report or print them in terminal logs.
+
+Use environment variables or a secure local secret mechanism.
+
+Before making API calls:
+
+1. Calculate the complete dataset size.
+2. Estimate the number of API calls.
+3. Estimate input and output tokens.
+4. Estimate total cost.
+5. Identify rate limits.
+6. Implement checkpointing and retry handling.
+7. Show me the cost estimate and obtain approval.
+
+Do not run API experiments without my approval.
+
+## 10. Comprehensive HTML report — highest priority deliverable
+
+I want one complete, professional, standalone HTML report.
+
+Filename:
+
+`report/stochastic_pll_complete_report.html`
+
+This is not a short summary.
+
+It must be a complete interactive learning and research document.
+
+I want to understand the entire project by reading this HTML file without repeatedly opening Python files.
+
+### Section A: Project overview
+
+Include:
+- Project title.
+- Motivation.
+- Research questions.
+- Objectives.
+- Project workflow.
+- Main findings.
+- Scientific contributions.
+- Limitations.
+
+### Section B: Mathematical foundations
+
+Explain:
+- Deterministic PLL.
+- Stochastic PLL.
+- Brownian motion.
+- White noise.
+- Itô SDE.
+- Drift and diffusion.
+- Phase and phase velocity.
+- Equilibrium points.
+- Stability.
+- Locked and unlocked behaviour.
+- Phase slips.
+
+For every important equation:
+- Define every symbol.
+- Explain the equation intuitively.
+- Explain its physical meaning.
+- Show how it relates to the implementation.
+
+Include step-by-step derivations.
+
+### Section C: Visual mathematical explanations
+
+Create clear diagrams for:
+
+1. PLL system architecture.
+2. Deterministic versus stochastic behaviour.
+3. Brownian motion and random increments.
+4. Conversion from second-order ODE to first-order SDE.
+5. Euler–Maruyama numerical update.
+6. Stable and unstable equilibria.
+7. Locked versus unlocked phase dynamics.
+8. Phase-space trajectories.
+9. Noise-induced phase slips.
+10. Monte Carlo simulation.
+11. Experiment workflow.
+12. Synthetic multi-agent synchronization.
+13. Optional LLM communication architecture.
+
+Use SVG diagrams, generated charts, and mathematical annotations.
+
+Do not use decorative diagrams that do not explain anything.
+
+### Section D: Complete code walkthrough
+
+Explain every Python module.
+
+For each file include:
+
+- What the file does.
+- Why it exists.
+- Its inputs.
+- Its outputs.
+- Its mathematical role.
+- How it interacts with other files.
+
+Explain every important function.
+
+For each function include:
+1. Purpose.
+2. Inputs.
+3. Outputs.
+4. Step-by-step execution.
+5. Relevant mathematical equation.
+6. Important implementation choices.
+7. Common mistakes.
+
+Include readable code excerpts with syntax highlighting.
+
+Explain the numerical simulation loop line by line.
+
+I specifically want to understand:
+- How Brownian increments are generated.
+- Why sqrt(dt) is used.
+- How the drift is calculated.
+- How phase is updated.
+- How velocity is updated.
+- How random seeds work.
+- How Monte Carlo trajectories are combined.
+- How phase slips are detected.
+- How confidence intervals are calculated.
+
+Create diagrams connecting the mathematical equations to their corresponding Python functions.
+
+### Section E: Experiment methodology
+
+For every experiment, explain:
+
+- Research question.
+- Hypothesis.
+- Parameters.
+- Controlled variables.
+- Experimental procedure.
+- Number of trajectories.
+- Statistical methods.
+- Evaluation metrics.
+- Expected interpretation.
+
+Include a clear parameter table.
+
+### Section F: Actual experimental results
+
+Use only results from executed experiments.
+
+Include:
+- All important plots.
+- Numerical tables.
+- Confidence intervals.
+- Statistical comparisons.
+- Phase-slip statistics.
+- Sensitivity analysis.
+- Convergence analysis.
+- Representative trajectories.
+- Failed or unexpected results.
+
+Every chart must have:
+- Title.
+- Axis labels.
+- Units.
+- Legend.
+- Explanation.
+- Interpretation.
+
+Add a short explanation below every important figure.
+
+Explain what the results demonstrate and what they do not demonstrate.
+
+### Section G: Literature review
+
+Include relevant literature beyond Kloeden and Platen.
+
+Cover:
+- Stochastic differential equations.
+- Numerical SDE methods.
+- Phase-locked loops.
+- Cycle slips.
+- Stochastic stability.
+- Multi-agent synchronization.
+- LLM communication topologies.
+
+Use reliable, verified papers and books.
+
+Include DOI or publisher links where available.
+
+Never invent references or publication details.
+
+Distinguish established literature from our proposed extensions.
+
+### Section H: Discussion and limitations
+
+Discuss:
+- Main findings.
+- Mathematical implications.
+- Numerical limitations.
+- Statistical limitations.
+- Model assumptions.
+- Unresolved questions.
+- Whether the LLM extension is justified.
+
+Do not exaggerate novelty.
+
+### Section I: Conclusion and future work
+
+Summarize:
+- What was achieved.
+- What was discovered.
+- What remains uncertain.
+- What experiments should follow.
+- Possible research extensions.
+
+### Section J: Reproducibility
+
+Include:
+- Python environment.
+- Package versions.
+- Directory structure.
+- Configuration files.
+- Random seeds.
+- Execution commands.
+- Data locations.
+- How to reproduce every figure.
+
+### HTML design requirements
+
+Make the report look like a professional scientific research website.
+
+Use:
+- Clean academic design.
+- Responsive layout.
+- Sidebar navigation.
+- Searchable sections.
+- Collapsible explanations.
+- Mathematical notation using MathJax.
+- Syntax-highlighted code.
+- Interactive plots where useful.
+- Tables with readable formatting.
+- Figure captions.
+- Consistent typography.
+- Light and dark themes if practical.
+
+**Important:** The HTML must work as a standalone file.
+
+Do not depend on local Python servers or missing image files.
+
+Prefer embedding CSS, JavaScript, diagrams, and figures directly into the HTML.
+
+If Plotly is used, embed the required JavaScript locally inside the HTML rather than relying on a CDN.
+
+The report must remain readable offline.
+
+Test the final HTML in a browser.
+
+## 11. LaTeX course report
+
+My teacher explicitly requires a LaTeX report.
+
+Also create:
+
+- `report/main.tex`
+- `report/references.bib`
+- `report/figures/`
+
+Follow the teacher's seven required sections:
+
+1. Motivation and Background.
+2. Brief Literature Survey.
+3. Model Description.
+4. Recent Developments / State of the Art.
+5. Results and Discussion.
+6. Conclusion and Possible Extensions.
+7. Bibliography.
+
+Use actual results and verified references.
+
+The LaTeX report should be scientifically written, concise, and mathematically accurate.
+
+The HTML report can be much more detailed than the formal course report.
+
+## 12. Automated testing
+
+Create tests for:
+
+- Reproducibility.
+- Brownian increment variance.
+- Zero-noise deterministic agreement.
+- Equilibrium conditions.
+- Stable and unstable equilibrium classification.
+- Numerical convergence.
+- Finite numerical outputs.
+- Phase-slip detection.
+- Statistical calculations.
+
+Run all tests before the full experiment matrix.
+
+Save the test results.
+
+## 13. Final project structure
+
+Create:
+
+stochastic-pll-project/
+
+    notes/
+        project_audit.md
+        mathematical_model.md
+        experiment_protocol.md
+        numerical_validation.md
+        literature_review.md
+
+    src/
+        pll_model.py
+        sde_solver.py
+        metrics.py
+        phase_slips.py
+        visualization.py
+        experiment_runner.py
+        statistical_analysis.py
+        report_generator.py
+
+    tests/
+        test_model.py
+        test_solver.py
+        test_metrics.py
+
+    configs/
+        full_experiments.yaml
+
+    experiments/
+        baseline/
+        noise_sensitivity/
+        detuning/
+        combined/
+        convergence/
+        phase_slips/
+        synthetic_agents/
+        llm_extension/
+
+    results/
+        figures/
+        tables/
+        raw_data/
+        run_metadata/
+
+    report/
+        stochastic_pll_complete_report.html
+        main.tex
+        references.bib
+        report_outline.md
+        figures/
+
+    README.md
+
+## 14. Final execution sequence
+
+Follow this sequence:
+
+**Step 1:** Inspect and audit the existing project.
+
+**Step 2:** Verify and derive the mathematical model.
+
+**Step 3:** Design the complete experiment matrix.
+
+**Step 4:** Implement and test the numerical methods.
+
+**Step 5:** Execute the full-scale local experiments. Do not substitute a small pilot.
+
+**Step 6:** Perform statistical analysis and generate all figures.
+
+**Step 7:** Implement and investigate the synthetic multi-agent extension.
+
+**Step 8:** Evaluate whether a full-scale LLM experiment is scientifically justified.
+
+**Step 9:** If justified, prepare the complete Azure API experiment plan, calculate costs, and ask me for credentials and approval.
+
+**Step 10:** Generate the complete HTML report and LaTeX report.
+
+**Step 11:** Verify that all outputs exist, all charts use actual data, and the HTML works offline.
+
+## 15. Final instructions
+
+Accuracy is more important than impressive results.
+
+Never:
+- Fabricate experimental results.
+- Invent citations.
+- Hide failed experiments.
+- Change parameters to obtain favourable outcomes.
+- Claim statistical significance without appropriate testing.
+- Claim novelty without literature verification.
+- Use an LLM phase representation without validating its meaning.
+- Expose API credentials.
+- Produce empty report sections or placeholder charts.
+
+I want a project that teaches me the mathematics, produces reproducible scientific results, and gives me a complete understanding of every part of the code.
+
+**The final HTML report is a mandatory deliverable, not an optional summary.**
+
+At the end, provide a clear list of generated files, actual experiment counts, completed analyses, test results, and remaining limitations.

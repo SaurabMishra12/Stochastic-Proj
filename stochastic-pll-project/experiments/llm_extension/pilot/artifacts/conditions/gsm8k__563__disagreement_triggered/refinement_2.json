@@ -1,0 +1,199 @@
+{
+  "payload_hash": "c767e3d140b3b3954c5f8593418a9063acb498773854a4c39f1c9260a61fe726",
+  "logical_id": "gsm8k:official_test:563|disagreement_triggered|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_053ffe9004aa7227016af714fc71a88197a353e54227e879a3",
+      "object": "response",
+      "created_at": 1794577660,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577662,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1588,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 513,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_053ffe9004aa7227016af714fd409481979e9524bca51c0525",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xT-ZCZYbZRVMCfJzZ8fddZ9kOfEUH1vGS2l6DlajpfxGGtfwEIzHHDm7PusI9wvXv9IxtHZ5EMObT1ffG4DpQ1s6qbFgErwfcySxfFhsj5nzBIIwYQKFzx_xgrtm78PX0hgFPaPDVmv5SGwLAIWg-SnkfLDcAvrZ7B6djasUJ2fPhp9npKuYK4_I7vPj69JS1XblERmrDbIMVNZUTJZPF7x3HClQYH3_xQNJ_eENP56dOVJEIJGZbA7D3YNMMPsvs_HlAaqMoGnJ3op6GyZyGZlSCsT-5z3bqiKdfsj6RRhHOqGslEXnd0ckJZq52NvRoAzVieah1Fdr_ZHDzkm3JY23YoooSIzMCh-PLnfcj3Vz82xlt6K0ifak4sKnLpKtzvSImr10ckKIpBT2aWVriZQ4MZkl9R8rM64pCKWSo9O7DRmqx48XWZldki8oUi9h9sX-4V7ofidyzNZGysA8weyHKcRe4V9qBggDkbpvVOjTo7JH1VV1y5yqs9EXB1xu0ETFGSHWUkpLtscN_LWDYXlowjkGBQxrJ8UUThteOy_7_faXSuvKuoW4ALzj9nEpvCfG0Tn7bP8tLYSXiGNnr03d2ifJxrF5pRQrp0NtfEzmJq6GyNiUxCaJBcyW4tt8n3RliDbMJwHjsycTMCNwGMneXxR1fOv9CMqlUUh_xJcoASBj5ff7ypyzXdrjd_mC0egbjTLZzmRit3J4eZnWveUYTK5pcm8pGHqvsmM76Eu_CAyIMS424Ph686_dtUFOo61KPwCkE68iY_HinM9jX90Mw5Ph6pAaX3H52NoX2VCERuLq_LDo02Pihw_tKqCX2E-AfBD4Nzsw_Cw_xqdUZw_65q9SDAs-DhWzOjm1aOJFwIGRZRjn_98jgWX4ZmWVDcTH7fdwK-A42vuZ9m5xngaPBFuk-U_Jh9LYrWAkV2tWMmQdsghu4RVficz_xx3nzoYmyvCrd4unY7O3LmnPtnR2WRFskcusfvS0AWG61A-KKhq3dDYzxVoRU_eK3KxaKsCR3NQBfISZM0ulJABSd0q81Le_VBOKnPXw7VE_gjO41bYmmBvC_l1GpnCP5q73tBRZsKh_si8MDPa8CzULSCqzPQuHNGjdNz89af3JoX3QJQhGvp18Cm-EAqoujsWXm__9UI1Ayl2_R_TXYcyYz07zSbgDfGH0ovCRBgwkqbsqjWkQZeONaW6L5fibWzo9L9zeSzT5fSAiZory9bW3B6yt9JandYodyj1MqKEZkQmf44Ck5-N9EIw0ZtHxYmQjgsWpfPD68M6HXbXw8egHUi2FedY0RSye1NpvDgZ1dVJReKpvRzNw0XJzI_1K9esfl5Unw-ztJZgiKhYAqkqUHNyV_r-JR_RD6XDKooHX2e5h6FXGLPPm24C9bLSAlTs4vVbLEVeuZ457HNRFWgOiGb2x37zzH5YBl3rVu_5xY9QnZdNjmjBW9bJGYx83O1OgXTMYDqZABBeie4ycfsUBUYj02SWZ4wupwhm_lm-xFb9epjt6bVy592DhQ5I40C_qTw--pIrY7nUWEmaG759Zm_V3V7aCHbXi5i6ShW_dyPGHGc-NtfDrwcfnvJCjTVD2v1-rpPu7YREOMn5HTpOl_98yKixlyjvE6T4eS7nXGWWiAWXe6ZVAFJBstWPQioySso8vfd_0bRnL2LcIwFg9Qk5M8y1gXMQBqBE2rJ5U5PPeKEiNgliKfJmHYrcl6yQkgWMO_X3VyI0KP_mrPvWsLjusMRFzE0j8M6hazgF6AYfrqLtyKfmrvJ1DvQqeIS3jEoguQYhs3IJZSWjCx736ncI5__P9jlKWCIgga9wj2qwoXX0rxCbNy6kN13cWAUvqHleEGfnHjM7Ul2ObOmLYkSQTKYnOXtALlDFfGMWliN-B36Yo7RH8x0V4ijAbvRVVG_JKH4q1GGeoIx-EMn9f7YfMzFerGOjNRVb-UD5mGp8CXVfHj1RoQHXie1QdZpgG3aOU7-vI9QiTPGfqTbisNu8Cie1iRPpNeHK13m99avQ4oYZq_GWNsJQt9GgE6zDhrcO4Ph7rWsI4MQ5a2gCLIUpjKkEPxKDnb-hraIkrzLt4HmuorJADvd9DwuDt2SrKm2_Vya2cJTketgMzITUyBCmU2VJuvZk9YGw_zCbBqVGuCuS-FhDrIuBQfRK3No4t1LAvkYIwEAZgcgKNtZnouSNrUMlRm30dhj1y9uEo_ac9NrKMSGw-MyvkMc6GGMjqdTCrAthW8SICZ0sbQh5sq_jDjfLGegbn_GUpAAoQUahT3q5VnLOVpqXYx5bZOlCnl6UcYIgABjtBtbshO1eaXWrJr-G-mju340_00YY1Hmhxha6wIck6alRViL5wcgwuQZAlGOVbnzIeeL8VdAhf5fJreexhESDWzUgYcL0_FWlLGAqcwqGhTqPtKoREELi6165r3lip6OyHbojDz5Iy79WYFsV5EHXhNau42NyQwde69A=",
+          "summary": []
+        },
+        {
+          "id": "msg_053ffe9004aa7227016af714fe03e881979fac8f488ff13b54",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"12\",\"summary\":\"Sons are 12 and 8 (4 years younger), total candles = 12+8 = 20. Packs hold 5 each, so need 20/5 = 4 packs. At $3 per pack, total cost = 4×3 = 12.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 266,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 163,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 429
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"12\",\"summary\":\"Sons are 12 and 8 (4 years younger), total candles = 12+8 = 20. Packs hold 5 each, so need 20/5 = 4 packs. At $3 per pack, total cost = 4×3 = 12.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 266,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 163,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 429
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:563|disagreement_triggered|refinement:2",
+    "attempt_id": "cd15b5c5229f4ce0bcf1c2465c844db7",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0003925,
+    "latency_seconds": 3.061784022000211,
+    "started_at": "2026-11-13T13:47:39.859368+00:00",
+    "finished_at": "2026-11-13T13:47:42.921128+00:00"
+  }
+}

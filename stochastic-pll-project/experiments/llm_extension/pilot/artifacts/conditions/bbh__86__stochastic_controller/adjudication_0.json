@@ -1,0 +1,199 @@
+{
+  "payload_hash": "ba5c3b8dfcf478af986a889f3d10ff5de9d1862a5478893dfa3ce37e2622f1af",
+  "logical_id": "bbh:logical_deduction_three_objects:86|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_04f21f45662983ae016af731a4ead08194912d1b9aa90bfc59",
+      "object": "response",
+      "created_at": 1794584996,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584998,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2475,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 473,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_04f21f45662983ae016af731a5aba081949f375e4943b7c102",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zGmAuaqm12G2zTsMd9KgmGmJ7mYZnhmb-QFgkmwySmAMOHt4YRiH7cHxjESDCzM4IJTjTQPKRL4IlleNeTnJJBq5VBLZvZgl9nAKq9dFV-onNUSqjbH5YbssNYl-1Gao0eDKJFA1faZZhEFpSEtLExLRLVTZ-1oeef1DJmtLGnkKqKfdEPzo7XrD1y-6DbjuWfFuW5zFjgmEvCqhjO7wjI4D88VUsXCgRy9Cy8kP8-IvXm6VRY1yQFcWdzuRmQiRnwOvIFH43H_JJkqX87tftpNMY6sdfE04FLGe00YZGv3pZZS3WCxMRsbn8wxE1nWR-P4ZM0jgKufm15nJLR3HbHvzz2k6pUUxBfCKJq85o-ADOrpXuwRN6MjWFSlhmybgde54qrfbrt-mXLMxXNXLqsUL9UrJk-Png-tYtBbpAqLdtf689cH0YFEGD8ZBTSTWIutpLdVRTlUQSmXeF19Hvq-s8_T75FYneyz8u_YdIFM3zAPJoHKILZNoC9Q-c3JO-07Y6ZmjIkGkfSvjxqoH6f2_yOdLL1KzvM7uh49XHwL-oZzIY1cwNCC-5yNs0KMM5Nw2RqYtKRxTgdL8RdIKLACt1D_kQW8RHkZ5vld3-Zf8SQzFl8SLqv9IQQRkwXhDu28U2W8tI0ua4wOUhFwZCUbrvbdBhvJuauiMOrknAkUne2GXHHI2mOHpV8ZIK90j0t8cQBiIDCM1G3WfzMaFRrfLTKxMQOqgnEHZ-x9qj7nL_g9GJ-VMEphDElOvYka6Q7n0V9nG1UbqFz1nGwdLtfPwoU18Hfw8vz9B_8PR7cIsVIkexJsor8yEQDYzp-Qknej2P1JoY4UhfTVzPyidvNfTfZamTII8q-kKaYQDspW6pc-nCUmaX7c_ibF6q38LLNjGRskdagZa2HAKCjG8kAzesjwwoLchg7iEQFol9gmk8uvrumpAkVtIWE_sPMYYK7-yIhihv2UaTezgECEanVo5wa8Qik878F3BvC4lHAT5yBOvzTGQFlG2hGQurlj5tuaTUnzdL2x7Lx6c6xi2xQ9lj_NvFzK_s3sAmygCJrmKyZjT36cECwKi7oPml-TmQQUA8FtHHVOADIE2oUdI5WHhwm0quH1BghvYD969aNVi4zCvnxdKIWF1hIkbEJl37aYU2v39STLtRrzvbMNqnProjmD61EkIwSwu_pIvKC0-onxfHDoeOq-D6SehwTjuDSHx4UoIviYpufxoP6fDqCjfA5H0PJ4k_WnXZGBFST-hCjpSJSJS1oWcAWNj29Qyi8ekP38d7WkapOpJblTcCwDdCybsXSHAKNJpfg5gVeBCBsje_Si-WOc_XVwOaPxS43rpyw_BpZLe2q6ZhhId3LLSM5zyNTP3Ck2TI5ozTrtmUqhnN1_HEOOMjWzofYotbAqRhnl0PYKAkuC182vcAtw_P0sVT8LU3wOcc9arU4XhTS7vwe9-GOU8adELKeH6tHiYwvauB_61FZ2vTnuNvXD2DpmlQG3ryEa2kWKTm8EKu_2_fSY1qrkZVnssk38i35Kl18PkiTZPxd_H0xVhSCzaA8Vt5NWNQD0ThMxDmTZ1D3K_k3hUIJiOjRXiK8ZwVdeU6xXtCsgGuYQiNMTBWR5idpk7kxq19-8UJQ2q1MIs64_IFZalFzo2Z1RF9kg9KpgGy3Kvn82ITc4QcGPz0SpVZ17w6EVWWm5axTwg5-mrusf9mzKnUqEh7tzRYxGK2j7aJFNxld8y-jMz-R6IGVB4FaHn9P50qYWTUV7AwhOqCpgunBJg_IDxj2ZCqatrozlj7RcNsyUQ2XOIyvvnilt6iaHfAaYm4JJrkHsSsaZFNJ5toR7exsJhGGXTu5-7JAyAj27npo7CTH5Y0kBVMjiklT4PH-ABl1XWhixxp1YWNKmxgzYTmdG8_Zy1Ou9jMgXaCUnZYoSzCL__Y80TrWcqL3tfxrFp1fw5VaF6Vx6WBoBtUFDxPs9Vo1vihTIFyCP",
+          "summary": []
+        },
+        {
+          "id": "msg_04f21f45662983ae016af731a611848194a6dddf774dc2d2a1",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"With positions 1 (left), 2, 3 (right) and red at position 3, blue must be to the right of green. The only way to satisfy that with three slots is green at position 1, blue at position 2, red at position 3. Therefore the blue book is second from the left (option C).\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 447,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 128,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 575
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"With positions 1 (left), 2, 3 (right) and red at position 3, blue must be to the right of green. The only way to satisfy that with three slots is green at position 1, blue at position 2, red at position 3. Therefore the blue book is second from the left (option C).\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 447,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 128,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 575
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:86|stochastic_controller|adjudication:0",
+    "attempt_id": "572b761d2f254fe38b3c7c9464ec5617",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00036775,
+    "latency_seconds": 2.9137474980016123,
+    "started_at": "2026-11-13T15:49:56.127401+00:00",
+    "finished_at": "2026-11-13T15:49:59.041161+00:00"
+  }
+}

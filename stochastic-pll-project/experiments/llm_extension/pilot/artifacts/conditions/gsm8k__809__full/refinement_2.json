@@ -1,0 +1,199 @@
+{
+  "payload_hash": "676e7de1963a2302ed57a7712a9757d833d46cde007d50052aca0cc50805626e",
+  "logical_id": "gsm8k:official_test:809|full|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_0a9904f0e0d29729016af72b888b588194a869b67d3c8fdccc",
+      "object": "response",
+      "created_at": 1794583432,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583434,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2178,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 552,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0a9904f0e0d29729016af72b892e4481948f95e4b2b6892c0f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yuKqTu8CXRSMUU-F6zbucOoyEnewJUzssuYGUg2Gv3-GBQIZO5e1wrRBYQfVKRz8lgd1qAew1qkMIPpiBBkl8ZkUYKqJqCFGLdwjxBJqtmz2S9lGia-v9MpyTCsdbafJtzaQfWm31jKXdIqOsBeboFzpFyzGz04HGIS1fbOBS4RgrvKBJo4X7zCzbYlMgAT2XGO5n2d39Re9DVfiqcnarBDtXG8V0bl95FohJYPlDvDIHzOm7goqGnzX3XkfqJTNW-reCyJjdfBnxQbvD7HBJrEKXIdM7NPWjBfUHQxPwLr5E163SciupsD9vMHb0p73ubJkuExTT0W3zTd6AEk10YWHEhbKKGuYONaXM5nIzcNwC01Fv_Za8o1_Qfwmwp1IwYK1Ch7XZRYXyyPsbZLcuj-BdY6xZl6ckapafbHg5FuR23baNA_PYEqrwDO4yM4alpY8C1XNJAIumNUD2IIIktCyKFKIzkEJ5ubJDzX_afGgUCVnztdestGqWtlKIfx6s7n0e2wqfDAdzAEfKMHWoCn4QlF3KE6CVUcCS2_KC5TEReok0DQMX5fxrnAmTDO_UHZWZO4inxc3hbsZD1y7Y3Mu_yjuESZ2eWUvDzR8agqFAwQdOOemVoCqf-NsBIzbzYUKSqHnLQR4xu-1L9kCuFTm5hnkOU4n2UiLMT--w_RvqJRI6NH5KuMm3oVe8H4MC6oMeW-7JuJcC6VDt9bmOQH5WMLEr__rgFyecY7TzGq9xqWww1iOq15X6fmqvudzSbl6E3pzLDco4wGuoDiHL_2DM3cZGb0SbPkgWxUBnps4mMfTosp4MRyXPP9E_T_9cqadue8fBZnAF5JONeHqB-MP-FQ6FagkJiT65ip-VOeToV4EsFWfK8a6O3ASEgbk1rX8WR1NxDhcR8KFG9jD-D4jRA6lB4EZpss2KJTQDQIhGcFYuBJzR8rfJq1pDxYqDQLRvkes1TDv8D-3WOAd2e-jPhyGPUPmaAy-TdrLlwhYhfQ-bNNMDRyuSDG8Dl9F1iJAYuEGWXNt7wKc91Yier1IW3iPrTI-7c6bNKrjoYIvbXFrEsPLeSCwl5mgtSGMAf9KuE9y6JJ38IaeDtApWLQUk4FqVuUoJkSjNEwT2M5zcf7j8rDEr2ueCjsCXjJVNmhOZ7lkH9nBnWlwUVpYjwZ4NYSTRhXyT-5Cc0RSqW6IzxVF-yPSgkK9Ugln66SVWj96IfblUxo3RIciU6044u2z7KrAG8jQ_pb7ptyvzxJAE3V5N_eWkoAHr_Rgx5bVoR4Rgd0b9dDE4VQrknd9dy8Wy60c2wYfubhv_ttPu5etgQyv-MT9cIF9rNmKWYo7xGiPqRdaDgmeF28SYyozVyOdYGDkNTAmw_iZ7VPzyir_tVZ_N0p2edewP2cikBKMsrwXWlcH4IRHzwBad1f76CJAdUnelwLsU-mtmDsEYAM27AUiOhFx9YXk2eNgmwfjd8fmFdvLpQykZmvlsAcG4AarNhlPlINkpoBhopUjb00XEBHa6BIMusv7-WUG3ZpKl6AhbiY5bRHIbD_Cgat9dgCJdiCqBYjCAzaJA0hj8imeVtfyyYXC80saRw6e0CQkqp_cEORT_sq1ivYlTBsGv_RarRNZ9RJtevfbLj9d3QTkIpInJb1LiRnUP8JOyEcno70ETmALNJ4KzzuGpWWPO2DdMw8vgRThiapV4IzHj-AvXU2kgts1bzHhngeQr36REsJuIA7aK-Gh_LjaIk7LkexgMsuH8RvFmru5dFKwaaAjgtxBiEsMiblAEldg89M27RL_hcU6l_nlrVailfWICYP8hcG4yjYvaUd2sZoY71x6Wr_dQQAvEHODceOItrxryIy3koBIhaSLJTZzOUppAgJ9tnb0FCQrFKK8sgo9lZhhhOt6pFPM1ilQEgkyE0Zz-bxd7EHJT2xB1P4LModB_Isf3o_jo9gxhk_WEDBJihKOWhJBSOrUJM8ofbnDWKz8h4xEiCssqCL8FzS-avwhk3cEdx8tu-wB22SB1QwvP2aJX_yWPS0ULb3TbTqnad2mUzp8xGmOZcmPanP-A7U3kNsz2Sb3cugy7ADJraOq6Hc-bcpaoGWkG0hG0WD298oGL9bZvenEttDW-BSstSjWBPXKtb_eBZcxIJoXQnciW-L_M1Hqxutf0xAmbwUBYttxzaLn2LOqab7ammUuDRjzYpnSk1gzb8PRZ2CVnZejeadpUMQXr4K8DXV5I2cRJMUeoUytZ2AvpuTF0cQWvY1YmmJkKbug1jPr3rJoh5fTmA8yta_DbGQEFZ82FZYN8M3fP8cLKRI_dz2zChADlXuLiftwAf6JfYPUc_sVoKkcuhHoiVtBLcDYH7jnAlwxL27k5hryYQVkjSUo3VJK7HRNtWorxCJ0YPTLlMZ8OOXSRJQ6IN3zGcxI0ZaRDjvSLbU9k7jacxgJmKu60KiaxresNr0iF9rbxfODe_wBBNZ-yOMLSM8Ra0GnCb6EIieF3IUp18A5TC7oiTU6ya4N2wltBE0Dl4OPMfhY2dzhmvdLPSUkgrEtZRAApB4NfHywqbaOF4S",
+          "summary": []
+        },
+        {
+          "id": "msg_0a9904f0e0d29729016af72b89f3108194a2269aec3b392a33",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"50\",\"summary\":\"Dale ordered 100 initially and later ordered 100 more, for 200 total. He has already sold 150, so 200 − 150 = 50 candies remain to be sold.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 396,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 143,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 539
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"50\",\"summary\":\"Dale ordered 100 initially and later ordered 100 more, for 200 total. He has already sold 150, so 200 − 150 = 50 candies remain to be sold.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 396,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 143,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 539
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:809|full|refinement:2",
+    "attempt_id": "e7a531c698dd4791bf105e226fae014e",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000385,
+    "latency_seconds": 2.9496803780002665,
+    "started_at": "2026-11-13T15:23:51.918460+00:00",
+    "finished_at": "2026-11-13T15:23:54.868149+00:00"
+  }
+}

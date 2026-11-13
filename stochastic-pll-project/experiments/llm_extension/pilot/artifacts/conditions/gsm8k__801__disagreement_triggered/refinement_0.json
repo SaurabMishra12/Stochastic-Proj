@@ -1,0 +1,199 @@
+{
+  "payload_hash": "7af87b5628de3565ee5aa7a9fb270b45a388edc5bc2970d31f0f4ec174a81a7c",
+  "logical_id": "gsm8k:official_test:801|disagreement_triggered|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_0d92dac150067fd3016af71a63313c81949564e0fd039083d3",
+      "object": "response",
+      "created_at": 1794579043,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794579045,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1677,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 549,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0d92dac150067fd3016af71a63e55c8194883667845217bdf9",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xplWl5HElgtuP-pPhHoTpecAKzPouG-a-Ue7J7gZFUVwmt87pfMRrf1VA6MqhteU5y7TAVJUCeek-FPzaOxbb0KVq8AmA6DHDiOJMidpKKCA5-9kBCUNifj2uwtg7gwWygj9VFt_UInE9xu-e81zL6mevcWpfW1mDNfqO3RA5l_1qE08MR4tYuYFBfCuo0sIQXdV-WSyjVvxwkXp9TM3ryE5sxuRTW1FApdrfEpWG5rRQn1y-YpaCabRKteMN1QRdxnz3cKtDVhCaw_XiibLVFvNjNinn1CXK8Tjc0zJMmrBUeOYV-aGu7ufxTQRiHDJJzNyzFTyXSWAPKziEgOOoDu1sXDf2AKn_vPe7QYgc_LZ-mLD19xCEmYTD34KmjcO-156zUpG-8RZAQBvlQM-zKivUeT9cp8D9lKeepDjKMOlpPkuiSn6UPewevmIxPNDlBz1g1EkEiE6pOXeAlfx63MkVcdzZdZCqsYyXVWmLD7N_K5zfFZ3oE1_bP-s9EGjOdmTz9n8ziptcn-5IpdfmRoggKdSs7k4PfVpLMbJYQPDPFlELnJZHnszb6yLNmn1tEm-rYMDCtGKxcsZlspJ4mShGoSrHqjDHjNZiKNDAUAtjLkxrg6SRqyCZx4wwBpPVpquxs8a0Vyx_TTTclWdiDS4sAr41ZpB1X5t89MvH_b3OlpuiCedpdfLg5yLhjCw1TyfFVN39oSS70ipv8A-oEVhhMiyTkIkZuihCRXl3vb0h2m1kh-MHxdrjrFEXhs6-adU6n154ZgDi1ZWYNMUOn3fKQ8sd-IOLSLgnHCvAopnCPP_rKRq5GH0tuxm2gdnIj1xqaabjnxJBVWMebDVHA5XBgAPmiPJYqqci9h2L3FOJn63U8FEge9gwOAhL_qJk-AU8krY1G2G5usOs2KiyFbUguRCpHHnByxe_zxafSArtJmvEehmNyhW2eOqnUYRQd82Ag8wKHX7wj97M3nSxTntCG9vz3wiTXI03yJSz4_SR3CilVUuMPCV7_KbvVjcpBDx7ta4HHVr5XYZ3y4tOWTuCNtSvxHsGh1Qv_mh2ld0O44h-mXwx0o7X58RbtPllzeA3oioHKh5JJy-X0Bo8iXLnGdPOtA8DW7eD8lALebuXLMnhTR-bOncYkvFbbsEm6PWEuPM4IBQjbWGIQEQrJ3INoskVN3EXVLxGE8cD5awZAavjbyT2Lp2ugpbxUUeyAJhTfuPKsiJ9v7qHtKrum3qIEIirgLaPKEiRa37ZtaBQx_uoX1S8BK8hNWl_KxL5t-9cleGebGgHPzPb__i48QiDuOeXB-JJDTFrtPlEvKdqapeRa4Y5CMI2YyvzgM6v8Ov_INKApa02BxuG4SgeCJKNZAWxOaWQp4XOBjFAX8A6NlAfv75qf98iHUh2VUg3chZriM1siy46klOuEVMGRnqP-YQtF8GPCKLLH1581doA4clbbyoXjRe93ZMdLrH0SQSfbpyutEUg6TijG9REfoZ8rz1WMeHOhw69oAZKNcvZb1t2t_QdCCHkvHM6wxtQ3pQSup7nYCfgSDpBSiGvdeVVnyHAptjwlLIwgyThZSHE3_SNcr7a5XD6y5CZeC2H45RNjMgWgVAbuZwxn7toeIrNRMQBTc2XtTfQTpUlV7WinXNOBx4Ga1z0jz_1BvFd9RvCmqUHlRJT3859_JLAzMr_wqp6Q4Z6Mia9oYVY58HJCgp_VLhtUw4Ru-aGgrSQgjKHZpdl1q97I_YUetAyZ0pcY807jMtBiczCVqJxVf1ggRovxbzpUAZ1MppHkDC2eTRCHtbW5asjoFm1UPC4bD4rvFzhNe_Eh7Uzwu-nUQkJjL21PqUPmJc_t3c936_bwUWTuvUig2zMPAVtD2wIu-roIsVN4tNcoebDz4rvm6ZAVEaYnRw1WgkI3HMT4Mq-jajdQRdUug4Awtpar_BRl_oi2c2bQIAm6cTIRDI9ljTgNtPTOTtDJQkP13C33JmxZAcIXqFhV-ozn57ZDTjRkWrSeOZySTzNFBjNba9ESO7wK-3tuQYyGAFOr2ism8lIGSge5TOhAebOH8opcPOnXO7QngHn6DGJdWHIhI5-DQBFz75FwOihcfWVeERjUSr_sBIwiJz7-xMX6pBrPDL1BYLHi1MTGLc6mE022sQFDlKObBY386zoWqtbW7awb0qSBeTlZBOXrCHjwTpbUQOym2DDNRFGrtefBtnzw4uFkbWcfgcP26q4gLZ3MGTG2wfF_7BuevgDeQF8ocEIFCZ2P6pAdQ6B-0vOYZiMNRA6VZuyuHuT8dX33CH8L8kg9V40ZbtVpvJc8dIf-MG36KZHPUMEyti3Q9RfoPY-vJFxCoMt3CsKzNfc5zfvE4W9j16OryCc-ZI8UN1iydcYwu6Oh_YtvdcGMSuZVEqhB_GXsZC1Y=",
+          "summary": []
+        },
+        {
+          "id": "msg_0d92dac150067fd3016af71a64a7e881948d654c0e393bb16f",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"1240\",\"summary\":\"Compute students: 40 classes × 25 students = 1000 students → 1000 trees (one each). Compute teachers: 40 classes × 3 teachers = 120 teachers → 120 × 2 = 240 trees. Total trees = 1000 + 240 = 1240.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 270,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 163,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 433
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"1240\",\"summary\":\"Compute students: 40 classes × 25 students = 1000 students → 1000 trees (one each). Compute teachers: 40 classes × 3 teachers = 120 teachers → 120 × 2 = 240 trees. Total trees = 1000 + 240 = 1240.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 270,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 163,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 433
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:801|disagreement_triggered|refinement:0",
+    "attempt_id": "978ea4d33d2a4fcf8a7ae97e2d6b6b72",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0003935,
+    "latency_seconds": 3.4493919989999995,
+    "started_at": "2026-11-13T14:10:42.555573+00:00",
+    "finished_at": "2026-11-13T14:10:46.004900+00:00"
+  }
+}

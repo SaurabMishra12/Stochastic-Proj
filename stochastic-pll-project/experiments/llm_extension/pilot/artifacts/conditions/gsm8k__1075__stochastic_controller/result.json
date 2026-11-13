@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1075",
+  "source_index": 1075,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "16",
+  "final_answer": "16",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1869,
+  "output_tokens": 1218,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0029032499999999996,
+  "latency_seconds": 20.915223922998848,
+  "wall_seconds": 182.22980895699948,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 403,
+    "utf8_bytes": 403,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "16",
+          "summary": "Buy 12 for $15 and 3 at $2 each: total $15 + $6 = $21. Jenny paid $25 (five $5 bills), so change is $4. In quarters that's 4 / 0.25 = 16 quarters.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"16\",\"missing_response\":false,\"sender\":0,\"summary\":\"Buy 12 for $15 and 3 at $2 each: total $15 + $6 = $21. Jenny paid $25 (five $5 bills), so change is $4. In quarters that's 4 / 0.25 = 16 quarters.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "16",
+          "summary": "Buy 12 for $15 and 3 at $2 each: total = $15 + $6 = $21. Jenny paid five $5 bills = $25. Change = $4. Quarters = $4 / $0.25 = 16.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"16\",\"missing_response\":false,\"sender\":1,\"summary\":\"Buy 12 for $15 and 3 at $2 each: total = $15 + $6 = $21. Jenny paid five $5 bills = $25. Change = $4. Quarters = $4 / $0.25 = 16.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 178264398786547324456060339921887682353,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.3561513875738016,
+        "proposed_state": 0.039418735179691106,
+        "state": 0.039418735179691106,
+        "probability": 0.2282066927781781
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.039418735179691106,
+        "target": 0.0,
+        "drift": -0.04730248221562933,
+        "gaussian_draw": -1.732456204323276,
+        "proposed_state": -0.15705927736717787,
+        "state": -0.15705927736717787,
+        "probability": 0.201708952667247
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.15705927736717787,
+        "target": 0.0,
+        "drift": 0.18847113284061343,
+        "gaussian_draw": -1.2955508411398433,
+        "proposed_state": -0.2816033659723273,
+        "state": -0.2816033659723273,
+        "probability": 0.18614099825841462
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2282066927781781
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2282066927781781
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.201708952667247
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.201708952667247
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.18614099825841462
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.18614099825841462
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.27348790387506905
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.1579028232352241
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.04161627063433815
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7441003362988134
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.21484068336372864
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.713530829723065
+      }
+    ]
+  },
+  "initial_answers": [
+    "16",
+    "16",
+    "16"
+  ],
+  "refined_answers": [
+    "16",
+    "16",
+    "16"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "e2a65c91da6b14220e4a521f9660a4fdd4d944a9bf3f7b00d5b28fcb1cd1bb72",
+  "errors": []
+}

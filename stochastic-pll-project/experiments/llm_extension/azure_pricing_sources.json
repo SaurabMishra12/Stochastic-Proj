@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-11-13",
+  "model": "gpt-5-mini",
+  "model_version": "2025-08-07",
+  "verification_status": "public_retail_rates_verified_and_matched_to_authenticated_deployment_metadata",
+  "currency": "USD",
+  "rate_basis": "Microsoft public undiscounted retail list prices; not an account-specific invoice quote",
+  "sources": [
+    {
+      "id": "azure_retail_api",
+      "url": "https://prices.azure.com/api/retail/prices?%24filter=productName+eq+%27Azure+OpenAI+GPT5%27+and+contains%28meterName%2C+%27GPT+5+Mini%27%29+and+priceType+eq+%27Consumption%27&currencyCode=%27USD%27",
+      "kind": "official_public_api",
+      "retrieved_at_utc": "2026-11-13T11:57:22.115204+00:00",
+      "status": "verified_http_200",
+      "local_raw_file": "pricing/azure_gpt5_mini_usd_page_01.json",
+      "sha256": "5cc2e77fbea7a83de0e0cecc1895094a992eed82356e590bb7790510ec45155e",
+      "local_fetch_manifest": "pricing/azure_gpt5_mini_usd_fetch_manifest.json",
+      "record_count": 234,
+      "pagination_complete": true
+    },
+    {
+      "id": "azure_retail_api_documentation",
+      "url": "https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices",
+      "kind": "official_documentation",
+      "verified_on": "2026-11-13",
+      "supports": [
+        "Unauthenticated retail catalog",
+        "USD Microsoft retail pricing without discount",
+        "unitOfMeasure and effectiveStartDate field meanings",
+        "NextPageLink pagination"
+      ]
+    },
+    {
+      "id": "azure_deployment_types",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/deployment-types",
+      "kind": "official_documentation",
+      "verified_on": "2026-11-13",
+      "supports": [
+        "GlobalStandard, DataZoneStandard and Standard are separate pay-per-token SKUs",
+        "Global processing differs from data-zone and Azure-geography processing",
+        "Batch and provisioned types are distinct from standard synchronous processing"
+      ]
+    },
+    {
+      "id": "azure_reasoning_costs",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/reasoning#control-costs",
+      "kind": "official_documentation",
+      "verified_on": "2026-11-13",
+      "supports": [
+        "Reasoning tokens billed as output tokens",
+        "max_completion_tokens includes reasoning, visible output and formatting tokens"
+      ]
+    },
+    {
+      "id": "azure_quota_limits",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/quotas-limits",
+      "kind": "official_documentation",
+      "verified_on": "2026-11-13",
+      "supports": [
+        "Published quotas vary with account tier, model and deployment type",
+        "Published tier examples do not verify the user deployment allocation"
+      ]
+    },
+    {
+      "id": "azure_pricing_page",
+      "url": "https://azure.microsoft.com/en-us/pricing/details/azure-openai/",
+      "kind": "official_pricing_page",
+      "verified_on": "2026-11-13",
+      "status": "web_fetch_timed_out",
+      "used_for_rate_verification": false
+    }
+  ],
+  "rates_by_deployment_sku": {
+    "GlobalStandard": {
+      "currency": "USD",
+      "billing_unit_tokens": 1000000,
+      "processing_tier": "standard",
+      "input_usd_per_million_tokens": 0.25,
+      "cached_input_usd_per_million_tokens": 0.025,
+      "output_usd_per_million_tokens": 2.0,
+      "example_arm_region": "eastus2",
+      "example_meters": {
+        "input": {
+          "currencyCode": "USD",
+          "tierMinimumUnits": 0.0,
+          "retailPrice": 0.25,
+          "unitPrice": 0.25,
+          "armRegionName": "eastus2",
+          "location": "US East 2",
+          "effectiveStartDate": "2025-08-01T00:00:00Z",
+          "meterId": "c49bbc0f-4a04-5700-b71a-92aa11ab9cee",
+          "meterName": "GPT 5 Mini Inpt Glbl 1M Tokens",
+          "productId": "DZH318Z0T9WD",
+          "skuId": "DZH318Z0T9WD/01NN",
+          "productName": "Azure OpenAI GPT5",
+          "skuName": "GPT 5 Mini Inpt Glbl",
+          "serviceName": "Foundry Models",
+          "serviceId": "DZH31600VF1F",
+          "serviceFamily": "AI + Machine Learning",
+          "unitOfMeasure": "1M",
+          "type": "Consumption",
+          "isPrimaryMeterRegion": true,
+          "armSkuName": "GPT 5 Mini Inpt Glbl"
+        },
+        "cached_input": {
+          "currencyCode": "USD",
+          "tierMinimumUnits": 0.0,
+          "retailPrice": 0.025,
+          "unitPrice": 0.025,
+          "armRegionName": "eastus2",
+          "location": "US East 2",
+          "effectiveStartDate": "2025-08-01T00:00:00Z",
+          "meterId": "d3fde0bf-d04f-57d4-a8c8-1d8b19d2ca21",
+          "meterName": "GPT 5 Mini cchd Inpt Glbl 1M Tokens",
+          "productId": "DZH318Z0T9WD",
+          "skuId": "DZH318Z0T9WD/01NQ",
+          "productName": "Azure OpenAI GPT5",
+          "skuName": "GPT 5 Mini cchd Inpt Glbl",
+          "serviceName": "Foundry Models",
+          "serviceId": "DZH31600VF1F",
+          "serviceFamily": "AI + Machine Learning",
+          "unitOfMeasure": "1M",
+          "type": "Consumption",
+          "isPrimaryMeterRegion": true,
+          "armSkuName": "GPT 5 Mini cchd Inpt Glbl"
+        },
+        "output": {
+          "currencyCode": "USD",
+          "tierMinimumUnits": 0.0,
+          "retailPrice": 2.0,
+          "unitPrice": 2.0,
+          "armRegionName": "eastus2",
+          "location": "US East 2",
+          "effectiveStartDate": "2025-08-01T00:00:00Z",
+          "meterId": "b9ce889d-2272-584c-a68c-c9f120813746",
+          "meterName": "GPT 5 Mini outpt Glbl 1M Tokens",
+          "productId": "DZH318Z0T9WD",
+          "skuId": "DZH318Z0T9WD/01NL",
+          "productName": "Azure OpenAI GPT5",
+          "skuName": "GPT 5 Mini outpt Glbl",
+          "serviceName": "Foundry Models",
+          "serviceId": "DZH31600VF1F",
+          "serviceFamily": "AI + Machine Learning",
+          "unitOfMeasure": "1M",
+          "type": "Consumption",
+          "isPrimaryMeterRegion": true,
+          "armSkuName": "GPT 5 Mini outpt Glbl"
+        }
+      },
+      "catalog_regions": [
+        "australiaeast",
+        "brazilsouth",
+        "canadaeast",
+        "centralus",
+        "eastus",
+        "eastus2",
+        "francecentral",
+        "germanywestcentral",
+        "italynorth",
+        "japaneast",
+        "koreacentral",
+        "northcentralus",
+        "northeurope",
+        "norwayeast",
+        "polandcentral",
+        "qatarcentral",
+        "southafricanorth",
+        "southcentralus",
+        "southeastasia",
+        "southindia",
+        "spaincentral",
+        "swedencentral",
+        "switzerlandnorth",
+        "uaenorth",
+        "uksouth",
+        "westeurope",
+        "westus",
+        "westus3"
+      ],
+      "rates_consistent_across_returned_regions": true
+    },
+    "DataZoneStandard": {
+      "currency": "USD",
+      "billing_unit_tokens": 1000000,
+      "processing_tier": "standard",
+      "input_usd_per_million_tokens": 0.275,
+      "cached_input_usd_per_million_tokens": 0.0275,
+      "output_usd_per_million_tokens": 2.2,
+      "example_arm_region": "eastus2",
+      "example_meters": {
+        "input": {
+          "currencyCode": "USD",
+          "tierMinimumUnits": 0.0,
+          "retailPrice": 0.275,
+          "unitPrice": 0.275,
+          "armRegionName": "eastus2",
+          "location": "US East 2",
+          "effectiveStartDate": "2025-08-01T00:00:00Z",
+          "meterId": "98f1d5fa-d072-5c83-b642-14ee0dd9a28a",
+          "meterName": "GPT 5 Mini Inpt DZone 1M Tokens",
+          "productId": "DZH318Z0T9WD",
+          "skuId": "DZH318Z0T9WD/01M9",
+          "productName": "Azure OpenAI GPT5",
+          "skuName": "GPT 5 Mini Inpt DZone",
+          "serviceName": "Foundry Models",
+          "serviceId": "DZH31600VF1F",
+          "serviceFamily": "AI + Machine Learning",
+          "unitOfMeasure": "1M",
+          "type": "Consumption",
+          "isPrimaryMeterRegion": true,
+          "armSkuName": "GPT 5 Mini Inpt DZone"
+        },
+        "cached_input": {
+          "currencyCode": "USD",
+          "tierMinimumUnits": 0.0,
+          "retailPrice": 0.0275,
+          "unitPrice": 0.0275,
+          "armRegionName": "eastus2",
+          "location": "US East 2",
+          "effectiveStartDate": "2025-08-01T00:00:00Z",
+          "meterId": "81271040-74e6-50a5-892a-a7ff780c8b46",
+          "meterName": "GPT 5 Mini cchd Inpt DZone 1M Tokens",
+          "productId": "DZH318Z0T9WD",
+          "skuId": "DZH318Z0T9WD/01NF",
+          "productName": "Azure OpenAI GPT5",
+          "skuName": "GPT 5 Mini cchd Inpt DZone",
+          "serviceName": "Foundry Models",
+          "serviceId": "DZH31600VF1F",
+          "serviceFamily": "AI + Machine Learning",
+          "unitOfMeasure": "1M",
+          "type": "Consumption",
+          "isPrimaryMeterRegion": true,
+          "armSkuName": "GPT 5 Mini cchd Inpt DZone"
+        },
+        "output": {
+          "currencyCode": "USD",
+          "tierMinimumUnits": 0.0,
+          "retailPrice": 2.2,
+          "unitPrice": 2.2,
+          "armRegionName": "eastus2",
+          "location": "US East 2",
+          "effectiveStartDate": "2025-08-01T00:00:00Z",
+          "meterId": "cdcc3879-2b8b-5b38-ae60-241797699355",
+          "meterName": "GPT 5 Mini outpt DZone 1M Tokens",
+          "productId": "DZH318Z0T9WD",
+          "skuId": "DZH318Z0T9WD/01NG",
+          "productName": "Azure OpenAI GPT5",
+          "skuName": "GPT 5 Mini outpt DZone",
+          "serviceName": "Foundry Models",
+          "serviceId": "DZH31600VF1F",
+          "serviceFamily": "AI + Machine Learning",
+          "unitOfMeasure": "1M",
+          "type": "Consumption",
+          "isPrimaryMeterRegion": true,
+          "armSkuName": "GPT 5 Mini outpt DZone"
+        }
+      },
+      "catalog_regions": [
+        "centralus",
+        "eastus",
+        "eastus2",
+        "francecentral",
+        "germanywestcentral",
+        "italynorth",
+        "northcentralus",
+        "northeurope",
+        "polandcentral",
+        "southcentralus",
+        "spaincentral",
+        "swedencentral",
+        "westeurope",
+        "westus",
+        "westus3"
+      ],
+      "rates_consistent_across_returned_regions": true
+    }
+  },
+  "regional_standard": {
+    "status": "not_verified",
+    "rate": null,
+    "reason": "No geography-based Standard meter was returned by the bounded exact uppercase GPT 5 Mini catalog query. This is not proof of availability or unavailability; verify model-region support and a matching retail meter before use."
+  },
+  "selected_deployment": {
+    "sku": "GlobalStandard",
+    "arm_region": "koreacentral",
+    "reported_x_ms_region": "KoreaCentral",
+    "model_name": "gpt-5-mini",
+    "model_version": "2025-08-07",
+    "publisher": "OpenAI",
+    "metadata_capacity": 250,
+    "metadata_capacity_interpretation": "Not used to infer a verified runtime TPM/RPM limit.",
+    "metadata_evidence_file": "pilot/provider_metadata.json",
+    "metadata_evidence_sha256": "10b90542e8e16e2e51c2908e91578e56083b7a44ffe0ee3c8c723169707c0c25",
+    "metadata_verification": "Authenticated HTTP GET performed by parent agent; parent reported HTTP 200, zero inference calls.",
+    "rate_selection_status": "matching_exact_region_global_standard_meters",
+    "meters": {
+      "input": {
+        "currencyCode": "USD",
+        "tierMinimumUnits": 0.0,
+        "retailPrice": 0.25,
+        "unitPrice": 0.25,
+        "armRegionName": "koreacentral",
+        "location": "KR Central",
+        "effectiveStartDate": "2025-08-01T00:00:00Z",
+        "meterId": "fabef4c7-194c-52d7-914f-0b3998b002ac",
+        "meterName": "GPT 5 Mini Inpt Glbl 1M Tokens",
+        "productId": "DZH318Z0T9WD",
+        "skuId": "DZH318Z0T9WD/027F",
+        "productName": "Azure OpenAI GPT5",
+        "skuName": "GPT 5 Mini Inpt Glbl",
+        "serviceName": "Foundry Models",
+        "serviceId": "DZH31600VF1F",
+        "serviceFamily": "AI + Machine Learning",
+        "unitOfMeasure": "1M",
+        "type": "Consumption",
+        "isPrimaryMeterRegion": true,
+        "armSkuName": "GPT 5 Mini Inpt Glbl"
+      },
+      "cached_input": {
+        "currencyCode": "USD",
+        "tierMinimumUnits": 0.0,
+        "retailPrice": 0.025,
+        "unitPrice": 0.025,
+        "armRegionName": "koreacentral",
+        "location": "KR Central",
+        "effectiveStartDate": "2025-08-01T00:00:00Z",
+        "meterId": "4c5ee70b-19c5-5041-bace-ce319aa143c1",
+        "meterName": "GPT 5 Mini cchd Inpt Glbl 1M Tokens",
+        "productId": "DZH318Z0T9WD",
+        "skuId": "DZH318Z0T9WD/027C",
+        "productName": "Azure OpenAI GPT5",
+        "skuName": "GPT 5 Mini cchd Inpt Glbl",
+        "serviceName": "Foundry Models",
+        "serviceId": "DZH31600VF1F",
+        "serviceFamily": "AI + Machine Learning",
+        "unitOfMeasure": "1M",
+        "type": "Consumption",
+        "isPrimaryMeterRegion": true,
+        "armSkuName": "GPT 5 Mini cchd Inpt Glbl"
+      },
+      "output": {
+        "currencyCode": "USD",
+        "tierMinimumUnits": 0.0,
+        "retailPrice": 2.0,
+        "unitPrice": 2.0,
+        "armRegionName": "koreacentral",
+        "location": "KR Central",
+        "effectiveStartDate": "2025-08-01T00:00:00Z",
+        "meterId": "f32d456a-4151-5a49-96af-503e93707054",
+        "meterName": "GPT 5 Mini outpt Glbl 1M Tokens",
+        "productId": "DZH318Z0T9WD",
+        "skuId": "DZH318Z0T9WD/028T",
+        "productName": "Azure OpenAI GPT5",
+        "skuName": "GPT 5 Mini outpt Glbl",
+        "serviceName": "Foundry Models",
+        "serviceId": "DZH31600VF1F",
+        "serviceFamily": "AI + Machine Learning",
+        "unitOfMeasure": "1M",
+        "type": "Consumption",
+        "isPrimaryMeterRegion": true,
+        "armSkuName": "GPT 5 Mini outpt Glbl"
+      }
+    },
+    "inference_used_to_verify": false
+  },
+  "pilot_budget_assumptions": {
+    "datasets": [
+      "GSM8K",
+      "HotpotQA",
+      "BBH reasoning"
+    ],
+    "samples_per_dataset": 50,
+    "sample_count": 150,
+    "method_count": 5,
+    "logical_calls_per_method_sample": 7,
+    "logical_calls": 5250,
+    "expected_input_tokens_per_attempt": 2000,
+    "expected_billed_output_tokens_per_attempt": 800,
+    "cached_input_tokens_assumed": 0,
+    "retry_attempts_in_expected_cost": 0,
+    "max_http_attempts_per_logical_call_for_ceiling": 3,
+    "output_includes_hidden_reasoning": true,
+    "estimates": {
+      "GlobalStandard": {
+        "expected_input_tokens": 10500000,
+        "expected_billed_output_tokens": 4200000,
+        "expected_cost_usd_without_cache_or_retry": 11.025,
+        "max_input_tokens_per_attempt": 12288,
+        "max_billed_output_tokens_per_attempt": 4096,
+        "one_attempt_per_logical_call_ceiling_usd": 59.136,
+        "three_attempts_per_logical_call_ceiling_usd": 177.408
+      },
+      "DataZoneStandard": {
+        "expected_input_tokens": 10500000,
+        "expected_billed_output_tokens": 4200000,
+        "expected_cost_usd_without_cache_or_retry": 12.1275,
+        "max_input_tokens_per_attempt": 12288,
+        "max_billed_output_tokens_per_attempt": 4096,
+        "one_attempt_per_logical_call_ceiling_usd": 65.0496,
+        "three_attempts_per_logical_call_ceiling_usd": 195.1488
+      }
+    }
+  },
+  "proposed_spending_limit": {
+    "usd": 25,
+    "approval_status": "requires_explicit_user_approval_recorded_by_parent_before_billable_calls",
+    "completion_guaranteed": false,
+    "required_behavior": "Reserve the worst-case cost of every HTTP attempt before sending; include failed/ambiguous attempts conservatively; stop before the cap. A cap may leave the 150-sample matrix incomplete."
+  },
+  "uncertainties": [
+    "Deployment model/version/GlobalStandard SKU and Korea Central region matched to public retail meters; account-specific contract pricing remains unverified.",
+    "Taxes, negotiated discounts, credits, billing currency conversion and account contract terms are not verified.",
+    "Expected token counts are planning assumptions, not measured usage; HotpotQA context can raise input usage.",
+    "Hidden reasoning is billed output, so visible-answer size does not determine output cost.",
+    "Retries and responses with missing usage require conservative accounting.",
+    "Actual deployment TPM/RPM, account tier, available quota, latency and rate-limit headers have not been verified.",
+    "No batch or priority-processing discount or surcharge is assumed."
+  ],
+  "actions_performed": {
+    "public_pricing_get_requests_only": true,
+    "user_endpoint_requests": 0,
+    "inference_requests": 0,
+    "credentials_read": false
+  },
+  "rate_limit_planning": {
+    "actual_tpm": null,
+    "actual_rpm": null,
+    "actual_quota_status": "not_verified",
+    "published_tier_1_example_only": {
+      "GlobalStandard": {
+        "rpm": 1000,
+        "tpm": 1000000
+      },
+      "DataZoneStandard": {
+        "rpm": 300,
+        "tpm": 300000
+      }
+    },
+    "proposed_runner_throttle": {
+      "rpm": 200,
+      "tpm": 200000
+    },
+    "throttle_status": "Planning settings, not a verified account allocation. Observe actual response headers and back off on 429 after authorization."
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:244",
+  "source_index": 244,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1937,
+  "output_tokens": 1168,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00282025,
+  "latency_seconds": 21.06638131800173,
+  "wall_seconds": 183.2701916449987,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 309,
+    "utf8_bytes": 309,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Tractor is second-newest = middle position. Minivan is newer than convertible, so minivan must be newer than convertible. With tractor fixed in the middle, minivan must be the newest and convertible the oldest. Thus the convertible is the oldest.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Tractor is second-newest = middle position. Minivan is newer than convertible, so minivan must be newer than convertible. With tractor fixed in the middle, minivan must be the newest and convertible the oldest. Thus the convertible is the oldest.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ]
+    ],
+    "controller_seed": 182448853158271735627367562951444187545,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.9658333858851503,
+        "proposed_state": 0.10689816688702888,
+        "state": 0.10689816688702888,
+        "probability": 0.23785393325911794
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.10689816688702888,
+        "target": 0.0,
+        "drift": -0.12827780026443467,
+        "gaussian_draw": -0.07652876095954239,
+        "proposed_state": 0.08560020517058997,
+        "state": 0.08560020517058997,
+        "probability": 0.23477903575133632
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.08560020517058997,
+        "target": 0.0,
+        "drift": -0.10272024620470796,
+        "gaussian_draw": -0.47517482065093253,
+        "proposed_state": 0.02273596534945556,
+        "state": 0.02273596534945556,
+        "probability": 0.22586457574544921
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23785393325911794
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23785393325911794
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23477903575133632
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23477903575133632
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22586457574544921
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22586457574544921
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.5979674113427301
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.03899996808552575
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.4204425899762869
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7233632785337081
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5998840006048177
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7963919090287632
+      }
+    ]
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "c46ef2a3c72c9a82dc8f4d1ac96af7804c990c4a6c0f4bc321abd7c578613b68",
+  "errors": []
+}

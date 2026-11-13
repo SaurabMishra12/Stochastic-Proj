@@ -1,0 +1,199 @@
+{
+  "payload_hash": "912034daecc0db5a0651cd19c5f3b47643989466487563b39956716f540978ec",
+  "logical_id": "bbh:logical_deduction_three_objects:93|disagreement_triggered|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_052398bdc3609872016af73ac70d9481948c98afd283cb7d7c",
+      "object": "response",
+      "created_at": 1794587335,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587337,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1947,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 834,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_052398bdc3609872016af73ac7adcc819481915664d29d2221",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zrJsvGN6MU0OSsH6JlzTLOR2-vi6wi7sAhiuIWHJdEqA9_70FSK6aHCZInDbQnQBu6Ea1mjrtQfWsxFIILkrtKcDyA0m3rWZfSbv4uim6bjrP901wqPpoa4bFL9hsBTwicvGLRQSkopnEKlQ9vLoDcdHUcn2KDfd7uthO8zkONBWusJXHNTw-WcPLV0HhKgh07exmQ3wb1puPh0llFXetoB3j3e-a9j1Uh0C0seR_wYJoryTiJVBU6gay1BMBV5ccyP5jOEfCK4RP-xoT7zBnP14jYHnBnGNOhdVdjikJSLm_KODPBu16Pz4dWYUek8uvC5eTnJxhg0sUzbfywEUidY4gs9MFnG-PLLpyJKLb9oiuBcFZe2eYiSlolj2-LF3-2VAp-aSGQiz4r-kp5hx_ajp8O6edl1VeRaG6nACuXz_TiQpeLJK8lcRjK0fx0MbjxPIPlxWdknDM_IjqIem7RvhL10Fzjxw3csB-KvapEUROAAfKFB7orlmqZ6wqdhYSIJVFVPTHI_5Eb2syTfwh6Qfyjmwdkq2zTi4XqKn8mTOt8wRBq2b83Is9oJ4U9gQXWJBPIO2LTtNHRBh82XDDKpnhki90lCDFB8OBfmuIULqRh64XnTypgJWGbAa68HjYTaW8jPsRlHw-nTmUkWE3JCRMbARBZK7HvlfVX9uXHVg6rR-IK_GnUbi1tLST7aVtwVKNsAMlmoiVfYI2XYGa1i0OjadtzGe52em471k5-rGjODWD0tBgMZ-UhXt-eLkWe6ireHVrVKEMQjGkVh_1AxbDfE4-QsYGqzz4mI5mgJNSFGOmPF_PdcK0ngJyoz3-5GfaSApkC2DUSEhd6QNzSa6ajlCvX_SebmdePKanQFoPF-_hdtMDxbKUxiUFe6fn6PEIurcObpep9EZfVCzV66qfHOL78gJKoxxFxU-eYodtCq7ZarQ0o-S5bMWukvaAyrYp8-6YEUnKeGBAubkvsC3AWqhSmDQYIs_GEjCimhG-rnv4gjM1qQ5X8mIpyeG0ejbh1zZJ4_HUMvO7-c50MWX0uHhZc9Z0o24sQBZyLWxnNyKzdZK3bpKU3whisEWuGaPsrRPQKBUttbSX9RdZh7lJPLHDFEwtGQ87ftqlQAxm0EuYk4bxG6Iwz4I2rxw2nWjRNVmF3-o4SgW4CIFLntexHJzfhQ0_Bp2eV8caS1znHgbSRmxbPUOqLDLl-zFsxVqLkPy-T3MMfkC2mBoz25wMeoyUCSiYiGh-VtPOVwHtBJjHdIEKWsVC-97BuIoFG1h4qqvfWxYcC7U4OpPuUkg23kXsZtmyZRqeyZiipi9Xwh2DNnbymyvQwB5jr3jJdkT1a-W8yrJPQ95aE3S3ChG4ej1a73Eg1s-RscAuQ8qZJ_5sowPL4JTQSR9EcIu2k62CWKFjYRrd1MMs6Yv0Q2PACnLfqpqeZ0WADlkCABIa-Em2Gn6glyEijmwri8ZtMP9EbB_N65bbx_eJQl6w1O45dooUXhmdLESFfqglt9YAovHkpzK3pxDmygRVhSMkbAL-O9P1cTL_7BKdY08CpfsJi82UVDWY18frBunaEulu7rmhuDauGeGhi6PFsHg6XcyMtOffpJnlXdrC70J6IpYAgbbEcyMn_nth00GcrA0Yb4CDwxP2DfxSXgARpv9JvP4yjpE2DIJ4qjqcBINIbvcf9ePFDLEvk1K8YtR6zCa55kl3MrOOtnpCiL7OxTQ7We700w7svK-443_MZm6IYnXlr6luVziMWMWsp6KoncV0L1mXXTgR8xIYzxnI1T8PJzD6J15DplcpDUYchv_rj12JSDKodkWjsZndCefAkpVzNTOLFAj55pobs6Mx4HYJJITRRQcJCDYP0iWg_arE2DHjAWLfmKmri4i35nybeC4vrPU0sIG5tbu-adMDKushKZVPnUY-E2ybvImC4Nta6my1zlg2974u1VaSVQ8jVGrnXS76bld4dhmQM3hwnIyB5ZZwsNADKw_qZKGrLmIjl0D8bbItPFRy05Ae7p6gSg5y4cW5jMV9XY8SRL-cB6VvphDGbePEokhIyvgcNcNMmFmj12NFEEGsjF-qgb78KAFYHfq5XzxClbsq5feUS_NK7e0U8tDLDAHHFoyl6yE4sRsa0CjrM82ysjxfVRZFuhCjSElI5N1M_6EB_RcXD1-mIr3shW53ZslW2GgGD0Mk7cy-mcWa142kGFyAHr2Zh3VTNvVSWD4mgGnIOOY1i8rJaeXNByLuLeZhOHFBYhxLPVwzeYrfV3XrDJv3XPSafZ4NWsZFeAwldC2ojPERbupW6rgCPT_qztzpWlenkw4CyF0R07dTZMlf7ItDTQDmYaHElTC8V5TTMNDEpA2zxDfgCh7MHFHh35z0M2P2635JLZbFIYnT469rRg6QFZvqrzXnvHMeXuMsUchoClkHmqCEDsJuCgn1yTD9HZBd19Krg-iOFvMmLFFYPUptjhbxdh2OuMRJ5OsEU0fD_ApOdwr9IN-vkVHtQNGhge1qwLCUzlOeyMwhcvSykZOBL5TjjJDIJyq7PP6BZoDJsPDb5xYhTRyqeN36xnoA71mSsbKPrINIo5YbCY0a9wwGtMCT0pTRLZUVK90bUPCOazIHxEAqKcuSSXLBg3t7odOBmPjKGFdDhMNyQK9hDlF3iRmgFFycxv2U7c6jz9nZX4WQO1qYmmAYJIIsgiJGWtKoTe2wc_miMdotRAHlsRTLy2IZ8l3SgiIVrbhWSFOvKeN_DNMxLtRtXMoN-ngMpMmOmcpGouVRt6JIdsNxP6uknHokgalhtnLh6uj4FAc_3OVHKBdV7XBorpdtCJ0-kd-DMFZe4ciMZEyFqy9C5mRv3gCEVom-Bjw62quue4WjOekkAuAadV_Ze1Ka54OYJ6lX_s3khxx2eCP2USly2LNF-jtQ1gOHjtbHK_9IZCwKn0zF95mnL5-fOrUJhVn48dXsX3-45Adev1OU_ZBOuJnk1qHFRhcsd_nVxLi-OJPt47jbIBPE40fZwN6r_9rAtBjy9yBiqO7a4_xBijUWJBy7lDQ3GJeqLmRAWnTfATdW8aTv-nN-01G-FwF7_45wcJQaSXUjSS8w==",
+          "summary": []
+        },
+        {
+          "id": "msg_052398bdc3609872016af73ac870488194a28c60634ecc49ea",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Raven is explicitly stated to be second from the left. With three birds and the blue jay to the right of the hummingbird, the hummingbird must be left and the blue jay right, so the raven occupies the middle (second from the left).\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 314,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 199,
+        "output_tokens_details": {
+          "reasoning_tokens": 128
+        },
+        "total_tokens": 513
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Raven is explicitly stated to be second from the left. With three birds and the blue jay to the right of the hummingbird, the hummingbird must be left and the blue jay right, so the raven occupies the middle (second from the left).\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 314,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 513
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:93|disagreement_triggered|refinement:1",
+    "attempt_id": "fdb96b813c744c6e81ceb85c34df51af",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0004765,
+    "latency_seconds": 2.8402205949969357,
+    "started_at": "2026-11-13T16:28:54.326556+00:00",
+    "finished_at": "2026-11-13T16:28:57.166760+00:00"
+  }
+}

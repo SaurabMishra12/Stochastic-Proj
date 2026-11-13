@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:194",
+  "source_index": 194,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "10",
+  "final_answer": "10",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1529,
+  "output_tokens": 820,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0020222499999999997,
+  "latency_seconds": 19.74958571899697,
+  "wall_seconds": 183.08453946200098,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 157,
+    "utf8_bytes": 160,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "10",
+          "summary": "Violetta buys 5 crayons at $2 each: total cost = 5×2 = $10. Change from $20 is 20 − 10 = $10.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"10\",\"missing_response\":false,\"sender\":0,\"summary\":\"Violetta buys 5 crayons at $2 each: total cost = 5×2 = $10. Change from $20 is 20 − 10 = $10.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "controller_seed": 192324603767679413678735391729355841730,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.7879193720404815,
+        "proposed_state": -0.08720669398761294,
+        "state": -0.08720669398761294,
+        "probability": 0.2108573349083928
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.08720669398761294,
+        "target": 0.0,
+        "drift": 0.10464803278513553,
+        "gaussian_draw": 1.3346225355114918,
+        "proposed_state": 0.07097375529908508,
+        "state": 0.07097375529908508,
+        "probability": 0.23268335825907008
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.07097375529908508,
+        "target": 0.0,
+        "drift": -0.0851685063589021,
+        "gaussian_draw": 1.002413409525761,
+        "proposed_state": 0.17340373825507346,
+        "state": 0.17340373825507346,
+        "probability": 0.24763289119582918
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2108573349083928
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2108573349083928
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23268335825907008
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23268335825907008
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.24763289119582918
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.24763289119582918
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.1183664204724384
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7347440971936554
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6900538900367028
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8010965900919867
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8999444637581746
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.49444076048513796
+      }
+    ]
+  },
+  "initial_answers": [
+    "10",
+    "10",
+    "10"
+  ],
+  "refined_answers": [
+    "10",
+    "10",
+    "10"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "0dbf163e76ded1f43b92239d502f80bc71b702bd98c3067ddca935f0af3d0006",
+  "errors": []
+}

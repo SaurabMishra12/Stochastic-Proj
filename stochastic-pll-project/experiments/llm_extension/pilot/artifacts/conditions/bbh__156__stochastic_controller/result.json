@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:156",
+  "source_index": 156,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2026,
+  "output_tokens": 822,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021505,
+  "latency_seconds": 20.766114528996695,
+  "wall_seconds": 184.2033674710001,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 470,
+    "utf8_bytes": 470,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Given positions: red is left of brown (red < brown) and yellow is right of brown (brown < yellow). Combined ordering is red, brown, yellow, so the yellow book is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given positions: red is left of brown (red < brown) and yellow is right of brown (brown < yellow). Combined ordering is red, brown, yellow, so the yellow book is rightmost.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Given positions: red is left of brown (red < brown) and yellow is right of brown (brown < yellow). Combined ordering is red, brown, yellow, so the yellow book is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given positions: red is left of brown (red < brown) and yellow is right of brown (brown < yellow). Combined ordering is red, brown, yellow, so the yellow book is rightmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 195081898303702759892708375409813913325,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.5800270369798747,
+        "proposed_state": -0.06419722894672907,
+        "state": -0.06419722894672907,
+        "probability": 0.21393659296235112
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.06419722894672907,
+        "target": 0.0,
+        "drift": 0.07703667473607488,
+        "gaussian_draw": 1.447275649344533,
+        "proposed_state": 0.10369049941785499,
+        "state": 0.10369049941785499,
+        "probability": 0.23738905890686782
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.10369049941785499,
+        "target": 0.0,
+        "drift": -0.12442859930142598,
+        "gaussian_draw": -1.8296375477546671,
+        "proposed_state": -0.11125612853373201,
+        "state": -0.11125612853373201,
+        "probability": 0.20767374955541254
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21393659296235112
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21393659296235112
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23738905890686782
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23738905890686782
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20767374955541254
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20767374955541254
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.36681566677208544
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.3919655238000652
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.7450730670019046
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7560452076467468
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.0019357234409698165
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.010304614266519518
+      }
+    ]
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "5bc78e66d8b08cb08527a7ad7079de4b6b6c536a9f1f6a192f1b79630cc7a39f",
+  "errors": []
+}

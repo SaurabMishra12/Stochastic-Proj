@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:169",
+  "source_index": 169,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1888,
+  "output_tokens": 993,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002458,
+  "latency_seconds": 26.1364937139997,
+  "wall_seconds": 184.79349895900032,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 696,
+    "utf8_bytes": 696,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "A",
+          "summary": "With three places, Ada above Ana and Mel below Ana forces Ana to be between them: Ada first, Ana second, Mel third. Options B and C are impossible because nothing can be above first or below third, respectively.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":0,\"summary\":\"With three places, Ada above Ana and Mel below Ana forces Ana to be between them: Ada first, Ana second, Mel third. Options B and C are impossible because nothing can be above first or below third, respectively.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "Ada finished above Ana and Mel finished below Ana, so Ada is ahead of Ana and Ana is ahead of Mel. Order is Ada (1st), Ana (2nd), Mel (3rd). Thus Ana finished second.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"Ada finished above Ana and Mel finished below Ana, so Ada is ahead of Ana and Ana is ahead of Mel. Order is Ada (1st), Ana (2nd), Mel (3rd). Thus Ana finished second.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Ada finished above Ana and Mel finished below Ana, so the order is Ada (1st), Ana (2nd), Mel (3rd). Therefore Ana finished second.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Ada finished above Ana and Mel finished below Ana, so the order is Ada (1st), Ana (2nd), Mel (3rd). Therefore Ana finished second.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "2726350a448be958a710053a7ec7c09020e3228a3ea3a544a81fbff0fec0577c",
+  "errors": []
+}

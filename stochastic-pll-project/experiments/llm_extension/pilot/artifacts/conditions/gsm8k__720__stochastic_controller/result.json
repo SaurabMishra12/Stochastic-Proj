@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:720",
+  "source_index": 720,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "4",
+  "final_answer": "4",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1578,
+  "output_tokens": 861,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021165000000000003,
+  "latency_seconds": 20.24858568200034,
+  "wall_seconds": 183.40140807699936,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 154,
+    "utf8_bytes": 154,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "4",
+          "summary": "This week: 3 + 5 = 8 boxes. Last week: 4 boxes. Difference: 8 - 4 = 4 more boxes this week.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"4\",\"missing_response\":false,\"sender\":1,\"summary\":\"This week: 3 + 5 = 8 boxes. Last week: 4 boxes. Difference: 8 - 4 = 4 more boxes this week.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 254283715550839451077076863137827694855,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.2788693548582333,
+        "proposed_state": -0.03086518158408158,
+        "state": -0.03086518158408158,
+        "probability": 0.21845509233928326
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.03086518158408158,
+        "target": 0.0,
+        "drift": 0.037038217900897896,
+        "gaussian_draw": 0.3063101060074305,
+        "proposed_state": 0.006740956391896903,
+        "state": 0.006740956391896903,
+        "probability": 0.22363504809132634
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.006740956391896903,
+        "target": 0.0,
+        "drift": -0.008089147670276284,
+        "gaussian_draw": 0.8080621680662072,
+        "proposed_state": 0.09536813459847406,
+        "state": 0.09536813459847406,
+        "probability": 0.23618585234171066
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21845509233928326
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21845509233928326
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22363504809132634
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22363504809132634
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.23618585234171066
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.23618585234171066
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8037883591197934
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7197683354158667
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.5335542336171164
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.0369451094679365
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.7471562918699658
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6141463774693278
+      }
+    ]
+  },
+  "initial_answers": [
+    "4",
+    "4",
+    "4"
+  ],
+  "refined_answers": [
+    "4",
+    "4",
+    "4"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "4934b4918ed86dddd9a1ca61291be418dc014ce997163f8a9e56985df38d5d4c",
+  "errors": []
+}

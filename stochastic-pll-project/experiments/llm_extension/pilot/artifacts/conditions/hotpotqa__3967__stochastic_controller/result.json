@@ -1,0 +1,250 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a80799b5542992bc0c4a72e",
+  "source_index": 3967,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "panzer",
+  "final_answer": "corps xix corps",
+  "correct": false,
+  "f1": 0.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 11202,
+  "output_tokens": 1506,
+  "reasoning_tokens": 896,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.005812499999999999,
+  "latency_seconds": 27.299713932001396,
+  "wall_seconds": 294.1800638930017,
+  "communication": {
+    "directed_messages": 5,
+    "characters": 1316,
+    "utf8_bytes": 1328,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "panzer armouredtank units",
+          "summary": "Heinz Guderian, who pressed to advance up the Channel coast, was noted for his leadership of Panzer units—German armoured (tank) forces—though at Boulogne he was commanding the XIX Corps.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"panzer armouredtank units\",\"missing_response\":false,\"sender\":0,\"summary\":\"Heinz Guderian, who pressed to advance up the Channel coast, was noted for his leadership of Panzer units—German armoured (tank) forces—though at Boulogne he was commanding the XIX Corps.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "corps he commanded xix corps",
+          "summary": "The context identifies General Heinz Guderian as the commander of the XIX Corps during the Battle of Boulogne; thus the unit he led was a corps (the XIX Corps).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"corps he commanded xix corps\",\"missing_response\":false,\"sender\":1,\"summary\":\"The context identifies General Heinz Guderian as the commander of the XIX Corps during the Battle of Boulogne; thus the unit he led was a corps (the XIX Corps).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "corps he commanded xix corps",
+          "summary": "The context identifies General Heinz Guderian as the commander of the XIX Corps during the Battle of Boulogne; thus the unit he led was a corps (the XIX Corps).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"corps he commanded xix corps\",\"missing_response\":false,\"sender\":1,\"summary\":\"The context identifies General Heinz Guderian as the commander of the XIX Corps during the Battle of Boulogne; thus the unit he led was a corps (the XIX Corps).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "panzer armoredtank units",
+          "summary": "Heinz Guderian, who urged the rush up the Channel coast, was noted for his leadership of Panzer units—German armored/tank formations—while commanding XIX Corps during the 1940 campaign.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"panzer armoredtank units\",\"missing_response\":false,\"sender\":2,\"summary\":\"Heinz Guderian, who urged the rush up the Channel coast, was noted for his leadership of Panzer units—German armored/tank formations—while commanding XIX Corps during the 1940 campaign.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "panzer armoredtank units",
+          "summary": "Heinz Guderian, who urged the rush up the Channel coast, was noted for his leadership of Panzer units—German armored/tank formations—while commanding XIX Corps during the 1940 campaign.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"panzer armoredtank units\",\"missing_response\":false,\"sender\":2,\"summary\":\"Heinz Guderian, who urged the rush up the Channel coast, was noted for his leadership of Panzer units—German armored/tank formations—while commanding XIX Corps during the 1940 campaign.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 196107946336594827580284581204401957038,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 1.0,
+        "drift": 1.2,
+        "gaussian_draw": 0.8985710108795746,
+        "proposed_state": 0.21945358618227886,
+        "state": 0.21945358618227886,
+        "probability": 0.7161742213782493
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.21945358618227886,
+        "target": 1.0,
+        "drift": 0.9366556965812654,
+        "gaussian_draw": 0.6333816905994542,
+        "proposed_state": 0.3832216628093871,
+        "state": 0.3832216628093871,
+        "probability": 0.7420359255456038
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.3832216628093871,
+        "target": 1.0,
+        "drift": 0.7401340046287355,
+        "gaussian_draw": -0.9698349824727461,
+        "proposed_state": 0.3498940008029431,
+        "state": 0.3498940008029431,
+        "probability": 0.736899455378886
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.7161742213782493
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.7161742213782493
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.7420359255456038
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.7420359255456038
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.736899455378886
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.736899455378886
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.09442003654743503
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7402186858686483
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.033644484722656576
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.1515268229302541
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5167972268240536
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.1728188014645965
+      }
+    ]
+  },
+  "initial_answers": [
+    "panzer armouredtank units",
+    "corps he commanded xix corps",
+    "panzer armoredtank units"
+  ],
+  "refined_answers": [
+    "corps xix corps",
+    "corps",
+    "corps"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "778676a7643cf5bf9bb3d0dbfd2fc617c475f6bbbb239249f89bc5be003b7a46",
+  "errors": []
+}

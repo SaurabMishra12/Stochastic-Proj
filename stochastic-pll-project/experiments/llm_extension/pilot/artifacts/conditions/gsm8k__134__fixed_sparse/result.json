@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:134",
+  "source_index": 134,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "720",
+  "final_answer": "720",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1490,
+  "output_tokens": 801,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0019745,
+  "latency_seconds": 17.68591285399998,
+  "wall_seconds": 178.1885993550004,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 455,
+    "utf8_bytes": 461,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "720",
+          "summary": "Tom pays 4 washes/month × $15 = $60 per month. Over 12 months: $60 × 12 = $720 annually.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"720\",\"missing_response\":false,\"sender\":0,\"summary\":\"Tom pays 4 washes/month × $15 = $60 per month. Over 12 months: $60 × 12 = $720 annually.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "720",
+          "summary": "4 washes/month × $15 each = $60 per month. Over 12 months: $60 × 12 = $720 total per year.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"720\",\"missing_response\":false,\"sender\":1,\"summary\":\"4 washes/month × $15 each = $60 per month. Over 12 months: $60 × 12 = $720 total per year.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "720",
+          "summary": "Tom pays 4 washes × $15 = $60 per month. Over 12 months: $60 × 12 = $720 per year.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"720\",\"missing_response\":false,\"sender\":2,\"summary\":\"Tom pays 4 washes × $15 = $60 per month. Over 12 months: $60 × 12 = $720 per year.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "720",
+    "720",
+    "720"
+  ],
+  "refined_answers": [
+    "720",
+    "720",
+    "720"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "08dcf1d5a169b465e20213ed26c9efe6d6c5d7eb02b4109e9b212e21db443b07",
+  "errors": []
+}

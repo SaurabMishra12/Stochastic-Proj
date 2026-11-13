@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:102",
+  "source_index": 102,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "26",
+  "final_answer": "26",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2089,
+  "output_tokens": 1332,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0031862500000000003,
+  "latency_seconds": 22.34693731399966,
+  "wall_seconds": 183.78814573300042,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 815,
+    "utf8_bytes": 815,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "26",
+          "summary": "Weekdays (5 days) he drinks 4 glasses/day (breakfast, lunch, dinner, before bed) = 20. Weekends (2 days) he skips water at dinner and drinks 3 glasses/day = 6. Total = 20 + 6 = 26.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"26\",\"missing_response\":false,\"sender\":0,\"summary\":\"Weekdays (5 days) he drinks 4 glasses/day (breakfast, lunch, dinner, before bed) = 20. Weekends (2 days) he skips water at dinner and drinks 3 glasses/day = 6. Total = 20 + 6 = 26.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "26",
+          "summary": "Weekdays (5 days) he drinks 4 glasses per day (breakfast, lunch, dinner, before bed) = 20. Weekends (2 days) he replaces dinner with soda, so 3 glasses per day = 6. Total = 20 + 6 = 26.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"26\",\"missing_response\":false,\"sender\":1,\"summary\":\"Weekdays (5 days) he drinks 4 glasses per day (breakfast, lunch, dinner, before bed) = 20. Weekends (2 days) he replaces dinner with soda, so 3 glasses per day = 6. Total = 20 + 6 = 26.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "26",
+          "summary": "John drinks 4 glasses of water each weekday (breakfast, lunch, dinner, before bed) for 5 days = 20. On each weekend day he replaces dinner with a soda, so he drinks 3 glasses per weekend day (breakfast, lunch, before bed) for 2 days = 6. Total = 20 + 6 = 26.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"26\",\"missing_response\":false,\"sender\":2,\"summary\":\"John drinks 4 glasses of water each weekday (breakfast, lunch, dinner, before bed) for 5 days = 20. On each weekend day he replaces dinner with a soda, so he drinks 3 glasses per weekend day (breakfast, lunch, before bed) for 2 days = 6. Total = 20 + 6 = 26.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "26",
+    "26",
+    "26"
+  ],
+  "refined_answers": [
+    "26",
+    "26",
+    "26"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "4d6ce6f60a3f2f81ce66f2cab986dd5557120c6cf3ff72e62183b2084f677a2d",
+  "errors": []
+}

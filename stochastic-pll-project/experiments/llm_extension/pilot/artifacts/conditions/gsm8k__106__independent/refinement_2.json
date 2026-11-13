@@ -1,0 +1,199 @@
+{
+  "payload_hash": "351427795e17eeccfeb4260dee1de1c8874b38a4ff671100a33e050f405d501d",
+  "logical_id": "gsm8k:official_test:106|independent|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_039bf4b0967855ec016af72530042c8193a1fee6e4a59cdb4f",
+      "object": "response",
+      "created_at": 1794581808,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794581810,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1537,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 568,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_039bf4b0967855ec016af7253105488193970a9e68f4d291e4",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yUytt-N0V8HGBozQ-sjVbYxCwEbNhhETwRxe-V8uj7jo0AfkO9MEDkibv1WSXxuB2Lbs84Y7_3bWQZjbXXUrdhQsMMP6UvZmGLe14Q5kwRmbU6PhdE4r2g5o7HP5i9aocjEqs75q-oCeWWiL-ahua-eNkoBImYkFKRVesSNkuOXC4j98KPrYS6-zHBpRtbwSJNMQjpYXqFraW4FJuFs2iNTlNyhj7DO_9CNV7By_TKpsmcTWh6SD6drX1jDKe9QOt-4BuayaKHwSZK07pwpy0eb8eLFA6H0RcznaqMWzPZbRCtzg8Fy3-rJXYtnrhWWGCN9GT4y9ctp3alZrvs3NnL2NzrZnjxIsKq3ZiQl06rDR0gEpnpBgKN5Fzv9wMQ4riDeSGU8aHDgR7kM4Dnp4hhaFLmIU49JfQMQpApxL9j8y7JA-LvY7nwEClqVZQbrBlHKgP7oXbwjmfBgWuqlLn0j9AL4DQ9fRjmXpMa6HduSStSMw7C_Q6iXoPKh1iEDNzAmdYw5zTsoEOXXgVLlyA7Pq81hl9r5mZvinbUl4z4MlRLrJwupfbkXOVkAOYhDI6fhQ9zh6l6tDNrR6GF5xntCbSZ-87q0psdIS_ZTz-bXDe4I7Uaxpy7t_-UBVoEUiu_xfrfltwwrr2nr5LAG3I3fZOoxZXEwRuFRxyrZKJyjSPWySP4X9S7yWi0BBwjLPdeEVokznsZasdQLjLkCE0RncdAu7nBTpzng6SuuUD8DACEju7YutwGd87x-F5FzyMuxCQdzQszkanDgfTKhBVEjHkum4-g4Qxr2tEE8L_ZPrDcw9ybf3NnV5qE5Z3H29YJPDJLXzi8LDJtyHpw9WP_bI_MFMiw954Nkq5Z4wD-hQWJjalIz79Guusgom6i2a6DSqYUd9OD5RExdFOFlZQRrcWXtvtAAUm9SdojxlLrVpCrPrcUzKB_C4mtRXqOYbeFrgUBx1HOH82DOQ1NzpnxA-A0RKa0JajOmq9VRmv46Zp_rvKV4DzwTT1JhC8tr-P4ocyECU_SmxgtAQpvPbkpp8qbjJzJQrKMyvHQzJMg8ZjxIcpS7_jL7-TkpeEGAq9hZvOPNq2P4yjZcYlsVTUeRmCIJACJ6flt0T7j734j9dXkWP8N81J1flelfwvY8MiU31hq5eazkJ0Gw3N0FkRkdnNPXGJSBPJdsXIxodKZG2QX_GypGgAYCWdfk0rjsEW514KZ5mQkGzCF5IGGMFGhUO5lzigbWQa_rdRlA2-YE5c0KwGW1tEY51hZU423TvJ8IiegVKdi9c8M-ootCieZRlmO4RihNM_aoE-UARVWLF5SqvkdsLoxD70ig6WkW5dpecTISl5KCzY5_TdSsrfhcMalaMyqTm1X37MqMj6GSUSchWZiHztEZ_fg6XL54VNwGQ5DhH1SlyFdxYhQH90FCa3Oy5DObkvO3eQr5C2AeShePqB-5uI8yWQnzfrfCrqlphHGVO1PQCzUhQwFI-zBAzDRnzH2VmcB8BSGj3OCXcQFbLbvTX6lbFD2tUi0lbrnq6u-jGl9d20VFJFlCjZythxWd_iEzz2tAw65G0_ncC3bvca1gyQHApGUu8ghd1eOQE8rEC5Ar9V3ASh2ivEqS-l7sct4Y-RUPXh82X4dPG6gc1Rs5B4cEhGmvDKoVyA6aVNF_Om4aFl5qz9CKXdJaj7JOfaVU37y6aadB2dwHr7I8--XgbUP9N87ugQQkiUWeNrqn0A6VNDqlnWPdOiyiXzrP0uIxD0W9CZghGcuBm9JF9rJF_GfgguJbv7HM9eUzp0AyATYo32s_9qoIBwyhdNmNPWB96W-ejF3HHLocYqGGLX9ZcdCtf8fo4oUdwIUKxqN3gbG24dtXuEYL9lNtlsznB_lQVEVZFtp5eIrXMYNfpjHct0bjWcfL5RQxWQvXWYIyfx6rkEM17Vq38Dss6rbpdFmkGswmYgQviSGiVpgwVUQxFHlVLTNgaYJrJzn-m9lH-84a-JRbXls5_48UvinHePQXANnUX7tLczZUHbpkE7kWxlWSShW4PSJNlIfABiOCH2_v32jkBfaCcB9uBR6uL8gzT8CVCgbOS_8im0sTvbqm4dttZ24izRr4x_CAcbJVNog5MYUPra-6U3dYlr7P5CLAXK7iBecbz1pE6nflQ-WuvvRHkSuTROpImqRUdZOl7miMdDfTGbkqNqeoZiXHlKZzjI89a5eyV_Kc5q2iL3poZ_dZUc6frRnxIB68zkCjC0Iy07XImxDC7yRO64CmJpsLpVbFlHPcA96GE78-LWIOa5mxtKpgkLSSbaHDEC6SwdsCCBKz15J0d9mKmUL95p4EbCggTqdGXLe1ug2tqrvUDXBKl9c3fF5_La0dtjk1wikrCb7nqruReRHmjX1muPXWHK--TduaTvUlc62EbuBWbU3G_SX3AdepMybJ4tktBQVvIGAj5CPPzesXYDGsdexjo8d0WzpQGIFLN4s_aOGjhUliDkCcoU95lDrvIUvNodJ9TiGJEs89GfzBvFY3EXxCS4JaSFlaPVzUSPhr88sI8eSOzrnuN4h43YZr",
+          "summary": []
+        },
+        {
+          "id": "msg_039bf4b0967855ec016af72531e0708193b95595c9001a7d72",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"72\",\"summary\":\"Each box's inner length, width, height are 5-2=3, 6-2=4, 4-2=2 (subtracting 1-inch walls on both sides). Inner volume per box = 3×4×2 = 24. For 3 boxes total inner volume = 3×24 = 72.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 254,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 198,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 452
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"72\",\"summary\":\"Each box's inner length, width, height are 5-2=3, 6-2=4, 4-2=2 (subtracting 1-inch walls on both sides). Inner volume per box = 3×4×2 = 24. For 3 boxes total inner volume = 3×24 = 72.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 254,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 198,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 452
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:106|independent|refinement:2",
+    "attempt_id": "ec75011953c54a4189f5bec8b9a07095",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0004595,
+    "latency_seconds": 3.273604422000062,
+    "started_at": "2026-11-13T14:56:47.349762+00:00",
+    "finished_at": "2026-11-13T14:56:50.623404+00:00"
+  }
+}

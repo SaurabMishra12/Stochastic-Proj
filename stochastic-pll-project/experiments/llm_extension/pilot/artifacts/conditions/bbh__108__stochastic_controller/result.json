@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:108",
+  "source_index": 108,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1998,
+  "output_tokens": 840,
+  "reasoning_tokens": 128,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021795,
+  "latency_seconds": 20.959058609996646,
+  "wall_seconds": 181.87359873999958,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 274,
+    "utf8_bytes": 274,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "With three positions (left, middle, right): quail is leftmost (position 1) and raven is rightmost (position 3), so the crow must occupy the remaining middle spot (second from the left). Thus option C is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"With three positions (left, middle, right): quail is leftmost (position 1) and raven is rightmost (position 3), so the crow must occupy the remaining middle spot (second from the left). Thus option C is correct.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 29396028186459085697759317412873071984,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.7029073125077575,
+        "proposed_state": 0.07779758320292963,
+        "state": 0.07779758320292963,
+        "probability": 0.2336594511302795
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.07779758320292963,
+        "target": 0.0,
+        "drift": -0.09335709984351556,
+        "gaussian_draw": 0.1496258473832938,
+        "proposed_state": 0.08502241982831645,
+        "state": 0.08502241982831645,
+        "probability": 0.23469600299869997
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.08502241982831645,
+        "target": 0.0,
+        "drift": -0.10202690379397973,
+        "gaussian_draw": -0.026239927595962328,
+        "proposed_state": 0.07191550165947831,
+        "state": 0.07191550165947831,
+        "probability": 0.2328178982305548
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2336594511302795
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2336594511302795
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23469600299869997
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23469600299869997
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2328178982305548
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2328178982305548
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8814241206607106
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6788298273564267
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.586855404906825
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.527862686597269
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.08608653532551336
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.36656710527296066
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "89bcf57f1974cf9de0fbcf8e03491ec506c69a5a83b656b12b25d6da5a856728",
+  "errors": []
+}

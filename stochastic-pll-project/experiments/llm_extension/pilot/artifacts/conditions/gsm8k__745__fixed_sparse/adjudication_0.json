@@ -1,0 +1,199 @@
+{
+  "payload_hash": "0140475084a5f14c381e4109469ced048ad851eea80698a7417e2bdf77f6b86c",
+  "logical_id": "gsm8k:official_test:745|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0c42cee7444f9239016af72d6c74488195ad974d956064fe53",
+      "object": "response",
+      "created_at": 1794583916,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583918,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2023,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 361,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c42cee7444f9239016af72d6d16808195ba3a74548ef2dfc8",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y1uktZvKcwGLZtII02iUC9NR2XUPKX3zfYj8T69-ad9FRxoBRp46NXcthZaNpsCGmLpeuAyH52h-umpgT9XlRZBhzdYwg2GCL8bYz8mqk4cekpSQwK5YAOuoYKmpM9MSL_8jyD8HBngDe-qgtPTeR_7475FSslMXneePwQmA2herr_1hbYkN9V0HnFMC9CoSI_5bDuj5S217KbvBEFQ8j82o8Noj1MnWoAorwfz9hMM6mr7icVSoQjPVXTHXaBr_T7ffyzvKAn0HHCZqrlkOTCHAUNQgkE1KViVdj7FWjfA7l3uf2c8MAJnIXdLcGprYkApAilnLrVdGOuQG1aeSK9bpXVh4ve_AOMpI4F6bOklYGCpzwyjy7hUTymO5Gb-uey3cHmYzqRwvEcoMgMrLBJRyzTh4AGt5XPWfeVesIjG3lBTV_6togymj3isPHwtKIiaeg-BUjnxJDZzBvAuNkfPk4O596gc2Fe44e1FDIHPxpcFgFmjYXeMZpTN0tsLpFBS5rjLY75uiRKGsycIi3IOAO0_eTQNvj5JM1UBf0LYVeCH5y_QDAMc_LH-fEif_OZMPHxKoIxmL0SOjpg7A-5EL2P_LalH8c58pgg9gqeMBqwoBAbUc8UYRGagv-kHYHDF_soVTrykxxF_KjsoBNBqQREOT1hBsPdaEYWJH8BglVQjIBgYUBOFBL_9KsWa_ObMvbuBJFmeLwJ6Uh_iTm0Ql7GVbBHLCrBhHBH2CpANsAyvgFnczLgzTBYDuv8rBb28dJ0i-XZuOf5K5oeSrLXYaTLWI0BdjbpCcVkGw4ELp3gOnLbnq5qawew5kzpNaZ1r_OP3M69RrWLBcoFJhPUBfT4y0-lbabvde0ypFvXFRlouBWCQVP_AFn4wQi5MJdGtzz57ioFg6xb1avemz5FYnS5X-DrJXZpSLtEQrT2QcgANgMuFnv6dyPfh6ebXaZMftej4L2_a6kW_lawc8vC8GXnwhN8MJWSXO7XyeN3q-7zl10l3U8CTARoYn7Y4pxIRV0ICScq2waHm-hdgMQUH63e8-PTniDwNtO-V8SU7v2-LbeV4ipYTibUgA2bEsmW-4RS2649E7vxnysDh6f2P-lVbDc2XLaGrmNWLVhU8dnpy9AQxOzSeWqPr4XxzrXPdfeHkMJAjd0OrWZ_bnoGTGctv-4ICum1Zg00Vs8OIFpFQ5btuqfMS5xUo6wMR7oZDb86zH-EIRoly2K1dlVSLWByVPQL1wivBZDSF1aTNJbaFE9P4tCHyAHb3UhtbfG23E4LYqPtzWnRLrPMpv7fGSqb98jgFEFxoTte0Y7EnETH5bVyM9_purAxlwhuGFB3MuZAc2lRE--CEUC1Ia3QoBV9h8nduHT6pGjqJDoTdkUJpMwbKn3haDph5bo9QD8D16kldTFBGjSIAEttDFxDYPrrwmVonozcrMikuEpixOPkcbSBJmpeO1rlpMrz3z0wUMd_pdgrKD-7WRHQRjSt6qmGXrMhLqsm_c_ObjH32ikg3emuCpnupS0RRK_CZJjWISWljvZ31lI7ml5SzYN1Mdx_55SDvceHTUlFssxbQRdnCAn8_4B-Tm0RRBRRZZTbgGozuuFbhfR--AkMbk7NUWo016JWT-XhYdQP_OG3F0eBCv5uT1jTonygHIlVKu_xp-p5qGRkHQ8I0KUQUPmKT8u01msLIjZ7W5ItDTJtVj4qgbNzTA7kF9cT3UIvLAMUBHB4cdOiEYUMNDvnE2A4RY9rSNPs-CMgH7n_z53kDXC1wNBVx-z-8ja7YjhxZ0PYdKJc5bf4Mvb4ysmuFFiWcviRKOcjqC0LeUH-FSyFOJ3wL4NTfngRBLjMSRgL_oTaQvjtmZFwl5v0fei2trOOKfyzuf3PM1YiOfwFeToYACCsVdANxic3CA-qBIIwdGKuC6cj1R43tcvJ028N9jBNJ1Y_aKBx1Sb5q6U6HoTCEsN3IbI7KT20VT2HUx9vKgqvWytVBGXdJPYU4O9EmgC4dTkkT1W0eG4jJu1sC35g3ztX5GR6ev50jIvIYwlAKLd_MifpR7IV4571cnvWhXbfYTySXfLpTn8TGtVDslwbrGJTyODoMUXBCtAH1DAE3Ey3sYKvu2AoyFvc61kRTglaoGQ==",
+          "summary": []
+        },
+        {
+          "id": "msg_0c42cee7444f9239016af72d6d95e48195927b58d315693fe9",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"1100\",\"summary\":\"Cost = 3 × 1800 = 5400. Revenue = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 425,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 118,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 543
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"1100\",\"summary\":\"Cost = 3 × 1800 = 5400. Revenue = 4000 + 1000 + (30 × 50) = 6500. Profit = 6500 − 5400 = 1100.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 425,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 118,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 543
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:745|fixed_sparse|adjudication:0",
+    "attempt_id": "222e3987bef747219fcd90f65e63b265",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00034225,
+    "latency_seconds": 2.595773618999374,
+    "started_at": "2026-11-13T15:31:55.850911+00:00",
+    "finished_at": "2026-11-13T15:31:58.446698+00:00"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:146",
+  "source_index": 146,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "2125",
+  "final_answer": "2125",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2011,
+  "output_tokens": 1524,
+  "reasoning_tokens": 896,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0035507499999999997,
+  "latency_seconds": 23.15519581300032,
+  "wall_seconds": 184.7263092080011,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 514,
+    "utf8_bytes": 516,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "2125",
+          "summary": "Sets: 500, 3×500 = 1500, and 1/4×500 = 125. Total legos = 500 + 1500 + 125 = 2125.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"2125\",\"missing_response\":false,\"sender\":0,\"summary\":\"Sets: 500, 3×500 = 1500, and 1/4×500 = 125. Total legos = 500 + 1500 + 125 = 2125.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "2125",
+          "summary": "Sets: 500, three times as many = 1500, and one with one-quarter of 500 = 125. Total = 500 + 1500 + 125 = 2125 pieces.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"2125\",\"missing_response\":false,\"sender\":1,\"summary\":\"Sets: 500, three times as many = 1500, and one with one-quarter of 500 = 125. Total = 500 + 1500 + 125 = 2125 pieces.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "2125",
+          "summary": "Three sets: 500 pieces, second has 3 times as many = 1500, third has 1/4 of 500 = 125. Sum = 500 + 1500 + 125 = 2125.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"2125\",\"missing_response\":false,\"sender\":2,\"summary\":\"Three sets: 500 pieces, second has 3 times as many = 1500, third has 1/4 of 500 = 125. Sum = 500 + 1500 + 125 = 2125.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "2125",
+    "2125",
+    "2125"
+  ],
+  "refined_answers": [
+    "2125",
+    "2125",
+    "2125"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "6393a333bc0992cbcabc7753f5d3d72a5b1486df644fc2bcf2b65e33fbf65d0b",
+  "errors": []
+}

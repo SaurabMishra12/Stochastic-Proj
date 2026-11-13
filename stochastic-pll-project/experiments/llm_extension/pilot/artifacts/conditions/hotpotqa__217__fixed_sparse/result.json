@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab2659e554299340b5254b2",
+  "source_index": 217,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "parthian empire",
+  "final_answer": "parthian empire",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 9750,
+  "output_tokens": 1018,
+  "reasoning_tokens": 192,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0044735,
+  "latency_seconds": 22.892326715002127,
+  "wall_seconds": 238.65120906399898,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 861,
+    "utf8_bytes": 865,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "parthian empire",
+          "summary": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire (paragraph 3). The Sasanian Empire is described as the last pre-Islamic Persian empire that succeeded the Parthian Empire (paragraph 9), so it succeeded the Parthian Empire.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"parthian empire\",\"missing_response\":false,\"sender\":0,\"summary\":\"Farrukhzad Khosrau V was briefly king of the Sasanian Empire (paragraph 3). The Sasanian Empire is described as the last pre-Islamic Persian empire that succeeded the Parthian Empire (paragraph 9), so it succeeded the Parthian Empire.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "parthian empire",
+          "summary": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The Sasanian Empire succeeded the Parthian Empire, as stated in the supplied context (paragraph [9]).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"parthian empire\",\"missing_response\":false,\"sender\":1,\"summary\":\"Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The Sasanian Empire succeeded the Parthian Empire, as stated in the supplied context (paragraph [9]).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "parthian empire",
+          "summary": "Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The supplied context (paragraph 9) states the Sasanian Empire succeeded the Parthian Empire, so the correct predecessor is the Parthian Empire.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"parthian empire\",\"missing_response\":false,\"sender\":2,\"summary\":\"Farrukhzad Khosrau V was briefly king of the Sasanian Empire (Mar–Apr 631). The supplied context (paragraph 9) states the Sasanian Empire succeeded the Parthian Empire, so the correct predecessor is the Parthian Empire.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "parthian empire",
+    "parthian empire",
+    "parthian empire"
+  ],
+  "refined_answers": [
+    "parthian empire",
+    "parthian empire",
+    "parthian empire"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "209adc6e8f35de5abbc98f98a3f15d0be886944aa7635eb7408a3f0ed09f0bf0",
+  "errors": []
+}

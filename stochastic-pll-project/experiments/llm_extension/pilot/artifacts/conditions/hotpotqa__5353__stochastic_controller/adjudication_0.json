@@ -1,0 +1,199 @@
+{
+  "payload_hash": "37a054ce4bdc0e027764e8d28e1744c595a71309b8078d057231f6e16198eb5d",
+  "logical_id": "hotpotqa:distractor_validation:5a74adb455429916b01641c6|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0cde6682e30af3ce016af710c4024c81949c1cdeaf1b18886a",
+      "object": "response",
+      "created_at": 1794576580,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794576582,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 11396,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 678,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0cde6682e30af3ce016af710c4fa748194b2b60f7fca9f3329",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xDGbyhnJySxKbLYtOBbMvzwGgWHfeTP1YE3OJ46_29j8ZYx0DkJG6GAS3ecEiMVysYz-uNU7r6PqUFVSE1wcr7_ScFlABnFYT5hJzGHV7E80Nx0oqIXT10T5IJBzoSlGVKRuiLIvdOhaO1SX9e_g6X8LPI8Ghixjr25PkXzFc-8EN2INbSohAZ1ahG95-con-cI1ppWNlecfTqXa8iao9qBH5AUTAKioS1JTZttBmzo0PZjM80iGv_icAsW01FKYAmCHEjJJu8MuRYjt6ZHW6CFHY6SDHO8bUziWgR2jX3_iJ9Lsao89fBhu8hyRQRgP95PcMTSeTXb0E4IYEU0FlfmbB5xtf-rRP-BqZgZAOk_-lNsoMgQBrloitCb17k71AytK7VfsD3RQcB7qdbEGpDpnf5vY-3kF5NORLn0PxoOmBJFupfT3n_rSYPnftPtcvqgjNpoWLkA57gKWngktS8ry_mZ_kRiIoCokeSAgS4ONdlh-engUtJJdtY2Ljlz8_82Ul0JzvGKy9csTsEKVnff3gDQGv6W-B8SjpdM3pjrhEDDbLCe9nOVjcW2X49BoTibNDVqtnTpL-kJOrWaPLwEttJLwvvaXxxtBMAwEyNRFGMIFWmktLko-4cPTo2zGIX8_Mu7ApdcmnSGWVqAAo-e7EuFNmy3xNif_lDEmXmSPhO6GCKoM2c0ymxekvaIwgyj3R4XDQhUR-XDHGRSpyqM_vBqbYmCr-X3ki-8caxz58tCTIjA-y4RrkVEJghjsVOwtTvG4yRBEZri08z6hcj7_sCnjZM1MtpJ3V82rzFeBtgVQcPU95hgXJIhGGzldnW4JlWi6uKYQ_aAcqkYtks_1fjprdReSl2RP915zfhAGn9hovonRGKm2Jb9nmog2m3RWtVQ8u_hJ7lUurJFEY0fz5ic_twoC8WljBfw6MC2NGZ3DEeO7ac_Y1hm2kKKgd_3UsnNe6XI9GsPNgZNtkd0z--6VDBrAeIXlko6Gj9nxWCy3es5GWXkKz_9AGeq2IZ_iUGEaslZwyblEjzIIILuioXgUnBp5QtVTu0iE9G5J1DQBRsXEnudGemyESvr4h-Wu85HuRMrt3vlU6yIQWZhS9W_p3ZvjaPKqUPI-qhukvu8QtoNf_uTq3SEGeI3VBBz43iWazDXiOsS6JzacX75p2Gzwijko-lnRm_bO0O1xQlFHGExw01NzOPt42Ak3r3M_yVHYkVsuGSiOxVo5Xocf9Hx7tS584oKp7I13WGg5UmxHXiabBllA50CvgOJJSOtJRhvrk19sB6ORaufqXl-SUlXgRBbKhwfttOs1KRYzjKu9apZac5xxgM2049ioMi9I1Yy1CZUss1zbOik_0Mdcp0DzabNKR-ojAHevEQ0mE4cyYfWLOf822Kvr_ZeLzSJm2gTze9rVOkjBFsXQkSUhcd9yI4HrGLq9xdLdYdc3MESfBMM4jXlQcQJm7hZwVz8gyRmcmbvt3kx86zTmGVSYzd12RrBNByb5Rht6Rv_9hDUFaAWch4BhXowQeQWqPeiA1AieK7a42DLB3JrWOeyt5iAnxfG9FGlhbSfUyQ221BOkQkwoA0bNzP0qf6ud3sbVgmtDoE0-KujfRJ5tdLapq03i3dQcDUFhF8AtlebQp8S7sca8GirfsLOPNym79lrIitdhWTQdvJhwlfqLqWJEiJJHkLSI2Wl5rENGvOKiUU_aZZy_9_umavEebhPrfJpyVcJAyrG0miaX2NK3niUSq6UB-su2o-UxZFnENmhs4S5Pc9RsikI6mI7AB3b5xqbalybTHH-b9nlDe-hg8Rh3ak_IlSmKiqQTFpnJZVinPUk2BgQpw-UXOBXwL1ipVKf02tuMgfRd9NbysDsdwzTbBvRVgGHoAHXUs8k7IRUQx77Yf4WdWecTkyh5rV8QsTcGJuELY_9aAFKYPtC0T0VcAZ-3MQzeFIUvMmUQ3TmHevyEmQlotYf9jG3TN1fFPhrAS9n_Ibqh417kcVPTxmMyXsZLHakJopgk5Z8pJHW1N8uTs3s1VOc-gJ0YQQhakBVZY4BAQRKkjb4BzN7hEMOoI51Gajfs9ScQq15GCnHyPKYwkuFoyzxmRrcUq3qmttOerNOXWcR-IkYsIPqUdStuNEKulI9pm7GCIHF9S7RhecsLVzbJMHftwUdzOWunJ0LuvO7LHRv4lXDe9b4UHQLAJkEp7DOziS2iOGItWS5AoWBj9Cs93oDzGwMMTvcbxkkClWjWrK32LbGP37yp60IAlKcBZFeUD9Wwd6Zx0KMIBopGLWqlkeqrDNDq95AMMMNSer6ZlFxtXm2GHXjlFChoAmEEoE8R9e7b_j2YmDXBR8TrB0dkvs3QuLQYglz7pCnSK5u-P3a2zv7dgIeRYT_lH-ZLT_LEk2pzBCvYEbDyot5JNVoH5e-aUr3S-7aLsx_HfwCMqA2ardRZ5txlTA5fvHdEjNHjSw0JGFpj_p_QmOsltbcNqvxZdFWT7l0kWJGgyZH3MDVbseQ2AaWeq0pBjGgbRLVUOfngNfToFtfXgc=",
+          "summary": []
+        },
+        {
+          "id": "msg_0cde6682e30af3ce016af710c5b5f48194a5bde5466bb56e70",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"The Ladder\",\"summary\":\"The Ladder was first published in 1956 as a monthly U.S. lesbian magazine (Daughters of Bilitis). Heat is a British entertainment magazine launched much later (late 1990s, first published in 1999). Therefore The Ladder’s first publication occurred before Heat’s.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 2279,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 162,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2441
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"The Ladder\",\"summary\":\"The Ladder was first published in 1956 as a monthly U.S. lesbian magazine (Daughters of Bilitis). Heat is a British entertainment magazine launched much later (late 1990s, first published in 1999). Therefore The Ladder’s first publication occurred before Heat’s.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2279,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 162,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2441
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a74adb455429916b01641c6|stochastic_controller|adjudication:0",
+    "attempt_id": "75a90c273e2c472691b32d0a6fbe4dfb",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00089375,
+    "latency_seconds": 4.388459666000017,
+    "started_at": "2026-11-13T13:29:38.644258+00:00",
+    "finished_at": "2026-11-13T13:29:43.032733+00:00"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:680",
+  "source_index": 680,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "20",
+  "final_answer": "20",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1681,
+  "output_tokens": 925,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00227025,
+  "latency_seconds": 22.141339606998372,
+  "wall_seconds": 184.29602043500017,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 357,
+    "utf8_bytes": 362,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "20",
+          "summary": "Nine adults at 80 kg each total 720 kg. The elevator limit is 700 kg, so they exceed it by 720 − 700 = 20 kg.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"20\",\"missing_response\":false,\"sender\":0,\"summary\":\"Nine adults at 80 kg each total 720 kg. The elevator limit is 700 kg, so they exceed it by 720 − 700 = 20 kg.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "20",
+          "summary": "Nine adults at 80 kg each weigh 9 × 80 = 720 kg. The elevator's limit is 700 kg, so they exceed it by 720 − 700 = 20 kg.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"20\",\"missing_response\":false,\"sender\":1,\"summary\":\"Nine adults at 80 kg each weigh 9 × 80 = 720 kg. The elevator's limit is 700 kg, so they exceed it by 720 − 700 = 20 kg.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 216240901842176379678367435067438587643,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.7977785782587772,
+        "proposed_state": -0.08829790815260177,
+        "state": -0.08829790815260177,
+        "probability": 0.2107121121827312
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.08829790815260177,
+        "target": 0.0,
+        "drift": 0.10595748978312212,
+        "gaussian_draw": -1.125578453994274,
+        "proposed_state": -0.20228086516844296,
+        "state": -0.20228086516844296,
+        "probability": 0.1959464140292545
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.20228086516844296,
+        "target": 0.0,
+        "drift": 0.24273703820213155,
+        "gaussian_draw": 0.32363717777714535,
+        "proposed_state": -0.1421870897432685,
+        "state": -0.1421870897432685,
+        "probability": 0.20363155818308862
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2107121121827312
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2107121121827312
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.1959464140292545
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.1959464140292545
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20363155818308862
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20363155818308862
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.01219938593004255
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.5773645165070773
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.0687548302979476
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.9233908788437636
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5101799308360352
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.4509014623602208
+      }
+    ]
+  },
+  "initial_answers": [
+    "20",
+    "20",
+    "20"
+  ],
+  "refined_answers": [
+    "20",
+    "20",
+    "20"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "a1b47ce966aaa3e16a7506716057926d9a3bf10cf63d16e5dbe1363cb50d360b",
+  "errors": []
+}

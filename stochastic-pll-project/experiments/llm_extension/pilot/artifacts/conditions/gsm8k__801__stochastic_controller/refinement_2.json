@@ -1,0 +1,199 @@
+{
+  "payload_hash": "2fcae5695534feea6431c1c02186c417ee3481b252831de3478417417d3de128",
+  "logical_id": "gsm8k:official_test:801|stochastic_controller|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_0c65ea56b0abb14b016af73bfa2c04819686d7e7dbdaed8653",
+      "object": "response",
+      "created_at": 1794587642,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587644,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1673,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 484,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0c65ea56b0abb14b016af73bfafb748196a53968238117e79d",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zv8J81n7kPhCKRP1D-03YozSAATGGMnL2GVBPDdYxxAOb7SIKK-THgXaXigVNvx8x9pPuWyRl4PJ1MYqo1vaHcKvZPH1Yy0ssmlUBtDEDbOqSu0rUm46QO7m8_wmNvXQoByyMmuqw5Q95CXcZO8YfKdM8-bAT8XiZEZfLhPXtr6ZdynH9ZsPQC6iFyDbT7WJweeYa4SHIql-NKR094UA1jepzwyWXNVJG0zJNBbUap8whNOxwiA6fk722FFAvjtAOWRzdrYAt6zMl6ONwSeCN_8UjtCSo9J6AorOugGn4errmnoMt8gqZ9AcjymuvtW96d0mLcnMMNLyCK-UY-LLbeAdHHE6Lq28L7m_Obq33ZApT8FOi6HDZUT--6S3B86MPkdCLahxye5VzqAEoCiBKdmsd1cNPBvczm-IrX_17WeqLGJXJJnnq1D1qiKp1yNoKpRVHvbgsOaJ1aNVZtuu30Yj37-7SMSTO6mkrUNWvbKGCpy8h8AJS-YEQ2wPNeE5L-Jt9vyd_PodtIExjDsuWl1jLFpa8YxtzAnEY16IEYhibFDUOqXsCJ81dm9YVO_FGBvyM2KPrSadNN7wKc_zsxAhaxEFTwQfb3AbapmgnSdQhoHqmCxqvjqzq4mhGD0wm9kM8jdAEpSlK6IepCzvhbvK73pgAxV3yclHMBTQsRwGdcM9-w9XGP6XOZJjJQN6nE5yL-ZjEdxZcCrTTDW48aUMuylxCdO91xYbeh1b7fYgrVjRQYN6bo8fVC5MIPIjWhc03tiyxy5zl5-QMiFSQMpkcXckf0kHI1esn8s_U3ZtrMneG-Kdb5dqeZDgrNfcRpKQcIq91uCqIOSde6xtxTnCB0FLydlCOCcqbxd3nZW7HloU-BQ59W_lOVEYUBsV4kDP9Q0X5_pOjGtefcgehdjYng7z-93LZKZ13a2VnEk30HMsytXSjlAhyY-T6dAIA9vYWYlj9KN_2rQHWrgmPjfa9rT2jW4jbn74Stz8WH8HbRmKyLPFUT6rdrQdPbuMw6H-7smCMcwhXu1cxvPrdgKDdKenEWMwnnPlfJ93bxnk3TZZOjWR1g5Uy_YUBTJYA1F84Oe1aO8cOh2ohQ27g5XRQDVqjRM-vyxb46Bq1pW1fYaiIwDQSkU74Xy06-vM90tI1uHWGCAPmugXhriDo0UQzOhF_0nNewpEy3Naf4_GcH6PIqHLxd5lHXsR70oGHDD6gImRvCbz3vYzikrT5nV1gYmVUEEiwGFKCQhKi5LeiOQWK0jy7ahA4gjE10x5LLr4DrBQyZ4Vzg4k2J-SJCI8y_YpOyJ-HkbkObdNNvz6gFYVczwIvfH2rDiVJzoZvYDvlGcs0VE0zaHn18QgnfO2W8YMq7XaDC5PqpjZUshXRPSjlmAE5-EUxNqWyz2xlRyT_xtEKB7fPeqaTcNYI0pHAE06P4I7UKYeQ3RtuWqT_iKMlJxSWC4Dk0v_Vsxf2gY761yNGBPYpfvLfMwRVznsrxeLADXWPzbPRXkPO8cDaylsSHHRXcTzWpu1rGcJVZM6j29WisD4MTTHg6VqRc18Ps1F1mBm87cnCnr2gG8H9_vgKOEZrVicOGQVbRG6ioSBb7bYlVMZpX2MesNCVszf1WXrn5aM00YGWhBOBAZOHd5-jYlMJSUJo2QfeF3nI4jzcyv_KgLKTs-AnY2xlfOcFBHMwVsipdw3cpcClb0kf9TjIdcEov36VpbyIxz7PVhR8pa3jXCBXjVvIm3yjGeYgTnvEMuDusnEUNx4nRhJDgYGUOdwCuY9lEQk97jUdQyACnVJY0ABIBTghFdhu6quOoEu84B27cihmlxyae96wS-chltxpy0Oqp2H7BLBYOVMjBTUT1R6jR6XXlIUEJaI-DQs38SWNgYc6ns3BPyYp11FPOwgR_ZkMKXiZ_p6IfPjCHLLLnFr5oQBKp3cYKhcgXL9A2-Qzi7xOOTUaY4gicXTbniP6tUpnqlqBw4chtqUerRx0o9Yz-Wucj8STYOzlUUxN5IeqwAXOG5DjQAM9QOo-xULowiqMwB-5M2Zp_pxvSo9Zl0sC99XUZZfGDKMokP1YQR9zrNkDkMZ01iqsMVWKtiE8MXxrnDfCExWuAMU6Svl3eoqBrfOErYRb3c9wsjADlFmKsHFtGOoyEUtzqR8vQo0Frc7eT7zCaqj7YN9McF9viwS8KoGaxqjsD_TqrSUZoGJX7uvnThiCP7HAk=",
+          "summary": []
+        },
+        {
+          "id": "msg_0c65ea56b0abb14b016af73bfb6b248196b2c2d522c309c6fa",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"1240\",\"summary\":\"Compute students: 40 classes × 25 students = 1000 students → 1000 trees. Compute teachers: 40 classes × 3 teachers = 120 teachers → 120 × 2 trees = 240 trees. Total trees = 1000 + 240 = 1240.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 271,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 138,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 409
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"1240\",\"summary\":\"Compute students: 40 classes × 25 students = 1000 students → 1000 trees. Compute teachers: 40 classes × 3 teachers = 120 teachers → 120 × 2 trees = 240 trees. Total trees = 1000 + 240 = 1240.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 271,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 138,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 409
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:801|stochastic_controller|refinement:2",
+    "attempt_id": "32495c6750714376af22292418b328ed",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00034375,
+    "latency_seconds": 2.7571629140002187,
+    "started_at": "2026-11-13T16:34:01.547618+00:00",
+    "finished_at": "2026-11-13T16:34:04.304783+00:00"
+  }
+}

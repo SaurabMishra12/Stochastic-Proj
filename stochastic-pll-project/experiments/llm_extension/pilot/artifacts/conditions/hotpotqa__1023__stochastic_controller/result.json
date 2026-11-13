@@ -1,0 +1,220 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a8aee2c55429970aeb70338",
+  "source_index": 1023,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "no",
+  "final_answer": "no",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 9424,
+  "output_tokens": 1007,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004370000000000001,
+  "latency_seconds": 23.34330465199855,
+  "wall_seconds": 185.37635523400058,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 922,
+    "utf8_bytes": 926,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "no",
+          "summary": "George Duran is identified as a Venezuelan-born American chef and entertainer. Ara Babajian is described as an American drummer and member of bands like Leftöver Crack and The Slackers. Therefore, only George Duran is a chef; Ara Babajian is a musician.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"no\",\"missing_response\":false,\"sender\":1,\"summary\":\"George Duran is identified as a Venezuelan-born American chef and entertainer. Ara Babajian is described as an American drummer and member of bands like Leftöver Crack and The Slackers. Therefore, only George Duran is a chef; Ara Babajian is a musician.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "no",
+          "summary": "George Duran is identified as a Venezuelan-born American chef and entertainer. Ara Babajian is described as an American drummer and member of bands like Leftöver Crack and The Slackers. Therefore, only George Duran is a chef; Ara Babajian is a musician.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"no\",\"missing_response\":false,\"sender\":1,\"summary\":\"George Duran is identified as a Venezuelan-born American chef and entertainer. Ara Babajian is described as an American drummer and member of bands like Leftöver Crack and The Slackers. Therefore, only George Duran is a chef; Ara Babajian is a musician.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "no",
+          "summary": "George Duran is described as a Venezuelan-born American chef and TV host, while Ara Babajian is described as an American drummer. Therefore both are not famous chefs — only George Duran is a chef; Ara Babajian is a musician.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"no\",\"missing_response\":false,\"sender\":2,\"summary\":\"George Duran is described as a Venezuelan-born American chef and TV host, while Ara Babajian is described as an American drummer. Therefore both are not famous chefs — only George Duran is a chef; Ara Babajian is a musician.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 302966137061937494507783848881827697818,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.5409792140191115,
+        "proposed_state": 0.059875426908782975,
+        "state": 0.059875426908782975,
+        "probability": 0.23110190954285093
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.059875426908782975,
+        "target": 0.0,
+        "drift": -0.07185051229053957,
+        "gaussian_draw": 0.7042161431080728,
+        "proposed_state": 0.13063281988454992,
+        "state": 0.13063281988454992,
+        "probability": 0.24131313136216817
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.13063281988454992,
+        "target": 0.0,
+        "drift": -0.1567593838614599,
+        "gaussian_draw": 2.0505788519426384,
+        "proposed_state": 0.34191437078532144,
+        "state": 0.34191437078532144,
+        "probability": 0.2735930715080041
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23110190954285093
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23110190954285093
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.24131313136216817
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.24131313136216817
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2735930715080041
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2735930715080041
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.7717645535510578
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.3807585710925707
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.010438518957011977
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.0980326890536104
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.8410078030745407
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.08184309516964494
+      }
+    ]
+  },
+  "initial_answers": [
+    "no",
+    "no",
+    "no"
+  ],
+  "refined_answers": [
+    "no",
+    "no",
+    "no"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "368a31de1595b06b381712496fdf6abd308f5df40d8e564ba52d94199f374dce",
+  "errors": []
+}

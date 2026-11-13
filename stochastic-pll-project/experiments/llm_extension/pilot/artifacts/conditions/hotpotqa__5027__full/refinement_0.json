@@ -1,0 +1,199 @@
+{
+  "payload_hash": "7350ddaa0605d9cc223ddb41e3ce4f74c97f80637f0c7e110f99dfe367517109",
+  "logical_id": "hotpotqa:distractor_validation:5a8933fe55429951533612df|full|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_0e39b2fc0222aa84016af7316966f88193b53183cf1f584b3d",
+      "object": "response",
+      "created_at": 1794584937,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584939,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 9119,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 521,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0e39b2fc0222aa84016af7316a8ae88193b60b7f5367fec7e6",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zFrdpQT_bk6umx9fQ3v2aVQfGOIJgikRQ2h_0fpKFUDHQSwq8BelpAdOs5kX2k-TZc7S_CaP9VqBodY8aDHHrdO0Lb0PvKO4XIL5sgl-aoN0Vsb9EfiSnVrGOwQwwFNqAvJoooJc9sMo59jDk4jFRbPI6I9OOCNeQ2L6uPGWpWTnI5vfmdgr8CQlQox8c5dG9qKKn2l6_Ib44GK8wc0MUmu1Sx5G_QtB1NHC54B8paUdSe8YB3yFzCdhPFgcwQGBdHke16fvU0XWZBYr8yuD_W2HTpMOdvSeWf2g4zCjDd4-82f9-0lzrmiCGYOqV4NVNroIqyxrC6ZIwSfZQhpV5nVUt0DwAAEOGvPm9LN_8q8acs55LXMitfQnxWYPtxB96uNNWOraWwN4JVFYSDR3kl7CcVI0G0eWLcwUD4tXCPXL38FMUM0hw5DIarg3dbSS72EbUQv3hNzaE-9_PsYdM6qVOifpl9eaeo2laFbZw5CXmLvhfEewYupT-od3Cwv-x27x4NH8Hk_rAsvWwVTKkmHbivhk5JWU5MsW6xRxEPSRQPT9pqqzI_t0rAs9-qMxHmANRZCxN65DyzZHIboMEZP3LfBwuOctmIC21nCk3HnA0sjJDMkuogtKCffbjUsz6OiZnjmxnKADMCoGIpNwq76-_S8RfwOJ_R8rpnH-thMrZTYf2whsycksINobBvWDim_a50pftA6Iz8bFdisHqyrryHi0Sndcj0gEz-WzyoHl8qhPgeOCayfsY-imHhQPTKRih2OZQePhUCjsjtQKhnPlm8xryHEnXuojBAde0ow5Y8QMSs-e8oYp5Ed2HM0lVWalYQcjuGI4JDyqsyG7i5lCbeCvIea4-JGSoOvwy8ulxM-_3doHUQ7uJrMoNTDRkgzpcrxma69tLN1Hl_G1yTz_mgWyu7rJza0uSOMuhsd9paVs5A_ovzHAWGywzX2BySVItgEV9z7lmQS64-3_LRueUN4lq6TBbiHzxR4gz0J7v1gA7kjkKv4GZdIldorgc3NbJYaS-SFmEmzdqdxca5TAkS7fGiUqfQZdsKTRiZl04SAcUKG6E8HJw3cMZNWKe2y5FvyI6whKd_xmrLVDUFBa8P6ZAHemNA7vyKOe7gW0jVzjHWd2p5r1-7pbYzrKfsXkMgFn-zFU4VD6yfz9dQa1BCFGUSlpxhsV_AE48dOVVrqgDUeTtvEVeTPcA5eH4QEg2AiRLO0mhUHysozQufzTEw4ld_t0ejfVzgO5ejBPWs2XBvBVllQYnupSnd3ow565OoZnSD0639CuMEFt3t0-mNz8cXN3l2zRQACu1KlqJPAt1_tKdDkq_eHUlrUXez2LswpqfTp-c0EHQeTlDgxwPcYUIRBNOeOXjQdam0Nt3RWzyCQbAs7ff5w-kvtgevDF62_q7yngn15QjGUUZz8J7O2LaYhbC6fN-axvraTQmZXF20vzqNO7PXo-BaUjwyJCoJeqoCj2n-uABzc4rVZBSE1rohIQnpB3pFtenxIGQilk4NEeCeUIradBw0uJNKrpRMyZsJLhPPedUmcnmjVgwwmYwrvjB2KqDHMVmkhhxzGYfp0XnAiWXPGqN6c8cSI2DS5YC0_s7Zi7D5yQ2GRf0qKYSkVOCrHX-xEsGT3sJIzi6PzKs84yMpLgkg4e1j04nSW9RAl3kZetNWjcBs2L9xffGsdPBKThmTFto49fP7zOFjxLIOdMe0SA0MxwYfsKjfb3_fclprVqD1jhZyO8_eoSdx2O_q-hragkDST9m1Aa5cebhWDCasVxkVeqBZh-iZFshAR_kav-ceHqZT2TtDxvVZuQ0OifWk3Fwrb1evfjjBTCVqHw9lbl_Ohm0HjWODsp6sDIau3WQLgSH9ua-jQmIqt6p4kh6EmgnuqPJYip3GZKvuCsyGn6-HsSzvuJO6JkBMwQQweyvpDLLX3wrklOJ0KlnowB0mqzoDXnRMrEX20ndM7GuipA3noPsJAu2wFFjbVOblmHR19K9BmbS_FshyDEk1LNJ2pCVGXARIj8-IdVlEx6bAYkC9lX3it6RkbGX2LKYXOzhJqPtEk6b9Mq_S4GIxYDZfVcUSyhQklv4DG3KNnzowxPXMM2iQKPfjfayNgyBSQd7u_zNJJnu4vNPbPKkQgA_6kWEnP6LrG4r__UmaJj2UVGU-hnqwfIyHklv2H4RLPHdmoYDgNmgKg6aHjIGyP5HiEdK1AFdDJQaArL1IyJhYCBkLFFVnmF9pM8Y9g2sApamQXDOyBEA8GGXyWa88JK_TPKs-eQoFjKVer3DXesG7ND0IAaHlJYHXU2KrQH_q_3xeDHEPno_OTWipjziKKgkTl-_M-AQrK8AfRUOzqdpKNNP3aBLmWxJHTPlEy_thQZX30A7_PbeGMF6riIfUzyu61HJo57yX7Ul9aByPe7Ek5pqE2PuVk",
+          "summary": []
+        },
+        {
+          "id": "msg_0e39b2fc0222aa84016af7316b42a081939eec20057e7c8cac",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"34 days\",\"summary\":\"Princess Mafalda of Savoy’s younger brother was Umberto II of Italy. The supplied context states he reigned from 9 May 1946 to 12 June 1946, a reign lasting 34 days.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 2117,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 143,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2260
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"34 days\",\"summary\":\"Princess Mafalda of Savoy’s younger brother was Umberto II of Italy. The supplied context states he reigned from 9 May 1946 to 12 June 1946, a reign lasting 34 days.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2117,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 143,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2260
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a8933fe55429951533612df|full|refinement:0",
+    "attempt_id": "08986864ab0c4d04933e6b7b16adda79",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00081525,
+    "latency_seconds": 2.9508779989992036,
+    "started_at": "2026-11-13T15:48:56.783321+00:00",
+    "finished_at": "2026-11-13T15:48:59.734215+00:00"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "payload_hash": "2dd321d21e4c5bf778e1290b41823b4d5b6dc11905dbfc7c1bd4c73880e009c9",
+  "logical_id": "gsm8k:official_test:624|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_04f2a1663959ed05016af7204711808197afddafb3a98d14f6",
+      "object": "response",
+      "created_at": 1794580551,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794580552,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1924,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 408,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_04f2a1663959ed05016af72047a8708197817789316ea16023",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yBIWil04yIhPQnbWMinTlEqzGBkjt_LWCrszzbtLEbjFDg89N3P_q80DvRjAcXzfcfPYKfK9Qj8eaEv9E-h2VbAYjDqDgM6cNkjWKFVbqm8Idj7DAQEqJGsgfNRLWwZS-KGJZHz7hAVGXvXpwvdGoNeT4d965Sk8gJIxrfHsrTGCPnpKusjmFXo5lHDJKw9qUIxtI_KreIddzSv8S7ZpN1xBex9Dr8hFX6mBTL760rKr7sN-I3xlTt48iSZTPsMJ3rDXFlK2S4J__C57mxqg8y_lmJgWyc6K7FIuj21aiV5lcmVV-eW1CU-sZ0Vl-SrVA9AEZhepwSaLGAzZcd4siGhvFqYmRob1KYEmE_gWk-uedC8YvVY06pULqug3FaUrQHhzSfvy4gN3BTXXbmNnhRjY-7RW_orHPFQFVJ6dQS2iIRQyxiTjTVLu1MGXWdUPDuuFLP9tWmjsOCpp2LMxs3lLJCwE6OJD0lHWT9iiXVxPBxJTtlxsKy-BKauHxTQzmiVBngbkaoQjfNqwUrtTMf1TOo5dU028gBI7xQotDdJnSfMlnMXwe8IfM2eRoUaW7hpK0Nyu-V2KR7UY808EtewHXor1dS2g4dJeK-UsJLfDMdg-U5dbR92LftZOqBQvucb8UPZOupatpNvOt6eMdbcRnGMEpbmRVNdY6bGUMa-7BrzSZ7JaNTMPnm4v4dzebA9tzbpISrVjRlvlRI9TEkPm6vsIIVk3AmEyDIMn5v3lb7ShriV4xPg7Gc1_1j7Z5ImudVqG-rkBHlfDNjAOxWGFdcvP51YJUu_b2YiRcfUrgXj9NbS_twFAmv9OcJM97kSwsgwFqgR6uOhl2JdtneWPErVDknu9W9LGndyAdoyNEhAVFg_MXrE60u8-yOiJYyUIyQ-tV0SdUrZctpRrFWG9RYQ2SH-tcM6lnlpC_Ku-gWZ-UPg0Wy_jfeDrTJ6ww9IQ80V58CJp0q3x_23ucYQPiN5F6UYCof7gi0IFvyVjarrGEeMthoONXb_cDz7pyX5LAHLFHU7JjlU5dvzHP3uE7vmwQKTvk0OO4mgUZvsAKrBmQVZ5BlU_6LI5nkvIaaqzoBknL7x9-YKtEt6D25vAvjOdhWtrqUeC_YZZb_VHGvWd8sWAnz7gnkgtEzxJ4LFA9EbP-hR3QQuoc-jGxRr3DK-LDsObMDDuJ4nzjBUQcx38ODoI2y6vUnFvQF-bnI21SxozGqtlWb_h2R5BtLUq0dSYSGd7Ut0_zLv_5mrQuvZGXJ1dBNWkz0WVJoT66ojS4kIB5g62LHUjUKAl2FmCZmqRD0TyrUxvYh7WCz2e4F_HE55jyMHm1XlEgmyu6BUaw6sAk2gZ3iklp2HO4fQnTfgkID5V_J3Eqd39xn6YQQfDKrwlQX5dmm58Q7XDkuXAllUUPRRy6TRqcili6Zqdufauuco_VFHWioHm4W25QB7_f1JAAqFNoFUcNQHQByKva8vRpCs39TFouI5R6AX9cFjlVd2Tko-FunVU7Uscx2gIffFwJhsGo7cp-8fb9bB1dKuMA4th3Kud0NjsPmjnom2UmFlV5jNp1REPDgA-gDr0mLaWHh0juxq7JGCo7Iao7hiAHsPEadZjDUgnE-YV93CG9X3tYCmLdilc0BYFd6sB_fUUepkc5aUHbyKGxnQooO44snoLiX9K8soE0i7US_d7fcQll63FNl8JeTZAVwEMlEI19snKplZXVyg1Y3Ui0iQiTpDPZ07LSN_EfmLTmv_l5C7y07FpTdXYgjSKLMjstYw4qQuA8qnQ1cpjcYdEcfa_OiKegAtqrNCBcAThHpG4dhs7bQcWu3hrOTs7F7hsQE5elMdrqPIw9lNbydDDEqFdwWYUnznYcmwcrQDzRO-bWsr2WU6ukOk4HVcATgbdRbk42SEtxUG5cXSJdkAl6WqHZAWBhjy4_lehUY-f1bQA4ICM2I8Fv0MGVhYff5R78oj3tgD6rNTbTPHIkklE6k3hj1V01HOENN8asFsZCBGlLYoYoxRaLl3fcZN-gr2_YiviaGFXsEnF4Mij1XV-_QWCctZAOtDLykVxL9mYMmvr84t8ve6_EEHnGI_r3rFijCVuIX9CgdGWp66vAhKxM3k_K4ktvUG8P8TLt2p4nsYMX0ayxRlauE3AggNjj2fmmrepPYZxs3qPwbprHd4sKRVFImALV1XrLB70TjO3A==",
+          "summary": []
+        },
+        {
+          "id": "msg_04f2a1663959ed05016af7204827508197a98d1540faffe75c",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"85\",\"summary\":\"Baseball: 9×$3 = $27. Basketball: 8×$14 = $112. Difference = $112 − $27 = $85, so the basketball coach spent $85 more.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 347,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 117,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 464
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"85\",\"summary\":\"Baseball: 9×$3 = $27. Basketball: 8×$14 = $112. Difference = $112 − $27 = $85, so the basketball coach spent $85 more.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 347,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 117,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 464
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:624|full|adjudication:0",
+    "attempt_id": "beef5afa1f86447bba679404d10aaacc",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00032075,
+    "latency_seconds": 2.470796853000138,
+    "started_at": "2026-11-13T14:35:50.410628+00:00",
+    "finished_at": "2026-11-13T14:35:52.881367+00:00"
+  }
+}

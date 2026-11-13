@@ -1,0 +1,199 @@
+{
+  "payload_hash": "1c5346320874f7253009db65bc831db08993581b4753b8c289ea66df787e16b0",
+  "logical_id": "bbh:logical_deduction_three_objects:115|stochastic_controller|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_0d632de4b8471934016af712e115ac8194a7cf59bda207719a",
+      "object": "response",
+      "created_at": 1794577121,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577123,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1852,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 394,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0d632de4b8471934016af712e285dc8194930dbe332b5714ba",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xLjBFC8CxmmGI8_wsd5l9wScjr2SS2bSpf26TzGCNdYpTKpVDpre8McX2ycnnJyJU4wjh-dNmCGJSjYm1BaITZOXe6MIHhWlVIpDfSbqBQYwSUFUWgcrfemR9HaxfOvAtfWiaFDFauxrXgiNJ-fEgYayIeCGdPNhPZ4bJ3bJZdrmCFqVhUSfxP5G2XLwwKURcS8riKA8Tb0LyHSSx3bn36QbbH62iqaTn-rGgSGN62ADVGkde5OBdf7A9UZHAPuzo2ae0DwFNfT_wwYvL1vnOn1-QwcncaZpKIk3cT95b0HeQoTJlnXxE5sXI3a-1WDck2AjcuC76Lqvqhq9lPpNbenAk0PNh_KJQnGqQ6Hq8l9Fmw9UfvdAFkDo6iP1ncg9lx-_mwn2NalO2epos0cHh21uitCdCjlkovOVUhjHd1VWefNVW_9JdWdODruJV-yGxHFYb5anxM4gKjXcSbldhCgfFffVEHmTEtRK5RhONHKmBFcj2zOtEiMqaxYmQpIdLUqzjmP5XTkXbij5regO5NQ8cH_u0LxTFtHBxu4LybSTtqqKUTBi-eD94gimODwTXPAPrpXnDUFdlr0B5osBmfvYIzpwgVwVptbdLdViTPm9zZdl2hrc5YUCPai2jvQgYwedLWj7H9PpO1yznLQJSuiMpzYjiASyWirJXWJeaX5kBUQnR5jlCxYY9sY8y0l1YFJDqyS4UhOkHfQia85TgFw0CHXeouJ8_guZkYkkiHrlSuC0ouKlFw-BwTXi8zw5aerZvEG6el0923clEigqzqelGsBOWBT3jm6PkZEIVhZ9BRDB7EQoOkV7BS_YiQ98ERzDBo9WrOHCn7WW0MdBd6c7ALanSDs7dZr4Cin25NzAKW9OFGxDrAoNQNohynmq25cc7Mum7hvEE37YmNVzNpZyxNXB4a_186Xud0lZabDkPe9QnA712IYXy1LBYK4eqVljI_iS9sdhtRb_fNsaidSvkEL3vuChMlIuqALXpFwp_TX2wcLzwd5eMjERNyG-dcFEfklbHvDyZwruTShVbIKz7JTNpgiMMR7hIz1u0Dal0ehr6V8y4IZDrRmOzSLewuQAyZmcDAIvJtUjc-wn9z6lbZEte6RceRsZuiRG5tRJUPSeoXttxhGg_tOzN4_YcGh-3L5p-VDS1lI25aTQPtWapb9fobcXMXBfVbvYikw1516Ydb9uSUfWmVMocBK5uKtIYTxrow4JPSKnLUEbg9Q0tx6LD8u-LAxvTVC3rsPNPhUJc__JbVwySj_Lxm4W1DVLNhGDQrZuUD9Fl-SipnNykHAqw8rC3jpV1_RJfgEQb4_A4hlrKRUUHzkub1NXtGY2cxAkGgKqIV2jOiVXAK7h00WjFrXEYJObr4f0C0uW05f5waOggSTQuugJhlTe20MFiP-TBw6rNAr8RrYJmkaTC9uECBW8i4WEAVvb1FUsC9upWqsLo95VhYai73x8Rqql6-MJKtmKmcu3UQLw554Vf8cmOGMzlk_HG70abAUcwzMPBVWm-c42rvrGcDPQbSOLBTij7dPSI6Bm-BQf68btirySwIU2xqYdlAAozCE4sncM0wNTl3ujaOKxRKiJNc9QzLyAWuiVX-R8ESzSXQ4Zf2OU8jvlwRfa5YiDBiHDPesI6ueTRD1BCGLskruD-TfqFRDaBk88j7EMg2uuGTu9H1tEXO2Sq4nv_9yAFnybHptguHzG37_FWhor_kH3TNwfu3Sk_iVgwgFEuzWso72ESl-74EYrF9CsB9bzgR6WWjE_AGzIjRK0Fxtgz_DtCZYM2S-nH0IWXY_wn31wKJ9P2F_f2t19ydi93GEBahqb-jUiNSuflrDbmExehvK-NS4PM7HL4wW_YBcjeKIPru2jkuUVmiq52vOtacYESvydoAIedNP1sJ7esixmct0gxYHKf0IBPYjf31YXHo2riStMj3-5pnP-Sk7PUZRYUuUtvOJxdMT7L9v3tcgGkrTGYffzuCBWokYrjTQB0A7pnrC35o03w8JehX0BVdhkTh5NOo=",
+          "summary": []
+        },
+        {
+          "id": "msg_0d632de4b8471934016af712e2f9a48194b0c3ecdb7ac3b3a2",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"Pears are stated to be more expensive than loquats but less expensive than apples, so the price order is apples > pears > loquats. Therefore pears are the second-most expensive.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 282,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 104,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 386
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"Pears are stated to be more expensive than loquats but less expensive than apples, so the price order is apples > pears > loquats. Therefore pears are the second-most expensive.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 282,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 104,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 386
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:115|stochastic_controller|refinement:2",
+    "attempt_id": "ccceaeb9d1df4a4996ed854aec373a97",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0002785,
+    "latency_seconds": 3.1171107520003716,
+    "started_at": "2026-11-13T13:38:40.445704+00:00",
+    "finished_at": "2026-11-13T13:38:43.562811+00:00"
+  }
+}

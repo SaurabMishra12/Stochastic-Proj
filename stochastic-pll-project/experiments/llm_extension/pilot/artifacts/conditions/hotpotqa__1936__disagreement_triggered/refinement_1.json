@@ -1,0 +1,199 @@
+{
+  "payload_hash": "c1041cd21f1bb751fa9ba62aecdb6f08938ad3c5fef04b165eb65ce928f8bf39",
+  "logical_id": "hotpotqa:distractor_validation:5a82d71555429966c78a6a94|disagreement_triggered|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_0d87029ddccceeec016af73b3eb1d8819090603bbf7a3e4fd4",
+      "object": "response",
+      "created_at": 1794587454,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587456,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 7589,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 525,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0d87029ddccceeec016af73b3f86a481909f001e7a5d31e281",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9ztAhwMPumRouJZkf82txdici_GFLFCJkDHFk_ifj-gal1nH4mJ2EzX6R2yGjxke6TIcrTjJ3xqr4AEaIy4DFwWwLytrqv9nucnYmgqlF9L8GgI8-rlXYj1fy9roBfmIGuoYdZtlQaNCW7qYkWnp-gIuA3fbImxFuFS2xMFBk7QVsPZnr19nUovwqc0K7D4sV_Gxjydjeeu_zAOVzotPVAva1c5qokZEsirQQftb_RSuyEa3RPA3DJukvFpaFeaQWUHRgBHgAf8iyNkA_VOAiEA48Sumqz4RHzbotoTGBuU9DU3ZLTvONiZNQI8cbNO5mb6UIAXy0JQQ4B5eph5DVal8ogoR6b2nHyzXlpVPR0_xvcxyKUYxyTLAuGlDywmNR5zfSgj-2DD0aZxgSBH-Jg1-tpdS6gd2UGqomcMI-3wYobek2PJZ7MuUUWrZ5wUDxbEeKvcaqn1HEt2czowGB5IXDPMDR4XrMOxDb6aahm7PkFXXDaNA8h0o5cy-SEAnzQ2ilBg8G-WxKpwxEfd7qoVXWe2xJbQ7_Opt6199rsp9CgJweLRxLc8g-luFnkynM09mRvb8L6FxiNJWVZyfGg23RnrAUDiRFrZhiair-yPPy_SzfkFcEYEkAWzkPzq0v6pT9H4XILMQaTHjfZJOtBvUbOrFD_nkOWEv2nyFbUQs5ZXZqpdjdBqMbaNsy7DQWdm3x8pJID-XB-y5od6X_8vMdoToR3KCydFQOKneyKxPpBNt5kcpgeoUg-O1ke3ajjmo6ENoyi4xjIUxRP0nJK9AW8Qzh5jdmgo0KR-VFhWQVOVLd_alf2ixO0qv4OIFGM1y3s962lAMgAB40vknBeYRoipG0XfXR2K9eJrWpZafmRwdjUkJVm04_VKq0UkQr1V1D81DNff72Bls9AxAMK-vuWsx2BE0UsDYL_GDUq5efRAdI_X-dhNdPsBpQ5wmfjcOLZWtrwAVv8zuA2pC2g2UDR94u1nL1Ra_zpLJWWMDzCn7DaS51WiYF-LFbDZWi4WQJGEt1pt-fR1HgAYlJGgNiQIRRqP8I3SIWimgmCIFCsx9NHUiWgfum1-wT42GkP3xEqBUEgwpXIRP-sycD77kA0bb2zRhG8wEmFCT1PncVG57Bwki2-0UAwOdGeEQ1D6EPYTjixIfJfA2X_pMfAwZym6Qfgbqqn1mOd_ZOKUy8TcnsvWGqBdfF36X6Etq6nBwtWiQyOM2bREtdLqnZWFsu-4qx0JSCoHlgZf6-EBN6_8QHOwuwOJpRDHkqw7HawTG3dpIFmYJWLpJDn5_v4TGOoEsK1bLAZtLbZETy3Q3SDcyTODyI3BIqkzaqLL_-JHeT4EBxZTbVV6xWifxCkDfDtFGHSDPLQHsqwV5eKntimeHj0AhgATul97ThXk68kR93cueVr_ltNDkePwH0q9cv2tjup8s0018MbycHwqvsQXsX9LgNsUosnvEdSuL03Dybechq-cCBo1tTKCE9PwKlH3Ui-uhmTZrl3okuD8dzQ5UDx8TslUQnrVwfmkLk2sMxC42_w8bPWZxRn9AvbuAGOpMQOq4v9CSUDRTI-1bwxT3v0yGogI1lOIzeKNzpBcciubik9jr2lObqg1T1E13mIVmTajvAtsjvj4NjefbaLf0BEPSgU-hPOlcNxYz42v63HtiJ0O3rJ32XYDkPFEQpErXIlzYYaYj80Ku2denLewhGoK02dA7A35Egxn650WpQeHIVfcKybqyQbvulJ91jwC03OiXP3GBp-KiqZWLQLOcBgO0OAdiiqh-d2o78wTJOOdw6O7wKXQA0f2DZ4Go0vREOu-_s0Gfi68ecBN-AO-MLrL4EivMJ4gV3d0KG2bsl96Ep0dH2k7a0sP5w5ZXUCbmfKXFInAoaxcwNeFk5aw2_Y7irTurxGuuiT7XjJNHaZFMgjswH_jhwH-jjt4uk9F88hZGCmaNJ2v6OHpxsqsUX-9RWQoJ5XvlEDlH3TMUkZkrDYj_Xc7OguLUq4IoxxFV2XxHpag0vJcvLpx0OacHVzik-a4gtRFGPOzR7rGG2-P9o4zfPNDTA43R-VzOBjE43C21vPdxICPtQWSuT6y7CMFuKXhPs1OG9CEW3Q4oqNfEtM-8Kw_aNJ4DMA_lVPKhkjGTytsqcjm2MzU9lz9xVwHYJAKVAZn9WWLwAcPymuW7CRj3RUBKW-Pf2syv3g==",
+          "summary": []
+        },
+        {
+          "id": "msg_0d87029ddccceeec016af73b3fe82c8190988b3647aa43506f",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"yes\",\"summary\":\"Both the Tundra Mines and the Negus Mine are described as gold producers in Yellowknife / the Northwest Territories, Canada (Tundra Mines active 1964–1968; Negus Mine 1939–1952), so they were located in the same country: Canada.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1634,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 131,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1765
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"yes\",\"summary\":\"Both the Tundra Mines and the Negus Mine are described as gold producers in Yellowknife / the Northwest Territories, Canada (Tundra Mines active 1964–1968; Negus Mine 1939–1952), so they were located in the same country: Canada.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1634,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 131,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1765
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a82d71555429966c78a6a94|disagreement_triggered|refinement:1",
+    "attempt_id": "19b9b2bc87e947938ff9a01df6ee8006",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0006705,
+    "latency_seconds": 2.4853050429992436,
+    "started_at": "2026-11-13T16:30:54.064079+00:00",
+    "finished_at": "2026-11-13T16:30:56.549395+00:00"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1023",
+  "source_index": 1023,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "77",
+  "final_answer": "77",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1596,
+  "output_tokens": 851,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.002101,
+  "latency_seconds": 19.85710111100343,
+  "wall_seconds": 179.05540376899808,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 307,
+    "utf8_bytes": 309,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "77",
+          "summary": "Total per day = 5 + 4 + 2 = 11 sandwiches. For one week (7 days): 11 × 7 = 77 sandwiches.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"77\",\"missing_response\":false,\"sender\":0,\"summary\":\"Total per day = 5 + 4 + 2 = 11 sandwiches. For one week (7 days): 11 × 7 = 77 sandwiches.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "77",
+          "summary": "Total sandwiches per day = 5 + 4 + 2 = 11. Over one week (7 days): 11 × 7 = 77 sandwiches.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"77\",\"missing_response\":false,\"sender\":2,\"summary\":\"Total sandwiches per day = 5 + 4 + 2 = 11. Over one week (7 days): 11 × 7 = 77 sandwiches.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 314797797158550024237801046157680067251,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.8490468476733156,
+        "proposed_state": 0.09397226575917988,
+        "state": 0.09397226575917988,
+        "probability": 0.23598445756261632
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.09397226575917988,
+        "target": 0.0,
+        "drift": -0.11276671891101586,
+        "gaussian_draw": -1.069460232762002,
+        "proposed_state": -0.035671963219483085,
+        "state": -0.035671963219483085,
+        "probability": 0.2177992642444828
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.035671963219483085,
+        "target": 0.0,
+        "drift": 0.0428063558633797,
+        "gaussian_draw": 0.6391715740445707,
+        "proposed_state": 0.03935200200340806,
+        "state": 0.03935200200340806,
+        "probability": 0.22819729002866151
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23598445756261632
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23598445756261632
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2177992642444828
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2177992642444828
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22819729002866151
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22819729002866151
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.03146453911719971
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.9378402920194494
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.22441202359180334
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.9136106080991524
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.7112594650446065
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.05088445921928464
+      }
+    ]
+  },
+  "initial_answers": [
+    "77",
+    "77",
+    "77"
+  ],
+  "refined_answers": [
+    "77",
+    "77",
+    "77"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "ad14d673e4f8f757d0c87aa94b40b8c7969b6f6d2cdba4c4ebca61c587c76244",
+  "errors": []
+}

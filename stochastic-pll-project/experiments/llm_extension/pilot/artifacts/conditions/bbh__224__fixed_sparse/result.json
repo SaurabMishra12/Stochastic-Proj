@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:224",
+  "source_index": 224,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1804,
+  "output_tokens": 751,
+  "reasoning_tokens": 128,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0019529999999999999,
+  "latency_seconds": 19.162436320999404,
+  "wall_seconds": 181.62001645099917,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 528,
+    "utf8_bytes": 528,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "A",
+          "summary": "Eve finished above Dan and Dan finished above Joe, so ranking is Eve > Dan > Joe; Joe is last.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":0,\"summary\":\"Eve finished above Dan and Dan finished above Joe, so ranking is Eve > Dan > Joe; Joe is last.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "Eve finished above Dan and Dan finished above Joe, so the order is Eve (first), Dan (second), Joe (third). Therefore Joe finished last.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"Eve finished above Dan and Dan finished above Joe, so the order is Eve (first), Dan (second), Joe (third). Therefore Joe finished last.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Eve finished above Dan and Dan finished above Joe, so the order is Eve, Dan, Joe. Therefore Joe finished last.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Eve finished above Dan and Dan finished above Joe, so the order is Eve, Dan, Joe. Therefore Joe finished last.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "5bcb1bd1b7dacdbe404bdaf1eb378aa5e381f66ac31e86f278e1d667dc2feb5c",
+  "errors": []
+}

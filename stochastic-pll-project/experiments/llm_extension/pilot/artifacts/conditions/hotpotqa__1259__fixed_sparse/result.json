@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab6391755429953192ad2a7",
+  "source_index": 1259,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "gauteng province",
+  "final_answer": "gauteng",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 10902,
+  "output_tokens": 1012,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004749499999999999,
+  "latency_seconds": 22.10508044800008,
+  "wall_seconds": 184.47377318100007,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 740,
+    "utf8_bytes": 740,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "gauteng",
+          "summary": "The 1974 South African Grand Prix was held at Kyalami Circuit. Kyalami Racing Circuit is located in Midrand, in the Gauteng province of South Africa, so the race took place in Gauteng.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"gauteng\",\"missing_response\":false,\"sender\":0,\"summary\":\"The 1974 South African Grand Prix was held at Kyalami Circuit. Kyalami Racing Circuit is located in Midrand, in the Gauteng province of South Africa, so the race took place in Gauteng.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "gauteng province",
+          "summary": "The 1974 South African Grand Prix was held at Kyalami. Kyalami Racing Circuit is located in Midrand, in Gauteng province, South Africa (as noted in the provided context).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"gauteng province\",\"missing_response\":false,\"sender\":1,\"summary\":\"The 1974 South African Grand Prix was held at Kyalami. Kyalami Racing Circuit is located in Midrand, in Gauteng province, South Africa (as noted in the provided context).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "gauteng",
+          "summary": "The 1974 South African Grand Prix was held at Kyalami. Kyalami Racing Circuit is located in Midrand, in Gauteng province, South Africa, so the race took place in Gauteng.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"gauteng\",\"missing_response\":false,\"sender\":2,\"summary\":\"The 1974 South African Grand Prix was held at Kyalami. Kyalami Racing Circuit is located in Midrand, in Gauteng province, South Africa, so the race took place in Gauteng.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "gauteng",
+    "gauteng province",
+    "gauteng"
+  ],
+  "refined_answers": [
+    "gauteng",
+    "gauteng",
+    "gauteng"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "f3c88267815f3f17ef21032c565130b91c5c287d21bd8ac781c5110b8288fa9e",
+  "errors": []
+}

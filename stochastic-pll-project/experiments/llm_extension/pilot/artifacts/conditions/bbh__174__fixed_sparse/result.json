@@ -1,0 +1,100 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:174",
+  "source_index": 174,
+  "method": "fixed_sparse",
+  "answer_kind": "choice",
+  "gold_answer": "A",
+  "final_answer": "A",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1797,
+  "output_tokens": 844,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021372500000000003,
+  "latency_seconds": 20.442540585001552,
+  "wall_seconds": 178.2252311250013,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 514,
+    "utf8_bytes": 514,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "A",
+          "summary": "Amy is above Ada and Joe is below Ada, so Ada is in the middle; therefore Amy is first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":0,\"summary\":\"Amy is above Ada and Joe is below Ada, so Ada is in the middle; therefore Amy is first.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "A",
+          "summary": "Given Amy finished above Ada and Joe finished below Ada, the order is Amy > Ada > Joe. Therefore Amy finished first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given Amy finished above Ada and Joe finished below Ada, the order is Amy > Ada > Joe. Therefore Amy finished first.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "A",
+          "summary": "Amy is above Ada and Ada is above Joe, so the finishing order is Amy (1st), Ada (2nd), Joe (3rd). Thus Amy finished first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"A\",\"missing_response\":false,\"sender\":2,\"summary\":\"Amy is above Ada and Ada is above Joe, so the finishing order is Amy (1st), Ada (2nd), Joe (3rd). Thus Amy finished first.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "refined_answers": [
+    "A",
+    "A",
+    "A"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "551551d48aa09ad8faec563bc012be5353a10632795294f70801b936a4504320",
+  "errors": []
+}

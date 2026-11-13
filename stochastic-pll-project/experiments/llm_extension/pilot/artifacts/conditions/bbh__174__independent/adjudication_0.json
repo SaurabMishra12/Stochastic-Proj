@@ -1,0 +1,199 @@
+{
+  "payload_hash": "f560d22a79a307cff4344685b6dfa1067124152f1de0498d6999c1066a1d5b70",
+  "logical_id": "bbh:logical_deduction_three_objects:174|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_02ab66ea69cff420016af710c4f7d0819698b100838e312986",
+      "object": "response",
+      "created_at": 1794576580,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794576582,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2270,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 430,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_02ab66ea69cff420016af710c5bed08196a07f31a476039d96",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xDGfvl9PQOi91ntR98SPmjvpkznDYsAKZYHk28dedX65NSPes88z3qHP7X2xby1R7Jdm5EWpirZj_e_txGaL8KGV1zFtGxG5xamNLWWhwxmZSrz-2og2qM6mYYgsM7W6iYcLXL_DPhs0MS1FogR-A2fMRRPt5TfsXEAPCen-5N4x1sJkPgCkDERzo7-Wsj0POBj-9e4aMpHmVny7EPRo-trk4Fe0VIC1sZEL3QzPrlqdmLvfwsxmdFi20JZGDTJYIGgBC6VGBz_51gOo49X3sgQLIc1Ny_K7coRsJYnyq6LSplYVnadv0Cr2eXfp9Vu9RR9laoz5gjf5u2Aretc5_NDHhRjHtg6Wmu34xzByva_zJ6l1UUN9sHdQqtqOGs2vAQKuuKDromGtu5UJDbuhTfQDYQqtJw1UYnEpQA08PtNAhMSGXvbazAWwPk0SPnvxEFq838DdgVAQXjtiuEvRwtgEZuCN7xTlGUghs9FW6wzAxAQTwy8Wzay8e3U6tGLiPKljVZnFxWXY33bEZtSv43i8SkQ2gMSPfn_BlgQZIqLYbAtKJ2-rNFa2Qo9cfyIq5DBj3QnDqsNvDhOQdTRACMgzBEZz4dutVirZODr730tMDl1dUY5UIzWBzlOfP8juB2Ldd-FMoapTRb3xiJ7s0OZXOqy9XV-qb52C5yObt0ywteVrrSeVsMWcUT9ZZBXqQ8wDXIY-pHb50tMFMWOMESacCT-hT4WOcOK1SPq1Jm_v90xp09dPTkE7SBG9LhpUUGJCWIDWnNPXO3rfhioWGPbZsEkEgJvawXjI20Ge2oIrLqE1k_qb7r-y0rusVsg2kXvQ02vJKGyMk07pkUVl8kHjTHe6jknD5JbjWT0YdT8kosOi8Jl7lbpgq_ccs0G44gzgPEc6CTtCcgou-WKFQz4gR5DfE3p6VBDyCie2lDqqAo91IToDYSMjGOJAuQSrG47j21jEDshuZKtT03JRy3cN92dDOUwkJxk_U-k353yo8cevCLUM2Pbp81_8caFSd5Gs1bCYh4PtEct74wLbdZvjNidHIWwMsrrbFKjFAZUY--24fc3sJded93bjZSdSkyo9OOccQK64IgaffpCO3_vXe0OoZ1k7IsqYaclRx12KozEsn9ZVDCZ7xr32hin17jGGFpmPHcwbynPt0cA9m2uP908aupS4JrqO5k3NyAE2izuD1zg-I1uSPwEVJ8NXkwfzcmThsb-zPa-QxLXC62FLNobC1LYI7mjSc1OuTL46Q_z0oxt2zJsSwgyDNfQqFFw5556Ip9xdXBdoZx410Xu2ANwhLuDL7e13qopS7lU5fYeWDIqc50uEQQq8ezwdzWcZIAZOiw-9ZeeqQ_lPjyT-xwWLw-jtMA4rNKzvO8kQC5XvY3ALTzdqE8xdEes5VNwA8C56cFPuUk2y2XzDgd8ugWdbr3aZ8WF8NJU_--z5G0xr2O6xGjE8c1C_UuqDu7lgVire0PtnHSEBd5xfmj1CE3BgkAmIJmIK59IA3pCxFqZC1iCSfh5JGogPR0JniBlUoFMQCugayG7yjXzDm5B1487WrCpk8pjKmFq8JAmVYrjO0FeoQU76xM7s6-emGciTZmWbFStSmDmNxNU1QNMQLrEsV4-3ciCP5fjzmm33kt5mTyyG-nT2zjYtRZn4Dwnn1RkrdljWUnHt5aTccfQGmkFNtrpXbljhaeAr6RKNbte7TZh6I5H93tTnNM_UZVW2BYvBPWnC3EU4KuqkxY7racV_Hg2QnyEJ9fm5hRLBhgj3PFdf2QOffcI80HToz236JL4fiVoOpYfDJj2FtFo1vNx6grM4zJGwWKWkk1SU9trEjiB46SqvF8UF7udeCnRe8LxZDpQZIngDekMpv8rSblvoBari_eQzqA8pyVzxiBfeok6fzqHBd8fP9fJAuwGM7CDrRyB0sD1Msn1EMiAfmXPVahft2a45bzT2XjsukChVm1j8g-znk3LX0VUfUe5OR-tzmPohW19ksrTqhpHGPjzlC2URIVxeqDpptdtd0PTCHIZBGNQDckpsaGwSTvyT0rIctjo24A7MwXW1EQFDA==",
+          "summary": []
+        },
+        {
+          "id": "msg_02ab66ea69cff420016af710c637548196aef6170700cf179e",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"A\",\"summary\":\"Ada is between Amy and Joe because Joe finished below Ada and Amy finished above Ada; thus the only ordering consistent with both is Amy first, Ada second, Joe third. Therefore Amy finished first.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 366,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 469
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"A\",\"summary\":\"Ada is between Amy and Joe because Joe finished below Ada and Amy finished above Ada; thus the only ordering consistent with both is Amy first, Ada second, Joe third. Therefore Amy finished first.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 366,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 103,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 469
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:174|independent|adjudication:0",
+    "attempt_id": "020720ba7b264c5987f1c64fa9b4df0c",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0002975,
+    "latency_seconds": 3.1829529090000506,
+    "started_at": "2026-11-13T13:29:39.845285+00:00",
+    "finished_at": "2026-11-13T13:29:43.028242+00:00"
+  }
+}

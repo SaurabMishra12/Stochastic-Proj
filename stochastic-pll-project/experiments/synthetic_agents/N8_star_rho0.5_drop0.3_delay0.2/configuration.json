@@ -1,0 +1,112 @@
+{
+  "n_agents": 8,
+  "topology": "star",
+  "rho": 0.5,
+  "dropout": 0.3,
+  "delay": 0.2,
+  "n_trajectories": 500,
+  "T": 50.0,
+  "dt": 0.01,
+  "coupling": 2.0,
+  "sigma": 0.35,
+  "sample_dt": 0.1,
+  "master_seed": 20261113,
+  "threads": 4,
+  "adjacency": [
+    [
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "frequencies": [
+    0.2142857142857142,
+    0.0714285714285714,
+    -0.2142857142857143,
+    0.3571428571428571,
+    -0.5,
+    -0.07142857142857145,
+    0.5,
+    -0.35714285714285715
+  ],
+  "normalization": "original row degree; no dropout renormalization",
+  "delay_definition": "theta_j(t-tau) minus theta_i(t-tau); constant prehistory",
+  "brownian_generator": "std::mt19937_64 + std::normal_distribution, seeds recorded per replicate",
+  "dropout_generator": "counter splitmix64 keyed by seed, timestep and directed node pair",
+  "kernel_sha256": "ef162cb9f737b176c3f43de6ee712c1594842e4a7ef4ce8f09357b622aaebe24"
+}

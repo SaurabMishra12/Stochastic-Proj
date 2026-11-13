@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ab327bc554299233954ff33",
+  "source_index": 5245,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "war of 1870",
+  "final_answer": "la guerre de 1870 guerre francoallemande",
+  "correct": false,
+  "f1": 0.2222222222222222,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 13712,
+  "output_tokens": 1774,
+  "reasoning_tokens": 960,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.006976,
+  "latency_seconds": 31.208544947006885,
+  "wall_seconds": 242.64065659799962,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 918,
+    "utf8_bytes": 920,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "war of 1870",
+          "summary": "The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War. In France this conflict is often referred to as the War of 1870 (Guerre de 1870), lasting 19 July 1870 – 10 May 1871.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870\",\"missing_response\":false,\"sender\":0,\"summary\":\"The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War. In France this conflict is often referred to as the War of 1870 (Guerre de 1870), lasting 19 July 1870 – 10 May 1871.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "war of 1870 guerre francoallemande",
+          "summary": "The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War. In France this conflict is often referred to as the War of 1870, and in French as the \"Guerre franco-allemande.\"",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870 guerre francoallemande\",\"missing_response\":false,\"sender\":1,\"summary\":\"The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War. In France this conflict is often referred to as the War of 1870, and in French as the \\\"Guerre franco-allemande.\\\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "war of 1870",
+          "summary": "The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War, which is often referred to in France as the War of 1870 (French: Guerre de 1870). This identification comes directly from the provided context stating the French name for the conflict.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"war of 1870\",\"missing_response\":false,\"sender\":2,\"summary\":\"The Pavillon du Butard was occupied by Prussian forces during the Franco-Prussian War, which is often referred to in France as the War of 1870 (French: Guerre de 1870). This identification comes directly from the provided context stating the French name for the conflict.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "war of 1870",
+    "war of 1870 guerre francoallemande",
+    "war of 1870"
+  ],
+  "refined_answers": [
+    "war of 1870 guerre de 1870",
+    "guerre francoallemande la guerre de 1870",
+    "guerre francoallemande la guerre de 1870"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "d2987be6533dddfd5ed61ef1eb922edc4256d8eaa30e0718394824f963fa3f9c",
+  "errors": []
+}

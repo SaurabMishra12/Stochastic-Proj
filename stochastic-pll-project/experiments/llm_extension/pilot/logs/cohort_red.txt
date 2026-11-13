@@ -1,0 +1,82 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+______________ test_exactly_fifty_each_fixed_seed_and_provenance _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-saurab/pytest-7/test_exactly_fifty_each_fixed_0')
+
+    def test_exactly_fifty_each_fixed_seed_and_provenance(tmp_path):
+>       m=data_module();a=m.build_cohort(tmp_path/'a',seed=20261113);b=m.build_cohort(tmp_path/'b',seed=20261113)
+          ^^^^^^^^^^^^^
+
+tests/test_mas_pilot.py:9: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def data_module():
+>       assert Path('src/llm_mas/datasets.py').exists(),'Real dataset cohort loader required'
+E       AssertionError: Real dataset cohort loader required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/llm_mas/datasets.py').exists
+E        +      where PosixPath('src/llm_mas/datasets.py') = Path('src/llm_mas/datasets.py')
+
+tests/test_mas_pilot.py:5: AssertionError
+________________ test_question_renderer_excludes_gold_metadata _________________
+
+    def test_question_renderer_excludes_gold_metadata():
+>       m=data_module();row={'question':'Who won?','answer':'PRIVATE_GOLD_SENTINEL','supporting_facts':{'title':['GOLD_SUPPORT']},'context':{'title':['Passage'],'sentences':[['Visible context.']]}}
+          ^^^^^^^^^^^^^
+
+tests/test_mas_pilot.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def data_module():
+>       assert Path('src/llm_mas/datasets.py').exists(),'Real dataset cohort loader required'
+E       AssertionError: Real dataset cohort loader required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/llm_mas/datasets.py').exists
+E        +      where PosixPath('src/llm_mas/datasets.py') = Path('src/llm_mas/datasets.py')
+
+tests/test_mas_pilot.py:5: AssertionError
+__________________ test_model_view_contains_only_public_task ___________________
+
+    def test_model_view_contains_only_public_task():
+>       m=data_module();view=m.model_view({'model_input':'Public question','gold_answer':'SECRET','answer_kind':'numeric','item_id':'x','dataset':'gsm8k'})
+          ^^^^^^^^^^^^^
+
+tests/test_mas_pilot.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def data_module():
+>       assert Path('src/llm_mas/datasets.py').exists(),'Real dataset cohort loader required'
+E       AssertionError: Real dataset cohort loader required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/llm_mas/datasets.py').exists
+E        +      where PosixPath('src/llm_mas/datasets.py') = Path('src/llm_mas/datasets.py')
+
+tests/test_mas_pilot.py:5: AssertionError
+________________________ test_hotpot_f1_special_answers ________________________
+
+    def test_hotpot_f1_special_answers():
+>       m=data_module();assert m.answer_f1('yes','no')==0
+          ^^^^^^^^^^^^^
+
+tests/test_mas_pilot.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def data_module():
+>       assert Path('src/llm_mas/datasets.py').exists(),'Real dataset cohort loader required'
+E       AssertionError: Real dataset cohort loader required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/llm_mas/datasets.py').exists
+E        +      where PosixPath('src/llm_mas/datasets.py') = Path('src/llm_mas/datasets.py')
+
+tests/test_mas_pilot.py:5: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_mas_pilot.py::test_exactly_fifty_each_fixed_seed_and_provenance
+FAILED tests/test_mas_pilot.py::test_question_renderer_excludes_gold_metadata
+FAILED tests/test_mas_pilot.py::test_model_view_contains_only_public_task - A...
+FAILED tests/test_mas_pilot.py::test_hotpot_f1_special_answers - AssertionErr...
+4 failed in 0.05s

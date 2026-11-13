@@ -1,0 +1,220 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ade0fbb5542995b365fabfb",
+  "source_index": 6262,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "cat",
+  "final_answer": "traveling cat",
+  "correct": false,
+  "f1": 0.6666666666666666,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12931,
+  "output_tokens": 1044,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00532075,
+  "latency_seconds": 21.589621888000693,
+  "wall_seconds": 184.1282848990013,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 945,
+    "utf8_bytes": 961,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "cat",
+          "summary": "The Stephen King-based film Cat's Eye comprises three segments (including “Quitters, Inc.”) that are linked by the presence of a traveling cat, which appears incidentally in the first two segments and centrally in the third.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"cat\",\"missing_response\":false,\"sender\":0,\"summary\":\"The Stephen King-based film Cat's Eye comprises three segments (including “Quitters, Inc.”) that are linked by the presence of a traveling cat, which appears incidentally in the first two segments and centrally in the third.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "cat",
+          "summary": "The film No Smoking is based on Stephen King’s short story “Quitters, Inc.”, which was one of three segments in the anthology film Cat's Eye (1985). The three stories in Cat's Eye are linked by the presence of a traveling cat that appears throughout the segments.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"cat\",\"missing_response\":false,\"sender\":1,\"summary\":\"The film No Smoking is based on Stephen King’s short story “Quitters, Inc.”, which was one of three segments in the anthology film Cat's Eye (1985). The three stories in Cat's Eye are linked by the presence of a traveling cat that appears throughout the segments.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "cat",
+          "summary": "The film No Smoking is based on Stephen King’s short story “Quitters, Inc.”, which was one of three segments in the anthology film Cat's Eye (1985). The three stories in Cat's Eye are linked by the presence of a traveling cat that appears throughout the segments.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"cat\",\"missing_response\":false,\"sender\":1,\"summary\":\"The film No Smoking is based on Stephen King’s short story “Quitters, Inc.”, which was one of three segments in the anthology film Cat's Eye (1985). The three stories in Cat's Eye are linked by the presence of a traveling cat that appears throughout the segments.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.6666666666666666,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.6666666666666666,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 198853741692190927668178728293128926335,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.6666666666666666,
+        "drift": 0.7999999999999999,
+        "gaussian_draw": -0.2623709358410825,
+        "proposed_state": 0.050960858781929574,
+        "state": 0.050960858781929574,
+        "probability": 0.5309857468658921
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.050960858781929574,
+        "target": 0.6666666666666666,
+        "drift": 0.7388469694616845,
+        "gaussian_draw": -0.37188439629046005,
+        "proposed_state": 0.0836854955786896,
+        "state": 0.0836854955786896,
+        "probability": 0.5374998823522468
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.0836854955786896,
+        "target": 0.6666666666666666,
+        "drift": 0.6995774053055724,
+        "gaussian_draw": -0.83278968324734,
+        "proposed_state": 0.061470308725935105,
+        "state": 0.061470308725935105,
+        "probability": 0.5330790069624025
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.5309857468658921
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.5309857468658921
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.5374998823522468
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.5374998823522468
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.5330790069624025
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.5330790069624025
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.08310465728667105
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6551491538718298
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.3493384384080068
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.13649377535516716
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.912636847115806
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6010316650458123
+      }
+    ]
+  },
+  "initial_answers": [
+    "cat",
+    "cat",
+    "traveling cat"
+  ],
+  "refined_answers": [
+    "cat",
+    "traveling cat",
+    "traveling cat"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "76bf8039ba1a23b13f48f7672eb20c58072206de5945194f2e3e75b46a8a2f70",
+  "errors": []
+}

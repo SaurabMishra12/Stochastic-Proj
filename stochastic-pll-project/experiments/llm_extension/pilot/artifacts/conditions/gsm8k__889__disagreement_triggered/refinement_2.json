@@ -1,0 +1,199 @@
+{
+  "payload_hash": "26d0c36beda3dfafcf019f98b83bd3c8c7e65b039c6787e7ddb40d22f544f21d",
+  "logical_id": "gsm8k:official_test:889|disagreement_triggered|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_00cbae47b6b43daa016af72e5e4df881979150867064d3076b",
+      "object": "response",
+      "created_at": 1794584158,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584159,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1547,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 468,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_00cbae47b6b43daa016af72e5ed4248197b5e31ad50329244e",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y5frEBvNOvnfInUP7chwvF18crO7cFZbUMbh7-gMQcIsUcKGMG4GaTKoi6CPkT1IPLWYfANe3Ck0lgYrdc939JAoVwLTpWgFWxYY-qvEqoXUae_0Aj8eRQHBrVkLrl-_PMw5ESWWflsNrh3l6UaiPdBxqKZSeV1gyJI4TdZBKMghh1PywfggvJ0VlyzXJqsuS5enuqTppSJG90EsHdx2wxapUbjbS8rTwpKByFDcabMItzXb-S_ZFNPB8JMqvg2KnEki4XWEoI3EkBO3hea8yl8H-SMysUI9i5UDXhQlQFtMccjWu_Fp0fOixsJsMhPuSUdlwqT0HoB1b8578Up-MvjaTLNn_KWBqNxX1w1lgFXlG9uys3z9tl71a2kxtQ5IojZynYLPoUgg5qSu8vc52GcNtvVmdrLBdOI4lHwayyPmAMopZ5KuTeKHrbFdTo7RaW8GttwP4tJCcVGdJYHrkjCd_iZwMQnIQYczJ0drz7eeYbM-bSF54Kc5vWbUFoA4SwDHYyo5Ewp_fP4BWgOMOdiIYg0rwmEExblXkzbZ4iReogBIvfP7Xzh3IKYVlDaFcON06NsbmjoQnYS2Kon1no9XRNWq1K1qkL2iUwO7pS-RD8w8HfQlqwI452kD6cbUtbR1f8uo10yHkX9jbuvRaXTjhgNoUp24JxUfEWXuOAJ-8Ck82RpqHJeQ5NwrYZF7W70wYufgaJrzu79i1119KvAaC1jpsW6pvMQNHoLThtFBoPi-v3Gy2PuhM3xxi2RNrAjCXTCWvaIRSOTDAt1NcdyTyQ4Ai4xexmaaJE2QnTRYFR0X6WhP5C7F02qo6nFTWST6ueB6ImlRXfscv8lzPaEo0pCc5uyCoK2xpX8pRROFaY6om9gW50k6dNU-9z65VXmdQeyAPp0PSTYhfyG67z18HYB12YNP9aXTxmf04GjziisL5qF8SfDXhxYIXwa8zUqSa4rAjPtqDT1gF5GIjJBWpbVp7-2p-7nFFhKVoLtWAtCsdt7ShkBhwN3qRehPW-ay4zlmAF5gXbd6rAIyH6E1CbUhqNDcb-p1Anv8QLl9_PD1r50cLAfIx0U-NSACI7VcRB-tMRXIb8dsSNt8BkBl5LbGNLAf_Oh9DptgjLdtwkc8IfOGaUEf_LySDHenFTmw5tn83mChR2841lVcfC_W2_7rzaaBcRC5agsWaQnPPo-lkUzgyVm59fXxK-V2hFHjdpKR1ai0l82XsOlLNlaylNWa9iZgX5hlPMXLT6Mgl89rTvS1APQwWQ9pU_01H2sIbRG0lJ8x3Lh0AacATAmoKNDA6TZjApHmnXXT3JovcKMWToJia_aY_WtiMfK7USb-0vHAuD-EKJrWWIE1J26QkR-4T1g9Bsv0tGQsBxq3aj5iz7ujaoLf5FIM51DZSPBaBOn5v4sIg-Lpr31kUOuIIeUm3Ka8NRUK94I149mXbCe8tXO89jGOP99xX5xChJt1Nc_g1RIAsVbQLKnntwsYPm1bjAviXO5xLRW99hUDXXL7iRd5FFccCBeibB5HbIEhn48aAEcSlIo9LVctZ6UiE1R9Ms5L5y4IHUbkKH6z_ad4rrwnozmSJSoNvNmNKAP6NTFFm6Vib_X5njvWFGuA04j4PJsg3NoW6mW1InM9YTv0mzqxFNwHZLN0Pg1sICL3KOkiJzDOY3PuANBlE84NRAF9iNUExUWewGsdzSDezGBM5pflrwJ8HVRxCA5VC1_bnVaKw5UjvYDqGvgvEsrxoFAGXdZvZT-ce_8jkuQX9vaW8yPBN5WGEwZD0k2zZ3M3V1jUAKZKft7Umf4fJwlme95jutxBV0G6g8sqq24tzIQRKX9aYYEoKWSVsomE_MkfKLPxA-MgVw0LRZAC7xJwQvKm1VhWjTgStatM1Mgru14wgrdOx13160yYpzcOKsMY-NJQQJquvQXJnffUH-ubn3R0L6Ov409RyqI9aebSkFuQEvNfRRk6qm43RD9xc7QxfEa0_BMsqOysxX-Xh276rYzrrVZ8kWF5bfrW8HlepuZ0IaT2VCFqClxIJjz79j8_cvy4WNbyNI2fIXrpBUj3YTmonERwPRuwmQIX2fYlHpRNd1zsaweTzuXE20VyOUkkP7WDhjQdAhY-yUaJLCuhbVPpomSLGECY0Z3cZCuvv5GAM11P0sZONWOm2c3_U_OnRXaodnQ8FGvfk0jjN2YrdIuSdkUkHgIRhK3ZTZ6Y1dHTuQVFyT2kl9eG8QrmdPMzw1y_uv__M1xe9wa0jWzRpcI1tHJ6HLcj7RrO0To07u0Wnvrjdyopg5sXMT_kSA762CsqN_Tc_-KmjIHzxsGTWTxDUibJXmeu29DgHur7tZVgo1Sr1i1OinVJbv_OIhYOa1bobcpB4orPfYfdmsc0eG_Wpaw4LTKRW2-YDjZnig=",
+          "summary": []
+        },
+        {
+          "id": "msg_00cbae47b6b43daa016af72e5f80708197b6a697476254806a",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"15\",\"summary\":\"Compute total petals: orchids = 5×5 = 25; daisies = 4×10 = 40. Difference = 40 − 25 = 15 more petals on the daisies.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 249,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 138,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 387
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"15\",\"summary\":\"Compute total petals: orchids = 5×5 = 25; daisies = 4×10 = 40. Difference = 40 − 25 = 15 more petals on the daisies.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 249,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 138,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 387
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:889|disagreement_triggered|refinement:2",
+    "attempt_id": "741286cab21542f1919be580ff5eadbb",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00033825,
+    "latency_seconds": 2.4618871780003246,
+    "started_at": "2026-11-13T15:35:57.668762+00:00",
+    "finished_at": "2026-11-13T15:36:00.130645+00:00"
+  }
+}

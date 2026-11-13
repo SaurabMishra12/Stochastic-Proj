@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:855",
+  "source_index": 855,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "13",
+  "final_answer": "13",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2073,
+  "output_tokens": 1500,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00351825,
+  "latency_seconds": 26.13252293399637,
+  "wall_seconds": 181.98783396399995,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 553,
+    "utf8_bytes": 563,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "13",
+          "summary": "Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 → 6x=78 → x=13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 → 6x=78 → x=13.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "13",
+          "summary": "Let my age = x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 => 6x=78 => x=13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":1,\"summary\":\"Let my age = x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 => 6x=78 => x=13.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "13",
+          "summary": "Let my age be M. Brother = M+3, sister = M-2, mom = 3*(M+3)-1 = 3M+8. Sum: M+(M+3)+(M-2)+(3M+8)=87 → 6M+9=87 → 6M=78 → M=13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":2,\"summary\":\"Let my age be M. Brother = M+3, sister = M-2, mom = 3*(M+3)-1 = 3M+8. Sum: M+(M+3)+(M-2)+(3M+8)=87 → 6M+9=87 → 6M=78 → M=13.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "13",
+    "13",
+    "13"
+  ],
+  "refined_answers": [
+    "13",
+    "13",
+    "13"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "b83920eb15753ca89ccd6eb5ed067af9a9e25f74f43aaf3590e50ffb02269684",
+  "errors": []
+}

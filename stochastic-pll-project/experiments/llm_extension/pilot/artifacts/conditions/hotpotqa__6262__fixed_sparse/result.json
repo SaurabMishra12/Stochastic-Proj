@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5ade0fbb5542995b365fabfb",
+  "source_index": 6262,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "cat",
+  "final_answer": "cat",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12864,
+  "output_tokens": 997,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.005209999999999999,
+  "latency_seconds": 22.16701945100067,
+  "wall_seconds": 240.79495376199884,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 841,
+    "utf8_bytes": 845,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "cat",
+          "summary": "The film Cat's Eye comprises three stories—Quitters, Inc., The Ledge, and General—that are connected by the presence of a traveling cat which appears throughout the segments.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"cat\",\"missing_response\":false,\"sender\":0,\"summary\":\"The film Cat's Eye comprises three stories—Quitters, Inc., The Ledge, and General—that are connected by the presence of a traveling cat which appears throughout the segments.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "cat",
+          "summary": "The film No Smoking (2007) is based on Stephen King's short story \"Quitters, Inc.\", which was adapted as one of three segments in the anthology film Cat's Eye (1985). Those three stories are linked by the presence of a traveling cat that appears in each segment.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"cat\",\"missing_response\":false,\"sender\":1,\"summary\":\"The film No Smoking (2007) is based on Stephen King's short story \\\"Quitters, Inc.\\\", which was adapted as one of three segments in the anthology film Cat's Eye (1985). Those three stories are linked by the presence of a traveling cat that appears in each segment.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "cat",
+          "summary": "The 1985 anthology film Cat's Eye comprises three segments (including Quitters, Inc.) and the segments are linked by a traveling cat that appears across all three stories. Thus the connecting animal is a cat.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"cat\",\"missing_response\":false,\"sender\":2,\"summary\":\"The 1985 anthology film Cat's Eye comprises three segments (including Quitters, Inc.) and the segments are linked by a traveling cat that appears across all three stories. Thus the connecting animal is a cat.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "cat",
+    "cat",
+    "cat"
+  ],
+  "refined_answers": [
+    "cat",
+    "cat",
+    "cat"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "92587142d3ff6e6166dea74d5008ed563c2ad82385f4cbdc0205f823366d2bed",
+  "errors": []
+}

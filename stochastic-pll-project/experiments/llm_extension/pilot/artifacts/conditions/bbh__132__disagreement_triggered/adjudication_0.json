@@ -1,0 +1,199 @@
+{
+  "payload_hash": "e040c5fc9925a3ed8b50cc115539097a727fcf4bd1487fb05ba2936bf490916b",
+  "logical_id": "bbh:logical_deduction_three_objects:132|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_009cd1a368625e20016af718fed4148190ac892bac264f2a74",
+      "object": "response",
+      "created_at": 1794578686,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794578688,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2240,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 570,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_009cd1a368625e20016af718ff9ce88190bcbb2ac44b1c1555",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xkAUB0Q5K5LMtxjyQ-j2IGQaMOlZN95lQm8KTxuef0LSBq3HMfixfz89ykBSQ6njqwGRlVzOxMA6YSg6XjkmNEjW-oXmUiOSPK_RvYtx5kCHc9664adI5ZDmJWUbNgv6sAw9VPjek9HQAJ-FiiIDbTvjxbIqWZKjR7k3HEJ2CthbdzDEPBPd1HY5ZgkiFRSaZM0Io6KTJGHfoL6LEU8luIncI_43w4AsSXk8TaQXgQZDU1fub6_yS-O6zw-OR6k1J9KNmZTUJYCKpB7HYBn_B9u2uq5Eu34AstzDT7GO9Ph1cYIAYQ059x6heapJlMbOpFhWl_YodIZYZXvvaofBrrs7IAIYil1Fop3Rrs9C3BRjDZvCoZ5VyKIr2n4M4GpvJngLhRMgzJNWlpK8PoxsqXB_v-f7JhJCg4gFJCUtbggHhHU-Jj6-3uIAvAuL7synBtCIltHEgOKiP9V8bcFAI8A5B3ubxVxGDnCR16MRdUaZFosRPrZB8j6r7ITNzFq41Ly1OAUcDotzTbaORV6zM2n48b7ZQd4PZMNtOsJZOK9VlmnmbxQILwrkbBAS1mbUtBBTGpssCsA2fAHGOL8XvSGX_TEoVi90U2hhT_q-3w39RiexzUq4GFJPcMrouo7ABN18GslusPm9IsUgbbrotBTebZJzRN9mtHwNzllKydhPbarYYcZtkfGo8bmXkftNsbB2uBGb2HzfIb622gjuErLNIoXkMLYPVwzEphZD7Jy2Baw4KbAA4hSCrdtWt3kgTk_x04kbfd7E0D1VhMwsQ1--efXGFktRsRcbpjNE8s-gPKrx9T8JEbMI5emLttMU0oAO2oPoVAwC_Zj_96LUJ57hWgrwP9AmC0PufKJdHqEyfYHJk3OE1mCc4bLUW4UKHTFAgbvpsBitzreJuuP555y2ze4L7OPW-RKYzhXrBbTjuwdarz8YJDIrg0Hymz2ZksAbSF-YmN1KPo2nqsff6awYFkIiSU6Gnq-2hAY38MMDA5BBfPPv7WmA-TsQwlw-m0gzmLn9m8THqvEghek8dlMXG4hEgzSRqibukwFlRK1l_jn46nFFIvWup8LFTa4qClyB1zp6PI08WDA2Ee12p8nojIrJdwJqjDxhSBDaBJtBjgd8W2m2LSThCV9zxsXp8mdKOALmPtWhKEcjBseKFaj9Xzg_9EdO79SgWBEpsizXNJi-uFhqFOzTI92ZOGWP2UDcMKF1f7KiryYIYorCmMaftK9BdQDysvOHS7p3IUNJURM9WVH-IUdPg-27VHL_s97R_B11vlZZRiLXLl2w0KAC_C9j_DolhnrUCCPjTZwDxjBirlVL7mZgMTKinsFc6M_G_vpKll-CPA_Xa0kNobFI77kQMXVS-s7MOGuqDl0xjhGWOlipyiPc1BKzlP_cDLL9ec0AjIxl9nm2TZimY7XqgwQcZ5tJ4IUArLfMTXWlwj2kJtjaoMe_F9Qdwvgt9P6o30oR6nS_w7gHwdIwXmc5gtNSIRN6a6y02D4a7OtjlZj6mAdEcB6NUDUMhFJSM6R3RAY9YeXAyUMuR4S052f9vavpg4ubGMU8Ua9o3Zs4bdRu56VuOW_3RcF1OREGrnl3daamPK1H0UTPGn2E1uxsHryjFQaHnA7C3JlG4-5eRfkdqa_oCSC6q_tNaOfXn3_zGlvQayNf1GSgJapdLbpwy-iJeSWHVSZbNFwojMvnoNDmOIcn8nUS388t7CzJt51cLyGfA8ZHezd3ZF8AXrGeBnXbUyvKnKJCHlfn6nlGaa1o0T-QNEMHwx-MZ-YL9jrHPTdodsV3SPQkjTBx8yi1VgzIlj3_8W1l_2E53ODmTvPRdJSRLfa6HT9udYTs8wTuJP6U2peAmyI3ny3Zd4i21hp7p8GzWlTpiVV8IODuv-jCVygS5JM5s_9tBIor2uWvNl5ouKxwIgSi08b1_N-CotgG64GCGcNB8tYnUFM1WafPluMFAx1DdCmiJk5d5ftgPpuyyqHzmg0f1xO_GmNswEjB7WMAFRmJJ-1VILGOUxBh7p17FyBBrBlL41VpEr0trZasWXVF-AVMk9EoEmbVvJEherJweGoPySa9Gd8YCtwTbbfqkqhNZzM7vdmMysfzxJZynr-OV4ViKIeEfM689faG74CVV34ZXwnYKdnMolfLOXIZeBNIiz3f_LtAXVJV61vJvNMw_Fc3tPlyqott7yixZFGWlAGofqmBvBG3I1rcF7g7VWGqL2AzxZTAxQIvra6r4rDLuSgwOYBkekgOefGyJJpQy9EYeMAfR2TtNym_TSAiKh1DvvUPi2ShlcA2mP91P3qIw8xDwUdgVchRy49vurBi7sSdqF_c0pJxu4XJ4Yn1XhxGt1yuoBJ3vlANPJWeE8gA69f7H4hy2etT1X2l8b9bBnYVemICHbiQd3FQLcZ5LJLA3kYsyzE1iOjwxenQ5EQZ8_Y9Ui-ix6e2w==",
+          "summary": []
+        },
+        {
+          "id": "msg_009cd1a368625e20016af719004ba48190a93ae09795372493",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"The text explicitly states the mangoes are the cheapest. Since peaches are more expensive than apples, peaches cannot be the cheapest; thus mangoes are the least expensive (option B).\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 349,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 127,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 476
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"The text explicitly states the mangoes are the cheapest. Since peaches are more expensive than apples, peaches cannot be the cheapest; thus mangoes are the least expensive (option B).\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 349,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 476
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:132|disagreement_triggered|adjudication:0",
+    "attempt_id": "f3759a7207c542f4938587f6b20977e6",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00034125,
+    "latency_seconds": 2.8221015330000228,
+    "started_at": "2026-11-13T14:04:46.206844+00:00",
+    "finished_at": "2026-11-13T14:04:49.028918+00:00"
+  }
+}

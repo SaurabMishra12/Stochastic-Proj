@@ -1,0 +1,199 @@
+{
+  "payload_hash": "25cc6bb10d4385376322c144db5936e8f55a270addc862a9c907a21fb2072191",
+  "logical_id": "hotpotqa:distractor_validation:5a75d35d5542992d0ec05ffe|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_049eddffaea746a7016af72f4ef45481969074337a7dbc422d",
+      "object": "response",
+      "created_at": 1794584398,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584402,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6757,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 532,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_049eddffaea746a7016af72f50d7048196bf8e067ef54ffa6f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y9SPVsZACf_cmjoZBIKctMr0stj99ZMzCqrJ1MzmHolOnplO3ufq5y4kjfgOgbxtIgTUNpC5j19DD1-lKdvQ7t-TM4rEU148VwbQGGP3Ny0TYbgQRFbQFGUqSmmIV1W0f5SuszInZ68luZUirHo9r4UfYR_w_RiQFJe4MCkmaxWu68vtMJQl3BO7wVwc52yHyDzdm5k2Poe43ecDAyT13fD5Vd4Z05b8ldM4FnsjXDryJ01Xoydoptxq2bLt9GixNwFKpsSmjcNBV--dLFjtQ8eFwJC5l89pVzvdtAsu-1BUtCBwSHQ9R76J_phG66YoK-kP1bea2lYv2O-9f82uitC-dNwZlY23oK3CGTCWZJ-CQ_x3erLZHFoifJhhFfF2mGPbZLYGAkU0h84mgCBwB24_4cDkuLa_fxiZgDf-IFKsjTEbUnegYlBzAOJIl0oi23OzoZotwcAAYOlsGczmj2--7Vg3LG7npIFznn8Uv8BA8DkckHj5_NDbhfo_RsSTfBp-vXD7g9BVxv1vOZOgrCACE_EAEYVFEm7uI8WlislS7_ODE2YYQ3nNUVRLa9-X_AWeNBGRn9C5JoRXYh6rL805mhOQZhmg2gp7cyeaI_nulwIKgZWwrTEfopgYalM4mcbFhSlFeHvcpnBr9QhchK_Bs9d20pkYbRT_Dv2yYYTtCRGOllagQwE0pTYTz3q6LTCU8vx8KLVkJN3pPu_5xFOOE1wa12YBreg94eODP4I6EHP7F4Zkg1KlDNiDGIhGGGMXFBFfybuHDXo8MLVTBojse_fsFK0OrZOcw_ltDYtL_JunU-LgYJf8YoiNyY644UFiTlFiJp7KUqnFl0wo3SAr84IB9SamC0LNKTP6e7hK8FFZBjHOaFH73iDbAteLyVUh8Vs5xwQuPJ0wn8n7XUHPodtVV1oFgPw9X0N6B35Oq7ctvxrigW8YRvThGzU5ImgucdgvGT3NBs0Qi500BWVebQn13ks1XXK3rqG7YCH_No-MB8VNGy55Hn57KZwwx-nrDcce4Jaex8Zm0J5P5IxDYrgBX-2eyirJFBTg5LdUafOxItxHB11FSQl2yCPmPQAzmTQJ6nR_HDb27AQnjlTQdZ0qROpz0klasVhK9wYkUgsWZdQ2o3BCopZneCVCVWcFno-VYroMaTbOi1w8v_v1qOiEhnOBGFA76Ci16QdltbQ5oi41t-7IiT1LzJ2oAtAgtjLhsSLIOtHRsyYm_GvOQURv4IhxMK81m-_ql5aaUJFId1PVwyXEaMKV6Q2k-jtSPBSGifCkbuZHs_0j3aU9C78T-KGbZgwkCNlHamTcywaGzoXjlcymawzm2qRc9rR922UvLECHd6gM3dDcHBg0vN0BlEl4m4iko7noD_p2hUuZjb9t0WU9QHExa0_f18Fe07WMdH8-RXekSoVW8iEp8AQwbQt0eC6w_OaUMeNNH2An472jq9Nrjy8ugXSglwFJUgx3JwjpsuIz1P4dCwfpU9uOzjTtD8AtXqhz5vBebUZ7NkU7CvSb_a6Z5DscCU0ApQL9pbwpXRPr-_srLwBD5_b-zSBLi1CYywmzC4k99zYCrH6zaJstO8c0k2paXCfSM6NlsB9DIC_Y0GuMYgw2CSejXkEhgrzHkx-GbUnrtCT89kHc1J9aVg4FylaEZCc50CTDtWVvg-J7OzOmZwxOzop9t9IH1ImFInwh5JFaVVUgeaFfPfMyvdl166VLu9LuoLUgO1bPNFxBTLELK7muY1sgsmcWylW0zlY7McDA6nBL70poWjaEerLzxo2vQ7dOzXXt3fePkqJLmlBnyCuHlhx6O4sT6fTDvVimcfZKfrMp7RcwxlGSFRWS_z6e6xt6OIAwFM82I0cXyiv8ML7e5Azv2TfmtGo7EGr3gOH6a8lEgsLUsaEhsUvVv4eY7Cj4jHDNxGD-As98YyQ-kmDhM7fLBVOVFUqbMVxxNTbYlD3e2YHMCgqjqwlYhitoeN-KkZtSejs19XBkXiW3gKuJwGf7LChB2GfKeiBux94yABlNJu1kRHo8EOsET-AvwRcJruRABo09SgHQy3Qlcc8cMiVBw6yiy-sK92XpdSyvBKccJrfocGBlerDmpdljhPcYMdaaJFMKs_MLzX6PGnyVNOHsL6DayfOBFcOVnmAUau6HwgPSK1PFLpXneZYAMcdPei-FdU0_zvvcszKob-aWSp_3V5E3mBq6SZGs3nhGVzWSGOP57rPUbU9csdLsOBTavRNKJJQzf6H8iLjOiEAKey7DvL3itFae8E2v1b0AP8=",
+          "summary": []
+        },
+        {
+          "id": "msg_049eddffaea746a7016af72f5160348196acb3e4d72877ddc4",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Toppers Pizza\",\"summary\":\"Toppers Pizza (founded 1991; first location Champaign, IL) predates America's Incredible Pizza Company, whose first restaurant opened in Springfield in 2002. Sources: context paragraphs [7] and [1].\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1422,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens": 127,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1549
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Toppers Pizza\",\"summary\":\"Toppers Pizza (founded 1991; first location Champaign, IL) predates America's Incredible Pizza Company, whose first restaurant opened in Springfield in 2002. Sources: context paragraphs [7] and [1].\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1422,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1152
+      },
+      "output_tokens": 127,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1549
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a75d35d5542992d0ec05ffe|disagreement_triggered|adjudication:0",
+    "attempt_id": "7cdb55a5945442b8bb98587e44b974da",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0006095,
+    "latency_seconds": 3.877630278999277,
+    "started_at": "2026-11-13T15:39:58.263100+00:00",
+    "finished_at": "2026-11-13T15:40:02.140761+00:00"
+  }
+}

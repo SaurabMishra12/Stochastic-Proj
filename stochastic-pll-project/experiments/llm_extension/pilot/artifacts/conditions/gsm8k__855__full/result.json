@@ -1,0 +1,145 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:855",
+  "source_index": 855,
+  "method": "full",
+  "answer_kind": "numeric",
+  "gold_answer": "13",
+  "final_answer": "13",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2351,
+  "output_tokens": 1524,
+  "reasoning_tokens": 576,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0036357499999999997,
+  "latency_seconds": 25.628107925000222,
+  "wall_seconds": 185.71210121499826,
+  "communication": {
+    "directed_messages": 6,
+    "characters": 1118,
+    "utf8_bytes": 1142,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "13",
+          "summary": "Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 ⇒ 6x=78 ⇒ x=13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 ⇒ 6x=78 ⇒ x=13.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "13",
+          "summary": "Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 ⇒ 6x=78 ⇒ x=13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 ⇒ 6x=78 ⇒ x=13.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "13",
+          "summary": "Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 → 6x=78 → x=13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":1,\"summary\":\"Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 → 6x=78 → x=13.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "13",
+          "summary": "Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 → 6x=78 → x=13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":1,\"summary\":\"Let my age be x. Brother = x+3, sister = x-2, mom = 3(x+3)-1 = 3x+8. Sum: x+(x+3)+(x-2)+(3x+8)=6x+9=87 → 6x=78 → x=13.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "13",
+          "summary": "Let my age = x. Brother = x+3; sister = x-2; mom = 3(x+3)-1 = 3x+8. Sum: x + (x+3) + (x-2) + (3x+8) = 6x+9 = 87 → 6x = 78 → x = 13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":2,\"summary\":\"Let my age = x. Brother = x+3; sister = x-2; mom = 3(x+3)-1 = 3x+8. Sum: x + (x+3) + (x-2) + (3x+8) = 6x+9 = 87 → 6x = 78 → x = 13.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "13",
+          "summary": "Let my age = x. Brother = x+3; sister = x-2; mom = 3(x+3)-1 = 3x+8. Sum: x + (x+3) + (x-2) + (3x+8) = 6x+9 = 87 → 6x = 78 → x = 13.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"13\",\"missing_response\":false,\"sender\":2,\"summary\":\"Let my age = x. Brother = x+3; sister = x-2; mom = 3(x+3)-1 = 3x+8. Sum: x + (x+3) + (x-2) + (3x+8) = 6x+9 = 87 → 6x = 78 → x = 13.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "full",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "13",
+    "13",
+    "13"
+  ],
+  "refined_answers": [
+    "13",
+    "13",
+    "13"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "79f1980ba9ce8b7c5f20429583ee85683da0c57eee40eb0e4e7ea2d7b92b4825",
+  "errors": []
+}

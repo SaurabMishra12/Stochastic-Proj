@@ -1,0 +1,199 @@
+{
+  "payload_hash": "3a2f69f41900a79cf21821a43d9a17b8ea6c3fece9587a0fd451b7b9f94dca94",
+  "logical_id": "hotpotqa:distractor_validation:5a78dc4d55429970f5fffdb6|fixed_sparse|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_0d243bd3887ec721016af72fc40740819492931cce4b918823",
+      "object": "response",
+      "created_at": 1794584516,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584518,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 5842,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 468,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0d243bd3887ec721016af72fc57dc08194bbb1d4cb5afc8883",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y_GfiuVWT6Am-QmPLOJn-Unn327QRYdEB5LcbWtbqK5Zf_Mx0EOU648kSY7rPFmB00OdtcG2aLURRvTZYuF6KyDCcWqgFcJD0kIVcHWUn67rUAc13ggZQi-OYREhZ1Q1-j6KW-N8IkDxrQR8SSQH5SsXD4x2nXgYp7Iq9JYD7BClVrIEfaHp4mNhbnKLmzOwRmAxfjf6AqYSY3BRv74Fhj9GxTUGqhOFUJMdlXrvFqxZ3RkOil0-mQ_ThpVKIH6JWCCaoyvhAh5_U1do-W137SB4UevTCgT6lc4Ula8aJ_Wr_e4MVV3ACngXhZGYUvlhajz1VTtgQvFC64p2m1gJ0OWDSqGQHVV9ihlxVMC9wlRTsIhaB09z5AwXw0hverAsXYbsKCjZ3wkvMBbTitQ0wB1rEziahRFu6cUjXLsLjPMEgLg7-SCg0XhEHxXTqUc4k43Z7fqgY4--ZnT-fJWZKLQLdm2eI-rRTWgHRPqhTAgjjNvTRPmCwW24MI1wmuFEfiqMln8fC2FlLEZrPknJvLq9dL1ckjUncO5PPoBY82lWsLiyqMg-_o-JktrEUl4SZogSkCN0ll3joSdnlQCRzzvXytqGSxFr8Tn5kECjKKajf6MM-PElnFfyK363mjUoR8VsK_zqnw5p-eXZwMXHaMc-HnX_sG7RRiRhJrZ89_LuvdYpginWt34rDMHzxlEbOnUm5gXFZ4BFdSwgLrTAeLu5-I9GoDJAcs-5ODF46prtCr0WsZt4ETzQjt4kzh9OiF7nwMc6YdRxGZ3KEYTjQvrLgLcZSTMdBsEE_6GXOdSw6igH2_KoIcy0cx5dV1KNxfdW0AW-4AS2FDAia1MwELsLAqNlu48BwSoVy_rRrCiukuanfAJiAp3b3vz4MtZtIndpkLYLEiJpbiQWUKXoxEwILRHz0jQLiDafle_faCmXBNvrKCO2caKDhiRe9p-rTPMD4THQ3GCrUEq-Q9l3VNVG-rxS4mtU-gOWWy2dDIJmLNSsL8TFoqULrS5UWOo3UzvTZBq3zCrqgzFNujDkkeBI8DyH7uOHlWlZoeGcLpHAF7KbWyq6EFWrhgvFb4qLCsDQv3Qc25fqlhdLkL08uK6n8cYUvOvAo7SvI6AHkYmQb0YRee-q735nV5Ri5nd0f4Zn21Cm9vj75QnXysROMR-fjM0wkbdrrcDAlSucpBHDEDTh9Pr_Q04qhWdI4Eiq7kLkF4Dfn9pA3-LsQ1bIGPq6quCVX_Su7Ug8EBWaubTflWEt0ESpUJ52PKwQRKTNDef9CI4ko6LwWus__3P5LGcCysIQoj7bN_gUOnTxBcJet8JRpNObzTD6GHx6ihxn5C_DVFtRvEqly6aLF7s6MvspIacSazsRNc_XVCreZvFvhsfH416W2KN0b4vJzEp5eozxfgv-1oL1i6pz-FI3XJt4HMWoyZHrtbOhvkHMQJYaloarbdqpwZJBJZM4RFDPM6snBSP6wTSBoZRGemFmOBkS5DYRrZo54w8CFzjrGvS6ihgehICNNcPsuVkSTnL5xfXxhV4D6cWsr3AnL9pnPtjDsK4LIU-4m33DgUXBNuTAtWpIsjKm-8-5XLn-AUp8-yUyL4joeTfTHUoe2QyHTeeT3XYmioqFwABHzx9yXT41elTFOKn8fr2f3neG7OTTJ0T9_Jz86nSIotlx_JAG53xBI6g_jR54zn_HCmXoQlaUXoA2ui7xJqnvAghymYo4KaRNFOCgGTDdw82fn7aNvHFAj0E41likwsI9YXtEokf06T9oMZPLraIjLYdUIeCgyj19zt0PtFNW3NmxXwFzRGt5d2fgzDW6VTbq6H4VcKhWeGwhqtWxbd1-D22HaGLQCJjHteJHXEBUUS5-g6ZJ9NVQxGf8ljhBBLWWbybszxYfM6lQMhQHSwV3X59JHuZMlgFueELoY_xpvZZ_d69DNrSFrq9aJNe6BGDh5vRaNuneSqCRdo7Y4__vw142h-Pm5258mZYIaWGOhFbckYkrKvkrQUl7UExq0FYGCd-GST3k3PYzXDmAc4_j25IIgNG8ngcL6pcheGwkyr9md9x2yR6CzktteHZnxK6dc6T8ieudmV1kbf1arB1e3LELMfJjh_InWQuVN6OnCWhLbttgTRHP9lcpve7_OEWScyMuMkdLja-KfIXnKdG16bN5amKpeB4",
+          "summary": []
+        },
+        {
+          "id": "msg_0d243bd3887ec721016af72fc5de008194b6a36ae03951fb25",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Muzzle\",\"summary\":\"Muzzle has four members (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth) while Primus is a three-member lineup (Les Claypool, Larry LaLonde, Tim Alexander), so Muzzle has more members.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1242,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 121,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1363
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Muzzle\",\"summary\":\"Muzzle has four members (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth) while Primus is a three-member lineup (Les Claypool, Larry LaLonde, Tim Alexander), so Muzzle has more members.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1242,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 121,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1363
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a78dc4d55429970f5fffdb6|fixed_sparse|refinement:0",
+    "attempt_id": "9651be619d84403793d7b8e8c633aade",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0005525,
+    "latency_seconds": 3.3581812110005558,
+    "started_at": "2026-11-13T15:41:55.203070+00:00",
+    "finished_at": "2026-11-13T15:41:58.561226+00:00"
+  }
+}

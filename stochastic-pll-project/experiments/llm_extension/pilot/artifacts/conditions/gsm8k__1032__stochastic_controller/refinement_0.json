@@ -1,0 +1,199 @@
+{
+  "payload_hash": "f0e114cde735dde34c1021f58d24f0244fe0c504ff8abd77984af2ffb7762cdc",
+  "logical_id": "gsm8k:official_test:1032|stochastic_controller|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_0e0b9d567c2a1dde016af72b10d46c8195a991f4ff0e8a7418",
+      "object": "response",
+      "created_at": 1794583312,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583315,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1716,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 536,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0e0b9d567c2a1dde016af72b1286e481959a7ed735e805acc4",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9ysTWTRAUhywlAKW_uXhNcc4MoNvoSrKwFyXQ3CsPZfuoPAucGBaAep_T3NuXlYswcKLcncJrwHJlPqsvIwk0-kJTEDGnTKYZwRK1F9SkWKNzb5LKcPqeEpCHFN3BmZAVuovRJHGBaHVjnaUFJ7ZF2-Lzt_qZTE2y3X7uskSw3IPLS1JJSSajU8rf_DkrgloKdgRzEAk0_QD9gcHH9XZr8Q9B9r5JuRlLjMIYmEF0Y8AZlIvM7niRzKuxZ88bwyiWcxNkCCeu7gv_ZyWJ6UXgbaeNOSjcLEidtkJssVrrtNqz4WQqZIuLi-tHqGvOnpFxBJ8mfceiII8xh0CR4jZNcRgXk2wlC90b2xmd1U7d_7VEqOobEBgLVf2W7inXS29fSd-vpiYmXfMmXOAgAig6rcPVI5l47iA4I0WWDPtAyYtWLetEBX7-sjj6tG9rELtWm6tMJOYtMnJo5J2sTTtzdb44QvE6iBRO2Nh5PFIwmoHZbN4jW_-8SA0u8hTWWb7xqhOQCd2LQLRhTVk5WWAJrJ6ZoYq-AXzw9xzEtXX3OxQ5PoZZOLWPt0pbgUc_f2EDCizLoxVMqTBv9ox7F9ovI3Gm16ihIk6bJdvCN_wn3SDM2-lnIOs3yK4k0jUrupXFRnh4hGvFHSCUmmnxTbBhMtiuY_uSSbd1d4_SsZTssewQJZVI2PSyU2cAG8T-82sNGqvi7Fxo4pLBQZLWw2B0yDKwL3Rc0vH3vIZRYCNNRjHCFDsnmMD2qB30A7HezBxmpNzPnL9JDcCzeFJ5ydZ2QyLcXP5ElxTHApUmogvQ58Ijn8HKtwDvZyvtQUzWj65ziL6C16NKZIdo0Ch_8SWlNmMZI8I30l_zYTuD0jU00kZewoDDraZx69D1SswLaf9nJvqzj0bcltyW3y8niImk1NKsg3tAzwPB5g4E5PH1wDgqTp6VhN4J8Q53deHhTR6vV53-msodDFlVMPpwYt-E1wl-N-YtmcSB6iim3IzkGPyUJyhmOjO2YqapAsTcwdUllTOUqcwBIzlfQuiUBICb1Nnm22AoPQYao3nPckHR3TbjsSUCB2U27O-jtSt9d23T3l6OhvwSsOUhwjbYbmXjP_DDtkbSSL1lvxsMtFl9zSx7v4lvxQCJRVvw_JMJM6I9ga1ouBIvtQ-7xIpXxlwzsQsyS7ESudh1P6tlJp6XSfcGDuNEGHWFHev8LkEiSNF0YZR-26Vz1JuvHWtMiazPu0G8nS6EBDIMSEbv5nTO8FBymVXdwhk4cUaYWWVbR_s_-eMYf_peKpk-XCZpaH_nHPSa0n0Z7k8q4auWssAKSXuKaOF8H4x94iGHy5v_App3u_DU38EDbxLX48uZT5R9EHoru9MZMrdhWXKeIKx4HId5aIpTJQBGzbQIukz67qQQSxuiwQfW6YJg_6t0mCowBrryk59IRyXEXDfMg7FqqfJ4qhUiTfQ17WcpONmTpt-9bU-Zpr8lLSSoUnTkVW1ITW0-6TKE8P2uls2BIpWaB7lSxBZq2LvJ3PwQt__34udahs_qpBLXXm6s1J2fuQ7gZUQ4NGudrT7cGaiKP5Npoq-MTeLPx5NDzN8410R5pghfH0tmR-1ruiCe4DK4c5KgPnXkVItJuVDIhQAlrmPsixbZ00zzTIEiHz1qmwpWtThS1gK3bQ65g9HNrlfV5U48B8p9ml7evg4ZsQOxIEFbpKvD9Il2J43OJ8GsSYr1kFvuvGQh4NtWDEcpmC8Mac9AYyfKVdTTxFASid02g_Yazcea3SiCHU9S-NCwYRfsMwDY8CCQvlN7A2VGMGIsz41zEF0dUXupp28rAhbS7n3fWbI0cfl0lOBnghFNeC8UW6a2LqPe44Fzhv5uReUWjfIBM9PEWMUQA_VbYJZTTA58vJXP-6I6A2thw1jfX8V4-NBfap7U-Jz5GFVhkXYE8NIo2ekZS-fkuc4kt_BTvGxWf5EvUTmbRipPQBH7Kr02vBqf89knDlWwAnY7T1tPa040rKjPQYWoyB8HHgYe-isVjFz5Yz_dAqflFBK9aoXXxLVmY0zZXiDHI5wXKCzZ9nwdRekt-Jf3rWG36OMeYk1Zqq0vvhEgM5vDGr0T7CZIshJp8Ywk_FYoeBl5mD07q0e1Kf8hOFAewDaU58RAY0nQTBnMWkZKE1IqlI-_gsIMWW19yOhC8cjprUJBd7hyyN2Ht8LB7cbKd2aYFWQqGWTFjqKl5TfSDNMDQOmod3eelfnkwhKeoeaFIfExl1m5J2Ca9i24uM3H5jhOWF5ke7OYEpf3cxaJxZ0VDfnf0fOKdTgWJuAhJQkjjOvgBd9OHO7qHayZZZQ-9L5T_FAE-B0pOFORua5vf3gbnLAr2mkZtEgrpLEbayDIanq6uzGWZbDdYeLPDBf6P_UHl_ZxjoV1yvneuGCw1NhIPZVEDxxcmZCfexVVSjhuPOQVY__bh9Ua8nWWINUAQ_WPb7GdV6743XxKIxGuDvZgqGc-kyCREZB9vG0",
+          "summary": []
+        },
+        {
+          "id": "msg_0e0b9d567c2a1dde016af72b134c3c8195bd2d72defc0c6d9d",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"450\",\"summary\":\"75 large beans is Grandpa's capacity. He can eat twice as many medium beans: 2 × 75 = 150 medium. Each medium equals 3 small beans, so 150 × 3 = 450 small beans.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 276,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 150,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 426
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"450\",\"summary\":\"75 large beans is Grandpa's capacity. He can eat twice as many medium beans: 2 × 75 = 150 medium. Each medium equals 3 small beans, so 150 × 3 = 450 small beans.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 276,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 150,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 426
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:1032|stochastic_controller|refinement:0",
+    "attempt_id": "4681cab78cce41bfb1f3c38c9f221e5b",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000369,
+    "latency_seconds": 3.5782780399986223,
+    "started_at": "2026-11-13T15:21:52.193487+00:00",
+    "finished_at": "2026-11-13T15:21:55.771760+00:00"
+  }
+}

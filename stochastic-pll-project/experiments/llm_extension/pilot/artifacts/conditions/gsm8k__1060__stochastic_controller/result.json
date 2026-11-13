@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1060",
+  "source_index": 1060,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "31",
+  "final_answer": "31",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1849,
+  "output_tokens": 1087,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026362499999999997,
+  "latency_seconds": 21.464378276999923,
+  "wall_seconds": 182.43644649699854,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 404,
+    "utf8_bytes": 410,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "31",
+          "summary": "Becky = 10. Let Jake = J, Becky = J+3 so J = 10-3 = 7. Silvia = 2J = 14. Total = 10 + 7 + 14 = 31 slices (out of 4×8 = 32 available).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"31\",\"missing_response\":false,\"sender\":0,\"summary\":\"Becky = 10. Let Jake = J, Becky = J+3 so J = 10-3 = 7. Silvia = 2J = 14. Total = 10 + 7 + 14 = 31 slices (out of 4×8 = 32 available).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "31",
+          "summary": "Becky ate 10 slices. Jake ate 3 fewer → 7 slices. Silvia ate twice Jake → 14 slices. Total = 10 + 7 + 14 = 31 slices (out of 4×8=32 available).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"31\",\"missing_response\":false,\"sender\":1,\"summary\":\"Becky ate 10 slices. Jake ate 3 fewer → 7 slices. Silvia ate twice Jake → 14 slices. Total = 10 + 7 + 14 = 31 slices (out of 4×8=32 available).\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 259033303055074272326792403560740963935,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 2.1920429860618875,
+        "proposed_state": 0.24261469977333025,
+        "state": 0.24261469977333025,
+        "probability": 0.25809217148507185
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.24261469977333025,
+        "target": 0.0,
+        "drift": -0.2911376397279963,
+        "gaussian_draw": -0.9916524658963483,
+        "proposed_state": 0.10374512041610885,
+        "state": 0.10374512041610885,
+        "probability": 0.2373969696691492
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.10374512041610885,
+        "target": 0.0,
+        "drift": -0.12449414449933062,
+        "gaussian_draw": 1.3392724151781092,
+        "proposed_state": 0.23952599934508778,
+        "state": 0.23952599934508778,
+        "probability": 0.25761931339889405
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.25809217148507185
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.25809217148507185
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2373969696691492
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2373969696691492
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.25761931339889405
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.25761931339889405
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.24809486891860844
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.3348114730276567
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9334005235059142
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.15391313780905058
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5927202849141269
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6468527217100083
+      }
+    ]
+  },
+  "initial_answers": [
+    "31",
+    "31",
+    "31"
+  ],
+  "refined_answers": [
+    "31",
+    "31",
+    "31"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "2a1542610256947b27de6a68aba8509de33fd9b61884ba3a546aa036cb8a6f69",
+  "errors": []
+}

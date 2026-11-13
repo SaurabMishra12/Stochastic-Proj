@@ -1,0 +1,199 @@
+{
+  "payload_hash": "4e27406bf02f1948038c4487f8596af106856be0f43f04652e24b1ec52389e54",
+  "logical_id": "hotpotqa:distractor_validation:5a8aee2c55429970aeb70338|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_034f5109d99fa85b016af73d982800819588d4ed5b46440a01",
+      "object": "response",
+      "created_at": 1794588056,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794588058,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 7090,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 540,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_034f5109d99fa85b016af73d992a788195b2a9174c9192a57c",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9z2a7HncQSLJts0rGAvxd3q7JSSfjevKG30wKK3-YNhERCYHQhB2_oHhO_vk6s39Y579PvmG0M3vhQzPXxiWj_V4glANZHMa-woNjqdbh42lBrYwvKP5UfYrua76l-UXXqA0dplE7EWJMclWDtHvikebcpDGYVkDi0lkK8fq9dUK7BdieDSinsIcY3y7J64dww61T5zaT-kT6UfaVrk7k4A3NvHABKkWn789Q2XIOUnnZw7nT8057r3gwdTDbP1eu0t-Bj-qGOcNsOWzFnIRIUV1Khl6HQ9xqqyc2fgfznNDm3_Z92pMg5F2Yi2y3LNjfPKBhnheLtxXm9Nk5Kwqm7n6qPKDRMdO-LsAKTG0Zje4GLSmRHbVG58sMWNxPTBLkYE7dll2tX-l2ut_8o8Ydnu7rL8qDbQ0Fp7nzDWrQuXMhGxDmBep2kPT5VlxKuZ7it7OdYpE_k1QeEbIQmPVhJX4Fk3XiBt_XXld6Y282itIcf2jkBxlB_oluuK3isfhg2qM9nmgwU1awTAmVDY8wB-02xv1CUIq6Wjb474TKe2dAoq2ppXBNEw130aNf3YVtXwnXIavTjKjtbjL3xeGO2LmTdVyZxn4swzfxgvBlMVZ6J1UPARIjQyjSQM72Zo_omtkv2Di-1MoiKMMFdfR2EP8TkImaIrFSwDjgF51vgQghq8XsdTim09u46Hn52Pmns8tCOPTlkECg0Ei1PresqP_UwTaFpB98R1ZtSRgLC4YvWAAPJZKRtDv_vsR7weMUbZGNr_yhcaKH5dd8syHdYDXwrVMgcl2PTviLnVKj9KU940a47IA6DSKz35Uj2oG2ity3jMeW4TXKQ9l5xol0_-jR0CXDngbedZLZ7k5FLQuMtduw1_cuH54Bd-A-prPimX6ksvaBuR40hTMC1ae61VVK-JVUXuKYYZHxUeBlAoWX2DMu3j6Wf7GXcZcmCdKIkTzyfehjCmFgK8qDN0giREYawZsKOd-0Vk1mCuaC42gvUhnOWktrZFSiHVyatvIHp6s7ZxJut9jwixBhGbYybS_xtyc39bUPgIMz_7zgivnHQczLBroU4S8CMhBddqMt-67hrVf5Zbdetp78WJ1giGoPyJWQ9PhD2g2e5aWcyyApzhlg-nCL2KNfqbGp2WRu8F2dzifVae4PNl3f5P0ZIy_6IAjFT53IgpUSU7D85ACHhVbHOS2qH8y0w0P3JPpxIPOwkp-6x3-9f8qOLSSFpbKVkqG4vvc2ZFJL6Vo9iG9t9RSMoppSrhv5UZ-eM7wVDu9zvVNkQpbbA6aejK9v6x4eO7x21SekKdZqzNde_L9iGVUMjHm_UvaCZ6IICL2vDtJJ-ohpBzDtSMR6vKfb1rwRalAKiGURXbciPHih85cU9iUP3h6fcS-RRInL1WyLutCILO1LgXKX9cnOT2cpzdN6sADF0RiSN4E0a17vMZB9jngwJ_6907F1a49XAfkr00SvIZguIgkanO3P8xUPKgzIn3_W8p16MnklqVUAEdR-1Aohsz8M6QTBDS4N10Vw0T608D9mSUuhItQUEYBZ7HM39Gar6O0dHRyW5URSegnuP6iCjL1SFIBE7wpR3RVLc51gykd1L_lUmfEgTcOiyxMin0d0wQ9Ky-FGHD4UFbYldtliQ_atcee9rtLZC_Qjea_6x1Fl_P90awp14KxJce9vJQwwqsReqWf0k3y97D4JbKDXU8WMVHBHCuIgdYUMHnIbnjeakDzvht8m1IUgtvhEov42hl0oZR4ldkTL6DbT0RCqNh-FfHf05w6lXqWFyj6PhaOoFSe3_zemrnhHin7fPrcTotzyaG3LaTfw03TdYUoluBQi8H6VLNzdFMbwRfc9yqSMch_JFdD9qDVGWKoURNTq-Q3dEZCVWBfLGOLQxKPAeMo3h20BLIbBegAOtfJ5hhXPPkbpATyc-AgAwOL9KjnFKT2IyZzwSI-e91ZWUJl-DUcGl_uO6YXBg3BUaYf7hb3kWqMB8IRzD1LE_YVTa2rUN8xQbwq4D2IY3vD5-AByPdPoDxAQypEA4hRMcBA5fs0Uz83Lj3XLHt7sjXfmy4H3BaeftL1lAwQ-BWP87BC3KCquDebNIDsOrMWlQgSXfA86NYzDr4a5VVUXr3g44D0Cnkq1KUJgthAY7oKFZb-6GAD3haGLQ3x7yN-mXI0v_vuyygyYoHiy0YniyStXCPhqWHDNWBwR4Y9mGBOs6fzuQmZSKKTAc48Ijj_CUPA6RNW_9t-DFZQhggY52fjaqOlMlA4HzKzKslbnUfqmgKl-dtIWJ3AsjZVOC26p6Fp",
+          "summary": []
+        },
+        {
+          "id": "msg_034f5109d99fa85b016af73d99bf4c81958295073a5f4cffe9",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"no\",\"summary\":\"No. The context identifies George Duran as a Venezuelan-born American chef and TV host, while Ara Babajian is described as an American drummer and member of punk/ska bands. Thus only Duran is a chef; Babajian is a musician.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1506,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 138,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1644
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"no\",\"summary\":\"No. The context identifies George Duran as a Venezuelan-born American chef and TV host, while Ara Babajian is described as an American drummer and member of punk/ska bands. Thus only Duran is a chef; Babajian is a musician.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1506,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 138,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1644
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a8aee2c55429970aeb70338|independent|adjudication:0",
+    "attempt_id": "83e8e31e7d2f4a9bbd815b98cf01ad68",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0006525,
+    "latency_seconds": 3.056471463998605,
+    "started_at": "2026-11-13T16:40:55.561584+00:00",
+    "finished_at": "2026-11-13T16:40:58.618077+00:00"
+  }
+}

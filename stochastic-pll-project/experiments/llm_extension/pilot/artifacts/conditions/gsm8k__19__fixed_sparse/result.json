@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:19",
+  "source_index": 19,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "6",
+  "final_answer": "6",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1966,
+  "output_tokens": 1173,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0028374999999999997,
+  "latency_seconds": 19.197838078998757,
+  "wall_seconds": 232.93370127800154,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 662,
+    "utf8_bytes": 662,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "6",
+          "summary": "Total allowed time = 12 miles / 4 mph = 3 hours. She used 1+1 = 2 hours for first 6 miles, so 1 hour remains to cover 6 miles, requiring 6 mph.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"6\",\"missing_response\":false,\"sender\":0,\"summary\":\"Total allowed time = 12 miles / 4 mph = 3 hours. She used 1+1 = 2 hours for first 6 miles, so 1 hour remains to cover 6 miles, requiring 6 mph.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "6",
+          "summary": "Total required time = 12 miles / 4 mph = 3 hours. Marissa has already used 2 hours to cover 6 miles, leaving 1 hour to cover the remaining 6 miles, so she must walk 6 mph.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"6\",\"missing_response\":false,\"sender\":1,\"summary\":\"Total required time = 12 miles / 4 mph = 3 hours. Marissa has already used 2 hours to cover 6 miles, leaving 1 hour to cover the remaining 6 miles, so she must walk 6 mph.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "6",
+          "summary": "Total time allowed = 12 miles / 4 mph = 3 hours. Marissa has used 2 hours for first 6 miles, leaving 1 hour to cover remaining 6 miles, so she must walk 6 mph.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"6\",\"missing_response\":false,\"sender\":2,\"summary\":\"Total time allowed = 12 miles / 4 mph = 3 hours. Marissa has used 2 hours for first 6 miles, leaving 1 hour to cover remaining 6 miles, so she must walk 6 mph.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "6",
+    "6",
+    "6"
+  ],
+  "refined_answers": [
+    "6",
+    "6",
+    "6"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "41f7e5f1ae850114781f328d22a8044cae763a98b42676138cc2307241e96c27",
+  "errors": []
+}

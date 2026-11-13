@@ -1,0 +1,190 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a75d35d5542992d0ec05ffe",
+  "source_index": 6011,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "toppers pizza",
+  "final_answer": "toppers pizza",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 8912,
+  "output_tokens": 1009,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004246,
+  "latency_seconds": 22.363468770996406,
+  "wall_seconds": 228.73169438399964,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 252,
+    "utf8_bytes": 252,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "toppers pizza",
+          "summary": "Toppers Pizza was founded in 1991 (first location in Champaign, IL), while America's Incredible Pizza Company opened its first restaurant in 2002, so Toppers Pizza opened first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"toppers pizza\",\"missing_response\":false,\"sender\":2,\"summary\":\"Toppers Pizza was founded in 1991 (first location in Champaign, IL), while America's Incredible Pizza Company opened its first restaurant in 2002, so Toppers Pizza opened first.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 105637327340462029089618897528557095875,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.2935225926929666,
+        "proposed_state": 0.032486997816968476,
+        "state": 0.032486997816968476,
+        "probability": 0.22723146450275614
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.032486997816968476,
+        "target": 0.0,
+        "drift": -0.03898439738036217,
+        "gaussian_draw": 0.34293956055828334,
+        "proposed_state": 0.06654501196888198,
+        "state": 0.06654501196888198,
+        "probability": 0.23205138477219323
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.06654501196888198,
+        "target": 0.0,
+        "drift": -0.07985401436265836,
+        "gaussian_draw": -0.5156085963772142,
+        "proposed_state": 0.001492196432610761,
+        "state": 0.001492196432610761,
+        "probability": 0.22290685230534782
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22723146450275614
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22723146450275614
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23205138477219323
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23205138477219323
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22290685230534782
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22290685230534782
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.4671200719356692
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7686555261517176
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.5823584051424581
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.5071157266058225
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.1526869377753176
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.39646188002677285
+      }
+    ]
+  },
+  "initial_answers": [
+    "toppers pizza",
+    "toppers pizza",
+    "toppers pizza"
+  ],
+  "refined_answers": [
+    "toppers pizza",
+    "toppers pizza",
+    "toppers pizza"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "46233ba2acd68c3b3ae28ab8e690a21d900a887ccda0a28317d987f9482f58fa",
+  "errors": []
+}

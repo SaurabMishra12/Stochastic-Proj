@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:202",
+  "source_index": 202,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "100",
+  "final_answer": "100",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1726,
+  "output_tokens": 893,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0022175,
+  "latency_seconds": 17.46747189600137,
+  "wall_seconds": 233.17243400699954,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 556,
+    "utf8_bytes": 560,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "100",
+          "summary": "Multiply acres by tons per acre: 10 × 5 = 50 tons. Then multiply tons by barrels per ton: 50 × 2 = 100 barrels per year.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":0,\"summary\":\"Multiply acres by tons per acre: 10 × 5 = 50 tons. Then multiply tons by barrels per ton: 50 × 2 = 100 barrels per year.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "100",
+          "summary": "Compute total tons: 10 acres × 5 tons/acre = 50 tons. Convert to barrels: 50 tons × 2 barrels/ton = 100 barrels per year.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":1,\"summary\":\"Compute total tons: 10 acres × 5 tons/acre = 50 tons. Convert to barrels: 50 tons × 2 barrels/ton = 100 barrels per year.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "100",
+          "summary": "Multiply acres by tons per acre: 10 * 5 = 50 tons. Then multiply tons by barrels per ton: 50 * 2 = 100 barrels per year.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":2,\"summary\":\"Multiply acres by tons per acre: 10 * 5 = 50 tons. Then multiply tons by barrels per ton: 50 * 2 = 100 barrels per year.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "100",
+    "100",
+    "100"
+  ],
+  "refined_answers": [
+    "100",
+    "100",
+    "100"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "b94c196725ef108e66b5f8dda878de16a7009d5f6cb4cb28c27f66e982f8bbf1",
+  "errors": []
+}

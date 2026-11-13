@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:986",
+  "source_index": 986,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "70",
+  "final_answer": "70",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1847,
+  "output_tokens": 1102,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00266575,
+  "latency_seconds": 21.73784469399834,
+  "wall_seconds": 182.35568463899835,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 172,
+    "utf8_bytes": 175,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "70",
+          "summary": "Each basket: 3 petunias × $3 = $9 and 2 vines × $2.50 = $5, so $14 per basket. For 5 baskets: 5 × $14 = $70.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"70\",\"missing_response\":false,\"sender\":2,\"summary\":\"Each basket: 3 petunias × $3 = $9 and 2 vines × $2.50 = $5, so $14 per basket. For 5 baskets: 5 × $14 = $70.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 232298010335318851205082102611687713643,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.5826370501737055,
+        "proposed_state": 0.1751658225771682,
+        "state": 0.1751658225771682,
+        "probability": 0.2478956209509393
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.1751658225771682,
+        "target": 0.0,
+        "drift": -0.21019898709260185,
+        "gaussian_draw": 0.6012329479195136,
+        "proposed_state": 0.220690217059615,
+        "state": 0.220690217059615,
+        "probability": 0.25474795607361667
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.220690217059615,
+        "target": 0.0,
+        "drift": -0.264828260471538,
+        "gaussian_draw": -0.33670926263153217,
+        "proposed_state": 0.15694050474076005,
+        "state": 0.15694050474076005,
+        "probability": 0.24518723236182544
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2478956209509393
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2478956209509393
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.25474795607361667
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.25474795607361667
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.24518723236182544
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.24518723236182544
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.6198920882045847
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.5401611935801937
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.6831412269040276
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8870405258107513
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.11230610777260308
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6617454799999092
+      }
+    ]
+  },
+  "initial_answers": [
+    "70",
+    "70",
+    "70"
+  ],
+  "refined_answers": [
+    "70",
+    "70",
+    "70"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "523b9dfb68a73765408ce2dd52e565bb6db79bb523f6b78226a174e774eb6fa6",
+  "errors": []
+}

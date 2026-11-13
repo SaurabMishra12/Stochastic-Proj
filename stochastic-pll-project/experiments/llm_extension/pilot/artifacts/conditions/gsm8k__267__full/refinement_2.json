@@ -1,0 +1,199 @@
+{
+  "payload_hash": "83ae549cfceae2650984f38015203b6d1047719690cfded55c77badfbe24047c",
+  "logical_id": "gsm8k:official_test:267|full|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_04a6662cbcb0a87a016af72cf431088190945e241cce6cb3de",
+      "object": "response",
+      "created_at": 1794583796,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583799,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2366,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 853,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_04a6662cbcb0a87a016af72cf5a6ec81908b01101fa7294789",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yz3YHKpTcq6Jb2-zD4G8A-scr8zwdhbgP631uNPUVuTuDkz0aM7pIrQzIxpWA1yZ9m2chLiR0BQnHAnTxxC63TT3I7PTW5iyCJ7ZbSw87wIVEpNh3wBILlW77JRIhnAeGBVBxfjnhHADy2Gx4-r8KEKtJk4y5VyJ0B_6iHy3CAm83UDIAli6Iu0HdoHs0aFVw6-QaBZoswmuxjUF5IcGRmiO0vk34WGzzvvEAbzc2yNPByJLSnaTedHKcwsgYA_rEXpBTMOBmA0HEwy-ftSI44UHDKE_4-boBeumnJmbhhlVO9o1Yxl70clitDEEZswfEn2IiBQeJw_FFudKgBEuYQ2dofMOwvsTVC3XjpSciWDOpFgu_Ra5AeSMPXVOwA4X0h8M9KUtBuZzqMJU2JgHDJWRC6sgcNQJMC5iewftJ2MWyWlQsVJdnaB_99EdlvoophQgHQeyoFjYJIXzLrGXec8cPDhDlwUXhojDFrkRDQcQSPQFrhui5AmiapwJ1lYcv_JsBqcbtZ24uX_vjxNCSjkrcjHAAzIBnuIzy6M6GzTPNyHU1_hVogSJ58k2I4WgkpVhUgUkrq4JBiY7MUWF78S0Njww3xv6wJpKo7og5pSg9MxwPHahJvFf5CNauCBIlUKFtNRXOnUXcxIiwPseTB-3t80ldNg-0KUOPuT5i7RgvC5FidrxONbj7m1goNNmxKLqitnnp2aCQSOmRFbGQZ6FgxlN9ZTdlFu0H3by4NGeWVdZQ9B_XiowJFBeLgYqnfIHIVCjU4wA-btUqH1UsomWHA5kbepx0FoeChm7oCVeSAQhXzh5tmk3IS9ouNz6ys1_uIcP7jq_pALsKrTucDO_JvuC-AtWBbvfJyKN7tf1oMLQOER_gzmjxp_0Jj4Teo9XNotEwt30plxDd1r1horxMQcsxDj5DPoS3Sd7LyKrUaMQtoRWtdcjzCQDe4mx4RDpT1hi2K8uQEQ_27mNzc0WzNqXixJtZ9mqyjD7Ve4m1sp-emOehaNw8CVzYwuh0r2wPe42SWeoz0tG-vQTOxj7J6f9uqIX5rV4C3QgSAAmHkwKfFnnI_d9vzpfbrhTqwKVqtquHPyw87fOH6oBc1KqjTxG1BovuRuClbaK6KqdSL0756TWM5o9FOacFwfm4FYkolJwfLfV5fD9CgDyR_HWwNx21J9Zg-AhQgzSXkElfJkjgToqxSxVg9NEi7DjWLBVkQydLz5YWktlh0DQGUi_tZUkU6xGwMO4qo-wOjO_V2n7qDy3gq9LEI_Ajmo62rm-olFR3JIJGchGK6iB1iqwgG7qOXx1X2v-39c3IaQdYEbJl3k4cGdfJw5YHfjVQju6T384P152XU9ArYG0EVP4xS07WL-kBwx4dvpJtL2qv9e8kSEpqJdwUt_WUKNnCT4tfhxQSHp1jzG8vuO3rmrTNh5tkpmghOIMjsHcxJmpqAGFqr7ssRiq-R5UHh6FkR6Ua0KpyrTCUMV9mxVdantQUo9pkiUdiJiFBReNTR5eV5vzNNo_zTVcL-eGVaJGnCnb7fQ6bYs0NHke1ZiVZjMmr9_8y6FDQ5RvFYhvFZVgEZK_lqu3fELXY16tGmK_N4pLEQG0AnsG5bS3EBhQkm4v1L6TMzR5jpAFfuZ5By5NaX30H1caL9-9_dYGkcAxCGDccOJpMfN5sZacouPBtvklrz6nRsC4LSPgRdoqZNlLjjaGpUwD5UgmFEKkgIB7vPGUo3Sgw0jNHEd-i1Dbjne0MydZVPDL1gJTZO-nzEM-LpU632Y3Mb98QLAZBQpcE9M2Bm2ERjljiwph2saw_6D19Md5TDRq3l-9yHkRWOJst4PGWvmXz5bOVBgYCL-ZzqU8FGyDCE9nrHKf_IDs9gyuPDizkuNvaBKm6IuM8dGyEJCdsWDzCdoRZvPTCblcchqNp8CmdAupNlQlnjbi68Bfzv-140DXcB3NAv8XDAlrployMZD0eqce_FZQC-EjwuyW1OEtVfFPmdnlILA5rTKpfJoB00NYhE2cAyA4_0YJf0NEt3hRw0izos6lTwGhEXaaPcnfylaFPEM0YEI9sW5uDsKq9wSyDNPAqE56nnr-zTKuJ-UflMhMkzlgxOGkDwuuhWPEdFtSekvmCbx1wjFtyeQzGZ8TSzA5x4lBQN4eg1loYuVv8xjc-7-2foNic2ut7bXeh3MpSxCb-qGOvntxW61G0PGhEDkWQO3sQFlFuuAG4uRM44epLlJ2eP1fpIn4ubaTTD_2KheyXrItiRT3KcmoIILJaxRpdkS6BEljsesEF5skkYp0rnQl7F65CzY5Rm-ezWE8I4F3wc3iNqKV-fvjPSzahiilrOgWsqDBTdcJmZpQrp9qRpqveDKgHxDxPC3Xh6z_n_wSrGspP9Mv32VcyCB8OuDcW12z0X-ECX12SCOHLH4DLMexpdXfO7Jt2dKwA-vuiZe334QCNbWkPkR5WSBB1uGc_EMsbAIcoxoa-QNy0OoUtuc7Bs1LYj40FJLgGcm9jmb_XFOnVxPXCpBGZf7Mzbx6pmdmJrHG5I1RNMysQx8DrEP-h6cOiz3GTQs2XlwcXiMckkvXbnoM9yIH6A9ZOerbCOC-2H5tAl_bfE0FVkcNoS7skZIlW631izihKYUhs1irFeo1ymw1bKJSnhTMMgyIS6jw-e8e5j9BKjGEnjnhfK_7g4ufxKhEjnLXCNhYikO6nmrZwW2F63yp6wYh17D97BebiCDVKcvKpZWMCh6vVzx8BHF-5SBB-pOeCwljVwndufT_tqByIlIF-6FNzdn7j52rpO562TLqw4w6VjEAYpGZXZUlmhJMCVBCZNbjkSxiM8VfWHrFuD8xe3KHgs8dgl2ljeTR1Xw31TC0M2W26FzpB-K5g49HounW92viBZxTnBKiD4E8Fs-zz62zBWcKYf13P2TacjvBcSwzP4CzMUHnG2wSS5d5TxJBFR7DVk4D2ao5NJMgFvyxs-JoYK4biab1Z9Kgo2gEdx-PirBuD04EEo2Pt11Q4aMQ6EXlH-t1mpuTPt7ujKGepX7th16ohc-PLsTsn2pO4CS3D-OCbxoHXBS5uzYmmPHcy5cIhgKvz_17cvuVLTsb_vi-_G0z_xogDL4i8jaZLCa3YyDUUw6wGrM7vvDcYUMKC_6ij5bMUBi8W3vcpUeFvRqSLHb0rHK-b9iIGBuU1W4rykx_CfDGqaF2bCNOAv7VBf_h_FTuMKrcdS223w-4pktwmrM-2yaytAaixxzrCG5-uBR7Td19apOXQl_dr7Y1w8ZCV5ROXUnKEmycJRBFgE82Ld19XuNB65dlNI=",
+          "summary": []
+        },
+        {
+          "id": "msg_04a6662cbcb0a87a016af72cf6b35481909ce1004a31409aad",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"91\",\"summary\":\"First stage: 20 min to reach 300°. Second stage is 40% longer than 20 min → 20 × 1.4 = 28 min. Total warm-up = 20 + 28 = 48 min. Cooking time = warm-up − 5 = 48 − 5 = 43 min. Total elapsed = 48 + 43 = 91 min.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 497,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 260,
+        "output_tokens_details": {
+          "reasoning_tokens": 128
+        },
+        "total_tokens": 757
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"91\",\"summary\":\"First stage: 20 min to reach 300°. Second stage is 40% longer than 20 min → 20 × 1.4 = 28 min. Total warm-up = 20 + 28 = 48 min. Cooking time = warm-up − 5 = 48 − 5 = 43 min. Total elapsed = 48 + 43 = 91 min.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 497,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 260,
+      "output_tokens_details": {
+        "reasoning_tokens": 128
+      },
+      "total_tokens": 757
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:267|full|refinement:2",
+    "attempt_id": "f944594021b44f54ace1e6cf4d3f491c",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00064425,
+    "latency_seconds": 4.073400786001002,
+    "started_at": "2026-11-13T15:29:55.567188+00:00",
+    "finished_at": "2026-11-13T15:29:59.640597+00:00"
+  }
+}

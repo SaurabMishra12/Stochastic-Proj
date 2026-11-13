@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a7dd6cd5542995f4f4022cd",
+  "source_index": 3252,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "pulitzer prize",
+  "final_answer": "she won pulitzer prize for drama in 2002",
+  "correct": false,
+  "f1": 0.4,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 12944,
+  "output_tokens": 1292,
+  "reasoning_tokens": 512,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0058200000000000005,
+  "latency_seconds": 24.81929042700358,
+  "wall_seconds": 184.8791550650003,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 906,
+    "utf8_bytes": 908,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "she won pulitzer prize for drama 2002",
+          "summary": "The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks’s play Topdog/Underdog won the Pulitzer Prize for Drama in 2002, making her the first African American woman to receive that honor.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"she won pulitzer prize for drama 2002\",\"missing_response\":false,\"sender\":0,\"summary\":\"The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks’s play Topdog/Underdog won the Pulitzer Prize for Drama in 2002, making her the first African American woman to receive that honor.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "she won pulitzer prize for drama in 2002",
+          "summary": "The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks's 2001 play Topdog/Underdog won the Pulitzer Prize for Drama in 2002, making her the first African American woman to receive that honor for drama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"she won pulitzer prize for drama in 2002\",\"missing_response\":false,\"sender\":1,\"summary\":\"The play Venus (1996) is by American playwright Suzan-Lori Parks. Parks's 2001 play Topdog/Underdog won the Pulitzer Prize for Drama in 2002, making her the first African American woman to receive that honor for drama.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "she won 2002 pulitzer prize for drama",
+          "summary": "The play Venus is by Suzan-Lori Parks. Parks' play Topdog/Underdog won the Pulitzer Prize for Drama in 2002, making her the first African American woman to receive that honor for drama.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"she won 2002 pulitzer prize for drama\",\"missing_response\":false,\"sender\":2,\"summary\":\"The play Venus is by Suzan-Lori Parks. Parks' play Topdog/Underdog won the Pulitzer Prize for Drama in 2002, making her the first African American woman to receive that honor for drama.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "she won pulitzer prize for drama 2002",
+    "she won pulitzer prize for drama in 2002",
+    "she won 2002 pulitzer prize for drama"
+  ],
+  "refined_answers": [
+    "she won 2002 pulitzer prize for drama",
+    "she won pulitzer prize for drama in 2002",
+    "she won pulitzer prize for drama in 2002"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "a41616436a1f06f1446bb53bbf60844f8cffdb587a69ed18367af1bfb7969578",
+  "errors": []
+}

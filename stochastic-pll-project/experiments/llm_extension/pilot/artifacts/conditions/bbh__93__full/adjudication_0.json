@@ -1,0 +1,199 @@
+{
+  "payload_hash": "5459736b9083d21f5651df0875330f8bc3c5c826b0903cd9b8ea92c1afe68750",
+  "logical_id": "bbh:logical_deduction_three_objects:93|full|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0e42bed86208c111016af7187f06d48194a7315797328cf27a",
+      "object": "response",
+      "created_at": 1794578559,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794578561,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2602,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 354,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0e42bed86208c111016af7188095788194b43dd7df6159865b",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xiBBRTGvKWgQXNfTuOYsrJFL5I-QkY4rI6M2cau2sStXDQyRtE9FEuVjNLpqCBZFnubFi1gF342oGgGUNEPD9RrZRteJhru0-eBq3W_MEco0ztWktO9ayZ45X6h1pTXhBLEsnLgd-vb3a06IHc8Iivyj7qvhtmahLJXbIJ-KLHiej6zRTXaIGSfjAfiVAT4cpN0anBmTUjyw0wIxhx3OizWCDtDd4g1IdRrCwTgLdp2KhrE5NSGlA3qMzwVIimaN7IEhPTyS7_B44-8erJsjr4kOR7iXoCIj0Xlu1Cf7gj8WEaP1t38rWKvadeHdz8XRdX6Rd-5ZXkyblzTkRRy_oIsRTVyEKGS2us_ouMGYZ14GzpwyCiRNLaGYqhJSEqeW1UNJDiy_H8wfr3iJZo3CAfIW7QZehK_Xm3TNvo7TlvmEwX60kEUCYfdZFEg-Ndm3OOa6X55oy3hel1gPvcaHqnKKJZd_NQEmbdiad52o5P3dbTRh4y2yhmfnPsameqwHUIn8jIfT2SIxemOFo3lEsVJ3eA1NgGhvlR5qFMdF8F8fJIoS_Y5XWvgODJCdI4_aOnUoaBwGi26Tk7jBdU2Zz7SH3JX7ysp-MJR9ClPhLNk1rGmtvCcFu_MVVx2xG_-kF4NBqJ3NjmTISFeHWxulkt3TT7TpKNdNUUg8cjAlIn7hgY8aCLEZqQovTAyV4TIQlO_JznOAgBpO37bCPF2urZ3dz_XyndN2l4Q7Soi8oSY0KDJAlXIO9eaHw4gDfR0vJjFWZTQg7zQfp4orEYD0vAU4LdptpcOmM2FI76t1K9k28r8Ai7MnAopihNEQTRYAG_7piHOAtfklMkp6BnRwGz7f1oZTwLEnzUaqwUg1w1r_pmTXMtvzAnNZNV2wQwfyakv0DrqOY_fvx63QHnoQyMsMgD_1X1QEOHiU_bXjZaiqxIL8Gp1835LD-fomb4akDCHvn03oisOp6_L_QM2Cp5Ff27O9wfWyAKWYT8QaZ7iy9cpl94Op6cPVpIRCgepNvszNI3SRZaRb1RpC8UVKVehzJBXV5WDMYIyT2Es9obwK3CVDxb4uHnHyTuzjPkkjqC3hDKosCXYr1QZTIBNShroax6tCvtdXIMKNEkA8E354ChyofQkfYuaHljtqct9qz8m2LI_yDNlgz5raABE4ELeMJOQRyo9gHwYM6aLWh4corM9Nl5yjOIL4izYVZfIeA8a1fyVuqyEbE3yuU7XyaVW9oaYayCZeSr4wm2gcPGguzYgoEbIF7mnNXQzbUAKHSSzuGlyfOzoxZS0gacOo2eSJzmAZ5l1Iol2NSDoKND5u7j0eDQU3KQW9zeQUyhPsrIkJ7UWzA-4bS3dgB5IiLXU-T_PSqt8PepxSOKNtTYN_PrWIDxDj7qBZ5vGypsRHS9vux3PvBNjVK7jhkzLyLNKlFrwno9nN_h1lI6RACGSvsWFHaL9-kc8Ldb2gAU8j6UiQYaLfd2II96HuFXN4TLM1ypTxU03N6a26K8DAtYhJtNbJpyj04H6dUGA5aygIM4K61udUTcs4QaZ_xJrDRp6tB0K8XnemAGR07eRJzvoxBPHaDoNrONCkiDqbkMHzqFcOk_5sg28GpvP31rikbP_y38Ri-CEg0Zyk878_jcd8plyCwD3yfBU5gALj_P5eSS9uPW5hfNaT_uIbbAGC9guWEYv2gFE3RX-CKxlEH0S17_-YoKXUmJz95rmzILQIFvhdEUCbSgb0k5taqFvAznvtoTg5NE2gH8uHQH1VvvhygVfurhwhQoVsMeakLOvTfOj",
+          "summary": []
+        },
+        {
+          "id": "msg_0e42bed86208c111016af71880d4888194bee71051ef069889",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Raven is explicitly stated as second from the left. With the blue jay to the right of the hummingbird, the only consistent left-to-right order is hummingbird, raven, blue jay, so the raven occupies the middle (second) position.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 461,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 93,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 554
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Raven is explicitly stated as second from the left. With the blue jay to the right of the hummingbird, the only consistent left-to-right order is hummingbird, raven, blue jay, so the raven occupies the middle (second) position.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 461,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 93,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 554
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:93|full|adjudication:0",
+    "attempt_id": "0f7ceac948c9459ebaefe0328010345e",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00030125,
+    "latency_seconds": 4.425310066999373,
+    "started_at": "2026-11-13T14:02:37.158069+00:00",
+    "finished_at": "2026-11-13T14:02:41.583418+00:00"
+  }
+}

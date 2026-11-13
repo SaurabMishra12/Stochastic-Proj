@@ -1,0 +1,199 @@
+{
+  "payload_hash": "e4518e2b70bd95f60d61644b4e21d922c17545c377c43b9b1626e3f7cbc4e8e7",
+  "logical_id": "hotpotqa:distractor_validation:5ade0fbb5542995b365fabfb|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0552f70a19402320016af7196f868481958b5351cdc5af29bb",
+      "object": "response",
+      "created_at": 1794578799,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794578801,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 9265,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 641,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0552f70a19402320016af71970802c8195af059062b32f9e3f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xlx-dMY6hFYbxrRODVCn1nB55Kpr0_yRGhKaThHoMBa39S8CtVPRv83TP1VEjIvJ3ywiHshafQAu-nSKPdP_WbmfsmFtd_E86wWBjFuNoY4P355bpKv7eNU9-Kbh2Oezeik7xjrfAfmmDKNMqdw3dPVYoj8ty_YwQ9pZO1wGHcRCbszNOy3bQa1tLJE7NUrZVVmNMxd4PtfUUZ46_aZKCMdWBozPS6I588CZ0e6hR9YpSi0YS5x6yZbqgIv76M8c0LyD7j_uvt5m2aSQYXoH3pdVVWbUtcWexJMrPL4q69rzrq5PkALAKXQVLDeNKTLzH3SiNKhOlTzN4jNfwl0H7_tWhVUVYsTM7o_YY8rdmCCwsluIVcbYvFfpOGqTex9ksExjqI7WtNQ1EiLOkYadyCScYYtZJu-10dfi9bRHZi4kA90gI5uzpYuNp-oKvS8aU9uuo4GBFuH7HoDdf8Y3r2t14ZcqH53in8Tq3_g8AG62MB3hwlFFKW0t8iN2GoddQLSJ6Fkocx554IxiVlmmwCJOw8CMYkLnTn8NeiREHnxtMO6UmJQ51BeDVz9qSjRbqfqzczFJO7UYcmWuQCWvwP58HXShMOkZj5eHAJaIYZdgc8RW-PhldmPJlOuLwxr58e5oxtPRRc5oUyWtQ1rTU3EotzO308X17MVxy3mQnvJkhT7jTzb2Z0CaJAL_M83NHSH0eXOjDvfDTeBGExGhVj253Jh6BKCP8gnPhlSk7Ec1Z5n3Ld-v-kPiOwfQGw673UhLHJSJzq-sHiEnL7yfmMJkYfxu6i48JJKKp0xAxk5teDvjsTFNIi8prkUvK3PhTGyURvW1M1YVc5HyEUOCnI_j0-NflSuHRqcOapstAttibelhkia9ukylIcVx0k91z1PMSMFN0l5Kioey7OrkMx8HwQ4_XLV3BROpo_DKwp_DMekgXAnM0dQUNU4a-RjG3UQTpCrJb0PdoQRh7UmI3nSryGLSlRhokPXFInCA7oQdY0jodmDdK3NtpZRWm2usTl7dOHJZF2l05XI0KygpAjUiNPRPDq2qGNkZQvJAyP_7GMueP2UDXumQohRiIoX0KtemNOxxSYZQALzcpT7qD6oME7zAPnvFWmzVxLzScIFKqrgbit49hfXAIUzZT-uvYZ4U6Y3TFg9XV8Eses85iZg-7BQjEGAPID8CsXJvaniay21lW602gsY_aRrr89zTOeAp-71dQw3rXbj78aqp97lLymaYtzuvKXP8Z-_dxlaZi5DORaL1LRFIvHJkJpj7bzNZl6LOneExiBnYm6oE55soR6B3HgDBb6hqnu0AeR1dLouxR2vABVnUqrGt3EZo6-bb1Wq2NAOiPQNMllkDIfvHc1lGUh6Yi1qsiCYEKVQqKHPpybngDA25XmUWW2QRFld23up1nGuJfuM6JM7FIDs9CWv22L_Dl4mGTIV8jW04egD88LM1uqHmTkw-ar4lCawK1sxPnLpKRCmDSPB8qWJOh2hy6TaK3Ti7f-X8A09bW402X1--elqzA3obZYovOWet8UkrM2k5R-eUUAxE_x-H-zIxA2MIWiFlvwyXSIc04rkRBirWD7cVjiadK7X9Uy-GjvQFQBb173mAsuoJA6_CB91qgcjPTZ_lwqjDiVjrVsodyjXeJz42n-P0FTylxqUfgzG8sRoWIgQqHnAepoPvIQkKP3usG3OMp5uqUSPLi_QYQjHm-fGN4EHCkCJznZT3GsnumRmH9OUZu5vrRVKUgsyGBGT9QGQaMgoGexvqonVE1U3wG1UJxqHvWdpyXUU-XrIwqssNBGHOXGM9KSxkAibkaUhNiWw42TfUHv-K3xRBQHojMk-BeIalX-aLmyw8UZcylTq8Jz-mSPfRh9u1_NRCODSi1iWa_HXrAwaJNZJlrTzcI20E1yqC8dtpic_HQrmu09iPWxyMVv4YeJyrW8ikZxtTLQyP2AU0FQq3NfzHe2Bt-kcq3rFgxsDz3SZyieBgLiC2AKgmZ0wEWPXOfbbBMWR3KLvaWlp6cSZvZ6I2c0wznx3U-R3Tv_Ely0r-BiZRFH_t2wNA0BcqrVgFbQ7qlc6Nj2U0sa882SQ2C42FWqA27bwOJ3bJWmvYJf09ZRX43GwHySV9qn6wNlcm9cdQq_Gh76VZz4d6cK8UY3hQnWf9mB90sq5_snwyWnXAC6kL9L0OVaqd0SuRXgPV4R485TDBHEHYiLTopkoUWqrU3mHMUV-inKQds9lzb_nmAbi4oXhR4U0w1R0X-x5L5qZG7wDxHRlUV-s7-lW_a9eGndtnJbDCTPeq_imZ0Bt_j2Q46DiA1rRCBccvLhn_5TX5YFKbnzfqoO2mw1-B0o=",
+          "summary": []
+        },
+        {
+          "id": "msg_0552f70a19402320016af719712e3c8195904e5eb5b907f441",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"traveling cat\",\"summary\":\"The 1985 anthology film Cat's Eye comprises three segments—Quitters, Inc., The Ledge, and General—which are linked by the presence of a traveling cat that appears across all three stories (incidental in the first two, major in the third). No Smoking is loosely based on the Quitters, Inc. segment.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1960,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1664
+        },
+        "output_tokens": 157,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2117
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"traveling cat\",\"summary\":\"The 1985 anthology film Cat's Eye comprises three segments—Quitters, Inc., The Ledge, and General—which are linked by the presence of a traveling cat that appears across all three stories (incidental in the first two, major in the third). No Smoking is loosely based on the Quitters, Inc. segment.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1960,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1664
+      },
+      "output_tokens": 157,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2117
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5ade0fbb5542995b365fabfb|disagreement_triggered|adjudication:0",
+    "attempt_id": "e1b7c9cfbc9849429bdbed3e8d0df634",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000804,
+    "latency_seconds": 3.742500911999741,
+    "started_at": "2026-11-13T14:06:38.357694+00:00",
+    "finished_at": "2026-11-13T14:06:42.100210+00:00"
+  }
+}

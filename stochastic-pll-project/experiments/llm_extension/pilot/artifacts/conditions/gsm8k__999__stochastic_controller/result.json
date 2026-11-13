@@ -1,0 +1,269 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:999",
+  "source_index": 999,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "25",
+  "final_answer": "25",
+  "correct": true,
+  "f1": 1.0,
+  "completed": false,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1718,
+  "output_tokens": 1535,
+  "reasoning_tokens": 768,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0034995,
+  "latency_seconds": 24.546423324998614,
+  "wall_seconds": 183.03605099800006,
+  "communication": {
+    "directed_messages": 5,
+    "characters": 597,
+    "utf8_bytes": 597,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "25",
+          "summary": "Let each kid receive x, each adult receives 2x. Total = 2*(2x)+4*(x)=8x = whole, so x=1/8. Each adult gets 2x = 1/4 = 25% of the watermelon.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"25\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let each kid receive x, each adult receives 2x. Total = 2*(2x)+4*(x)=8x = whole, so x=1/8. Each adult gets 2x = 1/4 = 25% of the watermelon.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "25",
+          "summary": "Let each kid receive x, each adult receives 2x. Total = 2*(2x)+4*(x)=8x = whole, so x=1/8. Each adult gets 2x = 1/4 = 25% of the watermelon.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"25\",\"missing_response\":false,\"sender\":0,\"summary\":\"Let each kid receive x, each adult receives 2x. Total = 2*(2x)+4*(x)=8x = whole, so x=1/8. Each adult gets 2x = 1/4 = 25% of the watermelon.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":1,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": null,
+          "summary": "",
+          "missing_response": true
+        },
+        "serialized": "{\"answer\":null,\"missing_response\":true,\"sender\":2,\"summary\":\"\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 1.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 1.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 71984570679881625151062601154266425935,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 1.0,
+        "drift": 1.2,
+        "gaussian_draw": 1.5167231209722332,
+        "proposed_state": 0.28787048747389743,
+        "state": 0.28787048747389743,
+        "probability": 0.7271670226326646
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.28787048747389743,
+        "target": 1.0,
+        "drift": 0.854555415031323,
+        "gaussian_draw": 0.29500702332538914,
+        "proposed_state": 0.40597732315794244,
+        "state": 0.40597732315794244,
+        "probability": 0.745505228975752
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.40597732315794244,
+        "target": 1.0,
+        "drift": 0.7128272122104691,
+        "gaussian_draw": 0.5132567093698753,
+        "proposed_state": 0.5340671522880055,
+        "state": 0.5340671522880055,
+        "probability": 0.7644536563991395
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.7271670226326646
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.7271670226326646
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.745505228975752
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.745505228975752
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.7644536563991395
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.7644536563991395
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.3550840818395887
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7131764938545604
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.5040296997699624
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8362818528194916
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.4517915077812745
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6767652369731287
+      }
+    ]
+  },
+  "initial_answers": [
+    "25",
+    null,
+    null
+  ],
+  "refined_answers": [
+    "25",
+    "25",
+    null
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "485b42b0186fe73f7a5f054aa392a9a253cf9ea11e89e4bfedd9194f85b108e7",
+  "errors": [
+    {
+      "stage": "initial",
+      "agent": 1,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "initial",
+      "agent": 2,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    },
+    {
+      "stage": "refinement",
+      "agent": 2,
+      "outcome": "completed",
+      "valid_json_candidate": false
+    }
+  ]
+}

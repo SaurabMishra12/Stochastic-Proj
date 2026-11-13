@@ -1,0 +1,100 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a82d71555429966c78a6a94",
+  "source_index": 1936,
+  "method": "fixed_sparse",
+  "answer_kind": "text",
+  "gold_answer": "yes",
+  "final_answer": "yes",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 11525,
+  "output_tokens": 907,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00469525,
+  "latency_seconds": 23.76815189699846,
+  "wall_seconds": 188.966910956,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 693,
+    "utf8_bytes": 697,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "yes",
+          "summary": "Both the Tundra Mine and the Negus Mine are described as gold producers in Yellowknife, Northwest Territories, Canada, so they were located in the same country (Canada).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"yes\",\"missing_response\":false,\"sender\":0,\"summary\":\"Both the Tundra Mine and the Negus Mine are described as gold producers in Yellowknife, Northwest Territories, Canada, so they were located in the same country (Canada).\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "yes",
+          "summary": "Both the Tundra Mines and the Negus Mine are gold producers located in the Northwest Territories of Canada (Tundra Mines operated 1964–1968; Negus Mine operated 1939–1952 in Yellowknife).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"yes\",\"missing_response\":false,\"sender\":1,\"summary\":\"Both the Tundra Mines and the Negus Mine are gold producers located in the Northwest Territories of Canada (Tundra Mines operated 1964–1968; Negus Mine operated 1939–1952 in Yellowknife).\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "yes",
+          "summary": "Both the Tundra Mine and the Negus Mine are located in Yellowknife, Northwest Territories, Canada; thus they are in the same country (Canada).",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"yes\",\"missing_response\":false,\"sender\":2,\"summary\":\"Both the Tundra Mine and the Negus Mine are located in Yellowknife, Northwest Territories, Canada; thus they are in the same country (Canada).\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "yes",
+    "yes",
+    "yes"
+  ],
+  "refined_answers": [
+    "yes",
+    "yes",
+    "yes"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "2f010b886c2cba768b1afaea99b957a855e772828f5f819024f29705b2b4900b",
+  "errors": []
+}

@@ -1,0 +1,199 @@
+{
+  "payload_hash": "f9a3748509d8bebe296f448362b68c85148a8579d0f1346821134daf154b7f59",
+  "logical_id": "bbh:logical_deduction_three_objects:189|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0d4ec732afcaf172016af721afaa1c819787e676306f41d901",
+      "object": "response",
+      "created_at": 1794580911,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794580913,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2246,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 257,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0d4ec732afcaf172016af721b071748197b35fc5b540d9939e",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yGxj-ykhbpWQy3FAmqeoIozORcaqobwwScMhcgK6wIyuDKbZvKss5_kdD6cofdE2yjS3IF4cdobpoyJ7IoQstgfpARKGcrw7TqDVilQ35IXrBPlwTbhFALxOUTX9DOpUwMTgfqoEyNt0G2xYlnl2R93MrER5uFogj37CEQEwbyRz2sMuw-K4qQ1oZScWyNtL8LMg4TFdllLUDtzZlv-7uUsdPWCbnYe-WO0YYOtuvfhxdJUA8pMugyoiopaQrVDgDYZqC_Ii2WoQY3bXQ3GywzFpxwJFDA7evo1F4DonoAnoeX2FHJKO8YV6oyuQqvcR8-WXNs1KVrIjwFHsde5O7U9hYYKXnwNW2IFNKsFPgC4fzPxfFhX08iwcZR_Z8BmOCHNTzIjKa74Majth5lq_sZeAahqtZs5FQHxvUiBoRSxulHhIo2_iwuPsnDZM6Mu-jwMgzPPPFNjYSgr9-v7TBrIb2C06zW23rVvt0dDikzAg9NPW8KKwKGdQoh9rdVRQB7G7LsV8LcggctQRouCMOl7jsm0mVgjJYAC4vlRUPKY9syfDVaJMwxRiL-uhEgW5pHWPATD_El4dCE0bpKdp-dUZ23omzInaW80j_I9qBFCx3KLfYjE8io3MPUQK2M2Hni0mC4ODYUFOGwhDUrOB3GVibMi15_1kQfT0Z1FraQi0gyOTFdRerLmc_4z-7z3bi1C3v6NwUb-PMuZT9gsvrQ2oSSjINEZuZ59u4xBY4BmmgnvGGALrB9cOrXtyV3W77pcg4M0ixlfl7Rb-w3M-etXj8yUO_Lswh8GN2SWKyUNCUEImCdbTiMwNnPmKFXNsYiPiqTICI2fuADqW3-s46AWxdcKYwS1ze4Xkh0W8EV32QPWfy9g9Sb7t8HCtfHfhreF86gxy9qFduq8ymTlT1fmOdIARegwfOfba-mQLfqGeJwRGC4K6i0ZAsdCTwo3-beo-AjS_frTHL797_eBeBq7Igu-79Pe5ySaDCwMPJT-Lr5kEhYbqwRlzO4ZpY63gjWcw2A6uT8ydjaedb6K4wpMOT8RR3tfkokmZZe5C9VqywOhukHzJ1lfvqAbAHO4fWG9gAn64UdXQmM2zMmCqv0S8X1DxDiXxWT8brNy6wu6UGSzE4w3RV8ekk_wesrm2kGHUMmecTqC7IRI3dob7KNfienaCyn_8seqmsZylzTiOgkAQAY2NTcSalo5E9VCmU4-1QFcEyh1O32aImJySNj4hcoRu285MGy2iJb5avNsGfSJpWux_uGTl2rP0sUYXDDy5IO0cbhjAAs7ac-TdUgun51te8cXbMBQ9h2Xfhvwe5LZX4dD7KawQldnSAxKZ7ZuTBRqSN0UsViDP-wTWOVnZsvkZMgvYRThzlOAl2gowsgrz_6L9KOLWvyyzp29-TmLdVDMkJiQZgEZ7ezDiPVC2aBq0xCX6Lv3cRHXUOWpN58dEMx_YyyQC3NGBAcQmwZ-ew-xfmch3ZwC2KdZrPQXScVwIh-zNnjFRR48CsdjaVp04qUM8hqQ4dty6BrwQAvLYb7gM66Rn3I-OSSw8gj7z078y2CJtyVVNpdxJKUsSrb89I7VQsTNQy1ukE0YemjOnJYcErtnYcHJyw6nnTmGqX7xH3IgXou5UxvjQYndDi4v9q9t62CPY65wj6cOJYrROyL85RvOnKvZBcozxg7fxLr51h420M9w6GMjD22hFrUz4FvLMNOicmaTOZbwqngj9yCoWwF5LOtR_LgeloCp2ztwrrxed4d92n2uMKd9BV1ZHgkIt7LI5LxqzoNdU4eTMpVWGQhA8BOPJUrZFS7TnvKvv7o-xJ9avnjncqOvNiY=",
+          "summary": []
+        },
+        {
+          "id": "msg_0d4ec732afcaf172016af721b0e1b08197a58686aec24d8f2b",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"Given blue is rightmost and orange is leftmost, the leftmost book is the orange book; option B is correct.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 369,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 73,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 442
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"Given blue is rightmost and orange is leftmost, the leftmost book is the orange book; option B is correct.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 369,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 73,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 442
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:189|disagreement_triggered|adjudication:0",
+    "attempt_id": "c1e389dfc67f46c1850e047d3a445c05",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00023825,
+    "latency_seconds": 2.5275770089992875,
+    "started_at": "2026-11-13T14:41:51.023388+00:00",
+    "finished_at": "2026-11-13T14:41:53.550965+00:00"
+  }
+}

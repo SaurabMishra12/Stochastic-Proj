@@ -1,0 +1,190 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:579",
+  "source_index": 579,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "7",
+  "final_answer": "7",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1399,
+  "output_tokens": 764,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0018777499999999999,
+  "latency_seconds": 20.316749661003996,
+  "wall_seconds": 181.96723317600117,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 127,
+    "utf8_bytes": 127,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "7",
+          "summary": "Brother has 5 - 3 = 2 cards. Together they have 5 + 2 = 7 cards.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"7\",\"missing_response\":false,\"sender\":2,\"summary\":\"Brother has 5 - 3 = 2 cards. Together they have 5 + 2 = 7 cards.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": 154228821221860020413087735890458442736,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.4624780896325817,
+        "proposed_state": 0.16186666269657946,
+        "state": 0.16186666269657946,
+        "probability": 0.24591731359260854
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.16186666269657946,
+        "target": 0.0,
+        "drift": -0.19423999523589533,
+        "gaussian_draw": -0.18664230540696666,
+        "proposed_state": 0.12178514542391282,
+        "state": 0.12178514542391282,
+        "probability": 0.24001963158234715
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.12178514542391282,
+        "target": 0.0,
+        "drift": -0.14614217450869538,
+        "gaussian_draw": 0.27499874435036387,
+        "proposed_state": 0.13760771147721618,
+        "state": 0.13760771147721618,
+        "probability": 0.2423361821130686
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.24591731359260854
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.24591731359260854
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.24001963158234715
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.24001963158234715
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2423361821130686
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2423361821130686
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.8012020658807077
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.7089900811512949
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.3853258920715904
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.8570467768176598
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.14875976152573622
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.8703226250077828
+      }
+    ]
+  },
+  "initial_answers": [
+    "7",
+    "7",
+    "7"
+  ],
+  "refined_answers": [
+    "7",
+    "7",
+    "7"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "b453a6b0d8be1ca43c0445e2a418fc983fc20b2156f8b7d17052742fdf45df2f",
+  "errors": []
+}

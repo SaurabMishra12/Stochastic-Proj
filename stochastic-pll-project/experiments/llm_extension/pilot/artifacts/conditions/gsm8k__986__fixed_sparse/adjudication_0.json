@@ -1,0 +1,199 @@
+{
+  "payload_hash": "67343159ab8b7f2aa0761dfd2a91734910cc01f3043b31a32a9b258496f25d22",
+  "logical_id": "gsm8k:official_test:986|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0b03bb62a96ff409016af73bb9afc881908797e646e95f2312",
+      "object": "response",
+      "created_at": 1794587577,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587579,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2026,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 445,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0b03bb62a96ff409016af73bba2a188190b42f2eac0019ea10",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zu7bPKr_NjRDY-foaq728oiYQkZJyLCoFx63x56adahAiUEPU0p8MyPEpwWB5oq6rbkkdMNCA9Hq4nbWylwCitNb8EGl7tf5LMFiZParGUGiT3NXqIraHPoxLznC4UbMd17A6Mr9qVufQuE_-ACDkOq2hbu2HPCITOcNyJ_BCPBDRiQ_V5RJrqJBK6nWLmZgxevhFLDwTR7U2_81t_k_QSODYpvnPrXVdhIlkwYBilJfsNvfdPayVDdFOZoj-lmmpEWU7VgG7s4z9W1Grubhy_E-qsu17uYZSxSB4aiFjZutv3PHz2QchxCp0mRUJpks9fje8AknvVCYH5G_Cl_89JwgU5nhILCgymDZjXSRMZTNMKEaBLo0WSbuweIv2wQbmnZ7ISD7O1vedsexGdRbCAuf6GK7rYhQN5CRrNJKXXMjnyBqcjm1byWtPLWdGdjL1uadyuFECJXaXPRwAyYuJttvuKwYxnmiOn5TYQf2tih5T22JUyfOyX2GU9g-41t1PPLEYxsZ2XA8u1_1X-ZhDuOP_Fr0t-e3_edBDas_Sfr4nzSvw2_wGk-kd_8qlszKQb9e8_d2FJ6091ht2_D0KoRYr33YQpaiu1RAmeAtSW_maQja-l-QEXptf0070MASECqsTORLa03W_g2wLLivj-fHYaD9kFhe7eNnzMuxA8mDUMQhdCQjOFQpMJcnNJBnHMKH2bxeNp2YR12-oK_3VYyHnRbwTnLEG1yb_AcAQxVE0GtL_74FtzzeEPWdWqM_yZWkEel2NboGn2-zQJZlMlIspsF8BLU1d2o-3icU2YQV7-t-Uza6tdb5F1FE-B8omCmtREOpEkXK_01o3wkS-kBlzZbdjqWdc51ZUqKNMIhxZhH0jIwk3mrsQNXFiAeGLPVCLGx5cVJU1IOvy8ZayOXxKsDpHttkYnCQSSX8Bse97mMr3hH0X-cp8G5lLu96m_QWT8VIX79Lt7w4D4TcncFFgbnezy9YCW1ZsiF8VveWBAETIzSqo_SEA7glHVPRDKPisNQuabDe6-4Bw-wzgr5dBGVY6ogwAMT79R4E_prGP1-Gi9BeotJnHpHm36_HcO50Np2N3wwQfcwf4GMZe5I2BdK6mkMgcQDhk4fAo9PMKxZpG7XeStzhq-B2nFx5ptCdCabmRC-qEzxNBE9-0avYft0kOnAYL1OCJG_TJKNZ9O7Dv7UGIzjwOeIdunERILw8NH4Sa8X1UKTlhGV_f9qwU3ANFV1ZsIpxFRvyLbrkXJwKVwNjKPQpgP7hc8B53KmAbiB4fOmwjcFBOBdgM8FG6lnNFj_tjK_82hlh4IclRr4OVYymm4926Y68zln2puQvBdKF0E9O7a_xAP9_CyTl6jVEee6pcueYQp_O4p8jm2M5zPHXFITt8BZdeAwAXSs-9-sgklB4UpZLz9tFUWKwwSs3Hd5_hmzSKSCpopYmCm6SASjJO9uitTdxKKs767S1l_0uYu1TEj7fseZCjGBr0iNvanz7yGXYpSncyASm9ih_Ddy26q7PKuYMMu-blMPTO2W8YiLH8iviFO984blU85fdQe5UYUFyIXyOC5m_Yyl6PM_Mv7x5sMNw44AT47qLjfKXsWRSvgLPJ6VaTcXbUS-MePR6Y-dZBwnucaJnEBUmi-vXDRsrgX-nJjTpUGQAc4CGFb4Dqu8RjPxUuLlEeeur8aUTpzpqNKn-Sn0SPNhibdoe42gda2Lqj4kYhSv9FMeoVp3JKEhAl_KGl8zVMMKi5IRBgzECa29dtlsBK2u213j-V9DsfRycMeVmRiaO2Mb7uppSUs6Orpqb_r9unGtSXn2fSVKHxNIRnBUbFHJwkWKVFZ1iBH1oOVfgkZxP3CTDcSkGjCCJOMQYByBsVSyaCMAHCjNdhci2PPxAiCpcFiM4wo3HRXm28h989K-eAXvmpLT8vVrj8C-kZi-1zj1R7Zp_iG76K3T_W8DBx-ESPy6ZuEotwvylCo-9Ns08MpdAl0odC4K12FZX9UbG4VnRuiKR6VkPPefHofCJBzWeLyzdF4KbfBKHwkiCRgtggnTlJC5CuAuw1Ztboomuo0Cn9cDlUhMzZzG2DJfQG4d9k1zQ_z9mWqjHIvXKpnPcOPdW9KnqqMPgiD6yeIQt29dJval82ZtOmkgpXonqH3yrVpvBVkBN1TRzDR68rp1L4tXteRQo6m2GdiH16XC15JLjVLFG4N50M9xc5n-heFHYzJbEdorLFHLi2l7c25vzTXL6O4tvtLuEWySbiYe1v_UMmMWDpPCrcr9VlwsUWqh-C57d2iCbWhP_YMaatAcLA0gwx1xKSAngSsGLJxDbZeXRf7YU-4O3UkXtR33bjNrJkAUNIp4mecSB5Mtnfcx3CuBPFFglvtrlzUNl-GARw==",
+          "summary": []
+        },
+        {
+          "id": "msg_0b03bb62a96ff409016af73bbaac148190b8c15e1fb28e31a5",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"70\",\"summary\":\"Cost per basket = 3 petunias×$3.00 + 2 vines×$2.50 = $9 + $5 = $14. For 5 baskets: 5×$14 = $70 total.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 428,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 149,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 577
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"70\",\"summary\":\"Cost per basket = 3 petunias×$3.00 + 2 vines×$2.50 = $9 + $5 = $14. For 5 baskets: 5×$14 = $70 total.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 428,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 149,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 577
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:986|fixed_sparse|adjudication:0",
+    "attempt_id": "6f604afe79bd497493280a95edd18a2d",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000405,
+    "latency_seconds": 2.429105997998704,
+    "started_at": "2026-11-13T16:32:57.070128+00:00",
+    "finished_at": "2026-11-13T16:32:59.499237+00:00"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "payload_hash": "40b58690159b5ef5007e9d9f15c42a3c6a4da99383094157d3471bc399152ec7",
+  "logical_id": "bbh:logical_deduction_three_objects:90|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_05b3ce75b87c9e06016af7386e60448194ad3f0f895692c20c",
+      "object": "response",
+      "created_at": 1794586734,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794586735,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2194,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 278,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_05b3ce75b87c9e06016af7386f309881948938a604fa02e72c",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zhv-Y9M5R_VXgNVSG0ECUXbdgFh3c3XhRpmqjaLEQJ6TUdbh1jINIJYVvcX_BL6X49cyxgtLuem2IbgZkmaBMZGfdR3wnHzdKJJ9JBZvhDo3uFoxu7ozi0z9NAIbzPK0obhV0yo1pDezzk2T2hTk0NLRmMcCZBpEe56o1qF9DtDUyQjzHuvELhcn0o_Tndk0NpAP-K4V6gs1XL2QGSqBRvwU-u1c3RjaPeyKLvt0EpsaE7fH7lMW_s4I52OS8CqORCw2ZmEjFpdxDmbf2QLFDkR5bzK-bJzq7l7N0TsUsVFn2OY2Tqz29lKzMuaJdqUqUIHkWXbgFD78VIzmMaPR2-TtWjE1ibufphNZfkMmZHwidKR2tAt5-AoBBoCT8F8iBuUfPMmvUBx2iKrwY-ebziTXuM9R3K7F04BOikpwKSagYRtP90OM-G7QIqIQGaD2_2Mgwn0qTAERFQYwc6fnI-Z8Of735b0FY7y3U10sG9gN0i9ooMt9GVJwdh73G6MWhHsI26OBEBfV1kqKHtBGQ-J6Mp2Uwq8HA84Z5Lm-Vk4Ln1boxQOmDkQTNRq61S0VNsAj951UcRtMEgqsy0BFCsTbmshAxILzoDOz0T7zeyE_ohIc4Vtq1o0uYbFHQpted-kKv4oX9Sm3aAsdOEwCPqFxm3G28RYMNbgM-6tIOCuYWMVYU_3K0BFA38BjoNPF2_tfTTABlw_OLsze0FyHPcG1x5NYT_gS5f73efOxdIJJnOxz-XX6qcUXosz1YZ5wam5iVqeq1Z28bSRwaEZORB75SN3LbEfBiLsRPUvPcz6MckAOqAWHKQgWW_b2JjHZtmNz88TDSWJAC30PzdGVAXCVP1mbM2q7YLgrRVMYDyxfURQ6CMe0EeuVCDjNIkOaGIKQNI3UHNh7RG2cfpMgbCTRo2lg6iyReHvajOS5EKvoLdBDOokZRXmOuBzjwm1IED1WftNh4Ohfwzt2mD8EhhmIEp-i4SEhQF4XLP_taOLchBlYAM6vsfjhHzya6-k8wlKRCByxIqdK0a6epILP9hkJfSVathh8kO_VUu1xK5jDpTRuyHk7ZNxwMpqZDE1halxlz5eiKwmqpZGCl-zZsCVurYvS9waqrl8mkUH54SGjpm4NgZWmly5XIzRNyhvG214EILx0viuwRBYIhEO39oknC6tIxxIjV_umiLwnoQEFL2SzHsHG8OQdthx09wgWtyFsc_dnCdML0l5j92dMfD6EwrE8qiBVbAnbhXWaOp4pt0wODRA9gJ5lK7bzp9MJLhKtjb4fTDnWoqj9h96-e6h9XjWR4BSKR9UYDfnGSldtql1d4iqPgkbqgsm4E7J0XEqBQQsEZvS7yNkG_jf3FOyJspM4WjyTwldBJSg4F1frCyAYr6yE2jpekNnbYS0AzG4xdhnLK7z-lH2p6k-Rl57inupOjIJjp4ZAOPLvgRrBs4A_7OjSnQ9dvTU83DKYyvza-mtuKS-2bKllp24W67Pglpjtb8WAjYCZTZyWWB-SwW7iwrKd3uqU-Rv9QxII2DsgzEBbfK2KMVG26sLJ2KKj-UAhvI4Hy40dvOQJrxxp-ke-2gAyIS8EYE_mnyO1ISsP8avRIJfNKiXoVhN2b9otNR6EN_dT47PIXUTZLJsx5loFbk_R8tZz1hqYdzQdh611cvr53v024ej1qg9KYDghzAUDXNZd0gTGzfZjAhj-HOvT_mIIuodH0yqN4Sias2d",
+          "summary": []
+        },
+        {
+          "id": "msg_05b3ce75b87c9e06016af7386f79ec819499d0a40629de8705",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"Three golfers occupy first, second, third. Eli is last (third) and Mya is second, so the only remaining golfer, Eve, must be first. Therefore option C is correct.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 368,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 78,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 446
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"Three golfers occupy first, second, third. Eli is last (third) and Mya is second, so the only remaining golfer, Eve, must be first. Therefore option C is correct.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 368,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 78,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 446
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:90|independent|adjudication:0",
+    "attempt_id": "6840591d878e4d9da4176b925999ba7c",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000248,
+    "latency_seconds": 2.278278607001994,
+    "started_at": "2026-11-13T16:18:53.747700+00:00",
+    "finished_at": "2026-11-13T16:18:56.025791+00:00"
+  }
+}

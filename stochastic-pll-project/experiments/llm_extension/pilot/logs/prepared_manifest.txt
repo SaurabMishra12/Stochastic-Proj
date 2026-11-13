@@ -1,0 +1,123 @@
+{
+  "scope": "pilot_only",
+  "dataset_counts": {
+    "gsm8k": 50,
+    "hotpotqa": 50,
+    "bbh": 50
+  },
+  "examples": 150,
+  "methods": [
+    "independent",
+    "full",
+    "fixed_sparse",
+    "disagreement_triggered",
+    "stochastic_controller"
+  ],
+  "agents": 3,
+  "logical_calls_per_method_item": 7,
+  "logical_calls": 5250,
+  "provider": {
+    "base_url": "https://tiwarishrayansh-0806-resource.services.ai.azure.com/openai/v1/",
+    "deployment": "gpt-5-mini",
+    "verified_model_version": "2025-08-07",
+    "sku": "GlobalStandard",
+    "region": "koreacentral"
+  },
+  "cohort_sha256": "160a7ef8005a9b5b1d84fc21b8e22d263e9a6f14eb350a244fb25c80a2ae0653",
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "protocols": {
+    "gsm8k": {
+      "protocol_version": "mas-frozen-one-round-v1",
+      "model": "gpt-5-mini",
+      "max_output_tokens": 4096,
+      "reasoning_effort": "low",
+      "summary_max_chars": 600,
+      "disagreement_threshold": 0.5,
+      "seed": 20261113,
+      "replicate_id": 0,
+      "answer_kind": "numeric",
+      "controller": {
+        "step_size": 0.1,
+        "mean_reversion": 1.2,
+        "noise_scale": 0.35,
+        "initial_state": 0.0,
+        "state_min": -2.0,
+        "state_max": 2.0,
+        "logit_offset": -1.25,
+        "disagreement_gain": 2.0,
+        "state_gain": 0.8
+      }
+    },
+    "hotpotqa": {
+      "protocol_version": "mas-frozen-one-round-v1",
+      "model": "gpt-5-mini",
+      "max_output_tokens": 4096,
+      "reasoning_effort": "low",
+      "summary_max_chars": 600,
+      "disagreement_threshold": 0.5,
+      "seed": 20261113,
+      "replicate_id": 0,
+      "answer_kind": "text",
+      "controller": {
+        "step_size": 0.1,
+        "mean_reversion": 1.2,
+        "noise_scale": 0.35,
+        "initial_state": 0.0,
+        "state_min": -2.0,
+        "state_max": 2.0,
+        "logit_offset": -1.25,
+        "disagreement_gain": 2.0,
+        "state_gain": 0.8
+      }
+    },
+    "bbh": {
+      "protocol_version": "mas-frozen-one-round-v1",
+      "model": "gpt-5-mini",
+      "max_output_tokens": 4096,
+      "reasoning_effort": "low",
+      "summary_max_chars": 600,
+      "disagreement_threshold": 0.5,
+      "seed": 20261113,
+      "replicate_id": 0,
+      "answer_kind": "choice",
+      "controller": {
+        "step_size": 0.1,
+        "mean_reversion": 1.2,
+        "noise_scale": 0.35,
+        "initial_state": 0.0,
+        "state_min": -2.0,
+        "state_max": 2.0,
+        "logit_offset": -1.25,
+        "disagreement_gain": 2.0,
+        "state_gain": 0.8
+      }
+    }
+  },
+  "seed": 20261113,
+  "provider_seed_supported": false,
+  "max_output_tokens": 4096,
+  "max_input_token_bound": 32768,
+  "max_http_attempts": 15750,
+  "rpm": 200,
+  "tpm": 200000,
+  "prices_usd_per_million": {
+    "input": 0.25,
+    "output": 2
+  },
+  "expected_tokens_per_call": {
+    "input": 2000,
+    "output_including_reasoning": 800
+  },
+  "expected_cost_usd": 11.025,
+  "proposed_cap_usd": 25,
+  "prompt_byte_bound_scenario": {
+    "min": 1159,
+    "max": 13233,
+    "sum_for_5250_calls": 22688365,
+    "note": "Offline bound scenario uses200-character text answers and600-character summaries. Real responses are checked before every call; this is not an exact measured token workload or unconditional worst-case bound."
+  },
+  "cost_ceiling_one_attempt_at_global_bounds_usd": 86.016,
+  "scientific_status": "Exploratory150-example pilot; no physicalphase mapping qualification claimed; one real API realization per logical call",
+  "robustness_conditions": "None in this pilot. Dropout/corruption/delay sweeps require a separate scope and approval.",
+  "manifest_sha256": "87c64961e6e2f670649f4f5131db58d42eb1adc66154c60fa5ed0d051efa277e"
+}

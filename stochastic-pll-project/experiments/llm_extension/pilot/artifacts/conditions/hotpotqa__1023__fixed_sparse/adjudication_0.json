@@ -1,0 +1,199 @@
+{
+  "payload_hash": "8e841217508316fb6f5d4232e6d113232fd4588349e0a75440a9bb5cb84ae762",
+  "logical_id": "hotpotqa:distractor_validation:5a8aee2c55429970aeb70338|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_00a4596485670bea016af725dcee70819093bcdb7fb5d9b634",
+      "object": "response",
+      "created_at": 1794581981,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794581983,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6873,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 600,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_00a4596485670bea016af725ddf9c08190abb4b3576f5ba073",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yXf-A8K1Xy5P4W35y-f-wHxs1cX87udDHcoVxGCmgw_9ynLcpLzT-a3jSUSRQLmlvugm9w5BNnHgSo2EeVQh25yvN1w8RHN_vXKCezL1VU39fZCgZPHas5lprltD_tP7Z6qHj1nGFixoEVp1PvxqJkL9HSqJBB9zQJ3nPYHapQpFW0CzUtyIBZvwrC7ljQ0lUA-ie6Q1LmLIjRwbuaMay9sLz5w_pGFK_HUi9RPfyyIJ1muXgyNIbMCw0OGGvywtTKj0sOLlcYPDld-OoP7WLhqAqQBGvKXfANGa7cnBx6GG723SoDGvc59bfWuK4LOiu7teSXk9Evo9oUJUYdoRXrVqx4S7aoWeSE-L6J65UdhT7Ex2tR82lqiE0ZMo5arrJz8_P5UltlbgvLbcZvqCC3y9E70l3nHN6wWaGfx1tiilO-ew1imPQoxykJUJxladSkx8jtzR0jtZ7xBKMzHxjm1RdGWlcegZiJ1HJvC5SJfhKRU0I7SWmwRDl4n0fDM0JlZjy_c3ZT59kaOgMmMTFZku3JoPoiKk8kAbKq8bOEqEhFZnVkoclpI3fbYO-RT_IS3M7wtveJGR0tn207-CL7GipgmJyGRezEN2g4Z11_LlWMJUC3kVXlsuH4Dt1sidiT-3WVpRbIQhdnq4b35_GuRKk2mVz_nNWV5l5RNVeMiwSEFTjMLgJqpIuJ6g-XKRDR4OPTpj8Aj98xKvaVMkc30vkfKh5Yh-vqp87DQnPPVQ1y9UjirL5jFrbyA96jLjaxv0E97IpIwTxgv5rjbi03fQhSsxa50JzlJC1I72i2N5Hp-4v7AbtIJtumML_N3Pxh-hLZRj9EOG0PtjHQcua0aZ0kdFLjQnu2ZEGrLRY7OUN7ITxXyQmeVj6jkSBbH53ilVF2X5tyG21OUP3wFP-JNG8xM-cOXIle6TENjnzW6_OoOoWv4g6GW8nRVAHtbjFCWr9RGiVASrYPvXTW_5prDzMdmTWerTbn3LafKr-kffcBI6fklJaZX5dJzRIdJ1iHlRSGHls3oNpM414fJjU4-km69PmITTwtm7Nd1OwzSx5vTG4DEvT8qwGduzI1x3TFr_jtkWfYHBw7nhBgteXnVbwuwvxkLrh9b0SVI0BqsjcLgMViaXvIf-JWHTeC-7uRMBsy_XliraKw_P4Dro7a6cyb86Ax5rZ1HpTinX4dons8DJrp4GqXE33oYDNTOvCl_I7gZxG-EiptX63QRQC4eqw1XXjYTzH2oLm625AIdMFY2le0MaZgt6EMXw9PBkW2UBYYyDumwDWJnogOuWS-6g-tgpTM4m1n52Xtygl2reaQtyFrH8J7rRosLzV43rJKhZelj49vV_c_jCU8KlxaY3ee9JLQTa-YlwyYV3zUF3Ql6Wdbcn_jL-c7tRjC6KgkL53V4LZq0hacAabs4GCyVqeIOme7z3YDvzUQQBSqN3Je3NFMMh2JRQbvw1JzAi_kWieXwUAhcC28sz9AeWiet2HXCehTcjC1I49tA3soYRjHuCUBWbo-aLB0v8-t0upy0Zo2iUhxyMfpgyJOggXnj2e3uS_BOB1j7e93MvImcxftgDb81dl5DSyzZOsonnBdDtqS7_5776hpsayazmIwk0RoEM5a-QoUKsEblHJHZcUfukyfAWHyFAA0jWYMrRGObZ6n6ptqN8XWkkQK_7VWDroTGXqOLTlAC5-eqIJE61_cG_xaiqgZ4E2Ziicj-HzwgwIg9EZMjQQpEOFg8FJCpZizCAogMSKIiT5RJFsIqz_wfY8l3bTErR-Cq6pTQox52_MDCSftHxubwL0blyXFfhKR-0yHjXmgnZBcN4hOV2dB4Qnf45O_BSaGG2sFMxw3tUpkg4Uq5CmYuAPGxDva32hraRGdF6XhN69E2QhrBYnp5HSf9Wc22_pmYMPc4N9yoaJgpwvCmYginDYI875AELy2B8V21bedIq7NgUmDXa0haBkv_iMqlNYgIniEqea8yGMaeSqbD7Z_5ekwv6gRzA706BFICnVTBwGYGhapaRPDns1nMqaYTkYnmkTHHhePDIVcFwfY6GqUMgR1ewJjMiiIb9m0Op4YqT0wrpxnDa3Vz3wFYMIRAXrBy7nzdcd794a4f_L1Gzv10sxrn32kwosrTEDYLz1ZA8gL9WhjRlAcII7PM1AVkIUJIvbkxohkmDaFIS4Pah5YrAmCI8k3m10pFbasSDhXovAK0TngFg83Fo97iQieoO_f0eEF1T24A0vzJ2pXH2Iclx-WlxhIeTj_EnmbCbs8zH1lw3O0Cx_8jsvu5aZT65i-HFIUrr-rBT2Vpbs_ktOV5ELwQoe4I0C0QQbhgKa8apb7kpJ8n9W6LuEDZk-K2A5BPDfQR4_Gy",
+          "summary": []
+        },
+        {
+          "id": "msg_00a4596485670bea016af725dea8188190a97141dd30f097eb",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"no\",\"summary\":\"No. The context states George Duran is a Venezuelan-born American chef and TV host, while Ara Babajian is an American drummer and member of bands like Leftöver Crack and The Slackers. Only Duran is described as a chef; Babajian is a musician.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1455,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1280
+        },
+        "output_tokens": 142,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1597
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"no\",\"summary\":\"No. The context states George Duran is a Venezuelan-born American chef and TV host, while Ara Babajian is an American drummer and member of bands like Leftöver Crack and The Slackers. Only Duran is described as a chef; Babajian is a musician.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1455,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1280
+      },
+      "output_tokens": 142,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1597
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a8aee2c55429970aeb70338|fixed_sparse|adjudication:0",
+    "attempt_id": "eccebb517c2940319c4ad44d0566c11f",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00064775,
+    "latency_seconds": 3.724935373000335,
+    "started_at": "2026-11-13T14:59:39.883257+00:00",
+    "finished_at": "2026-11-13T14:59:43.608191+00:00"
+  }
+}

@@ -1,0 +1,30 @@
+....FF                                                                   [100%]
+=================================== FAILURES ===================================
+_______________ test_runner_executes_seven_and_resume_zero_calls _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-saurab/pytest-12/test_runner_executes_seven_and0')
+
+    def test_runner_executes_seven_and_resume_zero_calls(tmp_path):
+>       assert Path('src/llm_mas/pilot.py').exists(),'Budget-gated pilot runner required'
+E       AssertionError: Budget-gated pilot runner required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/llm_mas/pilot.py').exists
+E        +      where PosixPath('src/llm_mas/pilot.py') = Path('src/llm_mas/pilot.py')
+
+tests/test_mas_pilot.py:30: AssertionError
+___________________ test_execution_refuses_without_approval ____________________
+
+    def test_execution_refuses_without_approval():
+>       assert Path('src/llm_mas/pilot.py').exists(),'Budget-gated pilot runner required'
+E       AssertionError: Budget-gated pilot runner required
+E       assert False
+E        +  where False = exists()
+E        +    where exists = PosixPath('src/llm_mas/pilot.py').exists
+E        +      where PosixPath('src/llm_mas/pilot.py') = Path('src/llm_mas/pilot.py')
+
+tests/test_mas_pilot.py:44: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_mas_pilot.py::test_runner_executes_seven_and_resume_zero_calls
+FAILED tests/test_mas_pilot.py::test_execution_refuses_without_approval - Ass...
+2 failed, 4 passed in 3.42s

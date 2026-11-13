@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1229",
+  "source_index": 1229,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "36",
+  "final_answer": "36",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1736,
+  "output_tokens": 1096,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0026260000000000003,
+  "latency_seconds": 20.73185007400025,
+  "wall_seconds": 180.89577064200057,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 515,
+    "utf8_bytes": 519,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "36",
+          "summary": "Start at 40. After an 80% increase: 40 × 1.8 = 72. After a 50% decrease: 72 × 0.5 = 36.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"36\",\"missing_response\":false,\"sender\":0,\"summary\":\"Start at 40. After an 80% increase: 40 × 1.8 = 72. After a 50% decrease: 72 × 0.5 = 36.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "36",
+          "summary": "Start with $40. After an 80% increase multiply by 1.8 to get $72. After a 50% decrease multiply by 0.5 to get $36.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"36\",\"missing_response\":false,\"sender\":1,\"summary\":\"Start with $40. After an 80% increase multiply by 1.8 to get $72. After a 50% decrease multiply by 0.5 to get $36.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "36",
+          "summary": "Start with $40. After an 80% increase: 40 × 1.80 = 72. After a 50% decrease: 72 × 0.50 = 36. Thus the January price is 36.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"36\",\"missing_response\":false,\"sender\":2,\"summary\":\"Start with $40. After an 80% increase: 40 × 1.80 = 72. After a 50% decrease: 72 × 0.50 = 36. Thus the January price is 36.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "36",
+    "36",
+    "36"
+  ],
+  "refined_answers": [
+    "36",
+    "36",
+    "36"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "712348dda0fdd0c7e7acf6112fae1409f075d2a8ae2f4f980b52c282cd1e2f64",
+  "errors": []
+}

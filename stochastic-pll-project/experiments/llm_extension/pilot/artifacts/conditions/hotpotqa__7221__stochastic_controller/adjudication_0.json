@@ -1,0 +1,199 @@
+{
+  "payload_hash": "99a82f753fc3c7a8f19e2b3e44efa3f61eec69e261d0ba38f2a48af59f63e346",
+  "logical_id": "hotpotqa:distractor_validation:5a8d9573554299068b959d51|stochastic_controller|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0fd99f70e5dfbd29016af72132711c81948360e42986f43383",
+      "object": "response",
+      "created_at": 1794580786,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794580789,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 9813,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 588,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0fd99f70e5dfbd29016af72134235081949ee9f07fca6c1442",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yE143y-TuFM9M6LPAO12NID3CfiUwd-jGE2SowSV8RFXe5KKPudxgKLbpB9tE9Tyu7eurgbKhmGySErWLvArtQsUf0lioKLg8jgDnhzsjtluRAuNLICEa9XDH7bTgMVpHhTRuuwVEdqx0Y8kW5IbCwddOqy5uu45PA-t_6jJM4zSUKtiaN3cZo2iwfXcwt1WBo4Oj_U2-aBXLzVDUOimBI06-Lj4wrYgDpRJ2H-ViTy8g1062ZNv-fd4xLAYRNih3_cT0Ht_tPUm1kRuyY7yvZT5LjdIbjePRZAdc9JYjQBkWWImlapGA-BqKGbgvP4gRgyPt4PMxvsvYOSvgRk1nUFTMplmg72VLsy5UJZN6vWnJFWnNWFqkvXechPnTGlM_ThzAxd6VD9juqjZppbOgPwI6bUrkxuBWs5QWLt3W4nbTNGRWkGmByDP7_PUzr0NuXLuOKIBhnqz8RKzGk-bO3gN9broKVFd0k-KsGC9QGUf0CkENdzShLBzYmI-w9unfrZHp8llFC-PZOmIJx8NeMLDJrd1ZhM5J7ROo4ju1KBj518zuFuxEtOAJ5y3Lt4WuDhvXnWIPv1dNPIR8BWp_-SJcshVo_AL_t2wFSxZrKl34eefwkouNL12_opQbpsjQEzgKIiNBonMPdOZZdJkKpTGqzqCKq5VjY9LhnaNADkBdFq3xvu40V0nLne0vbc9hTt4TGMh5Bs9liNTaF6w68zn9ni0ozxoL-P1-JpWgB1Bzz7mWE4z_5ujKNpXzyFZGRqgd3hMVQJijvcOAaX5ejeq4QiOe6lS6X7zmG_HiU-EaNexMJVphTnLnWQFMAuCtDejIMxlaOBbSIy7_g6eSR05mRDlhU_kEc2oK1rJbm7JTjyAQ5Y5hoazRNJgo601X8MZ0l7BOM7oxyp_QHFVe89igKCoNOp2HYr7DCK5O5-hdRiLVgqtSr8nXKL2OGZVjZHbpyLyvnc7pZY4BJn0TPpJqq-CbczwIvZaq-QMza8nwUq99YsG47k5XeqU-41CSsW9L5YDGKyjeQs9THewh4b-iAchnbqIQJexZ9CJFWR1ASLcxcgo04BZh5uWt61NTdtEimznionexr6t_w9Qz_7zhxI_TQUDSnXsII4bMDymsWOuaxhYX5RxVdQ6HBLo6EtE69oCzFUvw0kXluUOWDjkBBvUnC6mJ3QYxU573ahIh6yLeTx_3RM8dlM7DJLroQhCoJsbJoxRK6hs2zI9x6C8T1EmxTZ_XcNERR_qvfEDBuAxH_Tqz_Nz-nJMvKaU7MYomWqLVVRJwcudfKxD2CPEIkVuznTzqMnafK5QXWVukGXgkz8wcQXezR_3J15ywbxejMXilATI6YFyq8xt3HtWGtAzoGuJDwF8e81spY0BUMmPuZZj4CQBb-gXs-34SI29CIA2riLHm2QGKG0liEAfaoiI6ZK2IVkdDkgOermN9fciDC61CEpNLBseuosVNPbXxXCZCfOf3T1uq6gUst-cIC9vSzccDH4jLFfAQehgQviWVwZN2P4oDeNUPKneXrcrz8aVKQOphZ_a4WEK46QX_DEeL6ehRNIUg1_wCesEUW3CyBl-ti_5hT1L3XsvZSWoKwH3-yovQTqD8Lag1jUIp5gLJVrM2kjOwt26vyY_j1zfnZMxEPo92TgoJ8WMzLIYCbpQqJqOeQlVrUskIjV-A809HHS22bEvr8wrbwxHOKx4gBNit3fi8GFBdISipLcp4dhtZwcnhJKC7eGySiPE3zWbvhVuZSTZSJoRxSbDw1dXCMG4pudVp5flZ-THxzHbbAR00syrLNA9BRCUzyD6XFMLTEVj2b9hVjBBqe1cQ_qcvM0A6iKrVFXM8Dw7BHTBtNpESaIjGwQBGRR_2CmY-dUMydh5xPdxEfx5JkMUcVhDMehz_rZRoLjInnnZIAifZxxjyVkhoa9VjtVCrE6W6QBzQMu1oO4RVYatYbFSKhgOIfsknZI4q9AIdk63sK4KpTuoDCCjvvZ61v8MsqlveNuqImpEdGoBgool_f7ABcKvS4X3V3_7HkMbljY6Ax13CVn9BSCx3S5cTDU-NwBY4skFfAO48HuapE2MA8qUS7BM051lDv9o866Zlh71OkCtQRvkqd6mGJDk2g-Yoaw7FkErU3pS0GJ6rHQdPm1qskmav62TFghkNokisy95hCzv6BFBlphssGZY5G1pw9jNiKWX7T-BZoa_w_I6NkAaGVawtpJy-rrG4ZA17PLdg7mNLrhDqO8sQxdpe485VgS_UewAiGpYqXF6Ws__INl9GU=",
+          "summary": []
+        },
+        {
+          "id": "msg_0fd99f70e5dfbd29016af72134aef881948e7d497116f27218",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Capture of the Five Boroughs\",\"summary\":\"The Old English chronicle poem \\\"Capture of the Five Boroughs\\\" (also called \\\"Redemption of the Five Boroughs\\\") commemorates King Edmund I’s capture in 942 of the Five Boroughs of the Danelaw—the towns Derby, Leicester, Lincoln, Nottingham, and Stamford.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 2095,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 146,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2241
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Capture of the Five Boroughs\",\"summary\":\"The Old English chronicle poem \\\"Capture of the Five Boroughs\\\" (also called \\\"Redemption of the Five Boroughs\\\") commemorates King Edmund I’s capture in 942 of the Five Boroughs of the Danelaw—the towns Derby, Leicester, Lincoln, Nottingham, and Stamford.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2095,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 146,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2241
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a8d9573554299068b959d51|stochastic_controller|adjudication:0",
+    "attempt_id": "ac98ddb769844e56a9a751f7201402c8",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00081575,
+    "latency_seconds": 3.635008374998506,
+    "started_at": "2026-11-13T14:39:45.830580+00:00",
+    "finished_at": "2026-11-13T14:39:49.465587+00:00"
+  }
+}

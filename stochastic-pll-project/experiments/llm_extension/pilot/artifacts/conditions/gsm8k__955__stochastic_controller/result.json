@@ -1,0 +1,205 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:955",
+  "source_index": 955,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "100",
+  "final_answer": "100",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1806,
+  "output_tokens": 1126,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0027035,
+  "latency_seconds": 25.113388769001176,
+  "wall_seconds": 182.18019050300063,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 448,
+    "utf8_bytes": 452,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "100",
+          "summary": "Initial occupied beds = 1000*(1/5)=200, so initially unoccupied = 800. Over 14 days, admissions = 50*14=700, so occupied = 200+700=900. Unoccupied beds = 1000-900=100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":0,\"summary\":\"Initial occupied beds = 1000*(1/5)=200, so initially unoccupied = 800. Over 14 days, admissions = 50*14=700, so occupied = 200+700=900. Unoccupied beds = 1000-900=100.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "100",
+          "summary": "Initial occupied beds = 1000 × 1/5 = 200, so initial unoccupied = 800. Admissions over 2 weeks = 50 × 14 = 700. Remaining unoccupied = 800 − 700 = 100.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"100\",\"missing_response\":false,\"sender\":1,\"summary\":\"Initial occupied beds = 1000 × 1/5 = 200, so initial unoccupied = 800. Admissions over 2 weeks = 50 × 14 = 700. Remaining unoccupied = 800 − 700 = 100.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 10606181350591105055449927456768905622,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -0.27555569670454727,
+        "proposed_state": -0.030498426833732318,
+        "state": -0.030498426833732318,
+        "probability": 0.21850519003136448
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.030498426833732318,
+        "target": 0.0,
+        "drift": 0.03659811220047878,
+        "gaussian_draw": 0.20695204604271497,
+        "proposed_state": -0.003933221496238901,
+        "state": -0.003933221496238901,
+        "probability": 0.22215592654881564
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.003933221496238901,
+        "target": 0.0,
+        "drift": 0.004719865795486681,
+        "gaussian_draw": 1.022022311605286,
+        "proposed_state": 0.10965590642971625,
+        "state": 0.10965590642971625,
+        "probability": 0.23825410171530884
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.21850519003136448
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.21850519003136448
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.22215592654881564
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.22215592654881564
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.23825410171530884
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.23825410171530884
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.2683154817971508
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.017512751529006998
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.34913643730558164
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.15082315306289829
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.35825515076687264
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.5067637697398137
+      }
+    ]
+  },
+  "initial_answers": [
+    "100",
+    "100",
+    "100"
+  ],
+  "refined_answers": [
+    "100",
+    "100",
+    "100"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "5f16aa5c2b9fcca861efa1ff8e7f9b7eb95cfd029003e7b7a9c104ffdf5b3b42",
+  "errors": []
+}

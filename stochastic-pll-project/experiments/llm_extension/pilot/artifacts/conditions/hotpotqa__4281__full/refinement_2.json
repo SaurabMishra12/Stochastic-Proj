@@ -1,0 +1,202 @@
+{
+  "payload_hash": "60e337ffa4bc7d33761e6fc77b99a1ce009a22c7713c982ef6ad3c7a62a41a8e",
+  "logical_id": "hotpotqa:distractor_validation:5adea95055429939a52fe931|full|refinement:2",
+  "result": {
+    "raw": {
+      "id": "resp_0bab0d3cdf6ab7ea016af733484c908190a7914456ec486da8",
+      "object": "response",
+      "created_at": 1794585416,
+      "status": "incomplete",
+      "access_programs": null,
+      "background": false,
+      "completed_at": null,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6082,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": true,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": true,
+              "severity": "medium"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 705,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": {
+        "reason": "content_filter"
+      },
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0bab0d3cdf6ab7ea016af7334941f48190ab203becb9a2aa5f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zNNadLYt8Ld3ryhjWufgklcMphUA2V_KU3ZLy8i5E7GLfNuP7DZ6qRLqz3-DB675Ezb4BDAlsw94tE-UKxK5eybeFRFLa9A5ckPr9f8T9G5FRPdPnRKHY9F0UDiGk6Rb_1SH-_3HcAH23DflpElGKYtGqcrXKj-H2lmICMmWvCqQKPllbQjjvplBMJX_1BShY3omuGaIMn7MS5DuJRP14mRQF7uRDb8RGqEXRD4KV8Xw7vMeT1QYTLJFE_7OzLzwXeZ79t_1KmBgYerbsDffCCDKMvVzr8EU2KJyULgtGyIpgJQ8U6j3V8AjVsvDsErY7GPSal06u3kWvQ-1Idip-5O39lP8VJFNbiwlrtty6lMTFUkb5VF7cWGDvseUVMl9BKCGZT3ZvG--i9w2aZu5uLnk2T7ilJLUUCHaNTA6xrNygxf8Hpz20jPBrDMNj3jdyf-xPJVZHWpdecChA_iSBc3JqIv1YZPsMuxpYiAWaAc8C-Xjt-wvcaCWTs1cFRpALcO8MnLPu__OjGJ8-i6HY9QyxRWgKYG4yZLPho_9iXij42WubWzkO1zyGZDjztWamhWUT8FH1zLVFm9HuIrx91F7Gi-POGH0kwc-2EB5cjJSjHVk8D2hywNvl_8mYYn23zYtIL-G3qOS-uBGyJGpDdCihH3CDQOYXGqkrUPSI_c-cKa7cTWh3p1B0Q0g4fDkqQ76GhAJVF8Rnrg8MpVLph5s_TkwnU8h2sEM9swufM8zWLJc1RNBUJX3XlYumctizJstwtFWcOdwdVypYABN5sQSdNUmIdxPDXPdJXtvVRPuhrzKkdv1XbG5xgSJLml0-rX9x0G8N_0ATtrMc7y4KU8Wxzilf7uqmpxnau2Wa56eylGGJasr9kYubYzW2hNR6QHJ0ZVMPbwMewVRTbw60JX7aO-bwYqpg3BoODcjKJ2rYWjDalTkHyGaD2J46KUCLyk0PnFvsiRm8NXGQ3E1EUEkaaM4LpGrFfox9mezTm-sYfC6tS-5DvjFH6c9bzL851S-q3XbDpt8B2E-eP2hZm5tAf9Q3Gl8U9QGE2nsnBJLpM6XjVF_zQgYayh7DTwAjDN9caJqe-6z5euCL59ZMTvIZDPf-yEkcqq9IRrb_CVrYmJQ4NsAe7ST1GQ26LRiSOmk9a52wyZratU09IJO7kYmoYluueihXoSyR7053Rh5PjvE74NidPezbbcCxgcpVd2NAlU4Zd7h0O2d3xGfvl5fi9_WepSGBHbNiTdL7es0P9dodJ5KPB4XP5nTS-P4GbzFzIXqHN_9cPMWWqGhZkKnQuooqbcEEUIXYafc_EP0k2s36gId2JG4qnpWY1hOt9fQuJgOJgUr06KDHZSPqpbPWepJMHT18My1RoawthlojhhOVpXczEuvCgsbqDYobYbqJLmO3K0RgeAeXNqClq-YwdJmiuw6wN14jVfBYZVjaekBHfCszocSSbC4WzYiB_-UfaZVNh5RUnNSfmzrm1wNIA7TJckswQZhNWWA-gGiSB34wxCL1tzy2HoVKJBA6pOQ2ZPlozEzkx-aqUHHFMCKa--bRiCKB8wMJ3jk0pmdsBwgxAopJUB_T_V4fscQ3EA0QNHnBMxIjGdmB3d74Z3PvpWA1wRrb_j1oY90InqzpG2ckvgxKFgAe6nfta2vuqqdHgofb3x4CdE75o7X2-UinePX-BfZ_SnxIR4MjmiE6MQrF_5bybXAzjE3EiGXdnYF6u-z2pQw3fT7gDFExQKyZAksInWcDqGc0SMlnQi4aXEzpQ8l8DOGFCX8asbO7LJD3Z66Sb00_vWW84fMPL3ZJSfZ0GsitjeZmwYeDqj05jMh32scZTEsjjVhlkXwNFECZJW2ig9hTDXsKDmaY27spK3R9AEQbpesXu_-4yPJx-LTy-39zzLw9Fl2vJi_XhgJqpbGIvkDKOeQ4A7EOkdibw7NyNgZga8r-LBH0oJZCNSShXowAg9dm2kKnmMyxqfLVnkRAYvhya6hXnrDj0Fo2cUigWANgoRn5CmGpr50fGRmbbXvWoMLZFmtGtcSXKSVYYRbLJdNqRMN327gTw4bURTWsYWhRN6Gj_U5Ut8OeNaZ03h2e3GeWZrMPEywIClZ7s-T7MeQF9qbPIyIXDGm7VVRa_VTR02gr8Gl3CD7WqLpG7RdS7CZVZv8P2t-rLqsVda-ncSYtxLuTRYbzRiSVIxBvyH0oZYqYdqHl1tFjP5ADeokjZdGX2luqHuoFXFaHmwjjmcd1fjubXVuig9CaLmb0o0fZJ6dTCjiqC9oyHU43Or3E9BYapIanWKYNunWDXw9hXp4UoEKcJZPF2gdqJ13cRp7yP5qbgR0GoXeCuF5hMMf29mgVeDHSVEvPxg-OTmm9Cgw2H3nSM8M7edsXogR-c8bW8m1rhAIL6SR1wP004C7sIyELC6k5-e_eAhSrExGIYLjE_pEPXAuP5ECYK5npCXF9P0F46gfEV6D655YnJZNQYc9_1zyt_V2_EF",
+          "summary": []
+        },
+        {
+          "id": "msg_0bab0d3cdf6ab7ea016af73349ee448190a6ff561c62990bf6",
+          "type": "message",
+          "status": "incomplete",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "I'm sorry, but I cannot assist with that request."
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1405,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1280
+        },
+        "output_tokens": 159,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1564
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "I'm sorry, but I cannot assist with that request.",
+    "model": "gpt-5-mini",
+    "status": "incomplete",
+    "usage": {
+      "input_tokens": 1405,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1280
+      },
+      "output_tokens": 159,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1564
+    },
+    "usage_known": true,
+    "outcome": "content_filter",
+    "logical_id": "hotpotqa:distractor_validation:5adea95055429939a52fe931|full|refinement:2",
+    "attempt_id": "e0269ad7e4f844bfb5bbf95170df50f7",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00066925,
+    "latency_seconds": 5.554254837999906,
+    "started_at": "2026-11-13T15:56:55.544573+00:00",
+    "finished_at": "2026-11-13T15:57:01.098862+00:00",
+    "error_type": "TransportError"
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a7e36815542995ed0d166d4",
+  "source_index": 5702,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "bellagio and mirage",
+  "final_answer": "bellagio and mirage",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 11208,
+  "output_tokens": 1045,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.004892,
+  "latency_seconds": 21.678377384996566,
+  "wall_seconds": 240.13751384500029,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 562,
+    "utf8_bytes": 562,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "bellagio and mirage",
+          "summary": "WrestleMania IX took place at Caesars Palace in Paradise, Nevada. Caesars Palace is located on the west side of the Las Vegas Strip between the Bellagio and The Mirage, so those two casinos border it.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"bellagio and mirage\",\"missing_response\":false,\"sender\":0,\"summary\":\"WrestleMania IX took place at Caesars Palace in Paradise, Nevada. Caesars Palace is located on the west side of the Las Vegas Strip between the Bellagio and The Mirage, so those two casinos border it.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "bellagio and mirage",
+          "summary": "WrestleMania IX took place at Caesars Palace in Paradise, Nevada. Caesars Palace is located on the west side of the Las Vegas Strip between the Bellagio and The Mirage, so those two casinos border it.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"bellagio and mirage\",\"missing_response\":false,\"sender\":1,\"summary\":\"WrestleMania IX took place at Caesars Palace in Paradise, Nevada. Caesars Palace is located on the west side of the Las Vegas Strip between the Bellagio and The Mirage, so those two casinos border it.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 285779683221227913613866087704929548787,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.7174798034402647,
+        "proposed_state": 0.1900901804973335,
+        "state": 0.1900901804973335,
+        "probability": 0.25012835315714627
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.1900901804973335,
+        "target": 0.0,
+        "drift": -0.2281082165968002,
+        "gaussian_draw": -0.33940447768049253,
+        "proposed_state": 0.12971416692409862,
+        "state": 0.12971416692409862,
+        "probability": 0.2411786065448275
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.12971416692409862,
+        "target": 0.0,
+        "drift": -0.15565700030891835,
+        "gaussian_draw": -0.5018365879337058,
+        "proposed_state": 0.05860533480548091,
+        "state": 0.05860533480548091,
+        "probability": 0.23092140886385532
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.25012835315714627
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.25012835315714627
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2411786065448275
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2411786065448275
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.23092140886385532
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.23092140886385532
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.2281999691668385
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.4188260043884968
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.15862346050436504
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.5001024974135695
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5324203377568321
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.879059234557537
+      }
+    ]
+  },
+  "initial_answers": [
+    "bellagio and mirage",
+    "bellagio and mirage",
+    "bellagio and mirage"
+  ],
+  "refined_answers": [
+    "bellagio and mirage",
+    "bellagio and mirage",
+    "bellagio and mirage"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "3d7c38718530cf7b814a0d3d4e7fcac9ad4f6efc33435394e9978eaa1721f25c",
+  "errors": []
+}

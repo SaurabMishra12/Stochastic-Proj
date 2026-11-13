@@ -1,0 +1,220 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:1032",
+  "source_index": 1032,
+  "method": "stochastic_controller",
+  "answer_kind": "numeric",
+  "gold_answer": "450",
+  "final_answer": "450",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1969,
+  "output_tokens": 950,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00239225,
+  "latency_seconds": 20.707511380998767,
+  "wall_seconds": 232.71494103199984,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 576,
+    "utf8_bytes": 586,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "450",
+          "summary": "75 large beans = Grandpa's capacity. He can eat 2× as many mediums → 150 medium beans. Each medium = 3 small, so 150×3 = 450 small beans.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":0,\"summary\":\"75 large beans = Grandpa's capacity. He can eat 2× as many mediums → 150 medium beans. Each medium = 3 small, so 150×3 = 450 small beans.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "450",
+          "summary": "75 large beans = Grandpa's capacity. He can eat 2× as many mediums → 150 medium beans. Each medium = 3 small, so 150×3 = 450 small beans.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":0,\"summary\":\"75 large beans = Grandpa's capacity. He can eat 2× as many mediums → 150 medium beans. Each medium = 3 small, so 150×3 = 450 small beans.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "450",
+          "summary": "Given 75 large beans; medium count = 2×75 = 150; each medium equals 3 smalls, so small count = 3×150 = 450.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"450\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given 75 large beans; medium count = 2×75 = 150; each medium equals 3 smalls, so small count = 3×150 = 450.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 35615849043855533096450185034732882391,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.18057979168812008,
+        "proposed_state": 0.01998652043966206,
+        "state": 0.01998652043966206,
+        "probability": 0.22548021581404598
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.01998652043966206,
+        "target": 0.0,
+        "drift": -0.023983824527594472,
+        "gaussian_draw": 0.5477577063118455,
+        "proposed_state": 0.07821380651182835,
+        "state": 0.07821380651182835,
+        "probability": 0.23371908047760037
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.07821380651182835,
+        "target": 0.0,
+        "drift": -0.09385656781419402,
+        "gaussian_draw": 1.2177670011686623,
+        "proposed_state": 0.2036102581384155,
+        "state": 0.2036102581384155,
+        "probability": 0.2521625365714313
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.22548021581404598
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.22548021581404598
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.23371908047760037
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.23371908047760037
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2521625365714313
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2521625365714313
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.1728061535963159
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.2236450206741013
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.40220254643863707
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.12786333625027813
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.6822511764372315
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.6293730187320237
+      }
+    ]
+  },
+  "initial_answers": [
+    "450",
+    "450",
+    "450"
+  ],
+  "refined_answers": [
+    "450",
+    "450",
+    "450"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "18e56012731dbbd1f9e5884c017fb9d36fbc4fd9c4de613ab1f7bdb8ef47bb88",
+  "errors": []
+}

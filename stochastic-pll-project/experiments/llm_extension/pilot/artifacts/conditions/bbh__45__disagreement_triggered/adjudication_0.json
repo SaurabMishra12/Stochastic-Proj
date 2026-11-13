@@ -1,0 +1,199 @@
+{
+  "payload_hash": "d9adbb469948df6f7ac37689b8dbfaeebb2b562ac51a2afcb0988b1f1c7f205c",
+  "logical_id": "bbh:logical_deduction_three_objects:45|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_0ff8fa664be7139b016af73b0c02788196ae76a3f57dbc65d4",
+      "object": "response",
+      "created_at": 1794587404,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794587405,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2339,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 391,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_0ff8fa664be7139b016af73b0cab70819686eb517ce789fa6a",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9zsNxahiBjT-tsDgAAVFkpakKLupUePOv4LO1WjoMKBTuwsK041pYC3FLooXhwpKg0GxmKj2eQRjUq1150HaxE8tMKhiYPlH6gKIJK3WKBSyLp2ED-OIIvl1F-9W-TSsA0nwWhXSmpdNaWdpuSC37oeipHTq6YGDfWZlIAqZgM7JrNaT7Ch0fwS2_CvW-tpOrWgjbZPqokhAWRIBSBstX_gXQWYMoit7IRtLZ3rUXhqmixkAiilinQwTywXEyb-FiJgL-rT9AlRQt1XOnzPMX46oQETXbbDI4_nz1BpTRimXW4KuNTIDC69vxOwHz2uHl4h2P_y5vGsMMH753VbYqiojFWFqAoGLFqPhP81a8tTatLX0W9rKN7V2LnnxmD6lRy82YwlBMaihXNkB7WW8Vd0a91tbW_1T6ZU4ouUkI32zH-nq8hKmyGSHh7PLS1FnncjkiIU3KX0Ip2w8W-GqP2w1IyRVqRQ6UmvFC1DDrNMnxlXd3mHP3RUs2iubHbzngbT-s24KNqNQzBMiCTG-eK7C3D83j-YfwKqqiJYil2qMH_wDNZE6kINj1obD55B4nk5t9eLroVlHmdN2bTxTjjZ57Yhg-oSNgoFw9jlXN-fMWOTYtfkbMugrUPCXYLgLsdAZwfV6j6EYWlv6dR8e_Pmxn4T8hk8ymCfTLDQcd9qgVd1-P-z0vKioX_11dwlPtMC5CsE-Q41vpDQt0wqSDbsprqGeoDEenUDTQHPJkiDVxCZWsnyv6fC1XaXJmRRfyZjNmy8tCvVBbGT0Po11kFkahNSRtoE98albOOkFQeNqBkwAN2fJ8EhuXPMnrr55YDs4rC7JQASMWOtBB3SMeeS4JZYnIcZpxhDvfkr7UferPpNOCjvUB-nK7pWK-YDzCSE4SvxZWwxLWcwUeYdD13_D-piWNoRr-EPsFnDnNvIm0sp8-tV6_lfD06Pmre224BuoeaTDhcvyZf4CM748tO4Gk7lwx0qVOWn5pEntceo_wB55qEnpDDXw0Nl5NYoNo2vJAO6wDJYJkQZqNc90ZTquAa23XK-_RWusxr1UWCEGgYuksyYZP7iXJ0p_BXH57VSsr1EkXP9kYWIgxEtL9Y_5ksV-8_0CptAvZKpEEOx3aoDKZgsq8paeaA7r3VXGjj4al0CwHOpU-UZkzUFeqFYuBAwCM8HhTKSGH2AG7PrUWK3YBVGVTtvRxpO-auaxTGI9OQ7iUvNUZUkoWaiEzDCQXUo2nRNt68ctHsHj8VPmPvm8enxJJuKRphb2OCel_yAfm6E49an2igpjhMsN6WXCezA4usGxJUISSZbitZ_i3al9vVyO_bUbNL6wIdb7WTS17NFlJiHE1Pq1CJaIC92x9rUINRwwjEnpbtVnZOUfu52VwKMCkqWevrokQJjKj7H3sN5xxOOMkvxT0mmssRbgZJqI2PDalFk_69wQ-W5_P1aKrXm8OTG_PiGvfAz9HlUKxYQ_LjlEZBerBViUaEXZCncm5YTTfapubGcDACT0LaQZw0FsaNWoTWdd81Zi2mrDuSLzn_m_2JxQKIzMJFUUS5dBJJYLz-dYCGk05qL3Bb0K1RHyp8ozoPeuIlkAYfxGNv-LELZ2x2eUlpebp-ndL0wU-YLELD-KJnwD_DpU8TiWS6ssi-hEG0RSPTZTHMXvlLxaq_jlJ4cKs4lug4xK8-mI9cgv724sLn2nhFFPJ5HsXX8ZMlGq823Fos6acAtXMfHI2eCPXX-ltAbomy0DtnA3t_Gjnq6nHOP-Rs2sxY0cwrXCFpzeHOM4ThE2b7CsWkdmWc9lSayLqcZJdz2B7sQ5if8q7dEO19kSMWcoYd8iPd6dcZpGntEjJa0qcJ2sy_i6k2jyf4BZT-ozzswYtHZ439F9JyS46rb770QMdrbBs00cLJ_tscw5Ct5aoHWty6-1CkKp5WxHxHS7N7ZgKHZiSn2il9m5leWlHPUq_ro=",
+          "summary": []
+        },
+        {
+          "id": "msg_0ff8fa664be7139b016af73b0d13688196972c264b764d54af",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"B\",\"summary\":\"From the statements quail is left of owl and owl is left of hummingbird, the left-to-right order is: quail, owl, hummingbird. Thus the owl occupies the middle position (second from the left).\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 414,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 99,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 513
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"B\",\"summary\":\"From the statements quail is left of owl and owl is left of hummingbird, the left-to-right order is: quail, owl, hummingbird. Thus the owl occupies the middle position (second from the left).\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 414,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 99,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 513
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:45|disagreement_triggered|adjudication:0",
+    "attempt_id": "ae728ee19de14437a67aa83f35972c46",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0003015,
+    "latency_seconds": 2.328038605999609,
+    "started_at": "2026-11-13T16:30:03.419351+00:00",
+    "finished_at": "2026-11-13T16:30:05.747431+00:00"
+  }
+}

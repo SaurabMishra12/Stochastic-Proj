@@ -1,0 +1,205 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5a78dc4d55429970f5fffdb6",
+  "source_index": 2384,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "muzzle",
+  "final_answer": "muzzle",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 8210,
+  "output_tokens": 1118,
+  "reasoning_tokens": 448,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0042885,
+  "latency_seconds": 26.958368506002444,
+  "wall_seconds": 235.29276957100046,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 567,
+    "utf8_bytes": 567,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "muzzle",
+          "summary": "Muzzle is a four-member band (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth), while Primus is a three-member band (Les Claypool, Larry LaLonde, Tim Alexander). Therefore, Muzzle has more members.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"muzzle\",\"missing_response\":false,\"sender\":1,\"summary\":\"Muzzle is a four-member band (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth), while Primus is a three-member band (Les Claypool, Larry LaLonde, Tim Alexander). Therefore, Muzzle has more members.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "muzzle",
+          "summary": "Muzzle is a four-member band (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth). Primus is composed of three members (Les Claypool, Larry LaLonde, Tim Alexander). Therefore Muzzle has more members than Primus.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"muzzle\",\"missing_response\":false,\"sender\":2,\"summary\":\"Muzzle is a four-member band (Ryan Maxwell, Wesley Nelson, Burke Thomas, Greg Collinsworth). Primus is composed of three members (Les Claypool, Larry LaLonde, Tim Alexander). Therefore Muzzle has more members than Primus.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 231965178765663001355927412320817212919,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.5308299065220861,
+        "proposed_state": 0.058752104416042165,
+        "state": 0.058752104416042165,
+        "probability": 0.23094226216285285
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.058752104416042165,
+        "target": 0.0,
+        "drift": -0.07050252529925059,
+        "gaussian_draw": 1.9217531082666135,
+        "proposed_state": 0.2644009441781901,
+        "state": 0.2644009441781901,
+        "probability": 0.2614435312506937
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.2644009441781901,
+        "target": 0.0,
+        "drift": -0.3172811330138281,
+        "gaussian_draw": 0.9977226765257271,
+        "proposed_state": 0.34310049546253213,
+        "state": 0.34310049546253213,
+        "probability": 0.2737816962598968
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23094226216285285
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23094226216285285
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2614435312506937
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2614435312506937
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2737816962598968
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2737816962598968
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.30494090246097283
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.5015675913798705
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.4250295557340763
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.12551610111947686
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.414438615559106
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.17972658951145393
+      }
+    ]
+  },
+  "initial_answers": [
+    "muzzle",
+    "muzzle",
+    "muzzle"
+  ],
+  "refined_answers": [
+    "muzzle",
+    "muzzle",
+    "muzzle"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "05fe17f2f33c0fc5cff7ed794f85ac2d6aadfa1617b8a8eabc5f5eba3d973225",
+  "errors": []
+}

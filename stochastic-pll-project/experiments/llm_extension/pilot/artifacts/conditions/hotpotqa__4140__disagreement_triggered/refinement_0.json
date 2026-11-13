@@ -1,0 +1,199 @@
+{
+  "payload_hash": "51737cedcda8b1f64a55c1c28c8fcdc6329faeceb920a6de96ec9b1b158128d7",
+  "logical_id": "hotpotqa:distractor_validation:5ab5d6155542997d4ad1f1fa|disagreement_triggered|refinement:0",
+  "result": {
+    "raw": {
+      "id": "resp_098924ef90bfb767016af72cb846988190bae3256bd9052469",
+      "object": "response",
+      "created_at": 1794583736,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794583738,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 10286,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 655,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_098924ef90bfb767016af72cb946188190b62f752f771a2e71",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yy6ncBVGnXnZH4LX0B22FqBeiDFKSdL9CKvgQFxg8WPY-aYNTKSzMXuhfz8Ap-BDk8oM-kqWr-9RHVHi7xDC-HDRh2aGcQ-faYdCUQAXyt43esBBfWtN_HJ4qAnKvXWT2-PgEWemkxtFqdmQgB5439tSCcDI9WYiGaOjDKJ6IHUnJbxmBXsUim423hWApfpvj-lVdvHZso8fsb87Ctu9MqtMH-WUPdms2R66GWBxW_MArd3I4UO85fHA75LFhsavrxmYcxDWeSJLV3YXjv0E4IpPwgqINJfv_cv9MQiSh97ma9Jiy-Lzv2wdPgdaX0RKLx_QR0OIe7wDmbWZt5buD6PMkLjgJgjeAf5TmATGDWsMO6W_PUhgwig7m1YgSuReDMQzhQv9wOcoaVyB3RLCBHZlDS0KhHSOfUMN3-wNKiJ3wDwftcOteNw9MQC_lWUNfw_pLwKzvId-JiUcjnLZ30lwK0KpNMibcNK6CZ53zicCYbg6e9q1ImW2lxXAczvHs_7OdmaA5biKcnbbs67AhiHCXFIsuJ_krjBgGtnRxwFaVjrN_3oPuEpTKNuitnR8xk-E5cVv8XuuKdNRNOQSaftwYUUCmaOnMJ4fFP-CAQT9Uf5JomTpoRYX_VlwMt6r6sAcIoh5LH5n7MRIBw6g-4Dgy6YGUpljAVfpoONEc7I7CP0AjKNEpKfBY8MG74EBOH6qxKNejvei_nnFqhR3uJxgpaNpWYTbajFM4BP1quMZTpwJpjnaCc5PfPsOTf1n_9JF0kXSv7eGtMVD2ANfg6WNgzqEvPG63PefSZcaZ_Px2kfRfSzDHHK8V004V5cBM9U-SiFd2g_3OYYFGyNuTNZZ8SXWvrTnekcL0s4wwvAMBCTgkmKLtHraAOIpamLM1va-hr8xoG5Nb_yKFPyPcC8rwL4dCncXIt1-CIjmNLzk4UGzRcbjkInFkpblXtOGwO974h7cSTLRuJTTBCdSorsT4XtH8kGyU5GMkQk8bCXKFCIZSu7WoNZCg8csgrhCGPShWlEqmEADVpFBMOuF67490m5KphvMMGoj_c1YpgpysG3Jw3YlmduUBwnFCNsppyvSYcVpsK1rMQLVasLHThldLhimXuGWULu3zrgs_1NQUGfkk3TjwAY3AZGCoLoJiEYSWlG5h2ukxrwNV1l9hU5S6suVx_ZDrWxgxJNyKHbSBxNx-mbAVfMgGPiYP41jpM6It5tIIeqT1NY3iR1Qqvj3gYKYtZ2NFfn2RG892Yp0A44vlq65AwkBTKRej1vQSgiXSZrtraUpKqcCGvnGcYps-_Qx-2OE0DCmBELJ0zO24iwBA7D1Xf-dDw5hvuVyQSTbzow7T9_cfdj1-IQl8kctzrGPJpP1buIPCHpYkBZofCryhWYaKbiPOfpXwX66B_wT8nmdn1ttQUFkNwoP5x1enlMDioAZs4LKTnDYNpL8AZuh35OwyFkCn_8qSbmGXf1-9bu2GiIt7BwMVKz-tehXSlmV7d4GWAcXO4RLEgLaJPTl5V4AIzoXH-SigT5KPbfFOvirZiAGafkBgGVaHveIhKODIAZc6yWED-hdjsVY02U_Fgy_u7pc-kZta85LhSoAvu68PM7wjaq7un7Vf9jlM252jQ8ghKAhG8ZIKmmG4jnm7jaYprHqY3M_srKW0gMgxTxOJr1feGnUXY-vF7-MIB72uuyrGWpT9IQ8V_k4UEvNW5t_6MbD0ta8ZhcdhbnC0QX5mBDf68cHLizlC92x3Ha5T9Qimwu5urbqDbHwFEFS83uQFvlhRRVslO2psVrO9FG9t6CH9jVy3ajG55iaUk--nciH3stywyQftjodZV3pCwEz4QSYQ_IDnPshXVtoukvVNTXAnzL3H0-Hp6FCaA_hfkmIvl3vV3n0xecrpup0i1nrIvjYfHRDF_sw-vq7Mh5T497s-dm_CnhUPZaSxnzb3sKsQuMzcr5ej6p0u6RgdyuIhVVkBFr5WJLuM0xPQLo_V3NSbPQBVzUEElZ3lPkwELGoH9jXeK8dzpgLfhbXRRxb56TUF54hfGsMGGnqP3Y_703cmUgSgEXqsUZ5oWkm5Z_WHg569DetaRbrWz12PcCadKIrne6Bq0rSR_O_PV6GE8PmyinzVITZ-blyfMXTQnMCYc58Xrlcu0ePL7px3WSAR0WM2DUtjY5dYmE7GCmn3-qR18bK0A_5bkRyxrHE3WBEbT_e7D4ROdVgl_vQC32umiHE5yYMT767Yh3a_0BnNW-boPUzupAoveJcsWq3RLgu7ZeyZZHKLP6L09374INUwJJBK77Xe6GEKp_rg4dk7IvCeW2uC4PJV_VMa3hKLTJmiFSX6QKW2bSvHpgUcxKx7-DUVITxYSi2s2vcwi6Oi0dEyA8YqtxvII_Ijgk73OkXs78zkaKIrlBsT3YrQfuQNulzGJENlgowT9ey5sDpfpmY4yRQI5XTyezx5t78e4CKfytudi7nIkkWFPmmBi1zItULvhnGx_ljj0BaEnU9c7lzGUmbvqQB7UYL1GG88SE8pq4sqnSxQCK97cwWhqTOb6YOtyio6BqtxKHrlWyXaaKWdDvt91V_aZqxvTN6aS3-tGigmeJNbn9S7I=",
+          "summary": []
+        },
+        {
+          "id": "msg_098924ef90bfb767016af72cb9f73081908ccd293b02c44b06",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Deep Purple\",\"summary\":\"David Coverdale compiled the tracks for The Early Years (Whitesnake album). According to the provided context, he was inducted into the Rock and Roll Hall of Fame in 2016 as a member of Deep Purple.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 2296,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 149,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2445
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Deep Purple\",\"summary\":\"David Coverdale compiled the tracks for The Early Years (Whitesnake album). According to the provided context, he was inducted into the Rock and Roll Hall of Fame in 2016 as a member of Deep Purple.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 2296,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 149,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2445
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5ab5d6155542997d4ad1f1fa|disagreement_triggered|refinement:0",
+    "attempt_id": "3646684c9cc249df8a3f9c13b7db0d94",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.000872,
+    "latency_seconds": 3.2013561829990067,
+    "started_at": "2026-11-13T15:28:55.561353+00:00",
+    "finished_at": "2026-11-13T15:28:58.762744+00:00"
+  }
+}

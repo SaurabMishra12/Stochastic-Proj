@@ -1,0 +1,199 @@
+{
+  "payload_hash": "d61783675d97c23f798d2200ba587a43d0864db9d7db298a60531df875e94d9f",
+  "logical_id": "hotpotqa:distractor_validation:5a75d35d5542992d0ec05ffe|disagreement_triggered|refinement:1",
+  "result": {
+    "raw": {
+      "id": "resp_00c4b7ace2663dc9016af72f1287f0819385f6a940408321d5",
+      "object": "response",
+      "created_at": 1794584338,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584340,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 6131,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 571,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Refine your own initial answer using only the supplied question, your initial response and any received peer messages. All responses are from the same frozen initial round. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_00c4b7ace2663dc9016af72f135fb481939a3ae6603c471889",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y8UvZ78_RB-6Gk47i75Cd5SNv7v7m6hs_3ve6U6mOeAkw6JTC-OVZO4VlLl7b4Rb-RyMJSlGtwemHRW0px9dWR62gOPhq7zgM4NQh7AcsNba0WqS01TjBieKYT8YPkkWAT-MGzUYOiCqqHQC2VFTKxl0yusNCfC-aaA5MlhO2Di8YVpHFrwgB3syaXqH8KHqWEXKLOKgaKo-LwF9Isn-fbRntPCYf1Yauypl-d67Ex5CJAKB8xydUtznD6EtEOTF2KyikCjLwVl69gl_f0GxFrtWYd6viDuoYVCVsWnC6bz6SxghwOF8U7MLs7aiMH6rn0BpmZairEzsfcbU00tnh4r9GLS8sVkp9aXKrhzbxtv4YR3r431St9JYbtLFraPctVUKKlQR4Zp4kivWvS93XyZiq84o7Xf12CvKQkU3jw5_c6Pe-8objghyT5TSXeajPkJs5TSdS5KJ0Cp4d2gqIlby2nc5PxFJTRHa0l0tFTODeQTThd2bteLPPRqs15X96bgQfkS7p69ACPEu-uHfiAIWR5qD4kLsenJJeP1IKunYj-9YXkKVCH1JgzFIEqQm46x6jgtN_nRlrQtgYzgSdHGLz2LNvvgzftr3YzLc5crgR3q8wCar7D8U5AvGEk9ye4qkB7pnycWFkBTi1LEmEig4zu2o05Ef7Mf5N8eOM43cXQP5F380Olmjk5CWp6aF1fbccDW_A6jXiHSAnW6_1y5TNWdxcdPWoBKpdF1T_iSIjLJY01lFIUOGkbKBQWTEJigX_B-rlP7Bgv0TB35TpXpHgB_TNRyzjZIZz0ge3myQ2o4Hk7NL51x2kH4OQaUIVvypCv5oqRXZgOyBUjf2wUo3-R9lN2rPVKIItxh7-u2r12HnLV0e-DruTDWI89vkcTrnzWGIs48ich_oqLVkJAd3hOnTc6MzPLBsPms0DNa-fZuE2rhPxv1FHtRVBx4U66L2ZT-AgbkTKru0i8fKziR5SeRTcMzSkc8kDZpDTWz1QsjrnTyCKFVUQVtbPc6ZoaiOCMFGYEblRvx6IuHbD1wC0XVSRkLley-r_gmI2wQYZ3d-VCFC0iHKLaXD_6o8gYqSc1rlGAsaKEhlI7LItNb_xmUwWRrbLp75V4BaYJYQb-TVVW4yTe4HFCMjIzbnQmYCvmu3P46GwtJ1hlK6KTjowsD4gAXNA091KYbMDMHDbYRzbGM-dDz-8rgSzajzS-X_75-pDtDhN4nzYbKHh1xVH-c5pELoFZ-D2yAKDdGcE_UZp-zlWdJ5nfMf6VUlnHy3vLSJziNqumRlbs8xb7KtoBbPUzQkruOmmeTBLJaX15rqqmbBUCGUWYXKZM4ob8YM_xwLRuFKiU3xmrDk4NIRjk3ckKtVU0wqvH79PbLO-dD6ihgpscDzs3Mqsic1swCCmbSffvPTtKOPV4hu2UBc3jSLYyFNV3umYu7_CftPz48nyOYDiZTOgd6KP1PYZX52721bvF-hBBO7SS3NzqcYhsriBoipEDuLXCRxcQ0J8y9BWhw1slaBVza3_8vloqdo7cGehfavOWe9LQf0EIs0WSi4mZ4BCTtetm6NuA6HootfNAi2-omVxt8wO7B70vuzbfF9G3VhhWZOZ1QHNGpQcJTsLmPiXmewk0Z97xskuQtU3gmjJizPKe9Txna2uAt6n-oaYtLvkx81Y9GoFu1E7QvAsv0YFBU5Idso88qXbyBd_yDTJjHxWpaBtViFYThAUacfEI4Pjq6VujN7Lz9KZQV1sn2-x8hw3VQvTrE4qc5VyteHtyb2AUGyn21OHYru_ofBXf4qN2xhfFsmRDOny8ZzJL4Fm4spQHe93ttJvKzhohwnYffd-83iRe-3Ic1pWUPb3hbQzWQyTZLcB1tY1zCkSBOR7XMWjfRYNU3ytDHj_7BtlpMdauZY-TkmUgR1OhGdJQJCtblPeF0t6acZ_9u4HoXSoAqYXct-1bqQcJkhbc2qm5z7lO42J7x3vZVR6UY5qu9meFL5FhJovz6sZbIr7VrD5yAXeis-hPhpQ8MwTLLey0dxe3y0C0990q7WGrM7OIOLn1Uwa8ru1pbaRXqVZ75-6cT3rBj2II-FABgsvwsblkz2i2zaPDs9pqYymDn0apPNvbQ8fBPmXWJjvIu5ALj5dkAdqKY7ml_aVGwc7iMiVPnG9yuzGj-UYHv0EreEPMDaokwZ6VoTuegleaZUW-ROKPzeTnKSeY1wFsjh5hldw_1yvTEl8oaoRTtZT5AbqGU1aHCRDr69yNKvaOGaygoEslD8qEeWhitZpqKrvQRX75qyvff7LHIlGzf",
+          "summary": []
+        },
+        {
+          "id": "msg_00c4b7ace2663dc9016af72f13ebe48193b02595116c72b8ad",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"Toppers Pizza\",\"summary\":\"Topper's/Toppers Pizza was founded and first opened in 1991 (Champaign, Illinois) per paragraph [7]. America's Incredible Pizza Company opened its first restaurant in Springfield in 2002 per paragraph [1]. Therefore Toppers Pizza opened earlier.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1287,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 140,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1427
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"Toppers Pizza\",\"summary\":\"Topper's/Toppers Pizza was founded and first opened in 1991 (Champaign, Illinois) per paragraph [7]. America's Incredible Pizza Company opened its first restaurant in Springfield in 2002 per paragraph [1]. Therefore Toppers Pizza opened earlier.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1287,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 140,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1427
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5a75d35d5542992d0ec05ffe|disagreement_triggered|refinement:1",
+    "attempt_id": "27eff360616e4381837d0edb093598b7",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00060175,
+    "latency_seconds": 4.568342669999765,
+    "started_at": "2026-11-13T15:38:56.168772+00:00",
+    "finished_at": "2026-11-13T15:39:00.737164+00:00"
+  }
+}

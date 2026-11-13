@@ -1,0 +1,190 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:211",
+  "source_index": 211,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1963,
+  "output_tokens": 836,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021627499999999997,
+  "latency_seconds": 19.737063683996894,
+  "wall_seconds": 229.79630957500012,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 204,
+    "utf8_bytes": 204,
+    "messages": [
+      {
+        "sender": 2,
+        "receiver": 1,
+        "content": {
+          "sender": 2,
+          "answer": "C",
+          "summary": "Given green is left of brown and brown is left of orange, the left-to-right order is green, brown, orange. Thus the orange book is rightmost.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":2,\"summary\":\"Given green is left of brown and brown is left of orange, the left-to-right order is green, brown, orange. Thus the orange book is rightmost.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        2,
+        1
+      ]
+    ],
+    "controller_seed": 218923839910661546501051218905133058062,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 0.6818224937633175,
+        "proposed_state": 0.07546392140798115,
+        "state": 0.07546392140798115,
+        "probability": 0.23332531992243258
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.07546392140798115,
+        "target": 0.0,
+        "drift": -0.09055670568957738,
+        "gaussian_draw": -0.5176419375189174,
+        "proposed_state": 0.009115787114641206,
+        "state": 0.009115787114641206,
+        "probability": 0.2239650803505849
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.009115787114641206,
+        "target": 0.0,
+        "drift": -0.010938944537569448,
+        "gaussian_draw": 0.3735084454006068,
+        "proposed_state": 0.04936170210799385,
+        "state": 0.04936170210799385,
+        "probability": 0.22961071185832327
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.23332531992243258
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.23332531992243258
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2239650803505849
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2239650803505849
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.22961071185832327
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.22961071185832327
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.7695550038431054
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.8696028661787065
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9585192134623592
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.7571560972162154
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5248305472675293
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.19632446972214335
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "3aaffaf966bca9326887bf5da62b88f9ecd08e99e0360a8a6789e3fb1f78707c",
+  "errors": []
+}

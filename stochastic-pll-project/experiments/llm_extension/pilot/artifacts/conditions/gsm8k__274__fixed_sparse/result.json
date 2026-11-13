@@ -1,0 +1,100 @@
+{
+  "dataset": "gsm8k",
+  "item_id": "gsm8k:official_test:274",
+  "source_index": 274,
+  "method": "fixed_sparse",
+  "answer_kind": "numeric",
+  "gold_answer": "3200",
+  "final_answer": "3200",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1902,
+  "output_tokens": 955,
+  "reasoning_tokens": 384,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0023855,
+  "latency_seconds": 19.638084008001897,
+  "wall_seconds": 183.9207487450003,
+  "communication": {
+    "directed_messages": 3,
+    "characters": 517,
+    "utf8_bytes": 523,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "3200",
+          "summary": "Calculate total cost: 20 tomato packets × $40 = $800. 80 celery packets × $30 = $2400. Sum: $800 + $2400 = $3200.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3200\",\"missing_response\":false,\"sender\":0,\"summary\":\"Calculate total cost: 20 tomato packets × $40 = $800. 80 celery packets × $30 = $2400. Sum: $800 + $2400 = $3200.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "3200",
+          "summary": "Compute cost for tomatoes: 20 × 40 = 800. Compute cost for celery: 80 × 30 = 2400. Total cost = 800 + 2400 = 3200.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3200\",\"missing_response\":false,\"sender\":1,\"summary\":\"Compute cost for tomatoes: 20 × 40 = 800. Compute cost for celery: 80 × 30 = 2400. Total cost = 800 + 2400 = 3200.\"}"
+      },
+      {
+        "sender": 2,
+        "receiver": 0,
+        "content": {
+          "sender": 2,
+          "answer": "3200",
+          "summary": "Cost = (20 packets × $40 per tomato) + (80 packets × $30 per celery) = $800 + $2400 = $3200.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"3200\",\"missing_response\":false,\"sender\":2,\"summary\":\"Cost = (20 packets × $40 per tomato) + (80 packets × $30 per celery) = $800 + $2400 = $3200.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "fixed_sparse",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "controller_seed": null,
+    "states": [],
+    "edge_probabilities": [],
+    "uniform_draws": []
+  },
+  "initial_answers": [
+    "3200",
+    "3200",
+    "3200"
+  ],
+  "refined_answers": [
+    "3200",
+    "3200",
+    "3200"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "a66cb09822337cca4a4f37654a80900fc96491a378983de6cc672d3461b03271",
+  "fingerprint": "dedc6e947e584fd528c82a646ba948b91f7f56179cb0ffb06006c288dd8f744e",
+  "errors": []
+}

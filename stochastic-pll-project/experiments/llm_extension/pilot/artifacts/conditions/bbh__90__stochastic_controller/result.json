@@ -1,0 +1,205 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:90",
+  "source_index": 90,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "C",
+  "final_answer": "C",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 1868,
+  "output_tokens": 834,
+  "reasoning_tokens": 64,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0021349999999999997,
+  "latency_seconds": 21.08109323899953,
+  "wall_seconds": 192.72192127299968,
+  "communication": {
+    "directed_messages": 2,
+    "characters": 450,
+    "utf8_bytes": 450,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "C",
+          "summary": "With three golfers and fixed finishing positions, if Eli is last (3rd) and Mya is second (2nd), the remaining golfer Eve must be first (1st). Thus option C is correct.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":0,\"summary\":\"With three golfers and fixed finishing positions, if Eli is last (3rd) and Mya is second (2nd), the remaining golfer Eve must be first (1st). Thus option C is correct.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "C",
+          "summary": "With three golfers Eli, Mya, and Eve: Eli finished last (3rd) and Mya finished second (2nd), leaving Eve as the only remaining golfer to have finished first.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"C\",\"missing_response\":false,\"sender\":1,\"summary\":\"With three golfers Eli, Mya, and Eve: Eli finished last (3rd) and Mya finished second (2nd), leaving Eve as the only remaining golfer to have finished first.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 147459673615284197278613669738321991365,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -1.3243247232532385,
+        "proposed_state": -0.14657588705033356,
+        "state": -0.14657588705033356,
+        "probability": 0.2030627805411959
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.14657588705033356,
+        "target": 0.0,
+        "drift": 0.17589106446040026,
+        "gaussian_draw": -0.5398926997438912,
+        "proposed_state": -0.18874195241937708,
+        "state": -0.18874195241937708,
+        "probability": 0.19765849550285236
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.18874195241937708,
+        "target": 0.0,
+        "drift": 0.22649034290325248,
+        "gaussian_draw": -0.139889379178523,
+        "proposed_state": -0.18157583518253917,
+        "state": -0.18157583518253917,
+        "probability": 0.19856924902695036
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.2030627805411959
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.2030627805411959
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.19765849550285236
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.19765849550285236
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.19856924902695036
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.19856924902695036
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.3569572052985204
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.20103913781737248
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.9515274385797798
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.10467356128969307
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5795914217030238
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.24050593066639336
+      }
+    ]
+  },
+  "initial_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "refined_answers": [
+    "C",
+    "C",
+    "C"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "b7de374dc6f1e205347a8ec71e4500af24064c0a696a46992cb6d43e35105949",
+  "errors": []
+}

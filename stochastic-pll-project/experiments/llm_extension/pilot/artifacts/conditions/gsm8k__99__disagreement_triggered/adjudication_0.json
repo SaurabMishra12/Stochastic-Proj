@@ -1,0 +1,199 @@
+{
+  "payload_hash": "b0f587a55199b20c884d4dcd337c35464ae790937fb315407ebadd351f1d1b93",
+  "logical_id": "gsm8k:official_test:99|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_08b19e542ac8d071016af720427d6881958b583422e980e1bb",
+      "object": "response",
+      "created_at": 1794580546,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794580549,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2206,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 585,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_08b19e542ac8d071016af72043874081959da25d07b6a6581f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9yBF89aPshSJhDrvI_7trlfDi0l00PbfR_pGWtg-n6Gx05AJhjNzX-QpaFwlvIxMVIC7yCYNBv20Lc6m7r39vMHNJDr1CIlycT9YAlpDzB8hTeS_ieLNGV8_8ZAEriYyWX07Mn6PExPJ8bQYMka-oNi4smcPsvxGgD9mWPqmgWEcJg0yWV4gHA_SnGaSgvU6ngGFPRgPTnv-1lbRLJ1tR8--PRhpYu0qtsFrxyOKCJITIQB-rhlM3_Rwrz9EpO7NikhEdsrn3EfYJ-h6eDTgVy4Gt6QqfCUdW-RejNA6JtnHxdbY0pRwAD9NGsobTk3qKa6zWkG14tPgvvtEsR-0fgTkpkjC4HHKdmsZyM-Ojycr1bLOeLTE-UohzJB_3-WSyjXrbmQvmbsgDEd6-um0hrFF3c4BrOvLXlALTzOQRgWSzoqIiuoKlmXPFeMlEfaKqoOi5fpA7zM17Kq762MJSQpyu19peg9h8Vw-_Xj1VbH_-KwwZcUN5frT9gCn8ehiS2JvSTWZ6UzTaTCdtGFPdaRHbOTVXxljqxtNz6yjvA8O58fz8rE0hYkDPvHS20dT6NfxXJIKep1JRScO6DxdaAD1fd38Hdxrrp0hDiar8XUSANWAKwZudhgNUPhWksZtQQRHRLQfA-lIZplbHTKzyR-REEU37HgRvQnyU9qnHKW0ovZvGe-5Ahu3ooK04tQDFGXylAte9qoMeuocpbIcpH1lRX1pjr83FqmkzzQRRhP6_REZhXtYXH3R5zhUgTE-OGV_bHa8ph4j67-O47hSuzD5g9tt2g_bNuyjotuobhZxIz9fqwIOb3bckNVGpH9X3Rpo6wQnyyEar727_KaXwTYs-idXx28xYMR4_VuEzdPD-3qstj8Egop4oZPyAOVUGriK9-LGo46-2doHID2s02um-YcvCcGm472eveXSgzprJim_LwWZAzIbcfwPrQ-UM93jUyjhc8LvjQ5L_adUGUiFizpX3Hc2Oa2WQCJvNF6iyvZFgo8zsmxFJr611oswjtSUuzJIprH1R948WyHRqox3lglZuPQL-iQDuAeJ1FIYpV4R_i6GcktDmk7npDti3V7_uCF2tGY-SAF6jFLY0ttycuWCRJkDW5CoOXrmoSNSDw8mFFwnU4ZsAl5zrnrlXpYyGAWUA_tNp2vVPzh50DNmcpBJEoVGulCPj9OobTx4FvabTZVWETQLRTL-a-auYwsaH5D528fbhq_bBt5n-t2LF6hPohYyP2alv7j9mCAk4Jsm9qmA_QYr9TOUHw-maaW_SRiUCBNfAhvpxpkodG_js1l9RutqF_e1CrFZxFfLEt7VfzMHsEFoR26_OMIaG1nKBwcka1FW06Lu0MVfq1RAa8EsVlDxSzsIliFHC3EzEQNnZfPNSkb-ybiEH61iCxpySAAKYg8TUPbmq_ovCnHJ2wsIvIK8wWOUdCbZx8DA9ZiznqtKAJPQT4zmZUkBSDrT2fGAHZiM5e-IwUCCmhVZuVzumcBGC1Jx4-oRDFJpELYhS1p8ys_b9ZgplMqgpV5LoLi6VHxga_Hl_G2noG4zbOfQMalGPm-dotqjh2hHBLZqfIckjIHqHWxmbyVMzDkEmJA0zd3uenSeerJe2NBcIyQvc0_E_HXYa0GL8lnH2qsXJNlvv31PeRfjyXxl8ZpcFuflayLnZPsA2PIwG3c0fZIZKb50-TsxASaOed9AidZMkQhPoRhx6fuO6mTOY2q1Lmc9UeT4JGskS6HcmoUw9EKwZaZZ2BsqC8dWvljFFocsSmgYA926Usgy6CJfs5MGXPa027UxtWYhROmPT3A23wZdrT3y7vtUMmwmTgIsz6XJ6oAIXSz-zEE6g9P92qQ9iX-qyb1cJTOGdNWD2j36ljhLnNVZgctZllMGjMrDnD-HPaULRVtFNfzuKeiI9crvgFnsH7QcB3swOaRx9g8x97RS24ytMi-F1YVwF3MrDdRvXey-wOyKXM4YB2mz69blsKy6Lpn2UXxhSI2Ajp6B-cWThco7HSkIygJNg0CAf79MvETrGpI5xa9tvnpZ98FiijXEYirT7GbM0oYiYUMHS5xkzeSUkR4ab9jQXTciS_iC2n1ARaiDYqLBCO7FyPJnXNarDbYWFSw8EUNSZKsuO36OBZQ3y4YnzKLEKwg0XlyDfHWnVkumwp4GU7JNRafRVkdwdMosfDx1BtJCaESwU267HL4zaOITJqiMXHuhkoPsXyu13soejTw7qZZJUriUI59vn3ofAk3mZVEykihPXyM7zqHP_J1yDz_04lUlNkEruX_3IyhPf4S0ZrGl_SPVFIwp5fOmkfEKW-sSHK7n-iX9_87cChDwbWIaGhNazRPDCnOu7s8rrlj1BL7nTHDftD57xFgg0r-MRbxSWKXvC3AGLRY8MUkIj1pdCnHUd9obn2D4bOoFL-6DlI00RoRz5HAXBEQv2Tokui0FQHNZl7efbOc5xg7TIlRAP3lu4U2TUSNAjtjI_4LqNFe63Te6Vwo5QblOZVCg4VPjQP_rPSq7Yx8nuxwFaB6kPoYn97tW-NbRbXaMjK9a9H1WiLas",
+          "summary": []
+        },
+        {
+          "id": "msg_08b19e542ac8d071016af72044429481959a982a76de85559a",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"58\",\"summary\":\"Mary initially has 2 plants × 40 ledges = 80. She receives 18 more, for a total of 98. She gives away 1 plant from each of the 40 ledges (40 plants), leaving 98 − 40 = 58 plants.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 414,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 161,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 575
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"58\",\"summary\":\"Mary initially has 2 plants × 40 ledges = 80. She receives 18 more, for a total of 98. She gives away 1 plant from each of the 40 ledges (40 plants), leaving 98 − 40 = 58 plants.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 414,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 161,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 575
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:99|disagreement_triggered|adjudication:0",
+    "attempt_id": "baaa50a22dc64de28b3109897e540370",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.0004255,
+    "latency_seconds": 3.3570526729999983,
+    "started_at": "2026-11-13T14:35:45.818257+00:00",
+    "finished_at": "2026-11-13T14:35:49.175312+00:00"
+  }
+}

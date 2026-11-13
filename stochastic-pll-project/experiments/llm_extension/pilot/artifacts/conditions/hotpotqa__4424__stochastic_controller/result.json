@@ -1,0 +1,190 @@
+{
+  "dataset": "hotpotqa",
+  "item_id": "hotpotqa:distractor_validation:5add97c15542997545bbbd80",
+  "source_index": 4424,
+  "method": "stochastic_controller",
+  "answer_kind": "text",
+  "gold_answer": "professional tennis player",
+  "final_answer": "tennis",
+  "correct": false,
+  "f1": 0.5,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 7763,
+  "output_tokens": 900,
+  "reasoning_tokens": 256,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.0037407500000000006,
+  "latency_seconds": 22.29102978300034,
+  "wall_seconds": 240.64126932,
+  "communication": {
+    "directed_messages": 1,
+    "characters": 309,
+    "utf8_bytes": 309,
+    "messages": [
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "tennis",
+          "summary": "Both Virginia Ruzici and Andy Murray are professional tennis players. Ruzici is a former Romanian player and 1978 French Open singles champion; Andy Murray is a British professional tennis player and multiple Grand Slam and Olympic champion.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"tennis\",\"missing_response\":false,\"sender\":1,\"summary\":\"Both Virginia Ruzici and Andy Murray are professional tennis players. Ruzici is a former Romanian player and 1978 French Open singles champion; Andy Murray is a British professional tennis player and multiple Grand Slam and Olympic champion.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        1,
+        0
+      ]
+    ],
+    "controller_seed": 4891490948302811069035643165174487054,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": 1.2428056235743004,
+        "proposed_state": 0.13755337607762247,
+        "state": 0.13755337607762247,
+        "probability": 0.24232820101223654
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": 0.13755337607762247,
+        "target": 0.0,
+        "drift": -0.16506405129314697,
+        "gaussian_draw": -0.971191791805842,
+        "proposed_state": 0.013555737204479779,
+        "state": 0.013555737204479779,
+        "probability": 0.224583033018735
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": 0.013555737204479779,
+        "target": 0.0,
+        "drift": -0.016266884645375734,
+        "gaussian_draw": 0.652914099911714,
+        "proposed_state": 0.08419339726553375,
+        "state": 0.08419339726553375,
+        "probability": 0.2345769008525618
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.24232820101223654
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.24232820101223654
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.224583033018735
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.224583033018735
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.2345769008525618
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.2345769008525618
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.4755802302876151
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.6934257543422392
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.04825933308449526
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.5195151138355204
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.4721236251376211
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.7668452732404069
+      }
+    ]
+  },
+  "initial_answers": [
+    "tennis",
+    "tennis",
+    "tennis"
+  ],
+  "refined_answers": [
+    "tennis",
+    "tennis",
+    "tennis"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "6ef26642dacc333610f2bdb836162cec5d3d0e0715907e428d71fe5f7a48511e",
+  "fingerprint": "25e55d587e8a40eb0bf5dada76a15f2b0b81819b12c3e27849990c3103ad2c09",
+  "errors": []
+}

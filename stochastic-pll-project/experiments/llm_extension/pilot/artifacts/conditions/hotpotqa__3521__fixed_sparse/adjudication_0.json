@@ -1,0 +1,199 @@
+{
+  "payload_hash": "48723bcfb871c08650d94cce56b6dc02b881dde5448f76ff9049d53ade2d6aaa",
+  "logical_id": "hotpotqa:distractor_validation:5ab48f245542990594ba9c66|fixed_sparse|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_01b3efd4192f0657016af72f0de5a481909987c6334333434d",
+      "object": "response",
+      "created_at": 1794584333,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794584337,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 9114,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 626,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this text question-answering task, answer must be a concise final answer, such as the requested entity, name, date, or yes/no. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_01b3efd4192f0657016af72f0fa6888190877c7654b53b203d",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9y8RjHUZAALGEeSWHNaqB48LTLXKJY8vx6M96yXsfrrqyX0loAD3cbKFxR7GfiH46g56Rr8qUhJcG4RS9kqp617d_ycKAln6vAWFmk5z0DN9T9X4OZ99NUKLk8sAiwfp8FSqSCW3FkEkS3m3RzRz3uPgm7aUvYWlrkqJCp0WM1ubl7NhlvxVpAPTbmAX5_0X5qHHQ8pJSAPxJXIPv4wrvrq4N7XG75-uZeCPIPHmjQCnnVjxHh4sBBUlDYRKqfjBVSuH0SMnyRC6yK5leOlA2NbPaTb8k2tlTiay8pQeyWFnX8LbqES9UYAOA5WJmy8f4qY7ox9wR15hqI6dBqWPj889tpxETiOBAKSOw9a2jCJZkvi5IB46uWnQNgKecbEOt4TZuZNcMIjD9B76sFPvtFknRTSu5lApejck2J6vdHG1l_ifthw2m-_IQlM8n_aCwOijkhooeRaGZHgprGunWkRaQHbMZeY_rc_zaM0WDuzVuFHbzpQRlDQpRFgIDa0gjG7wHsaJ3iSoL1yDQEYADcMzhQSAh5W6BVxa9KgKLyX0GvMm1zp11gajWe-FQqodS86rXuVO3ieMBaSScLOGFmWNoAW8BWhM52H9razwngpIGD9yzSV4wShbKvlc_Z3hQLZvx2wVun5gBgqvKbi7F3xtIH6d7QVRHVgoktq8PEd-iYdOmT2djDpJQ07KhptHn4JOOgonnbl5AZVChHk9DAd8ojEa7FvgTW8XQg6MVY9CeEZrIDfKCOMgF7c864nKldAzFcBU3o2fPrN7GRJJVSRcianor8bhzEgWmpDb6q1v1PUmmeWh5vvONUCESKA0BN6bWku2q6OyifScFZc2HzDFGFuKB7OAxXEudfjHduZM9IKj4g5Go7e3eoRzu_Jsz9JWiPe74Xj71BJgE6erqSO2VYI5_9W4bzA5m2odlFqmDLercD5mIk7766uzfYI_IvGv98noJTzhpgPFdgYQWs1_mpoXASGLN0bL8ASiJoFGTLgTzUOjIBa8zyYpWKN6jPdnZO6H6SJYXDgJ2kci9BhjMjPjMvLHa-qsGmw2xrtD-a-PtOH7_umFyY6vN-Co6S-qRSww18vPQihXQCoglWvl7q3accfPa4TlV-uLjL6QokrjmytMZMYXn9yynSEBEJVpG95Wgz4ap5tCTZKNjDtsWfqGz-JO4KHbRKGMz5XdxoE1XIiY975wW4yspUsUUIV9x13UZSSXlnpD189CHQrJawoneAzrKw8lMya1CKsleEefY2sMvbxN5BbpWHEdEcdHxAivJ_adBXDrLBVFTj6Z6SgVMWYlBdefmiEN6G_vcT79IICPH5uF8LWQ-TB2hBLK0viWFvdX7muNsSYLCY9D9cV1x0uxbKBLKORIALIxRveYKJaXhEj1d3P6yP-35-O1KUnZ7aNoTmosZSfQ1ew9WrHCJeBp1oyPJGa7NoERPdCfb7kTF3EfxG8UjuCljM7XlbaKshL_nS8ZhtCJEPK0J7vUmnmh4OuR4C9EYxCuvNRtI2i1BK3w0dGctrXX4e51f764_SCnkQbfqE--69Hu4oxeNQxq23WInih_-7zhTmvukv6loPFG9hpn1hXuN8ny-stOqb8zZ6DgCET1WgO8bKJu5zVjgClnmxIYyrKkmAXl9ZKuoWmZ2lKW7VxjFwWJcJ5nr5bIdBXqVeZeuPo-5m8-sxpI4p1S3T8faEKlhPkwXtJmKuh0Xwg1asIMCyXzp1oVcWg4pdDF1MohELNGsES2hHG9aGzGXq7JO7fNZRSjX2uHDlkWC6DCsh7YIMELCSwDELG6EZ6cdzYRIi9hYQ2tNPFZ7rhWx2ONPFsYVgfl29PHbleuiYUmw41_z-g4iOsHen6V6_q0M_jhgxI4KULNtJoZLd7wieTyBaiXlw8ECvPT3PLS5QkFwL9Qzuk03vYemnNERP_CtgtWgtFdCFxmhAnYp9eURyyQSOXeneQEPdtx30GjUefKs3VfSkExgcsFZT4ttN_hLAFVC-_VjxAq-DmfPgsQ5g2b1wMZ56bjhb7aRt-AS6g4pWqRDdBmbsll-zYT1SGraTkNYDTL0ow5Wt_EtbPsYRMoVdNC6pGnpsfSGnFjyZ0oD8pV77HFZFvQq0a9iUPglV2KkVM7bdA6qh-pk0KJUYiWfLvlBv_ww0ftNGyU6BkdU3tRJIiANGcZBDGklDNcQy8XvZASqjsKEZc8rCgEKjwgq_Wpv4GbfPKbZfg05j8wc97yaof2Ri_lm173kCTGZzo4K45463fTnUpWE6tVYNYzeZBTgWmt-lkwr2rwauqHxewy4-OO9-vxHD0sGXWROL89AavB74iUJfZ5XPjybO5A6aQ-VVN46Shl0IurRxJ7zj7tNNvK",
+          "summary": []
+        },
+        {
+          "id": "msg_01b3efd4192f0657016af72f1042608190b3e14f44eb4ab9b5",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"yes\",\"summary\":\"Paragraph 4 states the Beaulieu Mine “folded in chaos and bankruptcy.” Paragraph 5 reports the Colomac Mine’s operator (Royal Oak Mines) was forced into bankruptcy and the federal government became owner. Both passages indicate the mines fell into bankruptcy-related failure.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1861,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1536
+        },
+        "output_tokens": 143,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 2004
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"yes\",\"summary\":\"Paragraph 4 states the Beaulieu Mine “folded in chaos and bankruptcy.” Paragraph 5 reports the Colomac Mine’s operator (Royal Oak Mines) was forced into bankruptcy and the federal government became owner. Both passages indicate the mines fell into bankruptcy-related failure.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 1861,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 1536
+      },
+      "output_tokens": 143,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 2004
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "hotpotqa:distractor_validation:5ab48f245542990594ba9c66|fixed_sparse|adjudication:0",
+    "attempt_id": "03cefe51e50b45e1b4152db5fe7b9dd8",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00075125,
+    "latency_seconds": 4.060879950000526,
+    "started_at": "2026-11-13T15:38:53.124665+00:00",
+    "finished_at": "2026-11-13T15:38:57.185539+00:00"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "dataset": "bbh",
+  "item_id": "bbh:logical_deduction_three_objects:61",
+  "source_index": 61,
+  "method": "stochastic_controller",
+  "answer_kind": "choice",
+  "gold_answer": "B",
+  "final_answer": "B",
+  "correct": true,
+  "f1": 1.0,
+  "completed": true,
+  "final_valid": true,
+  "call_successes": 7,
+  "n_logical_calls": 7,
+  "attempts": 7,
+  "input_tokens": 2043,
+  "output_tokens": 866,
+  "reasoning_tokens": 320,
+  "usage_unknown_attempts": 0,
+  "cost_usd": 0.00224275,
+  "latency_seconds": 20.059729772998253,
+  "wall_seconds": 182.94119585099907,
+  "communication": {
+    "directed_messages": 4,
+    "characters": 830,
+    "utf8_bytes": 830,
+    "messages": [
+      {
+        "sender": 0,
+        "receiver": 1,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Given loquats are cheapest and plums are less expensive than apples, the order is loquats < plums < apples, so apples are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given loquats are cheapest and plums are less expensive than apples, the order is loquats < plums < apples, so apples are the most expensive.\"}"
+      },
+      {
+        "sender": 0,
+        "receiver": 2,
+        "content": {
+          "sender": 0,
+          "answer": "B",
+          "summary": "Given loquats are cheapest and plums are less expensive than apples, the order is loquats < plums < apples, so apples are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":0,\"summary\":\"Given loquats are cheapest and plums are less expensive than apples, the order is loquats < plums < apples, so apples are the most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 0,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Given loquats are the cheapest and plums are less expensive than apples, the ordering is loquats < plums < apples, so apples are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given loquats are the cheapest and plums are less expensive than apples, the ordering is loquats < plums < apples, so apples are the most expensive.\"}"
+      },
+      {
+        "sender": 1,
+        "receiver": 2,
+        "content": {
+          "sender": 1,
+          "answer": "B",
+          "summary": "Given loquats are the cheapest and plums are less expensive than apples, the ordering is loquats < plums < apples, so apples are the most expensive.",
+          "missing_response": false
+        },
+        "serialized": "{\"answer\":\"B\",\"missing_response\":false,\"sender\":1,\"summary\":\"Given loquats are the cheapest and plums are less expensive than apples, the ordering is loquats < plums < apples, so apples are the most expensive.\"}"
+      }
+    ]
+  },
+  "initial_disagreement": 0.0,
+  "controller": {
+    "method": "stochastic_controller",
+    "disagreement": 0.0,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "controller_seed": 29758026603665216589972131331444171217,
+    "states": [
+      {
+        "substep": 0,
+        "time": 0.1,
+        "previous_state": 0.0,
+        "target": 0.0,
+        "drift": 0.0,
+        "gaussian_draw": -1.5816333078499762,
+        "proposed_state": -0.17505472865972688,
+        "state": -0.17505472865972688,
+        "probability": 0.1994007672456538
+      },
+      {
+        "substep": 1,
+        "time": 0.2,
+        "previous_state": -0.17505472865972688,
+        "target": 0.0,
+        "drift": 0.21006567439167226,
+        "gaussian_draw": 0.649464120588204,
+        "proposed_state": -0.08216565543396534,
+        "state": -0.08216565543396534,
+        "probability": 0.2115291664108973
+      },
+      {
+        "substep": 2,
+        "time": 0.30000000000000004,
+        "previous_state": -0.08216565543396534,
+        "target": 0.0,
+        "drift": 0.0985987865207584,
+        "gaussian_draw": -0.41815843567047845,
+        "proposed_state": -0.11858743456549936,
+        "state": -0.11858743456549936,
+        "probability": 0.20671033816067427
+      }
+    ],
+    "edge_probabilities": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "probability": 0.1994007672456538
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "probability": 0.1994007672456538
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "probability": 0.2115291664108973
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "probability": 0.2115291664108973
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "probability": 0.20671033816067427
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "probability": 0.20671033816067427
+      }
+    ],
+    "uniform_draws": [
+      {
+        "edge": [
+          0,
+          1
+        ],
+        "draw": 0.1868145444869913
+      },
+      {
+        "edge": [
+          0,
+          2
+        ],
+        "draw": 0.14408826142959563
+      },
+      {
+        "edge": [
+          1,
+          0
+        ],
+        "draw": 0.10940364356075538
+      },
+      {
+        "edge": [
+          1,
+          2
+        ],
+        "draw": 0.1732657228012896
+      },
+      {
+        "edge": [
+          2,
+          0
+        ],
+        "draw": 0.5739805355084913
+      },
+      {
+        "edge": [
+          2,
+          1
+        ],
+        "draw": 0.42240635922695613
+      }
+    ]
+  },
+  "initial_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "refined_answers": [
+    "B",
+    "B",
+    "B"
+  ],
+  "source_hash": "3d025da82758e97a3e219ed23db8436dd7a18310003b15584176ad5e22deec54",
+  "config_hash": "251f16edb394177fb38538c3868dca3f8ac382ad567a7343163dc7a1a99d28ca",
+  "fingerprint": "0813ac0c7eef2258effc21780ef98594da9640fd6ead7e94cb68a28dc59ddcb0",
+  "errors": []
+}

@@ -1,0 +1,199 @@
+{
+  "payload_hash": "968d73887ac86d4b37d05791131588d6ce84707857722613410a28488c8969d9",
+  "logical_id": "gsm8k:official_test:224|independent|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_06bde50a58e7f06c016af710c248b08195a5dda18d222a018d",
+      "object": "response",
+      "created_at": 1794576578,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794576580,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 1847,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 552,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this numeric task, answer must be only the final number, optionally a decimal or fraction; omit units and prose. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_06bde50a58e7f06c016af710c358108195a34126f3c251475f",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xDEQbn7sJAc5bzLPooNGXwP_W55a8f22zAcCuT2ou9_uPo_xAIg8Lxh03gm2tCzj80rKIpQ1croRcNuyYXhx8SUOsPQXeamIGgBXrp83uenZOlvJ6bWo1CFzxPpAhnGyz-6HHeNap4b3LySccsftMxlLn8n9Tq-MXjj2PPKOBi60okv8Htu3hNGKNBblzGTxwrdeVgnR4Wd9wzMTfPWI7houjk3FlDEiUMdXOKFlQlYc18oCqo1_QfY-CQdpCMdzTv3_DI9yjUlOaEiWQNC8DQ91sKHtRjXlRbAF923bK1xlXgRTq3uQpllRETFB8oM0qT7QboMx7UanPyuEt1ZEyKL2zLy_XgZfFJ5inMaCjnIcpMSx9l4VxjALahI5iThcKN-CVpzbpoj23DjAQlsbITWxyGKVci4tnwP9068YqKhJe_f0nndFiOJll34Okl21AuKUIowTxuLkfQRzAK0z_9QkBd517UFMAb7QRArZ_2A-SEnGLvUorPACsUnAwaHeptJfTlUrfgYrkl86LaXx8Y0toESE5-iXvScPFw3jD2GfiG6YA8ET1lgZgmStWd6EMrPqJwYVNA3mh552AIaTDIvGZhhedxIGLxtYhQCwrZLY2tvMBRNw0wNnAjdfrw9wfcdBqJDXkVTJzKoABjXbMdQZ2ehOfVr2X8g9fb6DY0-sMaFbdf43bupX0XaAuj_XVb-hmtieixjOGaKaK3hlVVyBxG8LYqqQmXGcfuQydPeDt0ga68nBGzY6cgjRUJM9dXs9aIZphleOfp5YVwWk_lf3AFBJSyD010OLspQNVHfuP7axSYsmT5nEgGr4j-LRsBXwOHD69nb9bESj1g-WU7JbET171o5dE8Qe8IJ9tVdQhsDGGUsAANVP-RdqZj-WXHJpnUg6BD11Wwt0WBm-rEV9eKvNkCmAIMxw0klLy6yYQ54SXl0vfCBtXI8eCJfI0MAqLg3F7Y3osfOYw-upiv4VsgdsadUmxg4kZHss-wwyM69JKTdGgxuyGn8Cn8vEmQnt9-yb54svqZD-5vvGj0kQnDQI4umlb3XcHk0SwaOKI3m9F54ZroECAjatW7PUFGm-Wf5x43_fYR8gvziEFKq1s8errEWyFmDcVd32GsEqUtwbWPT-fw_eHjrCrQWG7tlMVGOBjsL-jT9ZBanb58OA06-1SY6p7ee6s6yIVXV8-P4sGayUrQS2OQb24igayjb3KpOEzVjUVefYmp96_Bb8FfFO61KcFqQdJbuUsltbI6tPZ8dXkgp5LBYpRF0RwcJcucbWJg4P29wUjvlU9DhMFMPVqGeRpHNyUCCoNko7RpGzi0miVMBNhW2uauuX8yySny81cYbRuJmm7WYiEWjU04wWgrzOON_MVht-9UyJ2-r4ccydmyfMemTIeyyPOuHeHkPGKbXihfb8YsRQuYauwircMZq2xszx54ewhc18tdossl9llfL_FhHKkgIKTJY-CgZPX29wa8do2Gv_5JAc4fnh5Z8ZXuSPR243taaBxW_hHK-4pKyQbsTNj9Q1VqCpilROCmnla7O9f3CdHGGPjclJ3EMLPluLLPsrY-rhCP2Z8Q7zMipwQisewXx4zWllKiWxpJRpONi4k_kCBCnqMjjHMiYnvMJ_tCRwKiBTS4YM_QB4W8ZJv-zShmURq8j_tSinnZMYfY5ylkIJkV0s4Xj0ByYq6pLF4jrFOM3rdqTLoeL2e6P7C1JgWC3A2VVwBi-H-A6c-meuldcCMEWFnPYGKtOpqQqZoQnMEIFyuSme8JU13FcwTRvrqOl33w8QGm6VLPT5HwbVdnBu1GR-m4ocVuwU-JI3YLd7nHKD4d49Ewg-AEllx2FOvzZEd0JdmtIvZ_pIBlN_jwpNig2cxo8qtr8NJ1_IfKz11T_eprtHNV0mgVeZTEe_ZZMr2oM4PRW-ReINohVOOxrpRx6sKKyfPyamdj0uIc_WimDNcU93q_Lb5hY0gc-GKTIFgtP7Rf4x372v2RoActfIJNxX7aUpjKt_2udpGhO7hNhUCzsSHIv2--FfOm7RDcX9pdak9Fjrbq6Brw1PYgzYICToAchipBGo6ZLiVnytleu9okgtzsAq0Ncod4I1ko9pzw0DHgmDs7OALvDUQ6n4kpu4xeDz5OolQJMHI8lTKAy4npNoolTr2m0PZxVYMpau33OQFjwnk7C-d5WE8aEd4tf2l6uZYhBxK_-nQY0-_uTuuhDbpWNudHvw3s6uN2RJ1y6Lg3qOaUeVhU9GotvodL0VouBmC7n2wYrRiZCmct3_v6ufeASKy_NpGyYKMsA_sAYCibpgYT3DQUl1m8WorQP4XyeqLUvJU77y594ZeCbuRUNwbupnLsg-nKEnASTlGeQDmzZn9OcJfoHvH86xNwWH75jSMl1Vj9T2zymn1fx7JAWvmP8eI6N6sGdEU5b-9Lrm6xZPjvdxybJkut_kBA0aVBN2kNKXiZKzEQFqdBaCBTuilAXd5w9NwlZpQ7jiVblvcZYD_f5_VXNWzeVtl3cwR6Vhmjeof-zcFxsSKP3EqCtMMVefezoTiIn1XFCm91b2MYXxbgTZh6EgOgOnY9jUeXhq_hN4Q-iuq3YRpmgaowcXiqRh_0pUrNy1hHvlCNr",
+          "summary": []
+        },
+        {
+          "id": "msg_06bde50a58e7f06c016af710c42510819593d0b91af4f8d1bc",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"180\",\"summary\":\"Compute each rental: Carlos pays 30×3 = 90. Benji pays 18×5 = 90. Sum the two amounts: 90 + 90 = 180.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 347,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 145,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 492
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"180\",\"summary\":\"Compute each rental: Carlos pays 30×3 = 90. Benji pays 18×5 = 90. Sum the two amounts: 90 + 90 = 180.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 347,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 145,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 492
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "gsm8k:official_test:224|independent|adjudication:0",
+    "attempt_id": "63068071b7db4135a9b4fe8fc6f6ea87",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00037675,
+    "latency_seconds": 4.031550943000184,
+    "started_at": "2026-11-13T13:29:36.841250+00:00",
+    "finished_at": "2026-11-13T13:29:40.872830+00:00"
+  }
+}

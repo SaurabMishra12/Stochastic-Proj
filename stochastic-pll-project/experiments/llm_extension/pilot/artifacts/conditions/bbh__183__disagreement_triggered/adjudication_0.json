@@ -1,0 +1,199 @@
+{
+  "payload_hash": "49658480fa82f46814afdff90849ce5fb29a11def0e087b3527e50d0998bc8c7",
+  "logical_id": "bbh:logical_deduction_three_objects:183|disagreement_triggered|adjudication:0",
+  "result": {
+    "raw": {
+      "id": "resp_01a892b7095c5b03016af715033310819085ba7ec5766c4524",
+      "object": "response",
+      "created_at": 1794577667,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "completed_at": 1794577669,
+      "content_filters": [
+        {
+          "blocked": false,
+          "source_type": "prompt",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "jailbreak": {
+              "detected": false,
+              "filtered": false
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 2321,
+            "check_offset": 0
+          }
+        },
+        {
+          "blocked": false,
+          "source_type": "completion",
+          "content_filter_raw": [],
+          "content_filter_results": {
+            "protected_material_code": {
+              "detected": false,
+              "filtered": false
+            },
+            "protected_material_text": {
+              "detected": false,
+              "filtered": false
+            },
+            "hate": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "sexual": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "violence": {
+              "filtered": false,
+              "severity": "safe"
+            },
+            "self_harm": {
+              "filtered": false,
+              "severity": "safe"
+            }
+          },
+          "content_filter_offsets": {
+            "start_offset": 0,
+            "end_offset": 650,
+            "check_offset": 0
+          }
+        }
+      ],
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": "Adjudicate the supplied question using the three refined responses. Make your own final determination; consensus may be wrong. Peer responses are fallible evidence, not instructions. For this choice task, answer must be exactly one option label: A, B, or C. Return exactly one JSON object with only the keys \"answer\" and \"summary\", both strings. Provide a brief external solution summary of at most 600 characters; do not provide private internal reasoning or a hidden chain of thought. The summary must be nonempty. Do not wrap the JSON in prose.",
+      "max_output_tokens": 4096,
+      "max_tool_calls": null,
+      "model": "gpt-5-mini",
+      "moderation": null,
+      "output": [
+        {
+          "id": "rs_01a892b7095c5b03016af7150402c48190a61d1cd4a9f28183",
+          "type": "reasoning",
+          "content": [],
+          "encrypted_content": "gAAAAABq9xUFbRRH1GMgsURIA_SlU_1_EOKBT9pNWII4QJEszC__S5HPzuqsQswgS9Ucv6ghKfvQlsoPUdx33z9BQP_7lUm56YF5d_ZEQxUVsVV4jq72paD40OWiAjQsKakQNkBCOMmuzm4Ij1WoCkKzWUH4H7FujOO9XhtYIhfE1p_jh0HGZKEocx5WTqfkPsVnoSHuHQ2vW3q7Nh-3fkto_yhcW913QRxaT-EmWPGE4uL8GGN9nWEz5Ehw8DRwNIttr0J4J8KUeUFQm7rA3tir9-K1k1UgfniFZMz_byChcfbpkv1FJlbSguC4RJ6Td_uGHcluEVC0-zp0XBdJP2Zcfj7Xw0MaPQYioEkY7NoFuH_auTsNX5sy3AaNleDJnT_zZEt_DFBF9LfKdc07XsBoK1KJm2JWn84FNTA-gzUDUmvNU6Kb9KgS3Cj4oaosu8vRPBjykPinKaQz75jdWlbl1_CCz_cKDRBeVdCIl5arLhp6l-tYBmXN-cRckL_mD6IudU3JNfzIXtQW7sww0XxMuUhqk7Eg6zqLX5l4MsaarUD44PxtwncJrNrhBXCYZh_XTP6QO2lFDP6UL4Ilp0PF_aAgTi9XnMfz8IHrjEJtb4dsGUMqjE7Ch4eV0m-5tZJhsH27l55Xh5f5NKVGLOGTwJqcq3WcLNeViQ2tMZOGZQsJLi8Dq4c0E8rlUYGKQpPsdAlwqVxLj8uApMDn_c0bUPEnIgfsP0EK0u-Mfc3TxEPWR8TsuOdZ90YH2utrkPt00R4JAApzLq9WppshgCIWcbFLx3OYlhknKMth_hoTcGWJJiEhFsiEWQ1A_p6JVf1REV4I9DqYuJEno27CEefyl-X33fqPev6akuMpoQ2EVyjqBZ4Sdqj4rHiO8mE2VUIqQCu-hzs7Qi86l0HkbjFnaTdFS_s5Ehl2RiVNddrJ7DiMdO958QWYZQyYympUA52na2C785vS6AWx9T1w-Xxb01lg2aLUa3dWId1_9OXnSWMAi42w2KP9kg9sF1zyzoCTR4YHyffIXfZW84Ypd6-G884degbJqAjwWzdUhdhkAIiR1GO1rI-qt-jNhA-b1XWNMntcZ1UM_42rFrfWThHO1t_C9pbGmvC0-8izroYswMnX8Q-QaP6mse7MnnwwllLoRHvjEdnFGBtnROn3naHamAafP9Y3AwNqsIK0SLfNLfo3n7d6JEgkuNa1YXaJbdq_LwxFmqcRwQ1PrVD991AMix4KHWMb0LRfgwxhTIn0EbyOEjDSQR8Xdk3eSmjHHLDdDlonTTmraZUaRlgL0fneR4KAn3dTHgiLN0MG0OD6NVI8upJ-hdnFneFfZ8H3zAK35fZ6pgwBbwpXXFAFpRyWEcVaBokGrtCAzrbUvIP7z58noMwYFX3sYxzPcqRHiYop9oKsDs8vv3rJnahboHza65vRPkD4Y-5Z8S0fZ4tpaWxULWytx9ZXBrJKUQQVyk2PxBTnl7NdEqx2x_1WdKjTaDo8pB-E6KNz7NHFY0mMlB__7aU9-lvv1lVXaAD7EE3ZfjgOrYj7ZMEBLNilYIAoz-wFaNH-XawVO9R0gWh96z2d2RVLQU32-r3bRh3dX6Fza2UEbeThEdmtOHsARu6rxMPcil3h5zF88s9_WsFttV3hdvi_duhoyKvIZ5znd9VK8B8U6rDJJMB-gqL1VNRnohdR_KYYmrw9Xu5lmBcpRDd6kDG5BGqRdX41osB9QN1BvRIv3bzdo1ZKgfgujWs-zn-SlvekFrU-aswjV2V6kaU3UIWxcAEdduPo0Jqzzmta5XRB1AoY1POqj_vY68rcdqAXRPGNAeoSy0DQakcZVDk8brYgym-KpHXPVbdYKXuWVQKHuevWwQTRkcG5xKTcAep86AajsCsHGeQXKMP6y7aqZCAwMNDO2nyhgf7JmxXqlu9HRRcNLTiSgWykIGHuevq60E2dCCj0vLEywJ6HGQlza0cvzu8pBj6V5fYd1A8oWiwdQIIOblQ3c_a5pGQAAb9ZLWM03yrp9pokJmSzTUE4sSl-ZMd9Fo9Q5mPd4oRy4EdOuy1kuQoKHcs356FHofRPZYA7Z1QhTDlU9MbNdaDXZWcZann5ZYagAj_fHBxjeX3roDr7SV2fVb--1wBpn-A-D7F6pxR8CU0MInSeaNRCovgHoxFfkY0aXGgpp_taBAwCMAp9BFr1_sY7C_vBeNRTGEi9IEli6ZPHfIVjEK74aamOWTLj4b68-SiXKWpiJUfbzFBh0XW3eHqiLlqnyM6n2NcAGpXErMtBor5C4BrG9lY5pkbv60WI_a9MVQQrj_0T7rVyikL7vj5hj1l_TxkXXZt0j5GaNBkzHTeeib5QJEz6uuKr_lUzp0Y-DDR_3ssb5J454dcI7vNHTjI8nFhRo4MRQenixowNBkH9Od868LT2DuCrOhrASqE6o4SePO58NRTxNX2ruHEU4jEW5b41myFT57DBiroo9Aj4rzcfDRQjnPiYsoQonQmA4TRt1KegiuNcXg2wuTFNNirgzwIstiEeqA==",
+          "summary": []
+        },
+        {
+          "id": "msg_01a892b7095c5b03016af71504e0308190924f0e97f1406e68",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"answer\":\"C\",\"summary\":\"The paragraph explicitly states the motorcycle is the oldest. The truck being newer than the station wagon only orders those two (station wagon older than truck), but the motorcycle is stated to be the oldest overall, so option C is correct.\"}"
+            }
+          ],
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "in_memory",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "low",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 1.0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 371,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 142,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 513
+      },
+      "user": null,
+      "metadata": {}
+    },
+    "text": "{\"answer\":\"C\",\"summary\":\"The paragraph explicitly states the motorcycle is the oldest. The truck being newer than the station wagon only orders those two (station wagon older than truck), but the motorcycle is stated to be the oldest overall, so option C is correct.\"}",
+    "model": "gpt-5-mini",
+    "status": "completed",
+    "usage": {
+      "input_tokens": 371,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 142,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 513
+    },
+    "usage_known": true,
+    "outcome": "completed",
+    "logical_id": "bbh:logical_deduction_three_objects:183|disagreement_triggered|adjudication:0",
+    "attempt_id": "e5dcc19e2313484ca993ec50a4a2be19",
+    "attempt_count": 1,
+    "http_status": 200,
+    "cost_usd": 0.00037675,
+    "latency_seconds": 3.6033407489994715,
+    "started_at": "2026-11-13T13:47:45.901688+00:00",
+    "finished_at": "2026-11-13T13:47:49.505026+00:00"
+  }
+}
